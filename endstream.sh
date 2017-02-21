@@ -5,10 +5,10 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.01
+# Version: 0.02
 # Revision Date: February 21, 2017
 #
-# Change Log:  - File creation
+# Change Log:  - File creation, testing, remove dead streams
 #
 #####################################################################
 # Dependencies: youtube-dl, mpv, read
@@ -135,7 +135,7 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.01"
+version="0.02"
 rev_date="21/02/2017"
 branch="gnu/linux"
 ##################################################
@@ -157,30 +157,35 @@ do
  fi
 done
 
-echo " English Language Streams || French Language Streams || Spanish Language Streams || Other Language Streams"
-echo "1)  France 24 English        21) France 24 Francais      41) Videos Directo          62) CCTV 4 Chinese "
-echo "2) Al Jazeera English        22) Euronews Francais       42) Q24"
-echo "3) Fox News                  23) NTVUganda               43) 100% Noticias"
-echo "4) CNN stream 1              24) KTN Kenya               44) Televisa del Bajio"         
-echo "5) CNN stream 2              25) Africa News             45) Televisa del Golfo"
-echo "6) ABC Australia             26) TLM                     46) Televisa Guadalajara"
-echo "7) CBS NEWS / MSNBC / NBC    27) France Inter            47) Televisa del Noreste"
-echo "8) NEWSMAX                   28) RFI                     48) Televisa Veracruz"
-echo "9) Bloomberg                 29) Imagine Radio           49) GalaTV Morelos"
-echo "10) Channels 24 Nigeria      ==SPANISH LANGUAGE==        50) Televisa Puebla"
-echo "11) Africa News Live         30) TeleSUR                 51) GalaTV Queretaro"
-echo "12) GCTN English             31) RT Espanol              52) Televisa Mexicali"
-echo "13) TRT World                32) DW Espanol              53) GalaTV Chihuahua"
-echo "14) TWiT                     33) NTN24                   54) GalaTV Acapulco"
-echo "15) CNBC Africa              34) Canal 8 San Juan        55) GalaTV Zacatecas "
-echo "16) RBSN Live                35) c5n                     56) Televisa Campeche"
-echo "17) TYT                      36) Canal Siete             57) Televisa Hermosillo"
-echo "                             37) HispanTV                58) GalaTV Laguna"
-echo "==EUROZONE RESTRICTED==      38) Globovision             59) 1070 Noticias"
-echo "18) SKY NEWS Britain         39) Excelsior TV            60) Unknown 1"
-echo "19) Euronews English         40) Hipodormo               61) Unknown 2  "
-echo "20) DW English "      
-
+echo "========================================= ENDSTREAM =========================================================="
+echo " English Language Streams || French Language Streams || Spanish Language Streams || Other Language Streams    "
+echo "1)  France 24 English        24) Afrique Media           48) Televisa Veracruz       ===ASIAN LANGUAGES===   "
+echo "2) Al Jazeera English        25) France Info             49) GalaTV Morelos           73) CCTV 4 Chinese      "
+echo "3) Fox News                  26) Mosaik TV               50) Televisa Puebla          74) SHIBUYA NEWS JAPAN  "
+echo "4) CNN stream 1              27) TLM                     51) GalaTV Queretaro         75) QVC JAPAN           "         
+echo "5) CNN stream 2              28) France Inter            52) Televisa Mexicali        76) ----                "
+echo "6) ABC Australia             29) RFI                     53) GalaTV Chihuahua         77) ----                "
+echo "7) MSNBC/CBSN                ==SPANISH LANGUAGE==        54) GalaTV Acapulco          78) ----                "
+echo "8) NEWSMAX                   30) TeleSUR                 55) GalaTV Zacatecas         79) ----                "
+echo "9) Bloomberg                 31) RT Espanol              56) Televisa Campeche        80) NASA EARTH          "
+echo "10) Channels 24 Nigeria      32) DW Espanol              57) Televisa Hermosillo      81) NASA ISS 1          "
+echo "11) Africa News Live         33) NTN24                   58) GalaTV Laguna            82) NASA ISS 2          "
+echo "12) GCTN English             34) Canal 8 San Juan        59) 1070 Noticias            83) ----                "
+echo "13) TRT World                35) Canal 6 San Rafael      60) GalaTV Toluca            84) ----                "
+echo "14) TWiT                     36) Canal Siete             61) TelePacifico             85) ----                "
+echo "15) CNBC Africa              37) HispanTV                62) Noticias Agentina        86) ----                "
+echo "16) RBSN Live                38) Globovision             63) Cinevision Canal 19      87) ----                "
+echo "17) TYT                      39) Excelsior TV            64) Canal 8 Mar del Plata    88) ----                "
+echo "==EUROZONE RESTRICTED=       40) Imagine Radio           65) Canal 44                 89) ----                "
+echo "18) SKY NEWS Britain         41) Videos Directo          66) Tu Cana                  90) ----                "
+echo "19) Euronews English         42) Q24                     67) VPI TV                   91) ----                " 
+echo "20) DW English               43) La Cáscara TV           68) NTV Uganda               92) ----                "
+echo "== FRENCH LANGUAGE ==        44) Televisa del Bajio      69) KTN Kenya English        93) ----                "     
+echo "21) France 24 Francais       45) Televisa del Golfo      70) 100% Noticias Nicaragua  94) ----                " 
+echo "22) Euronews Francais        46) Televisa Guadalajara    71) ---                      95) ----                "
+echo "23) Africa News              47) Televisa del Noreste    72) ---                      96) ----                "
+echo "=============================================================================================================="
+echo " " 
 echo " Please Select a Number corresponding to a YouTube news live stream "
 
 read n
@@ -219,7 +224,7 @@ case $n in
 #  15) CNBC Africa
 15) link=https://www.youtube.com/watch?v=Ae6N5j_yUrI ;;
 #  16) RBSN Live
-16) link=https://www.youtube.com/watch?v=4hUovMOUqJs ;;
+16) link=https://www.youtube.com/watch?v=RCDV9yp754o ;;
 #  17) TYT 
 17) link=https://www.youtube.com/watch?v=Iwdz7yYk5Ys ;;
 ###############    RESTRICTED TO EUROPE     ###########################
@@ -234,20 +239,20 @@ case $n in
 21) link=https://www.youtube.com/watch?v=vp-82gDggk4 ;;
 # 22) Euronews
 22) link=https://www.youtube.com/watch?v=03O3ZyJW-Tc ;;
-# 23) NTVUganda
-23) link=https://www.youtube.com/watch?v=PLFM82-Br8Y ;;
-# 24) KTN Kenya
-24) link=https://www.youtube.com/watch?v=W3xCC_sDNxA ;;
-# 25) Africa News
-25) link=https://www.youtube.com/watch?v=tUjOfmeLpHo ;;
-# 26) TLM 
-26) link=https://www.youtube.com/watch?v=vOLDMexUxpM ;;
-# 27) France Inter
-27) link=https://www.youtube.com/watch?v=59Rw7-8PRng ;;
-# 28) RFI
-28) link=https://www.youtube.com/watch?v=N8tHbVYKRBY ;;
-# 29) Imagine Radio
-29) link=https://www.youtube.com/watch?v=OSOXIMOxpEw ;;
+# 23) Africa News
+23) link=https://www.youtube.com/watch?v=tUjOfmeLpHo ;;
+# 24) Afrique Media
+24) link=https://www.youtube.com/watch?v=rmTY6PCTvXM ;;
+# 25) France Info
+25) link=https://www.youtube.com/watch?v=SN7sncKzRq4 ;;
+# 26) Mosaik TV Francais
+26) link=https://www.youtube.com/watch?v=JcKSOnfoDRc ;;
+# 27) TLM 
+27) link=https://www.youtube.com/watch?v=vOLDMexUxpM ;;
+# 28) France Inter
+28) link=https://www.youtube.com/watch?v=59Rw7-8PRng ;;
+# 29) RFI
+29) link=https://www.youtube.com/watch?v=N8tHbVYKRBY ;;
 ###################  SPANISH  #################################
 # 30) TeleSUR
 30) link=https://www.youtube.com/watch?v=3fwfmhTYUZs ;;
@@ -259,8 +264,8 @@ case $n in
 33) link=https://www.youtube.com/watch?v=-ukAwFoV9pY ;;
 # 34) Canal 8 San Juan
 34) link=https://www.youtube.com/watch?v=yiwJzHW123c ;;
-# 35) c5n
-35) link=https://www.youtube.com/watch?v=rio_WuZUbD8 ;;
+# 35) Canal 6 San Rafael
+35) link=https://www.youtube.com/watch?v=axnhmU97Ktg ;;
 # 36) Canal Siete
 36) link=https://www.youtube.com/watch?v=EUgiU4KZEPo ;;
 # 37) HispanTV 
@@ -269,14 +274,14 @@ case $n in
 38) link=https://www.youtube.com/watch?v=Lm-AmFtPlc4 ;;
 # 39) Excelsior TV
 39) link=https://www.youtube.com/watch?v=NANvipRo_eE ;;
-# 40) Hipodormo
-40) link=https://www.youtube.com/watch?v=wUg_XReEIHA ;;
+# 40) Imagine Radio
+40) link=https://www.youtube.com/watch?v=OSOXIMOxpEw ;;
 # 41) Videos Directo
 41) link=https://www.youtube.com/watch?v=gxXvDDl4cTs ;;
 # 42) Q24
 42) link=https://www.youtube.com/watch?v=yZGc05q7ajA ;;
-# 43) 100% Noticias
-43) link=https://www.youtube.com/watch?v=rH2EAkpuusY ;;
+#43) La Casacra TV 
+43) link=https://www.youtube.com/watch?v=vEwpn57ip7w ;;
 ## Canals  Vivo  de Televisia Regional 
 # 44) Televisa del Bajio
 44) link=https://www.youtube.com/watch?v=wmcA51ETCoo ;;
@@ -310,13 +315,50 @@ case $n in
 58) link=https://www.youtube.com/watch?v=6SuhteXqf90 ;;
 # 59) 1070 Noticias
 59) link=https://www.youtube.com/watch?v=bfe9RLT9SBo ;;
-# 60) Unknown 1
+# 60) GalaTV Estado de México Toluca
 60) link=https://www.youtube.com/watch?v=fHhS2BElUF0 ;;
-# 61) Unknown 2
-61) link=https://www.youtube.com/watch?v=pTgYBW2cm5c ;;
+# 61) TelePacifico
+61) link=https://www.youtube.com/watch?v=ZQnMKaGYu9Q ;;
+# 62) Canal Noticias Argentina
+62) link=https://www.youtube.com/watch?v=WJCIuoKvzi0 ;;
+# 63) Cinevision Canal 19
+63) link=https://www.youtube.com/watch?v=aBLbwbSycLU  ;;
+# 64) Canal 8 Mar del Plata
+64) link=https://www.youtube.com/watch?v=MbOpUZnOdNY  ;;
+# 65) Canal 44
+65) link=https://www.youtube.com/watch?v=5sdRSFaPycE ;;
+# 66) Tu Canal
+66) link=https://www.youtube.com/watch?v=NEF_sHYhio0 ;;
+# 67) VPI TV 
+67) link=https://www.youtube.com/watch?v=1HQYv9Cpn1Y ;;
 ###############  OTHER   ##############################
-#  62) CCTV 4 Chinese
-62) link=https://www.youtube.com/watch?v=Y8Wy9LXCapw ;;
+# 68) NTVUganda FRENCH
+68) link=https://www.youtube.com/watch?v=QwyX8hxMppg ;;
+#69 ) KTN Kenya English
+69) link=https://www.youtube.com/watch?v=W3xCC_sDNxA ;;
+# 70) 100% Noticias Nicaragua
+70) link=https://www.youtube.com/watch?v=sFQqcQJhJnQ ;;
+################ CHINESE MANDARIN CANTONESE  ####################
+#  73) CCTV 4 Chinese
+73) link=https://www.youtube.com/watch?v=Y8Wy9LXCapw ;;
+################ JAPANESE  ####################
+#  74) Shibua Community News Japan
+74) link=https://www.youtube.com/watch?v=_9pavMzUY-c ;;
+#  75) QVC JAPAN SHOPPING CHANNEL
+75) link=https://www.youtube.com/watch?v=wMo3F5IouNs ;;
+
+################ OTHER
+# 80) NASA LIVE STREAM
+80) link=https://www.youtube.com/watch?v=SF7FUU7CThs ;;
+# 81) NASA LIVE STREAM
+81) link=https://www.youtube.com/watch?v=ddFvjfvPnqk ;;
+# 82) NASA LIVE STREAM
+82) link=https://www.youtube.com/watch?v=qzMQza8xZCc ;;
+
+################### BROKEN STREAMS   ########################
+## Investigate
+# 35) c5n SPANISH
+# 35) link=https://www.youtube.com/watch?v=rio_WuZUbD8 ;;
 
 esac
 
