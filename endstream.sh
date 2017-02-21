@@ -2,7 +2,7 @@
 # Title: endstream.sh
 # Description:  Clearnet streaming from youtube of selected news 
 #               stations using mpv and youtube-dl
-# Author: Endwall
+# Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
 # Version: 0.01
