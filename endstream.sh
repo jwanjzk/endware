@@ -179,7 +179,7 @@ echo "                             37) HispanTV                58) GalaTV Laguna
 echo "==EUROZONE RESTRICTED==      38) Globovision             59) 1070 Noticias"
 echo "18) SKY NEWS Britain         39) Excelsior TV            60) Unknown 1"
 echo "19) Euronews English         40) Hipodormo               61) Unknown 2  "
-echo "20) DW English      
+echo "20) DW English "      
 
 echo " Please Select a Number corresponding to a YouTube news live stream "
 
