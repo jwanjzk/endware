@@ -166,10 +166,10 @@ echo "==========================================================================
 echo "1) France 24 English         === FRENCH LANGUAGE ====    60) Televisa Puebla           91) NASA EARTH             121) CBC Arabic            "
 echo "2) Al Jazeera English        31) France 24 Francais      61) GalaTV Queretaro          92) NASA ISS 1             122) Saudi 2 TV            " 
 echo "3)  Fox News                 32) Euronews Francais       62) Televisa Mexicali         93) NASA ISS 2             123) Syrian Satellite      "
-echo "4)  CNN 1                    33) Africa News             63) GalaTV Chihuahua          94) NASA TV                124) Al Mayadeen           "          
-echo "5)  CNN 2                    34) Afrique Media           64) GalaTV Acapulco          ===ASIAN LANGUAGES===       125) Al Arabiya            "
+echo "4)  CNN                      33) Africa News             63) GalaTV Chihuahua          94) NASA TV                124) Al Mayadeen           "          
+echo "5)  Fox News                 34) Afrique Media           64) GalaTV Acapulco          ===ASIAN LANGUAGES===       125) Al Arabiya            "
 echo "6)  i24 News                 35) France Info             65) GalaTV Zacatecas          95) CCTV 4 China           126) Al Jazeera            "
-echo "7)  -------                  36) Mosaik TV               66) Televisa Campeche         96) EBC 51 Taiwan          127) France 24             "
+echo "7)  Fox News                 36) Mosaik TV               66) Televisa Campeche         96) EBC 51 Taiwan          127) France 24             "
 echo "8)  MSNBC/CBSN               37) TLM                     67) Televisa Hermosillo       97) SHIBUYA NEWS JAPAN     128) BBC Arabic            "
 echo "9)  NEWSMAX                  38) France Inter            68) GalaTV Laguna             98) QVC JAPAN              129) SKY News Arabic       "
 echo "10) Bloomberg                39) RFI                     69) 1070 Noticias             99) KBS World 24 Live      130) RT Arabic             "
@@ -208,13 +208,14 @@ case $n in
 2) link=https://www.youtube.com/watch?v=pJC-vohDHl8 ;;
 # 3) Fox News
 3) link=https://www.youtube.com/watch?v=uoithfXKf70 ;;
-# 4) CNN Stream 1
-4) link=https://www.youtube.com/watch?v=hq9Mpmb80Kw ;;
-# 5) CNN Stream 2
-5) link=https://www.youtube.com/watch?v=5w5lmAgl5wU ;;
+# 4) CNN 
+4) link=https://www.youtube.com/watch?v=utHp6jQKta4 ;;
+# 5) Fox News
+5) link=https://www.youtube.com/watch?v=Z7HSAnWCUQw ;;
 # 6) i24 News
-6) link=https://www.youtube.com/watch?v=Cn1PPJyvlas ;;
-# 7) 
+6) link=https://www.youtube.com/watch?v=ArNFMKxtsxY ;;
+# 7) Fox News 2
+7) link=https://www.youtube.com/watch?v=lYbEYo5-b6U ;;
 # 8) CBS NEWS / MSNBC / NBC 
 8) link=https://www.youtube.com/watch?v=xCeP1FmzVos ;;
 # 9) NEWSMAX
