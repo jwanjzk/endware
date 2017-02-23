@@ -6,8 +6,8 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.05
-# Revision Date: February 22, 2017
+# Version: 0.06
+# Revision Date: February 23, 2017
 #
 # Change Log:  - Rearanged the channels, added more channels
 #              - File creation, testing, remove dead streams
@@ -138,7 +138,7 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.05"
+version="0.06"
 rev_date="23/02/2017"
 branch="gnu/linux"
 ##################################################
@@ -153,48 +153,48 @@ do
    exit 0
    elif [ "$arg" == "--version" ]
    then
-   echo "ENDGET: version: "$version", branch: "$branch" , revision date: "$rev_date" " 
+   echo "ENDSTREAM: version: "$version", branch: "$branch" , revision date: "$rev_date" " 
    echo "Copyright: The Endware Development Team, 2016"
    shift
    exit 0
  fi
 done
 
-echo "========================================= ENDSTREAM ======================================================================================="
-echo "||       ENGLISH           ||          FRANCAIS        ||          ESPANOL           ||         OTHER         ||          EXTRA          ||"
-echo "==========================================================================================================================================="
-echo "1) France 24 English         === FRENCH LANGUAGE ====    60) Televisa Puebla           91) NASA EARTH             121) WWE RAW             "
-echo "2) Al Jazeera English        31) France 24 Francais      61) GalaTV Queretaro          92) NASA ISS 1             122) Hubble Telescope    "
-echo "3)  Fox News                 32) Euronews Francais       62) Televisa Mexicali         93) NASA ISS 2             123) Россия 24           "
-echo "4)  CNN 1                    33) Africa News             63) GalaTV Chihuahua          94) NASA TV                124) All News            "         
-echo "5)  CNN 2                    34) Afrique Media           64) GalaTV Acapulco          ===ASIAN LANGUAGES===       125) NTV Uganda          "
-echo "6)  CBC The National         35) France Info             65) GalaTV Zacatecas          95) CCTV 4 China           126) Talking TOM         "
-echo "7)  ABC Australia            36) Mosaik TV               66) Televisa Campeche         96) EBC 51 Taiwan          127) -----               "
-echo "8)  MSNBC/CBSN               37) TLM                     67) Televisa Hermosillo       97) SHIBUYA NEWS JAPAN     128) -----               "
-echo "9)  NEWSMAX                  38) France Inter            68) GalaTV Laguna             98) QVC JAPAN              129) -----               "
-echo "10) Bloomberg                39) RFI                     69) 1070 Noticias             99) KBS World 24 Live      130) -----               "
-echo "11) Channels 24 Nigeria      ====SPANISH LANGUAGE====    70) GalaTV Toluca             100) Reporter              131) -----               "
-echo "12) Africa News              40) TeleSUR                 71) TelePacifico              101) Tugulu News           132) -----               "
-echo "13) GCTN English             41) RT Espanol              72) Noticias Agentina         102) Tv9 Marathi           133) -----               "
-echo "14) TRT World                42) DW Espanol              73) Cinevision Canal 19       103) Survana News          134) -----               "
-echo "15) TWiT                     43) NTN24                   74) Canal 8 Mar del Plata     104) News 18 India         135) -----               "
-echo "16) CNBC Africa              44) Canal 8 San Juan        75) Canal 44                  105) SAMAA TV              136) -----               "
-echo "17) PBS News Hour            45) Canal 6 San Rafael      76) Tu Cana                   106) Aaj Tak               137) -----               "
-echo "18) RSBN                     46) Canal Siete             77) VPI TV                    107) TV9 Telugu            128) -----               "
-echo "19) Amazing Facts            47) HispanTV                78) 100% Noticias Nicaragua   108) NTV Telugu            129) -----               "
-echo "20) It's Supernatural        48) Globovision             79) c5n                       109) ABN Telugu            120) -----               "  
-echo "21) IHOP                     49) Excelsior TV            80) El Capitolo Venezulana    110) Vanitha TV            131) -----               "
-echo "22) HSN                      50) Imagine Radio           81) KBS World Latino          111) HMT                   132) -----               "      
-echo "23) KTN Kenya English        51) Videos Directo          82) -----                     112) TV5                   133) -----               " 
-echo "24) Tom & Jerry              52) Q24                     83) -----                     113) 10TV Telugu           134) -----               "
-echo "25) WWE Smackdown            53) La Cáscara TV           84) -----                     114) AsiaNet               135) -----               "
-echo "26) Arirang TV               54) Televisa del Bajio      85) -----                     115) GMA Phillipeans       136) -----               "
-echo "27) India Today              55) Televisa del Golfo      86) -----                     116) Rapple Phillipeans    137) -----               "
-echo "====EUROZONE RESTRICTED===   56) Televisa Guadalajara    87) -----                     117) NTV Bangladesh        138) -----               "
-echo "28) SKY NEWS Britain         57) Televisa del Noreste    88) -----                     118) ON E                  139) Infowars            "
-echo "29) Euronews English         58) Televisa Veracruz       89) -----                     119) ON E Sport            140) TYT                 "
-echo "30) DW English               59) GalaTV Morelos          90) -----                     120) Adom TV               141) Drunken Peasents    "
-echo "==========================================================================================================================================="
+echo "========================================================          ENDSTREAM          ========================================================"
+echo "||       ENGLISH           ||          FRANCAIS        ||          ESPANOL           ||         OTHER         ||          EXTRA          ||  "
+echo "============================================================================================================================================="
+echo "1) France 24 English         === FRENCH LANGUAGE ====    60) Televisa Puebla           91) NASA EARTH             121) CBC Arabic            "
+echo "2) Al Jazeera English        31) France 24 Francais      61) GalaTV Queretaro          92) NASA ISS 1             122) Saudi 2 TV            " 
+echo "3)  Fox News                 32) Euronews Francais       62) Televisa Mexicali         93) NASA ISS 2             123) Syrian Satellite      "
+echo "4)  CNN 1                    33) Africa News             63) GalaTV Chihuahua          94) NASA TV                124) Al Mayadeen           "          
+echo "5)  CNN 2                    34) Afrique Media           64) GalaTV Acapulco          ===ASIAN LANGUAGES===       125) Al Arabiya            "
+echo "6)  i24 News                 35) France Info             65) GalaTV Zacatecas          95) CCTV 4 China           126) Al Jazeera            "
+echo "7)  -------                  36) Mosaik TV               66) Televisa Campeche         96) EBC 51 Taiwan          127) France 24             "
+echo "8)  MSNBC/CBSN               37) TLM                     67) Televisa Hermosillo       97) SHIBUYA NEWS JAPAN     128) BBC Arabic            "
+echo "9)  NEWSMAX                  38) France Inter            68) GalaTV Laguna             98) QVC JAPAN              129) SKY News Arabic       "
+echo "10) Bloomberg                39) RFI                     69) 1070 Noticias             99) KBS World 24 Live      130) RT Arabic             "
+echo "11) Channels 24 Nigeria      ====SPANISH LANGUAGE====    70) GalaTV Toluca             100) Reporter              131) Россия 24             "
+echo "12) Africa News              40) TeleSUR                 71) TelePacifico              101) Tugulu News           132) EuroNews Deutche      "
+echo "13) GCTN English             41) RT Espanol              72) Noticias Agentina         102) Tv9 Marathi           133) NTV Uganda            "
+echo "14) TRT World                42) DW Espanol              73) Cinevision Canal 19       103) Survana News          134) Hubble Telescope      "
+echo "15) TWiT                     43) NTN24                   74) Canal 8 Mar del Plata     104) News 18 India         135) Talking TOM           "
+echo "16) CNBC Africa              44) Canal 8 San Juan        75) Canal 44                  105) SAMAA TV              136) WWE RAW               "
+echo "17) PBS News Hour            45) Canal 6 San Rafael      76) Tu Cana                   106) Aaj Tak               137) All News              "
+echo "18) RSBN                     46) Canal Siete             77) VPI TV                    107) TV9 Telugu            138) ABC Australia         "
+echo "19) Amazing Facts            47) HispanTV                78) 100% Noticias Nicaragua   108) NTV Telugu            139) CBC The National      "
+echo "20) It's Supernatural        48) Globovision             79) c5n                       109) ABN Telugu            140) Infowars              "  
+echo "21) IHOP                     49) Excelsior TV            80) El Capitolo Venezulana    110) Vanitha TV            141) TYT                   "
+echo "22) HSN                      50) Imagine Radio           81) KBS World Latino          111) HMT                   142) Drunken Peasents      "      
+echo "23) KTN Kenya English        51) Videos Directo          82) -----                     112) TV5                   143) Venice Bridge         " 
+echo "24) Tom & Jerry              52) Q24                     83) -----                     113) 10TV Telugu           144) Venice Port           "
+echo "25) WWE Smackdown            53) La Cáscara TV           84) -----                     114) AsiaNet               145) Jackson Hole          "
+echo "26) Arirang TV               54) Televisa del Bajio      85) -----                     115) GMA Phillipeans       146) Jackson Hole          "
+echo "27) India Today              55) Televisa del Golfo      86) -----                     116) Rapple Phillipeans    147) Jackson Hole          "
+echo "====EUROZONE RESTRICTED===   56) Televisa Guadalajara    87) -----                     117) NTV Bangladesh        148) Verona Italy          "
+echo "28) SKY NEWS Britain         57) Televisa del Noreste    88) -----                     118) ON E                  149) Soggy Dollar          "
+echo "29) Euronews English         58) Televisa Veracruz       89) -----                     119) ON E Sport            150) Amsterdam Netherlands "
+echo "30) DW English               59) GalaTV Morelos          90) -----                     120) Adom TV               151) Florida Eagle Cam     "
+echo "============================================================================================================================================="
 echo " " 
 echo " Please Select a Number corresponding to a YouTube news live stream "
 
@@ -212,10 +212,9 @@ case $n in
 4) link=https://www.youtube.com/watch?v=hq9Mpmb80Kw ;;
 # 5) CNN Stream 2
 5) link=https://www.youtube.com/watch?v=5w5lmAgl5wU ;;
-# 6) CBC The National
-6) link=https://www.youtube.com/watch?v=CaHm4M8pGmc ;;
-# 7) ABC Australia Live NEWS
-7) link=https://www.youtube.com/watch?v=AUgAjy4lQec ;;
+# 6) i24 News
+6) link=https://www.youtube.com/watch?v=Cn1PPJyvlas ;;
+# 7) 
 # 8) CBS NEWS / MSNBC / NBC 
 8) link=https://www.youtube.com/watch?v=xCeP1FmzVos ;;
 # 9) NEWSMAX
@@ -444,41 +443,70 @@ case $n in
 # 119)  ON E Sport
 119) link=https://www.youtube.com/watch?v=ngalZ7mScqM ;;
 # 120) ADOM TV 
-121) link=https://www.youtube.com/watch?v=g5McawVm8Q4 ;;
+120) link=https://www.youtube.com/watch?v=g5McawVm8Q4 ;;
+# 121 CBC Arabic Live
+121) link=https://www.youtube.com/watch?v=FFx5r-U9ryA ;;
+# 122) Saudi 2 TV
+122) link=https://www.youtube.com/watch?v=ryYlM0IDXoQ ;;
+# 123) Syrian Satellite
+123) link=https://www.youtube.com/watch?v=YfH6U8CNp58 ;; 
+# 124) Al Mayadeen
+124) link=https://www.youtube.com/watch?v=lUDZxObNzPI ;;
+# 125) Al Arabiya
+125) link=https://www.youtube.com/watch?v=1QFrtsu1JJg ;;
+# 126) Al Jazeera Arabic
+126) link=https://www.youtube.com/watch?v=elqcDJ3TXUs ;;
+# 127) France 24 Arabic
+127) link=https://www.youtube.com/watch?v=UYi0sgVm5dM ;;
+# 128) BBC Arabic
+128) link=https://www.youtube.com/watch?v=m0RMXgxMhs8 ;;
+# 129) SKY Arabic
+129) link=https://www.youtube.com/watch?v=3GFowedvDiw ;;
+# 130) RT Arabic 
+130) link=https://www.youtube.com/watch?v=mFQA6sCQOU4 ;;
 ################### EXTRA   ########################
-# 121) WWE RAW
-121) link=https://www.youtube.com/watch?v=iu4X0XPH0X4 ;;
-# 122) Hubble Telescope
-122) link=https://www.youtube.com/watch?v=TzpO54TuSXs ;;
-# 123) Россия 24
-123) link=https://www.youtube.com/watch?v=i_Q8N6ZSDXQ ;;
-# 124) All News 
-124) link=https://www.youtube.com/watch?v=3Pxrd2br83M ;;
-# 125) NTV Uganda
-125) link=https://www.youtube.com/watch?v=CL8dsz9RRW8 ;;
-# 126) Talking Tom and Friends
-126) link=https://www.youtube.com/watch?v=Fe-fQbUWJwc ;;
-# 127)
-# 128)
-# 129)
-# 130)
-# 131)
-# 132)
-# 133)
-# 134)
-# 135)
-# 136)
-# 137)
-# 138)
-# 139)
-# 140)
-# 141)
-## 139) Infowars
-139) link=https://www.youtube.com/watch?v=5NB8PEG63II ;;
-#  140) TYT 
-140) link=https://www.youtube.com/watch?v=rjIkyTvlfZs ;;
-# 141) Drunken Peasents
-141) link=https://www.youtube.com/watch?v=bK5_pGaVoi0 ;;
+# 131) Россия 24
+131) link=https://www.youtube.com/watch?v=i_Q8N6ZSDXQ ;;
+# 132) EuroNews Deutche
+132) link=https://www.youtube.com/watch?v=VI0f9TkMo0g ;;
+# 133) NTV Uganda
+133) link=https://www.youtube.com/watch?v=CL8dsz9RRW8 ;;
+# 134) Hubble Telescope
+134) link=https://www.youtube.com/watch?v=TzpO54TuSXs ;;
+# 135) Talking Tom and Friends
+135) link=https://www.youtube.com/watch?v=Fe-fQbUWJwc ;;
+# 136) WWE RAW
+136) link=https://www.youtube.com/watch?v=iu4X0XPH0X4 ;;
+# 137) All News 
+137) link=https://www.youtube.com/watch?v=3Pxrd2br83M ;;
+# 138) ABC Australia 
+138) link=https://www.youtube.com/watch?v=AUgAjy4lQec ;;
+# 139) CBC The National
+139) link=https://www.youtube.com/watch?v=CaHm4M8pGmc ;;
+## 140) Infowars
+140) link=https://www.youtube.com/watch?v=5NB8PEG63II ;;
+#  141) TYT 
+141) link=https://www.youtube.com/watch?v=VSxKAyzdenQ ;;
+# 142) Drunken Peasents
+142) link=https://www.youtube.com/watch?v=bK5_pGaVoi0 ;;
+# 143) Venice Italy Bridge Cam Live
+143) link=https://www.youtube.com/watch?v=vPbQcM4k1Ys ;;
+# 144) Venice Italy Port Cam Live
+144) link=https://www.youtube.com/watch?v=Hzn2eBdqYWc ;;
+# 145) Jackson Hole Intersection
+145) link=https://www.youtube.com/watch?v=psfFJR3vZ78 ;;
+# 146) Jackson Hole Town Square
+146) link=https://www.youtube.com/watch?v=cyHBMTgTGfo ;;
+# 147) Jackson Hole Rustic Inn
+147) link=https://www.youtube.com/watch?v=KdvHzgcElx0 ;;
+# 148) Verona Italy
+148) link=https://www.youtube.com/watch?v=LT3IT2wt8Fw ;;
+# 149) Soggy Dollar Bar
+149) link=https://www.youtube.com/watch?v=IjGdi7z_B4U ;;
+#  150) Amsterdam Netherlands
+150) link=https://www.youtube.com/watch?v=5FrCtTCYVWI ;;
+#  151) Florida Eagle Cam
+151) link=https://www.youtube.com/watch?v=pCZeVTMEsik ;;
 ##########################################################################
 esac
 
