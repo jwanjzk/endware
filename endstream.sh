@@ -9,7 +9,7 @@
 # Version: 0.08
 # Revision Date: February 24, 2017
 #
-# Change Log:  - dailymotion + twitch livestream additions 
+# Change Log:  - dailymotion + twitch + fix channel list
 #              - Add channels, rearange, remove dead streams
 #              - Rearanged the channels, added more channels
 #              - File creation, testing, remove dead streams
@@ -177,24 +177,24 @@ echo "6)  Fox News               39) France Inter              74) Televisa del 
 echo "7)  MSNBC/CBSN             40) RFI                       75) Televisa Veracruz       109) EBC 51 Taiwan       144) POCCNR 24 Russia            "
 echo "8)  NEWSMAX                41) Max FM 92.9               76) GalaTV Morelos          110) SHIBUYA NEWS JAPAN  145) Talking TOM                 "
 echo "9)  Bloomberg              42) M7 TV Mali                77) Televisa Puebla         111) QVC JAPAN           146) WWE RAW                     "
-echo "10) Channels 24 Nigeria    43) France Inter              78) Cinevision Canal 19     112) KBS World 24 Live   147) Venice Bridge               "
-echo "11) Africa News            44) RTL En Direct             79) GalaTV Queretaro        113) KBS World English   148) Venice Port                 "
-echo "12) TRT World              45) STRACK DANCE              80) Televisa Mexicali       114) Tugulu News         149) Jackson Hole Intersection   "
-echo "13) ABS-CBN                46) Direct Journal TVLandes   81) GalaTV Acapulco         115) Tv9 Marathi         150) Jackson Hole Town Square    "
-echo "14) TWiT                   47) CNEWS                     82) GalaTV Zacatecas        116) Survana News        151) Jackson Hole Rustic Inn     "
-echo "15) CNBC Africa            48) BMF TV                    83) Televisa Hermosillo     117) News 18 India       152) Verona Italy                "
-echo "16) NTV Uganda             49) Europe 1                  84) GalaTV Laguna           118) SAMAA TV            153) Soggy Dollar BVI            "
-echo "17) RSBN                   50) i24 France                85) 1070 Noticias           119) Aaj Tak             154) Amsterdam Netherlands       "
-echo "18) Amazing Facts          51) France Info Radio         86) GalaTV Toluca           120) TV9 Telugu          155) ESL League of Legends       "
-echo "19) It's Supernatural      52) France Info TV            87) TelePacifico            121) NTV Telugu          156) Poker TV                    "
+echo "10) Channels 24 Nigeria    43) France Inter              78) GalaTV Queretaro        112) KBS World 24 Live   147) Venice Bridge               "
+echo "11) Africa News            44) RTL En Direct             79) Televisa Mexicali       113) KBS World English   148) Venice Port                 "
+echo "12) TRT World              45) STRACK DANCE              80) GalaTV Acapulco         114) Tugulu News         149) Jackson Hole Intersection   "
+echo "13) ABS-CBN                46) Direct Journal TVLandes   81) GalaTV Zacatecas        115) Tv9 Marathi         150) Jackson Hole Town Square    "
+echo "14) TWiT                   47) CNEWS                     82) Televisa Hermosillo     116) Survana News        151) Jackson Hole Rustic Inn     "
+echo "15) CNBC Africa            48) BMF TV                    83) GalaTV Laguna           117) News 18 India       152) Verona Italy                "
+echo "16) NTV Uganda             49) Europe 1                  84) 1070 Noticias           118) SAMAA TV            153) Soggy Dollar BVI            "
+echo "17) RSBN                   50) i24 France                85) GalaTV Toluca           119) Aaj Tak             154) Amsterdam Netherlands       "
+echo "18) Amazing Facts          51) France Info Radio         86) TelePacifico            120) TV9 Telugu          155) ESL League of Legends       "
+echo "19) It's Supernatural      52) France Info TV            87) Cinevision Canal 19     121) NTV Telugu          156) Poker TV                    "
 echo "20) IHOP                   53) LCP FRANCE                88) Canal 8 Mar del Plata   122) ABN Telugu          157) High Stakes Poker           "  
 echo "21) HSN                    54) Public Senate             89) Tu Cana                 123) Vanitha TV          158) All News                    "
 echo "22) KTN Kenya English      55) Presidence de la Republic 90) VPI TV                  124) HMT                 159) ABC Australia               "      
 echo "23) Tom & Jerry            56) Globovision               91) 100% Noticias Nicaragua 125) TV5                 160) CBC The National            " 
 echo "24) WWE Smackdown          57) TeleSUR                   92) El Capitolo Venezulana  126) 10TV Telugu         161) Infowars                    "
 echo "25) Arirang TV             58) RT Espanol                93) EuroNews Deutche        127) AsiaNet             162) TYT                         "
-echo "26) India Today            59) DW Espanol                94) DW English              128) NTV Bangladesh      163) PBS News Hour               "
-echo "27) NASA TV                60) NTN24                     95) Euronews English        129) PTV Phillipeans     164) ---------------             "
+echo "26) India Today            59) DW Espanol                94) Euronews English        128) NTV Bangladesh      163) PBS News Hour               "
+echo "27) NASA TV                60) NTN24                     95) DW English              129) PTV Phillipeans     164) ---------------             "
 echo "28) TWiT Twitch            61) Canal 8 San Juan          96) SKY NEWS Britain        130) ------              165) ---------------             "
 echo "29) ---------------        62) Canal 6 San Rafael        97) ----------------        131) ON E Arabic         166) ---------------             "
 echo "=== FRENCH LANGUAGE ====   63) Canal Siete               98) ----------------        132) ON E Sport          167) ---------------             "
@@ -493,15 +493,15 @@ chan_name="Globovision" ;;
 # 93)  EuroNews Deutche
 93) link=https://www.youtube.com/watch?v=dYJ0kTqeu08 
     chan_name="EuroNews Deutche" ;;
-# 94) SKY NEWS
-94) link=https://www.youtube.com/watch?v=y60wDzZt8yg 
-    chan_name="SKY NEWS" ;;
-# 95) Euronews English Live
-95) link=https://www.youtube.com/watch?v=Nxid1JTdfrk 
+# 94) Euronews English Live
+94) link=https://www.youtube.com/watch?v=Nxid1JTdfrk 
     chan_name="Euronews English" ;;
-# 96) DW English
-96) link=https://www.youtube.com/watch?v=gNosnzCaS4I 
+# 95) DW English
+95) link=https://www.youtube.com/watch?v=gNosnzCaS4I 
     chan_name="DW English" ;;
+# 96) SKY NEWS
+96) link=https://www.youtube.com/watch?v=y60wDzZt8yg 
+    chan_name="SKY NEWS" ;;   
 ###############     OTHER STREAMS   #####################################    
 # 104) NASA LIVE STREAM 1
 104) link=https://www.youtube.com/watch?v=SF7FUU7CThs 
