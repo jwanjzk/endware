@@ -6,10 +6,11 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.08
-# Revision Date: February 24, 2017
+# Version: 0.09
+# Revision Date: February 25, 2017
 #
-# Change Log:  - dailymotion + twitch + fix channel list
+# Change Log:  - Add firejail before mpv, remove dead streams
+#              - dailymotion + twitch + fix channel list
 #              - Add channels, rearange, remove dead streams
 #              - Rearanged the channels, added more channels
 #              - File creation, testing, remove dead streams
@@ -140,8 +141,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.08"
-rev_date="24/02/2017"
+version="0.09"
+rev_date="25/02/2017"
 branch="gnu/linux"
 ##################################################
 for arg in $@
