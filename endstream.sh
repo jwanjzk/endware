@@ -208,6 +208,12 @@ echo "==========================================================================
 echo " " 
 echo "Please Select a Number corresponding to a YouTube Live Stream:"
 
+############# DEFAULT SELECTION #######################
+# in case of non-numeric entry 
+ link=https://www.youtube.com/watch?v=1Ydto3Iyzic 
+ chan_name="France 24 English"
+#######################################################
+
 read n
 
 case $n in 
@@ -767,7 +773,6 @@ chan_name="CNN" ;;
 #    chan_name="NTV Uganda" ;; 
 
 esac
-
 
 echo "$chan_name"
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv "$link" 
