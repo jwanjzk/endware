@@ -191,15 +191,15 @@ echo "20) IHOP                   53) LCP FRANCE                88) Canal 8 Mar d
 echo "21) HSN                    54) Public Senate             89) Tu Cana                 123) Vanitha TV          158) All News                    "
 echo "22) KTN Kenya English      55) Presidence de la Republic 90) VPI TV                  124) HMT                 159) ABC Australia               "      
 echo "23) Tom & Jerry            56) Globovision               91) 100% Noticias Nicaragua 125) TV5                 160) Bukedde TV                  " 
-echo "24) WWE Smackdown          57) TeleSUR                   92) El Capitolo Venezulana  126) 10TV Telugu         161) ------------                "
-echo "25) Arirang TV             58) RT Espanol                93) EuroNews Deutche        127) AsiaNet             162) ------------                "
-echo "26) India Today            59) DW Espanol                94) Euronews English        128) NTV Bangladesh      163) ------------                "
+echo "24) WWE Smackdown          57) TeleSUR                   92) El Capitolo Venezulana  126) 10TV Telugu         161) YTN 24 Korea                "
+echo "25) Arirang TV             58) RT Espanol                93) EuroNews Deutche        127) AsiaNet             162) Makkah Live                 "
+echo "26) India Today            59) DW Espanol                94) Euronews English        128) NTV Bangladesh      163) TMT 14 Korea                "
 echo "27) NASA TV                60) NTN24                     95) DW English              129) PTV Phillipeans     164) Caillou                     "
 echo "28) TWiT Twitch            61) Canal 8 San Juan          96) SKY NEWS Britain        130) SunNews             165) Sponge Bob                  "
-echo "29) TVC Nigeria            62) Canal 6 San Rafael        97) TOLO NEWS Afghan        131) ON E Arabic         166) --------------              "
-echo "=== FRENCH LANGUAGE ====   63) Canal Siete               98) TV9 India Live          132) ON E Sport          167) --------------              "
-echo "30) France 24 Francais     64) HispanTV                  99) Rajya Sabha TV          133) Adom TV             168) --------------              "
-echo "31) France Info TV         65) Globovision               100) Public TV India        134) CBC Arabic          169) --------------              "
+echo "29) TVC Nigeria            62) Canal 6 San Rafael        97) TOLO NEWS Afghan        131) ON E Arabic         166) CNN                         "
+echo "=== FRENCH LANGUAGE ====   63) Canal Siete               98) TV9 India Live          132) ON E Sport          167) Sheppard's Chapel           "
+echo "30) France 24 Francais     64) HispanTV                  99) Rajya Sabha TV          133) Adom TV             168) CNN                         "
+echo "31) France Info TV         65) Globovision               100) Public TV India        134) CBC Arabic          169) Weather News Japan          "
 echo "32) France 24 Francais     66) Excelsior TV              101) Sandesh News           135) Saudi 2 TV          170) ----------------            " 
 echo "32) France 24 Francais     67) Imagine Radio             102) DD News India          136) Syrian Satellite    171) ----------------            "
 echo "33) Euronews Francais      68) Videos Directo            103) Dawn News Pakistan     137) Al Mayadeen         172) TYT                         "
@@ -703,19 +703,35 @@ chan_name="SunNews" ;;
 # 160 Bukedde TV
 160) link=https://www.youtube.com/watch?v=aUC5KHqQ998
 chan_name="Bukedde TV" ;; 
-# 161) 
-# 162)
-# 163)   
+# 161) YTN 24 Korea
+161) link=https://www.youtube.com/watch?v=YwbpBIabRmo
+chan_name="YTN 24 Korea" ;; 
+# 162) Makkha Live (Mecca Kaaba)
+162) link=https://www.youtube.com/watch?v=0b1IMR2H_7s
+chan_name="Mecca Kaaba Live" ;;
+# 163) TMT 14 Korea
+163) link=https://www.youtube.com/watch?v=9AvY8tmMMfw
+chan_name="TMT 14 Korea" ;;  
 # 164) Caillou Cartoons
-164) link=https://www.youtube.com/watch?v=P3IW9yihJCU;
+164) link=https://www.youtube.com/watch?v=P3IW9yihJCU
 chan_name="Caillou" ;;     
 # 165) Sponge Bob 
-165) link=https://www.youtube.com/watch?v=jKMrnibHAK
+165) link=https://www.youtube.com/watch?v=jKMrnibHAKc
 chan_name="Sponge Bob" ;;     
-#166
-#167
-#168
-#169
+# 166) CNN
+166) link=https://www.youtube.com/watch?v=75iwNXmEB7s
+chan_name="CNN" ;;
+#167 Sheppard's Chapel
+167) link=https://www.youtube.com/watch?v=75iwNXmEB7s
+chan_name="Sheppard's Chapel" ;;
+#168 CNN
+168) link=https://www.youtube.com/watch?v=kPp0jrylv0w
+chan_name="CNN" ;;
+#169 Weather News Japan
+169) link=https://www.youtube.com/watch?v=kfTq_A9nBM0
+chan_name="Weather News Japan";;
+# 170
+# 171
 # 172) TYT 
 172) link=https://www.youtube.com/watch?v=PwQytnO9UpM
      chan_name="TYT The Young Turks" ;;
