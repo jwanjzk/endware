@@ -185,24 +185,24 @@ echo "14) TWiT                   47) CNEWS                     82) Televisa Herm
 echo "15) CNBC Africa            48) BMF TV                    83) GalaTV Laguna           117) News 18 India       152) Verona Italy                "
 echo "16) NTV Uganda             49) Europe 1                  84) 1070 Noticias           118) SAMAA TV            153) Soggy Dollar BVI            "
 echo "17) RSBN                   50) i24 France                85) GalaTV Toluca           119) Aaj Tak             154) Amsterdam Netherlands       "
-echo "18) Amazing Facts          51) France Info Radio         86) TelePacifico            120) TV9 Telugu          155) ESL League of Legends       "
+echo "18) Amazing Facts          51) France Info Radio         86) TelePacifico            120) TV9 Live            155) ESL League of Legends       "
 echo "19) It's Supernatural      52) France Info TV            87) Cinevision Canal 19     121) NTV Telugu          156) Poker TV                    "
 echo "20) IHOP                   53) LCP FRANCE                88) Canal 8 Mar del Plata   122) ABN Telugu          157) High Stakes Poker           "  
 echo "21) HSN                    54) Public Senate             89) Tu Cana                 123) Vanitha TV          158) All News                    "
 echo "22) KTN Kenya English      55) Presidence de la Republic 90) VPI TV                  124) HMT                 159) ABC Australia               "      
-echo "23) Tom & Jerry            56) Globovision               91) 100% Noticias Nicaragua 125) TV5                 160) CBC The National            " 
-echo "24) WWE Smackdown          57) TeleSUR                   92) El Capitolo Venezulana  126) 10TV Telugu         161) Infowars                    "
-echo "25) Arirang TV             58) RT Espanol                93) EuroNews Deutche        127) AsiaNet             162) TYT                         "
-echo "26) India Today            59) DW Espanol                94) Euronews English        128) NTV Bangladesh      163) PBS News Hour               "
-echo "27) NASA TV                60) NTN24                     95) DW English              129) PTV Phillipeans     164) ---------------             "
-echo "28) TWiT Twitch            61) Canal 8 San Juan          96) SKY NEWS Britain        130) ------              165) ---------------             "
-echo "29) ---------------        62) Canal 6 San Rafael        97) ----------------        131) ON E Arabic         166) ---------------             "
-echo "=== FRENCH LANGUAGE ====   63) Canal Siete               98) ----------------        132) ON E Sport          167) ---------------             "
-echo "30) France 24 Francais     64) HispanTV                  99) ----------------        133) Adom TV             168) ----------------            "
-echo "31) France Info TV         65) Globovision               100) ---------------        134) CBC Arabic          169) ----------------            "
-echo "32) France 24 Francais     66) Excelsior TV              101) ---------------        135) Saudi 2 TV          170) ----------------            " 
-echo "32) France 24 Francais     67) Imagine Radio             102) ---------------        136) Syrian Satellite    171) ----------------            "
-echo "33) Euronews Francais      68) Videos Directo            103) ---------------        137) Al Mayadeen         172) ----------------            "
+echo "23) Tom & Jerry            56) Globovision               91) 100% Noticias Nicaragua 125) TV5                 160) Bukedde TV                  " 
+echo "24) WWE Smackdown          57) TeleSUR                   92) El Capitolo Venezulana  126) 10TV Telugu         161) ------------                "
+echo "25) Arirang TV             58) RT Espanol                93) EuroNews Deutche        127) AsiaNet             162) ------------                "
+echo "26) India Today            59) DW Espanol                94) Euronews English        128) NTV Bangladesh      163) ------------                "
+echo "27) NASA TV                60) NTN24                     95) DW English              129) PTV Phillipeans     164) Caillou                     "
+echo "28) TWiT Twitch            61) Canal 8 San Juan          96) SKY NEWS Britain        130) SunNews             165) Sponge Bob                  "
+echo "29) TVC Nigeria            62) Canal 6 San Rafael        97) TOLO NEWS Afghan        131) ON E Arabic         166) --------------              "
+echo "=== FRENCH LANGUAGE ====   63) Canal Siete               98) TV9 India Live          132) ON E Sport          167) --------------              "
+echo "30) France 24 Francais     64) HispanTV                  99) Rajya Sabha TV          133) Adom TV             168) --------------              "
+echo "31) France Info TV         65) Globovision               100) Public TV India        134) CBC Arabic          169) --------------              "
+echo "32) France 24 Francais     66) Excelsior TV              101) Sandesh News           135) Saudi 2 TV          170) ----------------            " 
+echo "32) France 24 Francais     67) Imagine Radio             102) DD News India          136) Syrian Satellite    171) ----------------            "
+echo "33) Euronews Francais      68) Videos Directo            103) Dawn News Pakistan     137) Al Mayadeen         172) TYT                         "
 echo "==============================================================================================================================================="
 echo " " 
 echo "Please Select a Number corresponding to a YouTube Live Stream:"
@@ -224,8 +224,8 @@ case $n in
 4) link=https://www.youtube.com/watch?v=ArNFMKxtsxY 
    chan_name="i24 Israel English" ;;
 # 5) Fox News
-5) link=https://www.youtube.com/watch?v=Z7HSAnWCUQw 
-   chan_name="Fox News" ;;
+5) link=https://www.youtube.com/watch?v=SomOsUzxlXc
+chan_name="Fox News" ;;
 # 6) Fox News
 6) link=https://www.youtube.com/watch?v=lYbEYo5-b6U 
    chan_name="Fox News" ;;
@@ -296,7 +296,9 @@ case $n in
 # 28) TWiT on Twitch
 28) link=https://www.twitch.tv/twit 
     chan_name="TWiT on Twitch" ;;
-# 29
+# 29) TVC Nigeria
+29) link=https://www.youtube.com/watch?v=qRaDbwYys30 
+ chan_name="TVC Nigeria" ;;
 #################    FRENCH   ###################################
 # 30) France 24 
 30) link=http://www.dailymotion.com/video/xigbvx_live-france-24_news
@@ -502,6 +504,27 @@ chan_name="Globovision" ;;
 # 96) SKY NEWS
 96) link=https://www.youtube.com/watch?v=y60wDzZt8yg 
     chan_name="SKY NEWS" ;;   
+# 97) TOLO NEWS
+97) link=https://www.youtube.com/watch?v=-CONWzwDqTA
+chan_name="TOLO NEWS";;    
+# 98) TV9 India Live
+98) link=https://www.youtube.com/watch?v=aFU2xAWkRJ8 
+chan_name="TV9 Live India";;    
+# 99) Rajya Sabha TV
+99) link=https://www.youtube.com/watch?v=oPpYUy__VaQ
+chan_name="Rajya Sabha" ;;
+# 100) Public TV India
+100) link=https://www.youtube.com/watch?v=dccFagg0tDU
+chan_name="Public TV India" ;;
+# 101 Sandesh News
+101) link=https://www.youtube.com/watch?v=qsl7g3hEx2U 
+chan_name="Sandesh News" ;;
+# 102) DD News
+101) link=https://www.youtube.com/watch?v=23EG0wfvcYU
+chan_name="DD News" ;;  
+# 168) Dawn News
+103) link=https://www.youtube.com/watch?v=f0ZIpFKjpKU
+chan_name="Dawn News" ;;
 ###############     OTHER STREAMS   #####################################    
 # 104) NASA LIVE STREAM 1
 104) link=https://www.youtube.com/watch?v=SF7FUU7CThs 
@@ -555,8 +578,8 @@ chan_name="Globovision" ;;
 # 119) Aaj Tak 
 119) link=https://www.youtube.com/watch?v=oMETNh3Tr0Q 
      chan_name="Aaj Tak" ;;
-# 120) TV9 Telugu
-120) link=https://www.youtube.com/watch?v=-ZcgjH9MNtI 
+     # 120) TV9 Telugu
+120) link=https://www.youtube.com/watch?v=QWsESTCbIf0 
      chan_name="TV9 Telugu" ;;
 # 121) NTV Telugu
 121) link=https://www.youtube.com/watch?v=T953eK1GXbA 
@@ -585,7 +608,9 @@ chan_name="Globovision" ;;
 # 129) PTV
 129) link=https://www.youtube.com/watch?v=ltl9qs0HEAQ 
      chan_name="PTV Phillipeans" ;;
-# 130)
+# 130) SunNews 
+130) link=https://www.youtube.com/watch?v=QpiEINgQa3I
+chan_name="SunNews" ;;
 ################## ARABIC  ###########################################
 # 131) ON E Live 
 131) link=https://www.youtube.com/watch?v=mcsYSFZV4bw 
@@ -673,20 +698,28 @@ chan_name="Globovision" ;;
 158) link=https://www.youtube.com/watch?v=3Pxrd2br83M 
      chan_name="All News" ;;
 # 159) ABC News Australia 
-159) link=https://www.youtube.com/watch?v=AUgAjy4lQec 
+159) link=https://www.youtube.com/watch?v=fzqQa5x7NLA 
      chan_name="ABC News Australia" ;;
-# 160) CBC The National
-160) link=https://www.youtube.com/watch?v=U1yntyNAQv0 
-     chan_name="CBC The National" ;;
-## 161) Infowars
-161) link=https://www.youtube.com/watch?v=5NB8PEG63II 
-     chan_name="Infowars" ;;
-#  162) TYT 
-162) link=https://www.youtube.com/watch?v=VSxKAyzdenQ 
+# 160 Bukedde TV
+160) link=https://www.youtube.com/watch?v=aUC5KHqQ998
+chan_name="Bukedde TV" ;; 
+# 161) 
+# 162)
+# 163)   
+# 164) Caillou Cartoons
+164) link=https://www.youtube.com/watch?v=P3IW9yihJCU;
+chan_name="Caillou" ;;     
+# 165) Sponge Bob 
+165) link=https://www.youtube.com/watch?v=jKMrnibHAK
+chan_name="Sponge Bob" ;;     
+#166
+#167
+#168
+#169
+# 172) TYT 
+172) link=https://www.youtube.com/watch?v=PwQytnO9UpM
      chan_name="TYT The Young Turks" ;;
-# 163) PBS NEWS 
-163) link=https://www.youtube.com/watch?v=77tjdk941YU  
-     chan_name="PBS News hour" ;;     
+
 
 
 ##########################################################################
