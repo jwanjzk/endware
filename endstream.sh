@@ -190,19 +190,19 @@ echo "19) It's Supernatural      52) France Info TV            87) Cinevision Ca
 echo "20) IHOP                   53) LCP FRANCE                88) Canal 8 Mar del Plata   122) NTV Telugu          157) High Stakes Poker           "  
 echo "21) HSN                    54) Public Senate             89) Tu Cana                 123) ABN Telugu          158) All News                    "
 echo "22) KTN Kenya English      55) Presidence de la Republic 90) VPI TV                  124) Vanitha TV          159) POCCNR 24 Russia            "      
-echo "23) Tom & Jerry            56) Globovision               91) 100% Noticias Nicaragua 125) HMT                 160) ----------                  " 
-echo "24) Sheppard's Channel     57) TeleSUR                   92) El Capitolo Venezulana  126) TV5                 161) Tugulu News                 "
-echo "25) Arirang TV             58) RT Espanol                93) EuroNews Deutche        127) 10TV Telugu         162) Tv9 Marathi                 "
-echo "26) India Today            59) DW Espanol                94) Euronews English        128) AsiaNet             163) -----------                 "
+echo "23) Tom & Jerry            56) Globovision               91) 100% Noticias Nicaragua 125) HMT                 160) Ukraine 5                   " 
+echo "24) Sheppard's Channel     57) TeleSUR                   92) El Capitolo Venezulana  126) TV5                 161) Ukraine 112                 "
+echo "25) Arirang TV             58) RT Espanol                93) EuroNews Deutche        127) 10TV Telugu         162) News 1 Ukraine              "
+echo "26) India Today            59) DW Espanol                94) Euronews English        128) AsiaNet             163) Ecnpeco Russia              "
 echo "27) NASA TV                60) NTN24                     95) DW English              129) NTV Bangladesh      164) Caillou                     "
 echo "28) TWiT Twitch            61) Canal 8 San Juan          96) SKY NEWS Britain        130) PTV Phillipeans     165) Sponge Bob                  "
 echo "29) ABC Australia          62) Canal 6 San Rafael        97) TOLO NEWS Afghan        131) SunNews             166) CNN                         "
-echo "=== FRENCH LANGUAGE ====   63) Canal Siete               98) TV9 India Live          132) ON E Arabic         167) -----------                 "
-echo "30) France 24 Francais     64) HispanTV                  99) Rajya Sabha TV          133) ON E Sport          168) -----------                 "
+echo "=== FRENCH LANGUAGE ====   63) Canal Siete               98) TV9 India Live          132) ON E Arabic         167) Tugulu News                 "
+echo "30) France 24 Francais     64) HispanTV                  99) Rajya Sabha TV          133) ON E Sport          168) Tv9 Marathi                 "
 echo "31) France Info TV         65) Globovision               100) Public TV India        134) CBC Arabic          169) TVC Nigeria                 "
 echo "32) France 24 Francais     66) Excelsior TV              101) Sandesh News           135) Saudi 2 TV          170) Adom TV                     " 
 echo "32) France 24 Francais     67) Imagine Radio             102) DD News India          136) Syrian Satellite    171) Bukedde TV                  "
-echo "33) Euronews Francais      68) --------------            103) Dawn News Pakistan     137) Al Mayadeen         172) TYT                         "
+echo "33) Euronews Francais      68) Thromadske Ukraine      103) Dawn News Pakistan     137) Al Mayadeen         172) TYT                         "
 echo "==============================================================================================================================================="
 echo " " 
 echo "Please Select a Number corresponding to a YouTube Live Stream:"
@@ -415,7 +415,9 @@ chan_name="Globovision" ;;
 # 67) Imagine Radio
 67) link=https://www.youtube.com/watch?v=OSOXIMOxpEw 
     chan_name="Imagine Radio" ;;
-# 68)
+# 68) Thromadske Ukraine
+68) link=https://www.youtube.com/watch?v=FKVBsbuVt-I
+chan_name="Thromadske Ukraine" ;;
 # 69) Q24
 69) link=https://www.youtube.com/watch?v=yZGc05q7ajA 
     chan_name="Q24";;
@@ -695,17 +697,21 @@ chan_name="Mecca Kaaba Live" ;;
 # 158) All News 
 158) link=https://www.youtube.com/watch?v=3Pxrd2br83M 
      chan_name="All News" ;;
-# 159)  Россия 24
+# 159) Россия 24
 159) link=https://www.youtube.com/watch?v=i_Q8N6ZSDXQ 
-     chan_name=" PoccNR 24 Russia" ;;
-# 160 
-# 161) Telugu News
-161) link=https://www.youtube.com/watch?v=kg48DXa4bKE 
-     chan_name="Telugu News" ;;
-# 162) Tv9 Marathi
-162) link=https://www.youtube.com/watch?v=BremLDr3lgA 
-     chan_name="Tv9 Marathi" ;;
-# 163)
+     chan_name="POCCNR 24 Russia" ;;
+# 160) Ukraine Channel 5 
+160) link=https://www.youtube.com/watch?v=jPIlMhyDD50
+chan_name="Ukraine 5" ;;
+# 161 Ukraine 112
+161) link=https://www.youtube.com/watch?v=vGNm5IFXm8U
+chan_name="Ukraine 112" ;;
+# 162 News 1 Ukraine
+162) link=https://www.youtube.com/watch?v=yA30K3z5PSw
+chan_name="News 1 Ukraine" ;;
+# 163) Еспресо Russia
+163) link=https://www.youtube.com/watch?v=vgGlOqt5QKw
+chan_name="Ecnpeco Russia" ;;
 # 164) Caillou Cartoons
 164) link=https://www.youtube.com/watch?v=P3IW9yihJCU
 chan_name="Caillou" ;;     
@@ -715,8 +721,12 @@ chan_name="Sponge Bob" ;;
 # 166) CNN
 166) link=https://www.youtube.com/watch?v=75iwNXmEB7s
 chan_name="CNN" ;;
-#167  
-#168 
+# 167) Telugu News
+167) link=https://www.youtube.com/watch?v=kg48DXa4bKE 
+     chan_name="Telugu News" ;;  
+#168 Tv9 Marathi
+168) link=https://www.youtube.com/watch?v=BremLDr3lgA 
+     chan_name="Tv9 Marathi" ;;
 # 169 TVC Nigeria
 169) link=https://www.youtube.com/watch?v=qRaDbwYys30 
  chan_name="TVC Nigeria" ;;
@@ -729,7 +739,7 @@ chan_name="Bukedde TV" ;;
 # 172) TYT 
 172) link=https://www.youtube.com/watch?v=PwQytnO9UpM
      chan_name="TYT The Young Turks" ;;
-
+# 173 
 
 
 ##########################################################################
