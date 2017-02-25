@@ -16,7 +16,7 @@
 #
 #
 #####################################################################
-# Dependencies: youtube-dl, mpv, read
+# Dependencies: youtube-dl, mpv, read , firejail
 #####################################################################
 # Instructions:  make a directory ~/bin and copy this file there, add this to the $PATH
 #                then make the file executable and run it.
@@ -176,7 +176,7 @@ echo "5) NEWSMAX                 38) TLM 30 Lyon               73) Televisa Guad
 echo "6) TRT World               39) France Inter              74) Televisa del Noreste    108) CCTV 4 China        143) RT Arabic                   "
 echo "7) Channels 24 Nigeria     40) RFI                       75) Televisa Veracruz       109) EBC 51 Taiwan       144) Makkah Live                 "
 echo "8) Africa News             41) Max FM 92.9               76) GalaTV Morelos          110) SHIBUYA NEWS JAPAN  145) Talking TOM                 "
-echo "9)  Fox News               42) M7 TV Mali                77) Televisa Puebla         111) QVC JAPAN           146) WWE RAW                     "
+echo "9)  ---------              42) M7 TV Mali                77) Televisa Puebla         111) QVC JAPAN           146) WWE RAW                     "
 echo "10) Fox News               43) France Inter              78) GalaTV Queretaro        112) SoL!ve 24 Japan     147) Venice Bridge               "
 echo "11) MSNBC/CBSN             44) RTL En Direct             79) Televisa Mexicali       113) KBS World 24 Live   148) Venice Port                 "
 echo "12) ABS-CBN                45) STRACK DANCE              80) GalaTV Acapulco         114) KBS World English   149) Jackson Hole Intersection   "
@@ -235,9 +235,7 @@ case $n in
 # 8) Africa News Live
 8) link=https://www.youtube.com/watch?v=zcWWdvRaaSA 
     chan_name="Africa News English";;
-# 9) Fox News
-9) link=https://www.youtube.com/watch?v=SomOsUzxlXc
-chan_name="Fox News" ;;
+# 9)
 # 10) Fox News
 10) link=https://www.youtube.com/watch?v=lYbEYo5-b6U 
    chan_name="Fox News" ;;
@@ -771,7 +769,7 @@ esac
 
 
 echo "$chan_name"
-mpv "$link" 
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv "$link" 
 
 echo "You were watching "$chan_name" on Channel "$n" "
 echo "Type endstream to open a new stream."
