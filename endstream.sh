@@ -149,6 +149,54 @@ branch="gnu/linux"
 ##################################################
 
 chan_columns="$HOME/bin/streams.txt"
+### Define function for displaying channels
+channel_matrix()
+{
+   echo "==================================================================      ENDSTREAM  "$version"   ==============================================================================="
+   echo "||       ENGLISH         ||          FRANCAIS          ||          ESPANOL           ||         OTHER         ||            EXTRA             ||          MEGA          ||"
+   echo "=========================================================================================================================================================================="
+   echo "1) France 24 English       38) TLM 30 Lyon               75) Televisa Veracruz         111) Vanitha TV             148) Al Arabiya               182) SHIBUYA JAPAN      "         
+   echo "2) Al Jazeera English      39) France Inter              76) GalaTV Morelos            112) HMT112) HMT            149) Al Jazeera               183) NASA EARTH         " 
+   echo "3) i24 News                40) RFI                       77) Televisa Puebla           113) TV5                    150) France 24 Arabic         184) NASA ISS 1        "  
+   echo "4) Bloomberg               41) Max FM 92.9               78) GalaTV Queretaro          114) 10TV Telugu            151) BBC Arabic               185) NASA ISS 2        "            
+   echo "5) NEWSMAX                 42) M7 TV Mali                79) Televisa Mexicali         115) AsiaNet                152) SKY News Arabic          186) Hubble Telescope  " 
+   echo "6) TRT World               43) France Inter              80) GalaTV Acapulco           116) NTV Bangladesh         153) RT Arabic                187) Ocean Explorer    " 
+   echo "7) Channels 24 Nigeria     44) RTL En Direct             81) GalaTV Zacatecas          117) SunNews                154) Makkah Live               =======OTHER=======|  "
+   echo "8) Africa News             45) ------------              82) Televisa Hermosillo       118) TV9 India Live         155) ON E Arabic              188) SKY NEWS Britain  "
+   echo "9) CGTN China              46) Direct Journal TVLandes   83) GalaTV Laguna             119) Reporter TV            156) ON E Sport               189) Euronews English  "
+   echo "10) ABC Australia          47) CNEWS                     84) 1070 Noticias             120) Rajya Sabha TV          ==========AFRICAN==========  190) DW English        "
+   echo "11) TWiT                   48) BMF TV                    85) GalaTV Toluca             121) Public TV India        157) TVC Nigeria              191) Euronews Deutche  "
+   echo "12) Amazing Facts          49) Europe 1                  86) TelePacifico              122) Sandesh News           158) Adom TV                  193) ------------       "
+   echo "13) Its Supernatural       50) i24 France                87) Cinevision Canal 19       123) DD News India          159) Bukedde TV               194) ------------       "
+   echo "14) Sheppards Chapel       51) France Info TV            88) Canal 8 Mar del Plata     124) Tugulu News            ==========RUSSIAN==========   195) ------------       "
+   echo "15) IHOP                   52) France Info Radio         89) Tu Cana                   125) Tv9 Marathi            160) POCCNR 24 Russia         196) ------------       "  
+   echo "16) KTN Kenya English      53) LCP FRANCE                90) VPI TV                    126) Dawn News Pakistan     161) Ukraine 5                197) ------------       "
+   echo "17) HSN                    54) Public Senate             91) 100% Noticias Nicaragua   127) TOLO NEWS Afghan       162) Ukraine 112              198) ------------       "
+   echo "18) Arirang TV             55) Presidence de la Republic 92) El Capitolo Venezulana    128) Bol TV Pakistan        163) News 1 Ukraine           199) ------------       "	
+   echo "19) India Today             =====SPANISH LANGUAGE=====   93) Sures TV Campeche         129) 92 News Pakistan       164) Ecnpeco Ukraine          200) ------------       "
+   echo "20) NASA TV                56) Globovision Low           =======ASIAN LANGUAGE=====    130) Tamil Live News        165) Thromadske Ukraine       201) ------------       "  
+   echo "21) TWiT Twitch            57) TeleSUR                   94) CCTV 4 China              131) Media One News         =========ENTERTAINMENT======  202) ------------       "
+   echo "22) RSBN                   58) RT Espanol                95) EBC 51 Taiwan             132) News 7 Tamil           166) Talking Tom              203) ------------       "       
+   echo "23) CVR English India      59) DW Espanol                96)  -----------              133) Samaya News            167) Tom & Jerry              204) ------------       "  
+   echo "24) i24 News               60) NTN24                     97)  QVC JAPAN                134) 4tv News India         168) Caillou                  205) ------------       "
+   echo "25) ---------------        61) Canal 8 San Juan          98)  SoL!ve 24 Japan          135) APN News India         169) Sponge Bob               206) ------------       "
+   echo "26) ---------------        62) Canal 6 San Rafael        99)  KBS World 24 Live        136) i News Telugu          170) ESL League of Legends    207) ------------       "
+   echo "27) ---------------        63) Canal Siete               100) KBS World English        137) No 1 News Telugu       171) Poker TV                 208) ------------       "
+   echo "28) ---------------        64) HispanTV                  101) YTN 27 Korea             138) News 9 Bangalor        172) High Stakes Poker        209) ------------       "
+   echo "29) ---------------        65) Globovision High          102) TMT 14 Korea             139) T News Telegu          173) WWE RAW                  210) ------------       "
+   echo "====FRENCH LANGUAGE=====   66) Excelsior TV              103) PTV Phillipeans          140) ATN Bangladesh         ==========LOCATIONS========== 211) ------------       "  
+   echo "30) France 24 Francais     67) Imagine Radio             |==HINDI|=URDU|DARI=|PASHTU=|  =======ARABIC============  174) Venice Italy Bridge      212) ------------       "
+   echo "31) France Info TV         68) c5n Argentina             104) Survana                  141) CBC Egypt              175) Venice Italy Port        213) ------------       "
+   echo "32) France 24 Francais     69) Q24                       105) News 18 India            142) CBC Egypt Drama        176) Jackson Hole Intersection214) ------------       " 
+   echo "33) Euronews Francais      70) La Cáscara TV             106) SAMAA TV                 143) CBC Egypt Sofra        177) Jackson Hole Town Square 215) Joy News        "  
+   echo "34) Africa News            71) Televisa del Bajio        107) Aaj Tak                  144) eXtra News Egypt       178) Jackson Hole Rustic Inn  216) CNN             "
+   echo "35) Afrique Media          72) Televisa del Golfo        108) TV9 Live                 145) Saudi 2 TV             179) Verona Italy             217) All News        "
+   echo "36) France Info            73) Televisa Guadalajara      109) NTV Telugu               146) Syrian Satellite       180) Soggy Dollar BVI         218) TYT             "
+   echo "37) Mosaik TV              74) Televisa del Noreste      110) ABN Telugu               147) Al Mayadeen            181) Amsterdam Netherlands    219) FOX             "	
+   echo "==========================================================================================================================================================================="
+echo " " 
+}	
+
 
 
 for arg in $@
@@ -176,49 +224,7 @@ do
    exit 0
    elif [ "$arg" == "--list-matrix" ]
    then 
-   echo "==================================================================      ENDSTREAM  "$version"   ==============================================================================="
-   echo "||       ENGLISH         ||          FRANCAIS          ||          ESPANOL           ||         OTHER         ||            EXTRA             ||          MEGA          ||"
-   echo "=========================================================================================================================================================================="
-   echo "1) France 24 English       38) TLM 30 Lyon               75) Televisa Veracruz         111) Vanitha TV             148) Al Arabiya               182) SHIBUYA JAPAN      "         
-   echo "2) Al Jazeera English      39) France Inter              76) GalaTV Morelos            112) HMT112) HMT            149) Al Jazeera               183) NASA EARTH         " 
-   echo "3) i24 News                40) RFI                       77) Televisa Puebla           113) TV5                    150) France 24 Arabic         184) NASA ISS 1        "  
-   echo "4) Bloomberg               41) Max FM 92.9               78) GalaTV Queretaro          114) 10TV Telugu            151) BBC Arabic               185) NASA ISS 2        "            
-   echo "5) NEWSMAX                 42) M7 TV Mali                79) Televisa Mexicali         115) AsiaNet                152) SKY News Arabic          186) Hubble Telescope  " 
-   echo "6) TRT World               43) France Inter              80) GalaTV Acapulco           116) NTV Bangladesh         153) RT Arabic                187) Ocean Explorer    " 
-   echo "7) Channels 24 Nigeria     44) RTL En Direct             81) GalaTV Zacatecas          117) SunNews                154) Makkah Live               =======OTHER=======|  "
-   echo "8) Africa News             45) ------------              82) Televisa Hermosillo       118) TV9 India Live         155) ON E Arabic              188) SKY NEWS Britain  "
-   echo "9) Fox News                46) Direct Journal TVLandes   83) GalaTV Laguna             119) Reporter TV            156) ON E Sport               189) Euronews English  "
-   echo "10) ABC Australia          47) CNEWS                     84) 1070 Noticias             120) Rajya Sabha TV          ==========AFRICAN==========  190) DW English        "
-   echo "11) TWiT                   48) BMF TV                    85) GalaTV Toluca             121) Public TV India        157) TVC Nigeria              191) Euronews Deutche  "
-   echo "12) CNBC Africa            49) Europe 1                  86) TelePacifico              122) Sandesh News           158) Adom TV                  193) ------------       "
-   echo "13) Amazing Facts          50) i24 France                87) Cinevision Canal 19       123) DD News India          159) Bukedde TV               194) ------------       "
-   echo "14) Its Supernatural       51) France Info TV            88) Canal 8 Mar del Plata     124) Tugulu News            ==========RUSSIAN==========   195) ------------       "
-   echo "15) IHOP                   52) France Info Radio         89) Tu Cana                   125) Tv9 Marathi            160) POCCNR 24 Russia         196) ------------       "  
-   echo "16) Sheppards Chapel       53) LCP FRANCE                90) VPI TV                    126) Dawn News Pakistan     161) Ukraine 5                197) ------------       "
-   echo "17) KTN Kenya English      54) Public Senate             91) 100% Noticias Nicaragua   127) TOLO NEWS Afghan       162) Ukraine 112              198) ------------       "
-   echo "18) HSN                    55) Presidence de la Republic 92) El Capitolo Venezulana    128) Bol TV Pakistan        163) News 1 Ukraine           199) ------------       "	
-   echo "19) Arirang TV              =====SPANISH LANGUAGE=====   93) Sures TV Campeche         129) 92 News Pakistan       164) Ecnpeco Ukraine          200) ------------       "
-   echo "20) India Today            56) Globovision Low           =======ASIAN LANGUAGE=====    130) Tamil Live News        165) Thromadske Ukraine       201) ------------       "  
-   echo "21) NASA TV                57) TeleSUR                   94) CCTV 4 China              131) Media One News         =========ENTERTAINMENT======  202) ------------       "
-   echo "22) TWiT Twitch            58) RT Espanol                95) EBC 51 Taiwan             132) News 7 Tamil           166) Talking Tom              203) ------------       "       
-   echo "23) RSBN                   59) DW Espanol                96)  -----------              133) Samaya News            167) Tom & Jerry              204) ------------       "  
-   echo "24) MSNBC/CBSN             60) NTN24                     97)  QVC JAPAN                134) 4tv News India         168) Caillou                  205) ------------       "
-   echo "25) CVR English India      61) Canal 8 San Juan          98)  SoL!ve 24 Japan          135) APN News India         169) Sponge Bob               206) ------------       "
-   echo "26) CGTN                   62) Canal 6 San Rafael        99)  KBS World 24 Live        136) i News Telugu          170) ESL League of Legends    207) ------------       "
-   echo "27) ---------------        63) Canal Siete               100) KBS World English        137) No 1 News Telugu       171) Poker TV                 208) ------------       "
-   echo "28) ---------------        64) HispanTV                  101) YTN 27 Korea             138) News 9 Bangalor        172) High Stakes Poker        209) ------------       "
-   echo "29) ---------------        65) Globovision High          102) TMT 14 Korea             139) T News Telegu          173) WWE RAW                  210) ------------       "
-   echo "====FRENCH LANGUAGE=====   66) Excelsior TV              103) PTV Phillipeans          140) ATN Bangladesh         ==========LOCATIONS========== 211) ------------       "  
-   echo "30) France 24 Francais     67) Imagine Radio             |==HINDI|=URDU|DARI=|PASHTU=|  =======ARABIC============  174) Venice Italy Bridge      212) ------------       "
-   echo "31) France Info TV         68) c5n Argentina             104) Survana                  141) CBC Egypt              175) Venice Italy Port        213) ------------       "
-   echo "32) France 24 Francais     69) Q24                       105) News 18 India            142) CBC Egypt Drama        176) Jackson Hole Intersection214) -------------      " 
-   echo "33) Euronews Francais      70) La Cáscara TV             106) SAMAA TV                 143) CBC Egypt Sofra        177) Jackson Hole Town Square 215) Joy News        "  
-   echo "34) Africa News            71) Televisa del Bajio        107) Aaj Tak                  144) eXtra News Egypt       178) Jackson Hole Rustic Inn  216) CNN             "
-   echo "35) Afrique Media          72) Televisa del Golfo        108) TV9 Live                 145) Saudi 2 TV             179) Verona Italy             217) All News        "
-   echo "36) France Info            73) Televisa Guadalajara      109) NTV Telugu               146) Syrian Satellite       180) Soggy Dollar BVI         218) TYT             "
-   echo "37) Mosaik TV              74) Televisa del Noreste      110) ABN Telugu               147) Al Mayadeen            181) Amsterdam Netherlands    219) FOX             "	
-   echo "==========================================================================================================================================================================="
-   echo " "  
+   channel_matrix
    exit 0
    elif [ "$arg" == "--list-all" ]
    then
@@ -235,50 +241,11 @@ n="$1"
 
 elif [ "$1" == "" ]
 then
-   echo "==================================================================      ENDSTREAM  "$version"   ==============================================================================="
-   echo "||       ENGLISH         ||          FRANCAIS          ||          ESPANOL           ||         OTHER         ||            EXTRA             ||          MEGA          ||"
-   echo "=========================================================================================================================================================================="
-   echo "1) France 24 English       38) TLM 30 Lyon               75) Televisa Veracruz         111) Vanitha TV             148) Al Arabiya               182) SHIBUYA JAPAN      "         
-   echo "2) Al Jazeera English      39) France Inter              76) GalaTV Morelos            112) HMT112) HMT            149) Al Jazeera               183) NASA EARTH         " 
-   echo "3) i24 News                40) RFI                       77) Televisa Puebla           113) TV5                    150) France 24 Arabic         184) NASA ISS 1        "  
-   echo "4) Bloomberg               41) Max FM 92.9               78) GalaTV Queretaro          114) 10TV Telugu            151) BBC Arabic               185) NASA ISS 2        "            
-   echo "5) NEWSMAX                 42) M7 TV Mali                79) Televisa Mexicali         115) AsiaNet                152) SKY News Arabic          186) Hubble Telescope  " 
-   echo "6) TRT World               43) France Inter              80) GalaTV Acapulco           116) NTV Bangladesh         153) RT Arabic                187) Ocean Explorer    " 
-   echo "7) Channels 24 Nigeria     44) RTL En Direct             81) GalaTV Zacatecas          117) SunNews                154) Makkah Live               =======OTHER=======|  "
-   echo "8) Africa News             45) ------------              82) Televisa Hermosillo       118) TV9 India Live         155) ON E Arabic              188) SKY NEWS Britain  "
-   echo "9) Fox News                46) Direct Journal TVLandes   83) GalaTV Laguna             119) Reporter TV            156) ON E Sport               189) Euronews English  "
-   echo "10) ABC Australia          47) CNEWS                     84) 1070 Noticias             120) Rajya Sabha TV          ==========AFRICAN==========  190) DW English        "
-   echo "11) TWiT                   48) BMF TV                    85) GalaTV Toluca             121) Public TV India        157) TVC Nigeria              191) Euronews Deutche  "
-   echo "12) CNBC Africa            49) Europe 1                  86) TelePacifico              122) Sandesh News           158) Adom TV                  193) ------------       "
-   echo "13) Amazing Facts          50) i24 France                87) Cinevision Canal 19       123) DD News India          159) Bukedde TV               194) ------------       "
-   echo "14) Its Supernatural       51) France Info TV            88) Canal 8 Mar del Plata     124) Tugulu News            ==========RUSSIAN==========   195) ------------       "
-   echo "15) IHOP                   52) France Info Radio         89) Tu Cana                   125) Tv9 Marathi            160) POCCNR 24 Russia         196) ------------       "  
-   echo "16) Sheppards Chapel       53) LCP FRANCE                90) VPI TV                    126) Dawn News Pakistan     161) Ukraine 5                197) ------------       "
-   echo "17) KTN Kenya English      54) Public Senate             91) 100% Noticias Nicaragua   127) TOLO NEWS Afghan       162) Ukraine 112              198) ------------       "
-   echo "18) HSN                    55) Presidence de la Republic 92) El Capitolo Venezulana    128) Bol TV Pakistan        163) News 1 Ukraine           199) ------------       "	
-   echo "19) Arirang TV              =====SPANISH LANGUAGE=====   93) Sures TV Campeche         129) 92 News Pakistan       164) Ecnpeco Ukraine          200) ------------       "
-   echo "20) India Today            56) Globovision Low           =======ASIAN LANGUAGE=====    130) Tamil Live News        165) Thromadske Ukraine       201) ------------       "  
-   echo "21) NASA TV                57) TeleSUR                   94) CCTV 4 China              131) Media One News         =========ENTERTAINMENT======  202) ------------       "
-   echo "22) TWiT Twitch            58) RT Espanol                95) EBC 51 Taiwan             132) News 7 Tamil           166) Talking Tom              203) ------------       "       
-   echo "23) RSBN                   59) DW Espanol                96)  -----------              133) Samaya News            167) Tom & Jerry              204) ------------       "  
-   echo "24) MSNBC/CBSN             60) NTN24                     97)  QVC JAPAN                134) 4tv News India         168) Caillou                  205) ------------       "
-   echo "25) CVR English India      61) Canal 8 San Juan          98)  SoL!ve 24 Japan          135) APN News India         169) Sponge Bob               206) ------------       "
-   echo "26) GCTN                   62) Canal 6 San Rafael        99)  KBS World 24 Live        136) i News Telugu          170) ESL League of Legends    207) ------------       "
-   echo "27) ---------------        63) Canal Siete               100) KBS World English        137) No 1 News Telugu       171) Poker TV                 208) ------------       "
-   echo "28) ---------------        64) HispanTV                  101) YTN 27 Korea             138) News 9 Bangalor        172) High Stakes Poker        209) ------------       "
-   echo "29) ---------------        65) Globovision High          102) TMT 14 Korea             139) T News Telegu          173) WWE RAW                  210) ------------       "
-   echo "====FRENCH LANGUAGE=====   66) Excelsior TV              103) PTV Phillipeans          140) ATN Bangladesh         ==========LOCATIONS========== 211) ------------       "  
-   echo "30) France 24 Francais     67) Imagine Radio             |==HINDI|=URDU|DARI=|PASHTU=|  =======ARABIC============  174) Venice Italy Bridge      212) ------------       "
-   echo "31) France Info TV         68) c5n Argentina             104) Survana                  141) CBC Egypt              175) Venice Italy Port        213) ------------       "
-   echo "32) France 24 Francais     69) Q24                       105) News 18 India            142) CBC Egypt Drama        176) Jackson Hole Intersection214) ------------       " 
-   echo "33) Euronews Francais      70) La Cáscara TV             106) SAMAA TV                 143) CBC Egypt Sofra        177) Jackson Hole Town Square 215) Joy News        "  
-   echo "34) Africa News            71) Televisa del Bajio        107) Aaj Tak                  144) eXtra News Egypt       178) Jackson Hole Rustic Inn  216) CNN             "
-   echo "35) Afrique Media          72) Televisa del Golfo        108) TV9 Live                 145) Saudi 2 TV             179) Verona Italy             217) All News        "
-   echo "36) France Info            73) Televisa Guadalajara      109) NTV Telugu               146) Syrian Satellite       180) Soggy Dollar BVI         218) TYT             "
-   echo "37) Mosaik TV              74) Televisa del Noreste      110) ABN Telugu               147) Al Mayadeen            181) Amsterdam Netherlands    219) FOX             "	
-   echo "==========================================================================================================================================================================="
-echo " " 
+channel_matrix
 echo "Please Select a Number corresponding to a YouTube Live Stream:"
+
+
+											
 
 ############# DEFAULT SELECTION #######################
 # in case of non-numeric entry 
@@ -298,9 +265,9 @@ case $n in
 # 2) Al Jazeera
 2) link=https://www.youtube.com/watch?v=pJC-vohDHl8 
    chan_name="Al Jazeera" ;;  
-# 3) i24 News
-3) link=https://www.youtube.com/watch?v=HKY4gBeUG6g 
-   chan_name="i24 Israel English" ;;
+# 3) i24 News Israel 
+3) link=http://www.dailymotion.com/embed/video/x29atae
+chan_name="i24 News Israel" ;;
 # 4) Bloomberg
 4) link=https://www.youtube.com/watch?v=Ga3maNZ0x0w 
    chan_name="Bloomberg";;
@@ -316,9 +283,9 @@ case $n in
 # 8) Africa News Live
 8) link=https://www.youtube.com/watch?v=zcWWdvRaaSA 
     chan_name="Africa News English";;
-# 9) Fox News
-9) link=https://www.youtube.com/watch?v=lYbEYo5-b6U 
-   chan_name="Fox News" ;;
+# 9) CGTN China English 
+9) link=https://www.youtube.com/watch?v=XBQJcAV1vV4
+chan_name="CGTN China English" ;;
 # 10) ABC News Australia 
 10) link=https://www.youtube.com/watch?v=fzqQa5x7NLA 
      chan_name="ABC News Australia" ;;
@@ -326,52 +293,48 @@ case $n in
 #  11) TWiT
 11) link=https://www.youtube.com/watch?v=Gthvw4Bevkg 
     chan_name="TWiT" ;;
-#  12) CNBC Africa
-12) link=https://www.youtube.com/watch?v=Ae6N5j_yUrI 
-    chan_name="CNBC Africa" ;;
-# 13) Amazing Facts TV (Christian)
-13) link=https://www.youtube.com/watch?v=JFLFK362vns 
+# 12) Amazing Facts TV (Christian)
+12) link=https://www.youtube.com/watch?v=JFLFK362vns 
     chan_name="Amzaing Facts TV (Christian)" ;;
-# 14) It's Supernatural! Network (Christian)
-14) link=https://www.youtube.com/watch?v=TgYk_asWz_4 
+# 13) It's Supernatural! Network (Christian)
+13) link=https://www.youtube.com/watch?v=TgYk_asWz_4 
     chan_name="It's Supernatural! (Christian)" ;;
+# 14) Sheppard's Chapel (Christian)
+14) link=https://www.youtube.com/watch?v=Ogy9CLdOn2g 
+    chan_name="Sheppard's Channel" ;;
 # 15) International House of Prayer (IHOP) (Christian)
 15) link=https://www.youtube.com/watch?v=dyD6lMY11wM 
     chan_name="International House of Prayer (Christian)" ;;
-# 16) Sheppard's Chapel (Christian)
-16) link=https://www.youtube.com/watch?v=Ogy9CLdOn2g 
-    chan_name="Sheppard's Channel" ;;
-# 17) KTN Kenya English
-17) link=https://www.youtube.com/watch?v=YASZYb8UBs8 
+# 16) KTN Kenya English
+16) link=https://www.youtube.com/watch?v=YASZYb8UBs8 
     chan_name="KTN Kenya English" ;;
-# 18) HSN
-18)  link=https://www.youtube.com/watch?v=J0022wscx0k 
+# 17) HSN
+17)  link=https://www.youtube.com/watch?v=J0022wscx0k 
      chan_name="Home Shopping Network HSN" ;;
-# 19)  Arirang TV
-19) link=https://www.youtube.com/watch?v=JVr6yiZ9IMY 
+# 18)  Arirang TV
+18) link=https://www.youtube.com/watch?v=JVr6yiZ9IMY 
     chan_name="Arirang TV (Korean Pride)" ;;
-# 20) India TODAY
-20) link=https://www.youtube.com/watch?v=wXwYCWGpprc 
+# 19) India TODAY
+19) link=https://www.youtube.com/watch?v=wXwYCWGpprc 
     chan_name="India TODAY English" ;;
-# 21)   NASA TV
-21) link=https://www.youtube.com/watch?v=UdmHHpAsMVw 
+# 20)   NASA TV
+20) link=https://www.youtube.com/watch?v=UdmHHpAsMVw 
     chan_name="NASA TV" ;; 
-# 22) TWiT on Twitch
-22) link=https://www.twitch.tv/twit 
+# 21) TWiT on Twitch
+21) link=https://www.twitch.tv/twit 
     chan_name="TWiT on Twitch" ;;
-#  23) RSBN Live
-23) link=https://www.youtube.com/watch?v=xEQEM7X7J4E 
+#  22) RSBN Live
+22) link=https://www.youtube.com/watch?v=xEQEM7X7J4E 
     chan_name="RSBN Right Side Broadcasting News" ;;
-# 24) CBSN
-24) link=https://www.youtube.com/watch?v=EgAK15lzgSA
-chan_name="CBSN" ;;
-# 25) CVR English India
-25) link=https://www.youtube.com/watch?v=3S-vfmpCdCg
+# 23) CVR English India
+23) link=https://www.youtube.com/watch?v=3S-vfmpCdCg
 chan_name="CVR English" ;;
-# 26) GCTN China English 
-26) link=https://www.youtube.com/watch?v=XBQJcAV1vV4
-chan_name="CGTN China English" ;;
-# 27) 
+# 24) i24 News
+24) link=https://www.youtube.com/watch?v=2AvIbstRX8s 
+   chan_name="i24 Israel English" ;;
+# 25)
+# 26)
+# 27)
 # 28) 
 # 29) 
 #################    FRENCH   ###################################
@@ -908,6 +871,13 @@ chan_name="FOX News";;
 # ABS-CBN Phillipeans
 # 12) link=https://www.youtube.com/watch?v=3vYPyZywbZs 
 #    chan_name="ABS-CBN Phillipeans";;
+# CNBC Africa
+# 12) link=https://www.youtube.com/watch?v=Ae6N5j_yUrI 
+#    chan_name="CNBC Africa" ;;
+# CBSN
+# 24) link=https://www.youtube.com/watch?v=EgAK15lzgSA
+#chan_name="CBSN" ;;
+
 
 esac
 
