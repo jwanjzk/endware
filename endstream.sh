@@ -151,7 +151,7 @@ branch="gnu/linux"
 ##################################################
 
 chan_columns="$HOME/bin/streams.txt"
-### Define function for displaying channels
+### Define function for displaying channels  CHANGE MENU HERE
 channel_matrix()
 {
    echo "==================================================================      ENDSTREAM  "$version"   ==============================================================================="
@@ -256,7 +256,7 @@ read num
 
 fi
 
-
+## Channel Selection function  (ADD CHANNELS HERE)
 channel_select()
 {
 
@@ -271,7 +271,7 @@ case $chan_num in
 2) link=https://www.youtube.com/watch?v=pJC-vohDHl8 
    chan_name="Al Jazeera" ;;  
 # 3) i24 News Israel 
-3) link=http://www.dailymotion.com/video/x29atae
+3) link=https://www.dailymotion.com/video/x29atae
 chan_name="i24 News Israel" ;;
 # 4) Bloomberg
 4) link=https://www.youtube.com/watch?v=Ga3maNZ0x0w 
@@ -905,7 +905,7 @@ channel_select $num
 echo "$chan_name"
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv "$link" 
 
-echo "You were watching "$chan_name" on Channel "$n" "
+echo "You were watching "$chan_name" on Channel "$num" "
 
 entry="null"
 
@@ -925,7 +925,7 @@ channel_select $entry
 echo "$chan_name"
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv "$link" 
 
-echo "You were watching "$chan_name" on Channel "$n" "
+echo "You were watching "$chan_name" on Channel "$entry" "
 
 while [ "$entry" != "q" ]
 do
@@ -945,7 +945,7 @@ do
   else
   echo "$chan_name"
   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv "$link" 
-  echo "You were watching "$chan_name" on Channel "$n" "
+  echo "You were watching "$chan_name" on Channel "$entry" "
   fi
 
 done
