@@ -6,10 +6,11 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.16
-# Revision Date: March 12, 2017
+# Version: 0.17
+# Revision Date: March 17, 2017
 #
-# Change Log:  - Removed transient streams added some home shopping channels
+# Change Log:  - grab transient channels by channel name 
+#              - Removed transient streams added some home shopping channels
 #              - Rearranged channels
 #              - Added more streams from Taiwan and Japan
 #              - Added a while loop to keep alive until user inputs q
@@ -148,8 +149,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.16"
-rev_date="12/03/2017"
+version="0.17"
+rev_date="17/03/2017"
 branch="gnu/linux"
 ##################################################
 
@@ -160,52 +161,51 @@ channel_matrix()
    echo "==================================================================      ENDSTREAM  "$version"   =================================================================================="
    echo "||      ENGLISH       ||      FRANCAIS        ||         ESPANOL        ||        INDIAN         ||      ARABIC         ||          OTHER          ||       ULTRA      ||"
    echo "============================================================================================================================================================================"
-   echo "1) France 24 English   41) France 24 Francais   80) Canal 8 Mar Plata      119) SunNews         159) EuroNews Arabic   198) Action 24 Greek      238) Steamy Mount Japan "    
-   echo "2) Al Jazeera English  42) France Info TV       81) Sures TV Campeche      120) TV 9 News       160) RT Arabic         199) Ionian Greek         239) Tokyo Japan " 
-   echo "3) TRT World           43) France 24 Francais   82) ------------           121) Rajya Sabha TV  161) ON E Arabic       200) Star Lima Greek      240) Shizuoka Japan"  
-   echo "4) i24 News Israel     44) Euronews Francais    83) ------------           122) Sandesh News    162) ON E Sport        201) Star TV Turkey       241) Yokohama Japan"             
-   echo "5) NEWSMAX             45) France Info          84) ------------           123) Tv9 Marathi     163) ON Live           202) Parovi 1 TV          242) Hokkido Japan"  
-   echo "6) ABC Australia       46) France Inter         85) ------------           124) Bol TV Pakistan 164) Al Jazeera        203) Adom TV              243) Mt Fuji Japan"  
-   echo "7) Africa News         47) Max FM 92.9          86) ------------           125) 92 News Pakistan165) France 24 Arabic  204) -------------        244) ---------- "
-   echo "8) Channels 24 Nigeria 48) M7 TV Mali           87) ------------           126) News 7 Tamil    166) BBC Arabic        205) -------------        245) ---------- "
-   echo "9) Bloomberg           49) France Inter         88) ------------           127) T News Telegu   167) CBC Egypt Sofra   206) -------------        246) ---------- "
-   echo "10) TWiT               50) RTL En Direct        89) ------------           128) 24 News Pakistan168) Al Arabiya        207) -------------        247) Euronews Russian "
-   echo "11) Amazing Facts      51) Journal TVLandes     90) ------------           129) News 18 India   169) Al Mayadeen       208) SKY NEWS Britain     248) Euronews Turkish "
-   echo "12) Its Supernatural   52) CNEWS                91) ------------           130) Aaj Tak         170) Syrian Satellite  209) DW English           249) Euronews Italian "
-   echo "13) Sheppards Chapel   53) BMF TV               92) ------------           131) TV9 Live        171) ORTAS Syria       210) Euronews Deutche     250) QVC Italian "
-   echo "14) IHOP               54) Europe 1             93) ------------           132) NTV Telugu      172) Bedya TV Arabic   211) -------------        251) Sport in Oro Italian"
-   echo "15) HSN                55) i24 France           94) ------------           133) ABN Telugu      173) Belquees Arabic   212) Talking Tom          252) Euronews Maygar "  
-   echo "16) Arirang TV         56) France Info TV       95) ------------           134) Vanitha TV      174) Saudi Blue News   213) ---------            253) ------- "
-   echo "17) India Today        57) France Info Radio    96) ------------           135) HMT             175) Saudi Purple      214) --------------       254) ------- "
-   echo "18) NASA TV            58) LCP FRANCE           97) ------------           136) TV5             176) Saudi Kids        215) --------------       255) ------- "	
-   echo "19) TWiT Twitch        59) Public Senate        98) ------------           137) -----------     177) ------------      216) --------------       256) ------- "
-   echo "20) CVR English India  60) La Republic          =======ASIAN LANGUAGE===== 138) -----------     178) ------------      217) DZMM Philippeans     257) ------- "  
-   echo "21) Saudi 2 English    61) QVC Francais         99) CCTV 4 China           139) -----------     179) ------------      218) ---------------      258) ------- "
-   echo "22) News 9 Bangalor    62) ---------------      100) ON TV News Hong Kong  140) -----------     180) ------------      219) ---------------      259) -------  "       
-   echo "23) EuroNews English   63) ---------------      101) ON TV Sports Hong Kong141) -----------     181) ------------      220) NASA ISS Replay      260) -------  "  
-   echo "24) BBC World News     ====SPANISH LANGUAGE===  102) EBC 51 Taiwan         142) -----------     182) ------------      221) NASA ISS 1           261) -------  "
-   echo "25) QVC English        64) Globovision Low      103) EBC Finance Taiwan    143) -----------     183) ------------      222) NASA ISS 2           262) -------  "  
-   echo "26) HSN 2              65) RT Espanol           104) Tzu Chi Da Ai Taiwan  144) -----------     184) ------------      223) Okeanos Cam 1        263) -------  "
+   echo "1) France 24 English   41) France 24 Francais   80) La Casacra TV          119) SunNews         159) EuroNews Arabic   198) Action 24 Greek      238) Steamy Mount Japan "    
+   echo "2) Al Jazeera English  42) France Info TV       81) 100%Noticias Nicaragua 120) TV 9 News       160) RT Arabic         199) Ionian Greek         239) Tokyo Japan " 
+   echo "3) TRT World Istanbul  43) France 24 Francais   82) Televisia del Golfo    121) Rajya Sabha TV  161) ON E Arabic       200) Star Lima Greek      240) Shizuoka Japan"  
+   echo "4) i24 News Israel     44) Euronews Francais    83) Televisa Veracruz      122) Sandesh News    162) ON E Sport        201) Parovi TV Serbian    241) Yokohama Japan"             
+   echo "5) NEWSMAX             45) France Info          84) Televisia Matamoros    123) Tv9 Marathi     163) ON Live           202) TRT Haber Turkey     242) Hokkido Japan"  
+   echo "6) ABC Australia       46) France Inter         85) Televisia Zacatecas    124) Bol TV Pakistan 164) Al Jazeera        203) NTV Canli            243) Mt Fuji Japan"  
+   echo "7) Africa News         47) Max FM 92.9          86) Televisia Puebla       125) 92 News Pakistan165) France 24 Arabic  204) Haber Turk TV        244) ---------- "
+   echo "8) Channels 24 Nigeria 48) M7 TV Mali           87) Televisia Acapulco     126) News 7 Tamil    166) BBC Arabic        205) Star TV Turkey       245) ---------- "
+   echo "9) Bloomberg           49) France Inter         88) Televisia Cuernavaca   127) T News Telegu   167) Al Arabiya        206) Adom TV              246) ---------- "
+   echo "10) TWiT               50) RTL En Direct        89) Televisia Leon         128) 24 News Pakistan168) Al Mayadeen       207) Bukkede TV           247) Euronews Russian "
+   echo "11) Amazing Facts      51) Journal TVLandes     90) Televisia Queretaro    129) News 18 India   169) Syrian Satellite  208) SKY NEWS Britain     248) Euronews Turkish "
+   echo "12) Its Supernatural   52) CNEWS                91) Televisia Gudalajera   130) Aaj Tak         170) ORTAS Syria       209) DW English           249) Euronews Italian "
+   echo "13) Sheppards Chapel   53) BMF TV               92) Televisa Mexicali      131) TV9 Live        171) Bedya TV Arabic   210) Euronews Deutche     250) QVC Italian "
+   echo "14) IHOP               54) Europe 1             93) Televisa Toluca        132) NTV Telugu      172) Belquees Arabic   211) Talking Tom          251) Euronews English"
+   echo "15) HSN                55) i24 France           94) Televisa Hermosillo    133) ABN Telugu      173) Saudi Blue News   212) DZMM Philippeans     252) Euronews Maygar "  
+   echo "16) Arirang TV         56) France Info TV       95) Televisa Toreon        134) Vanitha TV      174) Saudi Purple      213) DZRH Philippeans     253) ------- "
+   echo "17) India Today        57) France Info Radio    96) ------------           135) HMT             175) Saudi Green       214) DZMM Philippeans     254) ------- "
+   echo "18) NASA TV            58) LCP FRANCE           97) ------------           136) TV5             176) Saudi Gold        215) --------------       255) ------- "	
+   echo "19) TWiT Twitch        59) Public Senate        98) ------------           137) Channel 24      177) Saudi Silver      216) --------------       256) ------- "
+   echo "20) ---------------    60) Africa News French   =======ASIAN LANGUAGE===== 138) -----------     178) Saudi Orange      217) --------------       257) ------- "  
+   echo "21) CVR English        61) RFI Francais         99) CCTV 4 China           139) -----------     179) Saudi Red         218) ---------------      258) ------- "
+   echo "22) News 9 Bangalor    62) Mosaik TV            100) ON TV News Hong Kong  140) -----------     180) DMC Live          219) ---------------      259) -------  "       
+   echo "23) ---------------    63) Afrique Media        101) ON TV Sports Hong Kong141) -----------     181) SKY Arabic        220) NASA ISS Replay      260) -------  "  
+   echo "24) BBC World News     ====SPANISH LANGUAGE===  102) EBC 51 Taiwan         142) -----------     182) CBC Egypt Drama   221) NASA ISS 1           261) -------  "
+   echo "25) QVC English        64)Globovision Venezuela 103) EBC Finance Taiwan    143) -----------     183) eXtra News Egypt  222) NASA ISS 2           262) -------  "  
+   echo "26) HSN 2              65) RT Espanol           104) Tzu Chi Da Ai Taiwan  144) -----------     184) CBC Egypt Sofra   223) Okeanos Cam 1        263) -------  "
    echo "27) Poker TV           66) DW Espanol           105) FTV Live Taiwan       145) -----------     185) ------------      224) Okeanos Cam 2        264) -------  "
    echo "28) High Stakes Poker  67) NTN24                106) TTV Taiwan            146) -----------     186) ------------      225) Okeanos Cam 3        265) -------  "
-   echo "29) i24 News Israel    68) Canal 8 San Juan     107) CTV Taiwan            147) -----------     187) ------------      226) Venice Italy Bridge  266) -------  "
-   echo "30) CGTN English       69) Canal 6 San Rafael   108) CTS World News Taiwan 148) -----------     188) ------------      227) Venice Italy Port    267) -------  "    
+   echo "29) ---------------    68) Canal 8 San Juan     107) CTV Taiwan            147) -----------     187) ------------      226) Venice Italy Bridge  266) -------  "
+   echo "30) ---------------    69) Canal 6 San Rafael   108) CTS World News Taiwan 148) -----------     188) ------------      227) Venice Italy Port    267) -------  "    
    echo "31) ---------------    70) Canal Siete          109) SET Taiwan            149) -----------     189) ------------      228) Jackson Hole XSec    268) -------  "
    echo "32) ---------------    71) c5n Argentina        110) CTI Taiwan            150) -----------     =======RUSSIAN=======  229) Jackson Hole Square  269) -------  "
-   echo "33) ---------------    72) A24                  111) NEXT TV Taiwan        151) -----------     190) POCCNR 24 Russia  230) Jackson Hole Rustic  270) -------  " 
-   echo "34) ---------------    73) Televisa Guadalajara 112) Chinese Kareoke       152) -----------     191) Ukraine 5         231) Verona Italy         271) -------  "  
-   echo "35) ---------------    74) Televisa Veracruz    113) KBS World 24 Live     153) -----------     192) Ukraine 112       232) Soggy Dollar BVI     272) -------  "
-   echo "36) ---------------    75) Televisa Mexicali    114) KBS World English     154) -----------     193) News 1 Ukraine    233) Amsterdam Netherlands273) -------  "
-   echo "37) ---------------    76) Televisa Hermosillo  115) KBS World TV          155) -----------     194) Ecnpeco Ukraine   234) SHIBUYA JAPAN        274) -------  "
-   echo "38) ---------------    77) GalaTV Laguna        116) YTN 27 Korea          156) -----------     195) Thromadske Ukraine235) RSBN Live Cam        275) -------  "	
-   echo "39) ---------------    78) GalaTV Toluca        117) QVC JAPAN             157) -----------     196) UA TV Ukraine     236) Akiba Japan          276) -------  "
-   echo "40) ---------------    79) TelePacifico         118) SoL!ve 24 Japan       158) -----------     197) -------------     237) Bridge Japan         277) TYT      "
+   echo "33) ---------------    72) A24 Argentina        111) NEXT TV Taiwan        151) -----------     190) POCCNR 24 Russia  230) Jackson Hole Rustic  270) -------  " 
+   echo "34) ---------------    73) TelePacifico         112) Chinese Kareoke       152) -----------     191) Ukraine 5         231) Verona Italy         271) -------  "  
+   echo "35) ---------------    74) Canal 8 Mar Plata    113) KBS World 24 Live     153) -----------     192) Ukraine 112       232) Soggy Dollar BVI     272) -------  "
+   echo "36) ---------------    75) HispanTV             114) KBS World English     154) -----------     193) News 1 Ukraine    233) Amsterdam Netherlands273) -------  "
+   echo "37) i24 News Israel    76)Globovision Venezuela 115) KBS World TV          155) -----------     194) Ecnpeco Ukraine   234) SHIBUYA JAPAN        274) -------  "
+   echo "38) The Young Turks    77) Tu Canal Panama      116) YTN 27 Korea          156) -----------     195) Thromadske Ukraine235) RSBN Live Cam        275) -------  "	
+   echo "39) CGTN English       78) Excelsior TV         117) QVC JAPAN             157) -----------     196) UA TV Ukraine     236) Akiba Japan          276) La Republic  "
+   echo "40) Saudi 2 English    79) Cinevision Canal 19  118) SoL!ve 24 Japan       158) -----------     197) -------------     237) Bridge Japan         277) QVC Francais "
    echo "========================================================================================================================================================================"
 echo " " 
 }	
 
 
-  
 for arg in $@
 do 
  if [ "$arg" == "--help" ]
@@ -282,22 +282,22 @@ case $chan_num in
 2) link=https://www.youtube.com/watch?v=pJC-vohDHl8 
    chan_name="Al Jazeera English" ;;  
 #  3) TRT World
-3) link=https://www.youtube.com/watch?v=N7jfTZLkhms 
+3) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
     chan_name="TRT World";;   
-# 4) i24 News Israel 
-4) link=https://www.dailymotion.com/video/x29atae
-chan_name="i24 News Israel" ;;
+# 4) i24 News Israel
+4) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/i24News/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="i24 News Isreal English" ;;
 # 5) NEWSMAX
-5) link=https://www.youtube.com/watch?v=pUt6SKxSE8Q
+5) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/NewsmaxTV/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
    chan_name="NEWSMAX";;
 # 6) ABC News Australia 
-6) link=https://www.youtube.com/watch?v=fzqQa5x7NLA  
+6) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/NewsOnABC/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
      chan_name="ABC News Australia" ;;
 # 7) Africa News Live
-7) link=https://www.youtube.com/watch?v=hgCCpd9yjaw 
-    chan_name="Africa News English";;
+7) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC1_E8NeF5QHY2dtdLRBCCLA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+   chan_name="Africa News English";;
 # 8) Channels 24 Nigeria
-8) link=https://www.youtube.com/watch?v=ANM-dq5USTc 
+8) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/channelsweb/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"    
     chan_name="Channels 24 Nigeria";;    
 # 9) Bloomberg
 9) link=https://www.youtube.com/watch?v=Ga3maNZ0x0w 
@@ -319,7 +319,7 @@ chan_name="i24 News Israel" ;;
 14) link=https://www.youtube.com/watch?v=dyD6lMY11wM 
     chan_name="International House of Prayer (Christian)" ;;
 # 15) HSN
-15)  link=https://www.youtube.com/watch?v=J0022wscx0k 
+15)  link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/hsntv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
      chan_name="Home Shopping Network HSN" ;;
 # 16)  Arirang TV
 16) link=https://www.youtube.com/watch?v=JVr6yiZ9IMY 
@@ -333,20 +333,16 @@ chan_name="i24 News Israel" ;;
 # 19) TWiT on Twitch
 19) link=https://www.twitch.tv/twit 
     chan_name="TWiT on Twitch" ;;
-# 20) CVR English India
-20) link=https://www.youtube.com/watch?v=3S-vfmpCdCg
-chan_name="CVR English" ;; 
-# 21) Saudi 2 TV
-21) link=https://www.youtube.com/watch?v=XJA3cBbQdcQ 
-    chan_name="Saudi 2 English" ;;
+# 20)
+# 21) CVR English India
+21) link=https://www.youtube.com/watch?v=3S-vfmpCdCg
+chan_name="CVR English" ;;   
 # 22) News 9 Bangalor India
 22) link=https://www.youtube.com/watch?v=FLl8PHf_L64
 chan_name="News 9 Bangalor English" ;;
-# 23) EuroNews English
-23) link=https://www.youtube.com/watch?v=74HQqtSLJmk
-chan_name="EuroNews English" ;;
+# 23) 
 # 24) BBC World News
-24) link=https://www.youtube.com/watch?v=PcQHEX3v2L4
+24) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC3ArUUUY733ixdap2NzNsfQ/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 chan_name="BBC World News" ;;
 # 25) QVC 
 25) link=https://www.youtube.com/watch?v=2oG7ZbZnTcA
@@ -360,23 +356,26 @@ chan_name="HSN2" ;;
 # 28) High Stakes Poker 
 28) link=https://www.twitch.tv/highstakespoke 
      chan_name="High Stakes Poker" ;;    
-# 29)  i24 News Israel
-29) link=https://www.youtube.com/watch?v=tI5H8OMx6f8
-   chan_name="i24 News Isreal English" ;;
-# 30) CGTN English
-30) link=https://www.youtube.com/watch?v=K4MxEX7PCfk
-chan_name="CGTN English" ;;
-
+# 29)  
+# 30) 
 # 31
 # 32
 # 33
 # 34
 # 35
 # 36
-# 37
-# 38
-# 39
-# 40
+# 37) i24 News Israel 
+37) link=https://www.dailymotion.com/video/x29atae
+chan_name="i24 News Israel" ;;
+# 38) The Young Turks
+38) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TheYoungTurks/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+     chan_name="TYT The Young Turks" ;;  
+# 39) CGTN English
+39) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/CCTVNEWSbeijing/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="CGTN English" ;;
+# 40) Saudi 2 TV
+40) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/SaudiChannel2/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+    chan_name="Saudi 2 English" ;;
 #################    FRENCH   ###################################
 # 41) France 24 
 41) link=http://www.dailymotion.com/video/xigbvx_live-france-24_news
@@ -435,35 +434,27 @@ chan_name="LCP France";;
 # 59) Public Senate France
 59) link=http://www.dailymotion.com/video/xkxbzc_live-public-senat_news 
 chan_name="Public Senate" ;;
-# 60) Elyse.fr
-60) link=http://www.dailymotion.com/video/xu30kq_le-direct-de-la-presidence-de-la-republique_news
-chan_name="Le Direct de la Presidence de la Republique" ;;
-# 61) QVC 
-61) link=https://www.youtube.com/watch?v=wsjO1NFA3Sw
-chan_name="QVC Francais" ;;
-#62
-#63
-
+# 60) Africa News
+60) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC25EuGAePOPvPrUA5cmu3dQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+    chan_name="Africa News Francais" ;;
+# 61) RFI
+61) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/rfivideos/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
+    chan_name="RFI Francais" ;;
+# 62) Mosaik TV Francais
+62) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/mosaiktv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
+    chan_name="Mosaik TV" ;;
+# 63) Afrique Media
+63) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCOBMhI7TtRLTAGpcTjNvYCw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+    chan_name="Afrique Media" ;;  
 ###### TRANSIENT
-# 34) Africa News
-# 34) link=https://www.youtube.com/watch?v=tUjOfmeLpHo 
-#    chan_name="Africa News Francais" ;;
-# 35) Afrique Media
-# 35) link=https://www.youtube.com/watch?v=GpHTBs6B7Zk 
-#    chan_name="Afrique Media" ;;  
-# 37) Mosaik TV Francais
-# 37) link=https://www.youtube.com/watch?v=JcKSOnfoDRc 
-#    chan_name="Mosaik TV" ;;
-# 38) TLM Lyon Metro
-# 38) link=https://www.youtube.com/watch?v=aedZ5C0HcO0
-#    chan_name="TLM Television Lyon Metro" ;;
-# 40) RFI
-# 40) link=https://www.youtube.com/watch?v=N8tHbVYKRBY 
-#    chan_name="RFI Francais" ;;
+# 67) TLM Lyon Metro
+# 67) link=https://www.youtube.com/watch?v=aedZ5C0HcO0
+#     chan_name="TLM Television Lyon Metro" ;;
+
 ###################  SPANISH  #################################
-# 64) Globovision Espanol 
+# 64) Globovision Venezeula
 64) link=http://www.dailymotion.com/video/xio7e2_senal-en-vivo_news
-chan_name="Globovision" ;;
+chan_name="Globovision Venezeula" ;;
 # 65) RT Espanol
 65) link=https://www.youtube.com/watch?v=OALyNX4IbBI 
     chan_name="RT Espanol" ;;
@@ -488,88 +479,88 @@ chan_name="c5n Argentina" ;;
 # 72) A24
 72) link=https://www.youtube.com/watch?v=yZGc05q7ajA 
     chan_name="A24";;
-# 73) Televisa Guadalajara
-73) link=https://www.youtube.com/watch?v=4btUDfIjjbk 
-    chan_name="Televisia Gudalajara" ;;
-# 74) Televisa Veracruz
-74) link=https://www.youtube.com/watch?v=xDp59IK5u64 
-    chan_name="Televisia Veracruz" ;;
-# 75) Televisa Mexicali
-75) link=https://www.youtube.com/watch?v=HLJH3C_7nnk 
-    chan_name="Televisia Mexicali" ;;
-# 76)  Televisa Hermosillo
-76) link=https://www.youtube.com/watch?v=2jH6YinOabQ 
-    chan_name="Televisia Hermosillo" ;;
-# 77)  GalaTV Laguna
-77) link=https://www.youtube.com/watch?v=6SuhteXqf90 
-    chan_name="GalaTV Laguna" ;;
-# 78) GalaTV Estado de México Toluca
-78) link=https://www.youtube.com/watch?v=fHhS2BElUF0 
-    chan_name="GalaTV Estado de Mexico Toluca" ;;
-# 79) TelePacifico
-79) link=https://www.youtube.com/watch?v=ZQnMKaGYu9Q 
+# 73) TelePacifico
+73) link=https://www.youtube.com/watch?v=ZQnMKaGYu9Q 
     chan_name="TelePacifico" ;; 
-# 80) Canal 8 Mar del Plata
-80) link=https://www.youtube.com/watch?v=MbOpUZnOdNY  
+# 74) Canal 8 Mar del Plata
+74) link=https://www.youtube.com/watch?v=MbOpUZnOdNY  
     chan_name="Canal 8 Mar del Plata" ;; 
-# 81) Sures TV Campeche 
-81) link=https://www.youtube.com/watch?v=6eJPGYK2N5M 
-chan_name="Sures TV Campeche";;
+# 75) Hispan TV
+75) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/hispantv/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="HispanTV" ;;
+# 76) Globovision Venezeula
+76) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCfJtBtmhnIyfUB6RqXeImMw/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="Globovision Venezeula" ;;
+# 77) Tu Canal Panama
+77) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/elcanaldepanamatv/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+    chan_name="Tu Canal Panama" ;;
+# 78) Excelsior TV
+78) link=link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+   chan_name="Excelsior TV" ;;
+# 79) Cinevision Canal 19
+79) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCKtx0aYvzIdoKlIfTyydx0g/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="Cinevision Canal 19" ;; 
+# 80) La Casacra TV 
+80) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/lacascaravod/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="La Casacra TV" ;;
+# 81) 100% Noticias
+81) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/canal15nicaragua100/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="100% Noticias" ;;   
 
-############## TRANSIENT
-# 57) TeleSUR
+########### TELEVISIA REGIONALES MEXICO
+# 82) Televisa del Golfo
+82)  link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="Televisa del Golfo" ;; 
+# 83) Televisa Veracruz
+83) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1| cut -d / -f 2 | cut -d \" -f 1)"  
+    chan_name="Televisia Veracruz" ;; 
+# 84) Televisa Matamoros
+84)  link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="Televisa Matamoros" ;; 
+# 85) Televisa Zacatecas
+85)  link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?&view=2" | grep "watch?v=" | head -n 7 | tail -n 1| cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="Televisa Zacatecas" ;; 
+# 86) Televisa Puebla
+86)  link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?&view=2" | grep "watch?v=" | head -n 9 | tail -n 1| cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="Televisa Puebla" ;;  
+# 87) Televisa Alcapuloco
+87)  link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?&view=2" | grep "watch?v=" | head -n 11 | tail -n 1| cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="Televisa Alcapulco" ;;   
+# 88) Televisa Cuernavaca
+88)  link=http://www.galatvmorelos.tv/video-en-vivo  
+ chan_name="Televisa Cuernavaca" ;;   
+# 89) Televisa Leon
+89)  link=http://www.televisaleon.tv/video-en-vivo  
+ chan_name="Televisa Leon" ;; 
+# 90) Televisa Queretaro
+90)  link=http://www.galatvqueretaro.tv/video-en-vivo  
+ chan_name="Televisa Queretaro" ;; 
+ # 91) Televisa Gudalajera
+91)  link=http://www.televisaguadalajara.tv/video-en-vivo  
+ chan_name="Televisa Gudalajera" ;; 
+ # 92) Televisa Mexicali
+92)  link=http://www.televisamexicali.tv/video-en-vivo  
+ chan_name="Televisa Mexicali" ;;  
+ # 93) Televisa Toluca
+93)  link=http://www.galatvedomex.tv/video-en-vivo  
+ chan_name="Televisa Toluca" ;;  
+ # 94) Televisa Hermosillo
+94)  link=http://www.televisahermosillo.tv/video-en-vivo  
+ chan_name="Televisa Hermosillo" ;;  
+# 95) Televisa Torreon
+95)  link=http://www.galatvlaguna.tv/video-en-vivo  
+ chan_name="Televisa Torreon" ;;  
+
+# 82) Sures TV Campeche 
+# 82) link=https://www.youtube.com/watch?v=6eJPGYK2N5M 
+# chan_name="Sures TV Campeche";;
+
+##################
+
+# 57) TeleSUR Venezula
 # 57) link=https://www.youtube.com/watch?v=3fwfmhTYUZs 
 #    chan_name="TeleSUR Espanol" ;;
-# 64) HispanTV 
-# 64) link=https://www.youtube.com/watch?v=kibgnmaJoAs 
-#    chan_name="HispanTV" ;;
-# 65) Globovision
-# 65) link=https://www.youtube.com/watch?v=Lm-AmFtPlc4 
-#    chan_name="Globovision" ;;
-# 66) Excelsior TV
-# 66) link=https://www.youtube.com/watch?v=NANvipRo_eE 
-#    chan_name="Excelsior TV" ;;
-# 67) Imagine Radio
-# 67) link=https://www.youtube.com/watch?v=OSOXIMOxpEw 
-#    chan_name="Imagine Radio" ;;
-# 70) La Casacra TV 
-# 70) link=https://www.youtube.com/watch?v=vEwpn57ip7w 
-#    chan_name="La Casacra TV" ;;
-## Canals  Vivo  de Televisia Regional 
-# 71) Televisa del Bajio
-# 71) link=https://www.youtube.com/watch?v=wmcA51ETCoo 
-#    chan_name="Televisa del Bajio" ;;
-# 72) Televisa del Golfo
-# 72) link=https://www.youtube.com/watch?v=VHkRgkCKW-0
-#    chan_name="Televisa del Golfo" ;;
-# 74) Televisa del Noreste
-# 74) link=https://www.youtube.com/watch?v=d2qjt-7KIUE 
-#    chan_name="Televisia del Noreste" ;;
-# 76) GalaTV Morelos
-# 76) link=https://www.youtube.com/watch?v=TDrgg9VJOq4 
-#    chan_name="GalaTV Morelos" ;;
-# 77) Televisa Puebla
-# 77) link=https://www.youtube.com/watch?v=vGQReDz9-iQ 
-#    chan_name="Televisia Puebla" ;;
-# 78) GalaTV Queretaro
-# 78) link=https://www.youtube.com/watch?v=AIPhfPslF0E 
-#    chan_name="GalaTV Queretaro" ;;
-# 80) GalaTV Acapulco
-# 80) link=https://www.youtube.com/watch?v=6MeD88060x8 
-#    chan_name="GalaTV Acapulco" ;;
-# 81) GalaTV Zacatecas
-# 81) link=https://www.youtube.com/watch?v=r1arJCFwz3o 
-#    chan_name="GalaTV Zacatecas" ;; 
-# 84) 1070 Noticias
-# 84) link=https://www.youtube.com/watch?v=bfe9RLT9SBo 
-#    chan_name="1070 Noticias" ;;   
-# 87) Cinevision Canal 19
-# 87) link=https://www.youtube.com/watch?v=aBLbwbSycLU  
-#    chan_name="Cinevision Canal 19" ;; 
-# 89) Tu Canal
-# 89) link=https://www.youtube.com/watch?v=NEF_sHYhio0 
-#    chan_name="Tu Canal" ;;
-# 90) VPI TV 
+# 90) VPI TV Venezula
 # 90) link=https://www.youtube.com/watch?v=5GyfFhBnbhk 
 #    chan_name="VPI TV" ;;
 # 91) 100% Noticias Nicaragua
@@ -578,7 +569,10 @@ chan_name="Sures TV Campeche";;
 # 92) El Capitolo Venezulana
 # 92) link=https://www.youtube.com/watch?v=tjYvi3tSbr0 
 #    chan_name="El Capitolo Venezulana" ;;    
-    
+# 67) Imagine Radio
+# 67) link=https://www.youtube.com/watch?v=OSOXIMOxpEw 
+#    chan_name="Imagine Radio" ;;
+   
 ################ CHINESE MANDARIN CANTONESE  ####################
 # 99) CCTV 4 Chinese
 99) link=https://www.youtube.com/watch?v=Y8Wy9LXCapw 
@@ -698,7 +692,10 @@ chan_name="24 News Pakistan HD" ;;
 # 136) TV5 News 
 136) link=https://www.youtube.com/watch?v=MqDRh-Ysgdg 
      chan_name="TV5 News" ;;
-# 138
+# 137) Channel 24 India
+137) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/channel24web/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+   chan_name="Channel 24 India";;
+# 138)
 # 139
 # 140
 # 141 
@@ -772,7 +769,8 @@ chan_name="24 News Pakistan HD" ;;
 # 10TV Telugu
 # 114) link=https://www.youtube.com/watch?v=UpNJQg567UU 
 #     chan_name="10TV Telugu" ;;     
-     
+ 
+# 158     
 ################## ARABIC  ##########################################
 # 159) EuroNews Arabic
 159) link=https://www.youtube.com/watch?v=y6J0wW2If6Q
@@ -781,86 +779,88 @@ chan_name="EuroNews Arabic" ;;
 160) link=https://www.youtube.com/watch?v=mFQA6sCQOU4 
      chan_name="RT Arabic" ;;
 # 161) ON E Live 
-161) link=https://www.youtube.com/watch?v=vCKAnvpT79Y 
+161) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ONtveg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
      chan_name="ON E";;
 # 162)  ON E Sports
-162) link=https://www.youtube.com/watch?v=PaEPidxFLhA 
-     chan_name="ON E Sports" ;; 
+162) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCWLo4r-9_x4GCJCFShNFq0A/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+     chan_name="ON E Sports" ;;   
 # 163) ON Live
-163) link=https://www.youtube.com/watch?v=9I8WtuLBYqI
+163) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCZghOmDezc6OCMzdPaL-j2Q/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 chan_name="ON Live" ;;
 # 164) Al Jazeera Arabic
-164) link=https://www.youtube.com/watch?v=elqcDJ3TXUs 
-     chan_name="Al Jazeera Arabic" ;;
+164) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/aljazeerachannel/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+    chan_name="Al Jazeera Arabic" ;; 
 # 165) France 24 Arabic
 165) link=https://www.youtube.com/watch?v=UYi0sgVm5dM 
      chan_name="France 24 Arabic" ;;
 # 166) BBC Arabic
 166) link=https://www.youtube.com/watch?v=m0RMXgxMhs8 
      chan_name="BBC Arabic" ;;
-# 167) CBC Egypt Sofra Arabic
-167) link=https://www.youtube.com/watch?v=LJzqXK3hB3I
-chan_name="CBC Egypt Sofra" ;;
-# 168) Al Arabiya
-168) link=https://www.youtube.com/watch?v=1QFrtsu1JJg 
+# 167) Al Arabiya
+167) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/AlArabiya/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
      chan_name="Al Arabiya" ;;
-# 169) Al Mayadeen
-169) link=https://www.youtube.com/watch?v=UBzkC6F2Lrc 
+# 168) Al Mayadeen
+168) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/Mayadeentv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
      chan_name="Al Mayadeen" ;;   
-# 170) Syrian Satellite
-170) link=https://www.youtube.com/watch?v=YfH6U8CNp58 
-     chan_name="Syrian Satellite" ;; 
-# 171) ORTAS Syrian Satellite
-171) link=https://www.youtube.com/watch?v=BsJ7iZ7bRxA
+# 169) Syrian Satellite
+169) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCclXv4NFO2QTv9QgN3ZTMHw/videos?&view=2" | grep "watch?v=" | head -n 4 | tail -n 1 |  cut -d / -f 2 | cut -d \" -f 1)"   
+     chan_name="Syrian Satellite" ;;     
+# 170) ORTAS Syrian Satellite
+170) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCclXv4NFO2QTv9QgN3ZTMHw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
 chan_name="ORTAS Syria" ;;
-# 172) Bedya TV Arabic
-172) link=https://www.youtube.com/watch?v=8PMpmZcypt8
+# 171) Bedya TV Arabic
+171) link=https://www.youtube.com/watch?v=8PMpmZcypt8
 chan_name="Bedya TV Arabic" ;;
-# 173) Belques TV Arabic
-173) link=https://www.youtube.com/watch?v=Wp5lXYwQA5U
+# 172) Belques TV Arabic
+172) link=https://www.youtube.com/watch?v=Wp5lXYwQA5U
 chan_name="Belques TV Arabic" ;;
-# 174) Saudi TV Blue
-174) link=https://www.youtube.com/watch?v=cCe0Hzqjhso
+# 173) Saudi TV Blue
+173) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/SaudiNewsTV/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 chan_name="Saudi Blue" ;;  
-# 175) Saudi TV Purple
-175) link=https://www.youtube.com/watch?v=2fji1-aeZcE
-chan_name="Saudi Purple" ;;
-# 176) Saudi Kids
-176) link=https://www.youtube.com/watch?v=uUPqVDf_0II
-chan_name="Saudi Kids" ;;
+# 174) Saudi Finance TV Purple
+174) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/EqtsaTV/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="Saudi Finance TV Purple" ;;
+# 175) Saudi Channel 1 Green 
+175) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/SaudiChannelOne/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="Saudi Channel 1 Green" ;;
+# 176) Saudi TV Gold  Mecca Kabba
+176) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/SaudiQuranTv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="Saudi Gold" ;; 
+# 177) Saudi Sliver Educational
+177) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/SaudiSunnahTv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="Saudi Silver" ;; 
+# 178) Saudi Cultural TV Orange
+178) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/SaudiCulturalTv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="Saudi Cultural TV Orange" ;;
+# 179) Saudi Sports TV Red
+179) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/AlMalabTube/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="Saudi Sports TV Red" ;;
+# 180) DMC Live
+180) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UClWxVmz6anf2M58vK_LHZJg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="DMC LIVE" ;;
+# 181) SKY Arabic
+181) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/skynewsarabia/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+     chan_name="SKY Arabic" ;;
+# 182) CBC Egypt Arabic Drama 
+182) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/CBCDramaStream/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="CBC Egypt Arabic Drama" ;;
+# 183) eXtra News Egypt Arabic
+183) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC65F33K2cXk9hGDbOQYhTOw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="eXtra News Egypt" ;;    
+# 184) CBC Egypt Sofra Arabic
+184) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/CBCSofraStream/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="CBC Egypt Sofra" ;;
 
 ############### TRANSIENT
-# 168) Saudi Red
-# 168) link=https://www.youtube.com/watch?v=WkDnIzXDlNk
-# chan_name="Saudi Red" ;;
-# 173) Saudi TV Green 
-# 173) link=https://www.youtube.com/watch?v=Bjk3yH_t1nI
-# chan_name="Saudi Green" ;;
-# 176) Saudi TV Orange
-# 176) link=https://www.youtube.com/watch?v=UbPHJlFYvNc
-# chan_name="Saudi Orange" ;;
-# 177) Saudi Sliver Educational
-# 177) link=https://www.youtube.com/watch?v=-WYI832cx5Q
-# chan_name="Saudi Silver" ;;
-# 178) Saudi TV Gold  Mecca Kabba
-# 178) link=https://www.youtube.com/watch?v=Nxzeb_5LjtU
-# chan_name="Saudi Gold" ;;
+# 184) CBC Egypt Arabic Live
+# 184) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/CBCSofraStream/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+#      chan_name="CBC Egypt Arabic" ;;
 # 154) Makkha Live (Mecca Kaaba)
 # 154) link=https://www.youtube.com/watch?v=0b1IMR2H_7s
 # chan_name="Mecca Kaaba Live" ;;
-# 152) SKY Arabic
-# 152) link=https://www.youtube.com/watch?v=y8lsgZYxjGM 
-#     chan_name="SKY Arabic" ;;
-# 161) CBC Egypt Arabic Live
-# 161) link=https://www.youtube.com/watch?v=FFx5r-U9ryA 
-#      chan_name="CBC Egypt Arabic" ;;
-# 162) CBC Egypt Arabic Drama 
-# 162) link=https://www.youtube.com/watch?v=Gfqcb0grf1w
-# chan_name="CBC Egypt Arabic Drama" ;;
-# 164) eXtra News Egypt Arabic
-# 164) link=https://www.youtube.com/watch?v=PX_Wp78KtWE
-# chan_name="eXtra News Egypt" ;;    
-
+# 176) Saudi Kids
+# 176) link=https://www.youtube.com/watch?v=uUPqVDf_0II
+# chan_name="Saudi Kids" ;;
 ############### RUSSIAN ################################
 # 190) Россия 24
 190) link=https://www.youtube.com/watch?v=i_Q8N6ZSDXQ 
@@ -875,13 +875,13 @@ chan_name="Ukraine 112" ;;
 193) link=https://www.youtube.com/watch?v=yA30K3z5PSw
 chan_name="News 1 Ukraine" ;;
 # 194) Еспресо Ukraine
-194) link=https://www.youtube.com/watch?v=4xTbVaADR_8
+194) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/espresotv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 chan_name="Ecnpeco Ukraine" ;;
 # 195) Thromadske Ukraine
-195) link=https://www.youtube.com/watch?v=FKVBsbuVt-I
+195) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/HromadskeTV/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 chan_name="Thromadske Ukraine" ;;
 # 196) UA TV Ukraine
-196) link=https://www.youtube.com/watch?v=y6JaMn8bT-E
+196) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCt3igz3aIXfS108KV_jZsMA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 chan_name="UA TV Ukraine" ;;
 # 197
 ################### GREEK ######################################
@@ -894,48 +894,53 @@ chan_name="Ionian TV Greek" ;;
 ## 200) Star Lima
 200) link=http://www.dailymotion.com/video/xqjey2_star-lamia-live-streaming_news
 chan_name="Star Lima Greek" ;;
-################### TURKEY  ########################
-
-# 189)
-## 189) TRT Haber Turkey
-# 189) link=https://www.youtube.com/watch?v=uN5fOYfl63s
-#chan_name="TRT Haber Turkey";;
-# 201) Star TV  Turkish
-201) link=https://www.youtube.com/watch?v=jWP3ntl64I4
-chan_name="Star TV Turkish" ;;   
-## 202) Parovi 1 TV
-202) link=https://www.youtube.com/watch?v=DmRzk9MtRAc
-chan_name="Parovi 1";;
+## 201) Parovi 1 TV Serbian
+201) link=https://www.youtube.com/watch?v=DmRzk9MtRAc
+chan_name="Parovi TV Serbian";;
+################### TURKEY  ########################  
+## 202) TRT Haber Turkey
+202) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/trthaber/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="TRT Haber Turkey";;
+## 203) NTV Turkey
+203) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ntv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="NTV Turkey";;
+## 204) HaberTurk TV
+204) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TVhaberturk/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="HaberTurk TV";;
+# 205) Star TV  Turkish
+205) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/STARTVSTAR/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="Star TV Turkey";;
 ################ AFRICAN #################################
-# 203) ADOM TV 
-203) link=https://www.youtube.com/watch?v=g5McawVm8Q4 
-     chan_name="ADOM TV" ;;
-# 193)
-# 193) Bukedde TV
-# 193) link=https://www.youtube.com/watch?v=qu6yFRENQ1U
-#chan_name="Bukedde TV" ;;      
+# 206) ADOM TV 
+206) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/adomtvtube/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+     chan_name="ADOM TV" ;;    
+# 207) Bukedde TV
+207) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/bukeddetv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="Bukedde TV" ;;      
 ###############    RESTRICTED TO EUROPE     ###########################
-# 204) SKY NEWS
-204) link=https://www.youtube.com/watch?v=y60wDzZt8yg 
+# 208) SKY NEWS
+208) link=https://www.youtube.com/watch?v=y60wDzZt8yg 
     chan_name="SKY NEWS" ;; 
-# 205) DW English
-205) link=https://www.youtube.com/watch?v=gNosnzCaS4I 
+# 209) DW English
+209) link=https://www.youtube.com/watch?v=gNosnzCaS4I 
 # link=http://www.dailymotion.com/video/xzgfm5_dw-live-stream_news
     chan_name="DW English" ;; 
-# 206)  EuroNews Deutche
-206) link=https://www.youtube.com/watch?v=dYJ0kTqeu08 
+# 210)  EuroNews Deutche
+210) link=https://www.youtube.com/watch?v=dYJ0kTqeu08 
     chan_name="EuroNews Deutche" ;;
 ################# ENTERTAINMENT  ##################################
-# 207) Talking Tom and Friends
-207) link=https://www.youtube.com/watch?v=Fe-fQbUWJwc 
+# 211) Talking Tom and Friends
+211) link=https://www.youtube.com/watch?v=Fe-fQbUWJwc 
      chan_name="Talking Tom and Friends" ;;
-# 199)
-# 200)
-# 201)
 ################# TAGALOG FILIPINO #############################       
-# 202) 
-# 203) DZMM ABS-CBN Philippeans Radio
-203) link=https://www.youtube.com/watch?v=YTjNZrs5vvU
+# 212) DZMM ABS-CBN Philippeans Radio
+212) link=https://www.youtube.com/watch?v=YTjNZrs5vvU
+chan_name="DZMM Philippeans" ;;
+# 213) DZRH Philippeans
+213) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCcTiBX8js_djhSSlmJRI99A/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="DZRH Philippeans" ;;
+# 214) DZMM Philippeans
+214) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCs_VNu-FQ0WcJnD4QkmIL5w/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 chan_name="DZMM Philippeans" ;;
 ###############    SPACE       ######################### 
 # 220) NASA ISS REPLAY
@@ -1025,16 +1030,19 @@ chan_name="Euronews Italian" ;;
 # 250) QVC Itallian
 250) link=https://www.youtube.com/watch?v=E97hsB3Qbmk
 chan_name="QVC Italian" ;;
-# 251) Sport in oro in dirreta
-251) link=https://www.youtube.com/watch?v=Hgqx2yMjYQg
-chan_name="Sport in Oro" ;;
+# 251)  EuroNews English
+251) link=https://www.youtube.com/watch?v=74HQqtSLJmk
+chan_name="EuroNews English" ;;
 # 252) Euronews Maygar Hugarian
 252) link=https://www.youtube.com/watch?v=lyuV6zRInOo
 chan_name="Euronews Maygar Hungarian" ;;
 
-# 277) TYT 
-277) link=https://www.youtube.com/watch?v=8x_PT1iNzTs 
-     chan_name="TYT The Young Turks" ;;    
+# 276) Elyse.fr
+276) link=http://www.dailymotion.com/video/xu30kq_le-direct-de-la-presidence-de-la-republique_news
+chan_name="Le Direct de la Presidence de la Republique" ;;
+# 277) QVC 
+277) link=https://www.youtube.com/watch?v=wsjO1NFA3Sw
+chan_name="QVC Francais" ;;  
 esac
 }
 
@@ -1042,7 +1050,7 @@ channel_select $num
 
 
 echo "$chan_name"
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv "$link" 
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
 
 
 
@@ -1063,7 +1071,7 @@ else
 
 channel_select $entry
 echo "$chan_name"
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv "$link" 
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
 
 # echo "You were watching "$chan_name" on Channel "$entry" "
 
@@ -1101,8 +1109,6 @@ exit "$?"
 ######################     END OF PROGRAM      ####################################################
 
 # BROKEN  / Transient
-## 83) GalaTV Chihuahua BROKEN
-# 83) link=https://www.youtube.com/watch?v=VloHUkS_Cn0 ;;
 # 85) Canal Noticias Argentina BROKEN
 # 85) link=https://www.youtube.com/watch?v=WJCIuoKvzi0 ;;
 # 86) Canal 44 BROKEN
@@ -1122,12 +1128,6 @@ exit "$?"
 #Japan TV Live
 # 97) link=https://www.youtube.com/watch?v=kDxsHqzwFdE
 # chan_name="Japan TV Live" ;;
-# 25) BBC World News
-# 25) link=https://www.youtube.com/watch?v=qAEQGieNVYY
-#chan_name="BBC World News" ;;
-# 26) RT English
-# 26) link=https://www.youtube.com/watch?v=uTmcDQGad1E
-# chan_name="RT English" ;;
 # KTN Kenya English
 # 15) link=https://www.youtube.com/watch?v=olLOAay5VNw 
 #    chan_name="KTN Kenya English" ;;
