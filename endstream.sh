@@ -164,7 +164,7 @@ channel_matrix()
    echo "1) France 24 English   41) France 24 Francais   80) La Casacra TV          119) SunNews         159) EuroNews Arabic   198) Action 24 Greek      238) Steamy Mount Japan "    
    echo "2) Al Jazeera English  42) France Info TV       81) 100%Noticias Nicaragua 120) TV 9 News       160) RT Arabic         199) Ionian Greek         239) Tokyo Japan " 
    echo "3) TRT World Istanbul  43) France 24 Francais   82) Televisia del Golfo    121) Rajya Sabha TV  161) ON E Arabic       200) Star Lima Greek      240) Shizuoka Japan"  
-   echo "4) i24 News Israel     44) Euronews Francais    83) Televisa Veracruz      122) Sandesh News    162) ON E Sport        201) Parovi TV Serbian    241) Yokohama Japan"             
+   echo "4) i24 News Israel     44) Euronews Francais    83) Televisa Veracruz      122) TV9 Gujarat     162) ON E Sport        201) Parovi TV Serbian    241) Yokohama Japan"             
    echo "5) NEWSMAX             45) France Info          84) Televisia Matamoros    123) Tv9 Marathi     163) ON Live           202) TRT Haber Turkey     242) Hokkido Japan"  
    echo "6) ABC Australia       46) France Inter         85) Televisia Zacatecas    124) Bol TV Pakistan 164) Al Jazeera        203) NTV Canli            243) Mt Fuji Japan"  
    echo "7) Africa News         47) Max FM 92.9          86) Televisia Puebla       125) 92 News Pakistan165) France 24 Arabic  204) Haber Turk TV        244) ---------- "
@@ -176,34 +176,35 @@ channel_matrix()
    echo "13) Sheppards Chapel   53) BMF TV               92) Televisa Mexicali      131) TV9 Live        171) Bedya TV Arabic   210) Euronews Deutche     250) QVC Italian "
    echo "14) IHOP               54) Europe 1             93) Televisa Toluca        132) NTV Telugu      172) Belquees Arabic   211) Talking Tom          251) Euronews English"
    echo "15) HSN                55) i24 France           94) Televisa Hermosillo    133) ABN Telugu      173) Saudi Blue News   212) DZMM Philippeans     252) Euronews Maygar "  
-   echo "16) Arirang TV         56) France Info TV       95) Televisa Toreon        134) Vanitha TV      174) Saudi Purple      213) DZRH Philippeans     253) ------- "
-   echo "17) India Today        57) France Info Radio    96) ------------           135) HMT             175) Saudi Green       214) DZMM Philippeans     254) ------- "
-   echo "18) NASA TV            58) LCP FRANCE           97) ------------           136) TV5             176) Saudi Gold        215) --------------       255) ------- "	
-   echo "19) TWiT Twitch        59) Public Senate        98) ------------           137) Channel 24      177) Saudi Silver      216) --------------       256) ------- "
-   echo "20) ---------------    60) Africa News French   =======ASIAN LANGUAGE===== 138) -----------     178) Saudi Orange      217) --------------       257) ------- "  
-   echo "21) CVR English        61) RFI Francais         99) CCTV 4 China           139) -----------     179) Saudi Red         218) ---------------      258) ------- "
-   echo "22) News 9 Bangalor    62) Mosaik TV            100) ON TV News Hong Kong  140) -----------     180) DMC Live          219) ---------------      259) -------  "       
-   echo "23) ---------------    63) Afrique Media        101) ON TV Sports Hong Kong141) -----------     181) SKY Arabic        220) NASA ISS Replay      260) -------  "  
-   echo "24) BBC World News     ====SPANISH LANGUAGE===  102) EBC 51 Taiwan         142) -----------     182) CBC Egypt Drama   221) NASA ISS 1           261) -------  "
-   echo "25) QVC English        64)Globovision Venezuela 103) EBC Finance Taiwan    143) -----------     183) eXtra News Egypt  222) NASA ISS 2           262) -------  "  
-   echo "26) HSN 2              65) RT Espanol           104) Tzu Chi Da Ai Taiwan  144) -----------     184) CBC Egypt Sofra   223) Okeanos Cam 1        263) -------  "
-   echo "27) Poker TV           66) DW Espanol           105) FTV Live Taiwan       145) -----------     185) ------------      224) Okeanos Cam 2        264) -------  "
-   echo "28) High Stakes Poker  67) NTN24                106) TTV Taiwan            146) -----------     186) ------------      225) Okeanos Cam 3        265) -------  "
-   echo "29) ---------------    68) Canal 8 San Juan     107) CTV Taiwan            147) -----------     187) ------------      226) Venice Italy Bridge  266) -------  "
-   echo "30) ---------------    69) Canal 6 San Rafael   108) CTS World News Taiwan 148) -----------     188) ------------      227) Venice Italy Port    267) -------  "    
-   echo "31) ---------------    70) Canal Siete          109) SET Taiwan            149) -----------     189) ------------      228) Jackson Hole XSec    268) -------  "
-   echo "32) ---------------    71) c5n Argentina        110) CTI Taiwan            150) -----------     =======RUSSIAN=======  229) Jackson Hole Square  269) -------  "
-   echo "33) ---------------    72) A24 Argentina        111) NEXT TV Taiwan        151) -----------     190) POCCNR 24 Russia  230) Jackson Hole Rustic  270) -------  " 
-   echo "34) ---------------    73) TelePacifico         112) Chinese Kareoke       152) -----------     191) Ukraine 5         231) Verona Italy         271) -------  "  
-   echo "35) ---------------    74) Canal 8 Mar Plata    113) KBS World 24 Live     153) -----------     192) Ukraine 112       232) Soggy Dollar BVI     272) -------  "
-   echo "36) ---------------    75) HispanTV             114) KBS World English     154) -----------     193) News 1 Ukraine    233) Amsterdam Netherlands273) -------  "
-   echo "37) i24 News Israel    76)Globovision Venezuela 115) KBS World TV          155) -----------     194) Ecnpeco Ukraine   234) SHIBUYA JAPAN        274) -------  "
-   echo "38) The Young Turks    77) Tu Canal Panama      116) YTN 27 Korea          156) -----------     195) Thromadske Ukraine235) RSBN Live Cam        275) -------  "	
-   echo "39) CGTN English       78) Excelsior TV         117) QVC JAPAN             157) -----------     196) UA TV Ukraine     236) Akiba Japan          276) La Republic  "
-   echo "40) Saudi 2 English    79) Cinevision Canal 19  118) SoL!ve 24 Japan       158) -----------     197) -------------     237) Bridge Japan         277) QVC Francais "
+   echo "16) Arirang TV         56) France Info TV       95) Televisa Toreon        134) Vanitha TV      174) Saudi Purple      213) DZRH Philippeans     253) ---------- "
+   echo "17) India Today        57) France Info Radio    96) ------------           135) HMT             175) Saudi Green       214) DZMM Philippeans     254) ---------"
+   echo "18) NASA TV            58) LCP FRANCE           97) ------------           136) TV5             176) Saudi Gold        215) --------------       255) Shirdi Sai"	
+   echo "19) TWiT Twitch        59) Public Senate        98) ------------           137) Channel 24      177) Saudi Silver      216) --------------       256) ETV Andhra Pradesh "
+   echo "20) ---------------    60) Africa News French   =======ASIAN LANGUAGE===== 138) SAMA TV         178) Saudi Orange      217) --------------       257) News 7 Tamil "  
+   echo "21) CVR English        61) RFI Francais         99) CCTV 4 China           139) Survana News    179) Saudi Red         218) ---------------      258) News 18 Tamilnadu"
+   echo "22) News 9 Bangalor    62) Mosaik TV            100) ON TV News Hong Kong  140) ATN Bangladesh  180) DMC Live          219) ---------------      259) Polimer TV "       
+   echo "23) ---------------    63) Afrique Media        101) ON TV Sports Hong Kong141) No 1 News       181) SKY Arabic        220) NASA ISS Replay      260) Jaya Plus"  
+   echo "24) BBC World News     ====SPANISH LANGUAGE===  102) EBC 51 Taiwan         142) i News          182) CBC Egypt Drama   221) NASA ISS 1           261) -------  "
+   echo "25) QVC English        64)Globovision Venezuela 103) EBC Finance Taiwan    143) APN News        183) eXtra News Egypt  222) NASA ISS 2           262) -------  "  
+   echo "26) HSN 2              65) RT Espanol           104) Tzu Chi Da Ai Taiwan  144) 4tv News        184) CBC Egypt Sofra   223) Okeanos Cam 1        263) -------  "
+   echo "27) Poker TV           66) DW Espanol           105) FTV Live Taiwan       145) Media One       185) ------------      224) Okeanos Cam 2        264) -------  "
+   echo "28) High Stakes Poker  67) NTN24                106) TTV Taiwan            146) Tamil Live      186) ------------      225) Okeanos Cam 3        265) -------  "
+   echo "29) ---------------    68) Canal 8 San Juan     107) CTV Taiwan            147) TOLO NEWS       187) ------------      226) Venice Italy Bridge  266) -------  "
+   echo "30) ---------------    69) Canal 6 San Rafael   108) CTS World News Taiwan 148) Dawn News       188) ------------      227) Venice Italy Port    267) -------  "    
+   echo "31) ---------------    70) Canal Siete          109) SET Taiwan            149) DD News         189) ------------      228) Jackson Hole XSec    268) -------  "
+   echo "32) ---------------    71) c5n Argentina        110) CTI Taiwan            150) Public TV India =======RUSSIAN=======  229) Jackson Hole Square  269) -------  "
+   echo "33) ---------------    72) A24 Argentina        111) NEXT TV Taiwan        151) REPORTER LIVE   190) POCCNR 24 Russia  230) Jackson Hole Rustic  270) -------  " 
+   echo "34) ---------------    73) TelePacifico         112) Chinese Kareoke       152) NTV Bangladesh  191) Ukraine 5         231) Verona Italy         271) -------  "  
+   echo "35) ---------------    74) Canal 8 Mar Plata    113) KBS World 24 Live     153) AsiaNet News    192) Ukraine 112       232) Soggy Dollar BVI     272) -------  "
+   echo "36) ---------------    75) HispanTV             114) KBS World English     154) 10TV Telugu     193) News 1 Ukraine    233) Amsterdam Netherlands273) -------  "
+   echo "37) i24 News Israel    76)Globovision Venezuela 115) KBS World TV          155) ABN Telegu      194) Ecnpeco Ukraine   234) SHIBUYA JAPAN        274) -------  "
+   echo "38) The Young Turks    77) Tu Canal Panama      116) YTN 27 Korea          156) TV 5 News       195) Thromadske Ukraine235) RSBN Live Cam        275) -------  "	
+   echo "39) CGTN English       78) Excelsior TV         117) QVC JAPAN             157) V6 News         196) UA TV Ukraine     236) Akiba Japan          276) La Republic  "
+   echo "40) Saudi 2 English    79) Cinevision Canal 19  118) SoL!ve 24 Japan       158) Kalaignar TV    197) -------------     237) Bridge Japan         277) QVC Francais "
    echo "========================================================================================================================================================================"
 echo " " 
 }	
+
 
 
 for arg in $@
@@ -647,9 +648,9 @@ chan_name="TV9 Live India";;
 # 121) Rajya Sabha TV
 121) link=https://www.youtube.com/watch?v=oPpYUy__VaQ
 chan_name="Rajya Sabha" ;;
-# 122) Sandesh News
-122) link=https://www.youtube.com/watch?v=qsl7g3hEx2U 
-chan_name="Sandesh News" ;; 
+# 122) TV9 Gujarat
+122) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/tv9gujaratlive/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="TV 9 Gujarat" ;; 
 # 123) Tv9 Marathi
 123) link=https://www.youtube.com/watch?v=BremLDr3lgA 
      chan_name="Tv9 Marathi" ;; 
@@ -663,8 +664,9 @@ chan_name="92 News Pakistan";;
 126) link=https://www.youtube.com/watch?v=KMReyf7MEmk
 chan_name="News 7 Tamil" ;;
 # 127) T News Telegu
-127) link=https://www.youtube.com/watch?v=p-a-Q2JCUZ4
-chan_name="T News Telegu" ;;
+127) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TNews/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+# link=https://www.youtube.com/watch?v=p-a-Q2JCUZ4
+ chan_name="T News Telegu" ;;
 ## 128) 24 News Pakistan HD
 128) link=https://www.youtube.com/watch?v=sKTPacY9Aj4
 chan_name="24 News Pakistan HD" ;;  
@@ -674,9 +676,9 @@ chan_name="24 News Pakistan HD" ;;
 # 130) Aaj Tak 
 130) link=https://www.youtube.com/watch?v=oMETNh3Tr0Q 
      chan_name="Aaj Tak" ;;
-# 131) TV9 Telugu
-131) link=https://www.youtube.com/watch?v=QWsESTCbIf0 
-     chan_name="TV9 Telugu" ;;
+# 131) TV9 Telugu Live
+131) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/tv9live/videos?&view=2" | grep "watch?v=" | head -n 4 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="TV9 Live" ;;
 # 132) NTV Telugu
 132) link=https://www.youtube.com/watch?v=T953eK1GXbA 
      chan_name="NTV Telugu" ;;
@@ -695,82 +697,75 @@ chan_name="24 News Pakistan HD" ;;
 # 137) Channel 24 India
 137) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/channel24web/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
    chan_name="Channel 24 India";;
-# 138)
-# 139
-# 140
-# 141 
-# 137
-# 138
-# 139
-# 140
-# 141
-# 142
-# 143
-# 144
-# 145
-# 146
-# 147
-# 148
-#### TRANSIENT ################
-#  SAMAA TV
-# 144) link=https://www.youtube.com/watch?v=qH2kZjv1CYM 
-#      chan_name="SAMAA TV" ;;    
-# 142) Survana News
-# 142) link=https://www.youtube.com/watch?v=xJqm4gxr7gs 
-#     chan_name="Survana News" ;;
+# 138) SAMAA TV
+138) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/samaatvnews/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+  chan_name="SAMAA TV" ;;    
+# 139) Survana News
+ 139) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/suvarnanews/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+     chan_name="Survana News" ;;   
 # 140) ATN News Bangladesh
-# 140) link=https://www.youtube.com/watch?v=F_oSYwhc9Rs
-# chan_name="ATN News Bangladesh";;     
-# No 1 News Telugu
-# 137) link=https://www.youtube.com/watch?v=JMUtgBPIliM
-# chan_name="No 1 News" ;;
-# i News Telugu
-# 136) link=https://www.youtube.com/watch?v=3xe2HCGvikI
-# chan_name="i News Telugu" ;; 
-#  APN News India
-# 135) link=https://www.youtube.com/watch?v=O5WcuOYIaOQ
-# chan_name="APN News" ;;
-#  4tv News India
-# 134) link=https://www.youtube.com/watch?v=GhRxbhMnyHU
-# chan_name="4tv News" ;;    
-#  Samaya News
-# 133) link=https://www.youtube.com/watch?v=MmvnNOOt92Q
-# chan_name="Samaya News" ;;     
-# Media One News
-# 131) link=https://www.youtube.com/watch?v=Fpp7C-XH2ac
-# chan_name="Media One";;
-# Tamil Live News
-# 130) link=https://www.youtube.com/watch?v=47oy2A47Jjs
-# chan_name="Tamil Live News";;
-## TOLO NEWS AFGHANISTAN
-# 127) link=https://www.youtube.com/watch?v=-CONWzwDqTA
-# chan_name="TOLO NEWS";; 
-## Dawn News PAKISTAN
-# 126) link=https://www.youtube.com/watch?v=f0ZIpFKjpKU
-# chan_name="Dawn News" ;;
-## Telugu News
-# 124) link=https://www.youtube.com/watch?v=kg48DXa4bKE 
-#     chan_name="Telugu News" ;;  
-## DD News
-# 123) link=https://www.youtube.com/watch?v=23EG0wfvcYU
-# chan_name="DD News" ;; 
-## Public TV India
-# 121) link=https://www.youtube.com/watch?v=dccFagg0tDU
-# chan_name="Public TV India" ;;
-## REPORTER LIVE
-# 118) link=https://www.youtube.com/watch?v=WpyZ7xjx3hk 
-#chan_name="Reporter Live" ;;
-# NTV Bangladesh
-# 116) link=https://www.youtube.com/watch?v=5pz4cXHd6TI 
-#     chan_name="NTV Bangladesh" ;;
-# AsiaNet News
-# 115) link=https://www.youtube.com/watch?v=YYqeFCJRBUg  
-#     chan_name="AsiaNet News" ;;     
-# 10TV Telugu
-# 114) link=https://www.youtube.com/watch?v=UpNJQg567UU 
-#     chan_name="10TV Telugu" ;;     
- 
-# 158     
+ 140) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/atnnewsltd/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="ATN News Bangladesh";;     
+# 141) No 1 News Telugu
+141) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCatI3KKoZyHntflwQIyo65g/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="No 1 News" ;;
+# 142)i News Telugu
+142) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/inews/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="i News Telugu" ;; 
+#  143) APN News India
+143) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/apnnewsindia/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="APN News" ;;
+# 144) 4tv News India
+144) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/4tvindia/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="4tv News" ;;   
+# 145) Media One News
+145) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCpt10lzibN9Ux-tFGVAnrBw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="Media One";;
+# 146)  Tamil Live News
+ 146) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/PTTVOnlineNews/videos?&view=2" | grep "watch?v=" | head -n 2 | tail -n 1|  cut -d / -f 2 | cut -d \" -f 1)"
+ chan_name="Tamil Live News";;
+## 147) TOLO NEWS AFGHANISTAN
+147) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TOLOnewsLive/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="TOLO NEWS";; 
+## 148) Dawn News PAKISTAN
+148) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/dawnnewspakistan/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="Dawn News" ;;
+## 149) DD News
+ 149) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/DDNewsofficial/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+ chan_name="DD News" ;; 
+## 150) Public TV India
+ 150) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/publictvnewskannada/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+ chan_name="Public TV Kannada" ;;
+# 151) REPORTER LIVE
+ 151) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCFx1nseXKTc1Culiu3neeSQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+chan_name="Reporter Live" ;;
+# 152) NTV Bangladesh
+ 152) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ntvteluguhd/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="NTV Bangladesh" ;;
+# 153) AsiaNet News
+ 153) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/asianetnews/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="AsiaNet News" ;;     
+# 154) 10TV Telugu
+ 154) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/10TVNewsChannel/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="10TV Telugu" ;;     
+# 155) ABN Telegu
+ 155) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/abntelugutv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+  chan_name="ABN Telegu" ;;
+# 156) TV 5 Telegu
+156) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TV5newschannel/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+ chan_name="TV 5 Telegu" ;;
+# 157)V6 News
+157) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/V6NewsTelugu/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="V6 News" ;;
+# 158) Kalaignar TV1
+158) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCcVF2Fth-qEA4T1Lhn3CgKg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="Kalaignar TV" ;;
+
+#############  TRANSIENT
+#  145) Samaya News
+# 145) link=https://www.youtube.com/watch?v=MmvnNOOt92Q
+# chan_name="Samaya News" ;;  
+
 ################## ARABIC  ##########################################
 # 159) EuroNews Arabic
 159) link=https://www.youtube.com/watch?v=y6J0wW2If6Q
@@ -1037,6 +1032,29 @@ chan_name="EuroNews English" ;;
 252) link=https://www.youtube.com/watch?v=lyuV6zRInOo
 chan_name="Euronews Maygar Hungarian" ;;
 
+# India Overflow
+# 253) 
+# 254) 
+# 255) Shirdi Sai Aarti/Darshan
+255) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/tv9live/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="Shirdi Sai Aarti/Darshan Live" ;;
+# 256) ETV Andhra Pradesh
+256) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/etv2india/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="ETV Andhra Pradesh" ;;
+# 257) News 7 TamilShirdi Sai Aarti/Darshan
+257) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/news7tamil/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="News 7 Tamil" ;;
+# 258) News 18 Tamilnadu
+258) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCat88i6_rELqI_prwvjspRA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="News 18 Tamilnadu" ;;
+# 259) The Polimer TV
+259) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ThePolimermedia/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+chan_name="The Polimer TV" ;;
+# 260) Jaya Plus
+260) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/jayapluschennai/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+ chan_name="Jaya Plus" ;;
+
+
 # 276) Elyse.fr
 276) link=http://www.dailymotion.com/video/xu30kq_le-direct-de-la-presidence-de-la-republique_news
 chan_name="Le Direct de la Presidence de la Republique" ;;
@@ -1133,4 +1151,4 @@ exit "$?"
 #    chan_name="KTN Kenya English" ;;
 # 22) KTN Kenya
 # 22) link=https://www.youtube.com/watch?v=ckmfiK0XpNU
-# chan_name="KTN Kenya" ;;
+# chan_name="KTN Kenya" ;;India"
