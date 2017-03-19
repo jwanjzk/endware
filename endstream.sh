@@ -6,10 +6,11 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.17
-# Revision Date: March 17, 2017
+# Version: 0.18
+# Revision Date: March 19, 2017
 #
-# Change Log:  - grab transient channels by channel name 
+# Change Log:  - Start in fullscreen mode
+#              - grab transient channels by channel name 
 #              - Removed transient streams added some home shopping channels
 #              - Rearranged channels
 #              - Added more streams from Taiwan and Japan
@@ -149,8 +150,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.17"
-rev_date="17/03/2017"
+version="0.18"
+rev_date="19/03/2017"
 branch="gnu/linux"
 ##################################################
 
@@ -196,10 +197,10 @@ channel_matrix()
    echo "30) Newsy              69) Canal 6 San Rafael   108) CTS World News Taiwan 148) Dawn News       188) ------------      227) Venice Italy Port    267) -------  "    
    echo "31) DVIDS              70) Canal Siete          109) SET Taiwan            149) DD News         189) ------------      228) Jackson Hole XSec    268) -------  "
    echo "32) BBC News           71) c5n Argentina        110) CTI Taiwan            150) Public TV India =======RUSSIAN=======  229) Jackson Hole Square  269) -------  "
-   echo "33) ---------------    72) A24 Argentina        111) NEXT TV Taiwan        151) REPORTER LIVE   190) POCCNR 24 Russia  230) Jackson Hole Rustic  270) -------  " 
-   echo "34) ---------------    73) TelePacifico         112) Chinese Kareoke       152) NTV Bangladesh  191) Ukraine 5         231) Verona Italy         271) -------  "  
-   echo "35) ---------------    74) Canal 8 Mar Plata    113) KBS World 24 Live     153) AsiaNet News    192) Ukraine 112       232) Soggy Dollar BVI     272) -------  "
-   echo "36) ---------------    75) HispanTV             114) KBS World English     154) 10TV Telugu     193) News 1 Ukraine    233) Amsterdam Netherlands273) -------  "
+   echo "33) RT English         72) A24 Argentina        111) NEXT TV Taiwan        151) REPORTER LIVE   190) POCCNR 24 Russia  230) Jackson Hole Rustic  270) -------  " 
+   echo "34) CNN                73) TelePacifico         112) Chinese Kareoke       152) NTV Bangladesh  191) Ukraine 5         231) Verona Italy         271) -------  "  
+   echo "35) MSNBC              74) Canal 8 Mar Plata    113) KBS World 24 Live     153) AsiaNet News    192) Ukraine 112       232) Soggy Dollar BVI     272) -------  "
+   echo "36) FOX NEWS           75) HispanTV             114) KBS World English     154) 10TV Telugu     193) News 1 Ukraine    233) Amsterdam Netherlands273) -------  "
    echo "37) i24 News Israel    76)Globovision Venezuela 115) KBS World TV          155) ABN Telegu      194) Ecnpeco Ukraine   234) SHIBUYA JAPAN        274) -------  "
    echo "38) The Young Turks    77) Tu Canal Panama      116) YTN 27 Korea          156) TV 5 News       195) Thromadske Ukraine235) RSBN Live Cam        275) -------  "	
    echo "39) CGTN English       78) Excelsior TV         117) QVC JAPAN             157) V6 News         196) UA TV Ukraine     236) Akiba Japan          276) La Republic  "
@@ -382,10 +383,18 @@ chan_name="DVIDS" ;;
 32) link="https://www.filmon.com/tv/bbc-news"
 use_cookies=yes
 chan_name="BBC News" ;;
-# 33
-# 34
-# 35
-# 36
+# 33) RT Enlish
+33) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCH6_7uZQjhR5F-qm5QW_KBQ/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="RT English" ;;
+# 34) CNN Live
+34) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCBvT9k2vaXrQ-AVxFJK5FCQ/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="CNN Live" ;;
+# 35 MSNBC
+35)  link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCDY1X1WKNhL_Z-lOfCy5C4A/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="MSNBC" ;;
+# 36) FOX NEWS
+36) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCzfCeHiMY-_buo6kzWl0q8g/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+chan_name="FOX NEWS" ;;
 # 37) i24 News Israel 
 37) link=https://www.dailymotion.com/video/x29atae
 chan_name="i24 News Israel" ;;
@@ -1094,9 +1103,9 @@ echo "$chan_name"
 
 if [ "$use_cookies" == "yes" ]
 then
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --cookies --cookies-file "$cookie" "$link" 
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen --cookies --cookies-file "$cookie" "$link" 
 else
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen "$link" 
 fi
 
 
@@ -1121,9 +1130,9 @@ echo "$chan_name"
 
 if [ "$use_cookies" == "yes" ]
 then
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --cookies --cookies-file "$cookie" "$link" 
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen --cookies --cookies-file "$cookie" "$link" 
 else
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen "$link" 
 fi
 
 
@@ -1149,9 +1158,9 @@ do
 
    if [ "$use_cookies" == "yes" ]
    then
-   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --cookies --cookies-file "$cookie" "$link" 
+   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen --cookies --cookies-file "$cookie" "$link" 
    else
-   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
+   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen "$link" 
    fi
  
   fi
