@@ -155,6 +155,9 @@ branch="gnu/linux"
 ##################################################
 
 chan_columns="$HOME/bin/streams.txt"
+cookie="$HOME/bin/cookie.tmp"
+use_cookies=no
+
 ### Define function for displaying channels  CHANGE MENU HERE
 channel_matrix()
 {
@@ -180,19 +183,19 @@ channel_matrix()
    echo "17) India Today        57) France Info Radio    96) ------------           135) HMT             175) Saudi Green       214) DZMM Philippeans     254) ---------"
    echo "18) NASA TV            58) LCP FRANCE           97) ------------           136) TV5             176) Saudi Gold        215) --------------       255) Shirdi Sai"	
    echo "19) TWiT Twitch        59) Public Senate        98) ------------           137) Channel 24      177) Saudi Silver      216) --------------       256) ETV Andhra Pradesh "
-   echo "20) ---------------    60) Africa News French   =======ASIAN LANGUAGE===== 138) SAMA TV         178) Saudi Orange      217) --------------       257) News 7 Tamil "  
+   echo "20) Press TV Iran      60) Africa News French   =======ASIAN LANGUAGE===== 138) SAMA TV         178) Saudi Orange      217) --------------       257) News 7 Tamil "  
    echo "21) CVR English        61) RFI Francais         99) CCTV 4 China           139) Survana News    179) Saudi Red         218) ---------------      258) News 18 Tamilnadu"
    echo "22) News 9 Bangalor    62) Mosaik TV            100) ON TV News Hong Kong  140) ATN Bangladesh  180) DMC Live          219) ---------------      259) Polimer TV "       
-   echo "23) ---------------    63) Afrique Media        101) ON TV Sports Hong Kong141) No 1 News       181) SKY Arabic        220) NASA ISS Replay      260) Jaya Plus"  
+   echo "23) RT English          63) Afrique Media        101) ON TV Sports Hong Kong141) No 1 News       181) SKY Arabic        220) NASA ISS Replay      260) Jaya Plus"  
    echo "24) BBC World News     ====SPANISH LANGUAGE===  102) EBC 51 Taiwan         142) i News          182) CBC Egypt Drama   221) NASA ISS 1           261) -------  "
    echo "25) QVC English        64)Globovision Venezuela 103) EBC Finance Taiwan    143) APN News        183) eXtra News Egypt  222) NASA ISS 2           262) -------  "  
    echo "26) HSN 2              65) RT Espanol           104) Tzu Chi Da Ai Taiwan  144) 4tv News        184) CBC Egypt Sofra   223) Okeanos Cam 1        263) -------  "
    echo "27) Poker TV           66) DW Espanol           105) FTV Live Taiwan       145) Media One       185) ------------      224) Okeanos Cam 2        264) -------  "
    echo "28) High Stakes Poker  67) NTN24                106) TTV Taiwan            146) Tamil Live      186) ------------      225) Okeanos Cam 3        265) -------  "
-   echo "29) ---------------    68) Canal 8 San Juan     107) CTV Taiwan            147) TOLO NEWS       187) ------------      226) Venice Italy Bridge  266) -------  "
-   echo "30) ---------------    69) Canal 6 San Rafael   108) CTS World News Taiwan 148) Dawn News       188) ------------      227) Venice Italy Port    267) -------  "    
-   echo "31) ---------------    70) Canal Siete          109) SET Taiwan            149) DD News         189) ------------      228) Jackson Hole XSec    268) -------  "
-   echo "32) ---------------    71) c5n Argentina        110) CTI Taiwan            150) Public TV India =======RUSSIAN=======  229) Jackson Hole Square  269) -------  "
+   echo "29) DW English         68) Canal 8 San Juan     107) CTV Taiwan            147) TOLO NEWS       187) ------------      226) Venice Italy Bridge  266) -------  "
+   echo "30) Newsy              69) Canal 6 San Rafael   108) CTS World News Taiwan 148) Dawn News       188) ------------      227) Venice Italy Port    267) -------  "    
+   echo "31) DVIDS              70) Canal Siete          109) SET Taiwan            149) DD News         189) ------------      228) Jackson Hole XSec    268) -------  "
+   echo "32) BBC News           71) c5n Argentina        110) CTI Taiwan            150) Public TV India =======RUSSIAN=======  229) Jackson Hole Square  269) -------  "
    echo "33) ---------------    72) A24 Argentina        111) NEXT TV Taiwan        151) REPORTER LIVE   190) POCCNR 24 Russia  230) Jackson Hole Rustic  270) -------  " 
    echo "34) ---------------    73) TelePacifico         112) Chinese Kareoke       152) NTV Bangladesh  191) Ukraine 5         231) Verona Italy         271) -------  "  
    echo "35) ---------------    74) Canal 8 Mar Plata    113) KBS World 24 Live     153) AsiaNet News    192) Ukraine 112       232) Soggy Dollar BVI     272) -------  "
@@ -200,7 +203,7 @@ channel_matrix()
    echo "37) i24 News Israel    76)Globovision Venezuela 115) KBS World TV          155) ABN Telegu      194) Ecnpeco Ukraine   234) SHIBUYA JAPAN        274) -------  "
    echo "38) The Young Turks    77) Tu Canal Panama      116) YTN 27 Korea          156) TV 5 News       195) Thromadske Ukraine235) RSBN Live Cam        275) -------  "	
    echo "39) CGTN English       78) Excelsior TV         117) QVC JAPAN             157) V6 News         196) UA TV Ukraine     236) Akiba Japan          276) La Republic  "
-   echo "40) Saudi 2 English    79) Cinevision Canal 19  118) SoL!ve 24 Japan       158) Kalaignar TV    197) -------------     237) Bridge Japan         277) QVC Francais "
+   echo "40) Saudi 2 English    79) Cinevision Canal 19  118) SoL!ve 24 Japan       158) Kalaignar TV    197) RTR Planeta       237) Bridge Japan         277) QVC Francais "
    echo "========================================================================================================================================================================"
 echo " " 
 }	
@@ -334,14 +337,20 @@ case $chan_num in
 # 19) TWiT on Twitch
 19) link=https://www.twitch.tv/twit 
     chan_name="TWiT on Twitch" ;;
-# 20)
+# 20) Press TV Iran
+20) link=https://www.filmon.com/tv/press-tv
+use_cookies="yes"
+chan_name="Press TV Iran" ;; 
 # 21) CVR English India
 21) link=https://www.youtube.com/watch?v=3S-vfmpCdCg
 chan_name="CVR English" ;;   
 # 22) News 9 Bangalor India
 22) link=https://www.youtube.com/watch?v=FLl8PHf_L64
 chan_name="News 9 Bangalor English" ;;
-# 23) 
+# 23) RT English
+23) link="https://www.filmon.com/tv/russia-today-2"
+use_cookies=yes
+chan_name="RT English" ;;
 # 24) BBC World News
 24) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC3ArUUUY733ixdap2NzNsfQ/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 chan_name="BBC World News" ;;
@@ -357,10 +366,22 @@ chan_name="HSN2" ;;
 # 28) High Stakes Poker 
 28) link=https://www.twitch.tv/highstakespoke 
      chan_name="High Stakes Poker" ;;    
-# 29)  
-# 30) 
-# 31
-# 32
+# 29) DW English
+29) link=https://www.filmon.com/tv/dw-english
+use_cookies=yes
+chan_name="DW English" ;;
+# 30) Newsy
+30) link="https://www.filmon.com/tv/newsy"
+use_cookies=yes
+chan_name="Newsy" ;;
+# 31) DVID Department of Defense Videos
+31) link="https://www.filmon.com/tv/dvids-tv"
+use_cookies=yes
+chan_name="DVIDS" ;;
+# 32) BBC News
+32) link="https://www.filmon.com/tv/bbc-news"
+use_cookies=yes
+chan_name="BBC News" ;;
 # 33
 # 34
 # 35
@@ -496,7 +517,7 @@ chan_name="Globovision Venezeula" ;;
 77) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/elcanaldepanamatv/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
     chan_name="Tu Canal Panama" ;;
 # 78) Excelsior TV
-78) link=link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+78) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
    chan_name="Excelsior TV" ;;
 # 79) Cinevision Canal 19
 79) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCKtx0aYvzIdoKlIfTyydx0g/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
@@ -878,7 +899,9 @@ chan_name="Thromadske Ukraine" ;;
 # 196) UA TV Ukraine
 196) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCt3igz3aIXfS108KV_jZsMA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 chan_name="UA TV Ukraine" ;;
-# 197
+# 197) RTR Planeta
+197) link=https://www.filmon.com/tv/rtr-planeta
+chan_name="RTR Planeta" ;;
 ################### GREEK ######################################
 ## 198) Action 24 Greece 
 198) link=http://www.dailymotion.com/video/x2p626q_action-24-live_tv
@@ -1068,8 +1091,13 @@ channel_select $num
 
 
 echo "$chan_name"
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
 
+if [ "$use_cookies" == "yes" ]
+then
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --cookies --cookies-file "$cookie" "$link" 
+else
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
+fi
 
 
 entry="null"
@@ -1089,13 +1117,21 @@ else
 
 channel_select $entry
 echo "$chan_name"
+
+
+if [ "$use_cookies" == "yes" ]
+then
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --cookies --cookies-file "$cookie" "$link" 
+else
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
+fi
+
 
 # echo "You were watching "$chan_name" on Channel "$entry" "
 
 while [ "$entry" != "q" ]
 do
-
+  use_cookies="no"
   channel_matrix
   echo "You were watching "$chan_name" on Channel "$entry" "
   echo "Please Select a Number corresponding to a YouTube Live Stream or press q to quit:"
@@ -1110,7 +1146,13 @@ do
   exit "$?"
   else
   echo "$chan_name"
-  firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
+
+   if [ "$use_cookies" == "yes" ]
+   then
+   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --cookies --cookies-file "$cookie" "$link" 
+   else
+   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback "$link" 
+   fi
  
   fi
 
