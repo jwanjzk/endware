@@ -186,7 +186,7 @@ channel_matrix()
    echo "20) Press TV Iran      60) Africa News French   =======ASIAN LANGUAGE===== 138) SAMA TV         178) Saudi Orange      217) --------------       257) News 7 Tamil "  
    echo "21) CVR English        61) RFI Francais         99) CCTV 4 China           139) Survana News    179) Saudi Red         218) ---------------      258) News 18 Tamilnadu"
    echo "22) News 9 Bangalor    62) Mosaik TV            100) ON TV News Hong Kong  140) ATN Bangladesh  180) DMC Live          219) ---------------      259) Polimer TV "       
-   echo "23) RT English          63) Afrique Media        101) ON TV Sports Hong Kong141) No 1 News       181) SKY Arabic        220) NASA ISS Replay      260) Jaya Plus"  
+   echo "23) RT English         63) Afrique Media        101) ON TV Sports Hong Kong141) No 1 News       181) SKY Arabic        220) NASA ISS Replay      260) Jaya Plus"  
    echo "24) BBC World News     ====SPANISH LANGUAGE===  102) EBC 51 Taiwan         142) i News          182) CBC Egypt Drama   221) NASA ISS 1           261) -------  "
    echo "25) QVC English        64)Globovision Venezuela 103) EBC Finance Taiwan    143) APN News        183) eXtra News Egypt  222) NASA ISS 2           262) -------  "  
    echo "26) HSN 2              65) RT Espanol           104) Tzu Chi Da Ai Taiwan  144) 4tv News        184) CBC Egypt Sofra   223) Okeanos Cam 1        263) -------  "
