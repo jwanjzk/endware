@@ -203,7 +203,7 @@ channel_matrix()
    echo "35) HSN                74) Canal 8 Mar Plata    113) KBS World 24 Live     153) AsiaNet News    192) Ukraine 112       232) Soggy Dollar BVI     272) ----------"
    echo "36) HSN 2              75) HispanTV             114) KBS World English     154) 10TV Telugu     193) News 1 Ukraine    233) Amsterdam Netherlands273) Infowars "
    echo "37) QVC English        76)Globovision Venezuela 115) KBS World TV          155) ABN Telegu      194) Ecnpeco Ukraine   234) SHIBUYA JAPAN        274) Poker TV  "
-   echo "38) The Young Turks    77) Tu Canal Panama      116) YTN 27 Korea          156) TV 5 News       195) Thromadske Ukraine235) Akiba Japan          275) The Young Turks  "	
+   echo "38) The Young Turks    77) Tu Canal Panama      116) YTN 27 Korea          156) TV 5 News       195) Thromadske Ukraine235) Akiba Japan          275) ----------  "	
    echo "39) -----------        78) Excelsior TV         117) QVC JAPAN             157) V6 News         196) UA TV Ukraine     236) Bridge Japan         276) La Republic  "
    echo "40) ------------       79) Cinevision Canal 19  118) SoL!ve 24 Japan       158) Kalaignar TV    197) RTR Planeta       237) Steamy Mount Japan   277) QVC Francais "
    echo "========================================================================================================================================================================"
@@ -1113,6 +1113,7 @@ echo "$chan_name"
 
 if [ "$use_cookies" == "yes" ]
 then
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 curl --cookie-jar "$cookie" --silent "$link"  1&>2
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen --loop=inf --cookies --cookies-file "$cookie" "$link" 
 else
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen "$link" 
@@ -1140,7 +1141,7 @@ echo "$chan_name"
 
 if [ "$use_cookies" == "yes" ]
 then
-firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 curl "$link" --cookie-jar "$cookie"  
+firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 curl --cookie-jar "$cookie" --silent "$link"  1&>2
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen --loop=inf  --cookies --cookies-file "$cookie" "$link" 
 else
 firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen "$link" 
@@ -1169,7 +1170,7 @@ do
 
    if [ "$use_cookies" == "yes" ]
    then
-   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 curl "$link" --cookie-jar "$cookie"  
+   firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 curl --cookie-jar "$cookie" --silent "$link"  1&>2
    firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen --loop=inf  --cookies --cookies-file "$cookie" "$link" 
    else
    firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --noroot --seccomp --protocol=unix,inet,inet6 mpv --no-resume-playback --fullscreen "$link" 
@@ -1177,7 +1178,7 @@ do
  
   fi
 
-rm "$cookie"
+echo "" > "$cookie"
 
 done
 
@@ -1186,6 +1187,7 @@ fi
 
 echo "Type endstream to open a new stream."
 
+rm "$cookie"
 
 exit "$?"
 
