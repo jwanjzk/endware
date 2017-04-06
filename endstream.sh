@@ -185,8 +185,8 @@ channel_matrix()
    echo "15) Saudi 2 English    55) i24 France           94) Televisa Hermosillo    133) ABN Telugu      173) Saudi Blue News   212) Turkmenelie TV       252) DZRH Philippeans"  
    echo "16) Channels 24 Nigeria56) France Info TV       95) Televisa Toreon        134) Vanitha TV      174) Saudi Purple      213) Medine TV            253) DWIZ Philippeans"
    echo "17) India Today        57) France Info Radio    96) TeleSur Venezuela      135) HMT             175) Saudi Green       214) La Legul TV          254) Adom TV  "
-   echo "18) CVR English        58) LCP FRANCE           97) VPI Venezuela          136) TV5             176) Saudi Gold        215) Yasin TV             255) Bukkede TV "	
-   echo "19) News 9 Bangalor    59) Public Senate        98) El Capitolo Venezuala  137) Channel 24      177) Saudi Silver      216) Number1 TV           256) TV Sendado Brazil "
+   echo "18) CVR English        58) LCP FRANCE           97) VTV Venezuela          136) TV5             176) Saudi Gold        215) Yasin TV             255) Bukkede TV "	
+   echo "19) News 9 Bangalor    59) Public Senate        98) VPI TV Venezuela       137) Channel 24      177) Saudi Silver      216) Number1 TV           256) TV Sendado Brazil "
    echo "20) Newsy              60) Africa News French   =======ASIAN LANGUAGE===== 138) SAMA TV         178) Saudi Orange      217) Zerk Zindi TV        257) STF Brazil"  
    echo "21) DVIDS              61) RFI Francais         99) CCTV 4 China           139) Survana News    179) Saudi Red         218) TGRT Haber TV        258) TV Camara Brazil "
    echo "22) NASA TV Education  62) Mosaik TV            100) ON TV News Hong Kong  140) ATN Bangladesh  180) DMC Live          219) TVNET Canali Yayin   259) Imagen Radio "       
@@ -196,7 +196,7 @@ channel_matrix()
    echo "26) Amazing Facts      65) RT Espanol           104) Tzu Chi Da Ai Taiwan  144) 4tv News        184) CBC Egypt Sofra   223) STerkTV Zindi        263) Joy News Nigeria "
    echo "27) Its Supernatural   66) DW Espanol           105) FTV Live Taiwan       145) Media One       185) Saudi Ajyal Tv    224) Ronahi TV Zindi      264) PTV Philippeans "
    echo "28) Sheppards Chapel   67) NTN24                106) TTV Taiwan            146) Tamil Live      186) Mecca Kaaba       225) --------------       265) Euronews Persian"
-   echo "29) IHOP               68) Canal 8 San Juan     107) CTV Taiwan            147) TOLO NEWS       187) ------------      226) Venice Italy Bridge  266) BBC Persian"
+   echo "29) IHOP               68) Canal 8 San Juan     107) CTV Taiwan            147) TOLO NEWS       187) DW Arabic         226) Venice Italy Bridge  266) BBC Persian"
    echo "30) HSN                69) Canal 6 San Rafael   108) CTS World News Taiwan 148) Dawn News       188) ------------      227) Venice Italy Port    267) DJ Free Iran "    
    echo "31) HSN 2              70) Canal Siete          109) SET Taiwan            149) DD News          =======RUSSIAN======= 228) Jackson Hole XSec    268) The Young Turks"
    echo "32) QVC English        71) c5n Argentina        110) CTI Taiwan            150) Public TV India 189) Euronews Russian  229) Jackson Hole Square  269) RSBN Feed 1 "
@@ -226,8 +226,8 @@ channel_matrix_2()
    echo "284) Jaya Plus          324) -------------   364) ---------------      404) -----------     444) -----------       484) ------------       524) ------------- "
    echo "285) Neo TV India       325) -------------   365) ---------------      405) -----------     445) -----------       485) ------------       525) ------------- "
    echo "286) Samaya News        326) -------------   366) ---------------      406) -----------     446) -----------       486) ------------       526) ------------- "
-   echo "287) ------------       327) -------------   367) ---------------      407) -----------     447) -----------       487) ------------       527) ------------- "
-   echo "288) ------------       328) -------------   368) ---------------      408) -----------     448) -----------       488) ------------       528) ------------- "
+   echo "287) Venevision         327) -------------   367) ---------------      407) -----------     447) -----------       487) ------------       527) ------------- "
+   echo "288) Capitolo Venezuala 328) -------------   368) ---------------      408) -----------     448) -----------       488) ------------       528) ------------- "
    echo "289) ------------       329) -------------   369) ---------------      409) -----------     449) -----------       489) ------------       529) ------------- "
    echo "290) ------------       330) -------------   370) ---------------      410) -----------     450) -----------       490) ------------       530) ------------- "
    echo "291) ------------       331) -------------   371) ---------------      411) -----------     451) -----------       491) ------------       531) ------------- "
@@ -306,12 +306,6 @@ then
 channel_matrix
 echo "Please Select a Number corresponding to a YouTube Live Stream:"
 
-############# DEFAULT SELECTION #######################
-# in case of non-numeric entry 
- link=https://www.youtube.com/watch?v=1Ydto3Iyzic 
- chan_name="France 24 English"
-#######################################################
-
 read num
 
 if [ "$num" == "q" ]
@@ -334,13 +328,13 @@ chan_num=$1
 case $chan_num in 
 ################    MAIN  ENGLISH  ##################################
 # 1) France 24 Anglais 
-1) link=https://www.youtube.com/watch?v=1Ydto3Iyzic 
+1) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/france24english/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
    use_cookies="no"
    chan_name="France 24 English";;
 # 2) Al Jazeera
-2) link=https://www.youtube.com/watch?v=pJC-vohDHl8 
+2) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/AlJazeeraEnglish/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-   chan_name="Al Jazeera English" ;;  
+chan_name="Al Jazeera English" ;;  
 #  3) TRT World
 3) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/videos?view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
@@ -501,21 +495,21 @@ chan_name="France 24" ;;
 use_cookies="no"
 chan_name="France Info TV" ;;
 # 43) France 24 Francais
-43) link=https://www.youtube.com/watch?v=vp-82gDggk4 
+43) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/france24/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="France 24 Francais" ;;
 # 44) Euronews Francais
 44) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/euronewsfr/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-    chan_name="Euronews Francais" ;;                                                            
+chan_name="Euronews Francais" ;;                                                            
 # 45) France Info
-45) link=https://www.youtube.com/watch?v=SN7sncKzRq4 
+45) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/franceinfo/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-    chan_name="France Info" ;;
+chan_name="France Info" ;;
 # 46) France Inter
 46) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/videofranceinter/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-    chan_name="France Inter" ;;
+chan_name="France Inter" ;;
 # 47) Max FM 92.9 
 47) link=https://www.dailymotion.com/video/x532emn_maxfm-live-24-7_music 
 use_cookies="no"
@@ -523,11 +517,11 @@ use_cookies="no"
 # 48) M7 Television
 48) link=http://www.dailymotion.com/video/x59xxgx_live_music 
 use_cookies="no"
-    chan_name="M7 TV Mali" ;;
+chan_name="M7 TV Mali" ;;
 # 49) France Inter
 49) link=http://www.dailymotion.com/video/x17qw0a_video-regardez-france-inter-en-direct_newsc
 use_cookies="no"
-    chan_name="France Inter" ;;
+chan_name="France Inter" ;;
 # 50) RTL Endirect
 50) link=http://www.dailymotion.com/video/xl1km0_regardez-rtl-en-direct-et-en-video_news
 use_cookies="no"
@@ -590,21 +584,21 @@ use_cookies="no"
 use_cookies="no"
 chan_name="Globovision Venezeula" ;;
 # 65) RT Espanol
-65) link=https://www.youtube.com/watch?v=OALyNX4IbBI 
+65) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ActualidadRT/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-    chan_name="RT Espanol" ;;
+chan_name="RT Espanol" ;;
 # 66) DW Espanol
-66) link=https://www.youtube.com/watch?v=wBDQlzVRMgU 
+66) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/DeutscheWelleEspanol/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-    chan_name="DW Espanol" ;;
+chan_name="DW Espanol" ;;
 # 67) NTN24 Venezuela
 67) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/canalNTN24/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 use_cookies="no"
-    chan_name="NTN24 Venezuela" ;;
+chan_name="NTN24 Venezuela" ;;
 # 68) Canal 8 San Juan Argentina
 68) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC5UKMEIoqvNDMSDz2_6Sn9g/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-    chan_name="Canal 8 San Juan Argentina" ;;
+chan_name="Canal 8 San Juan Argentina" ;;
 # 69) Canal 6 San Rafael Argentina
 69) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCwq0epWuoVUDbuBz3hpgGeg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 use_cookies="no"   
@@ -720,14 +714,16 @@ use_cookies="no"
 96) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/telesurtv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="TeleSUR Espanol" ;;
-# 97) VPI TV Venezuela
-97) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCVFiIRuxJ2GmJLUkHmlmj4w/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
+
+# 97) VTV Venezuela
+97) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/MultimedioVTV/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="VTV Venezuela" ;;  
+
+# 98) VPI TV Venezuela
+98) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCVFiIRuxJ2GmJLUkHmlmj4w/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="VPI TV" ;;
-# 98) El Capitolo Venezulana
-98) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCbSDz7_rVKXjZ9fRON16apQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
-use_cookies="no"
-chan_name="El Capitolo Venezulana" ;;      
 ################ CHINESE MANDARIN CANTONESE  ####################
 # 99) CCTV 4 Chinese
 99) link=https://www.youtube.com/watch?v=Y8Wy9LXCapw 
@@ -983,15 +979,15 @@ chan_name="EuroNews Arabic" ;;
 # 160) RT Arabic 
 160) link=https://www.youtube.com/watch?v=mFQA6sCQOU4 
 use_cookies="no"
-     chan_name="RT Arabic" ;;
+chan_name="RT Arabic" ;;
 # 161) ON E Live 
 161) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ONtveg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-     chan_name="ON E";;
+chan_name="ON E";;
 # 162)  ON E Sports
 162) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCWLo4r-9_x4GCJCFShNFq0A/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-     chan_name="ON E Sports" ;;   
+chan_name="ON E Sports" ;;   
 # 163) ON Live
 163) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCZghOmDezc6OCMzdPaL-j2Q/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
@@ -999,27 +995,27 @@ chan_name="ON Live" ;;
 # 164) Al Jazeera Arabic
 164) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/aljazeerachannel/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-    chan_name="Al Jazeera Arabic" ;; 
+chan_name="Al Jazeera Arabic" ;; 
 # 165) France 24 Arabic
-165) link=https://www.youtube.com/watch?v=UYi0sgVm5dM 
+165) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/france24arabicl/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-     chan_name="France 24 Arabic" ;;
+chan_name="France 24 Arabic" ;;
 # 166) BBC Arabic
-166) link=https://www.youtube.com/watch?v=m0RMXgxMhs8 
+166) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/BBCArabicNews/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-     chan_name="BBC Arabic" ;;
+chan_name="BBC Arabic" ;;
 # 167) Al Arabiya
 167) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/AlArabiya/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-     chan_name="Al Arabiya" ;;
+chan_name="Al Arabiya" ;;
 # 168) Al Mayadeen
 168) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/Mayadeentv/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-     chan_name="Al Mayadeen" ;;   
+chan_name="Al Mayadeen" ;;   
 # 169) Syrian Satellite
 169) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCclXv4NFO2QTv9QgN3ZTMHw/videos?&view=2" | grep "watch?v=" | head -n 4 | tail -n 1 |  cut -d / -f 2 | cut -d \" -f 1)"   
 use_cookies="no"
-     chan_name="Syrian Satellite" ;;     
+chan_name="Syrian Satellite" ;;     
 # 170) ORTAS Syrian Satellite
 170) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCclXv4NFO2QTv9QgN3ZTMHw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
 use_cookies="no"
@@ -1088,8 +1084,10 @@ chan_name="Saudi Ajyal Kids Tv" ;;
 186) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UClIIopOeuwL8KEK0wnFcodw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="Mecca Kaaba Live" ;;
-#######################
-# 187) 
+# 187)  DW Arabic
+187) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/deutschewellearabic/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+use_cookies="no"
+chan_name="DW Arabic" ;;
 # 188)
 ############### RUSSIAN ################################
 # 189) Euronews Russian
@@ -1499,8 +1497,15 @@ chan_name="Neo TV India";;
 use_cookies="no"
 chan_name="Samaya News Kannada" ;;  
 
-# 287) http://www.ustream.tv/leolaporte
-# 288) http://www.ustream.tv/channel/VVtzmHn6rzj
+# 287) Venevision Venezuela
+287) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/noticierovenevision/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="Venevision Venezuela" ;; 
+
+# 288) El Capitolo Venezulana
+288) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCbSDz7_rVKXjZ9fRON16apQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"   
+use_cookies="no"
+chan_name="El Capitolo Venezulana" ;;    
 # 289)
 # 290)
 # 291)
@@ -1562,13 +1567,16 @@ esac
 menu_status()
 {
 input=$1
-if [ $input == "q" ]
+if [ "$input" == "" ]
+then
+menstat="no"
+elif [ "$input" == "q" ]
 then
 menstat="yes"
-elif [ $input == "n" ]
+elif [ "$input" == "n" ]
 then 
 menstat="yes"
-elif [ $input == "m" ]
+elif [ "$input" == "m" ]
 then
 menstat="yes"
 else
