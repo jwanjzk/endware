@@ -6,8 +6,8 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.21
-# Revision Date: April 8, 2017
+# Version: 0.22
+# Revision Date: April 13, 2017
 #
 # Recent Changes: - Added channels, fix some Arabic Channels
 #                 - Rearrange channels by language grouping
@@ -142,7 +142,7 @@
 
 ###############  VERSION INFORMATION  ##############
 version="0.22"
-rev_date="11/04/2017"
+rev_date="13/04/2017"
 branch="gnu/linux"
 ##################################################
 
@@ -155,11 +155,11 @@ use_cookies="no"
 channel_matrix()
 {
    echo "==================================================================      ENDSTREAM  "$version"   =================================================================================="
-   echo "||      ENGLISH       ||      FRANCAIS        ||         ESPANOL        ||      ASIAN / INDIAN    ||      ARABIC        ||        OTHER          ||       ULTRA      ||"
+   echo "||      ENGLISH       ||      FRANCAIS        ||         ESPANOL        ||      ASIAN / INDIAN    ||      ARABIC        ||     RUSSIAN/TURKISH   ||       OTHER        ||"
    echo "==========================================================================================================================================================================="
    echo "1) France 24 English   41) France 24 Francais   80) Tu Canal Panama        119) TLTV              159) Tamil Live         198) Saudi Silver       236) Galatasaray   "    
    echo "2) Al Jazeera English  42) France Info TV       81) Excelsior TV           120) FLTV Taiwan       160) TOLO NEWS          199) Saudi Orange       237) A9 Televizyounu " 
-   echo "3) TRT World Istanbul  43) France 24 Francais   82) Cinevision Canal 19    121) Chinese 1         161) Dawn News          200) Saudi Red          238) STerkTV Zindi   "  
+   echo "3) TRT World Istanbul  43) France 24 Francais   82) Cinevision Canal 19    121) Guo Shiming TV    161) Dawn News          200) Saudi Red          238) STerkTV Zindi   "  
    echo "4) i24 News Israel     44) Euronews Francais    83) La Casacra TV          122) Dolphin TV        162) DD News            201) DMC Live           239) Ronahi TV Zindi   "             
    echo "5) NEWSMAX USA         45) France Info          84) 100%Noticias Nicaragua 123) SITTI 1           163) Public TV India    202) SKY Arabic         240) Action 24 Greek "  
    echo "6) ABC Australia       46) France Inter         85) Televisia del Golfo    124) SITTI 2           164) REPORTER LIVE      203) CBC Egypt Drama    241) Ionian Greek      "  
@@ -182,10 +182,10 @@ channel_matrix()
    echo "23) Arise News Nigeria 63) Afrique Media        102) Imagen Radio Mexico   141) 24 News Pakistan  180) EuroNews Arabic    218) TRT Haber Turkey   258) CTV Vaticano"  
    echo "24) SABC South Africa  64) TLM Lyon France      103) Venevision            142) News 18 India     181) RT Arabic          219) NTV Canli          259) QVC Italian "
    echo "25) FOX 10 Phoenix     65) La Republique        104) El Capitolio          143) Aaj Tak           182) ON E Arabic        220) Haber Turk TV      260) Euronews Italian " 
-   echo "26) Newsy              66) QVC Francais           ====ASIAN LANGUAGE====   144) TV9 Live          183) ON E Sport         221) Star TV Turkey     261) Euronews Persian"
+   echo "26) VOA English        66) QVC Francais           ====ASIAN LANGUAGE====   144) TV9 Live          183) ON E Sport         221) Star TV Turkey     261) Euronews Persian"
    echo "27) DVIDS               ====SPANISH LANGUAGE=== 105) CCTV 4 China          145) NTV Telugu        184) ON Live            222) Euronews Turkish   262) BBC Persian "
-   echo "28) NASA TV Education  67) Euronews Espanol     106) 119                   146) ABN Telugu        185) Al Jazeera         223) CNN Turk           263) ------------"
-   echo "29) NASA TV Media      68) RT Espanol           107) EBC 51 Taiwan         147) Vanitha TV        186) France 24 Arabic   224) Ari TV Canali      264) EWTN "
+   echo "28) NASA TV Education  67) Euronews Espanol     106) Tai Li 119 Taiwan     146) ABN Telugu        185) Al Jazeera         223) CNN Turk           263) OnTV Hong Kong"
+   echo "29) NASA TV Media      68) RT Espanol           107) EBC 51 Taiwan         147) Vanitha TV        186) France 24 Arabic   224) Ari TV Canali      264) --------------"
    echo "30) Arirang TV         69) DW Espanol           108) EBC Finance Taiwan    148) HMT Telugu        187) BBC Arabic         225) Ulusal Kanal       265) The Young Turks "    
    echo "31) TWiT               70) NTN24 Venezuela      109) Tzu Chi Da Ai Taiwan  149) TV5 News          188) Al Arabiya         226) KRT Kulture TV     266) RSBN Feed 1"
    echo "32) Amazing Facts      71) Canal 8 San Juan     110) FTV Live Taiwan       150) Channel 24        189) Al Mayadeen        227) Tele 1 Kanali      267) RSBN Feed 2 "
@@ -194,9 +194,9 @@ channel_matrix()
    echo "35) IHOP               74) c5n Argentina        113) CTS World News Taiwan 153) ATN  Bangladesh   192) Bedya TV Arabic    230) La Legul TV        270) CBC The National"
    echo "36) HSN                75) A24 Argentina        114) SET Taiwan            154) No 1 News         193) Belquees Arabic    231) Yasin TV           271) RUPTLY "
    echo "37) HSN 2              76) TelePacifico Colombia115) CTI Taiwan            155) i News            194) Saudi Blue News    232) Number1 TV         272) Globovision Venezuela"
-   echo "38) QVC English        77) Canal 8 Mar Plata    116) NEXT TV Taiwan        156) APN News          195) Saudi Purple       233) TGRT Haber TV      273) ---------------- "	
-   echo "39) -------------      78) HispanTV             117) Sinda Television      157) 4tv News          196) Saudi Green        234) TVNET Canali Yayin 274) Talking Tom Minis "
-   echo "40) Talking Tom        79) Globovision Venezuela118) Cheng Sin TV          158) Media One         197) Saudi Gold         235) ShowTV Canali      275) Caillou "
+   echo "38) QVC English        77) Canal 8 Mar Plata    116) NEXT TV Taiwan        156) APN News          195) Saudi Purple       233) TGRT Haber TV      273) Talking Tom "	
+   echo "39) Newsy              78) HispanTV             117) Sinda Television      157) 4tv News          196) Saudi Green        234) TVNET Canali Yayin 274) Talking Tom Minis "
+   echo "40) What America Thinks79) Globovision Venezuela118) Cheng Sin TV          158) Media One         197) Saudi Gold         235) ShowTV Canali      275) Caillou "
    echo "========================================================================================================================================================================"
 echo " " 
 }	
@@ -204,18 +204,18 @@ echo " "
 channel_matrix_2()
 {
    echo "==================================================================      ENDSTREAM  "$version"   =================================================================================="
-   echo "||      LOCATIONS         ||      SUPER         ||      DUPER             ||    MEGA        ||    SAIAJIN 1      ||    SAIAJIN 2         ||      GOD MODE     ||"
+   echo "||      LOCATIONS         ||      SUPER         ||         DUPER        ||       MEGA        ||       ULTRA        ||        SAIAJIN        ||      GOD MODE     ||"
    echo "============================================================================================================================================================================"
-   echo "276) NASA ISS Replay       316) CNN Live        356) ---------------      396) -----------     436) -----------       476) ------------       516) ------------- "    
-   echo "277) NASA ISS 1            317) MSNBC           357) ---------------      397) -----------     437) -----------       477) ------------       517) ------------- " 
-   echo "278) NASA ISS 2            318) MSNBC           358) ---------------      398) -----------     438) -----------       478) ------------       518) ------------- "  
-   echo "279) Venice Italy Bridge   319) Youing Japan    359) ---------------      399) -----------     439) -----------       479) ------------       519) ------------- "             
-   echo "280) Venice Italy Port     320) Webcam NL 1     360) ---------------      400) -----------     440) -----------       480) ------------       520) ------------- "  
-   echo "281) Jackson Hole XSec     321) Webcam NL 2     361) ---------------      401) -----------     441) -----------       481) ------------       521) ------------- "  
-   echo "282) Jackson Hole Square   322) Webcam NL 3     362) ---------------      402) -----------     442) -----------       482) ------------       522) ------------- "
-   echo "283) Jackson Hole Rustic   323) Webcam NL 4     363) ---------------      403) -----------     443) -----------       483) ------------       523) ------------- "
-   echo "284) Verona Italy          324) Webcam NL 5     364) ---------------      404) -----------     444) -----------       484) ------------       524) ------------- "
-   echo "285) Soggy Dollar BVI      325) Webcam NL 6     365) ---------------      405) -----------     445) -----------       485) ------------       525) ------------- "
+   echo "276) NASA ISS Replay       316) Youing Japan    356) ---------------      396) -----------     436) -----------       476) ------------       516) Vatican       "    
+   echo "277) NASA ISS 1            317) Webcam NL 1     357) ---------------      397) -----------     437) -----------       477) ------------       517) EWTN          " 
+   echo "278) NASA ISS 2            318) Webcam NL 2     358) ---------------      398) -----------     438) -----------       478) ------------       518) CTV Vaticano "  
+   echo "279) Venice Italy Bridge   319) Webcam NL 3     359) ---------------      399) -----------     439) -----------       479) ------------       519) Terry A Davis "             
+   echo "280) Venice Italy Port     320) Webcam NL 4     360) ---------------      400) -----------     440) -----------       480) ------------       520) Temple Institute"  
+   echo "281) Jackson Hole XSec     321) Webcam NL 5     361) ---------------      401) -----------     441) -----------       481) ------------       521) ------------- "  
+   echo "282) Jackson Hole Square   322) Webcam NL 6     362) ---------------      402) -----------     442) -----------       482) ------------       522) ------------- "
+   echo "283) Jackson Hole Rustic   323) ------------    363) ---------------      403) -----------     443) -----------       483) ------------       523) ------------- "
+   echo "284) Verona Italy          324) ------------    364) ---------------      404) -----------     444) -----------       484) ------------       524) ------------- "
+   echo "285) Soggy Dollar BVI      325) ------------    365) ---------------      405) -----------     445) -----------       485) ------------       525) ------------- "
    echo "286) Amsterdam Netherlands 326) -------------   366) ---------------      406) -----------     446) -----------       486) ------------       526) ------------- "
    echo "287) SHIBUYA JAPAN         327) -------------   367) ---------------      407) -----------     447) -----------       487) ------------       527) ------------- "
    echo "288) Akiba Japan           328) -------------   368) ---------------      408) -----------     448) -----------       488) ------------       528) ------------- "
@@ -341,8 +341,9 @@ use_cookies="no"
 use_cookies="no"
      chan_name="ABC News Australia" ;;
 # 7)  CGTN English
-7) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/CCTVNEWSbeijing/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
-use_cookies="no"
+7) link=https://www.filmon.com/tv/cctv-news
+#https://www.youtube.com/"$(curl "https://www.youtube.com/user/CCTVNEWSbeijing/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="yes"
 chan_name="CGTN English" ;;
 # 8) Africa News Live
 8) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC1_E8NeF5QHY2dtdLRBCCLA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
@@ -416,10 +417,10 @@ chan_name="SABC News South Africa" ;;
 25) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCJg9wBPyKMNA5sRDnvzmkdg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Fox News 10 Phoenix Arizona USA";; 
-# 26)  Newsy
-26) link="https://www.filmon.com/tv/newsy"
-use_cookies="yes"
-chan_name="Newsy" ;; 
+# 26)  VOA
+26) link=https://www.filmon.com/tv/voa-english
+     use_cookies="yes"
+     chan_name="VOA" ;;
 # 27) DVID Department of Defense Videos
 27) link="https://www.filmon.com/tv/dvids-tv"
 use_cookies="yes"
@@ -468,12 +469,14 @@ chan_name="HSN2" ;;
 38) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/QVC/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="QVC English" ;;
-# 39)
-###################   ENTERTAINMENT   ##################################################
-# 40)Talking Tom and Friends
-40) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TalkingFriends/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
-use_cookies="no"
-chan_name="Talking Tom and Friends" ;;
+# 39) Newsy
+39) link=https://www.filmon.com/tv/newsy
+     use_cookies="yes"
+     chan_name="Newsy" ;;
+# 40)  What America Thinks
+40) link=https://www.filmon.com/tv/what-america-thinks
+     use_cookies="yes"
+     chan_name="What America Thinks" ;;
 #################    FRENCH   ###################################
 # 41) France 24 
 41) link=http://www.dailymotion.com/video/xigbvx_live-france-24_news
@@ -739,10 +742,10 @@ chan_name="El Capitolio Venezulana" ;;
 105) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ChineseInternatioify/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="CCTV 4 China" ;;
-# 106) 119 Live 電視台大立
-106) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC2nRKndta05aZZbjFUAcoFg/videos" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+# 106) 119 Live 電視台大立  Tai Li Taiwan
+106) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC2nRKndta05aZZbjFUAcoFg/&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 use_cookies="no"
-chan_name="119 Live 電視台大立" ;;
+chan_name="119 Live 電視台大立 Tai Li Taiwan" ;;
 ############## TAIWAN TAIWANESE ##############################
 # 107) EBC 51 News Taiwan
 107) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/newsebc/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
@@ -803,7 +806,7 @@ chan_name="FLTV Taiwan";;
 # 121) 郭世明
 121) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCdx4XBYPj9s6FZUhEQ9IWkw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-chan_name="郭世明";;
+chan_name="郭世明 Guo Shiming";;
 # 122) 海豚直播 Dolphin TV
 122) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCUz3LiE7QuRGDGZ2DYciIuA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
@@ -1361,21 +1364,19 @@ chan_name="Euronews Portuguese" ;;
 #use_cookies="no"
 #chan_name="TV Camara Brazil" ;;  
 
-
-
 ##########################  Italian  #######################################################
 # 258)CTV Vaticano
 258) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ctvaticano/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="CTV Vaticano" ;;
-# 259) Euronews Italian
-259) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/euronewsit/videos?&view=2" | grep "watch?v=" | head -n 1  | cut -d / -f 2 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="Euronews Italian" ;;
-# 260) QVC Itallian
-260) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/qvcitalia/videos?&view=2" | grep "watch?v=" | head -n 1  | cut -d / -f 2 | cut -d \" -f 1)" 
+# 259) QVC Itallian
+259) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/qvcitalia/videos?&view=2" | grep "watch?v=" | head -n 1  | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="QVC Italian" ;;
+# 260) Euronews Italian
+260) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/euronewsit/videos?&view=2" | grep "watch?v=" | head -n 1  | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="Euronews Italian" ;;
 ################################## FARSI / PERSIAN  ###########################################################
 # 261)  Euronews Persian
 261) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/euronewspe/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
@@ -1386,12 +1387,13 @@ chan_name="Euronews Persian";;
 use_cookies="no"
 chan_name="BBC Persian";;
 #################### TRANSIENT TALK SHOWS ######################################## 
-# 263)
-
-# 264) EWTN
-264) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/EWTN/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+# 263) OnTV Hong Kong
+263) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCZ79ABUb7OO4iMiNK2QPM7g/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
-chan_name="EWTN" ;;
+chan_name="OnTV Hong Kong";;
+
+# 264) 
+
 # 265) The Young Turks
 265) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TheYoungTurks/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
@@ -1419,13 +1421,15 @@ chan_name="CBC The National" ;;
 # 271) RUPTLY
 271) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/RuptlyTV/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-chan_name="CBC The National" ;; 
+chan_name="RUPTLY" ;; 
 # 272) Globovision Venezeula Low Fi
 272) link=http://www.dailymotion.com/video/xio7e2_senal-en-vivo_news
 use_cookies="no"
 chan_name="Globovision Venezeula" ;;
-# 273) 
-
+# 273) Talking Tom and Friends
+273) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TalkingFriends/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
+use_cookies="no"
+chan_name="Talking Tom and Friends" ;;
 # 274) Talking Tom and Friends Mini
 274) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/TalkingTomCat/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"  
 use_cookies="no"
@@ -1605,53 +1609,69 @@ use_cookies="no"
 chan_name="China Shoreline" ;; 
 
 ###########################################
-# 316) CNN Live 
-316) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCEGpbgwmS9pHXksqWrGIOgQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="CNN Live" ;; 
-# 317) MSNBC
-317) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCPXSXjC_Vue6o1z3wJ9dTHA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="MSNBC" ;; 
-# 318) MSNBC 
-318) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCRcWgXt93Fl_mKiKMckvSZg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="MSNBC" ;; 
-
-# 319) Youing Japan Route 10
-319) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/YOUINGmediacity/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+# 316) Youing Japan Route 10
+316) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/YOUINGmediacity/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Youing Japan Route 10" ;; 
 
-# 320) Netherlands live cams 6 of them 
-320) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 1 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+# 317) Netherlands live cams 6 of them 
+317) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 1 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 1" ;; 
 
-# 321) Netherlands live cams 6 of them 
-321) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+# 318) Netherlands live cams 6 of them 
+318) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 2" ;; 
 
-# 322) Netherlands live cams 6 of them 
-322) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+# 319) Netherlands live cams 6 of them 
+319) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 3" ;; 
 
-# 323) Netherlands live cams 6 of them 
-323) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 7 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+# 320) Netherlands live cams 6 of them 
+320) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 7 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 4" ;; 
 
-# 324) Netherlands live cams 6 of them 
-324) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 9 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+# 321) Netherlands live cams 6 of them 
+321) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 9 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 5" ;; 
 
-# 325) Netherlands live cams 6 of them 
-325) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 11 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )"
+# 322) Netherlands live cams 6 of them 
+322) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 11 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )"
 use_cookies="no"
 chan_name="Web NL Cam 6" ;; 
+
+
+################# GOD MODE  ############################
+# 516) Vatican
+516) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/vatican/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1 )"
+use_cookies="no"
+chan_name="Vatican" ;; 
+
+# 517) EWTN
+517) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/EWTN/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="EWTN" ;;
+
+# 518) CTV Vaticano
+518) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ctvaticano/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="CTV Vaticano" ;;
+
+# 519) Terry A Davis
+519) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCdX4uJUwSFwiY3XBvu-F_-Q/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="Terry A Davis" ;;
+
+# 520) Temple Institute
+520) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/henryporter2/videos" | grep "Weekly Torah" | grep "watch?v=" |  head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="Temple Institute" ;;
+
+
 
 
 # ON TV News Hong Kong 
