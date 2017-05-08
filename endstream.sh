@@ -169,7 +169,7 @@ channel_matrix()
    echo "10) DW English         50) RTL En Direct        89) Televisia Puebla       128) KBS World TV      168) Kalaignar TV       207) Mecca Kaaba        245) DW English"
    echo "11) Russia Today       51) Journal TVLandes     90) Televisia Acapulco     129) YTN 27 Korea      169) News 92 Pakistan   208) DW Arabic          246) Euronews English"
    echo "12) Africa News        52) CNEWS                91) Televisia Cuernavaca   130) QVC JAPAN         170) ETV Andhra Pradesh  ===RUSSIA/UKRAINE===   247) Euronews Deutche "
-   echo "13) Arise News Nigeria 53) BMF TV               92) Televisia Leon         131) SoL!ve 24 Japan   171) News 18 Tamilnadu  209) Вести FM           248) Euronews Maygar"
+   echo "13) Arise News Nigeria 53) BMF TV               92) Televisia Leon         131) SoL!ve 24 Japan   171) News 18 Tamilnadu  209) Вести FM           248) Euronews Magyar"
    echo "14) ANN7 South Africa  54) Europe 1             93) Televisia Queretaro    132) SunNews  India    172) Polimer TV         210) Vesti FM           249) DZMM Philippeans"
    echo "15) Channels 24 Nigeria55) i24 France           94) Televisia Gudalajera   133) TV 9 News India   173) Jaya Plus          211) POCCNR 24 Russia   250) DZRH Philippeans"  
    echo "16) KTN Kenya          56) France Info TV       95) Televisa Mexicali      134) Rajya Sabha TV    174) Neo TV India       212) Ukraine 5          251) DWIZ Philippeans"
@@ -212,9 +212,9 @@ channel_matrix_2()
    echo "279) Venice Italy Bridge   319) Webcam NL 3     359) i24 News Israel      399) -----------     439) -----------       479) YTN DMB Korea      519) Terry A Davis "             
    echo "280) Venice Italy Port     320) Webcam NL 4     360) ABS-CBN Filipino     400) -----------     440) -----------       480) YTN Life Korea     520) Temple Institute"  
    echo "281) Jackson Hole XSec     321) Webcam NL 5     361) Texas Weather News   401) -----------     441) -----------       481) YTN Science Korea  521) Amazing Facts "  
-   echo "282) Jackson Hole Square   322) Webcam NL 6     362) ---------------      402) -----------     442) -----------       482) Channel 23 Korea   522) Its Supernatural"
-   echo "283) Jackson Hole Rustic   323) Naman Tower     363) ---------------      403) -----------     443) -----------       483) Dragon Ball 1      523) Sheppards Chapel"
-   echo "284) Verona Italy          324) ------------    364) ---------------      404) -----------     444) -----------       484) Dragon Ball 2      524) IHOP  "
+   echo "282) Jackson Hole Square   322) Webcam NL 6     362) TWiT                 402) -----------     442) -----------       482) Channel 23 Korea   522) Its Supernatural"
+   echo "283) Jackson Hole Rustic   323) Naman Tower     363) High Stakes Poker    403) -----------     443) -----------       483) Dragon Ball 1      523) Sheppards Chapel"
+   echo "284) Verona Italy          324) ------------    364) ---------------      404) -----------     444) -----------       484) ------------       524) IHOP  "
    echo "285) Soggy Dollar BVI      325) ------------    365) ---------------      405) -----------     445) -----------       485) ------------       525) BVOVN "
    echo "286) Amsterdam Netherlands 326) -------------   366) ---------------      406) -----------     446) -----------       486) ------------       526) Saudi Gold "
    echo "287) SHIBUYA JAPAN         327) -------------   367) ---------------      407) -----------     447) -----------       487) ------------       527) Mecca Kaaba"
@@ -1672,21 +1672,28 @@ chan_name="i24 News Israel English" ;;
 360) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ABSCBNOnline/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="ABS CBN Entertainment" ;; 
-
 # 361) Texas Weather News
 361) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCsMiQ1AtAKkx1TK1n5K7_zQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-chan_name="Texas Weather News" ;; 
+chan_name="Texas Weather News" ;;
+
+############### TWITCH STREAMS ######################## 
+# 362) TWiT
+362) link=https://www.twitch.tv/twit 
+use_cookies="no"
+chan_name="TWiT" ;; 
+
+# 363) High Stakes Poker
+363) link=https://www.twitch.tv/highstakespoke 
+use_cookies="no"
+chan_name="High Stakes Poker" ;; 
 
 
 
-## TWiT on Twitch   (BROKEN)
-## 26) link=https://www.twitch.tv/twit 
-##    chan_name="TWiT on Twitch" ;; 
 
 ################### SAIAJIN #############################
 # 476) Fuji TV Japan  
-476) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCuVp9RATp3G9Oj8hFYTeZJg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+476) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC9NGXL23tfZyHqVar47G2qA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Fuji TV Japan" ;; 
 # 477) KBS Live 24 Japan  
@@ -1719,10 +1726,7 @@ chan_name="Channel 23 Korea" ;;
 use_cookies="no"
 chan_name="Dragon Ball 1" ;; 
 
-# 484) Dragon Ball 2
-484) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/funXmusicXfun/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="Dragon Ball 2" ;; 
+# 484)
 
 
 ################# GOD MODE  ############################
@@ -2008,5 +2012,3 @@ exit "$?"
 # https://mpv.io/manual/master/
 
 ######################     END OF PROGRAM      ####################################################
-
-C
