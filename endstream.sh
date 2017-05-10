@@ -206,15 +206,15 @@ channel_matrix_2()
    echo "==================================================================      ENDSTREAM  "$version"   =================================================================================="
    echo "||      LOCATIONS         ||      SUPER         ||         DUPER        ||       MEGA        ||       ULTRA        ||        SAIAJIN        ||      GOD MODE     ||"
    echo "============================================================================================================================================================================"
-   echo "276) NASA ISS Replay       316) Youing Japan    356) Parovi TV Serbia     396) -----------     436) -----------       476) Fuji TV Japan      516) Vatican  "    
+   echo "276) NASA ISS Replay       316) Youing Japan    356) Parovi TV Serbia     396) -----------     436) -----------       476) Earthquake 24      516) Vatican  "    
    echo "277) NASA ISS 1            317) Webcam NL 1     357) Biafra TV Africa     397) -----------     437) -----------       477) KBS Live Korea     517) EWTN     " 
    echo "278) NASA ISS 2            318) Webcam NL 2     358) Joy News Ghana       398) -----------     438) -----------       478) TBS Live Korea     518) CTV Vaticano "  
    echo "279) Venice Italy Bridge   319) Webcam NL 3     359) i24 News Israel      399) -----------     439) -----------       479) YTN DMB Korea      519) Terry A Davis "             
    echo "280) Venice Italy Port     320) Webcam NL 4     360) ABS-CBN Filipino     400) -----------     440) -----------       480) YTN Life Korea     520) Temple Institute"  
    echo "281) Jackson Hole XSec     321) Webcam NL 5     361) Texas Weather News   401) -----------     441) -----------       481) YTN Science Korea  521) Amazing Facts "  
    echo "282) Jackson Hole Square   322) Webcam NL 6     362) TWiT                 402) -----------     442) -----------       482) Channel 23 Korea   522) Its Supernatural"
-   echo "283) Jackson Hole Rustic   323) Naman Tower     363) High Stakes Poker    403) -----------     443) -----------       483) Dragon Ball 1      523) Sheppards Chapel"
-   echo "284) Verona Italy          324) ------------    364) ---------------      404) -----------     444) -----------       484) ------------       524) IHOP  "
+   echo "283) Jackson Hole Rustic   323) Naman Tower     363) High Stakes Poker    403) -----------     443) -----------       483) BSC 24 1           523) Sheppards Chapel"
+   echo "284) Verona Italy          324) ------------    364) Shaski India         404) -----------     444) -----------       484) BSC 24 2           524) IHOP  "
    echo "285) Soggy Dollar BVI      325) ------------    365) ---------------      405) -----------     445) -----------       485) ------------       525) BVOVN "
    echo "286) Amsterdam Netherlands 326) -------------   366) ---------------      406) -----------     446) -----------       486) ------------       526) Saudi Gold "
    echo "287) SHIBUYA JAPAN         327) -------------   367) ---------------      407) -----------     447) -----------       487) ------------       527) Mecca Kaaba"
@@ -848,7 +848,7 @@ chan_name="YTN 27 Korea" ;;
 use_cookies="no"
 chan_name="QVC JAPAN SHOPPING CHANNEL" ;;
 # 131) Sol!ve 24 Japan
-131) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCNsidkYpIAQ4QaufptQBPHQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
+131) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCNsidkYpIAQ4QaufptQBPHQ/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="Sol!ve 24 Japan";; 
 ###### INDIAN, HINDI, URDU, DARI, PASHTUN##################
@@ -1688,14 +1688,17 @@ chan_name="TWiT" ;;
 use_cookies="no"
 chan_name="High Stakes Poker" ;; 
 
-
+# 364) Shaski India
+364) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCQ_FATLW83q-4xJ2fsi8qAw/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="Shaski India" ;;
 
 
 ################### SAIAJIN #############################
-# 476) Fuji TV Japan  
-476) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UC9NGXL23tfZyHqVar47G2qA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+# 476) Earthquake 24  
+476) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCmw7DsSCQzRcRG6-SHE_ksg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-chan_name="Fuji TV Japan" ;; 
+chan_name="Earthquake 24" ;; 
 # 477) KBS Live 24 Japan  
 477) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UChSodm7QfwnUqD63BpqZC6Q/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
@@ -1720,13 +1723,15 @@ chan_name="YTN Science Korea" ;;
 482) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Channel 23 Korea" ;; 
-
-# 483) Dragon Ball 1
-483) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/ZRSGamingHD/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+# 483) BSC 24 1
+483) link=https://www.youtube.com/"$(curl "https://www.youtube.com/user/bousaishare/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
-chan_name="Dragon Ball 1" ;; 
+chan_name="BSC 24 1" ;; 
+# 484) BSC 24 2
+484) link=https://www.youtube.com/"$(curl "https://www.youtube.com/channel/UCeEkbpBLgTEHy9NP-JHnPYQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="BSC 24 2" ;; 
 
-# 484)
 
 
 ################# GOD MODE  ############################
