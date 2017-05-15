@@ -207,34 +207,34 @@ channel_matrix_2()
    echo "==================================================================      ENDSTREAM  "$version"   =================================================================================="
    echo "||      LOCATIONS         ||      SUPER         ||         DUPER        ||       MEGA        ||       ULTRA        ||        SAIAJIN        ||      GOD MODE     ||"
    echo "============================================================================================================================================================================"
-   echo "276) NASA ISS Replay       316) Youing Japan    356) Parovi TV Serbia     396) -----------     436) -----------       476) Earthquake 24      516) CTV Vaticano "    
-   echo "277) NASA ISS 1            317) Webcam NL 1     357) Biafra TV Africa     397) -----------     437) -----------       477) KBS Live Korea     517) Amazing Facts " 
+   echo "276) ---------------       316) Youing Japan    356) Parovi TV Serbia     396) -----------     436) -----------       476) Earthquake 24      516) CTV Vaticano "    
+   echo "277) NASA ISS 1            317) Webcam NL 1     357) Biafra TV Africa     397) -----------     437) -----------       477) KBS 24 Japan       517) Amazing Facts " 
    echo "278) NASA ISS 2            318) Webcam NL 2     358) Joy News Ghana       398) -----------     438) -----------       478) TBS Live Korea     518) It's Supernatural!"  
    echo "279) Venice Italy Bridge   319) Webcam NL 3     359) i24 News Israel      399) -----------     439) -----------       479) YTN DMB Korea      519) Sheppard's Chapel "             
    echo "280) Venice Italy Port     320) Webcam NL 4     360) ---------------      400) -----------     440) -----------       480) YTN Life Korea     520) IHOP"  
    echo "281) Jackson Hole XSec     321) Webcam NL 5     361) ---------------      401) -----------     441) -----------       481) YTN Science Korea  521) BVOVN "  
    echo "282) Jackson Hole Square   322) Webcam NL 6     362) TWiT                 402) -----------     442) -----------       482) Channel 23 Korea   522) 3ABN"
-   echo "283) Jackson Hole Rustic   323) Naman Tower     363) High Stakes Poker    403) -----------     443) -----------       483) BSC 24 1           523) TCT HD "
-   echo "284) Verona Italy          324) ------------    364) ---------------      404) -----------     444) -----------       484) BSC 24 2           524) TCT SD "
-   echo "285) Soggy Dollar BVI      325) ------------    365) ---------------      405) -----------     445) -----------       485) KBS 24 Korea       525) TCT Kids  "
-   echo "286) Amsterdam Netherlands 326) -------------   366) ---------------      406) -----------     446) -----------       486) YTN 27 Korea       526) Salt and Light"
-   echo "287) SHIBUYA JAPAN         327) -------------   367) ---------------      407) -----------     447) -----------       487) ------------       527) LLBN TV"
-   echo "288) Akiba Japan           328) -------------   368) ---------------      408) -----------     448) -----------       488) ------------       528) Harbor Light Radio"
-   echo "289) Bridge Japan          329) -------------   369) ---------------      409) -----------     449) -----------       489) ------------       529) Olive TV"
-   echo "290) Steamy Mount Japan    330) -------------   370) ---------------      410) -----------     450) -----------       490) ------------       530) Al Hayat TV Arabic"  
-   echo "291) Tokyo Japan           331) -------------   371) ---------------      411) -----------     451) -----------       491) ------------       531) Al Fady TV Arabic"
+   echo "283) Jackson Hole Rustic   323) Naman Tower     363) High Stakes Poker    403) -----------     443) -----------       483) BSC 24 1 Japan     523) TCT HD "
+   echo "284) Verona Italy          324) ------------    364) ---------------      404) -----------     444) -----------       484) BSC 24 2 Japan     524) TCT SD "
+   echo "285) Soggy Dollar BVI      325) ------------    365) ---------------      405) -----------     445) -----------       485) KBS World 24 Korea 525) TCT Kids  "
+   echo "286) Amsterdam Netherlands 326) -------------   366) La Casacra           406) -----------     446) -----------       486) YTN 27 Korea       526) Salt and Light"
+   echo "287) SHIBUYA JAPAN         327) -------------   367) 100% Noticias        407) -----------     447) -----------       487) QVC JAPAN          527) LLBN TV"
+   echo "288) Akiba Japan           328) -------------   368) Number1 Turk FM      408) -----------     448) -----------       488) Sol!ve 24 Japan    528) Harbor Light Radio"
+   echo "289) Bridge Japan          329) -------------   369) Number1 FM Radyo     409) -----------     449) -----------       489) ------------       529) Olive TV"
+   echo "290) Steamy Mount Japan    330) -------------   370) Rádio Justiça        410) -----------     450) -----------       490) ------------       530) Al Hayat TV Arabic"  
+   echo "291) -------------         331) -------------   371) Rádio Justiça        411) -----------     451) -----------       491) ------------       531) Al Fady TV Arabic"
    echo "292) Shizuoka Japan        332) -------------   372) ---------------      412) -----------     452) -----------       492) -------------      532) Aghapy TV"
    echo "293) Yokohama Japan        333) -------------   373) ---------------      413) -----------     453) -----------       493) -------------      533) St. Mary's Coptic"	
    echo "294) Hokkido Japan         334) -------------   374) ---------------      414) -----------     454) -----------       494) -------------      534) Word of God Greek"
    echo "295) Mt Fuji Japan         335) -------------   375) ---------------      415) -----------     455) -----------       495) -------------      535) VVV BG"  
-   echo "296) BSC 24 Japan          336) -------------   376) ---------------      416) -----------     456) -----------       496) -------------      536) P.J. Stephen Paul"
+   echo "296) --------------        336) -------------   376) ---------------      416) -----------     456) -----------       496) -------------      536) P.J. Stephen Paul"
    echo "297) Florida Cam 1         337) -------------   377) ---------------      417) -----------     457) -----------       497) -------------      537) Aradana TV"       
    echo "298) Florida Cam 2         338) -------------   378) ---------------      418) -----------     458) -----------       498) -------------      538) Shalom TV"  
    echo "299) Florida Cam 3         339) -------------   379) ---------------      419) -----------     459) -----------       499) -------------      539) Heaven TV"
    echo "300) Florida Cam 4         340) -------------   380) ---------------      420) -----------     460) -----------       500) -------------      540) Rakshana TV"  
    echo "301) Durango Colorado      341) -------------   381) ---------------      421) -----------     461) -----------       501) -------------      541) Powervision TV"
    echo "302) Star Dot 1            342) -------------   382) ---------------      422) -----------     462) ------------      502) -------------      542) KJV Bible Audio"
-   echo "303) Star Dot 2            343) -------------   383) ---------------      423) -----------     463) ------------      503) -------------      543) NIV Bible Audio"
+   echo "303) -------------         343) -------------   383) ---------------      423) -----------     463) ------------      503) -------------      543) NIV Bible Audio"
    echo "304) Star Dot 3            344) --------------  384) ---------------      424) -----------     464) ------------      504) -------------      544) Quran English"
    echo "305) Star Dot 4            345) --------------  385) ---------------      425) -----------     465) ------------      505) -------------      545) Quran Karim"    
    echo "306) Star Dot 5            346) --------------  386) ---------------      426) -----------     466) ------------      506) -------------      546) Temple Rodeph Torah"
@@ -464,8 +464,8 @@ use_cookies="yes"
 chan_name="Newsy" ;;
 # 27) Fox News 10 Phoenix Arizona USA
 27) 
-keyword="LIVESTREAM"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCJg9wBPyKMNA5sRDnvzmkdg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 12 | cut -d \" -f 1)"  
+keyword="LIVE*"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCJg9wBPyKMNA5sRDnvzmkdg/videos?&view=2" | grep -ah "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Fox News 10 Phoenix Arizona USA";; 
 # 28) VOA
@@ -1883,11 +1883,7 @@ chan_name="TYT The Young Turks" ;;
 
 ################################ MENU 2 ########################################################
 ###############    SPACE       ######################### 
-# 276) NASA ISS REPLAY
-276) link=https://www.youtube.com/watch?v=3Ruruhg6q1w
-# user/ouramazingspace/videos
-use_cookies="no"
-chan_name="NASA ISS Replay" ;;
+# 276)
 # 277) NASA ISS 1
 277) link=https://www.youtube.com/watch?v=ddFvjfvPnqk 
 use_cookies="no"
@@ -1931,13 +1927,13 @@ use_cookies="no"
 chan_name="Amsterdam Netherlands" ;;
 # 287) Shibua Japan Community Crosswalk 
 287) 
-keyword=
+keyword="LIVE CAMERA"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/sibchtv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Shibua Japan Crosswalk" ;;
 # 288) Akiba Japan Live
 288) 
-keyword=
+keyword="Akiba" 
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/GETNEWSJP/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Akiba Live" ;;
@@ -1949,10 +1945,7 @@ chan_name="Yahoo Japan Bridge" ;;
 290)  link=https://www.youtube.com/watch?v=U83waNjv2bM
 use_cookies="no"
 chan_name="Yahoo Japan Steamy Mountain" ;;
-# 291) Tokyo Weather Sky Cam
-291) link=https://www.youtube.com/watch?v=Dx8Ba89UNis
-use_cookies="no"
-chan_name="Tokyo Weather Sky Cam" ;;
+# 291) 
 # 292) Shizuoka Bridge Japan
 292) link=https://www.youtube.com/watch?v=cdJthnaGO6c
 use_cookies="no"
@@ -1969,135 +1962,125 @@ chan_name="Hokkido Weather Cams" ;;
 295) link=https://www.youtube.com/watch?v=iyzGqj_xRfc
 use_cookies="no"
 chan_name="Mount Fuji Japan" ;;     
-# 296) BSC 24 Japan
-296) 
-keyword=
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/bousaishare/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-use_cookies="no"  
-chan_name="BSC 24 Japan" ;;   
+# 296)   
 # 297) Florida Cam 1
 297) 
-keyword=
+keyword="LIVE Mallory Square Key West"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 1" ;; 
 # 298) Florida Cam 2
 298) 
-keyword=
+keyword="LIVE Two Friends Roof Top"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 2" ;; 
-# 299) Florida Cam 2
+# 299) Florida Cam 3
 299) 
-keyword=
+keyword="LIVE Marathon FL Cam"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 3" ;; 
-# 300) Florida Cam 2
+# 300) Florida Cam 4
 300) 
-keyword=
+keyword="LIVE Mallory Square - Key West FL"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 4" ;; 
 # 300) Florida Cam 5
 300) 
-keyword=
+keyword="LIVE Key West Seaport Cam"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 5" ;; 
 # 301) Durango Colorado USA
 301) 
-keyword=
+keyword="Durango"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com//channel/UCJ3zGPGUiVTwcIDyEV3xwpw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
-chan_name="Florida Cam 1" ;; 
+chan_name="Durango Colorado USA" ;; 
 # 302)Star Dot Cam 1
 302) 
-keyword=
+keyword="Live Fish Tank"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 1 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 1 Fish Tank" ;; 
-# 303) Star Dot Cam 2
-303) 
-keyword=
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="Star Dot Cam 2 Taiwan" ;; 
+# 303) 
 # 304) Star Dot Cam 3
 304) 
-keyword=
+keyword="Buena Park"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 3 Buena Park California" ;; 
 # 305) Star Dot Cam 4
 305) 
-keyword=
+keyword="Taipei City #1/3"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 7 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 4 Taipei Taiwan" ;; 
 # 306) Star Dot Cam 5
 306) 
-keyword=
+keyword="Taipei City #2/3"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 9 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 5 Taipei Taiwan" ;; 
 # 307) Star Dot Cam 6
 307) 
-keyword=
+keyword="Taipei City #3/3"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 11 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 6 Taipei Taiwan" ;; 
 # 308) Fine Cine London 1
 308) 
-keyword=
+keyword="LONDON PANORAMIC"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Fine Cine London 1" ;; 
 # 309) Fine Cine London 2
 309) 
-keyword=
+keyword="CITY TOUR"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Fine Cine London 2" ;; 
 # 310) Fine Cine London 3
 310) 
-keyword=
+keyword="FINE CINE™ LONDON LIVE™"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Fine Cine London 3" ;; 
 # 311) Berlin Airport 
 311) 
-keyword=
+keyword="LIVE: Berlin Skyline Airport"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/HausTwentyfourseven/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Berlin Airport" ;; 
 # 312) Osaka Japan  
 312) 
-keyword=
+keyword="ITM SKY CAM"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/masato663/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Osaka Japan" ;; 
 # 313) Port of Los Angeles  
 313) 
-keyword=
+keyword="Port of Los Angeles Live Stream"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/ThePortofLosAngeles/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Port of Los Angeles" ;; 
 # 314)  ITS COM STUDIO Japan  
 314) 
-keyword=
+keyword="iTSCOM STUDIO"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCYt3d335w5qPi5vE62Mxy8g/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="ITS COM STUDIO" ;; 
 # 315)  China Shoreline 
 315) 
-keyword=
+keyword="海洋博公園"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCgoVZ6IWOEcJdXiefd5nmcQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="China Shoreline" ;; 
 # 316) Youing Japan Route 10
 316) 
-keyword=
+keyword="Japan LIVE Camera" 
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/YOUINGmediacity/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Youing Japan Route 10" ;; 
@@ -2109,37 +2092,37 @@ use_cookies="no"
 chan_name="Web NL Cam 1" ;; 
 # 318) Netherlands live cams 6 of them 
 318) 
-keyword=
+keyword="www.bottercourant.nl"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 2" ;; 
 # 319) Netherlands live cams 6 of them 
 319) 
-keyword=
+keyword="www.vvvzandvoort.nl"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 3" ;; 
 # 320) Netherlands live cams 6 of them 
 320) 
-keyword=
+keyword="www.waddenhaventexel.nl"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 7 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 4" ;; 
 # 321) Netherlands live cams 6 of them 
 321) 
-keyword=
+keyword="www.webcamceeskatwijk.nl"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 9 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 5" ;; 
 # 322) Netherlands live cams 6 of them 
 322) 
-keyword=
+keyword="www.havenplein.net"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 11 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )"
 use_cookies="no"
 chan_name="Web NL Cam 6" ;; 
 # 323) Naman Seoul Tower South Korea  
 323) 
-keyword=
+keyword="https://hartbeach.nl/"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC90AkGrousC-CDBcCL8UaSg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Naman Seoul Tower South Korea" ;; 
@@ -2181,49 +2164,38 @@ chan_name="TWiT" ;;
 use_cookies="no"
 chan_name="High Stakes Poker" ;; 
 
+# 365)
 
-# 365) Cinevision Canal 19
-365) 
-keyword=
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCKtx0aYvzIdoKlIfTyydx0g/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
-use_cookies="no"
-chan_name="Cinevision Canal 19" ;; 
-
-# 366) La Casacra TV 
+# 366) La Casacra TV  ******
 366) 
-keyword=
+keyword="En Vivo"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/lacascaravod/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no" 
 chan_name="La Casacra TV" ;;
-
-# 367) 100% Noticias Nicaragua 
+# 367) 100% Noticias Nicaragua  ******* 
 367) 
 keyword="En Vivo"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/canal15nicaragua100/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 use_cookies="no" 
 chan_name="100% Noticias Nicaragua" ;; 
-
 # 368) Number1 Turk FM
 368)
 keyword="Number1 Türk Fm Radyo Canlı Yayın"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCG5ClB8btAurdKWaGksUV1A/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Number1 Turk FM";;
-
 # 369) Number1 Radyo Canlı Yayın
 369)
 keyword="Number1 FM Radyo Canlı Yayın"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCG5ClB8btAurdKWaGksUV1A/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Number1 Radyo Canlı Yayın";;
-
 # 370) Rádio Justiça - Ao Vivo
 370)  
 keyword="Rádio Justiça - Ao Vivo"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/STF/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="STF Brazil" ;;  
-
 # 371) Rádio Justiça - Ao Vivo
 371)  
 keyword="EXA FM 93.9"
@@ -2455,7 +2427,7 @@ use_cookies="no"
 chan_name="Shalom TV" ;; 
 # 539) Heaven TV
 539) 
-keyword="Heaven tv Live"
+keyword="tv Live"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCl4i7ZkqmgN2hQyRF4m2fWA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Heaven TV" ;; 
