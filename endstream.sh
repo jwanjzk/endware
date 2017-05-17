@@ -2030,128 +2030,128 @@ chan_name="Durango Colorado USA" ;;
 # 302)Star Dot Cam 1
 302) 
 keyword="Live Fish Tank"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 1 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 1 Fish Tank" ;; 
 # 303) 
 # 304) Star Dot Cam 3
 304) 
 keyword="Buena Park"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 3 Buena Park California" ;; 
 # 305) Star Dot Cam 4
 305) 
 keyword="Taipei City #1/3"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 7 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 4 Taipei Taiwan" ;; 
 # 306) Star Dot Cam 5
 306) 
 keyword="Taipei City #2/3"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 9 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 5 Taipei Taiwan" ;; 
 # 307) Star Dot Cam 6
 307) 
 keyword="Taipei City #3/3"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "watch?v=" | head -n 11 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/StarDotTechnologies/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star Dot Cam 6 Taipei Taiwan" ;; 
 # 308) Fine Cine London 1
 308) 
 keyword="LONDON PANORAMIC"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Fine Cine London 1" ;; 
 # 309) Fine Cine London 2
 309) 
 keyword="CITY TOUR"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Fine Cine London 2" ;; 
 # 310) Fine Cine London 3
 310) 
 keyword="FINE CINE™ LONDON LIVE™"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCHfPdT-hqT9EmT-yM2ZMfGA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Fine Cine London 3" ;; 
 # 311) Berlin Airport 
 311) 
 keyword="LIVE: Berlin Skyline Airport"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/HausTwentyfourseven/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/HausTwentyfourseven/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Berlin Airport" ;; 
 # 312) Osaka Japan  
 312) 
 keyword="ITM SKY CAM"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/masato663/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/masato663/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Osaka Japan" ;; 
 # 313) Port of Los Angeles  
 313) 
 keyword="Port of Los Angeles Live Stream"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/ThePortofLosAngeles/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/ThePortofLosAngeles/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Port of Los Angeles" ;; 
 # 314)  ITS COM STUDIO Japan  
 314) 
 keyword="iTSCOM STUDIO"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCYt3d335w5qPi5vE62Mxy8g/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCYt3d335w5qPi5vE62Mxy8g/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="ITS COM STUDIO" ;; 
 # 315)  China Shoreline 
 315) 
 keyword="海洋博公園"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCgoVZ6IWOEcJdXiefd5nmcQ/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCgoVZ6IWOEcJdXiefd5nmcQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="China Shoreline" ;; 
 # 316) Youing Japan Route 10
 316) 
 keyword="Japan LIVE Camera" 
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/YOUINGmediacity/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/YOUINGmediacity/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Youing Japan Route 10" ;; 
 # 317) Netherlands live cams 6 of them 
 317) 
-keyword=
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 1 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+keyword="www.bottercourant.nl"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 1" ;; 
 # 318) Netherlands live cams 6 of them 
 318) 
-keyword="www.bottercourant.nl"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 3 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+keyword="www.vvvzandvoort.nl"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 2" ;; 
 # 319) Netherlands live cams 6 of them 
 319) 
-keyword="www.vvvzandvoort.nl"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 5 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+keyword="www.waddenhaventexel.nl"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 3" ;; 
 # 320) Netherlands live cams 6 of them 
 320) 
-keyword="www.waddenhaventexel.nl"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 7 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+keyword="www.webcamceeskatwijk.nl"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 4" ;; 
 # 321) Netherlands live cams 6 of them 
 321) 
-keyword="www.webcamceeskatwijk.nl"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 9 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )" 
+keyword="www.havenplein.net"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Web NL Cam 5" ;; 
 # 322) Netherlands live cams 6 of them 
 322) 
-keyword="www.havenplein.net"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "watch?v=" | head -n 11 | tail -n 1 | cut -d / -f 2 | cut -d \" -f 1 )"
+keyword="https://hartbeach.nl/"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/WebCamNL/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 use_cookies="no"
 chan_name="Web NL Cam 6" ;; 
 # 323) Naman Seoul Tower South Korea  
 323) 
-keyword="https://hartbeach.nl/"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC90AkGrousC-CDBcCL8UaSg/videos?&view=2" | grep "watch?v=" | head -n 1 | cut -d / -f 2 | cut -d \" -f 1)" 
+keyword="LIVE"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC90AkGrousC-CDBcCL8UaSg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Naman Seoul Tower South Korea" ;; 
 
