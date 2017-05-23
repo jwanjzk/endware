@@ -913,7 +913,7 @@ chan_name="El Capitolio Venezulana" ;;
 ################ CHINESE MANDARIN CANTONESE  ####################
 # 105) CCTV 4 Chinese
 105) 
-keyword="CCTV中文国际"
+keyword="CCTV"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/ChineseInternatioify/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="CCTV 4 China" ;;
