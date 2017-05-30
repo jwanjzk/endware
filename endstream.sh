@@ -162,13 +162,13 @@ channel_matrix()
    echo "2) Al Jazeera English  42) France Info TV       81) Excelsior TV Mexico    120) FLTV Taiwan       160) TOLO NEWS Afghan   199) Saudi Orange       237) A9 Televizyounu " 
    echo "3) TRT World Istanbul  43) France 24 Francais   82) TN Argentina           121) Guo Shiming TV    161) Dawn News Pakistan 200) Saudi Red          238) STerkTV Zindi   "  
    echo "4) i24 News Israel     44) Euronews Francais    83) La Nacion Argentina    122) Dolphin TV        162) DD News India      201) DMC Live           239) Ronahi TV Zindi   "             
-   echo "5) ABC Australia       45) France Info          84) PSN Tijuna Mexico      123) SITTI 1           163) Public TV India    202) SKY Arabic         240) Action 24 Greek "  
-   echo "6) CGTN Beijing        46) France Inter         85) TV del Golfo Mexico    124) SITTI 2           164) REPORTER LIVE      203) CBC Egypt Drama    241) Ionian Greek      "  
-   echo "7) Arirang TV Korea    47) Max FM 92.9          86) TV Veracruz Mexico     125) SITTI 3           165) Puthiya Thalaimurai204) eXtra News Egypt   242) Star Lamia Greek "
-   echo "8) EuroNews English    48) M7 TV Mali           87) TV Matamoros Mexico    126) TzuChi DaAiVideo  166) AsiaNet News       205) CBC Egypt Sofra    243) Blue Sky Athens"
-   echo "9) BBC News            49) France Inter         88) TV Zacatecas Mexico    127) TzuChi DaAiVideo2 167) V6 News            206) Saudi Ajyal Tv     244) SKY NEWS Britain"
-   echo "10) DW English         50) RTL En Direct        89) TV Puebla Mexico       128) Kiss Radio 1      168) Kalaignar TV       207) Mecca Kaaba        245) DW English"
-   echo "11) Russia Today       51) Journal TVLandes     90) TV Acapulco Mexico     129) Kiss Radio 2      169) ---------------    208) DW Arabic          246) ----------------"
+   echo "5) ABC Australia       45) France Info          84) PSN Tijuna Mexico      123) SITTI 1           163) Public TV India    202) SKY Arabic         240) Number1 Turk FM"  
+   echo "6) CGTN Beijing        46) France Inter         85) TV del Golfo Mexico    124) SITTI 2           164) REPORTER LIVE      203) CBC Egypt Drama    241) Action 24 Greek "  
+   echo "7) Arirang TV Korea    47) Max FM 92.9          86) TV Veracruz Mexico     125) SITTI 3           165) Puthiya Thalaimurai204) eXtra News Egypt   242) Ionian Greek"
+   echo "8) EuroNews English    48) M7 TV Mali           87) TV Matamoros Mexico    126) TzuChi DaAiVideo  166) AsiaNet News       205) CBC Egypt Sofra    243) Star Lamia Greek"
+   echo "9) BBC News            49) France Inter         88) TV Zacatecas Mexico    127) TzuChi DaAiVideo2 167) V6 News            206) Saudi Ajyal Tv     244) Blue Sky Athens"
+   echo "10) DW English         50) RTL En Direct        89) TV Puebla Mexico       128) Kiss Radio 1      168) Kalaignar TV       207) Mecca Kaaba        245) SKY NEWS Britain"
+   echo "11) Russia Today       51) Journal TVLandes     90) TV Acapulco Mexico     129) Kiss Radio 2      169) ---------------    208) DW Arabic          246) DW English"
    echo "12) Africa News        52) CNEWS                91) TV Cuernavaca Mexico   130) Shirdi Sai Aarthi 170) ETV Andhra Pradesh  ===RUSSIA/UKRAINE===   247) Euronews Deutche "
    echo "13) Arise News Nigeria 53) BMF TV               92) TV Leon Mexico         131) Shaski India      171) News 18 Tamilnadu  209) Вести FM           248) Euronews Magyar"
    echo "14) ANN7 South Africa  54) Europe 1             93) TV Queretaro Mexico    132) SunNews  India    172) Polimer TV         210) Vesti FM           249) DZMM Philippeans"
@@ -184,7 +184,7 @@ channel_matrix()
    echo "24) Bloomberg USA      64) TLM Lyon France      103) Venevision            142) News 18 India     181) RT Arabic          219) NTV Canli          259) QVC Italian "
    echo "25) NEWSMAX USA        65) La Republique        104) El Capitolio          143) Aaj Tak           182) ON E Arabic        220) Haber Turk TV      260) Euronews Italian " 
    echo "26) Newsy USA          66) QVC Francais         ======ASIAN LANGUAGE====== 144) TV9 Live          183) ON E Sport         221) Star TV Turkey     261) Euronews Persian"
-   echo "27) FOX 10 Phoenix     ====SPANISH LANGUAGE===  105) CCTV 4 China          145) NTV Telugu        184) ON Live            222) Euronews Turkish   262) BBC Persian "
+   echo "27) FOX 10 Phoenix     ====SPANISH LANGUAGE===  105) CCTV 4 China          145) NTV Telugu        184) ON Live            222) Fashion 1 Turk     262) BBC Persian "
    echo "28) Voice of America   67) Magala24 Spain       106) Tai Li 119 Taiwan     146) ABN Telugu        185) Al Jazeera         223) CNN Turk           263) OnTV Hong Kong"
    echo "29) Go News            68) RT Espanol           107) EBC 51 Taiwan         147) Vanitha TV        186) France 24 Arabic   224) Ari TV Canali      264) Terry A Davis "
    echo "30) Jupiter Broadcast  69) DW Espanol           108) EBC Finance Taiwan    148) HMT Telugu        187) BBC Arabic         225) Ulusal Kanal       265) RSBN Feed 2  "    
@@ -192,11 +192,11 @@ channel_matrix()
    echo "32) NASA TV Education  71) Canal 8 San Juan     110) FTV Live Taiwan       150) Channel 24        189) Al Mayadeen        227) Tele 1 Kanali      267) DeporTV Sports"
    echo "33) NASA TV Media      72) Canal 6 San Rafael   111) TTV Taiwan            151) SAMAA TV Pakistan 190) Syrian Satellite   228) Turkmenelie FM     268) PBS NewsHour " 
    echo "34) DVIDs              73) Canal 7 Mendoza      112) CTV Taiwan            152) Survana News      191) ORTAS Syria        229) Turkmenelie TV     269) CBC The National "  
-   echo "35) ----------         74) c5n Argentina        113) CTS World News Taiwan 153) ATN  Bangladesh   192) Bedya TV Arabic    230) La Legul TV        270) SABC South Africa   "
+   echo "35) Infowars           74) c5n Argentina        113) CTS World News Taiwan 153) ATN  Bangladesh   192) Bedya TV Arabic    230) La Legul TV        270) SABC South Africa   "
    echo "36) HSN 1              75) A24 Argentina        114) SET Taiwan            154) No 1 News         193) Belqees TV Arabic  231) Number 1 TV        271) AP Top Stories  "
    echo "37) HSN 2              76) TelePacifico Colombia115) CTI Taiwan            155) i News            194) Saudi Blue News    232) Number 1 Turk      272) Democracy Now "
    echo "38) QVC English        77) Canal 8 Mar Plata    116) NEXT TV Taiwan        156) News 1 Kannada    195) Saudi Purple       233) TGRT Haber TV      273) Talking Tom Minis"	
-   echo "39) TYT                78) HispanTV             117) Sinda Television      157) Jansari News      196) Saudi Green        234) TVNET Canali Yayin 274) Infowars"
+   echo "39) TYT                78) HispanTV             117) Sinda Television      157) Jansari News      196) Saudi Green        234) TVNET Canali Yayin 274) ---------------"
    echo "40) Talking Tom        79) Globovision Venezuela118) Cheng Sin TV          158) Media One         197) Saudi Gold         235) NEWSCHANNEL Zindi  275) What America Thinks "
       echo "========================================================================================================================================================================"
 echo " " 
@@ -219,7 +219,7 @@ channel_matrix_2()
    echo "285) Soggy Dollar BVI      325) ------------    365) ---------------      405) -----------     445) -----------    485) KBS World 24 Korea 525) TCT Kids  "
    echo "286) Amsterdam Netherlands 326) -------------   366) La Casacra           406) -----------     446) -----------    486) YTN 27 Korea       526) Salt and Light"
    echo "287) SHIBUYA JAPAN         327) -------------   367) 100% Noticias        407) -----------     447) -----------    487) QVC JAPAN          527) LLBN TV"
-   echo "288) Akiba Japan           328) -------------   368) Number1 Turk FM      408) -----------     448) -----------    488) Sol!ve 24 Japan    528) Harbor Light Radio"
+   echo "288) Akiba Japan           328) -------------   368) ---------------      408) -----------     448) -----------    488) Sol!ve 24 Japan    528) Harbor Light Radio"
    echo "289) Bridge Japan          329) -------------   369) Number1 FM Radyo     409) -----------     449) -----------    489) ------------       529) Olive TV"
    echo "290) Steamy Mount Japan    330) -------------   370) Rádio Justiça        410) -----------     450) -----------    490) ------------       530) Al Hayat TV Arabic"  
    echo "291) -------------         331) -------------   371) Rádio Justiça        411) -----------     451) -----------    491) ------------       531) Al Fady TV Arabic"
@@ -515,7 +515,12 @@ chan_name="NASA TV Media" ;;
 34) link=https://www.filmon.com/tv/dvids-tv
 use_cookies="yes"
 chan_name="DVIDs TV" ;;  
-# 35)
+# 35) Infowars
+35) 
+keyword="Infowars"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/TheAlexJonesChannel/videos?&view=2" |grep "watch?v=" | head -n 1 | cut -d = -f 4 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="Infowars" ;; 
 # 36) HSN
 36) 
 keyword="HSN Live Stream"
@@ -1625,12 +1630,12 @@ keyword="Star TV - Canlı Yayın"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/STARTVSTAR/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Star TV Turkey";;
-# 222) Euronews Turkey *************
-222) 
-keyword="euronews"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/euronewstr/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
+# 222) Fashion 1 Turk TV
+222)
+keyword="Fashion One"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCG5ClB8btAurdKWaGksUV1A/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
-chan_name="Euronews Turkey" ;;  
+chan_name="Fashion One TV";;
 # 223) CNN Turk 
 223) 
 keyword="CNN TÜRK CANLI YAYINI"
@@ -1734,45 +1739,52 @@ keyword="RonahiTV ZINDI"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCmtlDLeUrnSviATaoHPWGnw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Ronahi TV Zindi";;
+
+# 240) Number1 Turk FM
+240)
+keyword="Number1 Türk FM"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCG5ClB8btAurdKWaGksUV1A/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+use_cookies="no"
+chan_name="Number1 Turk FM";;
+
 ################### GREEK ######################################
-## 240) Action 24 Greece 
-240) 
+## 241) Action 24 Greece 
+241) 
 link=http://www.dailymotion.com/video/x2p626q_action-24-live_tv
 use_cookies="no"
 chan_name="Action 24 Greek" ;;
-## 241) Ionian TV
-241) link=http://www.dailymotion.com/video/x4hnjh6_ionian-channel-livestream_tv
+## 242) Ionian TV
+242) link=http://www.dailymotion.com/video/x4hnjh6_ionian-channel-livestream_tv
 use_cookies="no"
 chan_name="Ionian TV Greek" ;;
-## 242) Star Lamia
-242) link=http://www.dailymotion.com/video/xqjey2_star-lamia-live-streaming_news
+## 243) Star Lamia
+243) link=http://www.dailymotion.com/video/xqjey2_star-lamia-live-streaming_news
 use_cookies="no"
 chan_name="Star Lamia Greek" ;;
-# 243) Blue Sky TV Athens Greece
-243) 
+# 244) Blue Sky TV Athens Greece
+244) 
 keyword="BLUE SKY TV"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/blueskyathens/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="Blue Sky TV Athens Greece";;
 #########################################################################
 ###############    RESTRICTED TO EUROPE     ###########################
-# 244) SKY NEWS
-244) link=https://www.youtube.com/watch?v=y60wDzZt8yg 
+# 245) SKY NEWS
+245) link=https://www.youtube.com/watch?v=y60wDzZt8yg 
 use_cookies="no"
 chan_name="SKY NEWS" ;; 
-# 245) DW English
-245) link=https://www.youtube.com/watch?v=gNosnzCaS4I 
+# 246) DW English
+246) link=https://www.youtube.com/watch?v=gNosnzCaS4I 
 # link=http://www.dailymotion.com/video/xzgfm5_dw-live-stream_news
 use_cookies="no"
-chan_name="DW English" ;; 
-# 246) 
-# 247)  EuroNews Deutche*****
+chan_name="DW English" ;;  
+# 247)  EuroNews Deutche
 247) 
 keyword="euronews LIVE" 
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/euronewsde/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="EuroNews Deutche" ;;
-# 248) Euronews Maygar Hugarian *****
+# 248) Euronews Maygar Hugarian
 248) 
 keyword="euronews élőben" 
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/euronewsHungarian/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
@@ -1939,12 +1951,7 @@ keyword="LIVE"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/TalkingTomCat/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Talking Tom Minis" ;;    
-# 274)  Infowars
-274) 
-keyword="Infowars"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/TheAlexJonesChannel/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="Infowars" ;; 
+# 274)  
 # 275)   What America Thinks
 275) link=https://www.filmon.com/tv/what-america-thinks
 use_cookies="yes"
@@ -2241,13 +2248,7 @@ chan_name="TWiT" ;;
 use_cookies="no"
 chan_name="High Stakes Poker" ;; 
 
-# 364) # Fashion 1 Turk TV
-364)
-keyword="Fashion One"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCG5ClB8btAurdKWaGksUV1A/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
-use_cookies="no"
-chan_name="Fashion One TV";;
-
+# 364) 
 # 365)
 
 # 366) La Casacra TV  ******
@@ -2262,12 +2263,7 @@ keyword="En Vivo"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/canal15nicaragua100/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 use_cookies="no" 
 chan_name="100% Noticias Nicaragua" ;; 
-# 368) Number1 Turk FM
-368)
-keyword="Number1 Türk Fm Radyo Canlı Yayın"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCG5ClB8btAurdKWaGksUV1A/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
-use_cookies="no"
-chan_name="Number1 Turk FM";;
+# 368) 
 # 369) Number1 Radyo Canlı Yayın
 369)
 keyword="Number1 FM Radyo Canlı Yayın"
@@ -2293,7 +2289,6 @@ keyword="en directo"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="Euronews Espanol" ;;  
-
 
 ################### SAIAJIN #############################
 # 476) Earthquake 24  
