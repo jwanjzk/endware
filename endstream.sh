@@ -220,8 +220,8 @@ channel_matrix_2()
    echo "286) Amsterdam Netherlands 326) -------------   366) La Casacra           406) -----------     446) -----------    486) YTN 27 Korea       526) Salt and Light"
    echo "287) SHIBUYA JAPAN         327) -------------   367) 100% Noticias        407) -----------     447) -----------    487) QVC JAPAN          527) LLBN TV"
    echo "288) Akiba Japan           328) -------------   368) ---------------      408) -----------     448) -----------    488) Sol!ve 24 Japan    528) Harbor Light Radio"
-   echo "289) Bridge Japan          329) -------------   369) Number1 FM Radyo     409) -----------     449) -----------    489) ------------       529) Olive TV"
-   echo "290) Steamy Mount Japan    330) -------------   370) Rádio Justiça        410) -----------     450) -----------    490) ------------       530) Al Hayat TV Arabic"  
+   echo "289) Bridge Japan          329) -------------   369) Number1 FM Radyo     409) -----------     449) -----------    489) Arirang Radio      529) Olive TV"
+   echo "290) Steamy Mount Japan    330) -------------   370) Rádio Justiça        410) -----------     450) -----------    490) AniBox             530) Al Hayat TV Arabic"  
    echo "291) -------------         331) -------------   371) Rádio Justiça        411) -----------     451) -----------    491) ------------       531) Al Fady TV Arabic"
    echo "292) Shizuoka Japan        332) -------------   372) Euronews Espanol     412) -----------     452) -----------    492) -------------      532) Aghapy TV"
    echo "293) Yokohama Japan        333) -------------   373) ---------------      413) -----------     453) -----------    493) -------------      533) St. Mary's Coptic"	
@@ -2371,12 +2371,20 @@ link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC
 use_cookies="no"
 chan_name="Sol!ve 24 Japan";; 
 
-#  487) Arirang Radio English 
-487) 
-keyword="[On-Air] Arirang Radio"
+#  489) Arirang Radio English 
+489) 
+keyword="Arirang"
 link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/Music180Arirang/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="Arirang Radio English" ;;
+
+#  490) Arirang Radio English 
+490) 
+keyword="ANI"
+link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UCiFSWD-BKjiOgqo4gIBOBOg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
+use_cookies="no"
+chan_name="ANIBOX" ;;
+
 
 
 
