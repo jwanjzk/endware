@@ -228,9 +228,9 @@ channel_matrix_2()
    echo "294)Hokkido Japan         334)-------------   374)EWTN Deutsch       414)-----------     454)-----------    494)-------------      534)Aghapy TV"
    echo "295)Mt Fuji Japan         335)-------------   375)EWTN Africa        415)-----------     455)-----------    495)-------------      535)St. Mary's Coptic"  
    echo "296)--------------        336)-------------   376)EWTN Asia          416)-----------     456)-----------    496)-------------      536)Word of God Greek"
-   echo "297)Florida Cam 1         337)-------------   377)---------------    417)-----------     457)-----------    497)-------------      537)VVV Bulgaria"       
-   echo "298)Florida Cam 2         338)-------------   378)---------------    418)-----------     458)-----------    498)-------------      538)P.J. Stephen Paul"  
-   echo "299)Florida Cam 3         339)-------------   379)---------------    419)-----------     459)-----------    499)-------------      539)Aradana TV"
+   echo "297)Florida Cam 1         337)-------------   377)RT America         417)-----------     457)-----------    497)-------------      537)VVV Bulgaria"       
+   echo "298)Florida Cam 2         338)-------------   378)RT UK              418)-----------     458)-----------    498)-------------      538)P.J. Stephen Paul"  
+   echo "299)Florida Cam 3         339)-------------   379)RT Documentary     419)-----------     459)-----------    499)-------------      539)Aradana TV"
    echo "300)Florida Cam 4         340)-------------   380)---------------    420)-----------     460)-----------    500)-------------      540)Shalom TV"  
    echo "301)Durango Colorado      341)-------------   381)---------------    421)-----------     461)-----------    501)-------------      541)Heaven TV"
    echo "302)Star Dot 1            342)-------------   382)---------------    422)-----------     462)------------   502)-------------      542)Rakshana TV"
@@ -382,7 +382,7 @@ chan_name="BBC News" ;;
 use_cookies="yes"
 chan_name="DW English" ;;
 # 11) Russia Today
-11) link=https://www.filmon.com/tv/russia-today-2
+11) link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index2500.m3u8
 use_cookies="yes"
 chan_name="Russia Today" ;;
 # 12) Africa News Live
@@ -2313,6 +2313,25 @@ chan_name="EWTN Africa" ;;
 link=http://players.brightcove.net/1675170007001/Hyo4oydd_default/index.html?videoId=5405034951001
 use_cookies="no"
 chan_name="EWTN Africa" ;;
+
+# 377) RT America
+377) 
+link=https://rt-usa-live-hls.secure.footprint.net/rt/usa/index2500.m3u8
+use_cookies="no"
+chan_name="RT America" ;;
+
+# 378) RT UK
+378) 
+link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index2500.m3u8
+use_cookies="no"
+chan_name="RT UK" ;;
+
+# 379) RT Documentary
+379) 
+link=https://rt-usa-live-hls.secure.footprint.net/rt/doc/index2500.m3u8
+use_cookies="no"
+chan_name="RT Documentary" ;;
+
 
 
 
