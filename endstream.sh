@@ -235,19 +235,19 @@ channel_matrix_2()
    echo "300)Florida Cam 4         340)-------------   380)CSPAN 1            420)Publica Moldova   460)Electrosound   500)-------------      540)Shalom TV"  
    echo "301)Durango Colorado      341)-------------   381)CSPAN 2            421)CTV News Canada   461)WGN 9 Chicago  501)-------------      541)Heaven TV"
    echo "302)Star Dot 1            342)-------------   382)CSPAN 3            422)Canale 7 Italy    462)ABC Stream 1   502)-------------      542)Rakshana TV"
-   echo "303)-------------         343)-------------   383)------------       423)ABC 24 Albania    463)-----------    503)-------------      543)Powervision TV"
-   echo "304)Star Dot 3            344)--------------  384)------------       424)SkyTG 24 Italian  464)Lombardia Italy504)-------------      544)KJV Bible Audio"
-   echo "305)Star Dot 4            345)--------------  385)------------       425)Mekameleen Egypt  465)Cremona 1 Italy505)-------------      545)NIV Bible Audio"    
-   echo "306)Star Dot 5            346)--------------  386)------------       426)ТРЕЙЛЕР 2 Russia  466)BYUTV          506)-------------      546)Quran English"
-   echo "307)Star Dot 6            347)--------------  387)------------       427)Gong Francais     467)BYUTV INT      507)-------------      547)Quran Karim"
-   echo "308)London 1              348)--------------  388)------------       428)Congreso Mexicano 468)ABC Stream 1   508)-------------      548)Temple Rodeph Torah" 
-   echo "309)London 2              349)--------------  389)------------       429)Mediatv Romania   469)ABC Stream 2   509)-------------      549)Vatican "  
-   echo "310)London 3              350)--------------  390)------------       430)О!2 ТВ Russia     470)ABC Stream 3   510)-------------      550)Temple Institute"
-   echo "311)Berlin Airport        351)--------------  391)------------       431)BFM SPORT France  471)ABC Stream 4   511)-------------      551)TBN "
-   echo "312)Osaka                 352)--------------  392)------------       432)London Live       472)ABC Stream 5   512)-------------      552)Mormon Tabernacle"
-   echo "313)Port of Los Angeles   353)--------------  393)------------       433)Bloomberge Eur    473)NBC Stream 1   513)-------------      553)Saudi Gold"	
-   echo "314)Osaka Skyline ITSCom  354)--------------  394)------------       434)WDR Deutsch       474)WBTV News      514)-------------      554)Makkha Live "
-   echo "315)China Shoreline       355)--------------  395)------------       435)A+ Australia      475)WSJ Live       515)-------------      555)Saudi Silver"
+   echo "303)-------------         343)-------------   383)ICI RDI            423)ABC 24 Albania    463)-----------    503)-------------      543)Powervision TV"
+   echo "304)Star Dot 3            344)--------------  384)ICI CBVT           424)SkyTG 24 Italian  464)Lombardia Italy504)-------------      544)KJV Bible Audio"
+   echo "305)Star Dot 4            345)--------------  385)ICI CBOF           425)Mekameleen Egypt  465)Cremona 1 Italy505)-------------      545)NIV Bible Audio"    
+   echo "306)Star Dot 5            346)--------------  386)ICI CKTM           426)ТРЕЙЛЕР 2 Russia  466)BYUTV          506)-------------      546)Quran English"
+   echo "307)Star Dot 6            347)--------------  387)ICI CJBR           427)Gong Francais     467)BYUTV INT      507)-------------      547)Quran Karim"
+   echo "308)London 1              348)--------------  388)ICI CKTV           428)Congreso Mexicano 468)ABC Stream 1   508)-------------      548)Temple Rodeph Torah" 
+   echo "309)London 2              349)--------------  389)ICI CKSH           429)Mediatv Romania   469)ABC Stream 2   509)-------------      549)Vatican "  
+   echo "310)London 3              350)--------------  390)ICI CBFT           430)О!2 ТВ Russia     470)ABC Stream 3   510)-------------      550)Temple Institute"
+   echo "311)Berlin Airport        351)--------------  391)TV5 Monde          431)BFM SPORT France  471)ABC Stream 4   511)-------------      551)TBN "
+   echo "312)Osaka                 352)--------------  392)TV5+ Monde         432)London Live       472)ABC Stream 5   512)-------------      552)Mormon Tabernacle"
+   echo "313)Port of Los Angeles   353)--------------  393)Euronews Fr        433)Bloomberge Eur    473)NBC Stream 1   513)-------------      553)Saudi Gold"	
+   echo "314)Osaka Skyline ITSCom  354)--------------  394)----------         434)WDR Deutsch       474)WBTV News      514)-------------      554)Makkha Live "
+   echo "315)China Shoreline       355)--------------  395)----------         435)A+ Australia      475)WSJ Live       515)-------------      555)Saudi Silver"
    echo "========================================================================================================================================================================"
 echo " " 
 }	
@@ -285,31 +285,6 @@ do
    exit 0   
  fi
 done
-
-
-if [ "$1" != "" ]
-then
-echo "$1"
-# take channel input from command line
-entry="$1" 
-elif [ "$1" == "" ]
-then
-channel_matrix
-echo "Please Select a Number corresponding to a YouTube Live Stream:"
-
-read entry
-
-if [ "$entry" == "q" ]
-then 
-echo "Type endstream to open a new stream."
-exit "$?"
-elif [ "$entry" == "" ]
-then
-entry=1
-num=1
-fi
-
-fi
 
 ## Channel Selection function  (ADD CHANNELS HERE)
 channel_select()
@@ -2389,7 +2364,70 @@ chan_name="C-SPAN-2 Live Event" ;;
 link=http://cspan3nontve-lh.akamaihd.net/i/CSpan3NonTVE_1@312670/master.m3u8
 use_cookies="no"
 chan_name="C-SPAN-3 Live Event" ;;
-
+# 383) ICI RDI 
+383)
+link="http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_1200_av-p.m3u8?sd=10&rebase=on"
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_400_av-p.m3u8?sd=10&rebase=on
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_800_av-p.m3u8?sd=10&rebase=on
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_1200_av-p.m3u8?sd=10&rebase=on
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/master.m3u8?sd=10&rebase=on
+use_cookies="no"
+chan_name="ICI RDI" ;;
+# 384) ICI Radio Canada Quebec CBVT-DT
+384)
+link="http://hdflash_1-lh.akamaihd.net/i/cancbvt_1@93274/index_1200_av-b.m3u8"
+use_cookies="no"
+chan_name="ICI CBVT-DT" ;;
+# 385) ICI Radio-Canada – Ottawa-Gatineau – CBOFT-DT
+385)
+link="http://hdflash_1-lh.akamaihd.net/i/cancboft_1@192896/index_1200_av-b.m3u8"
+use_cookies="no"
+chan_name="ICI Radio-Canada – Ottawa-Gatineau – CBOFT-DT" ;;
+# 386) ICI Radio-Canada – Trois-Rivières – CKTM-DT
+386)
+link="http://hdflash_1-lh.akamaihd.net/i/cancktm_1@93276/index_1200_av-b.m3u8"
+use_cookies="no"
+chan_name="ICI Radio-Canada Trois-Rivières – CKTM-DT" ;;
+# 387) ICI Radio-Canada – Rimouski – CJBR-DT
+387)
+link="http://hdflash_1-lh.akamaihd.net/i/cancjbr_1@95882/index_1200_av-b.m3u8"
+use_cookies="no"
+chan_name="ICI Radio-Canada – Rimouski – CJBR-DT" ;;
+# 387) ICI Radio-Canada – Saguenay (lâ lâ) – CKTV-DT
+387)
+link="http://hdflash_1-lh.akamaihd.net/i/cancktv_1@93272/index_1200_av-b.m3u8"
+use_cookies="no"
+chan_name="ICI Radio-Canada – Saguenay (lâ lâ) – CKTV-DT" ;;
+# 388) ICI Radio-Canada – Sherbrooke – CKSH-DT
+388)
+link="http://hdflash_1-lh.akamaihd.net/i/cancksh_1@93278/index_1200_av-b.m3u8"
+use_cookies="no"
+chan_name="ICI Radio-Canada – Sherbrooke – CKSH-DT" ;;
+# 389) ICI Radio-Canada – Montréal
+389)
+link="http://hdflash_1-lh.akamaihd.net/i/cancbft_1@95875/master.m3u8"
+use_cookies="no"
+chan_name="ICI Radio-Canada – Montréal" ;;
+# 390) CBFT 
+390)
+link=http://hdflash_1-lh.akamaihd.net/i/cancbft_1@95875/master.m3u8
+use_cookies="no"
+chan_name="CBFT" ;;
+# 391)TV5 monde 
+391)
+link=http://v3fbs247hls-i.akamaihd.net/hls/live/219079/v3fbs247hls/v3fbs247hls_1_1.m3u8
+use_cookies="no"
+chan_name="TV5 monde " ;;
+# 392) TV5+ monde 
+392)
+link=http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/v3plusinfo247hls_1_1.m3u8
+use_cookies="no"
+chan_name="TV5+ monde " ;;
+# 393) Euronews 
+393)
+link=http://opus.re/euronews/9-live.m3u8
+use_cookies="no"
+chan_name="Euronews " ;;
 # 376) DW 5
 # 376)
 #link=http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/master.m3u8
@@ -3156,9 +3194,6 @@ chan_name="Saudi Silver" ;;
 esac
 }
 
-# initialize menu
-menu="m"
-
 # Function to check the menu status
 menu_status()
 {
@@ -3224,8 +3259,34 @@ n) channel_matrix_2
 echo "Please Select a Number corresponding to a YouTube Live Stream, press m for the main menu, or press q to quit:" ;;
 esac
 }
+######################################## MAIN PROGRAM #####################################################################
+# initialize menu
+menu="m"
 
+if [ "$1" != "" ]
+then
+echo "$1"
+# take channel input from command line
+entry="$1" 
+elif [ "$1" == "" ]
+then
+channel_matrix
+echo "Please Select a Number corresponding to a YouTube Live Stream:"
+
+read entry
+num="$entry"
+
+if [ "$entry" == "q" ]
+then 
+echo "Type endstream to open a new stream."
+exit "$?"
+elif [ "$entry" == "" ]
+then
+entry=1
 num=1
+fi
+
+fi
 
 menu_status $entry
 
@@ -3242,7 +3303,6 @@ else
 num="$entry"
 fi
 
-
 # get the menu selection status
 
 if [ "$menstat" == "no" ]
@@ -3256,7 +3316,7 @@ then
   # clear the cookie
   echo " " > "$cookie"
   else
-  firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --seccomp --protocol=unix,inet mpv --no-resume-playback --cache="$cache_size" --fullscreen "$link" 
+  firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --seccomp --protocol=unix,inet mpv --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen "$link" 
   fi
   
  menu_switch "$menu" 
@@ -3297,7 +3357,7 @@ echo "$chan_name"
   echo " " > "$cookie"
   menu_switch "$menu"
   else
-  firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --seccomp --protocol=unix,inet mpv --no-resume-playback --cache="$cache_size" --fullscreen "$link" 
+  firejail --noprofile --caps.drop=all --netfilter --nonewprivs --nogroups --seccomp --protocol=unix,inet mpv --no-resume-playback --cache="$cache_size" --loop-playlist=inf --fullscreen "$link" 
   fi
   
 menu_switch "$menu"
