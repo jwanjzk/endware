@@ -162,7 +162,6 @@ HEAD2="Accept-Language: en-US,en;q=0.5"
 HEAD3="Accept-Encoding: gzip, deflate"
 HEAD4="Connection: keep-alive"
 HEAD5="Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7"
-
 uamode="off"
 headmode="off"
 
@@ -306,7 +305,7 @@ do
    shift
    elif [ "$arg" == "--ua-ranstr" ]
    then
-   uastate="tor"
+   uastate="ranstr"
    uamode="on"
    shift
    elif [ "$arg" == "--ua-tor" ]
@@ -316,7 +315,7 @@ do
    shift
    elif [ "$arg" == "--ua-row1" ]
    then
-   uastate="tor"
+   uastate="row1"
    uamode="on"
    shift
    elif [ "$arg" == "--no-agent" ]
@@ -330,9 +329,6 @@ do
  fi
 done
 
-
-
-
 ## Channel Selection function  (ADD CHANNELS HERE)
 channel_select()
 {
@@ -345,7 +341,7 @@ case $chan_num in
 # 1) France 24 Anglais 
 1) 
 keyword="FRANCE 24 Live"
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/france24english/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/france24english/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 link=http://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master.m3u8
 #link=http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
 # link=http://static.france24.com/live/F24_EN_LO_HLS/live_ios.m3u8
@@ -365,7 +361,7 @@ chan_name="BBC World News" ;;
 # 4) BBC News London
 4) 
 keyword=":"
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/bbcnews/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/bbcnews/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 link=https://www.filmon.com/tv/bbc-news
 use_cookies="yes"
 chan_name="BBC News London" ;; 
@@ -373,8 +369,8 @@ chan_name="BBC News London" ;;
 5) 
 keyword="برنامه زنده"
 link=http://fr-par-iphone-2.cdn.hexaglobe.net/streaming/euronews_ewns/ipad_en.m3u8
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/euronewspe/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/Euronews/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewspe/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA""https://www.youtube.com/user/Euronews/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Euronews English" ;; 
 # 6) DW English
@@ -390,8 +386,8 @@ chan_name="DW English" ;;
 #link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index.m3u8
 #link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index2500.m3u8
 #link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index1600.m3u8
-link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index800.m3u8
-#link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index400.m3u8
+#link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index800.m3u8
+link=https://rt-eng-live-hls.secure.footprint.net/rt/eng/index400.m3u8
 # link=https://www.filmon.com/tv/russia-today-1
 use_cookies="no"
 chan_name="Russia Today" ;;
@@ -413,14 +409,14 @@ chan_name="MSNBC";;
 keyword="Global News Coverage on Bloomberg TV"
 link="http://cdn3.videos.bloomberg.com/btv/us/master.m3u8?b?b*t$"
 #link=http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/Bloomberg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+#link=https://www.youtube.com/watch?v="$(curl "-A "$UA" https://www.youtube.com/user/Bloomberg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Bloomberg Business USA";;  
 # 11) NEWSMAX USA
 11) 
 keyword="Live News Stream - Newsmax TV"
 link="http://ooyalahd2-f.akamaihd.net/i/newsmax02_delivery@119568/master.m3u8"
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/NewsmaxTV/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/NewsmaxTV/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="NEWSMAX USA";;
 # 12) ABC News USA
@@ -432,7 +428,7 @@ chan_name="ABC News USA" ;;
 # 13) CNN America  
 13)
 keyword="Live"
-link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
 #link=http://cnn-lh.akamaihd.net/i/cnndebates_1@352100/master.m3u8
 #link=http://109.123.114.178:1935/Livenewson/Livenewson/playlist.m3u8
 #link=http://cnn-i.akamaihd.net/hls/live/253953/dotcomlive_1/master.m3u8
@@ -451,13 +447,13 @@ chan_name="Al Jazeera English" ;;
 15) 
 keyword="TRT World LIVE"
 link=http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/master.m3u8
-# link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
+# link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 use_cookies="no"
 chan_name="TRT World";;   
 # 16) i24 News Israel
 16) 
 keyword="Live"  
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/i24News/videos?view=2" |  grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/i24News/videos?view=2" |  grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 link="https://www.dailymotion.com/video/x29atae"
 #format=hls-2362
 format=hls-1472 
@@ -468,13 +464,14 @@ chan_name="i24 News Israel English" ;;
 17) 
 keyword="Saudi 2 TV Live Stream"
 link=http://wpc.55d6d.deltacdn.net/3055D6D/teb002/55D6D-channel2/index.m3u8
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/SaudiChannel2/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/SaudiChannel2/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Saudi 2 English" ;;   
 # 18) Press TV
 18) 
-link=http://efusion1-i.akamaihd.net/hls/live/252882/ptven/playlist.m3u8
-# link=https://www.filmon.com/tv/press-tv
+#link=http://efusion1-i.akamaihd.net/hls/live/252882/ptven/playlist.m3u8
+#link=http://178.32.255.199:1935/live/ptven/playlist.m3u8
+link=https://www.filmon.com/tv/press-tv
 use_cookies="no"
 chan_name="Press TV" ;;  
 #############################  ASIA-OCEANIA   ##################################################################
@@ -483,7 +480,7 @@ chan_name="Press TV" ;;
 keyword="Live"
 link=https://live.cgtn.com/manifest.m3u8
 #link=https://www.filmon.com/tv/cctv-news
-#link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/CCTVNEWSbeijing/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/CCTVNEWSbeijing/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="CGTN China English" ;;
 # 20)NHK World Japan 
@@ -3427,9 +3424,6 @@ chan_name="EWTN Asia" ;;
 
 esac
 }
-
-
-
 
 # Function to check the menu status
 menu_status()
