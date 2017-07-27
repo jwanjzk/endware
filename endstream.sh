@@ -690,13 +690,20 @@ link=http://f24hls-i.akamaihd.net/hls/live/221192-b/F24_FR_LO_HLS/master.m3u8
 # link=http://static.france24.com/live/F24_FR_LO_HLS/live_ios.m3u8
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/france24/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
-#format=hls-2362
+#format=hls-720
+#format=hls-480
+#format=hls-380
+#format=hls-240
 chan_name="France 24" ;;
 # 42) France Info TV
 42) 
 keyword="franceinfo"
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/franceinfo/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 link=https://www.dailymotion.com/video/x4rdeu6_live-franceinfo-tv_news
+format=hls-720
+#format=hls-480
+#format=hls-380
+#format=hls-240
 use_cookies="no"
 chan_name="France Info TV" ;;
 # 43) Euronews Francais
@@ -719,27 +726,39 @@ chan_name="France Inter" ;;
 # 46) RTL En direct
 46) link=https://www.dailymotion.com/video/xl1km0_regardez-rtl-en-direct-et-en-video_news
 use_cookies="no"
-format=hls-2362
+format=hls-720
+#format=hls-480
 chan_name="RTL En Direct" ;;
 # 47) Direct Journal TVLandes    
 47) link=https://www.dailymotion.com/video/x1z2d07_direct-journal-tvlandes_news
 use_cookies="no"
-format=hls-2362
+format=hls-720
+#format=hls-480
+#format=hls-380
+#format=hls-240
 chan_name="Direct Journal Tvlandes"  ;;      
 # 48) BMF TV
 48) link=https://www.dailymotion.com/video/xgz4t1_live-bfmtv_news
 use_cookies="no"
-format=hls-2362
+format=hls-480
+#format=hls-380
+#format=hls-240
 chan_name="BMF TV";;
 # 49) i24 News en Direct
 49) link=https://www.dailymotion.com/video/x10358o_i24news-le-direct_tv
 use_cookies="no"
-format=hls-2362
+format=hls-720
+format=hls-480
+#format=hls-380
+#format=hls-240
 chan_name="i24 Francais";;
 # 50) Europe 1
 50) link=https://www.dailymotion.com/video/xqjkfz_europe-1-live_news
 use_cookies="no"
-format=hls-2362
+format=hls-720
+#format=hls-480
+#format=hls-380
+#format=hls-240
 chan_name="Europe 1" ;;
 # 51) Africa News Francais
 51) 
@@ -808,7 +827,9 @@ chan_name="QVC Francais" ;;
 # 62) Max FM 92.9 
 62) link=https://www.dailymotion.com/video/x532emn_maxfm-live-24-7_music 
 use_cookies="no"
-format=hls-2362
+format=hls-480
+#format=hls-380
+#format=hls-240
 chan_name="Max FM 92.9" ;;
 # 63) Gong Asian Cinema Francais
 63)
@@ -818,6 +839,10 @@ chan_name="Gong Asian Cinema Francais" ;;
 # 64) M7 Television
 64) link=https://www.dailymotion.com/video/x59xxgx_live_music 
 use_cookies="no"
+format=hls-720
+#format=hls-480
+#format=hls-380
+#format=hls-240
 chan_name="M7 TV Mali" ;;
 # 65) CGTN Francais
 65)
