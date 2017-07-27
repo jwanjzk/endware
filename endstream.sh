@@ -142,6 +142,7 @@
 version="0.40"
 rev_date="18/07/2017"
 branch="gnu/linux"
+product="ENDSTREAM"
 ##################################################
 temp_pl="$HOME/tmp/master.m3u8"
 USERAGENTS="$HOME/bin/user_agents.txt"
@@ -163,7 +164,7 @@ headmode="off"
 ### Define function for displaying channels  CHANGE MENU HERE
 channel_matrix()
 {
-   echo "==================================================================      ENDSTREAM  "$version"   ==============================================================="
+   echo "=========================================================      "$product" "$version"   ======================================================================"
    echo "||      ENGLISH       ||     FRANCAIS      ||      ESPANOL       ||      ASIAN     ||     INDIAN      || URDU/FARSI/ARABIC ||TURK/GREEK/DEUTSCH/DUTCH||"
    echo "======================================================================================================================================================="
    echo "1)BBC World News      41)France 24 Francais81)Magala TV Spain    121)CCTV 4 China  161)News 9 Bangalore 201)NepalMandal     241)TRT Haber Turkey"    
@@ -211,7 +212,7 @@ channel_matrix()
 
 channel_matrix_2()
 {
-   echo "==================================================================      ENDSTREAM  "$version"   ============================================================"
+   echo "==========================================================      "$product"  "$version"   ==================================================================="
    echo "|| RUSSIA/UKRAINE/OTHER||     LOCATIONS     ||    USA LOCAL NEWS   ||      ULTRA      ||  SPORTS/ENTERTAINMENT ||    RELIGIOUS      ||    MEGA     ||"
    echo "======================================================================================================================================================"
    echo "281)TV Publica Moldova321)NASA ISS          361)RSBN Auburn USA    401)ABC News 1      441)PAC-12 Arizona     481)CTV Vaticano      521)Harbor Light"    
@@ -458,8 +459,8 @@ chan_name="ABC News USA" ;;
 # 14) CNN America  
 14)
 keyword="Live"
-#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n 2 | tail -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
-link=http://cnn-lh.akamaihd.net/i/cnndebates_1@352100/master.m3u8
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n 2 | tail -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
+#link=http://cnn-lh.akamaihd.net/i/cnndebates_1@352100/master.m3u8
 #link=http://109.123.114.178:1935/Livenewson/Livenewson/playlist.m3u8
 use_cookies="no"
 chan_name="CNN Live" ;;
@@ -492,8 +493,8 @@ keyword="Live"
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/i24News/videos?view=2" |  grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 link="https://www.dailymotion.com/video/x29atae"
 #format=hls-1080
-format=hls-720
-#format=hls-480 
+#format=hls-720
+format=hls-480 
 #format=hls-380 
 #format=hls-240
 use_cookies="no"
@@ -586,7 +587,7 @@ link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/u
 #link=http://iphonestreaming.abc.net.au/news24/news24_lo.m3u8
 #BANDWIDTH=553888
 #link=http://iphonestreaming.abc.net.au/news24/news24_med.m3u8
-#BANDWIDTH=708832
+#0BANDWIDTH=708832
 #link=http://iphonestreaming.abc.net.au/news24/news24_hi.m3u8
 #BANDWIDTH=64000
 #link=http://iphonestreaming.abc.net.au/news24/news24_vloaudio.m3u8
@@ -3549,7 +3550,7 @@ uamode="on"
 elif [ "$input" == "ua-off" ]
 then
 menstat="yes"
-menu="$menu"qq
+menu="$menu"
 uastate="off"
 uamode="off"
 elif [ "$input" == "+" ]
