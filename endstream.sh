@@ -6,8 +6,8 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.40
-# Revision Date: July 18, 2017
+# Version: 0.41
+# Revision Date: August 3, 2017
 #
 # Recent Changes: - Channel reorganization
 #                 - incorporate user-agents
@@ -139,8 +139,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.40"
-rev_date="18/07/2017"
+version="0.41"
+rev_date="03/08/2017"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -204,7 +204,7 @@ channel_matrix()
    echo "35)CSPAN 1 USA        75)CPAC 1 Francais   115)CNN Chile         155)BSC 24 2 JP   195)News 18 Tamilnadu235)Saudi Purple    275)WDR Germany"
    echo "36)CPAC 1 Canada      76)EuroSport Francais116)TVES Venezuela    156)Earthquake 24 196)The Polimer      236)Saudi Red       276)RTS Salzburg Austria"
    echo "37)Jupiter Broadcast  77)France 0          117)TeleSUR Venezuela 157)KBS 24 JP     197)Jaya Plus        237)Saudi Orange    277)Tirol TV Germany"
-   echo "38)TWiT               78)France 2          118)Globovision       158)QVC Japan     198)TEZ TV           238)Saudi Gold      278)------------"	
+   echo "38)TWiT               78)France 2          118)Globovision       158)QVC Japan     198)TEZ TV           238)Saudi Gold      278)DW Deutsch"	
    echo "39)Infowars           79)France 3          119)NTN24 Venezuela   159)Sol!ve 24 JP  199)ATN Bangladesh   239)Saudi Silver    279)AT5 Netherlands"
    echo "40)TYT                80)RTS UN            120)El Capitolio      160)KISS FM TW    200)Ekantipur Nepal  240)Saudi Kids      280)Mediatv Romania "
    echo "======================================================================================================================================================"
@@ -213,7 +213,7 @@ channel_matrix()
 channel_matrix_2()
 {
    echo "==========================================================      "$product"  "$version"   ==================================================================="
-   echo "|| RUSSIA/UKRAINE/OTHER||     LOCATIONS     ||    USA LOCAL NEWS   ||      ULTRA      ||  SPORTS/ENTERTAINMENT ||    RELIGIOUS      ||    MEGA     ||"
+   echo "|| RUSSIA/UKRAINE/OTHER||     LOCATIONS     ||    USA LOCAL NEWS   ||     EXTRA       ||  SPORTS/ENTERTAINMENT ||    RELIGIOUS     ||    MEGA     ||"
    echo "======================================================================================================================================================"
    echo "281)TV Publica Moldova321)NASA ISS          361)RSBN Auburn USA    401)ABC News 1      441)PAC-12 Arizona     481)CTV Vaticano      521)Harbor Light"    
    echo "282)Euronews Russian  322)NASA ISS 1        362)News 12 Brooklyn   402)ABC News 2      442)PAC-12 Bay Area    482)EWTN Americas     522)JUCE TV " 
@@ -233,27 +233,27 @@ channel_matrix_2()
    echo "296)DWIZ Philippeans  336)Naman Seoul       376)Florida Channel    416)America Thinks  456)106.7 The Fan      496)It's Supernatural!536)--------"
    echo "297)PTV Philippines   337)Shizuoka Japan    377)Weather Network    417)NASA TV Educate 457)105.7 The Fan      497)Sheppard's Chapel 537)--------"
    echo "298)STF Brazil        338)Yokohama Japan    378)Weather Nation     418)NASA TV Media   458)High Stakes Poker  498)IHOP              538)--------"	
-   echo "299)TV Estúdio Brasil 339)Hokkido Weather   379)CBS 13 Stockton    419)RT Documentary  459)Toonami            499)BVOVN             539)--------"
-   echo "300)TV Cultura Brasil 340)Mount Fuji Japan  380)CBS 2 New York     420)CGTN Documentary460)Talking Tom        500)3ABN              540)--------"  
-   echo "301)Rádio Justiça     341)Hart Beach NL     381)NBC 4 New York     421)Euronews Magyar 461)Talking Tom Mini   501)TCT HD            541)--------"
-   echo "302)EXA FM Brasil     342)Florida 1         382)CBS 4 Boston       422)Bloomberg Europe462)Adult Swim Ani     502)TCT SD            542)--------"       
-   echo "303)SkyTG 24 Italian  343)Florida 2         383)WVIT 30 Hartford   423)London Live     463)Adult Swim         503)TCT Kids          543)--------"  
-   echo "304)Lombardia Italy   344)Florida 3         384)NBC 10 Philadelphia424)A+ Australia    464)Adult Swim Live    504)Salt and Light    544)--------"
-   echo "305)Cremona 1 Italy   345)Florida 4         385)CBS 3 Michigan     425)Yes TV          465)Animal Planet      505)LLBN TV           545)--------"  
-   echo "306)QVC Itallian      346)-------------     386)NBC Nebraska       426)Smile of a Child466)Insight TV         506)Rap Resurrection  546)--------"
-   echo "307)ADOM TV           347)Durango Colorado  387)CBS Nebraska       427)The Blaze       467)Virgin 2 Music     507)Hillsong          547)--------"
-   echo "308)Biafra TV         348)StarDot 1         388)News12 Wisconsin   428)Weather Channel 468)538 Netherlands    508)Al Hayat TV Arabic548)--------"
-   echo "309)Joy News Ghana    349)Youing Japan      389)CBS 2 Salt Lake    429)BYUTV           469)ANIBOX             509)Al Fady TV Arabic 549)--------"
-   echo "310)KTN Kenya         350)StarDot 4         390)CBS 5 News Colorado430)BYUTV Int       470)Music Choice Play  510)Aghapy TV         550)--------"    
-   echo "311)NTV Uganda        351)StarDot 5         391)NBC 11 Bay Area    431)Arirang Radio   471)MTV AM Russia      511)St. Mary's Coptic 551)--------"
+   echo "299)TV Estúdio Brasil 339)Hokkido Weather   379)CBS 2 New York     419)RT Documentary  459)Toonami            499)BVOVN             539)--------"
+   echo "300)TV Cultura Brasil 340)Mount Fuji Japan  380)NBC 4 New York     420)CGTN Documentary460)Talking Tom        500)3ABN              540)--------"  
+   echo "301)Rádio Justiça     341)Hart Beach NL     381)CBS 4 Boston       421)Euronews Magyar 461)Talking Tom Mini   501)TCT HD            541)--------"
+   echo "302)EXA FM Brasil     342)Florida 1         382)WVIT 30 Hartford   422)Bloomberg Europe462)Adult Swim Ani     502)TCT SD            542)--------"       
+   echo "303)SkyTG 24 Italian  343)Florida 2         383)NBC 10 Philadelphia423)London Live     463)Adult Swim         503)TCT Kids          543)--------"  
+   echo "304)Lombardia Italy   344)Florida 3         384)CBS 3 Michigan     424)A+ Australia    464)Adult Swim Live    504)Salt and Light    544)--------"
+   echo "305)Cremona 1 Italy   345)Florida 4         385)NBC Nebraska       425)Yes TV          465)Animal Planet      505)LLBN TV           545)--------"  
+   echo "306)QVC Itallian      346)-------------     386)CBS Nebraska       426)Smile of a Child466)Insight TV         506)Rap Resurrection  546)--------"
+   echo "307)ADOM TV           347)Durango Colorado  387)News12 Wisconsin   427)The Blaze       467)Virgin 2 Music     507)Hillsong          547)--------"
+   echo "308)Biafra TV         348)StarDot 1         388)CBS 2 Salt Lake    428)Weather Channel 468)538 Netherlands    508)Al Hayat TV Arabic548)--------"
+   echo "309)Joy News Ghana    349)Youing Japan      389)CBS 5 News Colorado429)BYUTV           469)ANIBOX             509)Al Fady TV Arabic 549)--------"
+   echo "310)KTN Kenya         350)StarDot 4         390)NBC 11 Bay Area    430)BYUTV Int       470)Music Choice Play  510)Aghapy TV         550)--------"    
+   echo "311)NTV Uganda        351)StarDot 5         391)CBS 13 Stockton    431)Arirang Radio   471)MTV AM Russia      511)St. Mary's Coptic 551)--------"
    echo "312)Venevision        352)StarDot 6         392)KCAL 9 Los Angeles 432)Go News         472)Capital TV         512)Word of God Greek 552)--------"
    echo "313)RSBN News         353)London 1          393)KNBC 4 Los Angeles 433)HSN             473)Heart TV           513)Shalom TV         553)--------" 
    echo "314)RUPTLY            354)London 2          394)ABC 3 Louisiana    434)HSN 2           474)CITY TV            514)Heaven TV         554)--------"  
    echo "315)PBS NewsHour      355)London 3          395)WPLG 10 Miami      435)QVC             475)Kiss TV            515)Rakshana TV       555)--------"
    echo "316)CBC The National  356)Berlin Airport    396)WJXT 4 Jacksonville436)TSC             476)Country Music      516)Powervision TV    556)--------"
-   echo "317)SABC South Africa 357)Osaka Japan       397)CBS WBZ, Boston    437)IdealWorld      477)Heavy Metal        517)KJV Bible         557)--------"
+   echo "317)SABC South Africa 357)Osaka Japan       397)Fox News Talk      437)IdealWorld      477)Heavy Metal        517)KJV Bible         557)--------"
    echo "318)AP Top Stories    358)Los Angeles Port  398)CTV NEWS Canada    438)Bloomberg Asia  478)О2 ТВ Russia       518)Jewish Life       558)--------"	
-   echo "319)Democracy Now     359)ITS COM Japan     399)Fox News Talk      439)-----------     479)Family Friendly    519)Temple Institute  559)--------"
+   echo "319)Democracy Now     359)ITS COM Japan     399)-------------      439)-----------     479)Family Friendly    519)Temple Institute  559)--------"
    echo "320)--------------    360)China Shoreline   400)-------------      440)-----------     480)---------------    520)Quaran English    560)--------"
    echo "==================================================================================================================================================="
 }	
@@ -366,8 +366,8 @@ chan_name="BBC News London" ;;
 # 4) RT UK
 4) 
 #link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index2500.m3u8
-link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index1600.m3u8
-#link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index800.m3u8
+#link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index1600.m3u8
+link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index800.m3u8
 #link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index400.m3u8
 #link=https://rt-usa-live-hls.secure.footprint.net/rt/uk/index.m3u8
 #link=http://rt-uk-live.hls.adaptive.level3.net/rt/uk/index.m3u8
@@ -385,9 +385,11 @@ use_cookies="no"
 chan_name="France 24 English";;
 # 6) DW English
 6) 
+keyword="DW"
 link=http://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/master.m3u8
 #link= http://dwstream1-lh.akamaihd.net/i/dwstream1_live@120422/master.m3u8
 # link=https://www.filmon.com/tv/dw-english
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/deutschewelleenglish/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="DW English" ;;
 # 7) Russia Today
@@ -438,9 +440,9 @@ chan_name="MSNBC";;
 11) 
 keyword="Bloomberg TV"
 #link=https://www.bloomberg.com/live/us
-#link="http://cdn3.videos.bloomberg.com/btv/us/master.m3u8?b?b*t$"
+link="http://cdn3.videos.bloomberg.com/btv/us/master.m3u8?b?b*t$"
 #link=http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/Bloomberg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/Bloomberg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Bloomberg Business USA";;  
 # 12) NEWSMAX USA
@@ -459,8 +461,8 @@ chan_name="ABC News USA" ;;
 # 14) CNN America  
 14)
 keyword="Live"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n 2 | tail -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
-#link=http://cnn-lh.akamaihd.net/i/cnndebates_1@352100/master.m3u8
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n 2 | tail -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
+link=http://cnn-lh.akamaihd.net/i/cnndebates_1@352100/master.m3u8
 #link=http://109.123.114.178:1935/Livenewson/Livenewson/playlist.m3u8
 use_cookies="no"
 chan_name="CNN Live" ;;
@@ -612,7 +614,7 @@ use_cookies="no"
 chan_name="ANN7 News South Africa" ;; 
 # 31) Arise News Nigeria/London
 31) 
-keyword="Arise News Live Stream"
+keyword="Arise"
 link=http://contributionstreams.ashttp9.visionip.tv/live/visiontv-contributionstreams-arise-tv-hsslive-25f-16x9-SD/chunklist.m3u8
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCyEJX-kSj0kOOCS7Qlq2G7g/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
@@ -677,7 +679,7 @@ use_cookies="no"
 chan_name="Infowars" ;; 
 # 40) The Young Turks
 40) 
-keyword="Live"
+keyword="17"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/TheYoungTurks/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="TYT The Young Turks" ;; 
@@ -2192,9 +2194,14 @@ chan_name="RTS Salzburg Austria" ;;
 link=http://lb.hd-livestream.de:1935/live/TirolTV/playlist.m3u8
 use_cookies="no"
 chan_name="Tirol TV German" ;;
-################## DUTCH
-# 278)
+# 278) DW Deutsch Welle 
+278) 
+keyword="DW"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/deutschewelle/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
+use_cookies="no"
+chan_name="DW Deutsch Welle";;
 
+################## DUTCH
 # 279)AT5 NETHERLANDS
 279)
 link=http://lb-at5-live.cdn.streamgate.nl/at5/video/at5.smil/playlist.m3u8
@@ -2752,71 +2759,72 @@ link=http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxc
 use_cookies="no"
 chan_name="Weather Nation" ;; 
 ############################  TRANSIENT BROADCAST NEWS #############################################
-# 379) CBS 13 News Stockton California USA
+# 379) CBS 2 News New York
 379) 
-link=http://play-prod1.live.anvato.net/server/play/cbslocal-kovrx-dfp/master.m3u8
-use_cookies="no"
-chan_name="CBS 13 News Stockton California USA" ;;
-# 380) CBS 2 News New York
-380) 
 link=http://play-prod1.live.anvato.net/server/play/cbslocal-wcbsx-dfp/master.m3u8
 use_cookies="no"
 chan_name="CBS 2 News New York" ;;
-# 381) NBC 4 News (New York)
-381) 
+# 380) NBC 4 News (New York)
+380) 
 link=http://wnbclive-f.akamaihd.net/i/wnbca1_1@13992/master.m3u8
 use_cookies="no"
 chan_name="NBC 4 News New York" ;;
-# 382) CBS 4 News Boston
-382) 
-link=http://54.163.107.81/server/play/cbslocal-wbzx-dfp/master.m3u8
+# 381) CBS 4 News Boston
+381) 
+link=http://cbslocaltv-i.akamaihd.net/hls/live/221461/WBZTV/master.m3u8
+#link=http://54.163.107.81/server/play/cbslocal-wbzx-dfp/master.m3u8
 use_cookies="no"
-chan_name="CBS 4 News Boston" ;;
-# 383) WVIT 30 News Hartford
-383) 
+chan_name="CBS 4 News, WBZ, Boston, Massachusetts" ;;
+# 382) WVIT 30 News Hartford
+382) 
 link=http://wvitlive-f.akamaihd.net/i/wvitb2_1@71164/master.m3u8
 use_cookies="no"
 chan_name="WVIT 30 News Hartford" ;;
-# 384) NBC 10 News (Philadelphia)
-384) 
+# 383) NBC 10 News (Philadelphia)
+383) 
 link=http://wcaulive-f.akamaihd.net/i/wcaua1_1@13991/master.m3u8
 use_cookies="no"
 chan_name="NBC 10 News Philadelphia" ;;
-# 385) CBS 3 News Michigan 
-385) 
+# 384) CBS 3 News Michigan 
+384) 
 link=http://wjmn-apple-live.hls.adaptive.level3.net/stream0/master.m3u8
 use_cookies="no"
 chan_name="CBS 3 News Michigan" ;;
-# 386) NBC News Nebraska
-386) 
+# 385) NBC News Nebraska
+385) 
 link=http://play-prod1.live.anvato.net/server/play/gray-ksnb-dfp/master.m3u8
 use_cookies="no"
 chan_name="NBC News Nebraska" ;;
-# 387) CBS News Nebraska
-387) 
+# 386) CBS News Nebraska
+386) 
 link=http://play-prod1.live.anvato.net/server/play/gray-koln-dfp/master.m3u8
 use_cookies="no"
 chan_name="CBS News Nebraska" ;;
-# 388) WJFW Newswatch 12 (Wisconsin)
-388) 
+# 387) WJFW Newswatch 12 (Wisconsin)
+387) 
 link=http://cdn.bimvidlive.com/wjfw1/wjfw1/master.m3u8
 use_cookies="no"
 chan_name="WJFW Newswatch 12 (Wisconsin)" ;;
-# 389) CBS 2 Salt Lake City
-389) 
+# 388) CBS 2 Salt Lake City
+388) 
 link=http://ktvx-apple-live.hls.adaptive.level3.net/stream0/master.m3u8
 use_cookies="no"
 chan_name="CBS 2 Salt Lake City" ;;
-# 390) CBS 5 News Colorado/ FOX 4 Kansas 
-390) 
+# 389) CBS 5 News Colorado/ FOX 4 Kansas 
+389) 
 link=http://krex-apple-live.hls.adaptive.level3.net/stream0/master.m3u8
 use_cookies="no"
 chan_name="CBS 5 Colorado" ;;
-# 391) NBC 11 Bay Area
-391) 
+# 390) NBC 11 Bay Area
+390) 
 link=http://kntvlive-f.akamaihd.net/i/kntvb2_1@15530/index_1286_av-p.m3u8
 use_cookies="no"
 chan_name="NBC 11 Bay Area" ;;
+# 391) CBS 13 News Stockton California USA
+391) 
+link=http://play-prod1.live.anvato.net/server/play/cbslocal-kovrx-dfp/master.m3u8
+use_cookies="no"
+chan_name="CBS 13 News Stockton California USA" ;;
 # 392) KCAL 9 News Los Angeles
 392) 
 link=http://play-prod1.live.anvato.net/server/play/cbslocal-kcal-dfp/master.m3u8
@@ -2842,11 +2850,11 @@ chan_name="WPLG 10 News Miami" ;;
 link=http://play-prod1.live.anvato.net/server/play/pns-wjxt-dfp/master.m3u8
 use_cookies="no"
 chan_name="WJXT News 4 Jacksonville" ;;
-# 397) CBS WBZ, Boston, Massachusettss
+# 397)Fox News Talk
 397)
-link=http://cbslocaltv-i.akamaihd.net/hls/live/221461/WBZTV/master.m3u8
+link=http://fnurtmp-f.akamaihd.net/i/FNRADIOHDS_1@92141/master.m3u8
 use_cookies="no"
-chan_name=" CBS WBZ, Boston, Massachusetts" ;;
+chan_name="Fox News Talk" ;;
 # 398) CTV NEWS Canada
 398)
 #CTV NEWS HD
@@ -2861,12 +2869,7 @@ link=http://ams-lp10.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News16.m3
 #link=http://ams-lp10.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News11.m3u8
 use_cookies="no"
 chan_name="CTV News Canada" ;; 
-# 399)Fox News Talk
-399)
-link=http://fnurtmp-f.akamaihd.net/i/FNRADIOHDS_1@92141/master.m3u8
-use_cookies="no"
-chan_name="Fox News Talk" ;;
-
+# 399)
 # 400)
 ################# ULTRA ###################################
 # 401) ABC News Digital 1
@@ -2979,8 +2982,8 @@ use_cookies="no"
 chan_name="Euronews Maygar Hungarian" ;;
 # 422) Bloomberg Europe
 422)
-link=https://www.bloomberg.com/live/europe
-#link=https://cdn-videos.akamaized.net/btv/zixi/fastly/europe/live/primary.m3u8
+#link=https://www.bloomberg.com/live/europe
+link=https://cdn-videos.akamaized.net/btv/zixi/fastly/europe/live/primary.m3u8
 use_cookies="no"
 chan_name="Bloomberg Europe" ;;
 # 423) London Live 
