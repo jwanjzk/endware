@@ -251,7 +251,7 @@ channel_matrix_2()
    echo "314)SABC South Africa 354)London 2          394)ABC 3 Louisiana    434)HSN 2           474)CITY TV            514)Heaven TV         554)--------"  
    echo "315)-------------     355)London 3          395)WPLG 10 Miami      435)QVC             475)Kiss TV            515)Rakshana TV       555)--------"
    echo "316)RUPTLY            356)Berlin Airport    396)WJXT 4 Jacksonville436)TSC             476)Country Music      516)Powervision TV    556)--------"
-   echo "317)PBS NewsHour      357)Osaka Japan   397)Fox News Talk      437)IdealWorld      477)Heavy Metal        517)KJV Bible         557)--------"
+   echo "317)PBS NewsHour      357)Osaka Japan       397)Fox News Talk      437)IdealWorld      477)Heavy Metal        517)KJV Bible         557)--------"
    echo "318)CBC The National  358)Los Angeles Port  398)CTV NEWS Canada    438)Bloomberg Asia  478)О2 ТВ Russia       518)Jewish Life       558)--------"	
    echo "319)AP Top Stories    359)ITS COM Japan     399)-------------      439)-----------     479)Family Friendly    519)Temple Institute  559)--------"
    echo "320)Democracy Now     360)China Shoreline   400)-------------      440)-----------     480)---------------    520)Quaran English    560)--------"
