@@ -185,28 +185,28 @@ channel_matrix()
    echo "15)RT America         55)TLM Lyon Metro    95)Canal 8 Argentina  135)TLTV Taiwan   175)ABN Telugu       215)Al Jazeera Qatar255)TGRT Haber"  
    echo "16)Newsy USA          56)CGTN Francais     96)Canal 13 Argentina 136)FLTV Taiwan   176)Vanitha TV       216)France 24 Arabic256)TVNET Canali"
    echo "17)TRT World Istanbul 57)ICI RDI Canada    97)Canal 8 MarPlata AR137)Guo Shiming   177)HMT Telugu       217)BBC Arabic      257)NEWSCHANNEL CANLI"
-   echo "18)i24 News Israel    58)TV5 Monde         98)TelePacifico CO    138)Dolphin TV    178)TV5 News         218)Al Arabiya      258)Galatasaray"	
-   echo "19)Al Jazeera English 59)TV5+ Monde        99)CNN Chile          139)SITTI 1       179)Channel 24 India 219)Al Mayadeen     259)A9 Televizyounu"
-   echo "20)Saudi 2 English    60)BFM Sport         100)TVES VE           140)SITTI 2       180)Survana News     220)Syrian Satellite260)STerkTV Zindi"  
-   echo "21)Press TV Iran      61)QVC Francais      101)TeleSUR VE        141)SITTI 3       181)Dilli Aaj Tak    221)ORTAS Syria     261)Ronahi Zindi"
-   echo "22)India Today        62)Max FM 92.9       102)Globovision VE    142)DaAiVideo TW  182)i News Telugu    222)Bedya TV        262)Number1 Turk FM"       
-   echo "23)CGTN Beijing       63)Gong Cinema       103)NTN24 VE          143)DaAi Live TW  183)News 1 Kannada   223)Belqees TV      263)Number1 Radyo"  
-   echo "24)Arirang Korea      64)Mali TV           104)Excelsior Mexico  144)OnTV HK       184)Jansari Kannada  224)DMC Live        264)TRT BELGESEL"
-   echo "25)NHK World Japan    65)CGTN Francais     105)PSN Tijuana Mexico145)TBS KR        185)Media One        225)Sky Arabic      265)Show TV Turkey" 
-   echo "26)NewsAsia Singapore 66)ICI Quebec City   106)Imagen Radio MX   146)YTN KR        186)Tamil Live       226)CBC Drama Egypt 266)Action 24 Greece"
-   echo "27)CNN Philippeans    67)ICI OttawaGatineau107)Gudalajera MX     147)YTN KR        187)DD News          227)Extra News Egypt267)Ionian TV Greece"
-   echo "28)ANN7 South Africa  68)ICI Montreal      108)Aguascalientes MX 148)YTN Sci KR    188)Public TV India  228)CBC Sofra Egypt 268)Star Lamia Greece"
-   echo "29)Arise News Nigeria 69)ICI Trois Rivieres109)Acapuloco MX      149)Channel 23 KR 189)REPORTER LIVE    229)Makka Live      269)Blue Sky TV Athens"
-   echo "30)Channels 24 Nigeria70)ICI Rimouski      110)Matamoros MX      150)KBS World24 KR190)Puthiyah Thali   230)DW Arabic       270)ORA News Albania "    
-   echo "31)TVC News Nigeria   71)ICI Seguenay      111)Puebla MX         151)YTN 27 KR     191)AsiaNet News     231)Mekameleen Egypt271)ABC NEWS 24 Albania"
-   echo "32)Africa News        72)ICI Sherbrooke    112)Sonora MX         152)CTS KR        192)V6 News          232)CGTN Arabic     272)EuroNews Deutsch"
-   echo "33)VOA USA            73)Assemblee Quebec  113)Toluca MX         153)KBS World KR  193)Kalaignar TV1    233)Saudi Green     273)Tagessschau 24 Germany" 
-   echo "34)CSPAN 1 USA        74)Canal Savoir      114)Veracruz MX       154)BSC 24 1 JP   194)ETV AndhraPradesh234)Saudi Blue      274)W24 Wein Germany"  
-   echo "35)CPAC 1 Canada      75)CPAC 1 Francais   115)Cuernavaca MX     155)BSC 24 2 JP   195)News 18 Tamilnadu235)Saudi Purple    275)WDR Germany"
-   echo "36)Jupiter Broadcast  76)EuroSport Francais116)Torreon MX        156)Earthquake 24 196)The Polimer      236)Saudi Red       276)RTS Salzburg Austria"
-   echo "37)TWiT               77)France 0          117)Queretaro MX      157)KBS 24 JP     197)Jaya Plus        237)Saudi Orange    277)Tirol TV Germany"
-   echo "38)Infowars           78)France 2          118)------------      158)QVC Japan     198)TEZ TV           238)Saudi Gold      278)DW Deutsch"	
-   echo "39)TYT                79)France 3          119)------------      159)Sol!ve 24 JP  199)ATN Bangladesh   239)Saudi Silver    279)AT5 Netherlands"
+   echo "18)i24 News Israel    58)TV5 Monde         98)Canal 11 Salta AR  138)Dolphin TV    178)TV5 News         218)Al Arabiya      258)Galatasaray"	
+   echo "19)Al Jazeera English 59)TV5+ Monde        99)TelePacifico CO    139)SITTI 1       179)Channel 24 India 219)Al Mayadeen     259)A9 Televizyounu"
+   echo "20)Saudi 2 English    60)BFM Sport         100)CNN Chile         140)SITTI 2       180)Survana News     220)Syrian Satellite260)STerkTV Zindi"  
+   echo "21)Press TV Iran      61)QVC Francais      101)UFROVision Chile  141)SITTI 3       181)Dilli Aaj Tak    221)ORTAS Syria     261)Ronahi Zindi"
+   echo "22)India Today        62)Max FM 92.9       102)TVES VE           142)DaAiVideo TW  182)i News Telugu    222)Bedya TV        262)Number1 Turk FM"       
+   echo "23)CGTN Beijing       63)Gong Cinema       103)TeleSUR VE        143)DaAi Live TW  183)News 1 Kannada   223)Belqees TV      263)Number1 Radyo"  
+   echo "24)Arirang Korea      64)Mali TV           104)Globovision VE    144)OnTV HK       184)Jansari Kannada  224)DMC Live        264)TRT BELGESEL"
+   echo "25)NHK World Japan    65)CGTN Francais     105)NTN24 VE          145)TBS KR        185)Media One        225)Sky Arabic      265)Show TV Turkey" 
+   echo "26)NewsAsia Singapore 66)ICI Quebec City   106)Excelsior Mexico  146)YTN KR        186)Tamil Live       226)CBC Drama Egypt 266)Action 24 Greece"
+   echo "27)CNN Philippeans    67)ICI OttawaGatineau107)PSN Tijuana Mexico147)YTN KR        187)DD News          227)Extra News Egypt267)Ionian TV Greece"
+   echo "28)ANN7 South Africa  68)ICI Montreal      108)Imagen Radio MX   148)YTN Sci KR    188)Public TV India  228)CBC Sofra Egypt 268)Star Lamia Greece"
+   echo "29)Arise News Nigeria 69)ICI Trois Rivieres109)Gudalajera MX     149)Channel 23 KR 189)REPORTER LIVE    229)Makka Live      269)Blue Sky TV Athens"
+   echo "30)Channels 24 Nigeria70)ICI Rimouski      110)Aguascalientes MX 150)KBS World24 KR190)Puthiyah Thali   230)DW Arabic       270)ORA News Albania "    
+   echo "31)TVC News Nigeria   71)ICI Seguenay      111)Acapuloco MX      151)YTN 27 KR     191)AsiaNet News     231)Mekameleen Egypt271)ABC NEWS 24 Albania"
+   echo "32)Africa News        72)ICI Sherbrooke    112)Matamoros MX      152)CTS KR        192)V6 News          232)CGTN Arabic     272)EuroNews Deutsch"
+   echo "33)VOA USA            73)Assemblee Quebec  113)Puebla MX         153)KBS World KR  193)Kalaignar TV1    233)Saudi Green     273)Tagessschau 24 Germany" 
+   echo "34)CSPAN 1 USA        74)Canal Savoir      114)Sonora MX         154)BSC 24 1 JP   194)ETV AndhraPradesh234)Saudi Blue      274)W24 Wein Germany"  
+   echo "35)CPAC 1 Canada      75)CPAC 1 Francais   115)Toluca MX         155)BSC 24 2 JP   195)News 18 Tamilnadu235)Saudi Purple    275)WDR Germany"
+   echo "36)Jupiter Broadcast  76)EuroSport Francais116)Veracruz MX       156)Earthquake 24 196)The Polimer      236)Saudi Red       276)RTS Salzburg Austria"
+   echo "37)TWiT               77)France 0          117)Cuernavaca MX     157)KBS 24 JP     197)Jaya Plus        237)Saudi Orange    277)Tirol TV Germany"
+   echo "38)Infowars           78)France 2          118)Torreon MX        158)QVC Japan     198)TEZ TV           238)Saudi Gold      278)DW Deutsch"	
+   echo "39)TYT                79)France 3          119)Queretaro MX      159)Sol!ve 24 JP  199)ATN Bangladesh   239)Saudi Silver    279)AT5 Netherlands"
    echo "40)----------         80)RTS UN            120)------------      160)KISS FM TW    200)Ekantipur Nepal  240)Saudi Kids      280)Mediatv Romania "
    echo "======================================================================================================================================================"
 }	               
@@ -219,9 +219,9 @@ channel_matrix_2()
    echo "281)TV Publica Moldova321)NASA ISS          361)RSBN Auburn USA    401)ABC News 1      441)PAC-12 Arizona     481)CTV Vaticano      521)Harbor Light"    
    echo "282)Euronews Russian  322)NASA ISS 1        362)News 12 Brooklyn   402)ABC News 2      442)PAC-12 Bay Area    482)EWTN Americas     522)JUCE TV " 
    echo "283)Vesti FM Russia   323)NASA ISS 2        363)News 12 Long Island403)ABC News 3      443)PAC-12 Los Angeles 483)EWTN Ireland      523)Euronews Espanol"  
-   echo "284)Россия 24         324)Venice Bridge     364)FOX 25 Boston      404)ABC News 5      444)PAC-12 Mountain    484)EWTN Africa       524)UFROVision Chile"             
+   echo "284)Россия 24         324)Venice Bridge     364)FOX 25 Boston      404)ABC News 5      444)PAC-12 Mountain    484)EWTN Africa       524)-------------"             
    echo "285)CGTN Russian      325)Venice Italy Port 365)WGN 9 Chicago      405)NBC News Live   445)PAC-12 Oregon      485)EWTN Asia         525)Congreso Mexico "  
-   echo "286)Life News Russia  326)JacksonHole Xsec  366)FOX 23 Tulsa       406)WSJ Live        446)PAC-12 Washington  486)EWTN Espanol      526)Canal 11 Salta AR"  
+   echo "286)Life News Russia  326)JacksonHole Xsec  366)FOX 23 Tulsa       406)WSJ Live        446)PAC-12 Washington  486)EWTN Espanol      526)-------------"  
    echo "287)ТВ-ТРЕЙЛЕР Russia 327)JacksonHole Square367)FOX 13 Memphis     407)C-SPAN-1        447)USA UNI Arizona    487)EWTN Deutsch      527)TV Golfo Mexico"
    echo "288)Ukraine 5         328)JacksonHole Rustic368)FOX 30 Jacksonville408)C-SPAN-2        448)USA UNI Los Angeles488)Catholic TV       528)ABC Australia"
    echo "289)Ukraine 112       329)Aosta Sarre Italy 369)CBS 47 Jacksonville409)C-SPAN-3        449)USA UNI Mountain   489)CBN               529)------------"
@@ -1031,154 +1031,163 @@ keyword="Juan"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCnfpjpEMfxPXAI3Nc23MTWA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="Canal 13 San Juan Argentina" ;; 
-# 97 Canal 8 Mar del Plata
+# 97) Canal 8 Mar del Plata
 97) 
-keyword="Emisión en vivo de Canal 8 de Mar del Plata"
+keyword="Plata"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCY0QZk2M_ZZi95S-MN1Zndg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 use_cookies="no"  
 chan_name="Canal 8 Mar del Plata Argentina" ;; 
-
+# 98) Canal 11 de Salta Argentina
+98)  
+keyword="Canal"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCy-r-BQ5BQRU6rzGS73-WBQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
+use_cookies="no"
+chan_name="Canal 11 de Salta Argentina" ;;  
 ################## Colombia ###################
-# 98) TelePacifico Colombia
-98) 
+# 99) TelePacifico Colombia
+99) 
 keyword="Telepacifico"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/TelepacificoCanal/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="TelePacifico Colombia" ;; 
 ############### CHILE#################################
-# 99) CNN Chile
-99)
+# 100) CNN Chile
+100)
 link=http://unlimited1-us.dps.live/cnn/cnn.smil/cnn/livestream1/playlist.m3u8
 #link=http://unlimited1-us.dps.live/cnn/cnn.smil/cnn/livestream2/playlist.m3u8
 #link=http://unlimited1-us.dps.live/cnn/cnn.smil/cnn/livestream3/playlist.m3u8
 use_cookies="no"
 chan_name="CNN Chile" ;;
+# 101) UFRO Vision Chile 
+101)  
+keyword="UFRO"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC5H9zdp-3M24xWWJunhLJmQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
+use_cookies="no"
+chan_name="UFRO Vision Chile" ;;  
 ################# VENEZUELA
-# 100)TVES Venezuela
-100)
+# 102)TVES Venezuela
+102)
 link=rtmp://cast.streamingconnect.tv:1935/tves2/tves2 
 use_cookies="no"
 chan_name="TVES Venezuela" ;;
-# 101) TeleSUR Venezuela
-101) 
+# 103) TeleSUR Venezuela
+103) 
 keyword="EN VIVO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/telesurtv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"   
 # link=http://cdn2.telesur.ultrabase.net/livecf/telesurLive/master.m3u8
 use_cookies="no"
 chan_name="TeleSUR Venezuela" ;;
-# 102) Globovision Venezeula
-102) 
+# 104) Globovision Venezeula
+104) 
 keyword="Globovisión"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCfJtBtmhnIyfUB6RqXeImMw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 #link=http://www.dailymotion.com/video/xio7e2_senal-en-vivo_news
 use_cookies="no" 
 chan_name="Globovision Venezeula" ;;
-# 103) NTN24 Venezuela
-103) 
+# 105) NTN24 Venezuela
+105) 
 keyword="SEÑAL EN VIVO DE NTN24"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/canalNTN24/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="NTN24 Venezuela" ;;
 #################### MEXICO #########################################################
-# 104) Excelsior TV Mexico
-104) 
+# 106) Excelsior TV Mexico
+106) 
 keyword="Transmisión en directo de Excélsior TV"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Excelsior TV Mexico" ;;
-# 105) PSN Tijuana Mexico
-105) 
+# 107) PSN Tijuana Mexico
+107) 
 keyword="PSN"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/psntv1/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="PSN Tijuana Mexico";;
 ################# MEXICO OTHER
-# 106) Imagen Radio Mexico
-106) 
+# 108) Imagen Radio Mexico
+108) 
 keyword="En Vivo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/ImagenNoticias/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Imagen Radio Mexico" ;;
 ########### TELEVISIA REGIONALES MEXICO
-# 107) Televisa Gudalajera Mexico
-107)  
+# 109) Televisa Gudalajera Mexico
+109)  
 keyword="guadalajara"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.televisaguadalajara.tv/video-en-vivo  
 use_cookies="no"
 chan_name="Televisia Gudalajera Mexico" ;; 
-# 108) Televisia Aguascalientes Mexico
-108)  
+# 110) Televisia Aguascalientes Mexico
+110)  
 keyword="aguascalientes"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.galatvaguascalientes.tv/video-en-vivo  
 use_cookies="no"
 chan_name="Televisia Aguascalientes Mexico" ;; 
-# 109) Televisia Acapuloco Mexico
-109)  
+# 111) Televisia Acapuloco Mexico
+111)  
 keyword="acapulco"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.galatvacapulco.tv/video-en-vivo 
 use_cookies="no"
 chan_name="Televisia Acapulco Mexico" ;; 
-# 110) Televisia Matamoros Mexico
-110)  
+# 112) Televisia Matamoros Mexico
+112)  
 keyword="matamoros"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.televisanoreste.tv/video-en-vivo
 use_cookies="no"  
 chan_name="Televisia Matamoros Mexico" ;; 
-# 111) Televisia Puebla Mexico
-111)  
+# 113) Televisia Puebla Mexico
+113)  
 keyword="puebla"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.televisapuebla.tv/video-en-vivo 
 use_cookies="no" 
 chan_name="Televisia Puebla Mexico" ;;  
-# 112) Televisia Sonora Mexico
-112)  
+# 114) Televisia Sonora Mexico
+114)  
 keyword="sonora"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.televisahermosillo.tv/video-en-vivo  
 use_cookies="no"
 chan_name="Televisia Sonora Mexico" ;;  
-# 113) Televisia Toluca Mexico
-113)  
+# 115) Televisia Toluca Mexico
+115)  
 keyword="toluca"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.galatvedomex.tv/video-en-vivo  
 use_cookies="no"
 chan_name="Televisia Toluca Mexico" ;;  
-# 114) Televisia Veracruz Mexico
-114) 
+# 116) Televisia Veracruz Mexico
+116) 
 keyword="veracruz"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.televisaveracruz.tv/video-en-vivo 
 use_cookies="no" 
 chan_name="Televisia Veracruz Mexico" ;; 
-# 115) Televisia Cuernavaca Mexico
-115)  
+# 117) Televisia Cuernavaca Mexico
+117)  
 keyword="cuernavaca"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.galatvmorelos.tv/video-en-vivo  
 use_cookies="no"
- chan_name="Televisia Cuernavaca Mexico" ;;   
-# 116) Televisia Torreon Mexico
-116)  
+chan_name="Televisia Cuernavaca Mexico" ;;   
+# 118) Televisia Torreon Mexico
+118)  
 keyword="torreon"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.galatvlaguna.tv/video-en-vivo  
 use_cookies="no"
 chan_name="Televisia Torreon Mexico" ;; 
-# 117) Televisia Queretaro Mexico
-117)  
+# 119) Televisia Queretaro Mexico
+119)  
 keyword="queretaro"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 #link=http://www.galatvqueretaro.tv/video-en-vivo  
 use_cookies="no"
 chan_name="Televisia Queretaro Mexico" ;; 
-
-# 119)
 # 120)
 
 # 116) Televisia Zacatecas Mexico
@@ -3537,33 +3546,15 @@ keyword="en directo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="Euronews Espanol" ;;  
-# 524) UFRO Vision Chile 
-524)  
-keyword="UFRO"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC5H9zdp-3M24xWWJunhLJmQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
-use_cookies="no"
-chan_name="UFRO Vision Chile" ;;  
+
 # 525) Canal del Congreso Mexico Spanish
 525)
 link=http://dl.canaldelcongreso.gob.mx:1935/ccongreso/mp4:congreso2b.mp4/playlist.m3u8
 use_cookies="no"
 chan_name="Canal del Congreso Mexico Spanish" ;;
-# 526) Canal 11 de Salta Argentina
-526)  
-keyword="Canal"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCy-r-BQ5BQRU6rzGS73-WBQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
-use_cookies="no"
-chan_name="Canal 11 de Salta Argentina" ;;  
-# 527) Televisia del Golfo Mexico
-527)  
-keyword="BroadCast_del-golfo"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
-#link=http://www.televisadelgolfo.tv/video-en-vivo 
-use_cookies="no"
-chan_name="Televisa del Golfo Mexico" ;; 
 
-# 528) ABC News Australia 
-528) 
+# 527) ABC News Australia 
+527) 
 keyword="ABC" 
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/NewsOnABC/videos?&view=2" | grep "$keyword"  | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 #BANDWIDTH=295680
@@ -3579,8 +3570,13 @@ link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/u
 use_cookies="no"
 chan_name="ABC News Australia" ;;
 
-
-
+# 527) Televisia del Golfo Mexico
+# 527)  
+#keyword="BroadCast_del-golfo"
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC_mU_-rhq4phlXCNbZfFezw/videos?live_view=501&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
+##link=http://www.televisadelgolfo.tv/video-en-vivo 
+#use_cookies="no"
+#chan_name="Televisa del Golfo Mexico" ;; 
 
 esac
 }
