@@ -6,10 +6,11 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.44
-# Revision Date: September 04, 2017
+# Version: 0.45
+# Revision Date: September 10, 2017
 #
-# Recent Changes: - Repair Asian Channels
+# Recent Changes: - Reorg French Channels
+#                 - Repair Asian Channels
 #                 - Repair Spanish Channels
 #                 - Channel reorganization
 #                 - incorporate user-agents
@@ -141,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.44"
-rev_date="04/09/2017"
+version="0.45"
+rev_date="10/09/2017"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -169,49 +170,49 @@ channel_matrix()
    echo "============================================================    "$product" "$version"   ======================================================================"
    echo "||      ENGLISH       ||     FRANCAIS      ||      ESPANOL       ||      ASIAN     ||     INDIAN      || URDU/FARSI/ARABIC ||TURK/GREEK/DEUTSCH/DUTCH||"
    echo "======================================================================================================================================================="
-   echo "1)BBC World News      41)France 24 Francais81)Magala TV Spain    121)CCTV 4 China  161)News 9 Bangalore 201)AryNews Pakistan241)TRT Haber Turkey"    
-   echo "2)SKY News London     42)France Info TV    82)RT Espanol         122)ECB 51 TW     162)CVR English      202)SAMAA Pakistan  242)NTV Turkey" 
-   echo "3)BBC News London     43)Euronews Francais 83)DW Espanol         123)ECB Finance TW163)CVR NEWS         203)PTV Pakistan    243)HaberTurk TV"  
-   echo "4)RT UK               44)France Info Radio 84)CGTN Espanol       124)TTV TW        164)Shaski India     204)Neo TV Pakistan 244)Star TV  Turkish"             
-   echo "5)France 24 English   45)France Inter      85)Hispan TV          125)CTV TW        165)SunNews          205)Dawn Pakistan   245)Fashion 1 Turk"  
-   echo "6)DW English          46)RTL En Direct     86)c5n Argentina      126)TzuChi DaAi TW166)TV9 India        206)Bol TV Pakistan 246)CNN Turk"  
-   echo "7)Russia Today        47)Journal TVLandes  87)A24 Argentina      127)DaAiVideo TW  167)Rajya Sabha      207)24 News Pakistan247)Ulusal Kanal"
-   echo "8)Euronews English    48)BMF TV            88)TN Argentina       128)DaAi Live TW  168)TV9 Gujarat      208)GeoNews Pakistan248)KRT Kulture"
-   echo "9)CBSN USA            49)i24 France        89)La Nacion Argentina129)FTV TW        169)Tv9 Marathi      209)TOLO NEWS AFGHAN249)Tele 1 Kanali"
-   echo "10)MSNBC USA          50)Europe 1          90)KZO Argentina      130)CTS World TW  170)News 7 Tamil     210)BBC Persian     250)Number 1 Damar TV"
-   echo "11)Bloomberg USA      51)Africa News       91)Publica Argentina  131)SET News TW   171)T News Telegu    211)RT Arabic       251)Number 1 Ask TV"
-   echo "12)ABC News           52)RFI               92)Canal 2 Argentina  132)CTI TW        172)News 18 India    212)ON E Live Egypt 252)La Legul TV"
-   echo "13)CNN USA            53)Mosaik TV         93)Canal 6 Argentina  133)NeXT TV TW    173)Aaj Tak          213)ON E Sports     253)Number1 TV Canlı"
-   echo "14)RT America         54)Africa24          94)Canal 7 Argentina  134)TLTV TW       174)NTV Telugu       214)ON Live Egypt   254)Number1 Turk"
-   echo "15)Newsy USA          55)TLM Lyon Metro    95)Canal 8 Argentina  135)FLTV TW       175)ABN Telugu       215)Al Jazeera Qatar255)TGRT Haber"  
-   echo "16)TRT World Istanbul 56)CGTN Francais     96)Canal 13 Argentina 136)Sinda TV      176)Vanitha TV       216)France 24 Arabic256)TVNET Canali"
-   echo "17)i24 News Israel    57)ICI RDI Canada    97)Canal 8 MarPlata AR137)Cheng Sin TV  177)HMT Telugu       217)BBC Arabic      257)NEWSCHANNEL CANLI"
-   echo "18)Al Jazeera English 58)TV5 Monde         98)Canal 11 Salta AR  138)Guo Shiming   178)TV5 News         218)Al Arabiya      258)Galatasaray"	
-   echo "19)Saudi 2 English    59)TV5+ Monde        99)TelePacifico CO    139)Dolphin TV TW 179)Channel 24 India 219)Al Mayadeen     259)A9 Televizyounu"
-   echo "20)Press TV Iran      60)BFM Sport         100)CNN Chile         140)SITTI 1 TW    180)Survana News     220)Syrian Satellite260)STerkTV Zindi"  
-   echo "21)India Today        61)QVC Francais      101)UFROVision Chile  141)SITTI 2 TW    181)Dilli Aaj Tak    221)ORTAS Syria     261)Ronahi Zindi"
-   echo "22)CGTN Beijing       62)Max FM 92.9       102)TVES VE           142)SITTI 3 TW    182)i News Telugu    222)Bedya TV        262)Number1 Turk FM"       
-   echo "23)Arirang Korea      63)Gong Cinema       103)TeleSUR VE        143)Tai Li TW     183)News 1 Kannada   223)Belqees TV      263)Number1 Radyo"  
-   echo "24)NHK World Japan    64)ICI Quebec City   104)Globovision VE    144)OnTV HK       184)Jansari Kannada  224)DMC Live        264)TRT BELGESEL"
-   echo "25)NewsAsia Singapore 65)Assemblee Quebec  105)NTN24 VE          145)KISS FM TW    185)Media One        225)Sky Arabic      265)Show TV Turkey" 
-   echo "26)CNN Philippeans    66)Canal Savoir      106)Excelsior Mexico  146)TBS KR        186)Tamil Live       226)CBC Drama Egypt 266)Action 24 Greece"
-   echo "27)ABC Australia      67)CPAC 1 Francais   107)PSN Tijuana Mexico147)YTN DMB KR    187)DD News          227)Extra News Egypt267)Ionian TV Greece"
-   echo "28)ANN7 South Africa  68)EuroSport Francais108)Milenio MX        148)YTN Life KR   188)Public TV India  228)CBC Sofra Egypt 268)Star Lamia Greece"
-   echo "29)Arise News Nigeria 69)France O          109)Bloomberg MX      149)YTN Sci KR    189)REPORTER LIVE    229)Makka Live      269)Blue Sky TV Athens"
-   echo "30)Channels 24 Nigeria70)France 2          110)Imagen Radio MX   150)Channel 23 KR 190)AsiaNet News     230)DW Arabic       270)ORA News Albania "    
-   echo "31)Africa News        71)France 3          111)Gudalajera MX     151)KBS World24 KR191)V6 News          231)Mekameleen Egypt271)ABC NEWS 24 Albania"
-   echo "32)VOA USA            72)RTS UN            112)Acapuloco MX      152)YTN 27 KR     192)Kalaignar TV1    232)CGTN Arabic     272)EuroNews Deutsch"
-   echo "33)CSPAN 1 USA        73)RTS DEUX          113)Puebla MX         153)ANN24 JP      193)ETV AndhraPradesh233)Saudi Green     273)DW Deutsch" 
-   echo "34)CPAC 1 Canada      74)ARTE Francais     114)Sonora MX         154)Sol!ve 24 JP  194)News 18 Tamilnadu234)Saudi Blue      274)W24 Wein Germany"  
-   echo "35)Jupiter Broadcast  75)ICI OttawaGatineau115)Toluca MX         155)KBS 24 JP     195)The Polimer      235)Saudi Purple    275)WDR Germany"
-   echo "36)TWiT               76)ICI Montreal      116)Veracruz MX       156)QVC Japan     196)Jaya Plus        236)Saudi Red       276)Tirol TV Germany"
-   echo "37)NEWSMAX USA        77)ICI Trois Rivieres117)Cuernavaca MX     157)BSC 24 1 JP   197)TEZ TV           237)Saudi Orange    277)Tagessschau 24 Germany"
-   echo "38)Infowars           78)ICI Rimouski      118)Torreon MX        158)BSC 24 2 JP   198)Dili Aaj Tak     238)Saudi Gold      278)AT5 Netherlands"	
-   echo "39)Free Speech TV     79)ICI Seguenay      119)Queretaro MX      159)Earthquake 24 199)Ekantipur Nepal  239)Saudi Silver    279)Mediatv Romania"
-   echo "40)TYT                80)ICI Sherbrooke    120)------------      160)KISS FM 2 TW  200)NepalMandal      240)Saudi Kids      280)TV Publica Moldova"
+   echo "1)BBC World News      41)France 24 FR      81)Magala TV Spain  121)CCTV 4 China  161)News 9 Bangalore 201)AryNews Pakistan241)TRT Haber Turkey"    
+   echo "2)SKY News London     42)France Info TV    82)Euronews Espanol 122)ECB 51 TW     162)CVR English      202)SAMAA Pakistan  242)NTV Turkey" 
+   echo "3)BBC News London     43)Euronews FR       83)RT Espanol       123)ECB Finance TW163)CVR NEWS         203)PTV Pakistan    243)HaberTurk TV"  
+   echo "4)RT UK               44)BFM TV FR         84)DW Espanol       124)TTV TW        164)Shaski India     204)Neo TV Pakistan 244)Star TV  Turkish"             
+   echo "5)France 24 English   45)TV5 Monde BE      85)CGTN Espanol     125)CTV TW        165)SunNews          205)Dawn Pakistan   245)Fashion 1 Turk"  
+   echo "6)DW English          46)ICI RDI Canada    86)Hispan TV        126)TzuChi DaAi TW166)TV9 India        206)Bol TV Pakistan 246)CNN Turk"  
+   echo "7)Russia Today        47)RTS UN CH         87)c5n AR           127)DaAiVideo TW  167)Rajya Sabha      207)24 News Pakistan247)Ulusal Kanal"
+   echo "8)Euronews English    48)TV5+ Monde BE     88)A24 AR           128)DaAi Live TW  168)TV9 Gujarat      208)GeoNews Pakistan248)KRT Kulture"
+   echo "9)CBSN USA            49)i24 France IL     89)TeleNoticias AR  129)FTV TW        169)Tv9 Marathi      209)TOLO NEWS AFGHAN249)Tele 1 Kanali"
+   echo "10)MSNBC USA          50)Africa24          90)La Nacion AR     130)CTS World TW  170)News 7 Tamil     210)BBC Persian     250)Number 1 Damar TV"
+   echo "11)Bloomberg USA      51)Africa News       91)KZO AR           131)SET News TW   171)T News Telegu    211)RT Arabic       251)Number 1 Ask TV"
+   echo "12)ABC News           52)France 2          92)TV Publica AR    132)CTI TW        172)News 18 India    212)ON E Live Egypt 252)La Legul TV"
+   echo "13)CNN USA            53)RTS DEUX CH       93)Canal 2 AR       133)NeXT TV TW    173)Aaj Tak          213)ON E Sports     253)Number1 TV Canlı"
+   echo "14)RT America         54)France 3          94)Canal 6 AR       134)TLTV TW       174)NTV Telugu       214)ON Live Egypt   254)Number1 Turk"
+   echo "15)Newsy USA          55)France O          95)Canal 7 AR       135)FLTV TW       175)ABN Telugu       215)Al Jazeera Qatar255)TGRT Haber"  
+   echo "16)TRT World Istanbul 56)ARTE Francais     96)Canal 8 AR       136)Sinda TV      176)Vanitha TV       216)France 24 Arabic256)TVNET Canali"
+   echo "17)i24 News Israel    57)CGTN Francais     97)Canal 13 AR      137)Cheng Sin TV  177)HMT Telugu       217)BBC Arabic      257)NEWSCHANNEL CANLI"
+   echo "18)Al Jazeera English 58)TLM Lyon Metro FR 98)Canal 8 MarPlata 138)Guo Shiming   178)TV5 News         218)Al Arabiya      258)Galatasaray"	
+   echo "19)Saudi 2 English    59)Mosaik TV FR      99)Canal 11 Salta AR139)Dolphin TV TW 179)Channel 24 India 219)Al Mayadeen     259)A9 Televizyounu"
+   echo "20)Press TV Iran      60)Journal TVLandes  100)TelePacifico CO 140)SITTI 1 TW    180)Survana News     220)Syrian Satellite260)STerkTV Zindi"  
+   echo "21)India Today        61)ICI Quebec CA     101)CNN Chile       141)SITTI 2 TW    181)Dilli Aaj Tak    221)ORTAS Syria     261)Ronahi Zindi"
+   echo "22)CGTN Beijing       62)Assemblee QC CA   102)UFROVision Chile142)SITTI 3 TW    182)i News Telugu    222)Bedya TV        262)Number1 Turk FM"       
+   echo "23)Arirang Korea      63)Canal Savoir CA   103)TVES VE         143)Tai Li TW     183)News 1 Kannada   223)Belqees TV      263)Number1 Radyo"  
+   echo "24)NHK World Japan    64)CPAC 1 CA         104)TeleSUR VE      144)OnTV HK       184)Jansari Kannada  224)DMC Live        264)TRT BELGESEL"
+   echo "25)NewsAsia Singapore 65)Gong Cinema       105)Globovision VE  145)KISS FM TW    185)Media One        225)Sky Arabic      265)Show TV Turkey" 
+   echo "26)CNN Philippeans    66)BFM Sport FR      106)NTN24 VE        146)TBS KR        186)Tamil Live       226)CBC Drama Egypt 266)Action 24 Greece"
+   echo "27)ABC Australia      67)QVC Francais      107)Excelsior MX    147)YTN DMB KR    187)DD News          227)Extra News Egypt267)Ionian TV Greece"
+   echo "28)ANN7 South Africa  68)France Info Radio 108)PSN Tijuana MX   148)YTN Life KR   188)Public TV India  228)CBC Sofra Egypt 268)Star Lamia Greece"
+   echo "29)Arise News Nigeria 69)France Inter      109)Bloomberg MX    149)YTN Sci KR    189)REPORTER LIVE    229)Makka Live      269)Blue Sky TV Athens"
+   echo "30)Channels 24 Nigeria70)RTL FR            110)Imagen Radio MX 150)Channel 23 KR 190)AsiaNet News     230)DW Arabic       270)ORA News Albania "    
+   echo "31)Africa News        71)Europe 1 FR       111)Gudalajera MX   151)KBS World24 KR191)V6 News          231)Mekameleen Egypt271)ABC NEWS 24 Albania"
+   echo "32)VOA USA            72)RFI FR            112)Acapuloco MX    152)YTN 27 KR     192)Kalaignar TV1    232)CGTN Arabic     272)EuroNews Deutsch"
+   echo "33)CSPAN 1 USA        73)Max FM 92.9 BE    113)Puebla MX       153)ANN24 JP      193)ETV AndhraPradesh233)Saudi Green     273)DW Deutsch" 
+   echo "34)CPAC 1 Canada      74)ICI Ottawa CA     114)Sonora MX       154)Sol!ve 24 JP  194)News 18 Tamilnadu234)Saudi Blue      274)W24 Wein Germany"  
+   echo "35)Jupiter Broadcast  75)ICI Montreal CA   115)Toluca MX       155)KBS 24 JP     195)The Polimer      235)Saudi Purple    275)WDR Germany"
+   echo "36)TWiT               76)ICI Trois Riv CA  116)Veracruz MX     156)QVC Japan     196)Jaya Plus        236)Saudi Red       276)Tirol TV Germany"
+   echo "37)NEWSMAX USA        77)ICI Rimouski CA   117)Cuernavaca MX   157)BSC 24 1 JP   197)TEZ TV           237)Saudi Orange    277)Tagessschau 24 Germany"
+   echo "38)Infowars           78)ICI Seguenay CA   118)Torreon MX      158)BSC 24 2 JP   198)Dili Aaj Tak     238)Saudi Gold      278)AT5 Netherlands"	
+   echo "39)Free Speech TV     79)ICI Sherbrooke CA 119)Queretaro MX    159)Earthquake 24 199)Ekantipur Nepal  239)Saudi Silver    279)Mediatv Romania"
+   echo "40)TYT                80)-------------     120)-------------   160)KISS FM 2 TW  200)NepalMandal      240)Saudi Kids      280)TV Publica Moldova"
    echo "======================================================================================================================================================"
-}	               
-
+}	                 
+ 
 channel_matrix_2()	
 {
    echo "============================================================    "$product"  "$version"   ==================================================================="
@@ -219,7 +220,7 @@ channel_matrix_2()
    echo "======================================================================================================================================================"
    echo "281)Euronews Russian  321)NASA ISS          361)RSBN Auburn USA    401)ABC News 1      441)PAC-12 Arizona     481)CTV Vaticano      521)Harbor Light"    
    echo "282)Vesti FM Russia   322)NASA ISS 1        362)News 12 Brooklyn   402)ABC News 2      442)PAC-12 Bay Area    482)EWTN Americas     522)JUCE TV " 
-   echo "283)Россия 24         323)NASA ISS 2        363)News 12 Long Island403)ABC News 3      443)PAC-12 Los Angeles 483)EWTN Ireland      523)Euronews Espanol"  
+   echo "283)Россия 24         323)NASA ISS 2        363)News 12 Long Island403)ABC News 3      443)PAC-12 Los Angeles 483)EWTN Ireland      523)---------------"  
    echo "284)CGTN Russian      324)Venice Bridge     364)FOX 25 Boston      404)ABC News 5      444)PAC-12 Mountain    484)EWTN Africa       524)Congreso Mexico"             
    echo "285)Life News Russia  325)Venice Italy Port 365)WGN 9 Chicago      405)CTV Live Event  445)PAC-12 Oregon      485)EWTN Asia         525)NBC 6 South Florida"  
    echo "286)ТВ-ТРЕЙЛЕР Russia 326)JacksonHole Xsec  366)FOX 23 Tulsa       406)WSJ Live        446)PAC-12 Washington  486)EWTN Espanol      526)WXXV Mississippi"  
@@ -252,11 +253,11 @@ channel_matrix_2()
    echo "313)Bukedde TV        353)London 1          393)KCAL 9 Los Angeles 433)-----------     473)Talking Tom Min    513)Shalom TV         553)--------" 
    echo "314)-----------       354)London 2          394)KNBC 4 Los Angeles 434)-----------     474)Talking Tom        514)Heaven TV         554)--------"  
    echo "315)SABC South Africa 355)London 3          395)ABC 3 Louisiana    435)-----------     475)Adult Swim Live    515)Rakshana TV       555)--------"
-   echo "316)RUPTLY            356)Berlin Airport    396)WPLG 10 Miami      436)-----------     476)-------------      516)Powervision TV    556)--------"
-   echo "317)PBS NewsHour      357)Osaka Japan       397)WJXT 4 Jacksonville437)-----------     477)-------------      517)KJV Bible         557)--------"
-   echo "318)CBC The National  358)Los Angeles Port  398)Fox News Talk      438)-----------     478)-------------      518)Temple Institute  558)--------"	
-   echo "319)AP Top Stories    359)ITS COM Japan     399)WSOC 9 Charlotte   439)-----------     479)-------------      519)Jewish Life       559)--------"
-   echo "320)Democracy Now     360)China Shoreline   400)WCCB Charlotte     440)-----------     480)-------------      520)Quaran English    560)--------"
+   echo "316)RUPTLY            356)Berlin Airport    396)WPLG 10 Miami      436)-----------     476)DJ Animation       516)Powervision TV    556)--------"
+   echo "317)PBS NewsHour      357)Osaka Japan       397)WJXT 4 Jacksonville437)-----------     477)DJ Classic         517)KJV Bible         557)--------"
+   echo "318)CBC The National  358)Los Angeles Port  398)Fox News Talk      438)-----------     478)DJ Dancefloor      518)Temple Institute  558)--------"	
+   echo "319)AP Top Stories    359)ITS COM Japan     399)WSOC 9 Charlotte   439)-----------     479)DJ Underground     519)Jewish Life       559)--------"
+   echo "320)Democracy Now     360)China Shoreline   400)WCCB Charlotte     440)-----------     480)M2O Music          520)Quaran English    560)--------"
    echo "==================================================================================================================================================="
 }	
 
@@ -449,6 +450,21 @@ keyword="Bloomberg TV"
 link="http://cdn3.videos.bloomberg.com/btv/us/master.m3u8?b?b*t$"
 #link=http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/Bloomberg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+ 
+#Bloomberg US HD http://mediauseast.akamaized.net/us/us3_live.m3u8
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us1_live.m3u8
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us2_live.m3u8 
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us4_live.m3u8 
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us5_live.m3u8 
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us6_live.m3u8 
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us7_live.m3u8 
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us8_live.m3u8 
+#Bloomberg TV US http://mediauseast.akamaized.net/us/us9_live.m3u8
+#Bloomberg Europe HD http://mediaeuwest.akamaized.net/eu/EU2400kb_live.m3u8 
+#Bloomberg Europe HD http://mediaeuwest.akamaized.net/eu/EU1800kb_live.m3u8 
+#Bloomberg Europe HD http://mediaeuwest.akamaized.net/eu/EU1000kb_live.m3u8 
+#Bloomberg TV Europe http://mediaeuwest.akamaized.net/eu/EU700kb_live.m3u8
+
 use_cookies="no"
 chan_name="Bloomberg Business USA";;  
 # 12) ABC News USA
@@ -459,12 +475,13 @@ use_cookies="no"
 chan_name="ABC News USA" ;;
 # 13) CNN America  
 13)
+rnum=$( expr 1 + $RANDOM % 5 | awk '{print $1}' )
 keyword="Live"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n 2 | tail -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/results?search_query=CNN" | grep "watch?v=" |  grep "$keyword" | head -n "$rnum" | tail -n 1 | cut -d \= -f 5 | cut -d \" -f 1)" 
 #link=http://cnn-lh.akamaihd.net/i/cnndebates_1@352100/master.m3u8
-#link=http://109.123.114.178:1935/Livenewson/Livenewson/playlist.m3u8
 use_cookies="no"
 chan_name="CNN Live" ;;
+
 # 14) RT America
 14)
 #link=https://www.rt.com/on-air/rt-america-air/
@@ -507,6 +524,7 @@ chan_name="i24 News Israel English" ;;
 18) 
 keyword="Al Jazeera English - Live" 
 link=https://players.brightcove.net/665003303001/SkrZHHcl_default/index.html?videoId=4865263685001
+#link=http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/800.m3u8
 #link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/AlJazeeraEnglish/videos?view=2" | grep "$keyword"  | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Al Jazeera English" ;;  
@@ -523,10 +541,10 @@ use_cookies="yes"
 chan_name="Saudi 2 English" ;;   
 # 20) Press TV
 20)
-link=https://www.filmon.com/tv/press-tv
+#link=https://www.filmon.com/tv/press-tv
 #link=http://efusion1-i.akamaihd.net/hls/live/252882/ptven/chunklist.m3u8
 #link=http://efusion1-i.akamaihd.net/hls/live/252882/ptven/playlist.m3u8
-#link=http://178.32.255.199:1935/live/ptven/playlist.m3u8
+link=http://178.32.255.199:1935/live/ptven/playlist.m3u8
 use_cookies="no"
 chan_name="Press TV" ;;  
 ################### INDIA  ########################################
@@ -721,33 +739,8 @@ keyword="euronews EN DIRECT"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsfr/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Euronews Francais" ;;                                                            
-# 44) France Info Radio
-44) link=https://www.dailymotion.com/video/x26eox4_live-franceinfo-direct-radio_news
-use_cookies="no"
-chan_name="France Info Radio" ;;
-# 45) France Inter
-45) 
-keyword="France Inter en direct"
-link=https://www.dailymotion.com/video/x17qw0a_video-regardez-france-inter-en-direct_newsc
-#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/videofranceinter/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
-use_cookies="no"
-chan_name="France Inter" ;;
-# 46) RTL En direct
-46) link=https://www.dailymotion.com/video/xl1km0_regardez-rtl-en-direct-et-en-video_news
-use_cookies="no"
-format=hls-720
-#format=hls-480
-chan_name="RTL En Direct" ;;
-# 47) Direct Journal TVLandes    
-47) link=https://www.dailymotion.com/video/x1z2d07_direct-journal-tvlandes_news
-use_cookies="no"
-format=hls-720
-#format=hls-480
-#format=hls-380
-#format=hls-240
-chan_name="Direct Journal Tvlandes"  ;;      
-# 48) BMF TV
-48) 
+# 44) BFM TV
+44) 
 link=http://csm-e.dai.bfmtv.com/csm/live/109797390.m3u8
 #link=https://www.dailymotion.com/video/xgz4t1_live-bfmtv_news
 #link=link=https://www.filmon.com/tv/bfm-tv
@@ -762,7 +755,31 @@ use_cookies="no"
 #format=hls-380-1
 #format=hls-240-0
 #format=hls-240-1
-chan_name="BMF TV";;
+chan_name="BFM TV";;
+# 45)TV5 monde 
+45)
+link=http://v3fbs247hls-i.akamaihd.net/hls/live/219079/v3fbs247hls/v3fbs247hls_1_1.m3u8
+use_cookies="no"
+chan_name="TV5 monde " ;;
+# 46) ICI RDI Canada
+46)
+link="http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_1200_av-p.m3u8?sd=10&rebase=on"
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_400_av-p.m3u8?sd=10&rebase=on
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_800_av-p.m3u8?sd=10&rebase=on
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_1200_av-p.m3u8?sd=10&rebase=on
+#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/master.m3u8?sd=10&rebase=on
+use_cookies="no"
+chan_name="ICI RDI Canada" ;;
+# 47) RTS UN
+47) 
+link=https://www.filmon.com/tv/rts-un
+use_cookies="yes" 
+chan_name="RTS UN" ;;
+# 48) TV5+ monde 
+48)
+link=http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/v3plusinfo247hls_1_1.m3u8
+use_cookies="no"
+chan_name="TV5+ monde " ;;
 # 49) i24 News en Direct
 49) link=https://www.dailymotion.com/video/x10358o_i24news-le-direct_tv
 use_cookies="no"
@@ -771,175 +788,172 @@ format=hls-720
 #format=hls-380
 #format=hls-240
 chan_name="i24 Francais";;
-# 50) Europe 1
-50) link=https://www.dailymotion.com/video/xqjkfz_europe-1-live_news
+# 50) Africa24
+50) 
+keyword="Africa24 Live"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/Africa24/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+use_cookies="no" 
+chan_name="Africa24" ;; 
+# 51) Africa News Francais
+51) 
+keyword="africanews (en français) EN DIRECT"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC25EuGAePOPvPrUA5cmu3dQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
+use_cookies="no"
+chan_name="Africa News Francais" ;;  
+# 52) FRANCE 2
+52) 
+link=https://www.filmon.com/tv/france-2
+use_cookies="yes"
+chan_name="France 2" ;;
+# 53) RTS DEUX
+53) 
+link=https://www.filmon.com/tv/rts-deux
+use_cookies="yes" 
+chan_name="RTS DEUX" ;;
+# 54) France 3 Rhone Alpes
+54) 
+link=https://www.filmon.com/tv/france-3-rhone-alpes
+use_cookies="yes"
+chan_name="France 3 Rhone Alps" ;;
+# 55)France O
+55) 
+link=https://www.filmon.com/tv/france-0
+use_cookies="yes"
+chan_name="France O" ;;
+# 56) ARTE FRANCAIS
+56) 
+link=https://www.filmon.com/tv/arte-francais
+use_cookies="yes" 
+chan_name="ARTE Francais" ;; 
+# 57) CGTN Francais
+57)
+link=https://live.cgtn.com/cctv-f.m3u8
+use_cookies="no"
+chan_name="CGTN Francais" ;; 
+# 58) TLM Lyon Metro
+58) 
+keyword="TLM en Direct"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/telelyonmetropole/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+chan_name="TLM Television Lyon Metro" ;;
+# 59) Mosaik TV Francais
+59)
+keyword="Diffusion en direct de mosaiktv"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/mosaiktv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+use_cookies="no" 
+chan_name="Mosaik TV" ;;
+# 60) Direct Journal TVLandes    
+60) link=https://www.dailymotion.com/video/x1z2d07_direct-journal-tvlandes_news
+use_cookies="no"
+format=hls-720
+#format=hls-480
+#format=hls-380
+#format=hls-240
+chan_name="Direct Journal Tvlandes"  ;;    
+# 61) ICI Radio Canada Quebec City Quebec CBVT-DT
+61)
+link="http://hdflash_1-lh.akamaihd.net/i/cancbvt_1@93274/index_1200_av-b.m3u8"
+use_cookies="no"
+chan_name="ICI Radio Canada - Quebec City Quebec CBVT-DT" ;;
+# 62) Assemblee Nationale du Quebec Francais
+62)
+link=http://diffusionm4.assnat.qc.ca/canal9/250.sdp/playlist.m3u8
+use_cookies="no"
+chan_name="Assemblee Nationale du Quebec Francais Canada" ;;
+# 63)Canal Savoir Francais
+63)
+link=http://stream.canalsavoir.tv/livestream/stream.m3u8
+use_cookies="no"
+chan_name="Canal Savoir Canada" ;;
+# 64) CPAC 1 Francais
+64)
+link=http://players.brightcove.net/1242843915001/SJ3Tc5kb_default/index.html?videoId=5027941315001
+use_cookies="no"
+chan_name="CPAC 1 Francais Canada" ;;
+# 65) Gong Asian Cinema Francais
+65)
+link=http://ec.playmedia.fr/gong-base/live/playlist.m3u8
+use_cookies="no"
+chan_name="Gong Asian Cinema Francais" ;;
+# 66) BFM SPORT Francais
+66)
+link=http://rmc-i.akamaihd.net/hls/live/218333/876630703001/BFMSPORT/master-4.m3u8
+use_cookies="no"
+chan_name="BFM Sport Francais" ;;
+# 67) QVC Francais
+67) 
+keyword="en direct"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCUgix0XhGdH0AThuPG-ALMA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="QVC Francais" ;;  
+# 68) France Info Radio
+68) link=https://www.dailymotion.com/video/x26eox4_live-franceinfo-direct-radio_news
+use_cookies="no"
+chan_name="France Info Radio" ;;
+# 69) France Inter
+69) 
+keyword="France Inter en direct"
+link=https://www.dailymotion.com/video/x17qw0a_video-regardez-france-inter-en-direct_newsc
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/videofranceinter/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+use_cookies="no"
+chan_name="France Inter" ;;
+# 70) RTL En direct
+70) link=https://www.dailymotion.com/video/xl1km0_regardez-rtl-en-direct-et-en-video_news
+use_cookies="no"
+format=hls-720
+#format=hls-480
+chan_name="RTL En Direct" ;;
+# 71) Europe 1
+71) link=https://www.dailymotion.com/video/xqjkfz_europe-1-live_news
 use_cookies="no"
 format=hls-720
 #format=hls-480
 #format=hls-380
 #format=hls-240
 chan_name="Europe 1" ;;
-# 51) Africa News Francais
-51) 
-keyword="africanews (en français) EN DIRECT"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC25EuGAePOPvPrUA5cmu3dQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
-use_cookies="no"
-chan_name="Africa News Francais" ;;
-# 52) RFI
-52) 
+# 72) RFI
+72) 
 keyword="RFI en Direct"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/rfivideos/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"  
 chan_name="RFI Francais" ;;
-# 53) Mosaik TV Francais
-53)
-keyword="Diffusion en direct de mosaiktv"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/mosaiktv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
-use_cookies="no" 
-chan_name="Mosaik TV" ;;
-# 54) Africa24
-54) 
-keyword="Africa24 Live"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/Africa24/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-use_cookies="no" 
-chan_name="Africa24" ;;     
-# 55) TLM Lyon Metro
-55) 
-keyword="TLM en Direct"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/telelyonmetropole/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-chan_name="TLM Television Lyon Metro" ;;
-# 56) CGTN Francais
-56)
-link=https://live.cgtn.com/cctv-f.m3u8
-use_cookies="no"
-chan_name="CGTN Francais" ;;
-# 57) ICI RDI Canada
-57)
-link="http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_1200_av-p.m3u8?sd=10&rebase=on"
-#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_400_av-p.m3u8?sd=10&rebase=on
-#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_800_av-p.m3u8?sd=10&rebase=on
-#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/index_1200_av-p.m3u8?sd=10&rebase=on
-#link=http://hdflash_1-lh.akamaihd.net/i/canrdi_1@95877/master.m3u8?sd=10&rebase=on
-use_cookies="no"
-chan_name="ICI RDI Canada" ;;
-# 58)TV5 monde 
-58)
-link=http://v3fbs247hls-i.akamaihd.net/hls/live/219079/v3fbs247hls/v3fbs247hls_1_1.m3u8
-use_cookies="no"
-chan_name="TV5 monde " ;;
-# 59) TV5+ monde 
-59)
-link=http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/v3plusinfo247hls_1_1.m3u8
-use_cookies="no"
-chan_name="TV5+ monde " ;;
-# 60) BFM SPORT Francais
-60)
-link=http://rmc-i.akamaihd.net/hls/live/218333/876630703001/BFMSPORT/master-4.m3u8
-use_cookies="no"
-chan_name="BFM Sport Francais" ;;
-# 61) QVC Francais
-61) 
-keyword="en direct"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCUgix0XhGdH0AThuPG-ALMA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="QVC Francais" ;;      
-# 62) Max FM 92.9 
-62) link=https://www.dailymotion.com/video/x532emn_maxfm-live-24-7_music 
+# 73) Max FM 92.9 
+73) link=https://www.dailymotion.com/video/x532emn_maxfm-live-24-7_music 
 use_cookies="no"
 format=hls-480
 #format=hls-380
 #format=hls-240
 chan_name="Max FM 92.9" ;;
-# 63) Gong Asian Cinema Francais
-63)
-link=http://ec.playmedia.fr/gong-base/live/playlist.m3u8
-use_cookies="no"
-chan_name="Gong Asian Cinema Francais" ;;
-# 64) ICI Radio Canada Quebec City Quebec CBVT-DT
-64)
-link="http://hdflash_1-lh.akamaihd.net/i/cancbvt_1@93274/index_1200_av-b.m3u8"
-use_cookies="no"
-chan_name="ICI Radio Canada - Quebec City Quebec CBVT-DT" ;;
-# 65) Assemblee Nationale du Quebec Francais
-65)
-link=http://diffusionm4.assnat.qc.ca/canal9/250.sdp/playlist.m3u8
-use_cookies="no"
-chan_name="Assemblee Nationale du Quebec Francais" ;;
-# 66)Canal Savoir Francais
-66)
-link=http://stream.canalsavoir.tv/livestream/stream.m3u8
-use_cookies="no"
-chan_name="Canal Savoir Francais" ;;
-# 67) CPAC 1 Francais
-67)
-link=http://players.brightcove.net/1242843915001/SJ3Tc5kb_default/index.html?videoId=5027941315001
-use_cookies="no"
-chan_name="CPAC 1 Francais Canada" ;;
-# 68) EuroSports Francais
-68)
-link=http://esioslive6-i.akamaihd.net/hls/live/202892/AL_P_ESP1_FR_FRA/playlist_1800.m3u8
-use_cookies="no"
-chan_name="EuroSports Francais" ;;
-# 69)France O
-69) 
-link=https://www.filmon.com/tv/france-0
-use_cookies="yes"
-chan_name="France O" ;;
-# 70) FRANCE 2
-70) 
-link=https://www.filmon.com/tv/france-2
-use_cookies="yes"
-chan_name="France 2" ;;
-# 71) France 3 Rhone Alpes
-71) 
-link=https://www.filmon.com/tv/france-3-rhone-alpes
-use_cookies="yes"
-chan_name="France 3 Rhone Alps" ;;
-# 72) RTS UN
-72) 
-link=https://www.filmon.com/tv/rts-un
-use_cookies="yes" 
-chan_name="RTS UN" ;;
-# 73) RTS DEUX
-73) 
-link=https://www.filmon.com/tv/rts-deux
-use_cookies="yes" 
-chan_name="RTS DEUX" ;;
-# 74) ARTE FRANCAIS
-74) 
-link=https://www.filmon.com/tv/arte-francais
-use_cookies="yes" 
-chan_name="ARTE Francais" ;;
-# 75) ICI Radio-Canada – Ottawa-Gatineau – CBOFT-DT
-75)
+# 74) ICI Radio-Canada – Ottawa-Gatineau – CBOFT-DT
+74)
 link="http://hdflash_1-lh.akamaihd.net/i/cancboft_1@192896/index_1200_av-b.m3u8"
 use_cookies="no"
 chan_name="ICI Radio-Canada – Ottawa-Gatineau – CBOFT-DT" ;;
-# 76) ICI Radio-Canada – Montréal CBFT-DT
-76)
+# 75) ICI Radio-Canada – Montréal CBFT-DT
+75)
 link="http://hdflash_1-lh.akamaihd.net/i/cancbft_1@95875/master.m3u8"
 use_cookies="no"
 chan_name="ICI Radio-Canada – Montréal" ;;
-# 77) ICI Radio-Canada – Trois-Rivières – CKTM-DT
-77)
+# 76) ICI Radio-Canada – Trois-Rivières – CKTM-DT
+76)
 link="http://hdflash_1-lh.akamaihd.net/i/cancktm_1@93276/index_1200_av-b.m3u8"
 use_cookies="no"
 chan_name="ICI Radio-Canada Trois-Rivières – CKTM-DT" ;;
-# 78) ICI Radio-Canada – Rimouski – CJBR-DT
-78)
+# 77) ICI Radio-Canada – Rimouski – CJBR-DT
+77)
 link="http://hdflash_1-lh.akamaihd.net/i/cancjbr_1@95882/index_1200_av-b.m3u8"
 use_cookies="no"
 chan_name="ICI Radio-Canada – Rimouski – CJBR-DT" ;;
-# 79) ICI Radio-Canada – Saguenay (lâ lâ) – CKTV-DT
-79)
+# 78) ICI Radio-Canada – Saguenay (lâ lâ) – CKTV-DT
+78)
 link="http://hdflash_1-lh.akamaihd.net/i/cancktv_1@93272/index_1200_av-b.m3u8"
 use_cookies="no"
 chan_name="ICI Radio-Canada – Saguenay (lâ lâ) – CKTV-DT" ;;
-# 80) ICI Radio-Canada – Sherbrooke – CKSH-DT
-80)
+# 79) ICI Radio-Canada – Sherbrooke – CKSH-DT
+79)
 link="http://hdflash_1-lh.akamaihd.net/i/cancksh_1@93278/index_1200_av-b.m3u8"
 use_cookies="no"
 chan_name="ICI Radio-Canada – Sherbrooke – CKSH-DT" ;;
+# 80)
 
 ################### BROKEN / OFFLINE ###################################
 # 64) M7 Television
@@ -963,177 +977,178 @@ keyword="en directo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/Malaga24h/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="Magala TV Spain" ;; 
-# 82) RT Espanol
-82) 
+# 82) Euronews Espanol
+82)  
+keyword="en directo"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
+use_cookies="no"
+chan_name="Euronews Espanol" ;;  
+# 83) RT Espanol
+83) 
 keyword="RT"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCEIhICHOQOonjE6V0SLdrHQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 #link=https://actualidad.rt.com/en_vivo2
 use_cookies="no"
 chan_name="RT Espanol" ;;
-# 83) DW Espanol
-83) 
+# 84) DW Espanol
+84) 
 keyword="DW Español en VIVO"
 link=http://dwstream3-lh.akamaihd.net/i/dwstream3_live@124409/master.m3u8
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/DeutscheWelleEspanol/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="DW Espanol" ;;
-# 84) CGTN Espanol
-84)
+# 85) CGTN Espanol
+85)
 link=https://live.cgtn.com/cctv-e.m3u8
 use_cookies="no"
 chan_name="CGTN Espanol" ;;
-# 85) Hispan TV
-85) 
-keyword="HispanTV en vivo - FULL HD"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/hispantv/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+# 86) Hispan TV
+86) 
+keyword="HispanTV"
+link=http://178.32.255.199:1935/live/hispantv/playlist.m3u8
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/hispantv/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no" 
 chan_name="HispanTV" ;;
 ################# ARGENTINA ##############################################
-# 86) c5n Argentina
-86) 
+# 87) c5n Argentina
+87) 
 keyword="en VIVO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/c5n/videos?&view=2" | grep "watch?v=" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 # link=http://www.c5n.com/
 use_cookies="no"
 chan_name="c5n Argentina" ;;
-# 87) A24 Argentina
-87) 
+# 88) A24 Argentina
+88) 
 keyword="en directo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCR9120YBAqMfntqgRTKmkjQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="A24 Argentina";;
-# 88) Todo Noticias Argentina
-88) 
+# 89) Todo Noticias Argentina
+89) 
 keyword="TN en Vivo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Todo Noticias Argentina";;
-# 89) La Nacion TV Argentina
-89) 
+# 90) La Nacion TV Argentina
+90) 
 keyword="LN+"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/LaNacionTV/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="La Nacion TV Argentina";;
-# 90) KZO En Vivo Canal 30
-90) 
+# 91) KZO En Vivo Canal 30
+91) 
 keyword="KZO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCv0zRACOVWmhu1Ilufm40-w/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="KZO Canal 30 Cablevision" ;; 
-# 91) TV Publica Argentina
-91)  
+# 92) TV Publica Argentina
+92)  
 keyword="Vivo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/TVPublicaArgentina/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="TV Publica Argentina" ;;  
-# 92) Canal 2 Cablenet San Vicente Argentina
-92)
+# 93) Canal 2 Cablenet San Vicente Argentina
+93)
 keyword="Transmisión en directo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC6y6nCxdSnkIsQTbfO-AvBw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no" 
 chan_name="Canal 2 CABLENET San Vicente Argentina" ;;
-# 93) Canal 6 San Rafael Argentina
-93) 
+# 94) Canal 6 San Rafael Argentina
+94) 
 keyword="en VIVO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCwq0epWuoVUDbuBz3hpgGeg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 use_cookies="no"   
 chan_name="Canal 6 San Rafael Argentina" ;;
-# 94) Canal 7 Mendoza Argentina
-94) 
+# 95) Canal 7 Mendoza Argentina
+95) 
 keyword="EN VIVO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/webcanal7mendoza/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
 chan_name="Canal 7 Mendoza Argentina" ;;
-# 95) Canal 8 San Juan Argentina
-95) 
+# 96) Canal 8 San Juan Argentina
+96) 
 keyword="EN VIVO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC5UKMEIoqvNDMSDz2_6Sn9g/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Canal 8 San Juan Argentina" ;;
-# 96) Canal 13 San Juan Argentina
-96)  
+# 97) Canal 13 San Juan Argentina
+97)  
 keyword="Juan"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCnfpjpEMfxPXAI3Nc23MTWA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="Canal 13 San Juan Argentina" ;; 
-# 97) Canal 8 Mar del Plata
-97) 
+# 98) Canal 8 Mar del Plata
+98) 
 keyword="Plata"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCY0QZk2M_ZZi95S-MN1Zndg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 use_cookies="no"  
 chan_name="Canal 8 Mar del Plata Argentina" ;; 
-# 98) Canal 11 de Salta Argentina
-98)  
+# 99) Canal 11 de Salta Argentina
+99)  
 keyword="Canal"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCy-r-BQ5BQRU6rzGS73-WBQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="Canal 11 de Salta Argentina" ;;  
 ################## Colombia ###################
-# 99) TelePacifico Colombia
-99) 
+# 100) TelePacifico Colombia
+100) 
 keyword="Telepacifico"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/TelepacificoCanal/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="TelePacifico Colombia" ;; 
 ############### CHILE#################################
-# 100) CNN Chile
-100)
+# 101) CNN Chile
+101)
 link=http://unlimited1-us.dps.live/cnn/cnn.smil/cnn/livestream1/playlist.m3u8
 #link=http://unlimited1-us.dps.live/cnn/cnn.smil/cnn/livestream2/playlist.m3u8
 #link=http://unlimited1-us.dps.live/cnn/cnn.smil/cnn/livestream3/playlist.m3u8
 use_cookies="no"
 chan_name="CNN Chile" ;;
-# 101) UFRO Vision Chile 
-101)  
+# 102) UFRO Vision Chile 
+102)  
 keyword="UFRO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC5H9zdp-3M24xWWJunhLJmQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="UFRO Vision Chile" ;;  
 ################# VENEZUELA
-# 102)TVES Venezuela
-102)
+# 103)TVES Venezuela
+103)
 link=rtmp://cast.streamingconnect.tv:1935/tves2/tves2 
 use_cookies="no"
 chan_name="TVES Venezuela" ;;
-# 103) TeleSUR Venezuela
-103) 
+# 104) TeleSUR Venezuela
+104) 
 keyword="EN VIVO"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/telesurtv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"   
 # link=http://cdn2.telesur.ultrabase.net/livecf/telesurLive/master.m3u8
 use_cookies="no"
 chan_name="TeleSUR Venezuela" ;;
-# 104) Globovision Venezeula
-104) 
+# 105) Globovision Venezeula
+105) 
 keyword="Globovisión"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCfJtBtmhnIyfUB6RqXeImMw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 #link=http://www.dailymotion.com/video/xio7e2_senal-en-vivo_news
 use_cookies="no" 
 chan_name="Globovision Venezeula" ;;
-# 105) NTN24 Venezuela
-105) 
+# 106) NTN24 Venezuela
+106) 
 keyword="SEÑAL EN VIVO DE NTN24"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/canalNTN24/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="NTN24 Venezuela" ;;
 #################### MEXICO #########################################################
-# 106) Excelsior TV Mexico
-106) 
+# 107) Excelsior TV Mexico
+107) 
 keyword="Transmisión en directo de Excélsior TV"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Excelsior TV Mexico" ;;
-# 107) PSN Tijuana Mexico
-107) 
+# 108) PSN Tijuana Mexico
+108) 
 keyword="PSN"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/psntv1/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"
-chan_name="PSN Tijuana Mexico";;
-# 108) Milenio Mexico  ****
-108)  
-keyword="MILENIO"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/MILENIO/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
-use_cookies="no"
-chan_name="Milenio Mexico" ;; 
+chan_name="PSN Tijuana Mexico";; 
 # 109) Bloomberg Financiero Mexico
 109)  
 keyword="Bloomberg"
@@ -1210,7 +1225,14 @@ link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/c
 #link=http://www.galatvqueretaro.tv/video-en-vivo  
 use_cookies="no"
 chan_name="Televisia Queretaro Mexico" ;; 
+# 120) 
 
+#Milenio Mexico  ****
+# #108)  
+#keyword="MILENIO"
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/MILENIO/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
+#use_cookies="no"
+#chan_name="Milenio Mexico" ;; 
 # 120) El Capitolio Venezulana
 # 120) 
 #keyword="EN VIVO"
@@ -2009,7 +2031,8 @@ chan_name="Saudi Ajyal Kids Tv Channel 9" ;;
 ## 241) TRT Haber Turkey  **
 241) 
 keyword="TRT"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/trthaber/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+link=http://trtcanlitv-lh.akamaihd.net/i/TRTHABERHD_1@181942/master.m3u8
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/trthaber/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="TRT Haber Turkey";;
 ## 242) NTV Turkey
@@ -2594,19 +2617,19 @@ use_cookies="no"
 chan_name="Florida Cam 1" ;; 
 # 343) Florida Cam 2
 343) 
-keyword="LIVE Two Friends Roof Top"
+keyword="Airport"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 2" ;; 
 # 344) Florida Cam 3
 344) 
-keyword="LIVE Marathon FL Cam"
+keyword="Seaport"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 3" ;; 
 # 345) Florida Cam 4
 345) 
-keyword="LIVE Mallory Square - Key West FL"
+keyword="Irma"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC6RbL0ZAyA_rc__Acbqh2mw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Florida Cam 4" ;; 
@@ -2778,7 +2801,8 @@ use_cookies="no"
 chan_name="Seminole TV (Florida)" ;;
 # 376)The Florida Channel
 376) 
-link=rtmp://webcasting.thefloridachannel.org/live/tvweb1
+#link=rtmp://webcasting.thefloridachannel.org/live/tvweb1
+link=http://webcasting.thefloridachannel.org/live/tvweb1/playlist.m3u8
 use_cookies="no"
 chan_name="The Florida Channel" ;;
 #################### NATIONAL / LOCAL Weather #####################################################
@@ -2962,11 +2986,13 @@ chan_name="C-SPAN-3 Live Event" ;;
 # 410) CNN Livestream 1
 410)
 link=http://cnn-i.akamaihd.net/hls/live/253953/dotcomlive_1/index_Layer8.m3u8
+#link=http://cnn-i.akamaihd.net/hls/live/253953/dotcomlive_1/master.m3u8
 use_cookies="no"
 chan_name="CNN Livestream 1" ;;
 # 411) CNN Livestream 2
 411)
 link=http://cnn-i.akamaihd.net/hls/live/253954/dotcomlive_2/index_Layer8.m3u8
+#link=http://cnn-i.akamaihd.net/hls/live/253954/dotcomlive_2/master.m3u8
 use_cookies="no"
 chan_name="CNN Livestream 2" ;;
 # 412) CPAC 2 Canada
@@ -3077,8 +3103,9 @@ use_cookies="no"
 chan_name="Bloomberg Asia" ;;
 # 430) Bloomberg Europe
 430)
-link=https://www.bloomberg.com/live/europe
+#link=https://www.bloomberg.com/live/europe
 #link=https://cdn-videos.akamaized.net/btv/zixi/fastly/europe/live/master.m3u8
+link=http://mediaeuwest.akamaized.net/eu/EU1000kb_live.m3u8
 use_cookies="no"
 chan_name="Bloomberg Europe" ;;
 # 431) Euronews Maygar Hugarian
@@ -3286,6 +3313,35 @@ chan_name="Talking Tom Minis" ;;
 link=http://amd.cdn.turner.com/adultswim/big/streams/playlists/live-action-marathon.m3u8
 use_cookies="no"
 chan_name="Adult Swim Live Action Marathon" ;;
+#  476) DJING Animation HD 
+476) 
+link=http://www.djing.com/tv/a-05.m3u8
+use_cookies="no"
+chan_name="DJING Animation HD" ;;
+#  477) DJING Classic HD 
+477) 
+link=http://www.djing.com/tv/i-05.m3u8
+use_cookies="no"
+chan_name="DJING Classic HD" ;;
+# 478) DJING Dancefloor HD
+478) 
+link=http://www.djing.com/tv/d-05.m3u8
+use_cookies="no"
+chan_name="DJING Dancefloor HD" ;;
+# 479)DJING Underground HD
+479) 
+link=http://www.djing.com/tv/u-05.m3u8
+use_cookies="no"
+chan_name="DJING Underground HD" ;;
+# 480)M2O Music
+480) 
+link="http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8"
+use_cookies="no"
+chan_name="M2O Music" ;;
+
+# Monte Carlo
+# link=http://fms.105.net:1935/live/rmc1/playlist.m3u8
+
 ###################### BROKEN /OFFLINE #################################################
 # 458) High Stakes Poker
 # 458) link=https://www.twitch.tv/highstakespoke 
@@ -3559,12 +3615,7 @@ chan_name="Harbor Light Radio" ;;
 link=http://acaooyalahd2-lh.akamaihd.net/i/TBN03_delivery@186241/index_1728_av-p.m3u8
 use_cookies="no"
 chan_name="JUCE TV" ;;
-# 523) Euronews Espanol
-523)  
-keyword="en directo"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
-use_cookies="no"
-chan_name="Euronews Espanol" ;;  
+# 523) 
 # 524) Canal del Congreso Mexico Spanish
 524)
 link=http://dl.canaldelcongreso.gob.mx:1935/ccongreso/mp4:congreso2b.mp4/playlist.m3u8
@@ -3636,6 +3687,36 @@ keyword="SPORTS"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/beinsports/videos/videos?&view=2" | grep "span" | grep "watch?v=" | head -n 2 | tail -n 1 | cut -d = -f 4 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="beIN Sports Channel 2" ;;  
+
+#ABN http://moiptvus-lh.akamaihd.net:80/i/3abnlive_1@328342/index_800_av-p.m3u8 
+#ABN KIDS http://moiptvus-lh.akamaihd.net:80/i/kidslive_1@328343/index_800_av-p.m3u8 
+#BYU TV http://byuhd2-lh.akamaihd.net:80/i/byutvhd2_live@103136/index_1640_av-p.m3u8 
+#BYU TV GLOBAL http://byuhd2-lh.akamaihd.net:80/i/byutvglobalhd2_live@103134/index_1640_av-p.m3u8
+#BYU TV INTERNATIONAL http://byuhd2-lh.akamaihd.net:80/i/byutvintporthd2_live@103132/index_1240_av-p.m3u8
+#BYU TV INTERNATIONAL http://byuhd2-lh.akamaihd.net:80/i/byutvintspanhd2_live@103133/index_1240_av-p.m3u8 
+#CANAL DA JUVENTUDE CRISTÃ http://nossatvhls03-lh.akamaihd.net:80/i/nossatv_hls@389008/index_600_av-p.m3u8 
+#CANAL DAS IGREJAS http://nossatvhls03-lh.akamaihd.net:80/i/nossatv_hls@381920/index_600_av-p.m3u8 
+#CANAL SHOW DA FÉ http://nossatvhls02-lh.akamaihd.net:80/i/nossatv_hls@381916/index_600_av-p.m3u8 
+#CANAL UM EUROPA http://nossatvhls01-lh.akamaihd.net:80/i/nossatv_hls@366619/index_600_av-p.m3u8 
+#CANÇÃO NOVA http://cnhls-lh.akamaihd.net:80/i/tvcnmob_1@147036/index_540_av-p.m3u8 
+#CATHOLIC TV http://catholictvhd-lh.akamaihd.net:80/i/ctvhd_1@88148/index_1_av-p.m3u8 #EXTINF:-1,CBN SD
+
+# NEWS X INDIA English
+# link=http://newsx.live-s.cdn.bitgravity.com/cdn-live/_definst_/newsx/live/newsxnew.smil/playlist.m3u8
+
+# RBC TV RUSSIA
+# link=http://online.video.rbc.ru/online/rbctv_480p/index.m3u8
+
+#Mello TV English Jamaica
+#link=http://mellotvnew.tulix.tv/live/smil:mellotv.smil/chunklist_w1010732594_b1128000_sleng.m3u8
+
+
+# slam fm
+# link=http://hls2.slamfm.nl/content/slamtv/slamtv_1.m3u8
+
+# Jasmin TV
+# link=http://109.71.162.112:1935/live/hd.jasminchannel.stream/PAZ_Chega_de_Guerras.m3u8
+
 
 esac
 }
