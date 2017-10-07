@@ -6,10 +6,11 @@
 # Author: The Endware Development Team
 # Copyright: 2017, The Endware Development Team
 # Creation Date: February 21, 2017
-# Version: 0.48
+# Version: 0.49
 # Revision Date: October 7, 2017
 #
-# Recent Changes: - Add more dailymotion streams in Mixed
+# Recent Changes: - Added more menus and menu switching
+#                 - Add more dailymotion streams in Mixed
 #                 - Reorg French Channels
 #                 - Repair Asian Channels
 #                 - Repair Spanish Channels
@@ -143,7 +144,7 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.48"
+version="0.49"
 rev_date="07/10/2017"
 branch="gnu/linux"
 product="ENDSTREAM"
@@ -166,15 +167,15 @@ uamode="off"
 headmode="off"
 
 ### Define function for displaying channels  CHANGE MENU HERE
-channel_matrix()
+channel_matrix_0()
 {
    echo "============================================================    "$product" "$version"   ======================================================================"
-   echo "||      ENGLISH       ||     FRANCAIS      ||      ESPANOL     ||      ASIAN     ||     INDIAN      || URDU/FARSI/ARABIC ||TK/GR/IT/DE/NL/RO/MD/UA/RU||"
+   echo "||      ENGLISH       ||     FRANCAIS      ||      ESPANOL     ||      ASIAN     ||     INDIAN      || URDU/FARSI/ARABIC ||TR/GR/IT/DE/NL/RO/MD/UA/RU||"
    echo "======================================================================================================================================================="
-   echo "1)BBC World News      41)France 24 FR      81)Magala TV Spain  121)CCTV 4 China  161)News 9 Bangalore 201)DIN News PK     241)TRT Haber Turkey"    
-   echo "2)SKY News London     42)France Info TV    82)Euronews Espanol 122)ECB 51 TW     162)CVR English      202)SAMAA PK        242)NTV Turkey" 
-   echo "3)BBC News London     43)Euronews FR       83)RT Espanol       123)ECB Finance TW163)CVR NEWS         203)PTV PK          243)HaberTurk TV"  
-   echo "4)RT UK               44)BFM TV FR         84)DW Espanol       124)TTV TW        164)Shaski India     204)Neo TV PK       244)Star TV  Turkish"             
+   echo "1)BBC World News      41)France 24 FR      81)Magala TV Spain  121)CCTV 4 China  161)News 9 Bangalore 201)-----------     241)TRT Haber Turkey"    
+   echo "2)SKY News London     42)France Info TV    82)--------------   122)ECB 51 TW     162)CVR English      202)SAMAA PK        242)NTV Turkey" 
+   echo "3)BBC News London     43)-------------     83)RT Espanol       123)ECB Finance TW163)CVR NEWS         203)PTV PK          243)HaberTurk TV"  
+   echo "4)RT UK               44)BFM TV FR         84)DW Espanol       124)TTV TW        164)Shaski India     204)Neo TV PK       244)Star TV Turkey"             
    echo "5)France 24 English   45)TV5 Monde BE      85)CGTN Espanol     125)CTV TW        165)SunNews          205)Dawn PK         245)Fashion 1 Turk"  
    echo "6)DW English          46)ICI RDI CA        86)Hispan TV        126)FTV TW        166)TV9 India        206)Bol TV PK       246)CNN Turk"  
    echo "7)Russia Today        47)RTS UN CH         87)c5n AR           127)CTS World TW  167)Rajya Sabha      207)Lemar AF        247)Ulusal Kanal"
@@ -214,7 +215,7 @@ channel_matrix()
    echo "======================================================================================================================================================"
 }	             
  
-channel_matrix_2()	
+channel_matrix_1()	
 {
    echo "============================================================    "$product"  "$version"   ==================================================================="
    echo "||RUSSIA/FILIPINO/OTHER||     LOCATIONS     ||    USA LOCAL NEWS   ||     EXTRA       ||  SPORTS/ENTERTAINMENT ||    RELIGIOUS     ||    MIXED     ||"
@@ -223,56 +224,55 @@ channel_matrix_2()
    echo "282)RBC TV Russia     322)NASA ISS 1        362)News 12 Brooklyn   402)ABC News 2      442)PAC-12 Bay Area    482)EWTN Americas     522)JUCE TV " 
    echo "283)ТВ-ТРЕЙЛЕР Russia 323)NASA ISS 2        363)News 12 Long Island403)ABC News 3      443)PAC-12 Los Angeles 483)EWTN Ireland      523)Quaran English "  
    echo "284)Vesti FM Russia   324)Venice Bridge     364)FOX 25 Boston      404)ABC News 5      444)PAC-12 Mountain    484)EWTN Africa       524)Congreso Mexico"             
-   echo "285)Life News Russia  325)Venice Italy Port 365)WGN 9 Chicago      405)CTV Live Event  445)PAC-12 Oregon      485)EWTN Asia         525)NBC 6 South Florida"  
-   echo "286)------------      326)JacksonHole Xsec  366)FOX 23 Tulsa       406)WSJ Live        446)PAC-12 Washington  486)EWTN Espanol      526)WXXV Mississippi"  
-   echo "287)------------      327)JacksonHole Square367)FOX 13 Memphis     407)C-SPAN-1        447)USA UNI Arizona    487)EWTN Deutsch      527)WBLZ Bangor Maine"
-   echo "288)------------      328)JacksonHole Rustic368)FOX 30 Jacksonville408)C-SPAN-2        448)USA UNI Los Angeles488)Catholic TV       528)7 News Boston"
-   echo "289)------------      329)Aosta Sarre Italy 369)CBS 47 Jacksonville409)C-SPAN-3        449)USA UNI Mountain   489)CBN               529)News 13"
-   echo "290)DZMM ABS-CBN      330)----------        370)ABC 9 Orlando      410)CNN Live 1      450)USA UNI Oregon     490)CBN News          530)KISS FM 2 TW"
-   echo "291)DZRH Philippeans  331)Amsterdam NL      371)Fox 10 Phoenix     411)CNN Live 2      451)USA UNI Washington 491)NRB               531)NBC 2 Florida"
-   echo "292)PTV Philippines   332)Shibua Japan      372)Fox 2 Bay Area     412)CPAC 2 Canada   452)EuroSports         492)Church Channel    532)beIN 1 Arabic"
-   echo "293)Net TV Jakarta ID 333)Akiba Japan       373)WTPC 16 Virginia   413)C-SPAN 2 HD     453)MLB Network        493)TBN               533)beIN 2 Arabic"
-   echo "294)STF Brazil        334)Yahoo Japan       374)ATXN Austin        414)C-SPAN 3 HD     454)106.7 The Fan      494)God TV            534)ABC News Tampa FL"
-   echo "295)TV Estúdio Brasil 335)Steamy Mountain   375)Seminole Florida   415)DIVIDs          455)106.7 The Fan      495)Amazing Facts     535)Stuff TV Sports" 
-   echo "296)Rádio Justiça     336)Naman Seoul       376)Florida Channel    416)America Thinks  456)Virgin 2 Music     496)It's Supernatural!536)Flat Earth TV"
-   echo "297)EXA FM Brasil     337)Shizuoka Japan    377)Weather Network    417)NASA TV Educate 457)Heart TV           497)Sheppard's Chapel 537)Fashion Europe"
-   echo "298)TVSHOW DA FÉ      338)Yokohama Japan    378)Weather Nation     418)NASA TV Media   458)Capital TV         498)IHOP              538)CNEWS FR"	
-   echo "299)ADOM Ghana        339)Hokkido Weather   379)Weather Channel    419)RT Documentary  459)Country Music      499)BVOVN             539)TVRO CA"
-   echo "300)Biafra TV         340)Mount Fuji Japan  380)CBS 2 New York     420)CGTN Documentary460)Music Choice Play  500)3ABN              540)Mello TV JM"  
-   echo "301)Joy News Ghana    341)Hart Beach NL     381)NBC 4 New York     421)BYUTV           461)538 Netherlands    501)3ABN Kids         541)Jasmin TV"
-   echo "302)KTN Kenya         342)Florida 1         382)CBS 4 Boston       422)BYUTV Int       462)CITY TV            502)TCT HD            542)Fashion 1 TV ES"       
-   echo "303)NTV Uganda        343)Florida 2         383)WVIT 30 Hartford   423)Arirang Radio   463)О2 ТВ Russia       503)TCT SD            543)EuroNews Deutsch"  
-   echo "304)TVC News          344)Florida 3         384)NBC 10 Philadelphia424)HSN             464)MTV AM Russia      504)TCT Kids          544)DW Deutsch"
-   echo "305)TVC Continental   345)Florida 4         385)CBS 3 Michigan     425)HSN 2           465)Adult Swim         505)Salt and Light    545)STerkTV Zindi"  
-   echo "306)Bukedde TV        346)-------------     386)NBC Nebraska       426)QVC             466)Animal Planet      506)LLBN TV           546)Ronahi Zindi"
-   echo "307)Walf Senegal      347)Durango Colorado  387)CBS Nebraska       427)TSC             467)Insight TV         507)Rap Resurrection  547)TYT"
+   echo "285)Life News Russia  325)Venice Italy Port 365)WGN 9 Chicago      405)CTV Live Event  445)PAC-12 Oregon      485)EWTN Asia         525)KISS FM 2 TW"  
+   echo "286)------------      326)JacksonHole Xsec  366)FOX 23 Tulsa       406)WSJ Live        446)PAC-12 Washington  486)EWTN Espanol      526)beIN 1 Arabic"  
+   echo "287)------------      327)JacksonHole Square367)FOX 13 Memphis     407)C-SPAN-1        447)USA UNI Arizona    487)EWTN Deutsch      527)beIN 2 Arabic"
+   echo "288)------------      328)JacksonHole Rustic368)FOX 30 Jacksonville408)C-SPAN-2        448)USA UNI Los Angeles488)Catholic TV       528)Flat Earth TV"
+   echo "289)------------      329)Aosta Sarre Italy 369)CBS 47 Jacksonville409)C-SPAN-3        449)USA UNI Mountain   489)CBN               529)Fashion Europe"
+   echo "290)DZMM ABS-CBN      330)----------        370)ABC 9 Orlando      410)CNN Live 1      450)USA UNI Oregon     490)CBN News          530)CNEWS FR"
+   echo "291)DZRH Philippeans  331)Amsterdam NL      371)Fox 10 Phoenix     411)CNN Live 2      451)USA UNI Washington 491)NRB               531)TVRO CA"
+   echo "292)PTV Philippines   332)Shibua Japan      372)Fox 2 Bay Area     412)CPAC 2 Canada   452)EuroSports         492)Church Channel    532)Mello TV JM"
+   echo "293)Net TV Jakarta ID 333)Akiba Japan       373)WTPC 16 Virginia   413)C-SPAN 2 HD     453)MLB Network        493)TBN               533)Jasmin TV"
+   echo "294)STF Brazil        334)Yahoo Japan       374)ATXN Austin        414)C-SPAN 3 HD     454)106.7 The Fan      494)God TV            534)Fashion 1 TV ES"
+   echo "295)TV Estúdio Brasil 335)Steamy Mountain   375)Seminole Florida   415)DIVIDs          455)106.7 The Fan      495)Amazing Facts     535)DW Deutsch" 
+   echo "296)Rádio Justiça     336)Naman Seoul       376)Florida Channel    416)America Thinks  456)Virgin 2 Music     496)It's Supernatural!536)STerkTV Zindi"
+   echo "297)EXA FM Brasil     337)Shizuoka Japan    377)Weather Network    417)NASA TV Educate 457)Heart TV           497)Sheppard's Chapel 537)Ronahi Zindi"
+   echo "298)TVSHOW DA FÉ      338)Yokohama Japan    378)Weather Nation     418)NASA TV Media   458)Capital TV         498)IHOP              538)TYT"	
+   echo "299)ADOM Ghana        339)Hokkido Weather   379)Weather Channel    419)RT Documentary  459)Country Music      499)BVOVN             539)KNBC 4 Los Angeles"
+   echo "300)Biafra TV         340)Mount Fuji Japan  380)CBS 2 New York     420)CGTN Documentary460)Music Choice Play  500)3ABN              540)ABC 3 Louisiana"  
+   echo "301)Joy News Ghana    341)Hart Beach NL     381)NBC 4 New York     421)BYUTV           461)538 Netherlands    501)3ABN Kids         541)WPLG 10 Miami"
+   echo "302)KTN Kenya         342)Florida 1         382)CBS 4 Boston       422)BYUTV Int       462)CITY TV            502)TCT HD            542)WJXT 4 Jacksonville"       
+   echo "303)NTV Uganda        343)Florida 2         383)WVIT 30 Hartford   423)Arirang Radio   463)О2 ТВ Russia       503)TCT SD            543)NBC 6 South Florida"  
+   echo "304)TVC News          344)Florida 3         384)NBC 10 Philadelphia424)HSN             464)MTV AM Russia      504)TCT Kids          544)WBLZ Bangor Maine"
+   echo "305)TVC Continental   345)Florida 4         385)CBS 3 Michigan     425)HSN 2           465)Adult Swim         505)Salt and Light    545)EuroNews Espanol"  
+   echo "306)Bukedde TV        346)-------------     386)NBC Nebraska       426)QVC             466)Animal Planet      506)LLBN TV           546)EuroNews Francais"
+   echo "307)Walf Senegal      347)Durango Colorado  387)CBS Nebraska       427)TSC             467)Insight TV         507)Rap Resurrection  547)EuroNews Deutsch"
    echo "308)Qaranka Somalia   348)StarDot 1         388)News12 Wisconsin   428)IdealWorld      468)London Live        508)Hillsong          548)----------"
    echo "309)EBC Ethiopia      349)Youing Japan      389)CBS 2 Salt Lake    429)Bloomberg Asia  469)Yes TV             509)Al Hayat TV Arabic549)----------"
    echo "310)SPARK Uganda      350)StarDot 4         390)CBS 5 Colorado     430)Bloomberg Europe470)Smile of a Child   510)Al Fady TV Arabic 550)----------"    
    echo "311)Afrique Media     351)StarDot 5         391)NBC 11 Bay Area    431)Euronews Magyar 471)Toonami            511)Aghapy TV         551)----------"
    echo "312)SABC South Africa 352)StarDot 6         392)CBS 13 Stockton    432)The Blaze       472)Adult Swim Ani     512)St. Mary's Coptic 552)----------"
    echo "313)----------------  353)London 1          393)KCAL 9 Los Angeles 433)BYUTV           473)Talking Tom Min    513)Word of God Greek 553)----------" 
-   echo "314)----------------  354)London 2          394)KNBC 4 Los Angeles 434)BYUTV Global    474)Talking Tom        514)Shalom TV         554)----------"  
-   echo "315)----------------  355)London 3          395)ABC 3 Louisiana    435)BYUTV Int       475)Adult Swim Live    515)Heaven TV         555)----------"
-   echo "316)RUPTLY            356)Berlin Airport    396)WPLG 10 Miami      436)BYUTV Int2      476)DJ Animation       516)Rakshana TV       556)----------"
-   echo "317)PBS NewsHour      357)Osaka Japan       397)WJXT 4 Jacksonville437)SBS KPOP        477)DJ Classic         517)Powervision TV    557)----------"
+   echo "314)----------------  354)London 2          394)WXXV Mississippi   434)BYUTV Global    474)Talking Tom        514)Shalom TV         554)----------"  
+   echo "315)----------------  355)London 3          395)7 News Boston      435)BYUTV Int       475)Adult Swim Live    515)Heaven TV         555)----------"
+   echo "316)RUPTLY            356)Berlin Airport    396)News 13            436)BYUTV Int2      476)DJ Animation       516)Rakshana TV       556)----------"
+   echo "317)PBS NewsHour      357)Osaka Japan       397)NBC 2 Florida      437)SBS KPOP        477)DJ Classic         517)Powervision TV    557)----------"
    echo "318)CBC The National  358)Los Angeles Port  398)Fox News Talk      438)KPOP Idol       478)DJ Dancefloor      518)KJV Bible         558)----------"	
    echo "319)AP Top Stories    359)ITS COM Japan     399)WSOC 9 Charlotte   439)-----------     479)DJ Underground     519)Temple Institute  559)----------"
    echo "320)Democracy Now     360)China Shoreline   400)WCCB Charlotte     440)-----------     480)M2O Music          520)Jewish Life       560)----------"
    echo "==================================================================================================================================================="
 }
 
-
-channel_matrix_3()	
+channel_matrix_2()	
 {
    echo "============================================================    "$product"  "$version"   ==================================================================="
    echo "|| Column 1         ||     Column 2        ||    Column 3       ||   Column      4     ||  Column 5         ||    Column 6        ||   Column 7    ||"
    echo "======================================================================================================================================================"
    echo "561)------------     601)------------      641)------------      681)------------     721)------------       751)------------      791)------------"    
    echo "562)------------     602)------------      642)------------      682)------------     722)------------       752)------------      792)------------" 
-   echo "563)------------     603)------------      643)------------      683)------------     723)------------       753)------------      793)------------ "  
+   echo "563)------------     603)------------      643)------------      683)------------     723)------------       753)------------      793)------------"  
    echo "564)------------     604)------------      644)------------      684)------------     724)------------       754)------------      794)------------"             
-   echo "565)------------     605)------------      645)------------      685)------------     725)------------       755)------------      795)-----------"  
+   echo "565)------------     605)------------      645)------------      685)------------     725)------------       755)------------      795)------------"  
    echo "566)------------     606)------------      646)------------      686)------------     726)------------       756)------------      796)------------"  
    echo "567)------------     607)------------      647)------------      687)------------     727)------------       757)------------      797)------------"
    echo "568)------------     608)------------      648)------------      688)------------     728)------------       758)------------      798)------------"
@@ -290,24 +290,72 @@ channel_matrix_3()
    echo "580)------------     620)------------      660)------------      700)------------     730)------------       770)------------      800)------------"  
    echo "581)------------     621)------------      661)------------      701)------------     731)------------       771)------------      801)------------"
    echo "582)------------     622)------------      662)------------      702)------------     732)------------       772)------------      802)------------"       
-   echo "583)------------     623)------------      663)------------      703)------------     733)------------       773)------------      803)--------"  
-   echo "584)------------     624)------------      664)------------      704)------------     734)------------       774)------------      804)--------"
-   echo "585)------------     625)------------      665)------------      705)------------     735)------------       775)------------      805)--------"  
-   echo "586)------------     626)-------------     666)------------      706)------------     736)------------       776)------------      806)--------"
-   echo "587)------------     627)------------      667)------------      707)------------     737)------------       777)------------      807)--------"
-   echo "588)------------     628)------------      668)------------      708)------------     738)------------       778)------------      808)--------"
-   echo "589)------------     629)------------      669)------------      709)------------     739)------------       779)------------      809)--------"
-   echo "590)------------     630)------------      670)------------      710)------------     740)------------       780)------------      810)--------"    
-   echo "591)------------     631)------------      671)------------      711)------------     741)------------       781)------------      811)--------"
-   echo "592)------------     632)------------      672)------------      712)------------     742)------------       782)------------      812)--------"
-   echo "593)------------     633)------------      673)------------      713)------------     743)------------       783)------------      813)--------" 
-   echo "594)------------     634)------------      674)------------      714)------------     744)------------       784)------------      814)--------"  
-   echo "595)------------     635)------------      675)------------      715)------------     745)------------       785)------------      815)--------"
-   echo "596)------------     636)------------      676)------------      716)------------     746)------------       786)------------      816)--------"
-   echo "597)------------     637)------------      677)------------      717)------------     747)------------       787)------------      817)--------"
-   echo "598)------------     638)------------      678)------------      718)------------     748)------------       788)------------      818)--------"	
-   echo "599)------------     639)------------      679)------------      719)-----------      749)------------       789)------------      819)--------"
-   echo "600)------------     640)------------      680)------------      720)-----------      750)------------       790)------------      820)--------"
+   echo "583)------------     623)------------      663)------------      703)------------     733)------------       773)------------      803)------------"  
+   echo "584)------------     624)------------      664)------------      704)------------     734)------------       774)------------      804)------------"
+   echo "585)------------     625)------------      665)------------      705)------------     735)------------       775)------------      805)------------"  
+   echo "586)------------     626)-------------     666)------------      706)------------     736)------------       776)------------      806)------------"
+   echo "587)------------     627)------------      667)------------      707)------------     737)------------       777)------------      807)------------"
+   echo "588)------------     628)------------      668)------------      708)------------     738)------------       778)------------      808)------------"
+   echo "589)------------     629)------------      669)------------      709)------------     739)------------       779)------------      809)------------"
+   echo "590)------------     630)------------      670)------------      710)------------     740)------------       780)------------      810)------------"    
+   echo "591)------------     631)------------      671)------------      711)------------     741)------------       781)------------      811)------------"
+   echo "592)------------     632)------------      672)------------      712)------------     742)------------       782)------------      812)------------"
+   echo "593)------------     633)------------      673)------------      713)------------     743)------------       783)------------      813)------------" 
+   echo "594)------------     634)------------      674)------------      714)------------     744)------------       784)------------      814)------------"  
+   echo "595)------------     635)------------      675)------------      715)------------     745)------------       785)------------      815)------------"
+   echo "596)------------     636)------------      676)------------      716)------------     746)------------       786)------------      816)------------"
+   echo "597)------------     637)------------      677)------------      717)------------     747)------------       787)------------      817)------------"
+   echo "598)------------     638)------------      678)------------      718)------------     748)------------       788)------------      818)------------"	
+   echo "599)------------     639)------------      679)------------      719)-----------      749)------------       789)------------      819)------------"
+   echo "600)------------     640)------------      680)------------      720)-----------      750)------------       790)------------      820)------------"
+   echo "==================================================================================================================================================="
+}	
+
+channel_matrix_3()	
+{
+   echo "============================================================    "$product"  "$version"   ==================================================================="
+   echo "|| Column 1         ||     Column 2        ||    Column 3       ||   Column      4     ||  Column 5         ||    Column 6        ||   Column 7    ||"
+   echo "======================================================================================================================================================"
+   echo "821)------------     861)------------      901)------------      941)------------     981)------------       1021)------------     1061)------------"    
+   echo "822)------------     862)------------      902)------------      942)------------     982)------------       1022)------------     1062)------------" 
+   echo "823)------------     863)------------      903)------------      943)------------     983)------------       1023)------------     1063)------------"  
+   echo "824)------------     864)------------      904)------------      944)------------     984)------------       1024)------------     1064)------------"             
+   echo "825)------------     865)------------      905)------------      945)------------     985)------------       1025)------------     1065)------------"  
+   echo "826)------------     866)------------      906)------------      946)------------     986)------------       1026)------------     1066)------------"  
+   echo "827)------------     867)------------      907)------------      947)------------     987)------------       1027)------------     1067)------------"
+   echo "828)------------     868)------------      908)------------      948)------------     988)------------       1028)------------     1068)------------"
+   echo "829)------------     869)------------      909)------------      949)------------     989)------------       1029)------------     1069)------------"
+   echo "830)------------     870)------------      910)------------      950)------------     990)------------       1030)------------     1070)------------"
+   echo "831)-------------    871)------------      911)------------      951)------------     991)------------       1031)------------     1071)------------"
+   echo "832)-------------    872)------------      912)------------      952)------------     992)------------       1032)------------     1072)------------"
+   echo "833)------------     873)------------      913)------------      953)------------     993)------------       1033)------------     1073)------------"
+   echo "834)------------     874)------------      914)------------      954)------------     994)------------       1034)------------     1074)------------"
+   echo "835)------------     875)------------      915)------------      955)------------     995)------------       1035)------------     1075)------------" 
+   echo "836)------------     876)------------      916)------------      956)------------     996)------------       1036)------------     1076)------------"
+   echo "837)------------     877)------------      917)------------      957)------------     997)------------       1037)------------     1077)------------"
+   echo "838)------------     878)------------      918)------------      958)------------     998)------------       1038)------------     1078)------------"	
+   echo "839)------------     879)------------      919)------------      959)------------     999)------------       1039)------------     1079)------------"
+   echo "840)------------     880)------------      920)------------      960)------------     1000)------------      1040)------------     1080)------------"  
+   echo "841)------------     881)------------      921)------------      961)------------     1001)------------      1041)------------     1081)------------"
+   echo "842)------------     882)------------      922)------------      962)------------     1002)------------      1042)------------     1082)------------"       
+   echo "843)------------     883)------------      923)------------      963)------------     1003)------------      1043)------------     1083)------------"  
+   echo "844)------------     884)------------      924)------------      964)------------     1004)------------      1044)------------     1084)------------"
+   echo "845)------------     885)------------      925)------------      965)------------     1005)------------      1045)------------     1085)------------"  
+   echo "846)------------     886)-------------     926)------------      966)------------     1006)------------      1046)------------     1086)------------"
+   echo "847)------------     887)------------      927)------------      967)------------     1007)------------      1047)------------     1087)------------"
+   echo "848)------------     888)------------      928)------------      968)------------     1008)------------      1048)------------     1088)------------"
+   echo "849)------------     889)------------      929)------------      969)------------     1009)------------      1049)------------     1089)------------"
+   echo "850)------------     890)------------      930)------------      970)------------     1000)------------      1050)------------     1090)------------"    
+   echo "851)------------     891)------------      931)------------      971)------------     1011)------------      1051)------------     1091)------------"
+   echo "852)------------     892)------------      932)------------      972)------------     1012)------------      1052)------------     1092)------------"
+   echo "853)------------     893)------------      933)------------      973)------------     1013)------------      1053)------------     1093)------------" 
+   echo "854)------------     894)------------      934)------------      974)------------     1014)------------      1054)------------     1094)------------"  
+   echo "855)------------     895)------------      935)------------      975)------------     1015)------------      1055)------------     1095)------------"
+   echo "856)------------     896)------------      936)------------      976)------------     1016)------------      1056)------------     1096)------------"
+   echo "857)------------     897)------------      937)------------      977)------------     1017)------------      1057)------------     1097)------------"
+   echo "858)------------     898)------------      938)------------      978)------------     1018)------------      1058)------------     1098)------------"	
+   echo "859)------------     899)------------      939)------------      979)-----------      1019)------------      1059)------------     1099)------------"
+   echo "860)------------     900)------------      940)------------      980)-----------      1020)------------      1060)------------     1100)------------"
    echo "==================================================================================================================================================="
 }	
 
@@ -339,9 +387,13 @@ do
    exit 0
    elif [ "$arg" == "--list-matrix" ]
    then 
-   channel_matrix
+   channel_matrix_0
    sleep 2
-   channel_matrix2
+   channel_matrix_1
+   sleep 2
+   channel_matrix_2
+   sleep 2
+   channel_matrix_3
    exit 0
    elif [ "$arg" == "--list-all" ]
    then
@@ -792,12 +844,7 @@ format=hls-720
 #format=hls-240
 use_cookies="no"
 chan_name="France Info TV" ;;
-# 43) Euronews Francais
-43) 
-keyword="euronews"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsfr/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
-use_cookies="no"
-chan_name="Euronews Francais" ;;                                                            
+# 43)                                                        
 # 44) BFM TV
 44) 
 link=http://csm-e.dai.bfmtv.com/csm/live/109797390.m3u8
@@ -1041,12 +1088,7 @@ keyword="en directo"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/Malaga24h/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="Magala TV Spain" ;; 
-# 82) Euronews Espanol
-82)  
-keyword="en directo"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
-use_cookies="no"
-chan_name="Euronews Espanol" ;;  
+# 82) 
 # 83) RT Espanol
 83) 
 keyword="RT"
@@ -1822,11 +1864,7 @@ chan_name="Swarnavahini Sri Lanka " ;;
 #chan_name="Pilupu TV Telugu America" ;; 
 #
 ##################### PAKISTAN  ############################
-# 201)Din TV Pakistan
-201)
-link=http://www.dailymotion.com/video/x5ubgo9 
-use_cookies="no"
-chan_name="Din TV Pakistan" ;; 
+# 201)
 # 202) SAMAA TV Pakistan
 202) 
 keyword="SAMAA"
@@ -1863,7 +1901,11 @@ chan_name="Bol News" ;;
 # link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCcmpeVbSSQlZRvHfdC-CRwg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 # use_cookies="no"
 # chan_name="24 News Pakistan HD" ;;  
-
+# 201)Din TV Pakistan
+# 201)
+#link=http://www.dailymotion.com/video/x5ubgo9 
+#use_cookies="no"
+#chan_name="Din TV Pakistan" ;; 
 ################# AFGHANISTAN ######################################
 # 207) Lemar TV Afghanistan
 207)
@@ -2965,26 +3007,27 @@ chan_name="CBS 13 News Stockton California USA" ;;
 link=http://play-prod1.live.anvato.net/server/play/cbslocal-kcal-dfp/master.m3u8
 use_cookies="no"
 chan_name="KCAL 9 News Los Angeles" ;;
-# 394) KNBC 4 News (Los Angeles)
-394) 
-link=http://knbclive-f.akamaihd.net/i/knbca1_1@13988/index_1286_av-p.m3u8
+# 394) WXXV25 24/7 Mississippi
+394)
+link=http://api.new.livestream.com/accounts/22998687/events/6864865/live.m3u8
 use_cookies="no"
-chan_name="KNBC 4 News Los Angeles" ;;
-# 395) ABC 3 News Louisiana
-395) 
-link=http://ktbs-lh.akamaihd.net/i/KTBS_1069@111925/master.m3u8
+chan_name="WXXV25 24/7 Mississippi" ;; 
+# 395) 7 News (WHDH-TV) Boston
+395)
+link=http://bcoveliveios-i.akamaihd.net/hls/live/246496/4744899807001/livestream/master.m3u8
 use_cookies="no"
-chan_name="ABC 3 News (Louisiana)" ;;
-# 396) WPLG 10 News Miami
-396) 
-link=http://play-prod1.live.anvato.net/server/play/pns-wplg-dfp/master.m3u8
+chan_name="7 News (WHDH-TV) Boston" ;; 
+# 396) NBC News Channel 13 (WNYT-TV)
+396)
+link=http://api.new.livestream.com/accounts/12240447/events/3818578/live.m3u8
 use_cookies="no"
-chan_name="WPLG 10 News Miami" ;;
-# 397) WJXT News 4 Jacksonville
-397) 
-link=http://play-prod1.live.anvato.net/server/play/pns-wjxt-dfp/master.m3u8
+chan_name="NBC News Channel 13 WNYT-TV";;
+# 397) NBC2 South West Florida
+397)  
+keyword="Live"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/NBC2swfl/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
-chan_name="WJXT News 4 Jacksonville" ;;
+chan_name="NBC2 South West Florida" ;;  
 # 398)Fox News Talk
 398)
 link=http://fnurtmp-f.akamaihd.net/i/FNRADIOHDS_1@92141/master.m3u8
@@ -3734,121 +3777,131 @@ chan_name="Quran English Arabic" ;;
 link=http://dl.canaldelcongreso.gob.mx:1935/ccongreso/mp4:congreso2b.mp4/playlist.m3u8
 use_cookies="no"
 chan_name="Canal del Congreso Mexico Spanish" ;;
-# 525) NBC 6 South Florida (WTVJ-TV)
+# 525)  Kiss Radio 2 Taiwan 
 525)
-link=http://wtvjlive-f.akamaihd.net/i/wtvja1_1@19309/master.m3u8
-use_cookies="no"
-chan_name="NBC 6 South Florida WTVJ";;
-# 526) WXXV25 24/7 Mississippi
-526)
-link=http://api.new.livestream.com/accounts/22998687/events/6864865/live.m3u8
-use_cookies="no"
-chan_name="WXXV25 24/7 Mississippi" ;; 
-# 527) WBLZ Bangor Maine
-527)
-link=http://wlbz-lh.akamaihd.net/i/WLBZ_Live_1@27474/master.m3u8
-use_cookies="no"
-chan_name="WLBZ Bangor Maine" ;; 
-# 528) 7 News (WHDH-TV) Boston
-528)
-link=http://bcoveliveios-i.akamaihd.net/hls/live/246496/4744899807001/livestream/master.m3u8
-use_cookies="no"
-chan_name="7 News (WHDH-TV) Boston" ;; 
-# 529) NBC News Channel 13 (WNYT-TV)
-529)
-link=http://api.new.livestream.com/accounts/12240447/events/3818578/live.m3u8
-use_cookies="no"
-chan_name="NBC News Channel 13 WNYT-TV";;
-# 530)  Kiss Radio 2 Taiwan 
-530)
 keyword="南投廣播 FM99.7"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/kissradio999/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 use_cookies="no" 
 chan_name="Kiss Radio 2 Taiwan" ;; 
-# 531) NBC2 South West Florida
-531)  
-keyword="Live"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/NBC2swfl/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
-use_cookies="no"
-chan_name="NBC2 South West Florida" ;;  
-# 532) beIN Sports Arabic 1
-532)  
+# 526) beIN Sports Arabic 1
+526)  
 keyword="SPORTS"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/beinsports/videos/videos?&view=2" | grep "span" | grep "watch?v=" | head -n 1 | tail -n 1 | cut -d = -f 4 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="beIN Sports Channel 1" ;;  
-# 533) beIN Sports Arabic 2
-533)  
+# 527) beIN Sports Arabic 2
+527)  
 keyword="SPORTS"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/beinsports/videos/videos?&view=2" | grep "span" | grep "watch?v=" | head -n 2 | tail -n 1 | cut -d = -f 4 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="beIN Sports Channel 2" ;;  
-# 534) Flat Earth TV
-534)  
+# 528) Flat Earth TV
+528)  
 link=http://www.dailymotion.com/video/x5rhngc
 use_cookies="no"
 chan_name="Flat Earth TV" ;;  
-# 535) Fashion TV Europe
-535)  
+# 529) Fashion TV Europe
+529)  
 link=http://www.dailymotion.com/video/x3m6nld
 use_cookies="no"
 chan_name="Fashion TV Europe" ;; 
-# 536) CNEWS Live France
-536)  
+# 530) CNEWS Live France
+530)  
 link=http://www.dailymotion.com/video/x3b68jn
 use_cookies="no"
 chan_name="CNEWS Live France" ;; 
-# 537)  TVRO Canada MultiCultural Canada
-537)  
+# 531)  TVRO Canada MultiCultural Canada
+531)  
 link=http://www.dailymotion.com/video/x5puv8v
 use_cookies="no"
 chan_name="TVRO Canada MultiCultural Canada" ;; 
-# 538)  Mello TV English Jamaica
-538)  
+# 532)  Mello TV English Jamaica
+532)  
 link=http://mellotvnew.tulix.tv/live/smil:mellotv.smil/chunklist_w1010732594_b1128000_sleng.m3u8
 use_cookies="no"
 chan_name="Mello TV English Jamaica" ;; 
-# 539) Jasmin TV
-539) 
+# 533) Jasmin TV
+533) 
 link=http://109.71.162.112:1935/live/hd.jasminchannel.stream/PAZ_Chega_de_Guerras.m3u8 
 use_cookies="no"
 chan_name="Jasmin TV" ;;  
-# 540) Fashion 1 Spain
-540) 
+# 534) Fashion 1 Spain
+534) 
 link=http://www.dailymotion.com/video/x2t9nsf
 use_cookies="no"
 chan_name="Fashion 1 Spain" ;; 
-# 541) EuroNews Deutsch
-541) 
-keyword="Union" 
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsde/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-use_cookies="no"
-chan_name="EuroNews Deutsch" ;;
-# 542)  DW Deutsch Welle 
-542) 
+# 535)  DW Deutsch Welle 
+535) 
 keyword="DW"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/deutschewelle/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="DW Deutsch Welle";;
-# 543) STerkTV Zindi 
-543) 
+# 536) STerkTV Zindi 
+536) 
 keyword="STERKTV"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCryT-WzqeUhxKULlUAB8vVg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="STerk TV Zindi";;
-# 544) Ronahi TV Zindi 
-544) 
+# 537) Ronahi TV Zindi 
+537) 
 keyword="RonahiTV"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCmtlDLeUrnSviATaoHPWGnw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Ronahi TV Zindi";; 
-# 545) The Young Turks
-545)
+# 538) The Young Turks
+538)
 keyword="17"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/TheYoungTurks/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="TYT The Young Turks" ;; 
-
+# 539) KNBC 4 News (Los Angeles)
+539) 
+link=http://knbclive-f.akamaihd.net/i/knbca1_1@13988/index_1286_av-p.m3u8
+use_cookies="no"
+chan_name="KNBC 4 News Los Angeles" ;;
+# 540) ABC 3 News Louisiana
+540) 
+link=http://ktbs-lh.akamaihd.net/i/KTBS_1069@111925/master.m3u8
+use_cookies="no"
+chan_name="ABC 3 News (Louisiana)" ;;
+# 541) WPLG 10 News Miami
+541) 
+link=http://play-prod1.live.anvato.net/server/play/pns-wplg-dfp/master.m3u8
+use_cookies="no"
+chan_name="WPLG 10 News Miami" ;;
+# 542) WJXT News 4 Jacksonville
+542) 
+link=http://play-prod1.live.anvato.net/server/play/pns-wjxt-dfp/master.m3u8
+use_cookies="no"
+chan_name="WJXT News 4 Jacksonville" ;;
+# 543) NBC 6 South Florida (WTVJ-TV)
+543)
+link=http://wtvjlive-f.akamaihd.net/i/wtvja1_1@19309/master.m3u8
+use_cookies="no"
+chan_name="NBC 6 South Florida WTVJ";;
+# 544) WBLZ Bangor Maine
+544)
+link=http://wlbz-lh.akamaihd.net/i/WLBZ_Live_1@27474/master.m3u8
+use_cookies="no"
+chan_name="WLBZ Bangor Maine" ;; 
+# 545) Euronews Espanol
+545)  
+keyword="en directo"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
+use_cookies="no"
+chan_name="Euronews Espanol" ;;  
+# 546) Euronews Francais
+546) 
+keyword="euronews"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsfr/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
+use_cookies="no"
+chan_name="Euronews Francais" ;;     
+# 547) EuroNews Deutsch
+547) 
+keyword="Union" 
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsde/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+use_cookies="no"
+chan_name="EuroNews Deutsch" ;;
 
 # 540) Made in Cardiff UK
 # 540)  
@@ -3961,10 +4014,22 @@ input=$1
 case "$input" in
 q) echo "Type endtv to restart program. Bye."
 exit "$?" ;;
-m) channel_matrix
-echo "Please Select a Number corresponding to a YouTube Live Stream, press + to increment, - to decrement, n for the next menu, or q to quit:" ;;
-n) channel_matrix_2
-echo "Please Select a Number corresponding to a YouTube Live Stream, press + to increment, - to decrement, m for the main menu, or q to quit:" ;;
+s) 
+men_num="$men_num"
+channel_matrix_"$men_num"
+menu="s"
+echo "Please Select a Number corresponding to a Media Stream, press + to increment, - to decrement, n for the next menu, or q to quit:" ;;
+m)
+men_num=$(expr 0)
+channel_matrix_"$men_num"
+menu="s"
+echo "Please Select a Number corresponding to a Media Stream, press + to increment, - to decrement, n for the next menu, or q to quit:" ;;
+n) 
+men_num=$(expr "$men_num" + 1)
+men_num=$(expr "$men_num" % 4)
+channel_matrix_"$men_num"
+menu="s"
+echo "Please Select a Number corresponding to a Media Stream, press + to increment, - to decrement, m for the main menu, n for the next menu, or q to quit:" ;;
 esac
 }
 ######################################## MAIN PROGRAM #####################################################################
@@ -3993,7 +4058,8 @@ if [ "$uamode" == "on" ]
  fi
 
 # initialize menu
-menu="m"
+menu="s"
+men_num=0
 format="best"
 if [ "$1" != "" ]
 then
@@ -4002,7 +4068,7 @@ echo "$1"
 entry="$1" 
 elif [ "$1" == "" ]
 then
-channel_matrix
+channel_matrix_"$men_num"
 echo "Please Select a Number corresponding to a YouTube Live Stream:"
 read entry
 num="$entry"
