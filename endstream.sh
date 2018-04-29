@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 21, 2017
-# Version: 0.606
-# Revision Date: April 26, 2018
+# Version: 0.607
+# Revision Date: April 29, 2018
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -138,8 +138,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.606"
-rev_date="26/04/2018"
+version="0.607"
+rev_date="29/04/2018"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -5851,14 +5851,14 @@ clear
 menu_switch "$menu"
 echo "You were watching "$chan_name" on Channel "$num" "  
 chan_state="normal"
-format="best"
+format=""
 read entry
 else 
 clear
 menu_switch "$menu"
 chan_state="normal"
 menstat="no"
-format="best"
+format=""
 read entry
 fi
 }
