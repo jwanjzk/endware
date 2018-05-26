@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 21, 2017
-# Version: 0.610
-# Revision Date: May 22, 2018
+# Version: 0.612
+# Revision Date: May 26, 2018
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -138,8 +138,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.610"
-rev_date="22/05/2018"
+version="0.612"
+rev_date="26/05/2018"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -164,7 +164,7 @@ headmode="off"
 channel_matrix_0()
 { 
    echo "============================================================    "$product"  "$version"   ======================================================================"
-   echo "||      ENGLISH       ||     FRANCAIS      ||      ESPANOL     ||      ASIAN     ||     INDIAN      || URDU/FARSI/ARABIC || TR/GR/IT/DE/NL/MD/UA ||"
+   echo "||      ENGLISH       ||     FRANCAIS      ||      ESPANOL     ||      ASIAN     ||     INDIAN      || URDU/FARSI/ARABIC ||     TR/GR/IT/CH        ||"
    echo "======================================================================================================================================================="
    echo "1)SKY News London     41)France 24 FR      81)RT Espanol       121)CCTV 4 China  161)News 9 Bangalore*201)Aaj Tak PK      241)Karbarla IRAQ"    
    echo "2)BBC News London     42)BFM TV FR         82)DW Espanol       122)ECB 51 TW     162)CVR English      202)SAMAA PK        242)ANB Sat" 
@@ -212,7 +212,7 @@ channel_matrix_0()
 channel_matrix_1()	
 {
    echo "============================================================    "$product"  "$version"   ==================================================================="
-   echo "||   UA/RU/PH/ID     ||     AFRICA      ||    USA LOCAL NEWS   ||     EXTRA          ||    ENTERTAINMENT   ||    RELIGIOUS       ||    MIXED     ||"
+   echo "|| AT/DE/BE/NL/MD/RU/  +||     AFRICA      ||    USA LOCAL NEWS   ||     EXTRA          ||    ENTERTAINMENT   ||    RELIGIOUS       ||    MIXED     ||"
    echo "======================================================================================================================================================"
    echo "281)EnjoySt.Moritz CH 321)Channels 24 NG 361)RSBN Auburn USA    401)WSJ Live        441)MLB Network      481)Vatican Media     521)Vatican Media Eng"    
    echo "282)Musig24 TV CH     322)TVC News NG    362)News 12 Brooklyn   402)CNN Live 1      442)106.7 The Fan    482)EWTN Americas     522)DW Deutsch + **" 
@@ -236,20 +236,20 @@ channel_matrix_1()
    echo "300)Espresso UA       340)Africa24       380)NBC 11 Bay Area    420)QVC             460)KPOP Idol KR     500)Church Channel    540)HLUTTAW MM"  
    echo "301)News 1 UA         341)SIKKA Afrique  381)CBS 13 Stockton    421)TSC             461)Adult Swim       501)TBN               541)VietTV VN "
    echo "302)Ukraine 112       342)K24 Nairobi KE 382)KCAL 9 Los Angeles 422)CTV Live Event  462)Insight TV       502)God TV            542)VietSky USA "       
-   echo "303)Ukraine 5         343)ITV ZA         383)WXXV Mississippi   423)CPAC Senate CA  463)Yes TV           503)Amazing Facts     543)BSC 24 1 JP"  
-   echo "304)Euronews Russian  344)-------------  384)NBC 13 Albany NY   424)RUPTLY          464)Smile of a Child 504)It's Supernatural 544)BSC 24 2 JP"
-   echo "305)POCCNR 24         345)-------------  385)NBC 2 Florida      425)Made in Leeds   465)PJ Masks         505)Sheppard's Chapel 545)Earthquake 24"  
-   echo "306)RBC TV Russia     346)-------------  386)WCCB Charlotte     426)Made in Tyne    466)Talking Tom      506)IHOP              546)Arirang News TV"
-   echo "307)CGTN Russian      347)-------------  387)7 News Boston      427)Made in Cardiff 467)Talking Tom Mini 507)BVOVN             547)Arirang TV KR"
-   echo "308)Vesti FM Russia   348)-------------  388)ABC News 1         428)Saudi 2 English 468)Fashion Europe   508)3ABN              548)OnTV HK"
-   echo "309)Current Time VOA  349)-------------  389)ABC News 2         429)Bloomberg Aus   469)Fashion 1 TV ES  509)3ABN Latino       549)Planeta 2 RU"
-   echo "310)RTR Planeta       350)-------------  390)ABC News 3         430)Bloomberg USvnt 470)Jasmin TV USA    510)Salt and Light    550)Planeta 3 RU"    
-   echo "311)Perviy RU         351)-------------  391)ABC News 4         431)Bloomberg Pol   471)TYT USA          511)LLBN TV           551)919FM TV Trinidad"
-   echo "312)Music Box RU      352)-------------  392)ABC News 5         432)Bloomberg EUvnt 472)DMC Sports       512)Hillsong          552)EBS European Commission"
-   echo "313)MOCKBA 24 RU      353)-------------  393)ABC News 6         433)Bloomberg APvnt 473)Pitchoun         513)St. Mary's Coptic 553)EBS Plus" 
-   echo "314)1TV HD RU         354)-------------  394)ABC News 7         434)Jupiter Broad   474)NRJ Hits FR      514)Word of God Greek 554)UN Trustship"  
-   echo "315)Planeta 4 RU      355)-------------  395)ABC News 8         435)----------      475)Steven Universe  515)Heaven TV         555)UN EOSOC"
-   echo "316)Planeta 6 RU      356)-------------  396)ABC News 9         436)----------      476)Nature Vision    516)Powervision TV    556)----------"
+   echo "303)Ukraine 5         343)ITV ZA         383)WXXV Mississippi   423)CPAC Senate CA  463)Yes TV           503)Amazing Facts     543)ABHPTV Vietnamese"  
+   echo "304)Euronews Russian  344)-------------  384)NBC 13 Albany NY   424)RUPTLY          464)Smile of a Child 504)It's Supernatural 544)BSC 24 1 JP"
+   echo "305)POCCNR 24         345)-------------  385)NBC 2 Florida      425)Made in Leeds   465)PJ Masks         505)Sheppard's Chapel 545)BSC 24 2 JP"  
+   echo "306)RBC TV Russia     346)-------------  386)WCCB Charlotte     426)Made in Tyne    466)Talking Tom      506)IHOP              546)Earthquake 24"
+   echo "307)CGTN Russian      347)-------------  387)7 News Boston      427)Made in Cardiff 467)Talking Tom Mini 507)BVOVN             547)Arirang News TV"
+   echo "308)Vesti FM Russia   348)-------------  388)ABC News 1         428)Saudi 2 English 468)Fashion Europe   508)3ABN              548)Arirang TV KR"
+   echo "309)Current Time VOA  349)-------------  389)ABC News 2         429)Bloomberg Aus   469)Fashion 1 TV ES  509)3ABN Latino       549)OnTV HK"
+   echo "310)RTR Planeta       350)-------------  390)ABC News 3         430)Bloomberg USvnt 470)Jasmin TV USA    510)Salt and Light    550)Planeta 2 RU"    
+   echo "311)Perviy RU         351)-------------  391)ABC News 4         431)Bloomberg Pol   471)TYT USA          511)LLBN TV           551)Planeta 3 RU"
+   echo "312)Music Box RU      352)-------------  392)ABC News 5         432)Bloomberg EUvnt 472)DMC Sports       512)Hillsong          552)919FM TV Trinidad"
+   echo "313)MOCKBA 24 RU      353)-------------  393)ABC News 6         433)Bloomberg APvnt 473)Pitchoun         513)St. Mary's Coptic 553)EBS European Commission" 
+   echo "314)1TV HD RU         354)-------------  394)ABC News 7         434)Jupiter Broad   474)NRJ Hits FR      514)Word of God Greek 554)EBS Plus"  
+   echo "315)Planeta 4 RU      355)-------------  395)ABC News 8         435)----------      475)Steven Universe  515)Heaven TV         555)UN Trustship"
+   echo "316)Planeta 6 RU      356)-------------  396)ABC News 9         436)----------      476)Nature Vision    516)Powervision TV    556)UN EOSOC"
    echo "317)ТВ-TPEANEP RU     357)-------------  397)ABC News 10        437)PBS NewsHour    477)Pursuit Channel  517)KJV Bible         557)----------"
    echo "318)5 Live RU         358)-------------  398)KY3 IL USA         438)CBC The National478)Music Vox TV     518)Harbor Light      558)----------"	 
    echo "319)------------      359)-------------  399)KNBC 4 Los Angeles 439)AP Top Stories  479)H!T Music Channel519)JUCE TV           559)----------"
@@ -293,63 +293,63 @@ channel_matrix_2()
    echo "589)Euronews ES       629)MONARCA Hidalgo MX669)------------       709)DC Knowledge     749)Seattle Channel    789)WDIO Duluth        829)WWOR Secaucus"
    echo "590)Teleamazonas      630)Yuma CO           670)ACTION             710)DC Network       750)Southeastern       790)KHNL Honolulu      830)KSNT"    
    echo "591)Azteca Uno        631)Dominio MX        671)CNEWS FR           711)Escambia TV      751)Temple TV          791)WBNS Columbus      831)WANE Ft. Wayne"
-   echo "592)Azteca 7          632)Señal UNTREF      672)Antena Center      712)FiOS1New Jersey  752)Vienna HQ          792)WTTG Fox 5 DC      832)KTXS 12 ABC"
-   echo "593)Colosal TV 1      633)NRT 4 monclova    673)QVC Francais       713)FiOS1Long Island 753)TSTV               793)WJBK FOX 2 Detroit 833)Island TV" 
-   echo "594)Teleantioquia     634)Este Canal        674)France O           714)FiOS1HudsonValley754)Escambia           794)KSL NOW Salt Lake  834)KSNT Kansas"  
-   echo "595)WIPR Puerto Rico  635)Telecafé Bogota   675)Cstar              715)FOX 5 DC (WTTG)  755)CBS Sports         795)KSLA News 12       835)Emisora CO"
-   echo "596)Cosmovision TV BO 636)TVUNAM 20         676)TLM Lyon FR        716)Garland TV       756)WYCW Carolinas     796)WSFA 12 Montgomory 836)TV MONARCA MX "
-   echo "597)Acequia Mendoza AR637)EVTV Miami        677)SYTRAL Rhone FR    717)Greenbelt TV     757)FOX 10 News        797)Fox 8 Cleveland    837)KMIZ Missouri "
-   echo "598)La Mega Bogotá CO 638)------------      678)Bidtween FR        718)House Represent  758)------------       798)KELO Keloland      838)KFDA Amarillo TX"	
-   echo "599)TV5 Argentina     639)------------      679)MABI CA            719)KRBC-TV          759)------------       799)HU16 Harding       839)KZTVCorpusChristi TX"
-   echo "600)TV UNAM MX        640)------------      680)Vatican Media FR   720)KBVR TV          760)------------       800)KTVK 3TV AZ        840)Tampa TV FL"
+   echo "592)Azteca 7          632)Señal UNTREF      672)QVC Francais       712)FiOS1New Jersey  752)Vienna HQ          792)WTTG Fox 5 DC      832)KTXS 12 ABC"
+   echo "593)Colosal TV 1      633)NRT 4 monclova    673)TLM Lyon FR        713)FiOS1Long Island 753)TSTV               793)WJBK FOX 2 Detroit 833)Island TV" 
+   echo "594)Teleantioquia     634)Este Canal        674)SYTRAL Rhone FR    714)FiOS1HudsonValley754)Escambia           794)KSL NOW Salt Lake  834)KSNT Kansas"  
+   echo "595)WIPR Puerto Rico  635)Telecafé Bogota   675)Bidtween FR        715)FOX 5 DC (WTTG)  755)CBS Sports         795)KSLA News 12       835)KMIZ Missouri"
+   echo "596)Cosmovision TV BO 636)TVUNAM 20         676)MABI CA            716)Garland TV       756)WYCW Carolinas     796)WSFA 12 Montgomory 836)KFDA Amarillo TX"
+   echo "597)Acequia Mendoza AR637)EVTV Miami        677)Vatican Media FR   717)Greenbelt TV     757)FOX 10 News        797)Fox 8 Cleveland    837)KZTVCorpusChristi TX "
+   echo "598)La Mega Bogotá CO 638)Enlacetv Espanol  678)TV7 FR             718)House Represent  758)------------       798)KELO Keloland      838)Tampa TV FL"	
+   echo "599)TV5 Argentina     639)------------      679)France O           719)KRBC-TV          759)------------       799)HU16 Harding       839)WMGT Macon Georgia "
+   echo "600)TV UNAM MX        640)------------      680)-------------      720)KBVR TV          760)------------       800)KTVK 3TV AZ        840)44 Bolivar MI "
    echo "==================================================================================================================================================="
 }	                     
                        
 channel_matrix_3()	
 {
    echo "============================================================    "$product"  "$version"   ==================================================================="
-   echo "||  LiveStream 3        ||    LiveStream 4   ||   LiveStream 5     ||   LiveStream 6       ||  LiveStream 7            ||    LiveStream 8      ||   LiveStream 9  ||"
+   echo "||  LiveStream 3        ||    LiveStream 4   ||   LiveStream 5        ||   LiveStream 6       ||  LiveStream 7            ||    LiveStream 8      ||   LiveStream 9  ||"
    echo "====================================================================================================================================================================="
-   echo "841)WMGT Macon Georgia 881)KIFI ABC 8 Idaho   921)KQTV 2 St.Joseph     961)WFIE NBC14Evansville 1001Dashmesh Culture       1041)Granbury Media    1081)------------ "    
-   echo "842)44 Bolivar MI      882)Fox26 KNPN SJoseph 922)CGTN America         962)WTXF FOX29 Philli    1002)Glory to God          1042)ETSU Fine Arts    1082)------------" 
-   echo "843)WAND Decatur IL    883)KAUZ CBS6 Winters  923)KVIA ABC-7 El Paso 1 963)WFLD Fox32 Chicago   1003)BethelTV Bethel       1043)WDFL 18 SC        1083)------------"  
-   echo "844)KOAAColoradoSpring 884)KXXV ABC 25 Waco   924)KCBD NBC 11 Lubbock  964)KTVK 3 Pheonix       1004)WYKE TV 47 Hormosassa 1044)MCAET Salinas     1084)------------"             
-   echo "845)Enid OK            885)KATC Lafayette     925)WALB NBC 10 Albany   965)KRIV FOX26 Houston   1005)St. Helena Chapel     1045)BlabTV            1085)------------"  
-   echo "846)ThinkTech Hawaii   886)WFLD Fox32 Chicago 926)KFVE 9 Honolulu      966)WVUE FOX8 NewOrleans 1006)St Patrick's Dumbarton1046)Essex County      1086)------------ "  
-   echo "847)WFLX FOX 29        887)KPLC NBC7LkCharles 927)WWBT NBC12 Richmond  967)KPTV FOX12 Portland  1007)VTNTV VICTORY         1047)CNPTV Caribbean   1087)------------"
-   echo "848)WPS-TV Wichita     888)KOIN 6 Portland    928)WJTV CBS12 Jackson   968)KIRO Seattle         1008)MNN Channel 3 New York1048)LOBO STATION      1088)------------ "
-   echo "849)KAAL Rochester MN  889)WCCB Charlotte     929)WWLP 22 Springfield  969)KUSI San Diego       1009)TMN WORD TV           1049)Maricopa MCTV     1089)------------"
-   echo "850)KRCR Redding CA    890)WDAM 7 Hattiesburg 930)CBS 42 Birmingham    970)Fox 8 Cleveland      1010)Parkside Radio        1050)NRT 4 monclova    1090)------------ "
-   echo "851)KION Salinas CA    891)WLOX Mississippi   931)WNYT NBC13 Sandusky  971)KSLA CBS12Shreveport 1011)FGTV Jacksonville     1051)ortonville        1091)------------"
-   echo "852)KMVP Phoenix AZ    892)WTVM Columbus      932)KEYT ABC3 StBarbara  972)KELO CBS Sioux Falls 1012)HJTV Healing Jesus    1052)CharmTV Baltimore 1092)------------"
-   echo "853)KTAR Phoenix AZ    893)WRBL CBS3 Columbus 933)WLBT FOX40 Jackson   973)KSL Salt Lake City   1013)ANB TV                1053)KVVB CH.33        1093)------------"
-   echo "854)WPSD Paducah KT    894)WJHL CBS11 Johnson 934)WSMV NBC4 Nashville  974)WTTG Fox5 Wash DC    1014)Apocalypse APTV       1054)WLTH AM 1370      1094)------------ "
-   echo "855)KVRR Fargo ND      895)KCTV CBS5 Kansas   935)DayTraderRockStar    975)WCSC CBS5 Charleston 1015)Marytown Chapel       1055)KCOH TV Houston   1095)------------ "
-   echo "856)KDLT SiouxFallsSD  896)WTHI 10TerreHaute  936)WALA FOX10 Mobile    976)WBNS 10 Columbus     1016)Enlacetv Espanol      1056)Lake Tahoe TV     1096)------------"
-   echo "857)GovTV Watertown SD 897)WBBJ ABC7 Tennesee 937)KMOV CBS4 St.Louis   977)WJBK FOX2 Detroit    1017)VSiN Vegas Stats      1057)KVZK A. Samoa     1097)------------"
-   echo "858)KFDXWitchita Falls 898)KTVZ 21 BendOregon 938)Lex & Terry Lufkin   978)WAFB CBS9 BatonRouge 1018)Guaranty Media        1058)TVUNAM 20         1098)------------"	
-   echo "859)Freeway Cams TX    899)KEZI ABC9 Eugene   939)KVOA NBC4 Tuscon     979)WFMZ 69 TrafficAllen 1019)ESPN 97.5 Houston     1059)Florida Gaming    1099)------------ "
-   echo "860)KQDS Duluth MN     900)WDEF 12Chattanooga 940)Mike Malloy Show     980)KY3 Springfield      1020)Football Hall of Fame 1060)Kidd Kraddick     1100)------------ "  
-   echo "861)KOLR Springfield MO901)KCOY CBS12 StMaria 941)KHSL CBS12 Redding   981)710 ESPN Seattle     1021)Lance Hope RSL        1061)TalenuLuandaAngola1101)------------ "
-   echo "862)WROC Rochester NY  902)WTOL CBS11 Toledo  942)KSTP ABC5 St.Paul    982)NYXT Manhattan       1022)DiTV Canale 89        1062)RMG-TV Cleavland  1102)------------ "       
-   echo "863)WBRE WilkesBarrePA 903)WIS NBC10 Columbia 943)KSWO ABC7 Winters    983)KingCountyPreston    1023)XBTV Rosecroft        1063)Luigi PellegriniIT1103)------------ "  
-   echo "864)Cumulus NYC        904)WMC NBC5 Memphis   944)WBTV CBS3 Charlotte  984)Westerville.TV       1024)Park City PCTV        1064)------------      1104)------------ "
-   echo "865)KTVQ Lexington KY  905)HTV10 Houma        945)KPHO CBS5 Pheonix    985)Kingdom Access       1025)WHLT 12 Whitehall     1065)------------      1105)------------ "  
-   echo "866)WFFT FOX 55 IN     906)WRIC ABC8 Peters   946)WDIO ABC 13 Duluth   986)KCLV FOX2 Las Vegas  1026)OUBN - Oakwood        1066)------------      1106)------------ "
-   echo "867)WAAY News ABC 31   907)Western Chicopee   947)KMSP FOX9Minneapolis 987)Plaistow Access      1027)Nasdaq Bell           1067)------------      1107)------------ "
-   echo "868)SPC-TV S.Petrberg  908)KIMT 3 Mason       948)KSBY NBC6 St Barbara 988)Topeka City Kansas   1028)AAA Guayama           1068)-------------     1108)------------"
-   echo "869)WWTV 9             909)KXAN NBC Austin    949)KOLD 13 Tucson       989)TeleBahia StDomingo  1029)AWCATV - Education    1069)------------      1109)------------ "
-   echo "870)WPHL TV ABC 6      910)WKRG CBS5 Mobile   950)KLTV ABC7 Tyler      990)Shelby County        1030)Branson Visitor       1070)------------      1110)------------ "    
-   echo "871)WCCB Charlotte     911)Lex 18 Lexington   951)WBRC FOX6 Birmingham 991)Provincetown         1031)TMN Hays Kansas       1071)------------      1111)------------ "
-   echo "872)WCBD NBC2 Charles  912)WBNS 10 Radar      952)K57 Fox 6 Guam       992)MNN-FSTV Manhattan   1032)MNN Channel 5         1072)------------      1112)------------ "
-   echo "873)WSAV NBC3 Savannah 913)WBNS 10 Columbus   953)WTVT FOX13 Tampa     993)Brunswick TV3        1033)TV39 WIVM Canton      1073)------------      1113)------------" 
-   echo "874)WSPA CBS7 Spartan  914)KYMA NBC11 Yuma    954)WFLA NBC8 Tampa      994)Bermuda Government   1034)EPlusTV6 Jackson      1074)------------      1114)------------ "  
-   echo "875)WCMH NBC4 Columbus 915)WOIO CBS19Clevland 955)WTNH 8 New Haven     995)Freedom Solar TV     1035)St.CloudTimes UTVS    1075)------------      1115)------------"
-   echo "876)CBS 17 Rahliegh    916)KESQ Palm Springs  956)WMBF Myrtle Beach    996)Shalom Media KIDS    1036)Milford TV            1076)------------      1116)------------"
-   echo "877)Channel5+Las Vegas 917)KRDO Colorado Spr  957)WSFA NBC12Montgomery 997)Faith LutheranChurch 1037)EKBTV Pikeville       1077)------------      1117)------------ "
-   echo "878)KSNW NBC3 Witchita 918)WFMZ 69 Allen Town 958)WNYW Fox5 New York   998)Whole Life Ministry  1038)Milford Education     1078)------------      1118)------------ "	
-   echo "879)WPRIFox12Providen  919)WTOC 11 Savannah   959)KVVU FOX5 Las Vegas  999)Second Presbyterian  1039)Native Media          1079)------------      1119)------------ "
-   echo "880)WWAY Willmington   920)WGCL CBS46 Atlanta 960)KHON CBS2 Ala Mona  1000)St. Catharine        1040)Evangel EUTV          1080)------------      1120)------------ "
+   echo "841)WAND Decatur IL    881)KAUZ CBS6 Winters  921)KVIA ABC-7 El Paso 1 961)WFLD Fox32 Chicago   1001)St Patrick's Dumbarton 1041)Maricopa MCTV     1081)------------ "    
+   echo "842)KOAAColoradoSpring 882)KXXV ABC 25 Waco   922)KCBD NBC 11 Lubbock  962)KTVK 3 Pheonix       1002)VTNTV VICTORY          1042)CharmTV Baltimore 1082)------------" 
+   echo "843)Enid OK            883)KATC Lafayette     923)WALB NBC 10 Albany   963)KRIV FOX26 Houston   1003)MNN Channel 3 New York 1043)KVVB CH.33        1083)------------"  
+   echo "844)ThinkTech Hawaii   884)WFLD Fox32 Chicago 924)KFVE 9 Honolulu      964)WVUE FOX8 NewOrleans 1004)TMN WORD TV            1044)WLTH AM 1370      1084)------------"             
+   echo "845)WFLX FOX 29        885)KPLC NBC7LkCharles 925)WWBT NBC12 Richmond  965)KPTV FOX12 Portland  1005)Parkside Radio         1045)KCOH TV Houston   1085)------------"  
+   echo "846)WPS-TV Wichita     886)KOIN 6 Portland    926)WJTV CBS12 Jackson   966)KIRO Seattle         1006)FGTV Jacksonville      1046)Lake Tahoe TV     1086)------------ "  
+   echo "847)KAAL Rochester MN  887)WCCB Charlotte     927)WWLP 22 Springfield  967)KUSI San Diego       1007)HJTV Healing Jesus     1047)KVZK A. Samoa     1087)------------"
+   echo "848)KRCR Redding CA    888)WDAM 7 Hattiesburg 928)CBS 42 Birmingham    968)Fox 8 Cleveland      1008)Apocalypse APTV        1048)Florida Gaming    1088)------------ "
+   echo "849)KION Salinas CA    889)WLOX Mississippi   929)WNYT NBC13 Sandusky  969)KSLA CBS12Shreveport 1009)Marytown Chapel        1049)Kidd Kraddick     1089)------------"
+   echo "850)KMVP Phoenix AZ    890)WTVM Columbus      930)KEYT ABC3 StBarbara  970)KELO CBS Sioux Falls 1010)ESPN 97.5 Houston      1050)RMG-TV Cleavland  1090)------------ "
+   echo "851)KTAR Phoenix AZ    891)WRBL CBS3 Columbus 931)WLBT FOX40 Jackson   971)KSL Salt Lake City   1011)Football Hall of Fame  1051)WFSB 3 Hartford   1091)------------"
+   echo "852)WPSD Paducah KT    892)WJHL CBS11 Johnson 932)WSMV NBC4 Nashville  972)WTTG Fox5 Wash DC    1012)Lance Hope RSL         1052)ICOinvestor       1092)------------"
+   echo "853)KVRR Fargo ND      893)KCTV CBS5 Kansas   933)DayTraderRockStar    973)WCSC CBS5 Charleston 1013)XBTV Rosecroft         1053)WISH8 Indianapolis1093)------------"
+   echo "854)KDLT SiouxFallsSD  894)WTHI 10TerreHaute  934)WALA FOX10 Mobile    974)WBNS 10 Columbus     1014)VSiN Vegas Stats       1054)Luigi PellegriniIT1094)------------ "
+   echo "855)GovTV Watertown SD 895)WBBJ ABC7 Tennesee 935)KMOV CBS4 St.Louis   975)WJBK FOX2 Detroit    1015)Guaranty Media         1055)------------      1095)------------ "
+   echo "856)KFDXWitchita Falls 896)KTVZ 21 BendOregon 936)Lex & Terry Lufkin   976)WAFB CBS9 BatonRouge 1016)Park City PCTV         1056)------------      1096)------------"
+   echo "857)Freeway Cams TX    897)KEZI ABC9 Eugene   937)KVOA NBC4 Tuscon     977)WFMZ 69 TrafficAllen 1017)WHLT 12 Whitehall      1057)------------      1097)------------"
+   echo "858)KQDS Duluth MN     898)WDEF 12Chattanooga 938)Mike Malloy Show     978)KY3 Springfield      1018)OUBN - Oakwood         1058)------------      1098)------------"	
+   echo "859)KOLR Springfield MO899)KCOY CBS12 StMaria 939)KHSL CBS12 Redding   979)710 ESPN Seattle     1019)Nasdaq Bell            1059)------------      1099)------------ "
+   echo "860)WROC Rochester NY  900)WTOL CBS11 Toledo  940)KSTP ABC5 St.Paul    980)NYXT Manhattan       1020)AAA Guayama            1060)------------      1100)------------ "  
+   echo "861)WBRE WilkesBarrePA 901)WIS NBC10 Columbia 941)KSWO ABC7 Winters    981)KingCountyPreston    1021)AWCATV - Education     1061)------------      1101)------------ "
+   echo "862)Cumulus NYC        902)WMC NBC5 Memphis   942)WBTV CBS3 Charlotte  982)Westerville.TV       1022)Branson Visitor        1062)------------      1102)------------ "       
+   echo "863)KTVQ Lexington KY  903)HTV10 Houma        943)KPHO CBS5 Pheonix    983)Kingdom Access       1023)TMN Hays Kansas        1063)------------      1103)------------ "  
+   echo "864)WFFT FOX 55 IN     904)WRIC ABC8 Peters   944)WDIO ABC 13 Duluth   984)KCLV FOX2 Las Vegas  1024)MNN Channel 5          1064)------------      1104)------------ "
+   echo "865)WAAY News ABC 31   905)Western Chicopee   945)KMSP FOX9Minneapolis 985)Plaistow Access      1025)TV39 WIVM Canton       1065)------------      1105)------------ "  
+   echo "866)SPC-TV S.Petrberg  906)KIMT 3 Mason       946)KSBY NBC6 St Barbara 986)Topeka City Kansas   1026)EPlusTV6 Jackson       1066)------------      1106)------------ "
+   echo "867)WWTV 9             907)KXAN NBC Austin    947)KOLD 13 Tucson       987)Shelby County        1027)St.CloudTimes UTVS     1067)------------      1107)------------ "
+   echo "868)WPHL TV ABC 6      908)WKRG CBS5 Mobile   948)KLTV ABC7 Tyler      988)Provincetown         1028)Milford TV             1068)-------------     1108)------------"
+   echo "869)WCCB Charlotte     909)Lex 18 Lexington   949)WBRC FOX6 Birmingham 989)MNN-FSTV Manhattan   1029)EKBTV Pikeville        1069)------------      1109)------------ "
+   echo "870)WCBD NBC2 Charles  910)WBNS 10 Radar      950)K57 Fox 6 Guam       990)Brunswick TV3        1030)Milford Education      1070)------------      1110)------------ "    
+   echo "871)WSAV NBC3 Savannah 911)WBNS 10 Columbus   951)WTVT FOX13 Tampa     991)Bermuda Government   1031)Native Media           1071)------------      1111)------------ "
+   echo "872)WSPA CBS7 Spartan  912)KYMA NBC11 Yuma    952)WFLA NBC8 Tampa      992)Freedom Solar TV     1032)Evangel EUTV           1072)------------      1112)------------ "
+   echo "873)WCMH NBC4 Columbus 913)WOIO CBS19Clevland 953)WTNH 8 New Haven     993)Shalom Media KIDS    1033)Granbury Media         1073)------------      1113)------------" 
+   echo "874)CBS 17 Rahliegh    914)KESQ Palm Springs  954)WMBF Myrtle Beach    994)Faith LutheranChurch 1034)ETSU Fine Arts         1074)------------      1114)------------ "  
+   echo "875)Channel5+Las Vegas 915)KRDO Colorado Spr  955)WSFA NBC12Montgomery 995)Whole Life Ministry  1035)WDFL 18 SC             1075)------------      1115)------------"
+   echo "876)KSNW NBC3 Witchita 916)WFMZ 69 Allen Town 956)WNYW Fox5 New York   996)Second Presbyterian  1036)MCAET Salinas          1076)------------      1116)------------"
+   echo "877)WPRIFox12Providen  917)WTOC 11 Savannah   957)KVVU FOX5 Las Vegas  997)St. Catharine        1037)BlabTV                 1077)------------      1117)------------ "
+   echo "878)WWAY Willmington   918)WGCL CBS46 Atlanta 958)KHON CBS2 Ala Mona   998)Glory to God         1038)Essex County           1078)------------      1118)------------ "	
+   echo "879)KIFI ABC 8 Idaho   919)KQTV 2 St.Joseph   959)WFIE NBC14Evansville 999)WYKE TV 47 Hormosassa1039)CNPTV Caribbean        1079)------------      1119)------------ "
+   echo "880)Fox26 KNPN SJoseph 920)CGTN America       960)WTXF FOX29 Philli    1000)St. Helena Chapel   1040)LOBO STATION           1080)------------      1120)------------ "
    echo "================================================================================================================================================================="
 }              	         
                     
@@ -4162,72 +4162,76 @@ chan_name="VietTV VN" ;;
 link="https://livestream.com/accounts/27136431/events/8142772"
 use_cookies="no"
 chan_name="Viet Sky TV Anaheim California" ;;
-
+# 544) ABHPTV Daily Broadcast Vietnamese  An Bình Hạnh Phúc
+544)
+link="https://livestream.com/accounts/13311218/events/7250967"
+use_cookies="no"
+chan_name="ABHPTV Daily Broadcast An Bình Hạnh Phúc Vietnamese " ;;
 #####################################
-# 544) BSC 24 1
-544) 
+# 545) BSC 24 1
+545) 
 keyword="BSC24-第1"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/bousaishare/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="BSC 24 1" ;; 
-# 545) BSC 24 2
-545) 
+# 546) BSC 24 2
+546) 
 keyword="BSC24-第2"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCeEkbpBLgTEHy9NP-JHnPYQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="BSC 24 2" ;; 
-# 546) Earthquake 24  
-546) 
+# 547) Earthquake 24  
+547) 
 keyword="地震監視・24時間LIVE" 
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCmw7DsSCQzRcRG6-SHE_ksg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Earthquake 24" ;; 
-# 547) Arirang News 
-547) 
+# 548) Arirang News 
+548) 
 keyword="Arirang TV"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/arirangnews/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Arirang News TV" ;; 
-# 548) Arirang TV Korean 
-548) 
+# 549) Arirang TV Korean 
+549) 
 keyword="Arirang TV"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/arirangkorean/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Arirang TV Korean" ;; 
-# 549) OnTV Hong Kong
-549) 
+# 550) OnTV Hong Kong
+550) 
 keyword="東網直播"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCZ79ABUb7OO4iMiNK2QPM7g/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="OnTV Hong Kong";;
-# 550) Planeta Channel 2 Russia
-550)
+# 551) Planeta Channel 2 Russia
+551)
 link=http://wse.planeta-online.tv:1935/live/channel_2/chunklist.m3u8
 use_cookies="no"
 chan_name="TBTYP TV Planeta Channel 2 Russia" ;;
-# 551) Planeta Channel 3 Russia
-551)
+# 552) Planeta Channel 3 Russia
+552)
 link=http://wse.planeta-online.tv:1935/live/channel_3/chunklist.m3u8
 use_cookies="no"
 chan_name="Planeta Channel 3 Russia" ;;
-## 552) 919 FM TV Trinidad 
-552) 
+## 553) 919 FM TV Trinidad 
+553) 
 keyword="919 fm"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCD-Z-JAX2s3mUgs0rOmZFKQ/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="919 FM TV Trinidad" ;; 
-# 553) EBS European Commision
-553)
+# 554) EBS European Commision
+554)
 link=https://ott.ec.streamcloud.be/live/disk1/EBS/hls_or/EBS-audio_AACL_qaa_66400_201=66400-video=800000.m3u8
 use_cookies="no"
 chan_name="EBS European Commision" ;;
-# 554) EBS European Commision
-554)
+# 555) EBS European Commision
+555)
 link=https://ott.ec.streamcloud.be/live/disk1/EBSplus/hls_or/EBSplus-audio_AACL_qaa_66400_401=66400-video=800000.m3u8
 use_cookies="no"
 chan_name="EBS Plus European Commision" ;;
-# 555) United Nations UN Trustship Chamber
-555) 
+# 556) United Nations UN Trustship Chamber
+556) 
 keyword="LIVE"
 #link=https://players.brightcove.net/1362235914001/B1J3DDQJf_default/index.html?videoId=5689257377001
 ##Trustship Chamber
@@ -4237,8 +4241,8 @@ link=https://players.brightcove.net/1362235914001/B1J3DDQJf_default/index.html?v
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/unitednations/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="United Nations UN Trustship Chamber" ;;  
-# 556) United Nations UN ESOSOC Chamber
-556) 
+# 557) United Nations UN ESOSOC Chamber
+557) 
 keyword="LIVE"
 #link=https://players.brightcove.net/1362235914001/B1J3DDQJf_default/index.html?videoId=5689257377001
 ##Trustship Chamber
@@ -4672,8 +4676,11 @@ keyword="EVTV"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/elvenezolanotv/videos?view=2&flow=grid" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="EVTV Miami" ;; 
-
-# 638)
+# 638)Enlacetv Espanol Irving Texas 
+638)
+link="https://livestream.com/accounts/2675843/enlace"
+use_cookies="no"
+chan_name="Enlacetv Espanol Irving Texas" ;;
 # 639)
 # 640)
 
@@ -4816,23 +4823,8 @@ chan_name="Rede Super Belo Horizonte BR" ;;
 link="https://livestream.com/accounts/16991778/NoAr"
 use_cookies="no"
 chan_name="SescTV Sao Paulo Brasil" ;;
-# 666) Rede de Comunicação Miramar TV Miramar Brasil
-666)
-link="https://livestream.com/accounts/21076186/events/6180705"
-use_cookies="no"
-chan_name="Rede de Comunicação Miramar TV Miramar Brasil" ;;
-# 667) Rede Super Belo Horizonte Brasil 
-667)
-link="https://livestream.com/accounts/10205943/events/3429501"
-use_cookies="no"
-chan_name="Rede Super Belo Horizonte Brasil" ;;
-# 668) Talenu TV Luanda Angola Portuguese  
-668)
-link="https://livestream.com/accounts/1181452/events/5141181"
-use_cookies="no"
-chan_name="Talenu TV Luanda Angola Portuguese " ;;
-# 669) Vatican Media
-669)  
+# 666) Vatican Media
+666)  
 keyword="Live"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCGYSq4b4DXmtK4jyq6r-FYg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
@@ -4858,40 +4850,35 @@ use_cookies="no"
 #format=hls-380
 #format=hls-240
 chan_name="CNEWS France" ;;
-# 672) Antena Centre BE
-672)
-link=http://vm109.imust.org:1935/live/livestream/HasBahCa.m3u8 
-use_cookies="no"
-chan_name="Antena Centre BE" ;;
-## 673)QVC Francais
-673) 
+## 672)QVC Francais
+672) 
 keyword="en direct"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCUgix0XhGdH0AThuPG-ALMA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="QVC Francais" ;;  
-# 674) TLM Lyon Metro
-674) 
+# 673) TLM Lyon Metro
+673) 
 keyword="TLM"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/telelyonmetropole/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 chan_name="TLM Television Lyon Metro" ;;
-# 675)SYTRAL Rhone FR
-675) 
+# 674)SYTRAL Rhone FR
+674) 
 keyword="DIRECT"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/SytralTCL/videos?view=2&flow=grid" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 chan_name="SYTRAL Rhone FR" ;;
-# 676) Bidtween La chaîne TV des Enchères FR
-676)
+# 675) Bidtween La chaîne TV des Enchères FR
+675)
 link="https://livestream.com/accounts/25334545/events/7803598"
 use_cookies="no"
 chan_name="Bidtween La chaîne TV des Enchères FR" ;;
-# 677) MABI TV Canada
-677) 
+# 676) MABI TV Canada
+676) 
 keyword="en direct"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCC1LyPxWz4t2PGfIr2ETwPw/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )" 
 use_cookies="no"  
 chan_name="MABI TV Canada" ;;
-# 678) Vatican Media  
-678) 
+# 677) Vatican Media  
+677) 
 keyword="Live"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/vaticanfr/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"
 use_cookies="no"
@@ -5458,359 +5445,358 @@ chan_name="Emmanuel TV" ;;
 link="https://livestream.com/accounts/25038049/events/7551704"
 use_cookies="no"
 chan_name="Shalom World Australia" ;;
-# 788) WDIO Duluth Minnesota
-788)
+# 789) WDIO Duluth Minnesota
+789)
 link="https://livestream.com/accounts/12241516/live"
 use_cookies="no"
 chan_name="WDIO Duluth Minnesota" ;;
-# 789) KHNL Honolulu Hawaii News Now
-789)
+# 790) KHNL Honolulu Hawaii News Now
+790)
 link="https://livestream.com/accounts/12139043/live"
 use_cookies="no"
 chan_name="KHNL Honolulu Hawaii News Now" ;;
-# 790) WBNS Columbus OHIO USA
-790)
+# 791) WBNS Columbus OHIO USA
+791)
 link="https://livestream.com/accounts/18624165/live"
 use_cookies="no"
 chan_name="WBNS Columbus OHIO USA" ;;
-# 791) WTTG Washington DC Fox 5 Washington DC USA
-791)
+# 792) WTTG Washington DC Fox 5 Washington DC USA
+792)
 link="https://livestream.com/accounts/2363281/live"
 use_cookies="no"
 chan_name="WTTG Washington DC Fox 5 Washington DC USA" ;;
-# 792) WJBK FOX 2 Detroit Michigan USA 
-792)
+# 793) WJBK FOX 2 Detroit Michigan USA 
+793)
 link="https://livestream.com/accounts/6396566/live"
 use_cookies="no"
 chan_name="WJBK FOX 2 Detroit Michigan USA" ;;
-# 793) KSL NOW Salt Lake City Utah USA 
-793)
+# 794) KSL NOW Salt Lake City Utah USA 
+794)
 link="https://livestream.com/accounts/22711876/live"
 use_cookies="no"
 chan_name="KSL NOW Salt Lake City Utah USA " ;;
-# 794)  KSLA News 12 Shreveport Louisiana USA 
-794)
+# 795)  KSLA News 12 Shreveport Louisiana USA 
+795)
 link="https://livestream.com/KSLA/live"
 use_cookies="no"
 chan_name="KSLA News 12 Shreveport Louisianna USA  " ;;
-# 795)  WSFA 12 Montgomory Alabama USA 
-795)
+# 796)  WSFA 12 Montgomory Alabama USA 
+796)
 link="https://livestream.com/accounts/11981705/live"
 use_cookies="no"
 chan_name="WSFA 12 Montgomory Alabama USA" ;;
-# 796)  Fox 8 Cleveland Ohio USA 
-796)
+# 797)  Fox 8 Cleveland Ohio USA 
+797)
 link="https://livestream.com/accounts/57501/live"
 use_cookies="no"
 chan_name="Fox 8 Cleveland Ohio USA" ;;
-# 797) KELO Live Keloland USA 
-797)
+# 798) KELO Live Keloland USA 
+798)
 link="https://livestream.com/kelo/live"
 use_cookies="no"
 chan_name="KELO Live Keloland USA" ;;
-# 798)HU16 Harding Sercy Arkansas  USA
-798)
+# 799)HU16 Harding Sercy Arkansas  USA
+799)
 link="https://livestream.com/accounts/8522446/live"
 use_cookies="no"
 chan_name="HU16 Harding Sercy Arkansas  USA" ;;
-# 799) KTVK 3TV Arizona USA
-799)
+# 800) KTVK 3TV Arizona USA
+800)
 link="https://livestream.com/accounts/12643960/live"
 use_cookies="no"
 chan_name="KTVK 3TV Arizona USA" ;;
-# 800) FOX 26 News Houston USA
-800)
+# 801) FOX 26 News Houston USA
+801)
 link="https://livestream.com/accounts/6396012/live"
 use_cookies="no"
 chan_name="FOX 26 News Houston USA" ;;
-# 801) WAFB 9 CBSN Baton Rouge Louisiana USA
-801)
+# 802) WAFB 9 CBSN Baton Rouge Louisiana USA
+802)
 link="https://livestream.com/accounts/11595706/live"
 use_cookies="no"
 chan_name="WAFB 9 CBSN Baton Rouge Louisiana USA" ;;
-# 802) WCSC Charleston South Carolina USA
-802)
+# 803) WCSC Charleston South Carolina USA
+803)
 link="https://livestream.com/accounts/11016888/live"
 use_cookies="no"
 chan_name="WCSC Charleston South Carolina USA" ;;
-# 803) WTXF FOX 29 News Philadelphia USA
-803)
+# 804) WTXF FOX 29 News Philadelphia USA
+804)
 link="https://livestream.com/accounts/6370754/live"
 use_cookies="no"
 chan_name="WTXF FOX 29 News Philadelphia USA" ;;
-# 804) WFLA NBC 8 Tampa Bay Florida USA
-804)
+# 805) WFLA NBC 8 Tampa Bay Florida USA
+805)
 link="https://livestream.com/accounts/6140981/live"
 use_cookies="no"
 chan_name="WFLA NBC 8 Tampa Bay Florida USA" ;;
-# 805)  WFIE NBC 14 USA
-805)
+# 806)  WFIE NBC 14 USA
+806)
 link="https://livestream.com/accounts/11981465/live"
 use_cookies="no"
 chan_name="WFIE NBC 14 USA" ;;
-# 806)  KOIN CBS 6 Portland Oregon USA
-806)
+# 807)  KOIN CBS 6 Portland Oregon USA
+807)
 link="https://livestream.com/accounts/1864610/live"
 use_cookies="no"
 chan_name="KOIN CBS 6 Portland Oregon USA" ;;
-# 807)  WTVT / FOX 13 Tampa Bay USA
-807)
+# 808)  WTVT / FOX 13 Tampa Bay USA
+808)
 link="https://livestream.com/accounts/6180769/live"
 use_cookies="no"
 chan_name="WTVT / FOX 13 Tampa Bay USA" ;;
-# 808)  KUSI 24/7 San Diego California USA
-808)
+# 809)  KUSI 24/7 San Diego California USA
+809)
 link="https://livestream.com/accounts/25082096/live"
 use_cookies="no"
 chan_name="KUSI 24/7 San Diego California USA" ;;
-# 809)  Joe Pags Show
-809)
+# 810)  Joe Pags Show
+810)
 link="https://livestream.com/accounts/26896512/events/8077273"
 use_cookies="no"
 chan_name="Joe Pags Show" ;;
-# 810)  WBRC FOX6 News Mobil USA
-810)
+# 811)  WBRC FOX6 News Mobil USA
+811)
 link="https://livestream.com/WBRC/live"
 use_cookies="no"
 chan_name="WBRC FOX6 News Mobil USA" ;;
-# 811)  WNYW Fox 5 New York USA
-811)
+# 812)  WNYW Fox 5 New York USA
+812)
 link="https://livestream.com/accounts/6372917/live"
 use_cookies="no"
 chan_name="WNYW Fox 5 New York USA" ;;
-# 812) KMOV 4 St. Louis MO USA
-812)
+# 813) KMOV 4 St. Louis MO USA
+813)
 link="https://livestream.com/accounts/12654794/live"
 use_cookies="no"
 chan_name="KMOV 4 St. Louis MO USA" ;;
-# 813) WFLD / Fox 32 Chicago USA
-813)
+# 814) WFLD / Fox 32 Chicago USA
+814)
 link="https://livestream.com/accounts/6370732/live"
 use_cookies="no"
 chan_name="WFLD / Fox 32 Chicago USA" ;;
-# 814) KHSL Action News NOW KHSL Live USA
-814)
+# 815) KHSL Action News NOW KHSL Live USA
+815)
 link="https://livestream.com/accounts/26511688/live"
 use_cookies="no"
 chan_name="KHSL Action News NOW KHSL Live USA" ;;
-# 815) WVUE FOX 8 Batton Rouge LA USA
-815)
+# 816) WVUE FOX 8 Batton Rouge LA USA
+816)
 link="https://livestream.com/accounts/10891792/live"
 use_cookies="no"
 chan_name=" WVUE FOX 8 Batton Rouge LA USA" ;;
-# 816) KLTV 7 Tyler TX USA
-816)
+# 817) KLTV 7 Tyler TX USA
+817)
 link="https://livestream.com/accounts/11816721/live"
 use_cookies="no"
 chan_name="KLTV 7 Tyler TX USA" ;;
-# 817) KEYT ABC 3 Santa Barbara CA USA
-817)
+# 818) KEYT ABC 3 Santa Barbara CA USA
+818)
 link="https://livestream.com/accounts/19285506/live"
 use_cookies="no"
 chan_name="KEYT ABC 3 Santa Barbara CA USA" ;;
-# 818) WAKA CBS 8 ABC 32 ALABAMA 
-818)
+# 819) WAKA CBS 8 ABC 32 ALABAMA 
+819)
 link="https://livestream.com/accounts/9486828/live"
 use_cookies="no"
 chan_name="WAKA CBS 8 ABC 32 ALABAMA " ;;
-# 819) WJZY FOX 46 Charlotte NC
-819)
+# 820) WJZY FOX 46 Charlotte NC
+820)
 link="https://livestream.com/accounts/6370805/live"
 use_cookies="no"
 chan_name="WJZY FOX 46 Charlotte NC" ;;
-# 820) WCCB Charlotte CW NC
-820)
+# 821) WCCB Charlotte CW NC
+821)
 link="https://livestream.com/accounts/8522553/live"
 use_cookies="no"
 chan_name="WCCB Charlotte CW NC" ;;
-# 821) WCYB NBC 5 VA
-821)
+# 822) WCYB NBC 5 VA
+822)
 link="https://livestream.com/accounts/8522497/live"
 use_cookies="no"
 chan_name="WCYB NBC 5 VA" ;;
-# 822) WYCW CW 62 Carolinas
-822)
+# 823) WYCW CW 62 Carolinas
+823)
 link="https://livestream.com/accounts/8366412/live"
 use_cookies="no"
 chan_name="WYCW CW 62 Carolinas" ;;
-# 823) WNCT CBS 9 Greenville NC
-823)
+# 824) WNCT CBS 9 Greenville NC
+824)
 link="https://livestream.com/accounts/7601533/live"
 use_cookies="no"
 chan_name="WNCT CBS 9 Greenville NC" ;;
-# 824) WJBF Augusta Georgia 
-824)
+# 825) WJBF Augusta Georgia 
+825)
 link="https://livestream.com/accounts/7601347/live"
 use_cookies="no"
 chan_name="WJBF Augusta Georgia" ;;
-# 825) KLFY News 10 Acadiana
-825)
+# 826) KLFY News 10 Acadiana
+826)
 link="https://livestream.com/accounts/7520488/live"
 use_cookies="no"
 chan_name="KLFY News 10 Acadiana" ;;
-# 826) MNN Channel 1
-826)
+# 827) MNN Channel 1
+827)
 link="https://livestream.com/accounts/6480540/events/2616259"
 use_cookies="no"
 chan_name="MNN Channel 1" ;;
-# 827) MNN Channel 4
-827)
+# 828) MNN Channel 4
+828)
 link="https://livestream.com/accounts/6478935/events/2616010"
 use_cookies="no"
 chan_name="MNN Channel 4" ;;
-# 828) WWOR Secaucus
-828)
+# 829) WWOR Secaucus
+829)
 link="https://livestream.com/accounts/6372957/live"
 use_cookies="no"
 chan_name="WWOR Secaucus" ;;
-# 829) KSNT Weather Wichita Kansas
-829)
+# 830) KSNT Weather Wichita Kansas
+830)
 link="https://livestream.com/accounts/1866369/live"
 use_cookies="no"
 chan_name="KSNT Weather Wichita Kansas" ;;
-# 830) WANE Ft. Wayne Indiana
-830)
+# 831) WANE Ft. Wayne Indiana
+831)
 link="https://livestream.com/accounts/1849716/live"
 use_cookies="no"
 chan_name="WANE Ft. Wayne Indiana" ;;
-# 831) KTXS 12 ABC Abilene Texas 
-831)
+# 832) KTXS 12 ABC Abilene Texas 
+832)
 link="https://livestream.com/accounts/9960439/live"
 use_cookies="no"
 chan_name="KTXS 12 ABC Abilene TX" ;;
-# 832) Island TV Live Broadcast Miami FL USA
-832)
+# 833) Island TV Live Broadcast Miami FL USA
+833)
 link="https://livestream.com/accounts/1420/Islandtvlive"
 use_cookies="no"
 chan_name="Island TV Live Broadcast Miami FL USA" ;;
-# 833) KSNT Kansas OK USA
-833)
+# 834) KSNT Kansas OK USA
+834)
 link="https://livestream.com/accounts/1866369/live"
 use_cookies="no"
 chan_name="KSNT Kansas OK USA" ;;
-# 834) KMIZ ABC 17 Missouri
-834)
+# 835) KMIZ ABC 17 Missouri
+835)
 link="https://livestream.com/accounts/18240993/live"
 use_cookies="no"
 chan_name="KMIZ ABC 17 Missouri" ;;
-# 835) KFDA CBS 10 Amarillo TX USA
-835)
+# 836) KFDA CBS 10 Amarillo TX USA
+836)
 link="https://livestream.com/accounts/17606146/live"
 use_cookies="no"
 chan_name="KFDA CBS 10 Amarillo TX USA" ;;
-# 836) KZTV CBS 10 Corpus Christi TX USA 
-836)
+# 837) KZTV CBS 10 Corpus Christi TX USA 
+837)
 link="https://livestream.com/accounts/16030806/live"
 use_cookies="no"
 chan_name="KZTV CBS 10 Corpus Christi TX USA" ;;
-# 837) City of Tampa Television FL, USA
-837)
+# 838) City of Tampa Television FL, USA
+838)
 link="https://livestream.com/accounts/12251681/CTTV"
 use_cookies="no"
 chan_name="City of Tampa Television FL, USA" ;;
-# 838)WMGT 41 NBC Macon Georgia USA
-838)
+# 839)WMGT 41 NBC Macon Georgia USA
+839)
 link="https://livestream.com/accounts/15227391/live"
 use_cookies="no"
 chan_name="WMGT 41 NBC Macon Georgia USA" ;;
-# 839) Polk County Channel 44 Bolivar Missouri USA
-839)
+# 840) Polk County Channel 44 Bolivar Missouri USA
+840)
 link="https://livestream.com/accounts/15079831/Channel44"
 use_cookies="no"
 chan_name="Polk County Channel 44 Bolivar Missouri USA" ;;
-# 840) WAND NBC 17 Decatur Illinois
-840)
+# 841) WAND NBC 17 Decatur Illinois
+841)
 link="https://livestream.com/accounts/15004678/live"
 use_cookies="no"
 chan_name="WAND NBC 17 Decatur Illinois" ;;
-# 841) KOAA NBC 5 Colorado Springs Colorado, USA
-841)
+# 842) KOAA NBC 5 Colorado Springs Colorado, USA
+842)
 link="https://livestream.com/accounts/13725886/live"
 use_cookies="no"
 chan_name="KOAA NBC 5 Colorado Springs Colorado, USA" ;;
-# 842) Enid Television Network Oklahoma
-842)
+# 843) Enid Television Network Oklahoma
+843)
 link="https://livestream.com/accounts/13638122/events/4063586"
 use_cookies="no"
 chan_name="Enid Television Network Oklahoma" ;;
-# 843) ThinkTech Hawaii Honolulu USA
-843)
+# 844) ThinkTech Hawaii Honolulu USA
+844)
 link="https://livestream.com/accounts/12650986/events/3950350"
 use_cookies="no"
 chan_name="ThinkTech Hawaii Honolulu USA" ;;
-# 844) WFLX FOX 29
-844)
+# 845) WFLX FOX 29
+845)
 link="https://livestream.com/accounts/12755354/live"
 use_cookies="no"
 chan_name="WFLX FOX 29" ;;
-# 845) WPS-TV Wichita Public Schools
-845)
+# 846) WPS-TV Wichita Public Schools
+846)
 link="https://livestream.com/accounts/12013978/events/3835724"
 use_cookies="no"
 chan_name="WPS-TV Wichita Public Schools" ;;
-# 846) KAAL ABC 6 Rochester Minnesota
-846)
+# 847) KAAL ABC 6 Rochester Minnesota
+847)
 link="https://livestream.com/accounts/12240964/live"
 use_cookies="no"
 chan_name="KAAL ABC 6 Rochester Minnesota" ;;
-# 847) KRCR ABC 7 Redding California USA
-847)
+# 848) KRCR ABC 7 Redding California USA
+848)
 link="https://livestream.com/accounts/10262876/events/3724366"
 use_cookies="no"
 chan_name="KRCR ABC 7 Redding California USA" ;;
-#############################################     MENU 4      #################################################################
-# 848) KION CBS 5/46 Salinas California USA
-848)
+# 849) KION CBS 5/46 Salinas California USA
+849)
 link="https://livestream.com/accounts/19128738/events/7300156"
 use_cookies="no"
 chan_name="KION CBS 5/46 Salinas California USA" ;;
-# 849) KMVP 24/7 Phoenix Arizona Sports 98.7 FM 
-849)
+# 850) KMVP 24/7 Phoenix Arizona Sports 98.7 FM 
+850)
 link="https://livestream.com/accounts/24089066/live"
 use_cookies="no"
 chan_name="KMVP 24/7 Phoenix Arizona Sports 98.7 FM " ;;
-# 850) KTAR News Phoenix Arizona 
-850)
+# 851) KTAR News Phoenix Arizona 
+851)
 link="https://livestream.com/accounts/24088937/live"
 use_cookies="no"
 chan_name="KTAR News Phoenix Arizona " ;;
-# 851) WPSD-TV Paducah Kentucky 
-851)
+# 852) WPSD-TV Paducah Kentucky 
+852)
 link="https://livestream.com/accounts/21317942/live"
 use_cookies="no"
 chan_name="WPSD-TV Paducah Kentucky" ;;
-# 852) KVRR Fargo North Dakota  
-852)
+# 853) KVRR Fargo North Dakota  
+853)
 link="https://livestream.com/accounts/21298478/live"
 use_cookies="no"
 chan_name="KVRR Fargo North Dakota" ;;
-# 853) KDLT Sioux Falls South Dakota
-853)
+# 854) KDLT Sioux Falls South Dakota
+854)
 link="https://livestream.com/accounts/21277277/live"
 use_cookies="no"
 chan_name="KDLT Sioux Falls South Dakota" ;;
-# 854) GovTV Watertown, South Dakota
-854)
+# 855) GovTV Watertown, South Dakota
+855)
 link="https://livestream.com/accounts/21042766/events/6254925"
 use_cookies="no"
 chan_name="GovTV Watertown, South Dakota" ;;
-# 855) KFDX NBC 3 Witchita Falls USA
-855)
+# 856) KFDX NBC 3 Witchita Falls USA
+856)
 link="https://livestream.com/accounts/21184359/live"
 use_cookies="no"
 chan_name="KFDX NBC 3 Witchita Falls USA" ;;
-# 856) Galveston County Gulf Freeway Cams Tour Houston Texas USA 
-856)
+# 857) Galveston County Gulf Freeway Cams Tour Houston Texas USA 
+857)
 link="https://livestream.com/accounts/21068106/events/6228235"
 use_cookies="no"
 chan_name="Galveston County Gulf Freeway Cams Tour Houston Texas USA" ;;
-# 857) KQDS - FOX 21 Duluth Minnesota USA 
-857)
+# 858) KQDS - FOX 21 Duluth Minnesota USA 
+858)
 link="https://livestream.com/accounts/21146230/live"
 use_cookies="no"
 chan_name="KQDS - FOX 21 Duluth Minnesota USA " ;;
-# 858) KOLR CBS 10 Springfield Missouri
-858)
+# 859) KOLR CBS 10 Springfield Missouri
+859)
 link="https://livestream.com/accounts/21145355/live"
 use_cookies="no"
 chan_name="KOLR CBS 10 Springfield Missouri" ;;
@@ -6339,189 +6325,186 @@ chan_name="KRIV FOX 26 Houston Texas " ;;
 link="https://livestream.com/accounts/10891792/live"
 use_cookies="no"
 chan_name="WVUE FOX 8 New Orleans Louisiana" ;;
-# 964)KPTV FOX 12 Portland Oregon 
-964)
+# 965)KPTV FOX 12 Portland Oregon 
+965)
 link="https://livestream.com/accounts/6908462/Live"
 use_cookies="no"
 chan_name="KPTV FOX 12 Portland Oregon" ;;
-# 965) KIRO Radio Seattle Washington 
-965)
+# 966) KIRO Radio Seattle Washington 
+966)
 link="https://livestream.com/accounts/21148570/live"
 use_cookies="no"
 chan_name="KIRO Radio Seattle Washington" ;;
-
-
-# 966) KUSI San Diego California
-966)
+# 967) KUSI San Diego California
+967)
 link="https://livestream.com/accounts/25082096/live"
 use_cookies="no"
 chan_name="KUSI NEWS San Diego California" ;;
-# 967) Fox 8 Cleveland Ohio
-967)
+# 968) Fox 8 Cleveland Ohio
+968)
 link="https://livestream.com/accounts/57501/live"
 use_cookies="no"
 chan_name="Fox 8 Cleveland Ohio" ;;
-# 968) KSLA News CBS 12 Shreveport, Louisiana
-968)
+# 969) KSLA News CBS 12 Shreveport, Louisiana
+969)
 link="https://livestream.com/accounts/11816591/live"
 use_cookies="no"
 chan_name="KSLA News CBS 12 Shreveport, Louisiana" ;;
-# 969) KELO CBS Sioux Falls, South Dakota
-969)
+# 970) KELO CBS Sioux Falls, South Dakota
+970)
 link="https://livestream.com/accounts/8522446/live"
 use_cookies="no"
 chan_name="KELO CBS Sioux Falls, South Dakota" ;;
-# 970) KSL NOW Salt Lake City Utah 
-970)
+# 971) KSL NOW Salt Lake City Utah 
+971)
 link="https://livestream.com/accounts/22711876/live"
 use_cookies="no"
 chan_name="KSL NOW Salt Lake City Utah" ;;
-# 971) WTTG Fox 5 Washington DC
-971)
+# 972) WTTG Fox 5 Washington DC
+972)
 link="https://livestream.com/accounts/2363281/live"
 use_cookies="no"
 chan_name="WTTG Fox 5 Washington DC" ;;
-# 972) WCSC CBS 5 Charleston South Carolina 
-972)
+# 973) WCSC CBS 5 Charleston South Carolina 
+973)
 link="https://livestream.com/accounts/11016888/live"
 use_cookies="no"
 chan_name="WCSC CBS 5 Charleston South Carolina" ;;
-# 973) WBNS 10 Columbus Ohio
-973)
+# 974) WBNS 10 Columbus Ohio
+974)
 link="https://livestream.com/accounts/18624165/live"
 use_cookies="no"
 chan_name="WBNS 10 Columbus Ohio" ;;
-# 974) WJBK FOX 2 Detroit Michagan 
-974)
+# 975) WJBK FOX 2 Detroit Michagan 
+975)
 link="https://livestream.com/accounts/6396566/live"
 use_cookies="no"
 chan_name="WJBK FOX 2 Detroit Michagan" ;;
-# 975) WAFB CBS 9 Baton Rouge Louisiana 
-975)
+# 976) WAFB CBS 9 Baton Rouge Louisiana 
+976)
 link="https://livestream.com/accounts/11595706/live"
 use_cookies="no"
 chan_name="WAFB CBS 9 Baton Rouge Louisiana" ;;
-# 976) WFMZ 69 Traffic Allen Town Penslyvania 
-976)
+# 977) WFMZ 69 Traffic Allen Town Penslyvania 
+977)
 link="https://livestream.com/accounts/14384745/traffic"
 use_cookies="no"
 chan_name="WFMZ 69 Traffic Allen Town Penslyvania " ;;
-# 977) KY3 Springfield Missouri 
-977)
+# 978) KY3 Springfield Missouri 
+978)
 link="https://livestream.com/accounts/4699618/live"
 use_cookies="no"
 chan_name="KY3 Springfield Missouri" ;;
-# 978) 710 ESPN Seattle Washington
-978)
+# 979) 710 ESPN Seattle Washington
+979)
 link="https://livestream.com/accounts/21148436/live"
 use_cookies="no"
 chan_name="710 ESPN Seattle Washington" ;;
-# 979) NYXT Manhattan NYC New York USA
-979)
+# 980) NYXT Manhattan NYC New York USA
+980)
 link="https://livestream.com/accounts/19770665/events/5522162"
 use_cookies="no"
 chan_name="NYXT Manhattan NYC New York USA" ;;
-# 980) King County TV Preston, Washington USA 
-980)
+# 981) King County TV Preston, Washington USA 
+981)
 link="https://livestream.com/accounts/15175343/events/4485487"
 use_cookies="no"
 chan_name=" King County TV Preston, Washington USA " ;;
-# 981)Westerville.TV 543 Production Studio 
-981)
+# 982)Westerville.TV 543 Production Studio 
+982)
 link="https://livestream.com/accounts/26666947/events/8163419"
 use_cookies="no"
 chan_name="Westerville.TV 543 Production Studio " ;;
-# 982) Kingdom Access Television Channel 192 LIVE
-982)
+# 983) Kingdom Access Television Channel 192 LIVE
+983)
 link="https://livestream.com/accounts/4209066/events/8159063"
 use_cookies="no"
 chan_name="Kingdom Access Television Channel 192 LIVE" ;;
-# 983) City of Las Vegas KCLV FOX 2 Nevada 
-983)
+# 984) City of Las Vegas KCLV FOX 2 Nevada 
+984)
 link="https://livestream.com/accounts/11449855/events/8026296"
 use_cookies="no"
 chan_name="City of Las Vegas KCLV FOX 2 Nevada" ;;
-# 984) Plaistow Access New Hampshire
-984)
+# 985) Plaistow Access New Hampshire
+985)
 link="https://livestream.com/accounts/11298895/meetings"
 use_cookies="no"
 chan_name="Plaistow Access New Hampshire" ;;
-# 985) City of Topeka City Kansas
-985)
+# 986) City of Topeka City Kansas
+986)
 link="https://livestream.com/accounts/25008807/events/7970645"
 use_cookies="no"
 chan_name="City of Topeka City Kansas" ;;
-# 986) Shelby County Schools C19TV & 88.5FM Memphis Tennessee 
-986)
+# 987) Shelby County Schools C19TV & 88.5FM Memphis Tennessee 
+987)
 link="https://livestream.com/accounts/25133520/c19tv"
 use_cookies="no"
 chan_name="Shelby County Schools C19TV & 88.5FM Memphis Tennessee " ;;
-# 987) Provincetown Community TV Provincetown Government Meetings  Provincetown, Massachusetts
-987)
+# 988) Provincetown Community TV Provincetown Government Meetings  Provincetown, Massachusetts
+988)
 link="https://livestream.com/accounts/6011038/events/6712043"
 use_cookies="no"
 chan_name="Provincetown Community TV, Massachusetts" ;;
-# 988) Manhattan Neighborhood Network MNN-FSTV
-988)
+# 989) Manhattan Neighborhood Network MNN-FSTV
+989)
 link="https://livestream.com/accounts/17251237/events/6391580"
 use_cookies="no"
 chan_name="Manhattan Neighborhood Network MNN-FSTV" ;;
-# 989) Brunswick TV3 New Hampshire
-989)
+# 990) Brunswick TV3 New Hampshire
+990)
 link="https://livestream.com/accounts/13788599/events/6330198"
 use_cookies="no"
 chan_name="Brunswick TV3 New Hampshire" ;;
-# 990) Bermuda Government (CITV) Hamilton, Bermuda 
-990)
+# 991) Bermuda Government (CITV) Hamilton, Bermuda 
+991)
 link="https://livestream.com/accounts/19270406/events/5372984"
 use_cookies="no"
 chan_name="Bermuda Government (CITV) Hamilton, Bermuda " ;;
-# 991) GalaxyUniverseTV Freedom Solar TV Kersey, CO, USA
-991)
+# 992) GalaxyUniverseTV Freedom Solar TV Kersey, CO, USA
+992)
 link="https://livestream.com/accounts/12141749/events/7685294"
 use_cookies="no"
 chan_name="Freedom Solar TV Kersey, CO, USA" ;;
-# 992) Shalom Media Catholic KIDS
-992)
+# 993) Shalom Media Catholic KIDS
+993)
 link="https://livestream.com/shalomworld/events/7987357"
 use_cookies="no"
 chan_name="Shalom Media Catholic KIDS" ;;
-# 993) Faith Lutheran Church - Penfield, NY
-993)
+# 994) Faith Lutheran Church - Penfield, NY
+994)
 link="https://livestream.com/accounts/4440983/events/6827954"
 use_cookies="no"
 chan_name="Faith Lutheran Church - Penfield, NY" ;;
-# 994) Whole Life Ministries SKMNetwork Augusta Georgia
-994)
+# 995) Whole Life Ministries SKMNetwork Augusta Georgia
+995)
 link="https://livestream.com/accounts/16502349/SKMNetwork"
 use_cookies="no"
 chan_name="Whole Life Ministries SKMNetwork Augusta Georgia" ;;
-# 995) Second Presbyterian Church Sunday Worship Memphis Tennessee 
-995)
+# 996) Second Presbyterian Church Sunday Worship Memphis Tennessee 
+996)
 link="https://livestream.com/accounts/15713152/sunday-worship"
 use_cookies="no"
 chan_name="Second Presbyterian Church Sunday Worship Memphis Tennessee" ;;
-# 996) St. Catharine Church, Spring Lake, New Jersey 
-996)
+# 997) St. Catharine Church, Spring Lake, New Jersey 
+997)
 link="https://livestream.com/accounts/11714562/events/3786245"
 use_cookies="no"
 chan_name="St. Catharine Church, Spring Lake, New Jersey " ;;
-# 997) Glory to God Ministries International Love of God Classics 
-997)
+# 998) Glory to God Ministries International Love of God Classics 
+998)
 link="https://livestream.com/accounts/3240767/events/8008064"
 use_cookies="no"
 chan_name="Glory to God Ministries" ;;
-# 998)  WYKE TV 47 Hormosassa Springs Florida
-998)
+# 999)  WYKE TV 47 Hormosassa Springs Florida
+999)
 link="https://livestream.com/accounts/9261275/events/7602204"
 use_cookies="no"
 chan_name="WYKE TV 47 Hormosassa Springs Florida" ;;
-# 999) St. Helena Chapel
-999)
+# 1000) St. Helena Chapel
+1000)
 link="https://livestream.com/accounts/25372681/events/7581060"
 use_cookies="no"
 chan_name="St. Helena Chapel" ;;
-
 # 1001) St Patrick's Dumbarton
 1001)
 link="https://livestream.com/accounts/10499782/events/7601596"
@@ -6547,263 +6530,248 @@ chan_name="TMN WORD TV Into All the Earth 24/7/365" ;;
 link="https://livestream.com/knqradio/events/8191094"
 use_cookies="no"
 chan_name="Parkside Radio Show / BROOKLYNSTATION.COM" ;;
-# 1006) skynet Buddha Myanmar 
+# 1006) FGTV Frequencies of Glory LIVE Jacksonville Florida 
 1006)
-link="https://livestream.com/accounts/7228455/events/3875181"
-use_cookies="no"
-chan_name="skynet Buddha Myanmar" ;;
-# 1007) ABHPTV Daily Broadcast Vietnamese  An Bình Hạnh Phúc
-1007)
-link="https://livestream.com/accounts/13311218/events/7250967"
-use_cookies="no"
-chan_name="ABHPTV Daily Broadcast An Bình Hạnh Phúc Vietnamese " ;;
-# 1008) FGTV Frequencies of Glory LIVE Jacksonville Florida 
-1008)
 link="https://livestream.com/accounts/3107466/events/3858711"
 use_cookies="no"
 chan_name="FGTV Frequencies of Glory LIVE Jacksonville Florida" ;;
-# 1009) HJTV online Healing Jesus TV London England 
-1009)
+# 1007) HJTV online Healing Jesus TV London England 
+1007)
 link="https://livestream.com/accounts/15754877/events/4470314"
 use_cookies="no"
 chan_name="HJTV online Healing Jesus TV London England" ;;
-# 1010) Apocalypse Channel APTV Live Polaski Tennessse 
-1010)
+# 1008) Apocalypse Channel APTV Live Polaski Tennessse 
+1008)
 link="https://livestream.com/accounts/5057242/events/4312291"
 use_cookies="no"
 chan_name="Apocalypse Channel APTV Live Polaski Tennessse" ;;
-# 1011) Marytown Chapel Marytown Online Adoration Chapel Illinois
-1011)
+# 1009) Marytown Chapel Marytown Online Adoration Chapel Illinois
+1009)
 link="https://livestream.com/accounts/15529184/events/4408765"
 use_cookies="no"
 chan_name="Marytown Chapel Illinois" ;;
-# 1012)  Enlacetv Espanol Irving Texas 
-1012)
-link="https://livestream.com/accounts/2675843/enlace"
-use_cookies="no"
-chan_name="Enlacetv Espanol Irving Texas" ;;
-# 1013) VSiN - Vegas Stats & Information Network Las Vegas Nevada 
-1013)
+# 1010) VSiN - Vegas Stats & Information Network Las Vegas Nevada 
+1010)
 link="https://livestream.com/accounts/22774234/events/6897936"
 use_cookies="no"
 chan_name="VSiN - Vegas Stats & Information Network Las Vegas Nevada " ;;
-# 1014) Guaranty Media Baton Rouge Louisiana 
-1014)
+# 1011) Guaranty Media Baton Rouge Louisiana 
+1011)
 link="https://livestream.com/accounts/25649901/live"
 use_cookies="no"
 chan_name="Guaranty Media Baton Rouge Louisiana" ;;
-# 1015) ESPN 97.5 Houston Texas 
-1015)
+# 1012) ESPN 97.5 Houston Texas 
+1012)
 link="https://livestream.com/accounts/26800104/live"
 use_cookies="no"
 chan_name="ESPN 97.5 Houston Texas" ;;
-# 1016) Pro Football Hall of Fame Hall of Fame Channel Stream
-1016)
+# 1013) Pro Football Hall of Fame Hall of Fame Channel Stream
+1013)
 link="https://livestream.com/accounts/24957552/events/8006439"
 use_cookies="no"
 chan_name="Pro Football Hall of Fame" ;;
-# 1017) Lance Hope RSL FEED
-1017)
+# 1014) Lance Hope RSL FEED
+1014)
 link="https://livestream.com/accounts/22999173/events/8078810"
 use_cookies="no"
 chan_name="Lance Hope RSL FEED" ;;
-# 1018)XBTV Rosecroft Raceway Live Maryland 
-1018)
+# 1015)XBTV Rosecroft Raceway Live Maryland 
+1015)
 link="https://livestream.com/accounts/9869799/events/6772185"
 use_cookies="no"
 chan_name="XBTV Rosecroft Raceway Live Maryland" ;;
-# 1019) Park City Television PCTV Livestream Utah 
-1019)
+# 1016) Park City Television PCTV Livestream Utah 
+1016)
 link="https://livestream.com/accounts/11728043/events/3779731"
 use_cookies="no"
 chan_name="Park City Television PCTV Livestream Utah" ;;
-# 1020) WHLT 12 Whitehall, Wisconsin
-1020)
+# 1017) WHLT 12 Whitehall, Wisconsin
+1017)
 link="https://livestream.com/accounts/8383566/live"
 use_cookies="no"
 chan_name="WHLT 12 Whitehall, Wisconsin" ;;
-# 1021) OUBN - Oakwood University Huntsville Alabama  
-1021)
+# 1018) OUBN - Oakwood University Huntsville Alabama  
+1018)
 link="https://livestream.com/accounts/5329025/events/7079597"
 use_cookies="no"
 chan_name="OUBN - Oakwood University Huntsville Alabama " ;;
-# 1022) Nasdaq Bell Ceremonies New York City 
-1022)
+# 1019) Nasdaq Bell Ceremonies New York City 
+1019)
 link="https://livestream.com/accounts/888332/live"
 use_cookies="no"
 chan_name="Nasdaq Bell Ceremonies New York City" ;;
-# 1023) AAA Guayama
-1023)
+# 1020) AAA Guayama
+1020)
 link="https://livestream.com/accounts/3185486/guayama"
 use_cookies="no"
 chan_name="AAA Guayama" ;;
-# 1024) AWCATV - Education/Government Channel Ashburnham 
-1024)
+# 1021) AWCATV - Education/Government Channel Ashburnham 
+1021)
 link="https://livestream.com/accounts/22393363/events/6651528"
 use_cookies="no"
 chan_name="AWCATV - Education/Government Channel Ashburnham " ;;
-# 1025) Branson Visitor TV Branson Misouri 
-1025)
+# 1022) Branson Visitor TV Branson Misouri 
+1022)
 link="https://livestream.com/accounts/21384612/BVTV"
 use_cookies="no"
 chan_name="Branson Visitor TV Branson Misouri" ;;
-# 1026)FHSU TIGER MEDIA NETWORK TMN TV Livestream Hays Kansas USA
-1026)
+# 1023)FHSU TIGER MEDIA NETWORK TMN TV Livestream Hays Kansas USA
+1023)
 link="https://livestream.com/accounts/11135493/events/5339279"
 use_cookies="no"
 chan_name="FHSU TIGER MEDIA NETWORK TMN TV Livestream Hays Kansas USA" ;;
-# 1027) MNN Channel 5 (HD) New York City New York, USA 
-1027)
+# 1024) MNN Channel 5 (HD) New York City New York, USA 
+1024)
 link="https://livestream.com/accounts/17251372/events/4846282"
 use_cookies="no"
 chan_name="MNN Channel 5 (HD) New York City" ;;
-# 1028) WIVM TV39 WIVM Local TV Canton Ohio 
-1028)
+# 1025) WIVM TV39 WIVM Local TV Canton Ohio 
+1025)
 link="https://livestream.com/accounts/17488475/events/4802826"
 use_cookies="no"
 chan_name="WIVM TV39 WIVM Local TV Canton Ohio" ;;
-# 1029) EPlusTV6 Jackson Tennessee 
-1029)
+# 1026) EPlusTV6 Jackson Tennessee 
+1026)
 link="https://livestream.com/accounts/726212/events/4481510"
 use_cookies="no"
 chan_name="EPlusTV6 Jackson Tennessee" ;;
-# 1030) St. Cloud Times UTVS Minnesota 
-1030)
+# 1027) St. Cloud Times UTVS Minnesota 
+1027)
 link="https://livestream.com/accounts/11549400/UTVS"
 use_cookies="no"
 chan_name="St. Cloud Times UTVS Minnesota " ;;
-# 1031) Milford TV - Milford, MA Massachusetts 
-1031)
+# 1028) Milford TV - Milford, MA Massachusetts 
+1028)
 link="https://livestream.com/accounts/13918823/MilfordTV"
 use_cookies="no"
 chan_name="Milford TV - Milford, MA Massachusetts" ;;
-# 1032) EKB- TV EKBTV Live Pikeville Kentucky 
-1032)
+# 1029) EKB- TV EKBTV Live Pikeville Kentucky 
+1029)
 link="https://livestream.com/accounts/6461963/events/4113877"
 use_cookies="no"
 chan_name="EKB- TV EKBTV Live Pikeville Kentucky" ;;
-# 1033) Milford TV Educational Channel - Milford, MA
-1033)
+# 1030) Milford TV Educational Channel - Milford, MA
+1030)
 link="https://livestream.com/accounts/13568947/MilfordTVEducational"
 use_cookies="no"
 chan_name="Milford TV Educational Channel - Milford, MA" ;;
-# 1034)Native Media Network - NDN1.com NMN Live Santa Fe New Mexico
-1034)
+# 1031)Native Media Network - NDN1.com NMN Live Santa Fe New Mexico
+1031)
 link="https://livestream.com/accounts/13196214/events/3994033"
 use_cookies="no"
 chan_name="Native Media Network, Santa Fe New Mexico" ;;
-# 1035) EUTV - Evangel University EUTV Channel Live Springfield Missouri
-1035)
+# 1032) EUTV - Evangel University EUTV Channel Live Springfield Missouri
+1032)
 link="https://livestream.com/accounts/10735484/events/3837393"
 use_cookies="no"
 chan_name=" EUTV Evangelical University, Springfield Missouri" ;;
-# 1036) Granbury Media Granbury, TX Tower Camera Live Stream 
-1036)
+# 1033) Granbury Media Granbury, TX Tower Camera Live Stream 
+1033)
 link="https://livestream.com/accounts/13120617/TowerCamera"
 use_cookies="no"
 chan_name="Granbury Media Granbury, TX Tower Camera Live Stream" ;;
-# 1037) ETSU New Construction Camera ETSU Fine Arts Classroom Building Johnson City Tennesse 
-1037)
+# 1034) ETSU New Construction Camera ETSU Fine Arts Classroom Building Johnson City Tennesse 
+1034)
 link="https://livestream.com/accounts/17402222/FineArts"
 use_cookies="no"
 chan_name="ETSU New Construction Camera ETSU Fine Arts Classroom Building Johnson City Tennesse" ;;
-# 1038) WDFL 18 South Carolina, Alabama, Louisiana 
-1038)
+# 1035) WDFL 18 South Carolina, Alabama, Louisiana 
+1035)
 link="https://livestream.com/accounts/26473976/events/7937669"
 use_cookies="no"
 chan_name="WDFL 18 South Carolina, Alabama, Louisiana" ;;
-# 1039) MCAET Salinas California 
-1039)
+# 1036) MCAET Salinas California 
+1036)
 link="https://livestream.com/accounts/7781243/events/7871771"
 use_cookies="no"
 chan_name="MCAET Salinas California" ;;
-# 1040) BlabTV
-1040)
+# 1037) BlabTV
+1037)
 link="https://livestream.com/accounts/22779635/events/7675406"
 use_cookies="no"
 chan_name="BlabTV" ;;
-# 1041) Essex County College Newark New Jersey 
-1041)
+# 1038) Essex County College Newark New Jersey 
+1038)
 link="https://livestream.com/accounts/5109696/events/7607762"
 use_cookies="no"
 chan_name="Essex County College Newark New Jersey" ;;
-# 1042) CNPTV Live Caribbean Television.
-1042)
+# 1039) CNPTV Live Caribbean Television.
+1039)
 link="https://livestream.com/accounts/22462981/Live"
 use_cookies="no"
 chan_name="CNPTV Live Caribbean Television." ;;
-# 1043)  LOBO STATION
-1043)
+# 1040)  LOBO STATION
+1040)
 link="https://livestream.com/accounts/14558256/events/7412168"
 use_cookies="no"
 chan_name="LOBO STATION" ;;
-# 1044) Maricopa Colleges Television MCTV Live Feed 115 Phoenix Arizona
-1044)
+# 1041) Maricopa Colleges Television MCTV Live Feed 115 Phoenix Arizona
+1041)
 link="https://livestream.com/accounts/24714287/Live"
 use_cookies="no"
 chan_name="Maricopa Colleges Television MCTV Live Feed 115 Phoenix Arizona" ;;
-# 1045) CharmTV Baltimore Maryland
-1045)
+# 1042) CharmTV Baltimore Maryland
+1042)
 link="https://livestream.com/accounts/13988426/events/4134572"
 use_cookies="no"
 chan_name="CharmTV Baltimore Maryland" ;;
-# 1046) KVVB.TV CH.33 Victorville,California KVVB.TV | Ch 33.1 
-1046)
+# 1043) KVVB.TV CH.33 Victorville,California KVVB.TV | Ch 33.1 
+1043)
 link="https://livestream.com/accounts/9450048/events/3542162"
 use_cookies="no"
 chan_name="KVVB.TV CH.33 Victorville,CA" ;;
-# 1047) WLTH AM 1370 Radio
-1047)
+# 1044) WLTH AM 1370 Radio
+1044)
 link="https://livestream.com/accounts/26670176/events/8011646"
 use_cookies="no"
 chan_name="WLTH AM 1370 Radio" ;;
-# 1048) KCOH TV Houston Texas 
-1048)
+# 1045) KCOH TV Houston Texas 
+1045)
 link="https://livestream.com/accounts/12299560/events/3892224"
 use_cookies="no"
 chan_name="KCOH TV Houston Texas" ;;
-# 1049) Lake Tahoe TV California
-1049)
+# 1046) Lake Tahoe TV California
+1046)
 link="https://livestream.com/accounts/21822229/events/6450069"
 use_cookies="no"
 chan_name="Lake Tahoe TV California" ;;
-# 1050) KVZK TV CHANNEL 2 American Samoa 
-1050)
+# 1047) KVZK TV CHANNEL 2 American Samoa 
+1047)
 link="https://livestream.com/accounts/8956070/events/4561731"
 use_cookies="no"
 chan_name="KVZK TV CHANNEL 2 American Samoa" ;;
-# 1051) Florida Gaming Sorteo
-1051)
+# 1048) Florida Gaming Sorteo
+1048)
 link="https://livestream.com/accounts/25552923/events/7909255"
 use_cookies="no"
 chan_name="Florida Gaming Sorteo" ;;
-# 1052) Kidd Kraddick Morning Show 
-1052)
+# 1049) Kidd Kraddick Morning Show 
+1049)
 link="https://livestream.com/accounts/16936513/live"
 use_cookies="no"
 chan_name="Kidd Kraddick Morning Show " ;;
-# 1053) Rover's Morning Glory RMG-TV Cleavland Ohio
-1053)
+# 1050) Rover's Morning Glory RMG-TV Cleavland Ohio
+1050)
 link="https://livestream.com/accounts/242049/events/1978582"
 use_cookies="no"
 chan_name="Rover's Morning Glory RMG-TV Cleavland Ohio" ;;
-# 1054) WFSB 3 Hartford Connecticut USA
-1054)
+# 1051) WFSB 3 Hartford Connecticut USA
+1051)
 link="https://livestream.com/accounts/6372985/live"
 use_cookies="no"
 chan_name="WFSB 3 Hartford Connecticut USA" ;;
-# 1055) ICOinvestor.tv USA
-1055)
+# 1052) ICOinvestor.tv USA
+1052)
 link="https://livestream.com/accounts/26548600/events/8201689"
 use_cookies="no"
 chan_name="ICOinvestor.tv USA" ;;
-# 1056) WISH 8 Indianapolis USA
-1056)
+# 1053) WISH 8 Indianapolis USA
+1053)
 link="https://livestream.com/accounts/1858612/live"
 use_cookies="no"
 chan_name="WISH 8 Indianapolis USA" ;; 
-# 1057) Luigi Pellegrini Parrocchia Santa Rita Via Reggio Italy 
-1057)
+# 1054) Luigi Pellegrini Parrocchia Santa Rita Via Reggio Italy 
+1054)
 link="https://livestream.com/accounts/25077919/diretta"
 use_cookies="no"
 chan_name="Luigi Pellegrini Parrocchia Santa Rita Via Reggio Italy " ;;
