@@ -1432,6 +1432,7 @@ link=https://www.twitch.tv/mlovsin
 use_cookies="no"
 chan_name="worldcup2018russiastream";;
 # 75) worldcup 2
+75)
 link=https://www.twitch.tv/binoini
 use_cookies="no"
 chan_name="worldcup2018russiastream";;
