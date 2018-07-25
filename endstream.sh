@@ -1197,15 +1197,17 @@ link=https://byubhls-i.akamaihd.net/hls/live/267187/byutvhls/master_4064.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="Bringham Young University BYU TV USA" ;;
+
+################# PBS #########################################
 # 36) Wisconsin Public Television The Wisconsin Channel
 36)
 #link="https://livestream.com/accounts/13897710/events/4153577"
 link="$( curl "https://livestream.com/accounts/13897710/events/4153577"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-
 #link="https://api.new.livestream.com/accounts/13897710/events/4153577/broadcasts/178073373.secure.m3u8"
-
 use_cookies="no"
 chan_name="Wisconsin Public Television" ;;
+
+############# WASHINGTON DC #################################
 # 37) District Knowledge Network
 37)
 link=http://video.oct.dc.gov/out/u/96_4.m3u8
@@ -1214,7 +1216,8 @@ link=http://video.oct.dc.gov/out/u/96_4.m3u8
 #link=http://video.oct.dc.gov/out/u/96_1.m3u8
 use_cookies="no"
 chan_name="District Knowledge Network" ;;
-# 38)MNN Channel 5 New York USA
+################## MANHATTAN NEIGHBOURHOOD NETWORK HD
+# 38)MNN Channel 5 Manhattan Neighbourhood Network HD New York USA
 38)
 #link="https://livestream.com/accounts/17251372/events/4846282"
 link="$( curl "https://livestream.com/accounts/17251372/events/4846282" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
@@ -1522,9 +1525,9 @@ chan_name="QVC English" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=764000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_2_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
-link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-p.m3u8?sd=10&rebase=on"
+#link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-b.m3u8?sd=10&rebase=on"
+link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=4000000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_4_av-p.m3u8?sd=10&rebase=on"
 #####method="Tor"
@@ -1533,33 +1536,13 @@ chan_name="The Shopping Channel TSC" ;;
 # 60) Gem Shopping Network USA
 60)
 #link="https://livestream.com/accounts/3486453/events/7709515"
-
-link="$( curl "https://livestream.com/accounts/3486453/events/7709515" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  ' | cut -d \? -f 1 )"
-
+link="$( curl "https://livestream.com/accounts/3486453/events/7709515"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Gem Shopping Network USA" ;;
 # 61) Lake Tahoe TV
 61)
-link="https://livestream.com/accounts/21822229/events/6450069"
-#link="https://api.new.livestream.com/accounts/21822229/events/6450069/broadcasts/178000980.secure.m3u8?dw=80&hdnea=st=1532301508~exp=1532303308~acl=/i/21822229_6450069_lsiirpz18wgyydwgi7p_1@365241/*~hmac=048f8ea81a7baa44423cf7c59797079549df1ca87c44288cc37b4f79515fd24a"
-
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=198000,CODECS="avc1.42e020,mp4a.40.2",RESOLUTION=480x270
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@198000p.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=198000,CODECS="avc1.42e020,mp4a.40.2",RESOLUTION=480x270
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@198000pb.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=2320000,CODECS="avc1.4d0029,mp4a.40.2",RESOLUTION=1280x720
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@2320000p.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=1756000,CODECS="avc1.4d0029,mp4a.40.2",RESOLUTION=864x486
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@1756000pb.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=678000,CODECS="avc1.4d0029,mp4a.40.2",RESOLUTION=768x432
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@678000p.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=1756000,CODECS="avc1.4d0029,mp4a.40.2",RESOLUTION=864x486
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@1756000p.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=2320000,CODECS="avc1.4d0029,mp4a.40.2",RESOLUTION=1280x720
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@2320000pb.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=678000,CODECS="avc1.4d0029,mp4a.40.2",RESOLUTION=768x432
-#link="https://playback.akamaized.net/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media/21822229_6450069_lsiirpz18wgyydwgi7p_1@678000pb.m3u8?dw=80&ts=1532300400&hdnts=exp=1532474523~acl=/streams/21822229_6450069_lsiirpz18wgyydwgi7p_1/media*~hmac=74cf9456863e44042954daaade7b144e2bc72768d95dd3f847e20ff4b4184217"
-
+#link="https://livestream.com/accounts/21822229/events/6450069"
+link="$( curl "https://livestream.com/accounts/21822229/events/6450069"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Lake Tahoe TV" ;;
 # 62)New Orleans TV2
@@ -1681,7 +1664,7 @@ chan_name="FiOS1 News New Jersey" ;;
 75)
 #link=https://cdnapisec.kaltura.com/p/424341/sp/42434100/playManifest/entryId/1_is35xshu/format/applehttp/protocol/https/uiConfId/39790741/a.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=396000,RESOLUTION=320x180,CODECS="avc1.66.30, mp4a.40.34"
-#link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_1_av-p.m3u8?sd=10&rebase=on"
+link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_1_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=396000,RESOLUTION=320x180,CODECS="avc1.66.30, mp4a.40.34"
 #link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_1_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1096000,RESOLUTION=640x360,CODECS="avc1.66.30, mp4a.40.34"
@@ -1689,9 +1672,10 @@ chan_name="FiOS1 News New Jersey" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1096000,RESOLUTION=640x360,CODECS="avc1.66.30, mp4a.40.34"
 #link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_2_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.34"
-link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_3_av-p.m3u8?sd=10&rebase=on"
+#link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_3_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.34"
 #link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_3_av-b.m3u8?sd=10&rebase=on"
+
 use_cookies="no"
 chan_name="FiOS1 News Lower Hudson Valley" ;;
 
