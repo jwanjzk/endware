@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.624
-# Revision Date: August 1, 2018
+# Version: 0.625
+# Revision Date: August 4, 2018
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.624"
-rev_date="01/08/2018"
+version="0.625"
+rev_date="04/08/2018"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -194,15 +194,15 @@ channel_matrix_0()
    echo "19)VOA USA           59)TSC CA            99)TLM Lyon FR       139)Canal 13 AR      179)RBC TV RU         219)Z1 Televizija HR          259)Alghad EG"
    echo "20)NEWSMAX USA       60)Gem Shopping USA  100)BFM Paris FR     140)SuperCanal 3 AR  180)CGTN Russian      220)RTV Posavina HR           260)Extra News EG"  
    echo "21)Free Speech TV USA61)Lake Tahoe TV     101)Alsace 20 FR     141)CN23 AR          181)Vesti FM RU       221)OsjeckaTV HR              261)CBC Sofra EG"
-   echo "22)Infowars USA      62)New Orleans TV    102)Mosaik TV FR     142)Telemax AR       182)Current Time VOA  222)Tomix Wein HR             262)CBC Drama EG"       
-   echo "23)United Nations TV 63)Atlanta TV        103)Journal TVLandes 143)Vorterix AR      183)RTR Planeta RU    223)Euronews HU               263)DMC Live EG"  
+   echo "22)Infowars USA      62)KBVR TV           102)Mosaik TV FR     142)Telemax AR       182)Current Time VOA  222)Tomix Wein HR             262)CBC Drama EG"       
+   echo "23)United Nations TV 63)Southeastern TV   103)Journal TVLandes 143)Vorterix AR      183)RTR Planeta RU    223)Euronews HU               263)DMC Live EG"  
    echo "24)C-SPAN 1 USA      64)TVW Washington    104)QVC Francais     144)TV Publica AR    184)Perviy RU         224)SKY Folk MK               264)Al-Fallujah IQ"
    echo "25)C-SPAN 2 USA      65)DC Network        105)8 Monte Blanc FR 145)Bolivia TV BO    185)Music Box RU      225)Star Lamia GR             265)AFAQ TV IQ" 
    echo "26)C-SPAN 3 USA      66)Laurel TV         106)Azur TV Nice FR  146)Cosmovision TV BO186)MOCKBA 24 RU      226)Action 24 GR              266)Karbarla IQ"
    echo "27)CPAC 1 CA         67)Buzzr Gameshows   107)RTS DEUX CH      147)Mega CL          187)1TV HD RU         227)Euronews GR               267)Euronews Arabic"
    echo "28)Oireachtas TV IE  68)RIDE TV USA       108)LCP FR           148)CNN CL           188)Planeta 4 RU      228)TRT Haber TR              268)ANB Sat USA"
-   echo "29)WGN 9 Chicago     69)Geek and Sundry   109)Public Senate FR 149)Telemedeline CO  189)Planeta 6 RU      229)NTV TR                    269)Suryoyo Sat SE"
-   echo "30)News12 Brooklyn   70)Beach TV          110)CPAC 1 CA        150)CTV CO           190)TPEANEP TV RU     230)HaberTurk TV              270)Safeer TV UK"    
+   echo "29)WGN 9 Chicago     69)SPC-TV S.Petrberg 109)Public Senate FR 149)Telemedeline CO  189)Planeta 6 RU      229)NTV TR                    269)Suryoyo Sat SE"
+   echo "30)News12 Brooklyn   70)Capital City      110)CPAC 1 CA        150)CTV CO           190)TPEANEP TV RU     230)HaberTurk TV              270)Safeer TV UK"    
    echo "31)News12 LongIsland 71)Texas State TV    111)Assemblee QC CA  151)Teleantioquia CO 191)5 Live RU         231)Star TV TR                271)Euronews Persian"
    echo "32)FiOS1 New Jersey  72)MNN 1 NY USA      112)Canal Savoir CA  152)TeleSUR VE       192)POCCNR 1 HD RU    232)CNN Turk TR               272)BBC Persian "
    echo "33)Weather Nation    73)MNN 2 NY USA      113)Gong Cinema      153)Globovision VE   193)News 24 UA        233)KRT Kulture TR            273)Iran Aryaee " 
@@ -254,7 +254,7 @@ channel_matrix_1()
    echo "310)Aaj News IN      350)KBS World24 KR 390)KTN Home          430)HSN 2               470)Allkey Shop      510)Hillsong          550)CPAC Event 1"    
    echo "311)Jaya Plus        351)YTN 27 KR      391)SABC ZA           431)Bloomberg Australia 471)Sorgatronmedia   511)JUCE TV           551)CPAC Event 2"
    echo "312)TEZ TV           352)CGNTV          392)Africa News       432)Bloomberg USPoli    472)Amouranth        512)Salt and Light    552)CPAC Event 3"
-   echo "313)Dili Aaj Tak     353)YTV USA        393)Afro Worldview    433)Bloomberg Live      473)-----------      513)Harbor Light      553)CPAC Event 4" 
+   echo "313)Dili Aaj Tak     353)YTV USA        393)Afro Worldview    433)Bloomberg Live      473)Geek and Sundry  513)Harbor Light      553)CPAC Event 4" 
    echo "314)Sagarmatha Nepal 354)Atlanta AM790  394)Africa24          434)Bloomberg EU Live   474)-----------      514)St. Mary's Coptic 554)CPAC Event 5"  
    echo "315)Derana LK        355)ANN24 JP       395)SIKKA Afrique     435)Bloomberg Asia Live 475)-----------      515)Word of God Greek 555)CPAC Event 6"
    echo "316)Swarnavahini LK  356)Sol!ve 24 JP   396)K24 Nairobi KE    436)Weather Network CA  476)-----------      516)Shalom America    556)CPAC Event 7"
@@ -272,93 +272,93 @@ channel_matrix_2()
    echo "||      FREE       ||    Latino Extra   ||   Latino Mucho Mas   || Portugues/French Extra||     USA Local 2    ||     USA Local 3   ||   LiveStream 1   ||"
    echo "======================================================================================================================================================"
    echo "561)------------    601)VIVE VE            641)Azteca 7 MX       681)Euronews PT         721)FOX News Preview   761)News 12 KTVZ7     801)Sangat Birmingham "    
-   echo "562)------------    602)Vatican Media ES   642)------------      682)TV Assemblelia BR   722)Capital City       762)NewsWest 9 KWES DC802)Sikh Channel " 
+   echo "562)------------    602)Vatican Media ES   642)------------      682)TV Assemblelia BR   722)Beach TV           762)NewsWest 9 KWES DC802)Sikh Channel " 
    echo "563)------------    603)Televen VE         643)EsteCanal TV      683)TV Canaco Nova      723)Daytona Beach      763)Orange TV         803)Dashmesh  "  
    echo "564)------------    604)Impacto USA        644)Cinevision DR     684)Igreja de Graca     724)Shepard Smith      764)PGCPS             804)Iberia TV  "             
    echo "565)------------    605)UCVTV CL           645)Nuevolaredo MX    685)Assemblelia Ales    725)WUSA9 Breaking     765)RyeTV             805)Obieqtivi TV   "  
    echo "566)------------    606)UCVTV 2 CL         646)Sinart CR         686)Boas Nova           726)WCNC Breaking      766)Seattle Channel   806)ortonville   "  
-   echo "567)------------    607)Univision MX       647)Bethel Panamá     687)Fundacao Nazzare    727)WCCB News          767)Southeastern      807)Holiday & Cruise  "
-   echo "568)------------    608)Cablenet AR        648)Poder de Dios BO  688)STF Brazil          728)UGA TV             768)Temple TV         808)------------"
-   echo "569)------------    609)Telpintv AR        649)TVDIÁRIO MX       689)TV Estúdio Brasil   729)TVW2 Washington    769)Vienna HQ         809)Vision Cruise AU "
-   echo "570)------------    610)Canal8 MarPlataAR  650)BoliviaTV BO      690)Rádio Justiça       730)Action News KNVN   770)Escambia          810)Vision Cruise UK "
-   echo "571)------------    611)Univision USA      651)GUATEVISION GT    691)EXA FM Brasil       731)Alaska ASD         771)CBS Sports        811)------------"
-   echo "572)------------    612)Canal 2 AR         652)RTV ES            692)RIT TV BR           732)Bowie TV           772)WYCW Carolinas    812)WHLT USA  "
-   echo "573)------------    613)ABC Paraguay       653)Medios Públicos   693)Gott24.TV           733)Escambia TV        773)FOX 10 News       813)LRPATV CH25 NH USA "
-   echo "574)------------    614)Abya Yala BO       654)Tele Bahia DR     694)TV Fátima Paróquia  734)FOX 5 DC (WTTG)    774)WHO 13            814)Santa Fe NM USA  "
-   echo "575)------------    615)UFROVision CL      655)Iglesia Advent USA695)You Content 98      735)Garland TV         775)Erie News         815)------------" 
-   echo "576)------------    616)Campo Abierto CL   656)Expande Puebla MX 696)Rede Gênesis PT     736)Greenbelt TV       776)WISTV             816)------------"
-   echo "577)------------    617)UNITV AR           657)Ayuda Universal MX697)MEIO Teresina BR    737)House Represent    777)------------      817)------------"
-   echo "578)------------    618)TelePacifico CO    658)Canal 27 Esperanza698)Medalhão Persa BR   738)KRBC-TV            778)------------      818)102.3 NOW! TV CA   "	
-   echo "579)------------    619)Venevision VE      659)TELEAMIGA         699)Talenu TV TPA       739)KBVR TV            779)------------      819)TourbusTV USA  "
-   echo "580)------------    620)Telediario AR      660)Poli tv Bogota CO 700)TV Miramar BR       740)KTVB               780)------------      820)Ezekiel TV"  
-   echo "581)------------    621)TVeo Cordoba AR    661)UNTREF UN3 AR     701)TV Zimbo AO         741)Key TV             781)------------      821)KVZK TV AS "
-   echo "582)------------    622)PSN Tijuana MX     662)RUAV Univalle CO  702)TV RAIAR AO         742)KOB4 News          782)------------      822)------------"       
-   echo "583)------------    623)CNN Espanol        663)JesusTV GT        703)SescTV SaoPaulo BR  743)KPNX Breaking      783)------------      823)----------"  
-   echo "584)------------    624)Paraguay Noticias  664)FGTV USA          704)Rede Super BeloBR   744)KXAN News          784)------------      824)Native Media NM USA"
-   echo "585)------------    625)Canal Tr3ce CO     665)Evangelio Eterno  705)Talenu Luanda AO    745)Miami TV           785)------------      825)------------"  
-   echo "586)------------    626)Cali TV            666)BoliviaTV La Paz  706)Vatican Media PT    746)KNTV-TV            786)------------      826)------------"
-   echo "587)------------    627)Canal 12 CO        667)Cosmovision TV    707)ACTION              747)KNTV Telemundo     787)------------      827)Emmanuel TV  "
-   echo "588)------------    628)Imagen Radio MX    668)Libre Cali CO     708)CNEWS FR            748)NBC2 News KTUU     788)------------      828)Shalom World "
-   echo "589)------------    629)Euronews ES        669)MONARCA Hidalgo MX709)TV7 Bordeaux FR     749)News2 WCBD         789)------------      829)WDIO Duluth "
-   echo "590)------------    630)Teleamazonas       670)Yuma CO           710)i24 News IL         750)News4 WRC          790)------------      830)KHNL Honolulu "    
-   echo "591)------------    631)TV Camara PY       671)Dominio MX        711)SYTRAL Rhone FR     751)News4 White House  791)------------      831)WBNS Columbus "
-   echo "592)------------    632)Tu Canal Panama    672)Señal UNTREF      712)Vedia BE            752)News5 WCYB         792)------------      832)WTTG Fox 5 DC "
-   echo "593)------------    633)Colosal TV 1       673)NRT 4 monclova    713)MABI CA             753)NewsWest 9 KWES    793)------------      833)WJBK FOX 2 Detroit " 
-   echo "594)------------    634)A24 AR             674)Este Canal        714)Vatican Media FR    754)NBC4 WNBC          794)------------      834)KSL NOW Salt Lake "  
-   echo "595)------------    635)Canal 8 AR         675)Telecafé Bogota   715)TVM Paris FR        755)NBC4 WNBC Traffic  795)------------      835)KSLA News 12 "
-   echo "596)------------    636)CanalShowsport AR  676)TVUNAM 20         716)RMC INFO FR         756)NBC5 WMAQ          796)------------      836)WSFA 12 Montgomory"
-   echo "597)------------    637)WIPR Puerto Rico   677)EVTV Miami        717)C-Star              757)NBC 10 KTEN        797)------------      837)Fox 8 Cleveland "
-   echo "598)------------    638)La Mega Bogotá CO  678)Enlacetv Espanol  718)-------------       758)NBC 12 WWBT        798)------------      838)KELO Keloland "	
-   echo "599)------------    639)TV UNAM MX         679)------------      719)-------------       759)NBC 29 WVIR        799)------------      839)HU16 Harding   "
-   echo "600)------------    640)Telecafé CO        680)------------      720)-------------       760)NBC 13 WNYT        800)------------      840)KTVK 3TV AZ  "
+   echo "567)------------    607)Univision MX       647)Bethel Panamá     687)Fundacao Nazzare    727)WCCB News          767)Atlanta TV        807)Holiday & Cruise  "
+   echo "568)------------    608)Cablenet AR        648)Poder de Dios BO  688)STF Brazil          728)UGA TV             768)Temple TV         808)Vision Cruise AU "
+   echo "569)------------    609)Telpintv AR        649)TVDIÁRIO MX       689)TV Estúdio Brasil   729)TVW2 Washington    769)Vienna HQ         809)Vision Cruise UK"
+   echo "570)------------    610)Canal8 MarPlataAR  650)BoliviaTV BO      690)Rádio Justiça       730)Action News KNVN   770)Escambia          810)102.3 NOW! TV CA "
+   echo "571)------------    611)Univision USA      651)GUATEVISION GT    691)EXA FM Brasil       731)Alaska ASD         771)CBS Sports        811)TourbusTV USA "
+   echo "572)------------    612)Canal 2 AR         652)RTV ES            692)RIT TV BR           732)Bowie TV           772)WYCW Carolinas    812)Ezekiel TV"
+   echo "573)------------    613)ABC Paraguay       653)Medios Públicos   693)Gott24.TV           733)Escambia TV        773)FOX 10 News       813)Emmanuel TV "
+   echo "574)------------    614)Abya Yala BO       654)Tele Bahia DR     694)TV Fátima Paróquia  734)FOX 5 DC (WTTG)    774)WHO 13            814)Shalom World"
+   echo "575)------------    615)UFROVision CL      655)Iglesia Advent USA695)You Content 98      735)Garland TV         775)Erie News         815)KIFI ABC 8 Idaho Falls" 
+   echo "576)------------    616)Campo Abierto CL   656)Expande Puebla MX 696)Rede Gênesis PT     736)Greenbelt TV       776)WISTV             816)ESPN Seattle"
+   echo "577)------------    617)UNITV AR           657)Ayuda Universal MX697)MEIO Teresina BR    737)House Represent    777)------------      817)King County TV Preston"
+   echo "578)------------    618)TelePacifico CO    658)Canal 27 Esperanza698)Medalhão Persa BR   738)KRBC-TV            778)------------      818)KIRO Radio Seattle"	
+   echo "579)------------    619)Venevision VE      659)TELEAMIGA         699)Talenu TV TPA       739)New Orleans TV     779)------------      819)KOIN CBS 6 Portland"
+   echo "580)------------    620)Telediario AR      660)Poli tv Bogota CO 700)TV Miramar BR       740)KTVB               780)------------      820)KPTV FOX 12 Portland"  
+   echo "581)------------    621)TVeo Cordoba AR    661)UNTREF UN3 AR     701)TV Zimbo AO         741)Key TV             781)------------      821)KTVZ 21 Bend Oregon"
+   echo "582)------------    622)PSN Tijuana MX     662)RUAV Univalle CO  702)TV RAIAR AO         742)KOB4 News          782)------------      822)KEZI ABC 9 Eugene"       
+   echo "583)------------    623)CNN Espanol        663)JesusTV GT        703)SescTV SaoPaulo BR  743)KPNX Breaking      783)------------      823)KOIN 6 Extra Portland"  
+   echo "584)------------    624)Paraguay Noticias  664)FGTV USA          704)Rede Super BeloBR   744)KXAN News          784)------------      824)KSL NOW Salt Lake "
+   echo "585)------------    625)Canal Tr3ce CO     665)Evangelio Eterno  705)Talenu Luanda AO    745)Miami TV           785)------------      825)KUSI San Diego"  
+   echo "586)------------    626)Cali TV            666)BoliviaTV La Paz  706)Vatican Media PT    746)KNTV-TV            786)------------      826)KEYT ABC 3 Santa Barbara"
+   echo "587)------------    627)Canal 12 CO        667)Cosmovision TV    707)ACTION              747)KNTV Telemundo     787)------------      827)KHSL CBS 12 Redding"
+   echo "588)------------    628)Imagen Radio MX    668)Libre Cali CO     708)CNEWS FR            748)NBC2 News KTUU     788)------------      828)KRCR ABC 7 Redding "
+   echo "589)------------    629)Euronews ES        669)MONARCA Hidalgo MX709)TV7 Bordeaux FR     749)News2 WCBD         789)------------      829)KION CBS 5/46 Salinas"
+   echo "590)------------    630)Teleamazonas       670)Yuma CO           710)i24 News IL         750)News4 WRC Wash D.C.790)------------      830)KSBY NBC 6 Santa Barbara"    
+   echo "591)------------    631)TV Camara PY       671)Dominio MX        711)SYTRAL Rhone FR     751)News4 White House  791)------------      831)KESQ ABC 3 Palm Springs  "
+   echo "592)------------    632)Tu Canal Panama    672)Señal UNTREF      712)Vedia BE            752)News5 WCYB         792)------------      832)KCOY CBS 12 Santa Maria "
+   echo "593)------------    633)Colosal TV 1       673)NRT 4 monclova    713)MABI CA             753)NewsWest 9 KWES    793)------------      833)MCAET Salinas " 
+   echo "594)------------    634)A24 AR             674)Este Canal        714)Vatican Media FR    754)NBC4 WNBC          794)------------      834)KVVB CH.33 Victorville"  
+   echo "595)------------    635)Canal 8 AR         675)Telecafé Bogota   715)TVM Paris FR        755)NBC4 WNBC Traffic  795)------------      835)KOAA NBC 5 Colorado"
+   echo "596)------------    636)CanalShowsport AR  676)TVUNAM 20         716)RMC INFO FR         756)NBC5 WMAQ          796)------------      836)KRDO ABC 13 Colorado"
+   echo "597)------------    637)WIPR Puerto Rico   677)EVTV Miami        717)C-Star              757)NBC 10 KTEN        797)------------      837)Freedom Solar TV Kersey"
+   echo "598)------------    638)La Mega Bogotá CO  678)Enlacetv Espanol  718)-------------       758)NBC 12 WWBT        798)------------      838)KTVK 3 TV Arizona"	
+   echo "599)------------    639)TV UNAM MX         679)------------      719)-------------       759)NBC 29 WVIR        799)------------      839)KMVP 24/7 Phoenix"
+   echo "600)------------    640)Telecafé CO        680)------------      720)-------------       760)NBC 13 WNYT        800)------------      840)KTAR News Phoenix"
    echo "==================================================================================================================================================="
 }	                     
             
 channel_matrix_3()	
 {
    echo "============================================================    "$product"  "$version"   ============================================================================="
-   echo "||      LiveStream 2      ||    LiveStream 3   ||      LiveStream 4     ||     LiveStream 5     ||       LiveStream 6      ||    LiveStream 7      ||   Livestream 8  ||"
-   echo "====================================================================================================================================================================="
-   echo "841)FOX 26 Houston        881)WAND Decatur IL    921)KAUZ CBS6 Winters   961)KVIA ABC-7 El Paso 1 1001)WFLD Fox32 Chicago     1041)St Patrick's Dumbarton1081)Maricopa MCTV"    
-   echo "842)WAFB 9 CBS Baton Rouge882)KOAAColoradoSpring 922)KXXV ABC 25 Waco    962)KCBD NBC 11 Lubbock  1002)KTVK 3 Pheonix         1042)VTNTV VICTORY         1082)CharmTV Baltimore" 
-   echo "843)WCSC Charleston       883)Enid OK            923)KATC Lafayette      963)WALB NBC 10 Albany   1003)KRIV FOX26 Houston     1043)------------          1083)KVVB CH.33"  
-   echo "844)WTXF FOX 29           884)ThinkTech Hawaii   924)WFLD Fox32 Chicago  964)KFVE 9 Honolulu      1004)WVUE FOX8 NewOrleans   1044)TMN WORD TV           1084)WLTH AM 1370 "             
-   echo "845)WFLA NBC 8 Tampa Bay  885)WFLX FOX 29        925)KPLC NBC7LkCharles  965)WWBT NBC12 Richmond  1005)KPTV FOX12 Portland    1045)Parkside Radio        1085)KCOH TV Houston  "  
-   echo "846)WFIE NBC 14           886)WPS-TV Wichita     926)KOIN 6 Portland     966)WJTV CBS12 Jackson   1006)KIRO Seattle           1046)FGTV Jacksonville     1086)Lake Tahoe TV "  
-   echo "847)KOIN Portland OR      887)KAAL Rochester MN  927)WCCB Charlotte      967)WWLP 22 Springfield  1007)KUSI San Diego         1047)HJTV Healing Jesus    1087)KVZK A. Samoa "
-   echo "848)WTVT FOX 13 Tampa     888)KRCR Redding CA    928)WDAM 7 Hattiesburg  968)CBS 42 Birmingham    1008)Fox 8 Cleveland        1048)Apocalypse APTV       1088)Florida Gaming "
-   echo "849)KUSI San Diego        889)KION Salinas CA    929)WLOX Mississippi    969)WNYT NBC13 Sandusky  1009)KSLA CBS12Shreveport   1049)Marytown Chapel       1089)Kidd Kraddick"
-   echo "850)Joe Pags Show         890)KMVP Phoenix AZ    930)WTVM Columbus       970)KEYT ABC3 StBarbara  1010)KELO CBS Sioux Falls   1050)ESPN 97.5 Houston     1090)RMG-TV Cleavland"
-   echo "851)WBRC FOX6 Mobil       891)KTAR Phoenix AZ    931)WRBL CBS3 Columbus  971)WLBT FOX40 Jackson   1011)KSL Salt Lake City     1051)Football Hall of Fame 1091)WFSB 3 Hartford "
-   echo "852)WNYW Fox 5 New York   892)WPSD Paducah KT    932)WJHL CBS11 Johnson  972)WSMV NBC4 Nashville  1012)WTTG Fox5 Wash DC      1052)Lance Hope RSL        1092)ICOinvestor"
-   echo "853)KMOV 4St. Louis       893)KVRR Fargo ND      933)KCTV CBS5 Kansas    973)DayTraderRockStar    1013)WCSC CBS5 Charleston   1053)XBTV Rosecroft        1093)WISH8 Indianapolis"
-   echo "854)WFLD Fox 32 Chicago   894)KDLT SiouxFallsSD  934)WTHI 10TerreHaute   974)WALA FOX10 Mobile    1014)WBNS 10 Columbus       1054)VSiN Vegas Stats      1094)Luigi PellegriniIT"
-   echo "855)KHSL Action           895)GovTV Watertown SD 935)WBBJ ABC7 Tennesee  975)KMOV CBS4 St.Louis   1015)WJBK FOX2 Detroit      1055)Guaranty Media        1095)Bengu TK"
-   echo "856)WVUE FOX8 New Orleans 896)KFDXWitchita Falls 936)KTVZ 21 BendOregon  976)Lex & Terry Lufkin   1016)WAFB CBS9 BatonRouge   1056)Park City PCTV        1096)i24News IL"
-   echo "857)KLTV 7 Tyler TX       897)Freeway Cams TX    937)KEZI ABC9 Eugene    977)KVOA NBC4 Tuscon     1017)WFMZ 69 TrafficAllen   1057)WHLT 12 Whitehall     1097)------------"
-   echo "858)KEYT ABC 3 StBarbara  898)KQDS Duluth MN     938)WDEF 12Chattanooga  978)Mike Malloy Show     1018)KY3 Springfield        1058)OUBN - Oakwood        1098)------------"	
-   echo "859)WAKA ALABAMA          899)KOLR Springfield MO939)KCOY CBS12 StMaria  979)KHSL CBS12 Redding   1019)710 ESPN Seattle       1059)Nasdaq Bell           1099)------------ "
-   echo "860)WJZY Charlotte NC     900)WROC Rochester NY  940)WTOL CBS11 Toledo   980)KSTP ABC5 St.Paul    1020)NYXT Manhattan         1060)AAA Guayama           1100)------------ "  
-   echo "861)WCCB Charlotte NC     901)WBRE WilkesBarrePA 941)WIS NBC10 Columbia  981)KSWO ABC7 Winters    1021)KingCountyPreston      1061)AWCATV - Education    1101)------------ "
-   echo "862)WCYB NBC 5 VA         902)Cumulus NYC        942)WMC NBC5 Memphis    982)WBTV CBS3 Charlotte  1022)Westerville.TV         1062)Branson Visitor       1102)------------ "       
-   echo "863)WYCW 62 Carolinas     903)KTVQ Lexington KY  943)HTV10 Houma         983)KPHO CBS5 Pheonix    1023)Kingdom Access         1063)TMN Hays Kansas       1103)------------ "  
-   echo "864)WNCT CBS9 Greenville  904)WFFT FOX 55 IN     944)WRIC ABC8 Peters    984)WDIO ABC 13 Duluth   1024)KCLV FOX2 Las Vegas    1064)MNN Channel 5         1104)------------ "
-   echo "865)WJBF Augusta          905)WAAY News ABC 31   945)Western Chicopee    985)KMSP FOX9Minneapolis 1025)Plaistow Access        1065)TV39 WIVM Canton      1105)------------ "  
-   echo "866)KLFY 10 Acadiana      906)SPC-TV S.Petrberg  946)KIMT 3 Mason        986)KSBY NBC6 St Barbara 1026)Topeka City Kansas     1066)EPlusTV6 Jackson      1106)------------ "
-   echo "867)------------          907)WWTV 9             947)KXAN NBC Austin     987)KOLD 13 Tucson       1027)Shelby County          1067)St.CloudTimes UTVS    1107)------------ "
-   echo "868)------------          908)WPHL TV ABC 6      948)WKRG CBS5 Mobile    988)KLTV ABC7 Tyler      1028)Provincetown           1068)Milford TV            1108)------------"
-   echo "869)WWOR Secaucus         909)WCCB Charlotte     949)Lex 18 Lexington    989)WBRC FOX6 Birmingham 1029)MNN-FSTV Manhattan     1069)EKBTV Pikeville       1109)------------ "
-   echo "870)KSNT                  910)WCBD NBC2 Charles  950)WBNS 10 Radar       990)K57 Fox 6 Guam       1030)Brunswick TV3          1070)Milford Education     1110)------------ "    
-   echo "871)WANE Ft. Wayne        911)WSAV NBC3 Savannah 951)WBNS 10 Columbus    991)WTVT FOX13 Tampa     1031)Bermuda Government     1071)Native Media          1111)------------ "
-   echo "872)KTXS 12 ABC           912)WSPA CBS7 Spartan  952)KYMA NBC11 Yuma     992)WFLA NBC8 Tampa      1032)Freedom Solar TV       1072)Evangel EUTV          1112)------------ "
-   echo "873)Island TV             913)WCMH NBC4 Columbus 953)WOIO CBS19Clevland  993)WTNH 8 New Haven     1033)Shalom Media KIDS      1073)Granbury Media        1113)------------" 
-   echo "874)KSNT Kansas           914)CBS 17 Rahliegh    954)KESQ Palm Springs   994)WMBF Myrtle Beach    1034)Faith LutheranChurch   1074)ETSU Fine Arts        1114)------------ "  
-   echo "875)KMIZ Missouri         915)Channel5+Las Vegas 955)KRDO Colorado Spr   995)WSFA NBC12Montgomery 1035)Whole Life Ministry    1075)WDFL 18 SC            1115)------------"
-   echo "876)KFDA Amarillo TX      916)KSNW NBC3 Witchita 956)WFMZ 69 Allen Town  996)WNYW Fox5 New York   1036)Second Presbyterian    1076)MCAET Salinas         1116)------------"
-   echo "877)KZTVCorpusChristi TX  917)WPRIFox12Providen  957)WTOC 11 Savannah    997)KVVU FOX5 Las Vegas  1037)St. Catharine          1077)BlabTV                1117)------------ "
-   echo "878)Tampa TV FL           918)WWAY Willmington   958)WGCL CBS46 Atlanta  998)KHON CBS2 Ala Mona   1038)Glory to God           1078)Essex County          1118)------------ "	
-   echo "879)WMGT Macon Georgia    919)KIFI ABC 8 Idaho   959)KQTV 2 St.Joseph    999)WFIE NBC14Evansville 1039)WYKE TV 47 Hormosassa  1079)CNPTV Caribbean       1119)------------ "
-   echo "880)44 Bolivar MI         920)Fox26 KNPN SJoseph 960)CGTN America        1000)WTXF FOX29 Philli   1040)St. Helena Chapel      1080)LOBO STATION          1120)------------ "
+   echo "||      LiveStream 2      ||    LiveStream 3       ||      LiveStream 4     ||     LiveStream 5     ||       LiveStream 6      ||    LiveStream 7      ||   Livestream 8  ||"
+   echo "==================================================================================================================================================================="
+   echo "841)KOLD 13 Tucson        881)WCYB NBC 5 Bristol    921)WKRG CBS 5 Mobile     961)KLTV ABC 7 Tyler TX   1001)KNPN Fox26 St Joseph 1041)AWCATV Educ     1081)------------"    
+   echo "842)KPHO CBS 5 Pheonix    882)WRIC ABC 8 Petersburg 922)WALA FOX10 Mobile     962)KTXS 12 ABC Abilene   1002)KCTV CBS5 Kansas MO  1042)FHSU TIGER MEDIA1082)------------" 
+   echo "843)KVOA NBC 4 Tuscon     883)WWBT NBC 12 Richmond  923)WBRC FOX 6 Birmingham 963)KFDA CBS10 AmarilloTX 1003)KHNL Honolulu        1043)Essex County    1083)------------"  
+   echo "844)KYMA NBC 11 Yuma      884)Brunswick TV3 NH      924)Oakwood Uni Huntsville964)KZTV CBS10 CorpusX    1004)ThinkTech Honolulu   1044)CNPTVCaribbean  1084)------------"             
+   echo "845)NewsChannel5 LasVegas 885)LRPATV CH25 NH        925)WJZY FOX 46 Charlotte 965)KFDX NBC3 WitchitaFls 1005)KFVE 9 Honolulu      1045)LOBO STATION    1085)------------"  
+   echo "846)VSiN Vegas Stats      886)WJBK FOX 2 Detroit    926)WCCB Charlotte CW     966)Galveston County      1006)KHON CBS2 Ala Mona   1046)Maricopa College1086)------------"  
+   echo "847)KCLV FOX 2 Las Vegas  887)WWTV 9 Mt. Pleasent   927)WYCW CW 62 Carolinas  967)KAUZ CBS 6 Winters    1007)KVZK 2 Am.Samoa      1047)WLTH AM 1370    1087)------------"
+   echo "848)KVVU FOX 5 Las Vegas  888)WFIE NBC 14 Evansville928)WNCT CBS 9 Greenville 968)KXXV ABC 25 Waco      1008)PNC K57 Fox 6 Guam   1048)Lake Tahoe      1088)------------"
+   echo "849)Native Media Sante Fe 889)WANE Ft. Wayne        929)WCBD NBC 2 Charleston 969)KVIA ABC-7 El Paso    1009)Joe Pags             1049)Florida Gaming  1089)------------"
+   echo "850)Santa Fe Media        890)WFFT FOX 55 Indiana   930)WWAY ABC3 Willmington 970)KCBD NBC 11 Lubbock   1010)CGTN America         1050)Kidd Kraddick   1090)------------"
+   echo "851)WTNH 8 New Haven      891)WTHI 10 Terre Haute   931)WBTV CBS 3 Charlotte  971)Lex & Terry Lufkin    1011)BlabTV               1051)RMG-TV Cleavland1091)------------"
+   echo "852)WFSB 3 Hartford       892)WISH 8 Indianapolis   932)CBS 17 Rahliegh NC    972)KSWO ABC 7 Winters TX 1012)Mike Malloy Show     1052)ICOinvestor     1092)------------"
+   echo "853)CharmTV Baltimore     893)EKBTV Pikeville KY    933)WCSC CBS 5 Charleston 973)------------          1013)Nasdaq Bell          1053)Luigi Pellegrini1093)------------"
+   echo "854)WTTG Fox 5 DC         894)WTVQ ABC 36 Lexington 934)WSPA CBS 7 Spartanberg974)ESPN 97.5 Houston TX  1014)Westerville.TV 543   1054)Bengu Turk TK   1094)------------"
+   echo "855)WWLP 22 Springfield   895)WPSD-TV Paducah       935)WMBF Myrtle Beach     975)Granbury Media TX     1015)Kingdom Access       1055)i24 News Israel 1095)------------"
+   echo "856)WestMass News Chicopee896)Lex 18 Lexington      936)WIS NBC 10 Columbia   976)KCOH TV Houston TX    1016)Plaistow Access      1056)------------    1096)------------"
+   echo "857)Milford TV            897)WFLA NBC 8 Tampa Bay  937)WSMV NBC 4 Nashville  977)KXAN NBC Austin       1017)Topeka City          1057)------------    1097)------------"
+   echo "858)Milford TV Educate    898)WTVT FOX 13 Tampa Bay 938)WBBJ ABC 7 Tennesee   978)KSLA 12 Shreveport    1018)Shelby County        1058)------------    1098)------------"	
+   echo "859)WWOR Secaucus NJ      899)Island TV Miami       939)WDEF CBS12 Chattanooga979)WAFB CBS9 BatonRouge  1019)Provincetown         1059)------------    1099)------------ "
+   echo "860)WNYW Fox 5 New York   900)City of Tampa         940)WMC NBC 5 Memphis     980)WVUE FOX8 NewOrleans  1020)CITV Hamilton Bermuda1060)------------    1100)------------ "  
+   echo "861)WROC CBS 8 Rochester  901)WFLX FOX 29 Palm Beach941)2nd Presbyter Memphis 981)KLFY 10 Lafayette     1021)Shalom Media KIDS    1061)------------    1101)------------ "
+   echo "862)WABC 77 New York      902)WYKE TV 47 Hormosassa 942)ETSU Fine Arts Johnson982)WDFL 18 SC/LA         1022)Lutheran Penfield    1062)------------    1102)------------ "       
+   echo "863)WJHL CBS 11 Johnson   903)WJBF Augusta GA       943)EPlusTV6 Jackson      983)KSLA CBS12 Shreveport 1023)Whole Life Ministries1063)------------    1103)------------ "  
+   echo "864)DayTraderRockStar     904)WMGT 41 NBC Macon GA  944)KELO Keloland ND/SD   984)HTV10 Houma LA        1024)St. Catharine Church 1064)------------    1104)------------ "
+   echo "865)NYXT Manhattan NYC    905)WSAV NBC 3 Savannah   945)KVRR Fargo ND         985)KPLC NBC7 LakeCharles 1025)Glory to God         1065)------------    1105)------------ "  
+   echo "866)MNN-FSTV              906)WTOC 11 Savannah      946)KDLT Sioux Falls SD   986)KATC ABC3 Lafayette   1026)St. Helena Chapel    1066)------------    1106)------------ "
+   echo "867)Fox 8 Cleveland       907)WTVM ABC 9 Columbus   947)GovTV Watertown SD    987)HU16 Harding Sercy    1027)St Patrick Dumbarton 1067)------------    1107)------------ "
+   echo "868)WIVM TV39 Canton      908)WRBL CBS 3 Columbus   948)KELO CBS Sioux Falls  988)KSNT Weather Wichita  1028)VTNTV VICTORY        1068)------------    1108)------------"
+   echo "869)WBNS 10 Columbus      909)WGCL CBS46 Atlanta    949)KIMT 3 Mason City     989)WPS-TV Wichita Public 1029)TMN WORD TV          1069)------------    1109)------------ "
+   echo "870)WNYT NBC 13 Sandusky  910)WALB NBC 10 Albany    950)WDIO ABC 10/13 Duluth 990)KSNW NBC 3 Witchita   1030)Parkside Radio       1070)------------    1110)------------ "    
+   echo "871)WBNS 10 Radar Columbus911)WDAM 7 Hattiesburg    951)KAAL ABC 6 Rochester  991)KSNT Kansas OK        1031)FGTV FreqGlory       1071)------------    1111)------------ "
+   echo "872)WBNS 10 Columbus      912)WLOX ABC13 Mississippi952)KQDS FOX 21 Duluth    992)Enid TV OK 1          1032)HJTV Healing Jesus   1072)------------    1112)------------ "
+   echo "873)WOIO CBS 19 Clevland  913)WJTV CBS 12 Jackson   953)KSTP ABC 5 St. Paul   993)KMOV CBS4 St. Louis   1033)APTV Apocalypse      1073)------------    1113)------------" 
+   echo "874)WTOL CBS 11 Toledo    914)WLBT FOX 40 Jackson   954)KMSP FOX 9 Minneapolis994)KMIZ ABC 17 Missouri  1034)Marytown Chapel      1074)------------    1114)------------ "  
+   echo "875)WCMH NBC 4 Columbus   915)WHLT Hattiesburg      955)St. Cloud Times UTVS  995)PolkCounty BolivarMO  1035)Guaranty Media       1075)------------    1115)------------"
+   echo "876)WTXF FOX 29 Philli    916)WSFA 12 Montgomory    956)WHLT 12 Whitehall     996)KOLR CBS10 Springfield1036)Pro Football Hall    1076)------------    1116)------------"
+   echo "877)WBRE NBC Wilkes Barre 917)WBRC FOX6 Birmingham  957)WFLD Fox 32 Chicago   997)Branson TV MO         1037)Lance Hope RSL       1077)------------    1117)------------ "
+   echo "878)WPHL TV ABC 6 Philli  918)WAKA CBS 8 Alabama    958)WAND NBC 17 Decatur   998)EUTV Springfield MO   1038)XBTV RosecroftRaceway1078)------------    1118)------------ "	
+   echo "879)WFMZ 69 Allen Town    919)WAAY ABC 31 Huntsville959)WFLD Fox 32 Chicago   999)KY3 Springfield MO    1039)Park City TV PCTV    1079)------------    1119)------------ "
+   echo "880)WPRI Fox 12 Providence920)CBS 42 Birmingham     960)KRIV FOX 26 Houston   1000)KQTV 2 St. Joseph MO 1040)AAA Guayama          1080)------------    1120)------------ "
    echo "================================================================================================================================================================="
 }              	         
                     
@@ -1350,6 +1350,7 @@ use_cookies="no"
 ####method="Tor"
 chan_name="CNN Live" ;;  
 
+
 ######################### FOX NEWS USA ########################################################
 # 49) Fox News 
 49)
@@ -1361,22 +1362,31 @@ chan_name="CNN Live" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=364000,RESOLUTION=256x144,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://foxnewsuni-f.akamaihd.net/i/FNCGOPREV_40220@40220/index_300000_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=364000,RESOLUTION=256x144,CODECS="avc1.77.30, mp4a.40.2"
-link="http://foxnewsuni-f.akamaihd.net/i/FNCGOPREV_40220@40220/index_300000_av-b.m3u8?sd=10&rebase=on"
+#link="http://foxnewsuni-f.akamaihd.net/i/FNCGOPREV_40220@40220/index_300000_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=64000,CODECS="mp4a.40.2"
 #link="http://foxnewsuni-f.akamaihd.net/i/FNCGOPREV_40220@40220/index_150000_a-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=64000,CODECS="mp4a.40.2"
 #link="http://foxnewsuni-f.akamaihd.net/i/FNCGOPREV_40220@40220/index_150000_a-b.m3u8?sd=10&rebase=on"
 
-#http://fnurtmp-f.akamaihd.net/i/1502368494075_01@335695/master.m3u8
-#http://fncgohls-i.akamaihd.net/hls/live/263399/FNCGOHLS/master.m3u8
-
-#link=https://players.brightcove.net/694940094001/SkrZHHcl_default/index.html?videoId=5270285052001
-#link=https://players.brightcove.net/694940094001/SkrZHHcl_default/index.html?videoId=5614615980001
-#http://video.foxnews.com/v/5614615980001/?#sp=watch-live
+######### ALTERNATE 
+#link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/master.m3u8"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=176000,RESOLUTION=360x200,CODECS="avc1.66.30, mp4a.40.2"
+#link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/index_160_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=352000,RESOLUTION=360x200,CODECS="avc1.66.30, mp4a.40.2"
+#link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/index_160_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=316000,RESOLUTION=360x200,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/index_300_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=492000,RESOLUTION=360x200,CODECS="avc1.77.30, mp4a.40.2"
+link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/index_300_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=18000,CODECS="mp4a.40.2"
+#link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/index_160_a-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=194000,CODECS="mp4a.40.2"
+#link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/index_160_a-b.m3u8?sd=10&rebase=on"
 
 use_cookies="no"
 ####method="Tor"
-chan_name="Fox News" ;;  
+chan_name="Fox News" ;; 
+ 
 # 50) Fox News Talk
 50)  
 #link="https://fnurtmp-f.akamaihd.net/i/FNRADIO_1@92141/master.m3u8"
@@ -1547,20 +1557,27 @@ chan_name="Gem Shopping Network USA" ;;
 link="$( curl "https://livestream.com/accounts/21822229/events/6450069"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Lake Tahoe TV" ;;
-# 62)New Orleans TV2
+# 62) KBVR TV Oregon State University USA  
 62)
-#link=http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=3382572,CODECS="avc1.66.31,mp4a.40.2",RESOLUTION=1280x720
-link="http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/chunklist_w1797542626.m3u8"
+#link=http://klive-a.akamaihd.net/dc-0/live/hls/p/391241/e/0_bthpnu1j/sd/10000/t/YwqLo1YivB_aumq-LxAuWg/master.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3167000,RESOLUTION=1920x1080,FRAME-RATE=30.303,CODECS="avc1.4d4028,mp4a.40.2"
+link=http://klive-a.akamaihd.net/dc-0/live/hls/p/391241/e/0_bthpnu1j/sd/10000/t/YwqLo1YivB_aumq-LxAuWg/index-s32-v1-a1.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=962000,RESOLUTION=640x360,FRAME-RATE=30.303,CODECS="avc1.4d401f,mp4a.40.2"
+#link=http://klive-a.akamaihd.net/dc-0/live/hls/p/391241/e/0_bthpnu1j/sd/10000/t/YwqLo1YivB_aumq-LxAuWg/index-s35-v1-a1.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1827000,RESOLUTION=1280x720,FRAME-RATE=30.303,CODECS="avc1.4d4028,mp4a.40.2"
+#link=http://klive-a.akamaihd.net/dc-0/live/hls/p/391241/e/0_bthpnu1j/sd/10000/t/YwqLo1YivB_aumq-LxAuWg/index-s42-v1-a1.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=662000,RESOLUTION=640x360,FRAME-RATE=30.303,CODECS="avc1.42801e,mp4a.40.2"
+#link=http://klive-a.akamaihd.net/dc-0/live/hls/p/391241/e/0_bthpnu1j/sd/10000/t/YwqLo1YivB_aumq-LxAuWg/index-s34-v1-a1.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=462000,RESOLUTION=480x270,FRAME-RATE=30.303,CODECS="avc1.42801e,mp4a.40.2"
+#link=http://klive-a.akamaihd.net/dc-0/live/hls/p/391241/e/0_bthpnu1j/sd/10000/t/YwqLo1YivB_aumq-LxAuWg/index-s33-v1-a1.m3u8
 use_cookies="no"
-chan_name="New Orleans TV" ;;
-# 63) Atlanta Channel
+chan_name="KBVR TV Oregon State University, USA" ;; 
+# 63) Southeastern Channel
 63)
-#link=http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/playlist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=3418933,CODECS="avc1.100.40,mp4a.40.2",RESOLUTION=1280x720
-link="http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/chunklist_w2098604614.m3u8"
+#http://thesoutheasternchannel.com/live-stream/
+link=http://147.174.13.196/live/WIFI-1296k-540p/WIFI-1296k-540p.m3u8
 use_cookies="no"
-chan_name="Atlanta Channel" ;; 
+chan_name="Southeastern Channel" ;;
 # 64)  TVW Washington State TV
 64)
 #link=http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:TVWAIR_all/master.m3u8
@@ -1611,19 +1628,23 @@ chan_name="Buzzr (Game Shows)";;
 link="https://livestream.com/accounts/21743165/events/6446017"
 use_cookies="no"
 chan_name="RIDE TV Fort Worth TX USA" ;;
-# 69) Geek and Sundry
+
+
+# 69) St. Petersburg College SPC-TV 
 69)
-link=https://www.twitch.tv/geekandsundry
+#link="https://livestream.com/accounts/15226456/events/7703617"
+link="$( curl "https://livestream.com/accounts/15226456/events/7703617"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-####method="Tor"
-chan_name="Geek and Sundry";;
-# 70) Beach TV DTVHD
+chan_name="St. Petersburg College SPC-TV " ;;
+
+
+# 70) Capital City Connection
 70)
-#link=http://media4.tripsmarter.com:1935/LiveTV/DTVHD/playlist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=3472194,CODECS="avc1.100.40,mp4a.40.2",RESOLUTION=1280x720
-link="http://media4.tripsmarter.com:1935/LiveTV/DTVHD/chunklist_w1668636762.m3u8"
+#link=http://na-us-se13.secdn.net/pegstream3-live/play/5f0d9ca5-4e85-4c01-a426-9ec8d44c2c9c/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=585523,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=491x360
+link="http://na-us-se13.secdn.net/pegstream3-live/play/5f0d9ca5-4e85-4c01-a426-9ec8d44c2c9c/chunklist_w1994511665.m3u8"
 use_cookies="no"
-chan_name="Beach TV -DTVHD" ;;
+chan_name="Capital City Connection" ;;
 # 71) TSTV  Texas State University TV
 71)
 link=http://tstv-stream.tsm.utexas.edu/hls/livestream_hi/index.m3u8
@@ -4849,7 +4870,12 @@ link=https://www.twitch.tv/amouranth
 use_cookies="no"
 ####method="Tor"
 chan_name="Amouranth";;
-
+# 473) Geek and Sundry
+473)
+link=https://www.twitch.tv/geekandsundry
+use_cookies="no"
+####method="Tor"
+chan_name="Geek and Sundry";;
 
 # 74) FiOS1 News Long Island
 # 74)
@@ -6295,13 +6321,13 @@ chan_name="C-Star" ;;
 link="https://fnurtmp-f.akamaihd.net/i/FNCPREV_1@143121/master.m3u8"
 use_cookies="no"
 chan_name="FOX News Channel Preview Preview (No Audio)" ;; 
-# 722) Capital City Connection
+# 722) Beach TV DTVHD
 722)
-#link=http://na-us-se13.secdn.net/pegstream3-live/play/5f0d9ca5-4e85-4c01-a426-9ec8d44c2c9c/playlist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=585523,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=491x360
-link="http://na-us-se13.secdn.net/pegstream3-live/play/5f0d9ca5-4e85-4c01-a426-9ec8d44c2c9c/chunklist_w1994511665.m3u8"
+#link=http://media4.tripsmarter.com:1935/LiveTV/DTVHD/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3472194,CODECS="avc1.100.40,mp4a.40.2",RESOLUTION=1280x720
+link="http://media4.tripsmarter.com:1935/LiveTV/DTVHD/chunklist_w1668636762.m3u8"
 use_cookies="no"
-chan_name="Capital City Connection" ;;
+chan_name="Beach TV -DTVHD" ;;
 # 723) Daytona Beach TV
 723)
 #link=http://oflash.dfw.swagit.com/live/daytonabeachfl/smil:std-4x3-1-a/chucklist.m3u8
@@ -6386,11 +6412,14 @@ chan_name="House of Representatives" ;;
 link=http://krbc-apple-live.hls.adaptive.level3.net/stream0/master.m3u8
 use_cookies="no"
 chan_name="KRBC-TV" ;;
-# 739) KBVR TV
+# 739)New Orleans TV2
 739)
-link=http://klive-a.akamaihd.net/dc-0/live/hls/p/391241/e/0_bthpnu1j/sd/10000/t/YwqLo1YivB_aumq-LxAuWg/master.m3u8
+#link=http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3382572,CODECS="avc1.66.31,mp4a.40.2",RESOLUTION=1280x720
+link="http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/chunklist_w1797542626.m3u8"
 use_cookies="no"
-chan_name="KBVR TV" ;;
+chan_name="New Orleans TV" ;;
+
 # 740) KTVB
 740)
 link=http://ktvb-lh.akamaihd.net/i/KTVB_Shows_1@60359/master.m3u8
@@ -6526,11 +6555,13 @@ chan_name="RyeTV" ;;
 link=https://wowzaprod121-i.akamaihd.net/hls/live/266526/d2ea1f60/playlist.m3u8
 use_cookies="no"
 chan_name="Seattle Channel" ;;
-# 767) Southeastern Channel
+# 767) Atlanta Channel
 767)
-link=http://147.174.13.196/live/WIFI-1296k-540p/WIFI-1296k-540p.m3u8
+#link=http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3418933,CODECS="avc1.100.40,mp4a.40.2",RESOLUTION=1280x720
+link="http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/chunklist_w2098604614.m3u8"
 use_cookies="no"
-chan_name="Southeastern Channel" ;;
+chan_name="Atlanta Channel" ;; 
 # 768) Temple TV
 768)
 link=http://streaming.temple.edu/tutvlive/_definst_/mp4:play/chunklist.m3u8
@@ -6625,1850 +6656,1592 @@ chan_name="ortonvilletelevision" ;;
 link="$( curl "https://livestream.com/accounts/22779659/events/6788901"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Holiday & Cruise TV" ;;
-# 809) Vision Cruise AU
-809)
+# 808) Vision Cruise AU
+808)
 #link="https://livestream.com/accounts/22779659/events/8027429"
 link="$( curl "https://livestream.com/accounts/22779659/events/8027429"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Vision Cruise AU" ;;
-# 810) Vision Cruise UK
-810)
+# 809) Vision Cruise UK
+809)
 #link="https://livestream.com/accounts/22779659/events/8027222"
 link="$( curl "https://livestream.com/accounts/22779659/events/8027222"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Vision Cruise UK" ;;
-# 812) WHLT USA 
-812)
-#link="https://livestream.com/accounts/8383566/live"
-link="$( curl "https://livestream.com/accounts/8383566/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WHLT USA" ;;
-# 813) LRPATV CH25 New Hampshire USA
-813)
-#link="https://livestream.com/accounts/3480937/channel25"
-link="$( curl "https://livestream.com/accounts/3480937/channel25"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="LRPATV CH25 New Hampshire USA" ;;
-# 814) Santa Fe Media Network New Mexico USA
-814)
-#link="https://livestream.com/accounts/13196214/events/5972197"
-link="$( curl "https://livestream.com/accounts/13196214/events/5972197"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Santa Fe Media Network New Mexico USA" ;;
-# 815) 
-
-# 818) 102.3 NOW! TV Edmonton AB,CA
-818)
+# 810) 102.3 NOW! TV Edmonton AB,CA
+810)
 #link="https://livestream.com/accounts/4683311/events/3747538"
 link="$( curl "https://livestream.com/accounts/4683311/events/3747538"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="102.3 NOW! TV Edmonton AB,CA" ;;
-# 819)TourbusTV USA
-819)
+# 811)TourbusTV USA
+811)
 #link="https://livestream.com/accounts/22843174/TourbusTV"
 link="$( curl "https://livestream.com/accounts/22843174/TourbusTV"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="TourbusTV USA" ;;
-# 820)Ezekiel TV Channel
-820)
+# 812)Ezekiel TV Channel
+812)
 #link="https://livestream.com/accounts/19491040/events/6866917"
 link="$( curl "https://livestream.com/accounts/19491040/events/6866917"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Ezekiel TV" ;;
-# 821)KVZK TV CHANNEL 2 American SAMOA
-821)
-#link="https://livestream.com/accounts/8956070/events/4561731"
-link="$( curl "https://livestream.com/accounts/8956070/events/4561731"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KVZK TV CHANNEL 2 American SAMOA" ;;
-
-# 823) 
-# 824) Native Media Network Sante Fe New Mexico USA
-824)
-#link="https://livestream.com/accounts/13196214/events/3994033"
-link="$( curl "https://livestream.com/accounts/13196214/events/3994033"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Native Media Network Sante Fe New Mexico USA" ;;
-# 827) Emmanuel TV
-827)
+# 813) Emmanuel TV
+813)
 #link="https://livestream.com/accounts/23202872/events/7200883"
 link="$( curl "https://livestream.com/accounts/23202872/events/7200883"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Emmanuel TV" ;;
-# 828) Shalom World Australia
-828)
+# 814) Shalom World Australia
+814)
 #link="https://livestream.com/accounts/25038049/events/7551704"
 link="$( curl "https://livestream.com/accounts/25038049/events/7551704"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Shalom World Australia" ;;
 
-# 829) WDIO Duluth Minnesota
-829)
-#link="https://livestream.com/accounts/12241516/live"
-link="$( curl "https://livestream.com/accounts/12241516/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WDIO Duluth Minnesota" ;;
-# 830) KHNL Honolulu Hawaii News Now
-830)
-#link="https://livestream.com/accounts/12139043/live"
-link="$( curl "https://livestream.com/accounts/12139043/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KHNL Honolulu Hawaii News Now" ;;
+########################################## USA LOCAL NEWS ####################################################################3
 
-# 831) WBNS Columbus OHIO USA
-831)
-#link="https://livestream.com/accounts/18624165/live"
-link="$( curl "https://livestream.com/accounts/18624165/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBNS Columbus OHIO USA" ;;
-# 832) WTTG Washington DC Fox 5 Washington DC USA
-832)
-#link="https://livestream.com/accounts/2363281/live"
-link="$( curl "https://livestream.com/accounts/2363281/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTTG Washington DC Fox 5 Washington DC USA" ;;
-# 833) WJBK FOX 2 Detroit Michigan USA 
-833)
-#link="https://livestream.com/accounts/6396566/live"
-link="$( curl "https://livestream.com/accounts/6396566/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WJBK FOX 2 Detroit Michigan USA" ;;
+############################################### NORTH WEST  ###############################################################################
 
-# 834) KSL NOW Salt Lake City Utah USA 
-834)
-#link="https://livestream.com/accounts/22711876/live"
-link="$( curl "https://livestream.com/accounts/22711876/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KSL NOW Salt Lake City Utah USA " ;;
-# 835)  KSLA News 12 Shreveport Louisiana USA 
-835)
-#link="https://livestream.com/KSLA/live"
-link="$( curl "https://livestream.com/KSLA/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KSLA News 12 Shreveport Louisianna USA  " ;;
-
-# 836)  WSFA 12 Montgomory Alabama USA 
-836)
-#link="https://livestream.com/accounts/11981705/live"
-link="$( curl "https://livestream.com/accounts/11981705/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WSFA 12 Montgomory Alabama USA" ;;
-# 837)  Fox 8 Cleveland Ohio USA 
-837)
-#link="https://livestream.com/accounts/57501/live"
-link="$( curl "https://livestream.com/accounts/57501/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Fox 8 Cleveland Ohio USA" ;;
-# 838) KELO Live Keloland USA 
-838)
-#link="https://livestream.com/kelo/live"
-link="$( curl "https://livestream.com/kelo/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KELO Live Keloland USA" ;;
-# 839)HU16 Harding Sercy Arkansas  USA
-839)
-#link="https://livestream.com/accounts/8522446/live"
-link="$( curl "https://livestream.com/accounts/8522446/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="HU16 Harding Sercy Arkansas  USA" ;;
-# 840) KTVK 3TV Arizona USA
-840)
-#link="https://livestream.com/accounts/12643960/live"
-link="$( curl "https://livestream.com/accounts/12643960/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KTVK 3TV Arizona USA" ;;
-
-# 841) FOX 26 News Houston USA
-841)
-#link="https://livestream.com/accounts/6396012/live"
-link="$( curl "https://livestream.com/accounts/6396012/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="FOX 26 News Houston USA" ;;
-# 842) WAFB 9 CBSN Baton Rouge Louisiana USA
-842)
-#link="https://livestream.com/accounts/11595706/live"
-link="$( curl "https://livestream.com/accounts/11595706/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WAFB 9 CBSN Baton Rouge Louisiana USA" ;;
-# 843) WCSC Charleston South Carolina USA
-843)
-#link="https://livestream.com/accounts/11016888/live"
-link="$( curl "https://livestream.com/accounts/11016888/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WCSC Charleston South Carolina USA" ;;
-# 844) WTXF FOX 29 News Philadelphia USA
-844)
-#link="https://livestream.com/accounts/6370754/live"
-link="$( curl "https://livestream.com/accounts/6370754/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTXF FOX 29 News Philadelphia USA" ;;
-# 845) WFLA NBC 8 Tampa Bay Florida USA
-845)
-#link="https://livestream.com/accounts/6140981/live"
-link="$( curl "https://livestream.com/accounts/6140981/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFLA NBC 8 Tampa Bay Florida USA" ;;
-# 846)  WFIE NBC 14 USA
-846)
-#link="https://livestream.com/accounts/11981465/live"
-link="$( curl "https://livestream.com/accounts/11981465/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFIE NBC 14 USA" ;;
-# 847)  KOIN CBS 6 Portland Oregon USA
-847)
-#link="https://livestream.com/accounts/1864610/live"
-link="$( curl "https://livestream.com/accounts/1864610/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KOIN CBS 6 Portland Oregon USA" ;;
-# 848)  WTVT / FOX 13 Tampa Bay USA
-848)
-#link="https://livestream.com/accounts/6180769/live"
-link="$( curl "https://livestream.com/accounts/6180769/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTVT / FOX 13 Tampa Bay USA" ;;
-# 849)  KUSI 24/7 San Diego California USA
-849)
-#link="https://livestream.com/accounts/25082096/live"
-link="$( curl "https://livestream.com/accounts/25082096/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KUSI 24/7 San Diego California USA" ;;
-# 850)  Joe Pags Show
-850)
-#link="https://livestream.com/accounts/26896512/events/8077273"
-link="$( curl "https://livestream.com/accounts/26896512/events/8077273"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Joe Pags Show" ;;
-# 851)  WBRC FOX6 News Mobil USA
-851)
-#link="https://livestream.com/WBRC/live"
-link="$( curl "https://livestream.com/WBRC/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBRC FOX6 News Mobil USA" ;;
-# 852)  WNYW Fox 5 New York USA
-852)
-#link="https://livestream.com/accounts/6372917/live"
-link="$( curl "https://livestream.com/accounts/6372917/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WNYW Fox 5 New York USA" ;;
-# 853) KMOV 4 St. Louis MO USA
-853)
-#link="https://livestream.com/accounts/12654794/live"
-link="$( curl "https://livestream.com/accounts/12654794/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KMOV 4 St. Louis MO USA" ;;
-# 854) WFLD / Fox 32 Chicago USA
-854)
-#link="https://livestream.com/accounts/6370732/live"
-link="$( curl "https://livestream.com/accounts/6370732/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFLD / Fox 32 Chicago USA" ;;
-# 855) KHSL Action News NOW KHSL Live USA
-855)
-#link="https://livestream.com/accounts/26511688/live"
-link="$( curl "https://livestream.com/accounts/26511688/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KHSL Action News NOW KHSL Live USA" ;;
-# 856) WVUE FOX 8 Batton Rouge LA USA
-856)
-#link="https://livestream.com/accounts/10891792/live"
-link="$( curl "https://livestream.com/accounts/10891792/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name=" WVUE FOX 8 Batton Rouge LA USA" ;;
-# 857) KLTV 7 Tyler TX USA
-857)
-#link="https://livestream.com/accounts/11816721/live"
-link="$( curl "https://livestream.com/accounts/11816721/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KLTV 7 Tyler TX USA" ;;
-# 858) KEYT ABC 3 Santa Barbara CA USA
-858)
-#link="https://livestream.com/accounts/19285506/live"
-link="$( curl "https://livestream.com/accounts/19285506/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KEYT ABC 3 Santa Barbara CA USA" ;;
-# 859) WAKA CBS 8 ABC 32 ALABAMA 
-859)
-#link="https://livestream.com/accounts/9486828/live"
-link="$( curl "https://livestream.com/accounts/9486828/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WAKA CBS 8 ABC 32 ALABAMA " ;;
-# 860) WJZY FOX 46 Charlotte NC
-860)
-#link="https://livestream.com/accounts/6370805/live"
-link="$( curl "https://livestream.com/accounts/6370805/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WJZY FOX 46 Charlotte NC" ;;
-# 861) WCCB Charlotte CW NC
-861)
-#link="https://livestream.com/accounts/8522553/live"
-link="$( curl "https://livestream.com/accounts/8522553/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WCCB Charlotte CW NC" ;;
-# 862) WCYB NBC 5 VA
-862)
-#link="https://livestream.com/accounts/8522497/live"
-link="$( curl "https://livestream.com/accounts/8522497/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WCYB NBC 5 VA" ;;
-# 863) WYCW CW 62 Carolinas
-863)
-#link="https://livestream.com/accounts/8366412/live"
-link="$( curl "https://livestream.com/accounts/8366412/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WYCW CW 62 Carolinas" ;;
-# 864) WNCT CBS 9 Greenville NC
-864)
-#link="https://livestream.com/accounts/7601533/live"
-link="$( curl "https://livestream.com/accounts/7601533/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WNCT CBS 9 Greenville NC" ;;
-# 865) WJBF Augusta Georgia 
-865)
-#link="https://livestream.com/accounts/7601347/live"
-link="$( curl "https://livestream.com/accounts/7601347/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WJBF Augusta Georgia" ;;
-# 866) KLFY News 10 Acadiana
-866)
-#link="https://livestream.com/accounts/7520488/live"
-link="$( curl "https://livestream.com/accounts/7520488/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KLFY News 10 Acadiana" ;;
-# 869) WWOR Secaucus
-869)
-#link="https://livestream.com/accounts/6372957/live"
-link="$( curl "https://livestream.com/accounts/6372957/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WWOR Secaucus" ;;
-# 870) KSNT Weather Wichita Kansas
-870)
-#link="https://livestream.com/accounts/1866369/live"
-link="$( curl "https://livestream.com/accounts/1866369/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KSNT Weather Wichita Kansas" ;;
-# 871) WANE Ft. Wayne Indiana
-871)
-#link="https://livestream.com/accounts/1849716/live"
-link="$( curl "https://livestream.com/accounts/1849716/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WANE Ft. Wayne Indiana" ;;
-# 872) KTXS 12 ABC Abilene Texas 
-872)
-#link="https://livestream.com/accounts/9960439/live"
-link="$( curl "https://livestream.com/accounts/9960439/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KTXS 12 ABC Abilene TX" ;;
-# 873) Island TV Live Broadcast Miami FL USA
-873)
-#link="https://livestream.com/accounts/1420/Islandtvlive"
-link="$( curl "https://livestream.com/accounts/1420/Islandtvlive"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Island TV Live Broadcast Miami FL USA" ;;
-
-# 874) KSNT Kansas OK USA
-874)
-#link="https://livestream.com/accounts/1866369/live"
-link="$( curl "https://livestream.com/accounts/1866369/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KSNT Kansas OK USA" ;;
-
-# 875) KMIZ ABC 17 Missouri
-875)
-#link="https://livestream.com/accounts/18240993/live"
-link="$( curl "https://livestream.com/accounts/18240993/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KMIZ ABC 17 Missouri" ;;
-
-# 876) KFDA CBS 10 Amarillo TX USA
-876)
-#link="https://livestream.com/accounts/17606146/live"
-link="$( curl "https://livestream.com/accounts/17606146/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KFDA CBS 10 Amarillo TX USA" ;;
-
-# 877) KZTV CBS 10 Corpus Christi TX USA 
-877)
-#link="https://livestream.com/accounts/16030806/live"
-link="$( curl "https://livestream.com/accounts/16030806/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KZTV CBS 10 Corpus Christi TX USA" ;;
-
-# 878) City of Tampa Television FL, USA
-878)
-#link="https://livestream.com/accounts/12251681/CTTV"
-link="$( curl "https://livestream.com/accounts/12251681/CTTV"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="City of Tampa Television FL, USA" ;;
-
-####################################################################################
-#####################################################################################
-
-# 879)WMGT 41 NBC Macon Georgia USA
-879)
-#link="https://livestream.com/accounts/15227391/live"
-link="$( curl "https://livestream.com/accounts/15227391/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WMGT 41 NBC Macon Georgia USA" ;;
-# 880) Polk County Channel 44 Bolivar Missouri USA
-880)
-#link="https://livestream.com/accounts/15079831/Channel44"
-link="$( curl "https://livestream.com/accounts/15079831/Channel44"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Polk County Channel 44 Bolivar Missouri USA" ;;
-# 881) WAND NBC 17 Decatur Illinois
-881)
-#link="https://livestream.com/accounts/15004678/live"
-link="$( curl "https://livestream.com/accounts/15004678/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WAND NBC 17 Decatur Illinois" ;;
-# 882) KOAA NBC 5 Colorado Springs Colorado, USA
-882)
-#link="https://livestream.com/accounts/13725886/live"
-link="$( curl "https://livestream.com/accounts/13725886/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KOAA NBC 5 Colorado Springs Colorado, USA" ;;
-# 883) Enid Television Network Oklahoma
-883)
-#link="https://livestream.com/accounts/13638122/events/4063586"
-link="$( curl "https://livestream.com/accounts/13638122/events/4063586"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Enid Television Network Oklahoma" ;;
-# 884) ThinkTech Hawaii Honolulu USA
-884)
-#link="https://livestream.com/accounts/12650986/events/3950350"
-link="$( curl "https://livestream.com/accounts/12650986/events/3950350"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="ThinkTech Hawaii Honolulu USA" ;;
-# 885) WFLX FOX 29
-885)
-#link="https://livestream.com/accounts/12755354/live"
-link="$( curl "https://livestream.com/accounts/12755354/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFLX FOX 29" ;;
-# 886) WPS-TV Wichita Public Schools
-886)
-#link="https://livestream.com/accounts/12013978/events/3835724"
-link="$( curl "https://livestream.com/accounts/12013978/events/3835724"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WPS-TV Wichita Public Schools" ;;
-# 887) KAAL ABC 6 Rochester Minnesota
-887)
-#link="https://livestream.com/accounts/12240964/live"
-link="$( curl "https://livestream.com/accounts/12240964/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KAAL ABC 6 Rochester Minnesota" ;;
-# 888) KRCR ABC 7 Redding California USA
-888)
-#link="https://livestream.com/accounts/10262876/events/3724366"
-link="$( curl "https://livestream.com/accounts/10262876/events/3724366"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KRCR ABC 7 Redding California USA" ;;
-# 889) KION CBS 5/46 Salinas California USA
-889)
-#link="https://livestream.com/accounts/19128738/events/7300156"
-link="$( curl "https://livestream.com/accounts/19128738/events/7300156"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KION CBS 5/46 Salinas California USA" ;;
-# 890) KMVP 24/7 Phoenix Arizona Sports 98.7 FM 
-890)
-#link="https://livestream.com/accounts/24089066/live"
-link="$( curl "https://livestream.com/accounts/24089066/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KMVP 24/7 Phoenix Arizona Sports 98.7 FM " ;;
-# 891) KTAR News Phoenix Arizona 
-891)
-#link="https://livestream.com/accounts/24088937/live"
-link="$( curl "https://livestream.com/accounts/24088937/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KTAR News Phoenix Arizona " ;;
-# 892) WPSD-TV Paducah Kentucky 
-892)
-#link="https://livestream.com/accounts/21317942/live"
-link="$( curl "https://livestream.com/accounts/21317942/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WPSD-TV Paducah Kentucky" ;;
-# 893) KVRR Fargo North Dakota  
-893)
-#link="https://livestream.com/accounts/21298478/live"
-link="$( curl "https://livestream.com/accounts/21298478/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KVRR Fargo North Dakota" ;;
-# 894) KDLT Sioux Falls South Dakota
-894)
-#link="https://livestream.com/accounts/21277277/live"
-link="$( curl "https://livestream.com/accounts/21277277/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KDLT Sioux Falls South Dakota" ;;
-# 895) GovTV Watertown, South Dakota
-895)
-#link="https://livestream.com/accounts/21042766/events/6254925"
-link="$( curl "https://livestream.com/accounts/21042766/events/6254925"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="GovTV Watertown, South Dakota" ;;
-# 896) KFDX NBC 3 Witchita Falls USA
-896)
-#link="https://livestream.com/accounts/21184359/live"
-link="$( curl "https://livestream.com/accounts/21184359/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KFDX NBC 3 Witchita Falls USA" ;;
-# 897) Galveston County Gulf Freeway Cams Tour Houston Texas USA 
-897)
-#link="https://livestream.com/accounts/21068106/events/6228235"
-link="$( curl "https://livestream.com/accounts/21068106/events/6228235"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Galveston County Gulf Freeway Cams Tour Houston Texas USA" ;;
-# 898) KQDS - FOX 21 Duluth Minnesota USA 
-898)
-#link="https://livestream.com/accounts/21146230/live"
-link="$( curl"https://livestream.com/accounts/21146230/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KQDS - FOX 21 Duluth Minnesota USA " ;;
-# 899) KOLR CBS 10 Springfield Missouri
-899)
-#link="https://livestream.com/accounts/21145355/live"
-link="$( curl "https://livestream.com/accounts/21145355/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KOLR CBS 10 Springfield Missouri" ;;
-# 900) WROC CBS 8 Rochester NY USA
-900)
-#link="https://livestream.com/accounts/21078314/live"
-link="$( curl "https://livestream.com/accounts/21078314/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WROC CBS 8 Rochester NY USA" ;;
-# 901)WBRE NBC Wilkes Barre Pennslyvannia USA
-901)
-#link="https://livestream.com/accounts/21077947/live"
-link="$( curl "https://livestream.com/accounts/21077947/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBRE NBC Wilkes Barre Pennslyvannia USA" ;;
-# 902) Cumulus NYC 77 WABC New York USA
-902)
-#link="https://livestream.com/cumulusnyc/live"
-link="$( curl"https://livestream.com/cumulusnyc/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Cumulus NYC 77 WABC New York USA" ;;
-# 903) WTVQ ABC 36 Lexington Kentucky USA
-903)
-#link="https://livestream.com/accounts/19871819/live"
-link="$( curl "https://livestream.com/accounts/19871819/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTVQ ABC 36 Lexington Kentucky USA" ;;
-# 904) WFFT FOX 55 Indiana USA
-904)
-#link="https://livestream.com/accounts/26511747/live"
-link="$( curl "https://livestream.com/accounts/26511747/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFFT FOX 55 Indiana USA" ;;
-# 905) WAAY News ABC 31 Huntsville Alabama
-905)
-#link="https://livestream.com/accounts/26511741/live"
-link="$( curl "https://livestream.com/accounts/26511741/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WAAY News ABC 31 Huntsville Alabama" ;;
-# 906) St. Petersburg College SPC-TV 
-906)
-#link="https://livestream.com/accounts/15226456/events/7703617"
-link="$( curl "https://livestream.com/accounts/15226456/events/7703617"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="St. Petersburg College SPC-TV " ;;
-# 907) WWTV 9 & 10 News 24/7 Mt. Pleasent Michigan  
-907)
-#link="https://livestream.com/accounts/25637691/live"
-link="$( curl "https://livestream.com/accounts/25637691/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WWTV 9 & 10 News 24/7 Mt. Pleasent Michigan" ;;
-# 908) WPHL TV ABC 6 Philladelphia
-908)
-#link="https://livestream.com/accounts/25565610/live"
-link="$( curl "https://livestream.com/accounts/25565610/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WPHL TV ABC 6 Philladelphia" ;;
-# 909) WCCB Charlotte's CW NC
-909)
-#link="https://livestream.com/accounts/8522553/live"
-link="$( curl "https://livestream.com/accounts/8522553/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name=" WCCB Charlotte's CW NC" ;;
-# 910) WCBD NBC 2 Charleston North Carolina 
-910)
-#link="https://livestream.com/accounts/8360295/live"
-link="$( curl "https://livestream.com/accounts/8360295/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WCBD NBC 2 Charleston NC" ;;
-# 911) WSAV NBC 3 Savannah, Georgia
-911)
-#link="https://livestream.com/accounts/7682273/live"
-link="$( curl "https://livestream.com/accounts/7682273/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WSAV NBC 3 Savannah, Georgia" ;;
-# 912) WSPA CBS 7 WSPA Spartanberg SC
-912)
-#link="https://livestream.com/accounts/7592531/live"
-link="$( curl "https://livestream.com/accounts/7592531/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WSPA CBS 7 WSPA Spartanberg SC" ;;
-# 913) WCMH NBC 4 Columbus Ohio
-913)
-#link="https://livestream.com/accounts/7338206/live"
-link="$( curl "https://livestream.com/accounts/7338206/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WCMH NBC 4 Columbus Ohio" ;;
-# 914) CBS 17 Rahliegh NC
-914)
-#link="https://livestream.com/accounts/7158447/live"
-link="$( curl "https://livestream.com/accounts/7158447/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="CBS 17 Rahliegh NC" ;;
-# 915) NewsChannel5+ Las Vegas, Nevada
-915)
-#link="https://livestream.com/accounts/3827561/live"
-link="$( curl "https://livestream.com/accounts/3827561/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="NewsChannel5+ Las Vegas, Nevada" ;;
-# 916) KSNW NBC 3 Witchita Kansas
-916)
-#link="https://livestream.com/accounts/1866980/live"
-link="$( curl "https://livestream.com/accounts/1866980/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KSNW NBC 3 Witchita Kansas" ;;
-
-# 917) WPRI Fox 12 Providence New England 
-917)
-#link="https://livestream.com/accounts/1864876/live"
-link="$( curl "https://livestream.com/accounts/1864876/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WPRI Fox 12 Providence New England" ;;
-
-# 918) WWAY News ABC CBS CW 3 Cape Fear Willmington NC 
-918)
-#link="https://livestream.com/accounts/26965546/live"
-link="$( curl "https://livestream.com/accounts/26965546/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WWAY News ABC CBS CW 3 Cape Fear Willmington NC" ;;
-
-# 919) KIFI ABC 8 Idaho Falls Idaho 
-919)
+##################Idaho################## 
+# 815) KIFI ABC 8 Idaho Falls Idaho 
+815)
 #link="https://livestream.com/accounts/18796284/Live"
 link="$( curl "https://livestream.com/accounts/18796284/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="KIFI ABC 8 Idaho Falls Idaho " ;;
-
-# 920) News-Press NOW Fox 26 KNPN Saint Joseph Missouri 
-920)
-#link="https://livestream.com/accounts/18241682/live"
-link="$( curl "https://livestream.com/accounts/18241682/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+#################Washington############## 
+# 816) 710 ESPN Seattle Washington
+816)
+#link="https://livestream.com/accounts/21148436/live"
+link="$( curl "https://livestream.com/accounts/21148436/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="News-Press NOW Fox 26 KNPN Saint Joseph Missouri" ;;
-
-# 921) KAUZ CBS 6 Winters Texas 
-921)
-#link="https://livestream.com/accounts/16991125/live"
-link="$( curl "https://livestream.com/accounts/16991125/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="710 ESPN Seattle Washington" ;;
+# 817) King County TV Preston, Washington USA 
+817)
+#link="https://livestream.com/accounts/15175343/events/4485487"
+link="$( curl "https://livestream.com/accounts/15175343/events/4485487"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KAUZ CBS 6 Winters Texas" ;;
-# 922) KXXV ABC 25 Waco Texas 
-922)
-#link="https://livestream.com/accounts/16936343/live"
-link="$( curl "https://livestream.com/accounts/16936343/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name=" King County TV Preston, Washington USA " ;;
+# 818) KIRO Radio Seattle Washington 
+818)
+#link="https://livestream.com/accounts/21148570/live"
+link="$( curl "https://livestream.com/accounts/21148570/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KXXV ABC 25 Waco Texas" ;;
-
-# 923) KATC Lafayette ABC 3 Louisiana 
-923)
-#link="https://livestream.com/accounts/15228189/live"
-link="$( curl "https://livestream.com/accounts/15228189/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KIRO Radio Seattle Washington" ;;
+##################Oregon##################  
+# 819)  KOIN CBS 6 Portland Oregon USA
+819)
+#link="https://livestream.com/accounts/1864610/live"
+link="$( curl "https://livestream.com/accounts/1864610/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KATC Lafayette ABC 3 Louisiana" ;;
-
-# 924) WFLD Fox 32 Chicago IL
-924)
-#link="https://livestream.com/accounts/6370732/events/4249677"
-link="$( curl "https://livestream.com/accounts/6370732/events/4249677"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KOIN CBS 6 Portland Oregon USA" ;;
+# 820)KPTV FOX 12 Portland Oregon 
+820)
+#link="https://livestream.com/accounts/6908462/Live"
+link="$( curl "https://livestream.com/accounts/6908462/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WFLD Fox 32 Chicago IL" ;;
-
-# 925) KPLC NBC 7 Lake Charles Louisiana  
-925)
-#link="https://livestream.com/accounts/11595658/live"
-link="$( curl "https://livestream.com/accounts/11595658/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KPTV FOX 12 Portland Oregon" ;;
+# 821) KTVZ 21 Bend Oregon 
+821)
+#link="https://livestream.com/accounts/19128364/Live"
+link="$( curl "https://livestream.com/accounts/19128364/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KPLC NBC 7 Lake Charles Louisiana" ;;
-
-# 926) KOIN 6 Extras Portland Oregon
-926)
+chan_name="KTVZ 21 Bend Oregon" ;;
+# 822) KEZI ABC 9 Eugene, Oregon
+822)
+#link="https://livestream.com/accounts/26511759/live"
+link="$( curl "https://livestream.com/accounts/26511759/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KEZI ABC 9 Eugene, Oregon" ;;
+# 823) KOIN 6 Extras Portland Oregon
+823)
 #link="https://livestream.com/accounts/1864610/events/3314050"
 link="$( curl "https://livestream.com/accounts/1864610/events/3314050"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="KOIN 6 Extras Portland Oregon" ;;
 
-# 927) WCCB Charlotte's CW NC
-927)
-#link="https://livestream.com/accounts/8522553/live"
-link="$( curl "https://livestream.com/accounts/8522553/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+###################Utah####################  
+# 824) KSL NOW Salt Lake City Utah USA 
+824)
+#link="https://livestream.com/accounts/22711876/live"
+link="$( curl "https://livestream.com/accounts/22711876/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WCCB Charlotte's CW NC" ;;
+chan_name="KSL NOW Salt Lake City Utah USA " ;;
 
-# 928) WDAM 7 Hattiesburg Mississippi USA
-928)
-#link="https://livestream.com/accounts/11595552/live"
-link="$( curl "https://livestream.com/accounts/11595552/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WDAM 7 Hattiesburg Mississippi USA" ;;
+#################Wyoming#################
 
-# 929) WLOX ABC 13  Mississippi USA
-929)
-#link="https://livestream.com/accounts/11595500/live"
-link="$( curl "https://livestream.com/accounts/11595500/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WLOX ABC 13  Mississippi USA" ;;
+#################Montana################# 
 
-# 930) WTVM ABC 9 Columbus Georgia 
-930)
-#link="https://livestream.com/accounts/11379799/live"
-link="$( curl "https://livestream.com/accounts/11379799/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTVM ABC 9 Columbus Georgia " ;;
+################################################################################## SOUTH WEST #########################
 
-# 931) WRBL News 365 CBS 3 Columbus, GA.  
-931)
-#link="https://livestream.com/accounts/7942874/live"
-link="$( curl "https://livestream.com/accounts/7942874/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+###################California################# 
+# 825)  KUSI NEWS 24/7 San Diego California USA
+825)
+#link="https://livestream.com/accounts/25082096/live"
+link="$( curl "https://livestream.com/accounts/25082096/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WRBL News 365 CBS 3 Columbus, GA" ;;
-
-# 932) WJHL CBS 11 Johnson City, New York 
-932)
-#link="https://livestream.com/accounts/7264167/live"
-link="$( curl "https://livestream.com/accounts/7264167/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WJHL CBS 11 Johnson City, New York" ;;
-
-# 933) KCTV CBS 5 Kansas City Missouri  
-933)
-#link="https://livestream.com/accounts/6370696/live"
-link="$( curl "https://livestream.com/accounts/6370696/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KCTV CBS 5 Kansas City Missouri" ;;
-
-# 934) WTHI 10 Terre Haute Indiana
-934)
-#link="https://livestream.com/accounts/1866274/live"
-link="$( curl "https://livestream.com/accounts/1866274/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTHI 10 Terre Haute Indiana" ;;
-
-# 935)WBBJ ABC 7 West Tennesee 
-935)
-#link="https://livestream.com/accounts/27132443/live"
-link="$( curl "https://livestream.com/accounts/27132443/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBBJ ABC 7 West Tennesee" ;;
-
-# 936) KTVZ 21 Bend Oregon 
-936)
-#link="https://livestream.com/accounts/19128364/Live"
-link="$( curl "https://livestream.com/accounts/19128364/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KTVZ 21 Bend Oregon" ;;
-
-# 937) KEZI ABC 9 Eugene, Oregon
-937)
-#link="https://livestream.com/accounts/26511759/live"
-link="$( curl "https://livestream.com/accounts/26511759/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KEZI ABC 9 Eugene, Oregon" ;;
-# 938) WDEF News CBS 12 Now Chattanooga Tennessee
-938)
-#link="https://livestream.com/accounts/21596942/live"
-link="$( curl "https://livestream.com/accounts/21596942/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WDEF News CBS 12 Now Chattanooga Tennesse " ;;
-
-
-# 939) KCOY CBS 12 Santa Maria California USA 
-939)
-#link="https://livestream.com/accounts/19128628/live"
-link="$( curl "https://livestream.com/accounts/19128628/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KCOY CBS 12 Santa Maria California USA" ;;
-
-# 940) WTOL CBS 11 Toledo Ohio 
-940)
-#link="https://livestream.com/accounts/12003465/live"
-link="$( curl "https://livestream.com/accounts/12003465/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTOL CBS 11 Toledo Ohio" ;;
-
-# 941) WIS NBC 10 Columbia South Carolina 
-941)
-#link="https://livestream.com/accounts/11327981/live"
-link="$( curl "https://livestream.com/accounts/11327981/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WIS NBC 10 Columbia South Carolina" ;;
-
-# 942) WMC NBC 5 Memphis Tennessee 
-942)
-#link="https://livestream.com/accounts/10894063/live"
-link="$( curl "https://livestream.com/accounts/10894063/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WMC NBC 5 Memphis Tennessee" ;;
-# 943) HTV10 Houma Louisiana 
-943)
-#link="https://livestream.com/accounts/1362675/events/3147474"
-link="$( curl "https://livestream.com/accounts/1362675/events/3147474"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="HTV10 Houma Louisiana" ;;
-# 944) WRIC ABC 8 Petersburg, Virginia
-944)
-#link="https://livestream.com/accounts/7425298/live"
-link="$( curl "https://livestream.com/accounts/7425298/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WRIC ABC 8 Petersburg, Virginia" ;;
-# 945) Western Mass News Chicopee Massachusetts
-945)
-#link="https://livestream.com/accounts/6140816/live"
-link="$( curl "https://livestream.com/accounts/6140816/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Western Mass News Chicopee Massachusetts" ;;
-# 946) KIMT 3 Mason City, Iowa
-946)
-#link="https://livestream.com/accounts/1859647/live"
-link="$( curl "https://livestream.com/accounts/1859647/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KIMT 3 Mason City, Iowa" ;;
-# 947)KXAN NBC Austin Texas
-947)
-#link="https://livestream.com/accounts/1506296/live"
-link="$( curl "https://livestream.com/accounts/1506296/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KXAN NBC Austin Texas" ;;
-# 948) WKRG CBS 5 Mobile, Alabama
-948)
-#link="https://livestream.com/accounts/7546695/live"
-link="$( curl "https://livestream.com/accounts/7546695/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WKRG CBS 5 Mobile, Alabama" ;;
-
-# 949) Lex 18 Lexington Kentucky
-949)
-#link="https://livestream.com/accounts/1493287/live"
-link="$( curl "https://livestream.com/accounts/1493287/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Lex 18 Lexington Kentucky" ;;
-
-# 950) WBNS 10 Breaking News Radar Columbus, Ohio
-950)
-#link="https://livestream.com/accounts/26237278/events/8075621"
-link="$( curl "https://livestream.com/accounts/26237278/events/8075621"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBNS 10 Breaking News Radar Columbus, Ohio " ;;
-
-# 951) WBNS 10 Breaking News Columbus, Ohio
-951)
-#link="https://livestream.com/WBNSbreakingnews/live"
-link="$( curl "https://livestream.com/WBNSbreakingnews/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBNS 10 Breaking News Columbus, Ohio " ;;
-
-# 952) KYMA NBC 11 Yuma Arizona 
-952)
-#link="https://livestream.com/accounts/20242841/live"
-link="$( curl "https://livestream.com/accounts/20242841/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KYMA NBC 11 Yuma Arizona" ;;
-
-# 953) WOIO CBS 19 Clevland Ohio 
-953)
-#link="https://livestream.com/accounts/11017897/live"
-link="$( curl "https://livestream.com/accounts/11017897/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WOIO CBS 19 Clevland Ohio" ;;
-
-# 954) KESQ ABC 3 FOX 11 Palm Springs, California
-954)
-#link="https://livestream.com/accounts/20847880/live"
-link="$( curl "https://livestream.com/accounts/20847880/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KESQ ABC 3 FOX 11 Palm Springs, California" ;;
-
-# 955) KRDO ABC 13 Colorado Springs Colorado 
-955)
-#link="https://livestream.com/accounts/17592934/live"
-link="$( curl "https://livestream.com/accounts/17592934/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KRDO ABC 13 Colorado Springs Colorado" ;;
-
-# 956) WFMZ 69 Allen Town Pennslyvania 
-956)
-#link="https://livestream.com/accounts/14384745/live"
-link="$( curl "https://livestream.com/accounts/14384745/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFMZ 69 Allen Town Pennslyvania" ;;
-
-# 957) WTOC 11 Savannah, Georgia
-957)
-#link="https://livestream.com/accounts/11006691/live"
-link="$( curl "https://livestream.com/accounts/11006691/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTOC 11 Savannah, Georgia" ;;
-
-# 958) WGCL CBS46 Atlanta Georgia
-958)
-#link="https://livestream.com/accounts/6140931/live"
-link="$( curl "https://livestream.com/accounts/6140931/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WGCL CBS46 Atlanta Georgia" ;;
-
-# 959) KQTV 2 St. Joseph, Missouri
-959)
-#link="https://livestream.com/accounts/26511737/live"
-link="$( curl "https://livestream.com/accounts/26511737/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KQTV 2 St. Joseph, Missouri" ;;
-
-# 960) CGTN America Live
-960)
-#link="https://livestream.com/accounts/7082210/livenews"
-link="$( curl "https://livestream.com/accounts/7082210/livenews"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="CGTN America Live" ;;
-
-# 961) KVIA ABC-7 El Paso Texas 
-961)
-#link="https://livestream.com/accounts/18241891/live"
-link="$( curl "https://livestream.com/accounts/18241891/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KVIA ABC-7 El Paso Texas" ;;
-
-# 962)  KCBD NBC 11 Lubbock, Texas
-962)
-#link="https://livestream.com/accounts/11816946/live"
-link="$( curl "https://livestream.com/accounts/11816946/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KCBD NBC 11 Lubbock, Texas" ;;
-
-# 963) WALB NBC 10 Albany Southwestern Georgia
-963)
-#link="https://livestream.com/accounts/11279058/live"
-link="$( curl "https://livestream.com/accounts/11279058/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WALB NBC 10 Albany Southwestern Georgia" ;;
-
-# 964) KFVE 9 Honolulu Hawaii
-964)
-#link="https://livestream.com/accounts/14598737/live"
-link="$( curl "https://livestream.com/accounts/14598737/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KFVE Honolulu Hawaii" ;;
-
-# 965) WWBT NBC 12 Richmond Virginia 
-965)
-#link="https://livestream.com/accounts/11203782/live"
-link="$( curl "https://livestream.com/accounts/11203782/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WWBT NBC 12 Richmond Virginia" ;;
-
-# 966) WJTV CBS 12 Jackson Mississippi
-966)
-#link="https://livestream.com/accounts/8374496/live"
-link="$( curl "https://livestream.com/accounts/8374496/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WJTV CBS 12 Jackson Mississippi" ;;
-
-# 967) WWLP 22 Springfield Massachusetts
-967)
-#link="https://livestream.com/accounts/1866220/live"
-link="$( curl "https://livestream.com/accounts/1866220/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WWLP 22 Springfield Massachusetts" ;;
-
-# 968) CBS 42 Birmingham Alabama 
-968)
-#link="https://livestream.com/accounts/1848160/live"
-link="$( curl "https://livestream.com/accounts/1848160/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="CBS 42 Birmingham Alabama" ;;
-
-# 969) WNYT NBC 13 Upper Sandusky, Ohio
-969)
-#link="https://livestream.com/accounts/12240447/live"
-link="$( curl "https://livestream.com/accounts/12240447/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WNYT NBC 13 Upper Sandusky, Ohio" ;;
-
-# 970) KEYT ABC 3 Santa Barbara California 
-970)
+chan_name="KUSI NEWS 24/7 San Diego California USA" ;;
+# 826) KEYT ABC 3 Santa Barbara CA USA
+826)
 #link="https://livestream.com/accounts/19285506/live"
-link="$( curl "https://livestream.com/accounts/19285506/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+link="$( curl "https://livestream.com/accounts/19285506/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KEYT ABC 3 Santa Barbara California" ;;
-# 971) WLBT FOX 40 Jackson Mississippi 
-971)
-#link="https://livestream.com/accounts/11595602/live"
-link="$( curl "https://livestream.com/accounts/11595602/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WLBT FOX 40 Jackson Mississippi" ;;
-
-# 972) WSMV NBC 4 Nashville Tennessee
-972)
-#link="https://livestream.com/accounts/6396556/LIVE"
-link="$( curl "https://livestream.com/accounts/6396556/LIVE"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WSMV NBC 4 Nashville Tennessee" ;;
-
-# 973) DayTraderRockStar Show New York City New York 
-973)
-#link="https://livestream.com/accounts/4878/events/2540723"
-link="$( curl "https://livestream.com/accounts/4878/events/2540723"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="DayTraderRockStar Show New York City" ;;
-
-# 974) WALA FOX10 News 24/7 Mobile, Alabama
-974)
-#link="https://livestream.com/accounts/1859803/live"
-link="$( curl "https://livestream.com/accounts/1859803/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WALA FOX10 News 24/7 Mobile, Alabama" ;;
-
-# 975) KMOV CBS 4 St. Louis, Missouri
-975)
-#link="https://livestream.com/accounts/12654794/live"
-link="$( curl "https://livestream.com/accounts/12654794/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="UNKNOWN" ;;
-
-# 976) Lex & Terry Lufkin Texas 
-976)
-#link="https://livestream.com/accounts/16950775/live"
-link="$( curl "https://livestream.com/accounts/16950775/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Lex & Terry Lufkin Texas" ;;
-
-# 977) KVOA NBC 4 Tuscon Arizona
-977)
-#link="https://livestream.com/accounts/15512011/live"
-link="$( curl "https://livestream.com/accounts/15512011/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KVOA NBC 4 Tuscon Arizona" ;;
-
-# 978) Mike Malloy Show
-978)
-#link="https://livestream.com/accounts/8522627/live"
-link="$( curl "https://livestream.com/accounts/8522627/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Mike Malloy Show" ;;
-
-# 979)KHSL CBS 12 Chico Redding California 
-979)
+chan_name="KEYT ABC 3 Santa Barbara CA USA" ;;
+# 827) KHSL Action News NOW  CBS 12  Chico/Redding. California USA
+827)
 #link="https://livestream.com/accounts/26511688/live"
 link="$( curl "https://livestream.com/accounts/26511688/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KHSL CBS 12 Chico Redding California" ;;
-
-# 980) KSTP ABC 5 St. Paul, Minnesota
-980)
-#link="https://livestream.com/accounts/12150160/live"
-link="$( curl "https://livestream.com/accounts/12150160/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KHSL Action News NOW Chico/Redding California  USA" ;;
+# 828) KRCR ABC 7 Redding California USA
+828)
+#link="https://livestream.com/accounts/10262876/events/3724366"
+link="$( curl "https://livestream.com/accounts/10262876/events/3724366"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KSTP ABC 5 St. Paul, Minnesota" ;;
-
-# 981) KSWO ABC 7 Winters Texas 
-981)
-#link="https://livestream.com/accounts/16991045/live"
-link="$( curl "https://livestream.com/accounts/16991045/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KRCR ABC 7 Redding California USA" ;;
+# 829) KION CBS 5/46 Salinas California USA
+829)
+#link="https://livestream.com/accounts/19128738/events/7300156"
+link="$( curl "https://livestream.com/accounts/19128738/events/7300156"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KSWO ABC 7 Winters Texas" ;;
-
-# 982) WBTV CBS 3 Charlotte, North Carolina
-982)
-#link="https://livestream.com/accounts/10950088/live"
-link="$( curl "https://livestream.com/accounts/10950088/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBTV CBS 3 Charlotte, North Carolina" ;;
-
-# 983) KPHO CBS 5 Pheonix Arizona 
-983)
-#link="https://livestream.com/accounts/6907826/LIVE"
-link="$( curl "https://livestream.com/accounts/6907826/LIVE"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KPHO CBS 5 Pheonix Arizona " ;;
-
-# 984)  WDIO ABC 10/13 Duluth Minnesota 
-984)
-#link="https://livestream.com/accounts/12241516/live"
-link="$( curl "https://livestream.com/accounts/12241516/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WDIO ABC 10/13 Duluth Minnesota " ;;
-
-# 985) KMSP FOX 9 Minneapolis Minnesota 
-985)
-#link="https://livestream.com/accounts/6396280/live"
-link="$( curl "https://livestream.com/accounts/6396280/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KMSP FOX 9 Minneapolis Minnesota" ;;
-
-# 986) KSBY NBC 6 Santa Barbara California 
-986)
+chan_name="KION CBS 5/46 Salinas California USA" ;;
+# 830) KSBY NBC 6 Santa Barbara California 
+830)
 #link="https://livestream.com/accounts/15512095/live"
 link="$( curl "https://livestream.com/accounts/15512095/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="KSBY NBC 6 Santa Barbara California" ;;
-
-# 987) KOLD 13 Tucson, Arizona
-987)
-#link="https://livestream.com/accounts/11042990/live"
-link="$( curl "https://livestream.com/accounts/11042990/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+# 831) KESQ ABC 3 FOX 11 Palm Springs, California
+831)
+#link="https://livestream.com/accounts/20847880/live"
+link="$( curl "https://livestream.com/accounts/20847880/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KOLD 13 Tucson, Arizona" ;;
-
-# 988) KLTV ABC 7 Tyler, Texas
-988)
-#link="https://livestream.com/accounts/11816721/live"
-link="$( curl "https://livestream.com/accounts/11816721/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KESQ ABC 3 FOX 11 Palm Springs, California" ;;
+# 832) KCOY CBS 12 Santa Maria California USA 
+832)
+#link="https://livestream.com/accounts/19128628/live"
+link="$( curl "https://livestream.com/accounts/19128628/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KLTV ABC 7 Tyler, Texas" ;;
-
-# 989) WBRC FOX 6 Birmingham, Alabama
-989)
-#link="https://livestream.com/accounts/12446860/live"
-link="$( curl "https://livestream.com/accounts/12446860/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KCOY CBS 12 Santa Maria California USA" ;;
+# 833) MCAET Salinas California 
+833)
+#link="https://livestream.com/accounts/7781243/events/7871771"
+link="$( curl "https://livestream.com/accounts/7781243/events/7871771"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WBRC FOX 6 Birmingham, Alabama" ;;
-# 990) PNC News First Newstalk K57 Fox 6 Guam 
-990)
-#link="https://livestream.com/accounts/10612724/newstalk57"
-link="$( curl "https://livestream.com/accounts/10612724/newstalk57"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="MCAET Salinas California" ;;
+# 834) KVVB.TV CH.33 Victorville,California KVVB.TV | Ch 33.1 
+834)
+#link="https://livestream.com/accounts/9450048/events/3542162"
+link="$( curl "https://livestream.com/accounts/9450048/events/3542162"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="PNC News First Newstalk K57 Fox 6 Guam " ;;
-# 991) WTVT FOX 13 Tampa Bay Florida 
-991)
-#link="https://livestream.com/accounts/6180769/live"
-link="$( curl "https://livestream.com/accounts/6180769/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KVVB.TV CH.33 Victorville,CA" ;;
+####################Colorado#################
+# 835) KOAA NBC 5 Colorado Springs Colorado, USA
+835)
+#link="https://livestream.com/accounts/13725886/live"
+link="$( curl "https://livestream.com/accounts/13725886/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WTVT FOX 13 Tampa Bay Florida" ;;
-# 992) WFLA NBC 8 Tampa, Florida
-992)
-#link="https://livestream.com/accounts/6140981/live"
-link="$( curl "https://livestream.com/accounts/6140981/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KOAA NBC 5 Colorado Springs Colorado, USA" ;;
+# 836) KRDO ABC 13 Colorado Springs Colorado 
+836)
+#link="https://livestream.com/accounts/17592934/live"
+link="$( curl "https://livestream.com/accounts/17592934/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WFLA NBC 8 Tampa, Florida" ;;
-# 993)WTNH 8 New Haven CT 
-993)
-#link="https://livestream.com/accounts/1864656/live"
-link="$( curl "https://livestream.com/accounts/1864656/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTNH 8 New Haven CT" ;;
-
-# 994)WMBF Myrtle Beach, South Carolina
-994)
-#link="https://livestream.com/accounts/11214123/live"
-link="$( curl "https://livestream.com/accounts/11214123/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WMBF Myrtle Beach, South Carolina" ;;
-
-# 995) WSFA NBC 12 Montgomery Alabama 
-995)
-#link="https://livestream.com/accounts/11981705/live"
-link="$( curl "https://livestream.com/accounts/11981705/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WSFA NBC 12 Montgomery Alabama" ;;
-
-# 996) WNYW Fox 5 New York
-996)
-#link="https://livestream.com/accounts/6372917/live"
-link="$( curl "https://livestream.com/accounts/6372917/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WNYW Fox 5 New York" ;;
-
-# 997)KVVU FOX 5 Las Vegas Nevada  
-997)
-#link="https://livestream.com/accounts/6910894/Live"
-link="$( curl "https://livestream.com/accounts/6910894/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KVVU FOX 5 Las Vegas Nevada " ;;
-
-# 998) KHON CBS 2 Ala Mona Honolulu Hawaii 
-998)
-#link="https://livestream.com/accounts/1858266/live"
-link="$( curl "https://livestream.com/accounts/1858266/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KHON CBS 2 Ala Mona Honolulu Hawaii " ;;
-
-# 999)WFIE NBC 14 Evansville, Indiana
-999)
-#link="https://livestream.com/accounts/11981465/live"
-link="$( curl "https://livestream.com/accounts/11981465/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFIE NBC 14 Evansville, Indiana" ;;
-
-# 1000) WTXF FOX 29 News Philadelphia
-1000)
-#link="https://livestream.com/accounts/6370754/live"
-link="$( curl "https://livestream.com/accounts/6370754/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTXF FOX 29 News Philadelphia" ;;
-
-# 1001) WFLD Fox 32 Chicago Illinois 
-1001)
-#link="https://livestream.com/accounts/6370732/live"
-link="$( curl "https://livestream.com/accounts/6370732/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFLD Fox 32 Chicago Illinois" ;;
-
-# 1002) KTVK 3 Pheonix Arizona
-1002)
-#link="https://livestream.com/accounts/12643960/live"
-link="$( curl "https://livestream.com/accounts/12643960/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KTVK 3 Pheonix Arizona" ;;
-
-# 1003) KRIV FOX 26 Houston Texas 
-1003)
-#link="https://livestream.com/accounts/6396012/live"
-link="$( curl "https://livestream.com/accounts/6396012/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KRIV FOX 26 Houston Texas " ;;
-
-# 1004) WVUE FOX 8 New Orleans Louisiana 
-1004)
-#link="https://livestream.com/accounts/10891792/live"
-link="$( curl "https://livestream.com/accounts/10891792/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WVUE FOX 8 New Orleans Louisiana" ;;
-
-# 1005)KPTV FOX 12 Portland Oregon 
-1005)
-#link="https://livestream.com/accounts/6908462/Live"
-link="$( curl "https://livestream.com/accounts/6908462/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KPTV FOX 12 Portland Oregon" ;;
-
-# 1006) KIRO Radio Seattle Washington 
-1006)
-#link="https://livestream.com/accounts/21148570/live"
-link="$( curl "https://livestream.com/accounts/21148570/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KIRO Radio Seattle Washington" ;;
-
-# 1007) KUSI San Diego California
-1007)
-#link="https://livestream.com/accounts/25082096/live"
-link="$( curl "https://livestream.com/accounts/25082096/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KUSI NEWS San Diego California" ;;
-
-# 1008) Fox 8 Cleveland Ohio
-1008)
-#link="https://livestream.com/accounts/57501/live"
-link="$( curl "https://livestream.com/accounts/57501/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Fox 8 Cleveland Ohio" ;;
-
-# 1009) KSLA News CBS 12 Shreveport, Louisiana
-1009)
-#link="https://livestream.com/accounts/11816591/live"
-link="$( curl "https://livestream.com/accounts/11816591/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KSLA News CBS 12 Shreveport, Louisiana" ;;
-
-# 1010) KELO CBS Sioux Falls, South Dakota
-1010)
-#link="https://livestream.com/accounts/8522446/live"
-link="$( curl "https://livestream.com/accounts/8522446/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KELO CBS Sioux Falls, South Dakota" ;;
-
-# 1011) KSL NOW Salt Lake City Utah 
-1011)
-#link="https://livestream.com/accounts/22711876/live"
-link="$( curl "https://livestream.com/accounts/22711876/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KSL NOW Salt Lake City Utah" ;;
-
-# 1012) WTTG Fox 5 Washington DC
-1012)
-#link="https://livestream.com/accounts/2363281/live"
-link="$( curl "https://livestream.com/accounts/2363281/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WTTG Fox 5 Washington DC" ;;
-
-# 1013) WCSC CBS 5 Charleston South Carolina 
-1013)
-#link="https://livestream.com/accounts/11016888/live"
-link="$( curl "https://livestream.com/accounts/11016888/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WCSC CBS 5 Charleston South Carolina" ;;
-
-# 1014) WBNS 10 Columbus Ohio
-1014)
-#link="https://livestream.com/accounts/18624165/live"
-link="$( curl "https://livestream.com/accounts/18624165/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WBNS 10 Columbus Ohio" ;;
-
-# 1015) WJBK FOX 2 Detroit Michagan 
-1015)
-#link="https://livestream.com/accounts/6396566/live"
-link="$( curl "https://livestream.com/accounts/6396566/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WJBK FOX 2 Detroit Michagan" ;;
-
-# 1016) WAFB CBS 9 Baton Rouge Louisiana 
-1016)
-#link="https://livestream.com/accounts/11595706/live"
-link="$( curl "https://livestream.com/accounts/11595706/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WAFB CBS 9 Baton Rouge Louisiana" ;;
-
-# 1017) WFMZ 69 Traffic Allen Town Penslyvania 
-1017)
-#link="https://livestream.com/accounts/14384745/traffic"
-link="$( curl "https://livestream.com/accounts/14384745/traffic" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFMZ 69 Traffic Allen Town Penslyvania " ;;
-
-# 1018) KY3 Springfield Missouri 
-1018)
-#link="https://livestream.com/accounts/4699618/live"
-link="$( curl "https://livestream.com/accounts/4699618/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="KY3 Springfield Missouri" ;;
-
-# 1019) 710 ESPN Seattle Washington
-1019)
-#link="https://livestream.com/accounts/21148436/live"
-link="$( curl "https://livestream.com/accounts/21148436/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="710 ESPN Seattle Washington" ;;
-
-# 1020) NYXT Manhattan NYC New York USA
-1020)
-#link="https://livestream.com/accounts/19770665/events/5522162"
-link="$( curl "https://livestream.com/accounts/19770665/events/5522162"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="NYXT Manhattan NYC New York USA" ;;
-
-# 1021) King County TV Preston, Washington USA 
-1021)
-#link="https://livestream.com/accounts/15175343/events/4485487"
-link="$( curl "https://livestream.com/accounts/15175343/events/4485487"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name=" King County TV Preston, Washington USA " ;;
-
-# 1022)Westerville.TV 543 Production Studio 
-1022)
-#link="https://livestream.com/accounts/26666947/events/8163419"
-link="$( curl "https://livestream.com/accounts/26666947/events/8163419"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Westerville.TV 543 Production Studio " ;;
-
-# 1023) Kingdom Access Television Channel 192 LIVE
-1023)
-#link="https://livestream.com/accounts/4209066/events/8159063"
-link="$( curl "https://livestream.com/accounts/4209066/events/8159063"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Kingdom Access Television Channel 192 LIVE" ;;
-# 1024) City of Las Vegas KCLV FOX 2 Nevada 
-1024)
-#link="https://livestream.com/accounts/11449855/events/8026296"
-link="$( curl "https://livestream.com/accounts/11449855/events/8026296"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="City of Las Vegas KCLV FOX 2 Nevada" ;;
-
-# 1025) Plaistow Access New Hampshire
-1025)
-#link="https://livestream.com/accounts/11298895/meetings"
-link="$( curl "https://livestream.com/accounts/11298895/meetings"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Plaistow Access New Hampshire" ;;
-
-# 1026) City of Topeka City Kansas
-1026)
-#link="https://livestream.com/accounts/25008807/events/7970645"
-link="$( curl "https://livestream.com/accounts/25008807/events/7970645"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="City of Topeka City Kansas" ;;
-
-# 1027) Shelby County Schools C19TV & 88.5FM Memphis Tennessee 
-1027)
-#link="https://livestream.com/accounts/25133520/c19tv"
-link="$( curl "https://livestream.com/accounts/25133520/c19tv"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Shelby County Schools C19TV & 88.5FM Memphis Tennessee " ;;
-
-# 1028) Provincetown Community TV Provincetown Government Meetings  Provincetown, Massachusetts
-1028)
-#link="https://livestream.com/accounts/6011038/events/6712043"
-link="$( curl "https://livestream.com/accounts/6011038/events/6712043"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Provincetown Community TV, Massachusetts" ;;
-
-# 1029) Manhattan Neighborhood Network MNN-FSTV
-1029)
-#link="https://livestream.com/accounts/17251237/events/6391580"
-link="$( curl "https://livestream.com/accounts/17251237/events/6391580"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Manhattan Neighborhood Network MNN-FSTV" ;;
-
-# 1030) Brunswick TV3 New Hampshire
-1030)
-#link="https://livestream.com/accounts/13788599/events/6330198"
-link="$( curl "https://livestream.com/accounts/13788599/events/6330198"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Brunswick TV3 New Hampshire" ;;
-
-# 1031) Bermuda Government (CITV) Hamilton, Bermuda 
-1031)
-#link="https://livestream.com/accounts/19270406/events/5372984"
-link="$( curl "https://livestream.com/accounts/19270406/events/5372984"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Bermuda Government (CITV) Hamilton, Bermuda " ;;
-
-# 1032) GalaxyUniverseTV Freedom Solar TV Kersey, CO, USA
-1032)
+chan_name="KRDO ABC 13 Colorado Springs Colorado" ;;
+# 837) GalaxyUniverseTV Freedom Solar TV Kersey, CO, USA
+837)
 #link="https://livestream.com/accounts/12141749/events/7685294"
 link="$( curl "https://livestream.com/accounts/12141749/events/7685294" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Freedom Solar TV Kersey, CO, USA" ;;
 
-# 1033) Shalom Media Catholic KIDS
-1033)
-#link="https://livestream.com/shalomworld/events/7987357"
-link="$( curl "https://livestream.com/shalomworld/events/7987357"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+####################Arizona################# 
+# 838) KTVK 3 TV Arizona USA
+838)
+#link="https://livestream.com/accounts/12643960/live"
+link="$( curl "https://livestream.com/accounts/12643960/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Shalom Media Catholic KIDS" ;;
-
-# 1034) Faith Lutheran Church - Penfield, NY
-1034)
-#link="https://livestream.com/accounts/4440983/events/6827954"
-link="$( curl "https://livestream.com/accounts/4440983/events/6827954" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KTVK 3 TV Arizona USA" ;;
+# 839) KMVP 24/7 Phoenix Arizona Sports 98.7 FM 
+839)
+#link="https://livestream.com/accounts/24089066/live"
+link="$( curl "https://livestream.com/accounts/24089066/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Faith Lutheran Church - Penfield, NY" ;;
-
-# 1035) Whole Life Ministries SKMNetwork Augusta Georgia
-1035)
-#link="https://livestream.com/accounts/16502349/SKMNetwork"
-link="$( curl "https://livestream.com/accounts/16502349/SKMNetwork"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KMVP 24/7 Phoenix Arizona Sports 98.7 FM " ;;
+# 840) KTAR News Phoenix Arizona 
+840)
+#link="https://livestream.com/accounts/24088937/live"
+link="$( curl "https://livestream.com/accounts/24088937/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Whole Life Ministries SKMNetwork Augusta Georgia" ;;
-
-# 1036) Second Presbyterian Church Sunday Worship Memphis Tennessee 
-1036)
-#link="https://livestream.com/accounts/15713152/sunday-worship"
-link="$( curl "https://livestream.com/accounts/15713152/sunday-worship"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KTAR News Phoenix Arizona " ;;
+# 841) KOLD 13 Tucson, Arizona
+841)
+#link="https://livestream.com/accounts/11042990/live"
+link="$( curl "https://livestream.com/accounts/11042990/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Second Presbyterian Church Sunday Worship Memphis Tennessee" ;;
-
-# 1037) St. Catharine Church, Spring Lake, New Jersey 
-1037)
-#link="https://livestream.com/accounts/11714562/events/3786245"
-link="$( curl "https://livestream.com/accounts/11714562/events/3786245"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KOLD 13 Tucson, Arizona" ;;
+# 842) KPHO CBS 5 Pheonix Arizona 
+842)
+#link="https://livestream.com/accounts/6907826/LIVE"
+link="$( curl "https://livestream.com/accounts/6907826/LIVE"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="St. Catharine Church, Spring Lake, New Jersey " ;;
-
-# 1038) Glory to God Ministries International Love of God Classics 
-1038)
-#link="https://livestream.com/accounts/3240767/events/8008064"
-link="$( curl "https://livestream.com/accounts/3240767/events/8008064"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KPHO CBS 5 Pheonix Arizona " ;;
+# 843) KVOA NBC 4 Tuscon Arizona
+843)
+#link="https://livestream.com/accounts/15512011/live"
+link="$( curl "https://livestream.com/accounts/15512011/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Glory to God Ministries" ;;
-
-
-# 1039)  WYKE TV 47 Hormosassa Springs Florida
-1039)
-#link="https://livestream.com/accounts/9261275/events/7602204"
-link="$( curl "https://livestream.com/accounts/9261275/events/7602204"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KVOA NBC 4 Tuscon Arizona" ;;
+# 844) KYMA NBC 11 Yuma Arizona 
+844)
+#link="https://livestream.com/accounts/20242841/live"
+link="$( curl "https://livestream.com/accounts/20242841/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WYKE TV 47 Hormosassa Springs Florida" ;;
+chan_name="KYMA NBC 11 Yuma Arizona" ;;
 
-# 1040) St. Helena Chapel
-1040)
-#link="https://livestream.com/accounts/25372681/events/7581060"
-link="$( curl "https://livestream.com/accounts/25372681/events/7581060"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+####################Nevada###################  
+# 845) NewsChannel5+ Las Vegas, Nevada
+845)
+#link="https://livestream.com/accounts/3827561/live"
+link="$( curl "https://livestream.com/accounts/3827561/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="St. Helena Chapel" ;;
-
-# 1041) St Patrick's Dumbarton
-1041)
-#link="https://livestream.com/accounts/10499782/events/7601596"
-link="$( curl "https://livestream.com/accounts/10499782/events/7601596"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="St Patrick's Dumbarton" ;;
-
-# 1042) VTNTV VICTORY TELEVISION NETWORK KVTN KVTH KVTJ Little Rock Arkansas
-1042)
-#link="https://livestream.com/accounts/15669040/events/4554297"
-link="$( curl "https://livestream.com/accounts/15669040/events/4554297"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="VTNTV VICTORY TELEVISION NETWORK KVTN KVTH KVTJ Little Rock Arkansas" ;;
-
-# 1044) TMN WORD TV Into All the Earth 24/7/365
-1044)
-#link="https://livestream.com/accounts/16242586/TMN"
-link="$( curl "https://livestream.com/accounts/16242586/TMN"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="TMN WORD TV Into All the Earth 24/7/365" ;;
-
-# 1045) Parkside Radio Show / BROOKLYNSTATION.COM
-1045)
-#link="https://livestream.com/knqradio/events/8191094"
-link="$( curl "https://livestream.com/knqradio/events/8191094"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Parkside Radio Show / BROOKLYNSTATION.COM" ;;
-
-# 1046) FGTV Frequencies of Glory LIVE Jacksonville Florida 
-1046)
-#link="https://livestream.com/accounts/3107466/events/3858711"
-link="$( curl "https://livestream.com/accounts/3107466/events/3858711"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="FGTV Frequencies of Glory LIVE Jacksonville Florida" ;;
-
-# 1047) HJTV online Healing Jesus TV London England 
-1047)
-#link="https://livestream.com/accounts/15754877/events/4470314"
-link="$( curl "https://livestream.com/accounts/15754877/events/4470314"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="HJTV online Healing Jesus TV London England" ;;
-
-# 1048) Apocalypse Channel APTV Live Polaski Tennessse 
-1048)
-#link="https://livestream.com/accounts/5057242/events/4312291"
-link="$( curl "https://livestream.com/accounts/5057242/events/4312291"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Apocalypse Channel APTV Live Polaski Tennessse" ;;
-
-# 1049) Marytown Chapel Marytown Online Adoration Chapel Illinois
-1049)
-#link="https://livestream.com/accounts/15529184/events/4408765"
-link="$( curl "https://livestream.com/accounts/15529184/events/4408765"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="Marytown Chapel Illinois" ;;
-
-# 1050) VSiN - Vegas Stats & Information Network Las Vegas Nevada 
-1050)
+chan_name="NewsChannel5+ Las Vegas, Nevada" ;;
+# 846) VSiN - Vegas Stats & Information Network Las Vegas Nevada 
+846)
 #link="https://livestream.com/accounts/22774234/events/6897936"
 link="$( curl "https://livestream.com/accounts/22774234/events/6897936"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="VSiN - Vegas Stats & Information Network Las Vegas Nevada " ;;
-
-# 1051) Guaranty Media Baton Rouge Louisiana 
-1051)
-#link="https://livestream.com/accounts/25649901/live"
-link="$( curl "https://livestream.com/accounts/25649901/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+# 847) City of Las Vegas KCLV FOX 2 Nevada 
+847)
+#link="https://livestream.com/accounts/11449855/events/8026296"
+link="$( curl "https://livestream.com/accounts/11449855/events/8026296"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Guaranty Media Baton Rouge Louisiana" ;;
-
-# 1052) ESPN 97.5 Houston Texas 
-1052)
-#link="https://livestream.com/accounts/26800104/live"
-link="$( curl "https://livestream.com/accounts/26800104/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="City of Las Vegas KCLV FOX 2 Nevada" ;;
+# 848)KVVU FOX 5 Las Vegas Nevada  
+848)
+#link="https://livestream.com/accounts/6910894/Live"
+link="$( curl "https://livestream.com/accounts/6910894/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="ESPN 97.5 Houston Texas" ;;
-
-# 1053) Pro Football Hall of Fame Hall of Fame Channel Stream
-1053)
-#link="https://livestream.com/accounts/24957552/events/8006439"
-link="$( curl "https://livestream.com/accounts/24957552/events/8006439"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KVVU FOX 5 Las Vegas Nevada " ;;
+####################New Mexico############### 
+# 849)Native Media Network NMN Native Media Network Sante Fe New Mexico USA NDN1.com
+849)
+#link="https://livestream.com/accounts/13196214/events/3994033"
+link="$( curl "https://livestream.com/accounts/13196214/events/3994033"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Pro Football Hall of Fame" ;;
-
-# 1054) Lance Hope RSL FEED
-1054)
-#link="https://livestream.com/accounts/22999173/events/8078810"
-link="$( curl "https://livestream.com/accounts/22999173/events/8078810"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="Native Media Network, Santa Fe New Mexico USA" ;;
+# 850) Santa Fe Media Network New Mexico USA
+850)
+#link="https://livestream.com/accounts/13196214/events/5972197"
+link="$( curl "https://livestream.com/accounts/13196214/events/5972197"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Lance Hope RSL FEED" ;;
+chan_name="Santa Fe Media Network New Mexico USA" ;;
 
-# 1055)XBTV Rosecroft Raceway Live Maryland 
-1055)
-#link="https://livestream.com/accounts/9869799/events/6772185"
-link="$( curl "https://livestream.com/accounts/9869799/events/6772185"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+#################################################################################### NORTH EAST #########################
+
+##################Connecticut#################### 
+# 851)WTNH 8 New Haven CT 
+851)
+#link="https://livestream.com/accounts/1864656/live"
+link="$( curl "https://livestream.com/accounts/1864656/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="XBTV Rosecroft Raceway Live Maryland" ;;
-
-# 1056) Park City Television PCTV Livestream Utah 
-1056)
-#link="https://livestream.com/accounts/11728043/events/3779731"
-link="$( curl "https://livestream.com/accounts/11728043/events/3779731"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WTNH 8 New Haven CT" ;;
+# 852) WFSB 3 Hartford Connecticut USA
+852)
+#link="https://livestream.com/accounts/6372985/live"
+link="$( curl "https://livestream.com/accounts/6372985/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Park City Television PCTV Livestream Utah" ;;
+chan_name="WFSB 3 Hartford Connecticut USA" ;;
+##################Delaware#######################  
 
-# 1057) WHLT 12 Whitehall, Wisconsin
-1057)
+###################Maine#########################  
+
+####################Maryland#####################  
+
+# 853) CharmTV Baltimore Maryland
+853)
+#link="https://livestream.com/accounts/13988426/events/4134572"
+link="$( curl "https://livestream.com/accounts/13988426/events/4134572"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="CharmTV Baltimore Maryland" ;;
+################# Washington DC ####################
+# 854) WTTG Fox 5 Washington DC USA
+854)
+#link="https://livestream.com/accounts/2363281/live"
+link="$( curl "https://livestream.com/accounts/2363281/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTTG Fox 5 Washington DC USA" ;;
+
+####################Massachusetts################  
+# 855) WWLP 22 Springfield Massachusetts
+855)
+#link="https://livestream.com/accounts/1866220/live"
+link="$( curl "https://livestream.com/accounts/1866220/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WWLP 22 Springfield Massachusetts" ;;
+# 856) Western Mass News Chicopee Massachusetts
+856)
+#link="https://livestream.com/accounts/6140816/live"
+link="$( curl "https://livestream.com/accounts/6140816/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Western Mass News Chicopee Massachusetts" ;;
+# 857) Milford TV - Milford, MA Massachusetts 
+857)
+#link="https://livestream.com/accounts/13918823/MilfordTV"
+link="$( curl "https://livestream.com/accounts/13918823/MilfordTV"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Milford TV - Milford, MA Massachusetts" ;;
+# 858) Milford TV Educational Channel - Milford, MA
+858)
+#link="https://livestream.com/accounts/13568947/MilfordTVEducational"
+link="$( curl "https://livestream.com/accounts/13568947/MilfordTVEducational"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Milford TV Educational Channel - Milford, MA" ;;
+####################New Jersey###################  
+# 859) WWOR Secaucus New Jersey
+859)
+#link="https://livestream.com/accounts/6372957/live"
+link="$( curl "https://livestream.com/accounts/6372957/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WWOR Secaucus New Jersey " ;;
+
+#####################New York####################  
+# 860)  WNYW Fox 5 New York USA
+860)
+#link="https://livestream.com/accounts/6372917/live"
+link="$( curl "https://livestream.com/accounts/6372917/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WNYW Fox 5 New York USA" ;;
+# 861) WROC CBS 8 Rochester NY USA
+861)
+#link="https://livestream.com/accounts/21078314/live"
+link="$( curl "https://livestream.com/accounts/21078314/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WROC CBS 8 Rochester NY USA" ;;
+# 862) Cumulus NYC 77 WABC New York USA
+862)
+#link="https://livestream.com/cumulusnyc/live"
+link="$( curl"https://livestream.com/cumulusnyc/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Cumulus NYC 77 WABC New York USA" ;;
+# 863) WJHL CBS 11 Johnson City, New York 
+863)
+#link="https://livestream.com/accounts/7264167/live"
+link="$( curl "https://livestream.com/accounts/7264167/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WJHL CBS 11 Johnson City, New York" ;;
+# 864) DayTraderRockStar Show New York City New York 
+864)
+#link="https://livestream.com/accounts/4878/events/2540723"
+link="$( curl "https://livestream.com/accounts/4878/events/2540723"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="DayTraderRockStar Show New York City" ;;
+# 865) NYXT Manhattan NYC New York USA
+865)
+#link="https://livestream.com/accounts/19770665/events/5522162"
+link="$( curl "https://livestream.com/accounts/19770665/events/5522162"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="NYXT Manhattan NYC New York USA" ;;
+# 866) Manhattan Neighborhood Network MNN-FSTV
+866)
+#link="https://livestream.com/accounts/17251237/events/6391580"
+link="$( curl "https://livestream.com/accounts/17251237/events/6391580"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Manhattan Neighborhood Network MNN-FSTV" ;;
+
+#######################Ohio###################### 
+# 867)  Fox 8 Cleveland Ohio USA 
+867)
+#link="https://livestream.com/accounts/57501/live"
+link="$( curl "https://livestream.com/accounts/57501/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Fox 8 Cleveland Ohio USA" ;;
+# 868) WIVM TV39 WIVM Local TV Canton Ohio 
+868)
+#link="https://livestream.com/accounts/17488475/events/4802826"
+link="$( curl "https://livestream.com/accounts/17488475/events/4802826"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WIVM TV39 WIVM Local TV Canton Ohio" ;;
+# 869) WBNS 10 Columbus Ohio
+869)
+#link="https://livestream.com/accounts/18624165/live"
+link="$( curl "https://livestream.com/accounts/18624165/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WBNS 10 Columbus Ohio" ;;
+# 870) WNYT NBC 13 Upper Sandusky, Ohio
+870)
+#link="https://livestream.com/accounts/12240447/live"
+link="$( curl "https://livestream.com/accounts/12240447/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WNYT NBC 13 Upper Sandusky, Ohio" ;;
+# 871) WBNS 10 Breaking News Radar Columbus, Ohio
+871)
+#link="https://livestream.com/accounts/26237278/events/8075621"
+link="$( curl "https://livestream.com/accounts/26237278/events/8075621"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WBNS 10 Breaking News Radar Columbus, Ohio " ;;
+# 872) WBNS 10 Breaking News Columbus, Ohio
+872)
+#link="https://livestream.com/WBNSbreakingnews/live"
+link="$( curl "https://livestream.com/WBNSbreakingnews/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WBNS 10 Breaking News Columbus, Ohio " ;;
+# 873) WOIO CBS 19 Clevland Ohio 
+873)
+#link="https://livestream.com/accounts/11017897/live"
+link="$( curl "https://livestream.com/accounts/11017897/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WOIO CBS 19 Clevland Ohio" ;;
+# 874) WTOL CBS 11 Toledo Ohio 
+874)
+#link="https://livestream.com/accounts/12003465/live"
+link="$( curl "https://livestream.com/accounts/12003465/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTOL CBS 11 Toledo Ohio" ;;
+# 875) WCMH NBC 4 Columbus Ohio
+875)
+#link="https://livestream.com/accounts/7338206/live"
+link="$( curl "https://livestream.com/accounts/7338206/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WCMH NBC 4 Columbus Ohio" ;;
+
+####################Pennsylvania#################  
+# 876) WTXF FOX 29 News Philadelphia, Pennsylvania USA
+876)
+#link="https://livestream.com/accounts/6370754/live"
+link="$( curl "https://livestream.com/accounts/6370754/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTXF FOX 29 News Philadelphia, Pennsylvania USA" ;;
+# 877)WBRE NBC Wilkes Barre Pennslyvannia USA
+877)
+#link="https://livestream.com/accounts/21077947/live"
+link="$( curl "https://livestream.com/accounts/21077947/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WBRE NBC Wilkes Barre Pennslyvannia USA" ;;
+# 878) WPHL TV ABC 6 Philladelphia Pennsylvania
+878)
+#link="https://livestream.com/accounts/25565610/live"
+link="$( curl "https://livestream.com/accounts/25565610/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WPHL TV ABC 6 Philladelphia, Pennsylvania" ;;
+# 879) WFMZ 69 Traffic Allen Town Penslyvania 
+879)
+#link="https://livestream.com/accounts/14384745/traffic"
+link="$( curl "https://livestream.com/accounts/14384745/traffic" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WFMZ 69 Traffic Allen Town Penslyvania " ;;
+####################Rhode Island#################  
+# 880) WPRI Fox 12 Providence Rhode Island 
+880)
+#link="https://livestream.com/accounts/1864876/live"
+link="$( curl "https://livestream.com/accounts/1864876/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WPRI Fox 12 Providence Rhode Island" ;;
+
+#####################Vermont#####################  
+
+#####################Virginia####################  
+# 881) WCYB NBC 5 Bristol Virginia VA
+881)
+#link="https://livestream.com/accounts/8522497/live"
+link="$( curl "https://livestream.com/accounts/8522497/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WCYB NBC 5 Bristol Virginia VA" ;;
+# 882) WRIC ABC 8 Petersburg, Virginia
+882)
+#link="https://livestream.com/accounts/7425298/live"
+link="$( curl "https://livestream.com/accounts/7425298/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WRIC ABC 8 Petersburg, Virginia" ;;
+# 883) WWBT NBC 12 Richmond Virginia 
+883)
+#link="https://livestream.com/accounts/11203782/live"
+link="$( curl "https://livestream.com/accounts/11203782/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WWBT NBC 12 Richmond Virginia" ;;
+####################West Virginia################  
+
+###################New Hampshire#################  
+# 884) Brunswick TV3 New Hampshire
+884)
+#link="https://livestream.com/accounts/13788599/events/6330198"
+link="$( curl "https://livestream.com/accounts/13788599/events/6330198"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Brunswick TV3 New Hampshire" ;;
+# 885) LRPATV CH25 New Hampshire USA
+885)
+#link="https://livestream.com/accounts/3480937/channel25"
+link="$( curl "https://livestream.com/accounts/3480937/channel25"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="LRPATV CH25 New Hampshire USA" ;;
+
+####################Michigan#####################
+# 886) WJBK FOX 2 Detroit Michigan USA 
+886)
+#link="https://livestream.com/accounts/6396566/live"
+link="$( curl "https://livestream.com/accounts/6396566/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WJBK FOX 2 Detroit Michigan USA" ;; 
+# 887) WWTV 9 & 10 News 24/7 Mt. Pleasent Michigan  
+887)
+#link="https://livestream.com/accounts/25637691/live"
+link="$( curl "https://livestream.com/accounts/25637691/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WWTV 9 & 10 News 24/7 Mt. Pleasent Michigan" ;;
+
+#####################Indiana##################### 
+# 888)  WFIE NBC 14 Evansville Indiana USA
+888)
+#link="https://livestream.com/accounts/11981465/live"
+link="$( curl "https://livestream.com/accounts/11981465/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WFIE NBC 14 Evansville Indiana USA" ;;
+# 889) WANE Ft. Wayne Indiana
+889)
+#link="https://livestream.com/accounts/1849716/live"
+link="$( curl "https://livestream.com/accounts/1849716/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WANE Ft. Wayne Indiana" ;;
+# 890) WFFT FOX 55 Indiana USA
+890)
+#link="https://livestream.com/accounts/26511747/live"
+link="$( curl "https://livestream.com/accounts/26511747/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WFFT FOX 55 Indiana USA" ;;
+# 891) WTHI 10 Terre Haute Indiana
+891)
+#link="https://livestream.com/accounts/1866274/live"
+link="$( curl "https://livestream.com/accounts/1866274/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTHI 10 Terre Haute Indiana" ;;
+# 892) WISH 8 Indianapolis Indiana USA
+892)
+#link="https://livestream.com/accounts/1858612/live"
+link="$( curl "https://livestream.com/accounts/1858612/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WISH 8 Indianapolis Indiana USA" ;; 
+####################Kentucky#####################
+# 893) EKB- TV EKBTV Live Pikeville Kentucky 
+893)
+#link="https://livestream.com/accounts/6461963/events/4113877"
+link="$( curl "https://livestream.com/accounts/6461963/events/4113877"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="EKB- TV EKBTV Live Pikeville Kentucky" ;;
+# 894) WTVQ ABC 36 Lexington Kentucky USA
+894)
+#link="https://livestream.com/accounts/19871819/live"
+link="$( curl "https://livestream.com/accounts/19871819/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTVQ ABC 36 Lexington Kentucky USA" ;;
+# 895) WPSD-TV Paducah Kentucky 
+895)
+#link="https://livestream.com/accounts/21317942/live"
+link="$( curl "https://livestream.com/accounts/21317942/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WPSD-TV Paducah Kentucky" ;;
+# 896) Lex 18 Lexington Kentucky
+896)
+#link="https://livestream.com/accounts/1493287/live"
+link="$( curl "https://livestream.com/accounts/1493287/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Lex 18 Lexington Kentucky" ;;
+############################################################################  SOUTH EAST #########################
+
+#####################Florida#####################  
+# 897) WFLA NBC 8 Tampa Bay Florida USA
+897)
+#link="https://livestream.com/accounts/6140981/live"
+link="$( curl "https://livestream.com/accounts/6140981/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WFLA NBC 8 Tampa Bay Florida USA" ;;
+# 898)  WTVT / FOX 13 Tampa Bay, Florida USA
+898)
+#link="https://livestream.com/accounts/6180769/live"
+link="$( curl "https://livestream.com/accounts/6180769/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTVT / FOX 13 Tampa Bay, Florida USA" ;;
+# 899) Island TV Live Broadcast Miami FL USA
+899)
+#link="https://livestream.com/accounts/1420/Islandtvlive"
+link="$( curl "https://livestream.com/accounts/1420/Islandtvlive"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Island TV Live Broadcast Miami FL USA" ;;
+# 900) City of Tampa Television FL, USA
+900)
+#link="https://livestream.com/accounts/12251681/CTTV"
+link="$( curl "https://livestream.com/accounts/12251681/CTTV"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="City of Tampa Television FL, USA" ;;
+# 901) WFLX FOX 29 West Palm Beach, Florida,
+901)
+#link="https://livestream.com/accounts/12755354/live"
+link="$( curl "https://livestream.com/accounts/12755354/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WFLX FOX 29West Palm Beach, Florida, " ;;
+# 902)  WYKE TV 47 Hormosassa Springs Florida
+902)
+#link="https://livestream.com/accounts/9261275/events/7602204"
+link="$( curl "https://livestream.com/accounts/9261275/events/7602204"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WYKE TV 47 Hormosassa Springs Florida" ;;
+#####################Georgia#####################  
+# 903) WJBF Augusta Georgia 
+903)
+#link="https://livestream.com/accounts/7601347/live"
+link="$( curl "https://livestream.com/accounts/7601347/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WJBF Augusta Georgia" ;;
+# 904)WMGT 41 NBC Macon Georgia USA
+904)
+#link="https://livestream.com/accounts/15227391/live"
+link="$( curl "https://livestream.com/accounts/15227391/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WMGT 41 NBC Macon Georgia USA" ;;
+# 905) WSAV NBC 3 Savannah, Georgia
+905)
+#link="https://livestream.com/accounts/7682273/live"
+link="$( curl "https://livestream.com/accounts/7682273/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WSAV NBC 3 Savannah, Georgia" ;;
+# 906) WTOC 11 Savannah, Georgia
+906)
+#link="https://livestream.com/accounts/11006691/live"
+link="$( curl "https://livestream.com/accounts/11006691/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTOC 11 Savannah, Georgia" ;;
+# 907) WTVM ABC 9 Columbus Georgia 
+907)
+#link="https://livestream.com/accounts/11379799/live"
+link="$( curl "https://livestream.com/accounts/11379799/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WTVM ABC 9 Columbus Georgia " ;;
+# 908) WRBL News 365 CBS 3 Columbus, GA.  
+908)
+#link="https://livestream.com/accounts/7942874/live"
+link="$( curl "https://livestream.com/accounts/7942874/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WRBL News 365 CBS 3 Columbus, GA" ;;
+# 909) WGCL CBS46 Atlanta Georgia
+909)
+#link="https://livestream.com/accounts/6140931/live"
+link="$( curl "https://livestream.com/accounts/6140931/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WGCL CBS46 Atlanta Georgia" ;;
+# 910) WALB NBC 10 Albany Southwestern Georgia
+910)
+#link="https://livestream.com/accounts/11279058/live"
+link="$( curl "https://livestream.com/accounts/11279058/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WALB NBC 10 Albany Southwestern Georgia" ;;
+####################Mississippi##################  
+# 911) WDAM 7 Hattiesburg Mississippi USA
+911)
+#link="https://livestream.com/accounts/11595552/live"
+link="$( curl "https://livestream.com/accounts/11595552/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WDAM 7 Hattiesburg Mississippi USA" ;;
+# 912) WLOX ABC 13  Mississippi USA
+912)
+#link="https://livestream.com/accounts/11595500/live"
+link="$( curl "https://livestream.com/accounts/11595500/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WLOX ABC 13  Mississippi USA" ;;
+# 913) WJTV CBS 12 Jackson Mississippi
+913)
+#link="https://livestream.com/accounts/8374496/live"
+link="$( curl "https://livestream.com/accounts/8374496/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WJTV CBS 12 Jackson Mississippi" ;;
+# 914) WLBT FOX 40 Jackson Mississippi 
+914)
+#link="https://livestream.com/accounts/11595602/live"
+link="$( curl "https://livestream.com/accounts/11595602/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WLBT FOX 40 Jackson Mississippi" ;;
+# 915) WHLT Hattiesburg, Mississippi USA 
+915)
 #link="https://livestream.com/accounts/8383566/live"
 link="$( curl "https://livestream.com/accounts/8383566/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WHLT 12 Whitehall, Wisconsin" ;;
-
-# 1058) OUBN - Oakwood University Huntsville Alabama  
-1058)
+chan_name="WHLT Hattiesburg, Mississippi USA" ;;
+####################Alabama######################
+# 916)  WSFA 12 Montgomory Alabama USA 
+916)
+#link="https://livestream.com/accounts/11981705/live"
+link="$( curl "https://livestream.com/accounts/11981705/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WSFA 12 Montgomory Alabama USA" ;;
+# 917)  WBRC FOX6 News Birmingham, Alabama USA
+917)
+#link="https://livestream.com/WBRC/live"
+link="$( curl "https://livestream.com/WBRC/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WBRC FOX6 News Birmingham, Alabama USA" ;;
+# 918) WAKA CBS 8 ABC 32 Alabama
+918)
+#link="https://livestream.com/accounts/9486828/live"
+link="$( curl "https://livestream.com/accounts/9486828/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WAKA CBS 8 ABC 32 Alabama " ;;
+# 919) WAAY News ABC 31 Huntsville Alabama
+919)
+#link="https://livestream.com/accounts/26511741/live"
+link="$( curl "https://livestream.com/accounts/26511741/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WAAY News ABC 31 Huntsville Alabama" ;;
+# 920) CBS 42 Birmingham Alabama 
+920)
+#link="https://livestream.com/accounts/1848160/live"
+link="$( curl "https://livestream.com/accounts/1848160/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="CBS 42 Birmingham Alabama" ;;
+# 921) WKRG CBS 5 Mobile, Alabama
+921)
+#link="https://livestream.com/accounts/7546695/live"
+link="$( curl "https://livestream.com/accounts/7546695/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WKRG CBS 5 Mobile, Alabama" ;;
+# 922) WALA FOX10 News 24/7 Mobile, Alabama
+922)
+#link="https://livestream.com/accounts/1859803/live"
+link="$( curl "https://livestream.com/accounts/1859803/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WALA FOX10 News 24/7 Mobile, Alabama" ;;
+# 923) WBRC FOX 6 Birmingham, Alabama
+923)
+#link="https://livestream.com/accounts/12446860/live"
+link="$( curl "https://livestream.com/accounts/12446860/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WBRC FOX 6 Birmingham, Alabama" ;;
+# 924) OUBN - Oakwood University Huntsville Alabama  
+924)
 #link="https://livestream.com/accounts/5329025/events/7079597"
 link="$( curl "https://livestream.com/accounts/5329025/events/7079597"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="OUBN - Oakwood University Huntsville Alabama " ;;
 
-# 1059) Nasdaq Bell Ceremonies New York City 
-1059)
-#link="https://livestream.com/accounts/888332/live"
-link="$( curl "https://livestream.com/accounts/888332/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+#####################North Carolina##############   
+# 925) WJZY FOX 46 Charlotte NC
+925)
+#link="https://livestream.com/accounts/6370805/live"
+link="$( curl "https://livestream.com/accounts/6370805/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Nasdaq Bell Ceremonies New York City" ;;
-
-# 1060) AAA Guayama
-1060)
-#link="https://livestream.com/accounts/3185486/guayama"
-link="$( curl "https://livestream.com/accounts/3185486/guayama"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WJZY FOX 46 Charlotte NC" ;;
+# 926) WCCB Charlotte CW NC
+926)
+#link="https://livestream.com/accounts/8522553/live"
+link="$( curl "https://livestream.com/accounts/8522553/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="AAA Guayama" ;;
-
-# 1061) AWCATV - Education/Government Channel Ashburnham 
-1061)
-#link="https://livestream.com/accounts/22393363/events/6651528"
-link="$( curl "https://livestream.com/accounts/22393363/events/6651528"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WCCB Charlotte CW NC" ;;
+# 927) WYCW CW 62 Carolinas
+927)
+#link="https://livestream.com/accounts/8366412/live"
+link="$( curl "https://livestream.com/accounts/8366412/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="AWCATV - Education/Government Channel Ashburnham " ;;
-
-# 1062) Branson Visitor TV Branson Misouri 
-1062)
-#link="https://livestream.com/accounts/21384612/BVTV"
-link="$( curl "https://livestream.com/accounts/21384612/BVTV"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WYCW CW 62 Carolinas" ;;
+# 928) WNCT CBS 9 Greenville NC
+928)
+#link="https://livestream.com/accounts/7601533/live"
+link="$( curl "https://livestream.com/accounts/7601533/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Branson Visitor TV Branson Misouri" ;;
-
-# 1063)FHSU TIGER MEDIA NETWORK TMN TV Livestream Hays Kansas USA
-1063)
-#link="https://livestream.com/accounts/11135493/events/5339279"
-link="$( curl "https://livestream.com/accounts/11135493/events/5339279"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WNCT CBS 9 Greenville NC" ;;
+# 929) WCBD NBC 2 Charleston North Carolina 
+929)
+#link="https://livestream.com/accounts/8360295/live"
+link="$( curl "https://livestream.com/accounts/8360295/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="FHSU TIGER MEDIA NETWORK TMN TV Livestream Hays Kansas USA" ;;
-
-# 1064) MNN Channel 5 (HD) New York City New York, USA 
-1064)
-#link="https://livestream.com/accounts/17251372/events/4846282"
-link="$( curl "https://livestream.com/accounts/17251372/events/4846282"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WCBD NBC 2 Charleston NC" ;;
+# 930) WWAY News ABC CBS CW 3 Cape Fear Willmington NC 
+930)
+#link="https://livestream.com/accounts/26965546/live"
+link="$( curl "https://livestream.com/accounts/26965546/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="MNN Channel 5 (HD) New York City" ;;
-
-# 1065) WIVM TV39 WIVM Local TV Canton Ohio 
-1065)
-#link="https://livestream.com/accounts/17488475/events/4802826"
-link="$( curl "https://livestream.com/accounts/17488475/events/4802826"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WWAY News ABC CBS CW 3 Cape Fear Willmington NC" ;;
+# 931) WBTV CBS 3 Charlotte, North Carolina
+931)
+#link="https://livestream.com/accounts/10950088/live"
+link="$( curl "https://livestream.com/accounts/10950088/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WIVM TV39 WIVM Local TV Canton Ohio" ;;
-
-# 1066) EPlusTV6 Jackson Tennessee 
-1066)
-#link="https://livestream.com/accounts/726212/events/4481510"
-link="$( curl "https://livestream.com/accounts/726212/events/4481510"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WBTV CBS 3 Charlotte, North Carolina" ;;
+# 932) CBS 17 Rahliegh NC
+932)
+#link="https://livestream.com/accounts/7158447/live"
+link="$( curl "https://livestream.com/accounts/7158447/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="EPlusTV6 Jackson Tennessee" ;;
-
-# 1067) St. Cloud Times UTVS Minnesota 
-1067)
-#link="https://livestream.com/accounts/11549400/UTVS"
-link="$( curl "https://livestream.com/accounts/11549400/UTVS"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="CBS 17 Rahliegh NC" ;;
+######################South Carolina#############
+# 933) WCSC CBS 5 Charleston South Carolina USA
+933)
+#link="https://livestream.com/accounts/11016888/live"
+link="$( curl "https://livestream.com/accounts/11016888/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="St. Cloud Times UTVS Minnesota " ;;
-
-# 1068) Milford TV - Milford, MA Massachusetts 
-1068)
-#link="https://livestream.com/accounts/13918823/MilfordTV"
-link="$( curl "https://livestream.com/accounts/13918823/MilfordTV"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WCSC CBS 5 Charleston South Carolina USA" ;;
+# 934) WSPA CBS 7 WSPA Spartanberg SC
+934)
+#link="https://livestream.com/accounts/7592531/live"
+link="$( curl "https://livestream.com/accounts/7592531/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Milford TV - Milford, MA Massachusetts" ;;
-
-# 1069) EKB- TV EKBTV Live Pikeville Kentucky 
-1069)
-#link="https://livestream.com/accounts/6461963/events/4113877"
-link="$( curl "https://livestream.com/accounts/6461963/events/4113877"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WSPA CBS 7 WSPA Spartanberg SC" ;;
+# 935)WMBF Myrtle Beach, South Carolina
+935)
+#link="https://livestream.com/accounts/11214123/live"
+link="$( curl "https://livestream.com/accounts/11214123/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="EKB- TV EKBTV Live Pikeville Kentucky" ;;
-
-# 1070) Milford TV Educational Channel - Milford, MA
-1070)
-#link="https://livestream.com/accounts/13568947/MilfordTVEducational"
-link="$( curl "https://livestream.com/accounts/13568947/MilfordTVEducational"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WMBF Myrtle Beach, South Carolina" ;;
+# 936) WIS NBC 10 Columbia South Carolina 
+936)
+#link="https://livestream.com/accounts/11327981/live"
+link="$( curl "https://livestream.com/accounts/11327981/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Milford TV Educational Channel - Milford, MA" ;;
-
-# 1071)Native Media Network - NDN1.com NMN Live Santa Fe New Mexico
-1071)
-#link="https://livestream.com/accounts/13196214/events/3994033"
-link="$( curl "https://livestream.com/accounts/13196214/events/3994033"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WIS NBC 10 Columbia South Carolina" ;;
+####################Tennessee#################### 
+# 937) WSMV NBC 4 Nashville Tennessee
+937)
+#link="https://livestream.com/accounts/6396556/LIVE"
+link="$( curl "https://livestream.com/accounts/6396556/LIVE"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Native Media Network, Santa Fe New Mexico" ;;
-
-# 1072) EUTV - Evangel University EUTV Channel Live Springfield Missouri
-1072)
-#link="https://livestream.com/accounts/10735484/events/3837393"
-link="$( curl "https://livestream.com/accounts/10735484/events/3837393"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WSMV NBC 4 Nashville Tennessee" ;;
+# 938)WBBJ ABC 7 West Tennesee 
+938)
+#link="https://livestream.com/accounts/27132443/live"
+link="$( curl "https://livestream.com/accounts/27132443/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name=" EUTV Evangelical University, Springfield Missouri" ;;
-
-# 1073) Granbury Media Granbury, TX Tower Camera Live Stream 
-1073)
-#link="https://livestream.com/accounts/13120617/TowerCamera"
-link="$( curl "https://livestream.com/accounts/13120617/TowerCamera"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WBBJ ABC 7 West Tennesee" ;;
+# 939) WDEF News CBS 12 Now Chattanooga Tennessee
+939)
+#link="https://livestream.com/accounts/21596942/live"
+link="$( curl "https://livestream.com/accounts/21596942/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Granbury Media Granbury, TX Tower Camera Live Stream" ;;
-
-# 1074) ETSU New Construction Camera ETSU Fine Arts Classroom Building Johnson City Tennesse 
-1074)
+chan_name="WDEF News CBS 12 Now Chattanooga Tennesse " ;;
+# 940) WMC NBC 5 Memphis Tennessee 
+940)
+#link="https://livestream.com/accounts/10894063/live"
+link="$( curl "https://livestream.com/accounts/10894063/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WMC NBC 5 Memphis Tennessee" ;;
+# 941) Second Presbyterian Church Sunday Worship Memphis Tennessee 
+941)
+#link="https://livestream.com/accounts/15713152/sunday-worship"
+link="$( curl "https://livestream.com/accounts/15713152/sunday-worship"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Second Presbyterian Church Sunday Worship Memphis Tennessee" ;;
+# 942) ETSU New Construction Camera ETSU Fine Arts Classroom Building Johnson City Tennesse 
+942)
 #link="https://livestream.com/accounts/17402222/FineArts"
 link="$( curl "https://livestream.com/accounts/17402222/FineArts"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="ETSU New Construction Camera ETSU Fine Arts Classroom Building Johnson City Tennesse" ;;
-
-# 1075) WDFL 18 South Carolina, Alabama, Louisiana 
-1075)
-#link="https://livestream.com/accounts/26473976/events/7937669"
-link="$( curl "https://livestream.com/accounts/26473976/events/7937669"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+# 943) EPlusTV6 Jackson Tennessee 
+943)
+#link="https://livestream.com/accounts/726212/events/4481510"
+link="$( curl "https://livestream.com/accounts/726212/events/4481510"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WDFL 18 South Carolina, Alabama, Louisiana" ;;
+chan_name="EPlusTV6 Jackson Tennessee" ;;
+########################################################################### NORTH MIDDLE ########################
 
-# 1076) MCAET Salinas California 
-1076)
-#link="https://livestream.com/accounts/7781243/events/7871771"
-link="$( curl "https://livestream.com/accounts/7781243/events/7871771"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+####################North Dakota##################  
+# 944) KELO Live Keloland (Dakota, Minisota, Iowa) USA  
+944)
+#link="https://livestream.com/kelo/live"
+link="$( curl "https://livestream.com/kelo/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="MCAET Salinas California" ;;
-
-# 1077) BlabTV
-1077)
-#link="https://livestream.com/accounts/22779635/events/7675406"
-link="$( curl "https://livestream.com/accounts/22779635/events/7675406"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KELO Live Keloland USA" ;;
+# 945) KVRR Fargo North Dakota  
+945)
+#link="https://livestream.com/accounts/21298478/live"
+link="$( curl "https://livestream.com/accounts/21298478/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="BlabTV" ;;
-
-# 1078) Essex County College Newark New Jersey 
-1078)
-#link="https://livestream.com/accounts/5109696/events/7607762"
-link="$( curl "https://livestream.com/accounts/5109696/events/7607762"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KVRR Fargo North Dakota" ;;
+#####################South Dakota##################  
+# 946) KDLT Sioux Falls South Dakota
+946)
+#link="https://livestream.com/accounts/21277277/live"
+link="$( curl "https://livestream.com/accounts/21277277/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Essex County College Newark New Jersey" ;;
-
-# 1079) CNPTV Live Caribbean Television.
-1079)
-#link="https://livestream.com/accounts/22462981/Live"
-link="$( curl "https://livestream.com/accounts/22462981/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KDLT Sioux Falls South Dakota" ;;
+# 947) GovTV Watertown, South Dakota
+947)
+#link="https://livestream.com/accounts/21042766/events/6254925"
+link="$( curl "https://livestream.com/accounts/21042766/events/6254925"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="CNPTV Live Caribbean Television." ;;
-
-# 1080)  LOBO STATION
-1080)
-#link="https://livestream.com/accounts/14558256/events/7412168"
-link="$( curl "https://livestream.com/accounts/14558256/events/7412168"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="GovTV Watertown, South Dakota" ;;
+# 948) KELO CBS Sioux Falls, South Dakota
+948)
+#link="https://livestream.com/accounts/8522446/live"
+link="$( curl "https://livestream.com/accounts/8522446/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="LOBO STATION" ;;
-
-# 1081) Maricopa Colleges Television MCTV Live Feed 115 Phoenix Arizona
-1081)
-#link="https://livestream.com/accounts/24714287/Live"
-link="$( curl "https://livestream.com/accounts/24714287/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KELO CBS Sioux Falls, South Dakota" ;;
+######################Iowa##########################
+# 949) KIMT 3 Mason City, Iowa
+949)
+#link="https://livestream.com/accounts/1859647/live"
+link="$( curl "https://livestream.com/accounts/1859647/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Maricopa Colleges Television MCTV Live Feed 115 Phoenix Arizona" ;;
-
-# 1082) CharmTV Baltimore Maryland
-1082)
-#link="https://livestream.com/accounts/13988426/events/4134572"
-link="$( curl "https://livestream.com/accounts/13988426/events/4134572"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KIMT 3 Mason City, Iowa" ;;
+####################Minnesota########################  
+# 950) WDIO ABC 10/13 Duluth Minnesota
+950)
+#link="https://livestream.com/accounts/12241516/live"
+link="$( curl "https://livestream.com/accounts/12241516/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="CharmTV Baltimore Maryland" ;;
-
-# 1083) KVVB.TV CH.33 Victorville,California KVVB.TV | Ch 33.1 
-1083)
-#link="https://livestream.com/accounts/9450048/events/3542162"
-link="$( curl "https://livestream.com/accounts/9450048/events/3542162"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="WDIO  ABC 10/13 Duluth Minnesota" ;;
+# 951) KAAL ABC 6 Rochester Minnesota
+951)
+#link="https://livestream.com/accounts/12240964/live"
+link="$( curl "https://livestream.com/accounts/12240964/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="KVVB.TV CH.33 Victorville,CA" ;;
-
-# 1084) WLTH AM 1370 Radio
-1084)
-#link="https://livestream.com/accounts/26670176/events/8011646"
-link="$( curl "https://livestream.com/accounts/26670176/events/8011646"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+chan_name="KAAL ABC 6 Rochester Minnesota" ;;
+# 952) KQDS - FOX 21 Duluth Minnesota USA 
+952)
+#link="https://livestream.com/accounts/21146230/live"
+link="$( curl"https://livestream.com/accounts/21146230/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="WLTH AM 1370 Radio" ;;
+chan_name="KQDS - FOX 21 Duluth Minnesota USA " ;;
+# 953) KSTP ABC 5 St. Paul, Minnesota
+953)
+#link="https://livestream.com/accounts/12150160/live"
+link="$( curl "https://livestream.com/accounts/12150160/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KSTP ABC 5 St. Paul, Minnesota" ;;
+# 954) KMSP FOX 9 Minneapolis Minnesota 
+954)
+#link="https://livestream.com/accounts/6396280/live"
+link="$( curl "https://livestream.com/accounts/6396280/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KMSP FOX 9 Minneapolis Minnesota" ;;
+# 955) St. Cloud Times UTVS Minnesota 
+955)
+#link="https://livestream.com/accounts/11549400/UTVS"
+link="$( curl "https://livestream.com/accounts/11549400/UTVS"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="St. Cloud Times UTVS Minnesota " ;;
+#####################Nebraska######################### 
 
-# 1085) KCOH TV Houston Texas 
-1085)
+#######################Wisconsin#####################  
+
+# 956) WHLT 12 Whitehall, Wisconsin
+956)
+#link="https://livestream.com/accounts/8383566/live"
+link="$( curl "https://livestream.com/accounts/8383566/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WHLT 12 Whitehall, Wisconsin" ;;
+
+#########################Illinois#######################
+# 957) WFLD / Fox 32 Chicago, Illinois USA
+957)
+#link="https://livestream.com/accounts/6370732/live"
+link="$( curl "https://livestream.com/accounts/6370732/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WFLD Fox 32 Chicago, Illinois USA" ;;
+# 958) WAND NBC 17 Decatur Illinois
+958)
+#link="https://livestream.com/accounts/15004678/live"
+link="$( curl "https://livestream.com/accounts/15004678/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WAND NBC 17 Decatur Illinois" ;;
+# 959) WFLD Fox 32 Chicago IL
+959)
+#link="https://livestream.com/accounts/6370732/events/4249677"
+link="$( curl "https://livestream.com/accounts/6370732/events/4249677"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WFLD Fox 32 Chicago IL" ;;
+##################################################################### SOUTH MIDDLE #########################
+
+########################Texas##################### 
+# 960)  KRIV FOX 26 News Houston Texas USA
+960)
+#link="https://livestream.com/accounts/6396012/live"
+link="$( curl "https://livestream.com/accounts/6396012/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name=" KRIV FOX 26 News Houston, Texas, USA" ;;
+# 961) KLTV ABC 7 Tyler TX USA
+961)
+#link="https://livestream.com/accounts/11816721/live"
+link="$( curl "https://livestream.com/accounts/11816721/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KLTV ABC 7 Tyler TX USA" ;;
+# 962) KTXS 12 ABC Abilene Texas 
+962)
+#link="https://livestream.com/accounts/9960439/live"
+link="$( curl "https://livestream.com/accounts/9960439/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KTXS 12 ABC Abilene TX" ;;
+# 963) KFDA CBS 10 Amarillo TX USA
+963)
+#link="https://livestream.com/accounts/17606146/live"
+link="$( curl "https://livestream.com/accounts/17606146/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KFDA CBS 10 Amarillo TX USA" ;;
+# 964) KZTV CBS 10 Corpus Christi TX USA 
+964)
+#link="https://livestream.com/accounts/16030806/live"
+link="$( curl "https://livestream.com/accounts/16030806/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KZTV CBS 10 Corpus Christi TX USA" ;;
+# 965) KFDX NBC 3 Witchita Falls Texas USA
+965)
+#link="https://livestream.com/accounts/21184359/live"
+link="$( curl "https://livestream.com/accounts/21184359/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KFDX NBC 3 Witchita Falls, Texas USA" ;;
+# 966) Galveston County Gulf Freeway Cams Tour Houston Texas USA 
+966)
+#link="https://livestream.com/accounts/21068106/events/6228235"
+link="$( curl "https://livestream.com/accounts/21068106/events/6228235"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Galveston County Gulf Freeway Cams Tour Houston Texas USA" ;;
+# 967) KAUZ CBS 6 Winters Texas 
+967)
+#link="https://livestream.com/accounts/16991125/live"
+link="$( curl "https://livestream.com/accounts/16991125/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KAUZ CBS 6 Winters Texas" ;;
+# 968) KXXV ABC 25 Waco Texas 
+968)
+#link="https://livestream.com/accounts/16936343/live"
+link="$( curl "https://livestream.com/accounts/16936343/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KXXV ABC 25 Waco Texas" ;;
+# 969) KVIA ABC-7 El Paso Texas 
+969)
+#link="https://livestream.com/accounts/18241891/live"
+link="$( curl "https://livestream.com/accounts/18241891/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KVIA ABC-7 El Paso Texas" ;;
+# 970)  KCBD NBC 11 Lubbock, Texas
+970)
+#link="https://livestream.com/accounts/11816946/live"
+link="$( curl "https://livestream.com/accounts/11816946/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KCBD NBC 11 Lubbock, Texas" ;;
+# 971) Lex & Terry Lufkin Texas 
+971)
+#link="https://livestream.com/accounts/16950775/live"
+link="$( curl "https://livestream.com/accounts/16950775/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Lex & Terry Lufkin Texas" ;;
+# 972) KSWO ABC 7 Winters Texas 
+972)
+#link="https://livestream.com/accounts/16991045/live"
+link="$( curl "https://livestream.com/accounts/16991045/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KSWO ABC 7 Winters Texas" ;;
+
+# 973) ------
+
+# 974) ESPN 97.5 Houston Texas 
+974)
+#link="https://livestream.com/accounts/26800104/live"
+link="$( curl "https://livestream.com/accounts/26800104/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="ESPN 97.5 Houston Texas" ;;
+# 975) Granbury Media Granbury, TX Tower Camera Live Stream 
+975)
+#link="https://livestream.com/accounts/13120617/TowerCamera"
+link="$( curl "https://livestream.com/accounts/13120617/TowerCamera"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Granbury Media Granbury, TX Tower Camera Live Stream" ;;
+# 976) KCOH TV Houston Texas 
+976)
 #link="https://livestream.com/accounts/12299560/events/3892224"
 link="$( curl "https://livestream.com/accounts/12299560/events/3892224"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="KCOH TV Houston Texas" ;;
-
-# 1086) Lake Tahoe TV California
-1086)
-#link="https://livestream.com/accounts/21822229/events/6450069"
-link="$( curl "https://livestream.com/accounts/21822229/events/6450069"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+# 977)KXAN NBC Austin Texas
+977)
+#link="https://livestream.com/accounts/1506296/live"
+link="$( curl "https://livestream.com/accounts/1506296/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
-chan_name="Lake Tahoe TV California" ;;
+chan_name="KXAN NBC Austin Texas" ;;
 
-# 1087) KVZK TV CHANNEL 2 American Samoa 
-1087)
+#######################Louisiana###################
+# 978)  KSLA News 12 Shreveport Louisiana USA 
+978)
+#link="https://livestream.com/KSLA/live"
+link="$( curl "https://livestream.com/KSLA/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KSLA News 12 Shreveport Louisianna USA  " ;;
+# 979) WAFB 9 CBS Baton Rouge Louisiana USA
+979)
+#link="https://livestream.com/accounts/11595706/live"
+link="$( curl "https://livestream.com/accounts/11595706/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WAFB 9 CBS Baton Rouge Louisiana USA" ;;
+# 980) WVUE FOX 8 New Orleans LA USA
+980)
+#link="https://livestream.com/accounts/10891792/live"
+link="$( curl "https://livestream.com/accounts/10891792/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WVUE FOX 8 New Orleans LA USA" ;;
+# 981) KLFY News 10 Acadiana Lafayette, Louisiana
+981)
+#link="https://livestream.com/accounts/7520488/live"
+link="$( curl "https://livestream.com/accounts/7520488/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KLFY News 10 Acadiana Lafayette, Louisiana" ;;
+# 982) WDFL 18 South Carolina, Alabama, Louisiana 
+982)
+#link="https://livestream.com/accounts/26473976/events/7937669"
+link="$( curl "https://livestream.com/accounts/26473976/events/7937669"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WDFL 18 South Carolina, Alabama, Louisiana" ;;
+# 983) KSLA News CBS 12 Shreveport, Louisiana
+983)
+#link="https://livestream.com/accounts/11816591/live"
+link="$( curl "https://livestream.com/accounts/11816591/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KSLA News CBS 12 Shreveport, Louisiana" ;;
+# 984) HTV10 Houma Louisiana 
+984)
+#link="https://livestream.com/accounts/1362675/events/3147474"
+link="$( curl "https://livestream.com/accounts/1362675/events/3147474"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="HTV10 Houma Louisiana" ;;
+# 985) KPLC NBC 7 Lake Charles Louisiana  
+985)
+#link="https://livestream.com/accounts/11595658/live"
+link="$( curl "https://livestream.com/accounts/11595658/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KPLC NBC 7 Lake Charles Louisiana" ;;
+# 986) KATC Lafayette ABC 3 Louisiana 
+986)
+#link="https://livestream.com/accounts/15228189/live"
+link="$( curl "https://livestream.com/accounts/15228189/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KATC Lafayette ABC 3 Louisiana" ;;
+
+#####################Arkansas######################### 
+# 987)HU16 Harding Sercy Arkansas  USA
+987)
+#link="https://livestream.com/accounts/8522446/live"
+link="$( curl "https://livestream.com/accounts/8522446/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="HU16 Harding Sercy Arkansas  USA" ;;
+######################Kansas#########################
+# 988) KSNT Weather Wichita Kansas
+988)
+#link="https://livestream.com/accounts/1866369/live"
+link="$( curl "https://livestream.com/accounts/1866369/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KSNT Weather Wichita Kansas" ;;
+# 989) WPS-TV Wichita Public Schools Kansas
+989)
+#link="https://livestream.com/accounts/12013978/events/3835724"
+link="$( curl "https://livestream.com/accounts/12013978/events/3835724"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WPS-TV Wichita Public Schools, Kansas" ;;
+# 990) KSNW NBC 3 Witchita Kansas
+990)
+#link="https://livestream.com/accounts/1866980/live"
+link="$( curl "https://livestream.com/accounts/1866980/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KSNW NBC 3 Witchita Kansas" ;;
+#####################Oklahoma#########################  
+# 991) KSNT Kansas OK USA
+991)
+#link="https://livestream.com/accounts/1866369/live"
+link="$( curl "https://livestream.com/accounts/1866369/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KSNT Kansas OK USA" ;;
+# 992) Enid Television Network Oklahoma
+992)
+#link="https://livestream.com/accounts/13638122/events/4063586"
+link="$( curl "https://livestream.com/accounts/13638122/events/4063586"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Enid Television Network Oklahoma" ;;
+####################Missouri###########################
+# 993) KMOV CBS 4 St. Louis Missouri MO USA
+993)
+#link="https://livestream.com/accounts/12654794/live"
+link="$( curl "https://livestream.com/accounts/12654794/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KMOV CBS 4 St. Louis Missouri MO USA" ;;
+# 994) KMIZ ABC 17 Missouri
+994)
+#link="https://livestream.com/accounts/18240993/live"
+link="$( curl "https://livestream.com/accounts/18240993/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KMIZ ABC 17 Missouri" ;;
+# 995) Polk County Channel 44 Bolivar Missouri USA
+995)
+#link="https://livestream.com/accounts/15079831/Channel44"
+link="$( curl "https://livestream.com/accounts/15079831/Channel44"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Polk County Channel 44 Bolivar Missouri USA" ;;
+# 996) KOLR CBS 10 Springfield Missouri
+996)
+#link="https://livestream.com/accounts/21145355/live"
+link="$( curl "https://livestream.com/accounts/21145355/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KOLR CBS 10 Springfield Missouri" ;;
+# 997) Branson Visitor TV Branson Misouri 
+997)
+#link="https://livestream.com/accounts/21384612/BVTV"
+link="$( curl "https://livestream.com/accounts/21384612/BVTV"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Branson Visitor TV Branson Misouri" ;;
+# 998) EUTV - Evangel University EUTV Channel Live Springfield Missouri
+998)
+#link="https://livestream.com/accounts/10735484/events/3837393"
+link="$( curl "https://livestream.com/accounts/10735484/events/3837393"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name=" EUTV Evangelical University, Springfield Missouri" ;;
+# 999) KY3 Springfield Missouri 
+999)
+#link="https://livestream.com/accounts/4699618/live"
+link="$( curl "https://livestream.com/accounts/4699618/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KY3 Springfield Missouri" ;;
+# 1000) KQTV 2 St. Joseph, Missouri
+1000)
+#link="https://livestream.com/accounts/26511737/live"
+link="$( curl "https://livestream.com/accounts/26511737/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KQTV 2 St. Joseph, Missouri" ;;
+# 1001) News-Press NOW Fox 26 KNPN Saint Joseph Missouri 
+1001)
+#link="https://livestream.com/accounts/18241682/live"
+link="$( curl "https://livestream.com/accounts/18241682/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="News-Press NOW Fox 26 KNPN Saint Joseph Missouri" ;;
+# 1002) KCTV CBS 5 Kansas City Missouri  
+1002)
+#link="https://livestream.com/accounts/6370696/live"
+link="$( curl "https://livestream.com/accounts/6370696/live" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KCTV CBS 5 Kansas City Missouri" ;;
+
+######################################################################## TERITORIES #########################
+
+###################Hawaii########################## 
+# 1003) KHNL Honolulu Hawaii News Now
+1003)
+#link="https://livestream.com/accounts/12139043/live"
+link="$( curl "https://livestream.com/accounts/12139043/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KHNL Honolulu Hawaii News Now" ;;
+# 1004) ThinkTech Hawaii Honolulu USA
+1004)
+#link="https://livestream.com/accounts/12650986/events/3950350"
+link="$( curl "https://livestream.com/accounts/12650986/events/3950350"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="ThinkTech Hawaii Honolulu USA" ;; 
+# 1005) KFVE 9 Honolulu Hawaii
+1005)
+#link="https://livestream.com/accounts/14598737/live"
+link="$( curl "https://livestream.com/accounts/14598737/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KFVE Honolulu Hawaii" ;; 
+# 1006) KHON CBS 2 Ala Mona Honolulu Hawaii 
+1006)
+#link="https://livestream.com/accounts/1858266/live"
+link="$( curl "https://livestream.com/accounts/1858266/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="KHON CBS 2 Ala Mona Honolulu Hawaii " ;;
+####################Alaska##########################
+
+#################### Amerrican Samoa ########################
+# 1007) KVZK TV CHANNEL 2 American Samoa 
+1007)
 #link="https://livestream.com/accounts/8956070/events/4561731"
 link="$( curl "https://livestream.com/accounts/8956070/events/4561731"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="KVZK TV CHANNEL 2 American Samoa" ;;
+########## Guam ##################
+# 1008) PNC News First Newstalk K57 Fox 6 Guam 
+1008)
+#link="https://livestream.com/accounts/10612724/newstalk57"
+link="$( curl "https://livestream.com/accounts/10612724/newstalk57"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="PNC News First Newstalk K57 Fox 6 Guam " ;;
+##################################################################################################
 
-# 1088) Florida Gaming Sorteo
-1088)
+
+###################### UN SORTED USA ###################################################################
+# 1009)  Joe Pags Show
+1009)
+#link="https://livestream.com/accounts/26896512/events/8077273"
+link="$( curl "https://livestream.com/accounts/26896512/events/8077273"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Joe Pags Show" ;;
+# 1010) CGTN America Live
+1010)
+#link="https://livestream.com/accounts/7082210/livenews"
+link="$( curl "https://livestream.com/accounts/7082210/livenews"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="CGTN America Live" ;;
+# 1011) BlabTV
+1011)
+#link="https://livestream.com/accounts/22779635/events/7675406"
+link="$( curl "https://livestream.com/accounts/22779635/events/7675406"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="BlabTV" ;;
+# 1012) Mike Malloy Show
+1012)
+#link="https://livestream.com/accounts/8522627/live"
+link="$( curl "https://livestream.com/accounts/8522627/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Mike Malloy Show" ;;
+# 1013) Nasdaq Bell Ceremonies New York City 
+1013)
+#link="https://livestream.com/accounts/888332/live"
+link="$( curl "https://livestream.com/accounts/888332/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Nasdaq Bell Ceremonies New York City" ;;
+# 1014)Westerville.TV 543 Production Studio 
+1014)
+#link="https://livestream.com/accounts/26666947/events/8163419"
+link="$( curl "https://livestream.com/accounts/26666947/events/8163419"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Westerville.TV 543 Production Studio " ;;
+
+###################### Municipal ##################################################
+# 1015) Kingdom Access Television Channel 192 LIVE
+1015)
+#link="https://livestream.com/accounts/4209066/events/8159063"
+link="$( curl "https://livestream.com/accounts/4209066/events/8159063"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Kingdom Access Television Channel 192 LIVE" ;;
+# 1016) Plaistow Access New Hampshire
+1016)
+#link="https://livestream.com/accounts/11298895/meetings"
+link="$( curl "https://livestream.com/accounts/11298895/meetings"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Plaistow Access New Hampshire" ;;
+# 1017) City of Topeka City Kansas
+1017)
+#link="https://livestream.com/accounts/25008807/events/7970645"
+link="$( curl "https://livestream.com/accounts/25008807/events/7970645"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="City of Topeka City Kansas" ;;
+# 1018) Shelby County Schools C19TV & 88.5FM Memphis Tennessee 
+1018)
+#link="https://livestream.com/accounts/25133520/c19tv"
+link="$( curl "https://livestream.com/accounts/25133520/c19tv"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Shelby County Schools C19TV & 88.5FM Memphis Tennessee " ;;
+# 1019) Provincetown Community TV Provincetown Government Meetings  Provincetown, Massachusetts
+1019)
+#link="https://livestream.com/accounts/6011038/events/6712043"
+link="$( curl "https://livestream.com/accounts/6011038/events/6712043"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Provincetown Community TV, Massachusetts" ;;
+# 1020) Bermuda Government (CITV) Hamilton, Bermuda 
+1020)
+#link="https://livestream.com/accounts/19270406/events/5372984"
+link="$( curl "https://livestream.com/accounts/19270406/events/5372984"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Bermuda Government (CITV) Hamilton, Bermuda " ;;
+#################################### RELIGIOUS / FAITH #################################################
+# 1021) Shalom Media Catholic KIDS
+1021)
+#link="https://livestream.com/shalomworld/events/7987357"
+link="$( curl "https://livestream.com/shalomworld/events/7987357"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Shalom Media Catholic KIDS" ;;
+# 1022) Faith Lutheran Church - Penfield, NY
+1022)
+#link="https://livestream.com/accounts/4440983/events/6827954"
+link="$( curl "https://livestream.com/accounts/4440983/events/6827954" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Faith Lutheran Church - Penfield, NY" ;;
+# 1023) Whole Life Ministries SKMNetwork Augusta Georgia
+1023)
+#link="https://livestream.com/accounts/16502349/SKMNetwork"
+link="$( curl "https://livestream.com/accounts/16502349/SKMNetwork"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Whole Life Ministries SKMNetwork Augusta Georgia" ;;
+# 1024) St. Catharine Church, Spring Lake, New Jersey 
+1024)
+#link="https://livestream.com/accounts/11714562/events/3786245"
+link="$( curl "https://livestream.com/accounts/11714562/events/3786245"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="St. Catharine Church, Spring Lake, New Jersey " ;;
+# 1025) Glory to God Ministries International Love of God Classics 
+1025)
+#link="https://livestream.com/accounts/3240767/events/8008064"
+link="$( curl "https://livestream.com/accounts/3240767/events/8008064"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Glory to God Ministries" ;;
+# 1026) St. Helena Chapel
+1026)
+#link="https://livestream.com/accounts/25372681/events/7581060"
+link="$( curl "https://livestream.com/accounts/25372681/events/7581060"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="St. Helena Chapel" ;;
+# 1027) St Patrick's Dumbarton
+1027)
+#link="https://livestream.com/accounts/10499782/events/7601596"
+link="$( curl "https://livestream.com/accounts/10499782/events/7601596"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="St Patrick's Dumbarton" ;;
+# 1028) VTNTV VICTORY TELEVISION NETWORK KVTN KVTH KVTJ Little Rock Arkansas
+1028)
+#link="https://livestream.com/accounts/15669040/events/4554297"
+link="$( curl "https://livestream.com/accounts/15669040/events/4554297"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="VTNTV VICTORY TELEVISION NETWORK KVTN KVTH KVTJ Little Rock Arkansas" ;;
+# 1029) TMN WORD TV Into All the Earth 24/7/365
+1029)
+#link="https://livestream.com/accounts/16242586/TMN"
+link="$( curl "https://livestream.com/accounts/16242586/TMN"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="TMN WORD TV Into All the Earth 24/7/365" ;;
+# 1030) Parkside Radio Show / BROOKLYNSTATION.COM
+1030)
+#link="https://livestream.com/knqradio/events/8191094"
+link="$( curl "https://livestream.com/knqradio/events/8191094"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Parkside Radio Show / BROOKLYNSTATION.COM" ;;
+# 1031) FGTV Frequencies of Glory LIVE Jacksonville Florida 
+1031)
+#link="https://livestream.com/accounts/3107466/events/3858711"
+link="$( curl "https://livestream.com/accounts/3107466/events/3858711"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="FGTV Frequencies of Glory LIVE Jacksonville Florida" ;;
+# 1032) HJTV online Healing Jesus TV London England 
+1032)
+#link="https://livestream.com/accounts/15754877/events/4470314"
+link="$( curl "https://livestream.com/accounts/15754877/events/4470314"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="HJTV online Healing Jesus TV London England" ;;
+# 1033) Apocalypse Channel APTV Live Polaski Tennessse 
+1033)
+#link="https://livestream.com/accounts/5057242/events/4312291"
+link="$( curl "https://livestream.com/accounts/5057242/events/4312291"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Apocalypse Channel APTV Live Polaski Tennessse" ;;
+# 1034) Marytown Chapel Marytown Online Adoration Chapel Illinois
+1034)
+#link="https://livestream.com/accounts/15529184/events/4408765"
+link="$( curl "https://livestream.com/accounts/15529184/events/4408765"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Marytown Chapel Illinois" ;;
+# 1035) Guaranty Media Baton Rouge Louisiana 
+1035)
+#link="https://livestream.com/accounts/25649901/live"
+link="$( curl "https://livestream.com/accounts/25649901/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Guaranty Media Baton Rouge Louisiana" ;;
+# 1036) Pro Football Hall of Fame Hall of Fame Channel Stream
+1036)
+#link="https://livestream.com/accounts/24957552/events/8006439"
+link="$( curl "https://livestream.com/accounts/24957552/events/8006439"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Pro Football Hall of Fame" ;;
+# 1037) Lance Hope RSL FEED
+1037)
+#link="https://livestream.com/accounts/22999173/events/8078810"
+link="$( curl "https://livestream.com/accounts/22999173/events/8078810"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Lance Hope RSL FEED" ;;
+# 1038)XBTV Rosecroft Raceway Live Maryland 
+1038)
+#link="https://livestream.com/accounts/9869799/events/6772185"
+link="$( curl "https://livestream.com/accounts/9869799/events/6772185"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="XBTV Rosecroft Raceway Live Maryland" ;;
+# 1039) Park City Television PCTV Livestream Utah 
+1039)
+#link="https://livestream.com/accounts/11728043/events/3779731"
+link="$( curl "https://livestream.com/accounts/11728043/events/3779731"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Park City Television PCTV Livestream Utah" ;;
+# 1040) AAA Guayama
+1040)
+#link="https://livestream.com/accounts/3185486/guayama"
+link="$( curl "https://livestream.com/accounts/3185486/guayama"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="AAA Guayama" ;;
+# 1041) AWCATV - Education/Government Channel Ashburnham 
+1041)
+#link="https://livestream.com/accounts/22393363/events/6651528"
+link="$( curl "https://livestream.com/accounts/22393363/events/6651528"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="AWCATV - Education/Government Channel Ashburnham " ;;
+# 1042)FHSU TIGER MEDIA NETWORK TMN TV Livestream Hays Kansas USA
+1042)
+#link="https://livestream.com/accounts/11135493/events/5339279"
+link="$( curl "https://livestream.com/accounts/11135493/events/5339279"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="FHSU TIGER MEDIA NETWORK TMN TV Livestream Hays Kansas USA" ;;
+# 1043) Essex County College Newark New Jersey 
+1043)
+#link="https://livestream.com/accounts/5109696/events/7607762"
+link="$( curl "https://livestream.com/accounts/5109696/events/7607762"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Essex County College Newark New Jersey" ;;
+# 1044) CNPTV Live Caribbean Television.
+1044)
+#link="https://livestream.com/accounts/22462981/Live"
+link="$( curl "https://livestream.com/accounts/22462981/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="CNPTV Live Caribbean Television." ;;
+# 1045)  LOBO STATION
+1045)
+#link="https://livestream.com/accounts/14558256/events/7412168"
+link="$( curl "https://livestream.com/accounts/14558256/events/7412168"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="LOBO STATION" ;;
+# 1046) Maricopa Colleges Television MCTV Live Feed 115 Phoenix Arizona
+1046)
+#link="https://livestream.com/accounts/24714287/Live"
+link="$( curl "https://livestream.com/accounts/24714287/Live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Maricopa Colleges Television MCTV Live Feed 115 Phoenix Arizona" ;;
+# 1047) WLTH AM 1370 Radio
+1047)
+#link="https://livestream.com/accounts/26670176/events/8011646"
+link="$( curl "https://livestream.com/accounts/26670176/events/8011646"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="WLTH AM 1370 Radio" ;;
+# 1048) Lake Tahoe TV California
+1048)
+#link="https://livestream.com/accounts/21822229/events/6450069"
+link="$( curl "https://livestream.com/accounts/21822229/events/6450069"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Lake Tahoe TV California" ;;
+# 1049) Florida Gaming Sorteo
+1049)
 #link="https://livestream.com/accounts/25552923/events/7909255"
 link="$( curl "https://livestream.com/accounts/25552923/events/7909255"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Florida Gaming Sorteo" ;;
-
-# 1089) Kidd Kraddick Morning Show 
-1089)
+# 1050) Kidd Kraddick Morning Show 
+1050)
 #link="https://livestream.com/accounts/16936513/live"
 link="$( curl "https://livestream.com/accounts/16936513/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Kidd Kraddick Morning Show " ;;
-
-# 1090) Rover's Morning Glory RMG-TV Cleavland Ohio
-1090)
+# 1051) Rover's Morning Glory RMG-TV Cleavland Ohio
+1051)
 #link="https://livestream.com/accounts/242049/events/1978582"
 link="$( curl "https://livestream.com/accounts/242049/events/1978582"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Rover's Morning Glory RMG-TV Cleavland Ohio" ;;
-
-# 1091) WFSB 3 Hartford Connecticut USA
-1091)
-#link="https://livestream.com/accounts/6372985/live"
-link="$( curl "https://livestream.com/accounts/6372985/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WFSB 3 Hartford Connecticut USA" ;;
-
-# 1092) ICOinvestor.tv USA
-1092)
+# 1052) ICOinvestor.tv USA
+1052)
 #link="https://livestream.com/accounts/26548600/events/8201689"
 link="$( curl link="https://livestream.com/accounts/26548600/events/8201689"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="ICOinvestor.tv USA" ;;
-
-# 1093) WISH 8 Indianapolis USA
-1093)
-#link="https://livestream.com/accounts/1858612/live"
-link="$( curl "https://livestream.com/accounts/1858612/live"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-use_cookies="no"
-chan_name="WISH 8 Indianapolis USA" ;; 
-
-# 1094) Luigi Pellegrini Parrocchia Santa Rita Via Reggio Italy 
-1094)
+# 1053) Luigi Pellegrini Parrocchia Santa Rita Via Reggio Italy 
+1053)
 #link="https://livestream.com/accounts/25077919/diretta"
 link="$( curl "https://livestream.com/accounts/25077919/diretta"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-
 use_cookies="no"
 chan_name="Luigi Pellegrini Parrocchia Santa Rita Via Reggio Italy " ;;
 
-
 ############################### DAILY MOTION OVERFLOW   ######################################
-# 1095) Bengu Turk TK 
-1095)
+# 1054) Bengu Turk TK 
+1054)
 link="https://www.dailymotion.com/video/x6ikc4m"
 use_cookies="no"
 chan_name="Bengu Turk TK" ;;
-# 1096) i24 News Israel
-1096) 
+# 1055) i24 News Israel
+1055) 
 keyword="Live"  
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/i24News/videos?view=2" |  grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 link="https://www.dailymotion.com/video/x29atae"
