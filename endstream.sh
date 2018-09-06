@@ -253,15 +253,15 @@ channel_matrix_1()
    echo "307)Aaj Tak IN       347)YTN DMB KR     387)SPARK UG          427)BYUTV Int           467)RED BULL TV      507)3ABN Latino       547)Oireachtas CR 2 IE"
    echo "308)ETV AndhraPradesh348)YTN Sci KR     388)Joy News GH       428)Arirang Radio       468)STADIUM          508)3ABN Francais     548)Oireachtas CR 3 IE"
    echo "309)News 18 Tamil    349)Channel 23 KR  389)ADOM GH           429)HSN                 469)Lifestyle AZ USA 509)LLBN TV           549)Oireachtas CR 4 IE"
-   echo "310)Aaj News IN      350)KBS World24 KR 390)Bukedde TV GH     430)HSN 2               470)Allkey Shop      510)Hillsong          550)CPAC Event 1"    
-   echo "311)Jaya Plus        351)YTN 27 KR      391)EBC ET            431)Bloomberg Australia 471)Sorgatronmedia   511)JUCE TV           551)CPAC Event 2"
-   echo "312)TEZ TV           352)CGNTV          392)Walf SN           432)Bloomberg USPoli    472)Amouranth        512)Salt and Light    552)CPAC Event 3"
-   echo "313)Dili Aaj Tak     353)YTV USA        393)EriTV ER          433)Bloomberg Live      473)Geek and Sundry  513)Harbor Light      553)CPAC Event 4" 
-   echo "314)Sagarmatha Nepal 354)Atlanta AM790  394)SABC ZA           434)Bloomberg EU Live   474)-----------      514)St. Mary's Coptic 554)CPAC Event 5"  
-   echo "315)Derana LK        355)ANN24 JP       395)Afro Worldview ZA 435)Bloomberg Asia Live 475)-----------      515)Word of God Greek 555)CPAC Event 6"
-   echo "316)Swarnavahini LK  356)Sol!ve 24 JP   396)ITV ZA            436)Weather Network CA  476)-----------      516)Shalom America    556)CPAC Event 7"
-   echo "317)Kaliagnar News   357)KBS 24 JP      397)Parliament ZA     437)PBS NewsHour        477)-----------      517)Shalom India      557)CPAC Event 8"
-   echo "318)--------------   358)QVC Japan      398)--------------    438)CBC The National    478)-----------      518)Powervision TV    558)CPAC Orig Lang"	 
+   echo "310)Jaya Plus        350)KBS World24 KR 390)Bukedde TV GH     430)HSN 2               470)Allkey Shop      510)Hillsong          550)CPAC Event 1"    
+   echo "311)TEZ TV           351)YTN 27 KR      391)EBC ET            431)Bloomberg Australia 471)Sorgatronmedia   511)JUCE TV           551)CPAC Event 2"
+   echo "312)Dili Aaj Tak     352)CGNTV          392)Walf SN           432)Bloomberg USPoli    472)Amouranth        512)Salt and Light    552)CPAC Event 3"
+   echo "313)Sagarmatha Nepal 353)YTV USA        393)EriTV ER          433)Bloomberg Live      473)Geek and Sundry  513)Harbor Light      553)CPAC Event 4" 
+   echo "314)Derana LK        354)Atlanta AM790  394)SABC ZA           434)Bloomberg EU Live   474)-----------      514)St. Mary's Coptic 554)CPAC Event 5"  
+   echo "315)Swarnavahini LK  355)ANN24 JP       395)Afro Worldview ZA 435)Bloomberg Asia Live 475)-----------      515)Word of God Greek 555)CPAC Event 6"
+   echo "316)Kaliagnar News   356)Sol!ve 24 JP   396)ITV ZA            436)Weather Network CA  476)-----------      516)Shalom America    556)CPAC Event 7"
+   echo "317)NDTV IN          357)KBS 24 JP      397)Parliament ZA     437)PBS NewsHour        477)-----------      517)Shalom India      557)CPAC Event 8"
+   echo "318)NewsX IN         358)QVC Japan      398)--------------    438)CBC The National    478)-----------      518)Powervision TV    558)CPAC Orig Lang"	 
    echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)AP Top Stories      479)-----------      519)-------------     559)-------------"
    echo "320)--------------   360)BSC 24 2 JP    400)--------------    440)Democracy Now       480)-----------      520)-------------     560)-------------"
    echo "================================================================================================================================================================="
@@ -3745,9 +3745,33 @@ keyword="LIVE"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCcVF2Fth-qEA4T1Lhn3CgKg/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 ) " 
 use_cookies="no"
 chan_name="Kalaignar News" ;;
+# 317) NDTV India
+317)
+#link="https://ndtvstream-lh.akamaihd.net/i/ndtv_24x7_1@300633/master.m3u8"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=128000,RESOLUTION=640x480,CODECS="avc1.64001f, mp4a.40.2"
+#link="https://ndtvstream-lh.akamaihd.net/i/ndtv_24x7_1@300633/index_96_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=256000,RESOLUTION=640x480,CODECS="avc1.64001f, mp4a.40.2"
+#link="https://ndtvstream-lh.akamaihd.net/i/ndtv_24x7_1@300633/index_224_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=384000,RESOLUTION=640x480,CODECS="avc1.64001f, mp4a.40.2"
+#link="https://ndtvstream-lh.akamaihd.net/i/ndtv_24x7_1@300633/index_352_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=512000,RESOLUTION=640x480,CODECS="avc1.64001f, mp4a.40.2"
+#link="https://ndtvstream-lh.akamaihd.net/i/ndtv_24x7_1@300633/index_480_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=768000,RESOLUTION=640x480,CODECS="avc1.64001f, mp4a.40.2"
+link="https://ndtvstream-lh.akamaihd.net/i/ndtv_24x7_1@300633/index_736_av-b.m3u8?sd=10&rebase=on"
+use_cookies="no"
+chan_name="NDTV India" ;;
+# 318) NewsX India 
+318)
+#link="https://d3cjrhqx3ygiqt.cloudfront.net/abr/ngrp:newsx_all/playlist.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1778000,CODECS="avc1.77.40,mp4a.40.2",RESOLUTION=558x406
+link="https://d3cjrhqx3ygiqt.cloudfront.net/abr/ngrp:newsx_all/chunklist_w906609032_b1628000.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=788000,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=396x288
+#link="https://d3cjrhqx3ygiqt.cloudfront.net/abr/ngrp:newsx_all/chunklist_w906609032_b728000.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=348000,CODECS="avc1.77.21,mp4a.40.2",RESOLUTION=296x216
+#link="https://d3cjrhqx3ygiqt.cloudfront.net/abr/ngrp:newsx_all/chunklist_w906609032_b328000.m3u8"
+use_cookies="no"
+chan_name="NewsX India" ;;
 
-# 317)
-# 318)
 # 319)
 # 320)
 
