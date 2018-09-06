@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.626
-# Revision Date: August 10, 2018
+# Version: 0.628
+# Revision Date: September 06, 2018
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.626"
-rev_date="10/08/2018"
+version="0.628"
+rev_date="06/09/2018"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -164,14 +164,16 @@ HEAD5="Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7"
 uamode="off"
 headmode="off"
 
-socks_ip=127.0.0.1
-socks_port=9050
+torsocks_ip=127.0.0.1
+torsocks_port=9050
+#torsocks_ip=192.168.1.103
+#torsocks_port=9050
 
 ### Define function for displaying channels  CHANGE MENU HERE
 channel_matrix_0()
 { 
    echo "============================================================    "$product"  "$version"   =========================================================================="
-   echo "||     ENGLISH      ||   ENGLISH EXTRA   ||     FRANCAIS      ||      ESPANOL     ||   NORTH EUROPE    ||     SOUTH EUROPE/TURK      ||   ARABIC/FARSI/Pashtun/||"
+   echo "||     ENGLISH      ||    ENGLISH II   ||     FRANCAIS      ||      ESPANOL     ||     NORTH EUROPE      ||   SOUTH EUROPE/TURK      ||  ARABIC/FARSI/Pashtun/||"
    echo "=============================================================================================================================================================" 
    echo "1)SKY News London UK 41)Made in Leeds     81)France 24 FR      121)RT Espanol       161)WDR DE            201)RSI CH                    241)RT Arabic"    
    echo "2)RT UK              42)Made in Tyne      82)BFM TV FR         122)DW Espanol       162)DW Deutsch        202)SkyTG 24 IT               242)France 24 Arabic" 
@@ -187,28 +189,28 @@ channel_matrix_0()
    echo "12)TRT World TK      52)Infowars RealNews 92)France 2          132)Todo Noticias AR 172)Auftanken AT      212)RTM Arcevia IT            252)Saudi Gold "
    echo "13)Al Jazeera        53)Infowars WarRoom  93)France 3          133)La Nacion AR     173)SRF CH CH         213)50NewsVersiliaViareggio IT253)Saudi Silver"
    echo "14)India Today       54)Infowars Event    94)ARTE Francais     134)TV5 AR           174)Musig24 TV CH     214)50 Canale Pisa IT         254)Saudi Kids"
-   echo "15)CGTN Beijing      55)Press TV Iran     95)France O          135)KZO AR           175)TV OOST BE        215)Telelibertà Piacenza IT   255)Al Arabiya AE"  
+   echo "15)CGTN Beijing      55)Press TV Iran     95)France O          135)KZO AR           175)TV OOST BE        215)Teleliberta Piacenza IT   255)Al Arabiya AE"  
    echo "16)NHK World JP      56)TWIT USA          96)Bidtween FR       136)Canal 2 AR       176)AT5 NL ***        216)ONE TV NBC 112 Milan IT   256)Al Mayadeen LB"
    echo "17)ABC AU            57)Jupiter Broadcast 97)TV 7 FR           137)Canal 6 AR       177)Euronews Russian  217)Euronews IT               257)Belqees TV YE"
    echo "18)Arise News NG     58)Fiji One          98)IL TV FR          138)Canal 7 AR       178)POCCNR 24 RU      218)ONE MT                    258)Sky Arabic AE"	
    echo "19)VOA USA           59)QVC USA           99)TLM Lyon FR       139)Canal 13 AR      179)RBC TV RU         219)Z1 Televizija HR          259)Alghad EG"
    echo "20)NEWSMAX USA       60)TSC CA            100)BFM Paris FR     140)SuperCanal 3 AR  180)CGTN Russian      220)RTV Posavina HR           260)Extra News EG"  
-   echo "21)Free Speech TV USA61)Gem Shopping USA  101)Alsace 20 FR     141)CN23 AR          181)Vesti FM RU       221)OsjeckaTV HR              261)CBC Sofra EG"
+   echo "21)Free Speech TV USA61)FIOS1 LongIsland  101)Alsace 20 FR     141)CN23 AR          181)Vesti FM RU       221)OsjeckaTV HR              261)CBC Sofra EG"
    echo "22)Infowars USA      62)Lake Tahoe TV     102)Mosaik TV FR     142)Telemax AR       182)Current Time VOA  222)Tomix Wein HR             262)CBC Drama EG"       
    echo "23)United Nations TV 63)TVW Washington    103)Journal TVLandes 143)Vorterix AR      183)RTR Planeta RU    223)Euronews HU               263)DMC Live EG"  
-   echo "24)C-SPAN 1 USA      64)DC Network        104)QVC Francais     144)TV Publica AR    184)Perviy RU         224)SKY Folk MK               264)Al-Fallujah IQ"
-   echo "25)C-SPAN 2 USA      65)Capital City      105)8 Monte Blanc FR 145)Bolivia TV BO    185)Music Box RU      225)Star Lamia GR             265)AFAQ TV IQ" 
-   echo "26)C-SPAN 3 USA      66)Laurel TV         106)Azur TV Nice FR  146)Cosmovision TV BO186)MOCKBA 24 RU      226)Action 24 GR              266)Karbarla IQ"
+   echo "24)C-SPAN 1 USA      64)FiOS1 HudsonValley104)QVC Francais     144)TV Publica AR    184)Perviy RU         224)SKY Folk MK               264)Al-Fallujah IQ"
+   echo "25)C-SPAN 2 USA      65)DC Network        105)8 Monte Blanc FR 145)Bolivia TV BO    185)Music Box RU      225)Star Lamia GR             265)AFAQ TV IQ" 
+   echo "26)C-SPAN 3 USA      66)Laurel TV MD      106)Azur TV Nice FR  146)Cosmovision TV BO186)MOCKBA 24 RU      226)Action 24 GR              266)Karbarla IQ"
    echo "27)CPAC 1 CA         67)Buzzr Gameshows   107)RTS DEUX CH      147)Mega CL          187)1TV HD RU         227)Euronews GR               267)Euronews Arabic"
-   echo "28)WGN 9 Chicago     68)RIDE TV USA       108)LCP FR           148)CNN CL           188)Planeta 4 RU      228)TRT Haber TR              268)ANB Sat USA"
+   echo "28)WGN 9 Chicago     68)RIDE TV USA TX    108)LCP FR           148)CNN CL           188)Planeta 4 RU      228)TRT Haber TR              268)ANB Sat USA"
    echo "29)News12 Brooklyn   69)Texas State TV    109)Public Senate FR 149)Telemedeline CO  189)Planeta 6 RU      229)NTV TR                    269)Suryoyo Sat SE"
    echo "30)News12 LongIsland 70)KBVR Oregon USA   110)CPAC 1 CA        150)CTV CO           190)TPEANEP TV RU     230)HaberTurk TV              270)Safeer TV UK"    
-   echo "31)FiOS1 New Jersey  71)SPC-TV S.Petrberg 111)Assemblee QC CA  151)Teleantioquia CO 191)5 Live RU         231)Star TV TR                271)Euronews Persian"
-   echo "32)Weather Nation    72)MNN 1 NY USA      112)Canal Savoir CA  152)TeleSUR VE       192)POCCNR 1 HD RU    232)CNN Turk TR               272)BBC Persian "
-   echo "33)Weather Channel   73)MNN 2 NY USA      113)Gong Cinema      153)Globovision VE   193)News 24 UA        233)KRT Kulture TR            273)Iran Aryaee " 
-   echo "34)BYUTV USA         74)MNN 3 NY USA      114)GONG MAX         154)NTN24 VE         194)UA TV UA          234)La Legul TV TR            274)DidgahNew TV IR  "  
-   echo "35)Wisconsin Channel 75)MNN 4 NY USA      115)BX1 BE           155)Conciencia VE    195)Thromadske UA     235)TGRT Haber TR             275)Aryen TV IR "
-   echo "36)DC Knowledge      76)EBS EU            116)France Info Radio156)VPItv VE         196)Espresso UA       236)TVNET Canali TR           276)PTN PARS TV USA  "
+   echo "31)FiOS1 New Jersey  71)SPC-TV S.Petrberg 111)Assemblee QC CA  151)Teleantioquia CO 191)5 Live RU         231)Star TV TR                271)BBC Persian"
+   echo "32)Weather Nation    72)MNN 1 NY USA      112)Canal Savoir CA  152)TeleSUR VE       192)POCCNR 1 HD RU    232)CNN Turk TR               272)Iran Aryaee"
+   echo "33)Weather Channel   73)MNN 2 NY USA      113)Gong Cinema      153)Globovision VE   193)News 24 UA        233)KRT Kulture TR            273)DidgahNew TV IR" 
+   echo "34)BYUTV USA         74)MNN 3 NY USA      114)GONG MAX         154)NTN24 VE         194)UA TV UA          234)La Legul TV TR            274)Aryen TV IR"  
+   echo "35)Wisconsin Channel 75)MNN 4 NY USA      115)BX1 BE           155)Conciencia VE    195)Thromadske UA     235)TGRT Haber TR             275)PTN PARS TV USA"
+   echo "36)DC Knowledge      76)EBS EU            116)France Info Radio156)VPItv VE         196)Espresso UA       236)TVNET Canali TR           276)Euronews Persian"
    echo "37)MNN 5 NY USA      77)EBS Plus EU       117)Europe 1 FR      157)Guatevision GT   197)News 1 UA         237)Show TV TR                277)Ariana TV AF"
    echo "38)Southeastern TV   78)Euronews English  118)RFI FR           158)Excelsior MX     198)ZIK UA            238)Euronews Turk             278)TOLO NEWS AF"	
    echo "39)RT Documentary    79)NASA TV Media     119)RTL FR           159)Telesur Yucatan  199)Ukraine 5 UA      239)------------              279)------------- "
@@ -260,8 +262,8 @@ channel_matrix_1()
    echo "316)Swarnavahini LK  356)Sol!ve 24 JP   396)ITV ZA            436)Weather Network CA  476)-----------      516)Shalom America    556)CPAC Event 7"
    echo "317)Kaliagnar News   357)KBS 24 JP      397)Parliament ZA     437)PBS NewsHour        477)-----------      517)Shalom India      557)CPAC Event 8"
    echo "318)--------------   358)QVC Japan      398)--------------    438)CBC The National    478)-----------      518)Powervision TV    558)CPAC Orig Lang"	 
-   echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)AP Top Stories      479)-----------      519)-------------     559)------------- "
-   echo "320)--------------   360)BSC 24 2 JP    400)--------------    440)Democracy Now       480)-----------      520)-------------     560)------------- "
+   echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)AP Top Stories      479)-----------      519)-------------     559)-------------"
+   echo "320)--------------   360)BSC 24 2 JP    400)--------------    440)Democracy Now       480)-----------      520)-------------     560)-------------"
    echo "================================================================================================================================================================="
 }    
 #  
@@ -277,18 +279,18 @@ channel_matrix_2()
    echo "564)------------    604)Impacto USA        644)Cinevision DR     684)Igreja de Graca     724)Shepard Smith      764)PGCPS             804)Iberia TV  "             
    echo "565)------------    605)UCVTV CL           645)Nuevolaredo MX    685)Assemblelia Ales    725)WUSA9 Breaking     765)RyeTV             805)Obieqtivi TV   "  
    echo "566)------------    606)UCVTV 2 CL         646)Sinart CR         686)Boas Nova           726)WCNC Breaking      766)Seattle Channel   806)ortonville   "  
-   echo "567)------------    607)Univision MX       647)Bethel Panamá     687)Fundacao Nazzare    727)WCCB News          767)Atlanta TV        807)Holiday & Cruise  "
+   echo "567)------------    607)Univision MX       647)Bethel Panama     687)Fundacao Nazzare    727)WCCB News          767)Atlanta TV        807)Holiday & Cruise  "
    echo "568)------------    608)Cablenet AR        648)Poder de Dios BO  688)STF Brazil          728)UGA TV             768)Temple TV         808)Vision Cruise AU "
-   echo "569)------------    609)Telpintv AR        649)TVDIÁRIO MX       689)TV Estúdio Brasil   729)TVW2 Washington    769)Vienna HQ         809)Vision Cruise UK"
-   echo "570)------------    610)Canal8 MarPlataAR  650)BoliviaTV BO      690)Rádio Justiça       730)Action News KNVN   770)Escambia          810)102.3 NOW! TV CA "
+   echo "569)------------    609)Telpintv AR        649)TVDIARIO MX       689)TV Estudio Brasil   729)TVW2 Washington    769)Vienna HQ         809)Vision Cruise UK"
+   echo "570)------------    610)Canal8 MarPlataAR  650)BoliviaTV BO      690)Radio Justiça       730)Action News KNVN   770)Escambia          810)102.3 NOW! TV CA "
    echo "571)------------    611)Univision USA      651)GUATEVISION GT    691)EXA FM Brasil       731)Alaska ASD         771)CBS Sports        811)TourbusTV USA "
    echo "572)------------    612)Canal 2 AR         652)RTV ES            692)RIT TV BR           732)Bowie TV           772)WYCW Carolinas    812)Ezekiel TV"
-   echo "573)------------    613)ABC Paraguay       653)Medios Públicos   693)Gott24.TV           733)Escambia TV        773)FOX 10 News       813)Emmanuel TV "
-   echo "574)------------    614)Abya Yala BO       654)Tele Bahia DR     694)TV Fátima Paróquia  734)FOX 5 DC (WTTG)    774)WHO 13            814)Shalom World"
+   echo "573)------------    613)ABC Paraguay       653)Medios Publicos   693)Gott24.TV           733)Escambia TV        773)FOX 10 News       813)Emmanuel TV "
+   echo "574)------------    614)Abya Yala BO       654)Tele Bahia DR     694)TV Fatima Paróquia  734)FOX 5 DC (WTTG)    774)WHO 13            814)Shalom World"
    echo "575)------------    615)UFROVision CL      655)Iglesia Advent USA695)You Content 98      735)Garland TV         775)Erie News         815)KIFI ABC 8 Idaho Falls" 
-   echo "576)------------    616)Campo Abierto CL   656)Expande Puebla MX 696)Rede Gênesis PT     736)Greenbelt TV       776)WISTV             816)ESPN Seattle"
-   echo "577)------------    617)UNITV AR           657)Ayuda Universal MX697)MEIO Teresina BR    737)House Represent    777)------------      817)King County TV Preston"
-   echo "578)------------    618)TelePacifico CO    658)Canal 27 Esperanza698)Medalhão Persa BR   738)KRBC-TV            778)------------      818)KIRO Radio Seattle"	
+   echo "576)------------    616)Campo Abierto CL   656)Expande Puebla MX 696)Rede Genesis PT     736)Greenbelt TV       776)WISTV             816)ESPN Seattle"
+   echo "577)------------    617)UNITV AR           657)Ayuda Universal MX697)MEIO Teresina BR    737)House Represent    777)Gem Shopping USA  817)King County TV Preston"
+   echo "578)------------    618)TelePacifico CO    658)Canal 27 Esperanza698)Medalhao Persa BR   738)KRBC-TV            778)------------      818)KIRO Radio Seattle"	
    echo "579)------------    619)Venevision VE      659)TELEAMIGA         699)Talenu TV TPA       739)New Orleans TV     779)------------      819)KOIN CBS 6 Portland"
    echo "580)------------    620)Telediario AR      660)Poli tv Bogota CO 700)TV Miramar BR       740)KTVB               780)------------      820)KPTV FOX 12 Portland"  
    echo "581)------------    621)TVeo Cordoba AR    661)UNTREF UN3 AR     701)TV Zimbo AO         741)Key TV             781)------------      821)KTVZ 21 Bend Oregon"
@@ -302,15 +304,15 @@ channel_matrix_2()
    echo "589)------------    629)Euronews ES        669)MONARCA Hidalgo MX709)TV7 Bordeaux FR     749)News2 WCBD         789)------------      829)KION CBS 5/46 Salinas"
    echo "590)------------    630)Teleamazonas       670)Yuma CO           710)i24 News IL         750)News4 WRC Wash D.C.790)------------      830)KSBY NBC 6 Santa Barbara"    
    echo "591)------------    631)TV Camara PY       671)Dominio MX        711)SYTRAL Rhone FR     751)News4 White House  791)------------      831)KESQ ABC 3 Palm Springs  "
-   echo "592)------------    632)Tu Canal Panama    672)Señal UNTREF      712)Vedia BE            752)News5 WCYB         792)------------      832)KCOY CBS 12 Santa Maria "
+   echo "592)------------    632)Tu Canal Panama    672)Senal UNTREF      712)Vedia BE            752)News5 WCYB         792)------------      832)KCOY CBS 12 Santa Maria "
    echo "593)------------    633)Colosal TV 1       673)NRT 4 monclova    713)MABI CA             753)NewsWest 9 KWES    793)------------      833)MCAET Salinas " 
    echo "594)------------    634)A24 AR             674)Este Canal        714)Vatican Media FR    754)NBC4 WNBC          794)------------      834)KVVB CH.33 Victorville"  
-   echo "595)------------    635)Canal 8 AR         675)Telecafé Bogota   715)TVM Paris FR        755)NBC4 WNBC Traffic  795)------------      835)KOAA NBC 5 Colorado"
+   echo "595)------------    635)Canal 8 AR         675)Telecafe Bogota   715)TVM Paris FR        755)NBC4 WNBC Traffic  795)------------      835)KOAA NBC 5 Colorado"
    echo "596)------------    636)CanalShowsport AR  676)TVUNAM 20         716)RMC INFO FR         756)NBC5 WMAQ          796)------------      836)KRDO ABC 13 Colorado"
    echo "597)------------    637)WIPR Puerto Rico   677)EVTV Miami        717)C-Star              757)NBC 10 KTEN        797)------------      837)Freedom Solar TV Kersey"
-   echo "598)------------    638)La Mega Bogotá CO  678)Enlacetv Espanol  718)-------------       758)NBC 12 WWBT        798)------------      838)KTVK 3 TV Arizona"	
+   echo "598)------------    638)La Mega Bogota CO  678)Enlacetv Espanol  718)-------------       758)NBC 12 WWBT        798)------------      838)KTVK 3 TV Arizona"	
    echo "599)------------    639)TV UNAM MX         679)------------      719)-------------       759)NBC 29 WVIR        799)------------      839)KMVP 24/7 Phoenix"
-   echo "600)------------    640)Telecafé CO        680)------------      720)-------------       760)NBC 13 WNYT        800)------------      840)KTAR News Phoenix"
+   echo "600)------------    640)Telecafe CO        680)------------      720)-------------       760)NBC 13 WNYT        800)------------      840)KTAR News Phoenix"
    echo "==================================================================================================================================================="
 }	                     
             
@@ -413,7 +415,7 @@ channel_matrix_4()
 
 for arg in $@
 do 
- if [ "$arg" == "--help" ]
+ if [ "$arg" = "--help" ]
  then
    echo "ENDSTREAM: watch news live-streams in CLEARNET from youtube using youtube-dl mpv using"
    echo "Type in the terminal $ endstream "
@@ -431,13 +433,13 @@ do
    echo "$ endstream  "
    shift
    exit 0
-   elif [ "$arg" == "--version" ]
+   elif [ "$arg" = "--version" ]
    then
    echo "ENDSTREAM: version: "$version", branch: "$branch" , revision date: "$rev_date" " 
    echo "Copyright: The Endware Development Team, 2016"
    shift
    exit 0
-   elif [ "$arg" == "--list-matrix" ]
+   elif [ "$arg" = "--list-matrix" ]
    then 
    channel_matrix_0
    sleep 2
@@ -447,35 +449,35 @@ do
    sleep 2
    channel_matrix_3
    exit 0
-   elif [ "$arg" == "--list-all" ]
+   elif [ "$arg" = "--list-all" ]
    then
    more "$chan_columns"
    exit 0
-   elif [ "$arg" == "--ua-rand" ]
+   elif [ "$arg" = "--ua-rand" ]
    then
    uastate="rand"
    uamode="on"
    shift
-   elif [ "$arg" == "--ua-ranstr" ]
+   elif [ "$arg" = "--ua-ranstr" ]
    then
    uastate="ranstr"
    uamode="on"
    shift
-   elif [ "$arg" == "--ua-tor" ]
+   elif [ "$arg" = "--ua-tor" ]
    then
    uastate="tor"
    uamode="on"
    shift
-   elif [ "$arg" == "--ua-row1" ]
+   elif [ "$arg" = "--ua-row1" ]
    then
    uastate="row1"
    uamode="on"
    shift
-   elif [ "$arg" == "--no-agent" ]
+   elif [ "$arg" = "--no-agent" ]
    then
    uamode="off"
    shift 
-   elif [ "$arg" == "--no-header" ]
+   elif [ "$arg" = "--no-header" ]
    then
    headmode="off"
    shift   
@@ -495,9 +497,9 @@ case $chan_num in
 ################      EUROPE    #################################
 # 1) Sky News
 1)
-link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/07.m3u8
+#link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/07.m3u8
 #link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8
-#link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/05.m3u8
+link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/05.m3u8
 ###link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8
 #link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/03.m3u8
 #link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/02.m3u8
@@ -511,10 +513,18 @@ chan_name="Sky News" ;;
 # 2) RT UK
 2)
 #link=https://www.rt.com/on-air/rt-uk-air/ 
+
+link=https://rt-uk.secure.footprint.net/1106-inadv-qidx-1k_v5.m3u8
+#link=https://rt-uk.secure.footprint.net/1106-inadv-qidx-2k_v5.m3u8
+#link=https://rt-uk.secure.footprint.net/1106-inadv-qidx-3k_v5.m3u8
+#link=https://rt-uk.secure.footprint.net/1106-inadv-qidx-4k_v5.m3u8
+#link=https://rt-uk.secure.footprint.net/1106-inadv-qidx-5k_v5.m3u8
+
+#######################
 #link=https://secure-streams.akamaized.net/rt-uk/index.m3u8
-link=https://secure-streams.akamaized.net/rt-uk/index2500.m3u8
+#link=https://secure-streams.akamaized.net/rt-uk/index2500.m3u8
 #link=https://secure-streams.akamaized.net/rt-uk/index1600.m3u8
-###link=https://secure-streams.akamaized.net/rt-uk/index800.m3u8
+###link=https://secure-streams.akamaized.net/rt-uk/in3dex800.m3u8
 #link=https://secure-streams.akamaized.net/rt-uk/index400.m3u8
 #link=https://secure-streams.akamaized.net/rt-uk/indexaudio.m3u8
 #link=https://www.filmon.com/tv/russia-today-2
@@ -574,8 +584,15 @@ chan_name="DW English" ;;
 # 5) Russia Today
 5)
 #link=https://www.rt.com/on-air/ 
+
+link=https://rt-news.secure.footprint.net/1103-inadv-qidx-1k_v5.m3u8
+#link=https://rt-news.secure.footprint.net/1103-inadv-qidx-2k_v5.m3u8
+#link=https://rt-news.secure.footprint.net/1103-inadv-qidx-3k_v5.m3u8
+#link=https://rt-news.secure.footprint.net/1103-inadv-qidx-4k_v5.m3u8
+
+#############################
 #link=https://secure-streams.akamaized.net/rt/index.m3u8
-link=https://secure-streams.akamaized.net/rt/index2500.m3u8
+#link=https://secure-streams.akamaized.net/rt/index2500.m3u8
 #link=https://secure-streams.akamaized.net/rt/index1600.m3u8
 ######link=https://secure-streams.akamaized.net/rt/index800.m3u8
 #link=https://secure-streams.akamaized.net/rt/index400.m3u8
@@ -653,9 +670,17 @@ chan_name="Bloomberg Business USA";;
 # 9) RT America
 9)
 #link=https://www.rt.com/on-air/rt-america-air/
+
+link=https://rt-usa.secure.footprint.net/1105-inadv-qidx-1k_v5.m3u8
+#link=https://rt-usa.secure.footprint.net/1105-inadv-qidx-2k_v5.m3u8
+#link=https://rt-usa.secure.footprint.net/1105-inadv-qidx-3k_v5.m3u8
+#link=https://rt-usa.secure.footprint.net/1105-inadv-qidx-4k_v5.m3u8
+#link=https://rt-usa.secure.footprint.net/1105-inadv-qidx-5k_v5.m3u8
+
+#################################
 #link=https://secure-streams.akamaized.net/rt-usa/index.m3u8
 #link=https://secure-streams.akamaized.net/rt-usa/index.m3u8
-link=https://secure-streams.akamaized.net/rt-usa/index2500.m3u8
+#link=https://secure-streams.akamaized.net/rt-usa/index2500.m3u8
 #link=https://secure-streams.akamaized.net/rt-usa/index1600.m3u8
 ####link=https://secure-streams.akamaized.net/rt-usa/index800.m3u8
 #link=https://secure-streams.akamaized.net/rt-usa/index400.m3u8
@@ -726,13 +751,21 @@ chan_name="TRT World";;
 # 13) Al Jazeera
 13) 
 keyword="Al Jazeera English - Live" 
-#link=https://players.brightcove.net/665003303001/SkrZHHcl_default/index.html?videoId=4865263685001
-link=https://english.streaming.aljazeera.net/aljazeera/english2/index4147.m3u8
+link=https://players.brightcove.net/665003303001/SkrZHHcl_default/index.html?videoId=4865263685001
+#link=https://english.streaming.aljazeera.net/aljazeera/english2/index4147.m3u8
 #link=https://english.streaming.aljazeera.net/aljazeera/english2/index2073.m3u8
 #link=https://english.streaming.aljazeera.net/aljazeera/english2/index1296.m3u8
-#####link=https://english.streaming.aljazeera.net/aljazeera/english2/index783.m3u8
+#link=https://english.streaming.aljazeera.net/aljazeera/english2/index783.m3u8
 #link=https://english.streaming.aljazeera.net/aljazeera/english2/index576.m3u8
 #link=https://english.streaming.aljazeera.net/aljazeera/english2/index255.m3u8
+#########################
+#link=https://english.streaming.aljazeera.net/aljazeera/english1/index4147.m3u8
+#link=https://english.streaming.aljazeera.net/aljazeera/english1/index2073.m3u8
+#link=https://english.streaming.aljazeera.net/aljazeera/english1/index1296.m3u8
+#link=https://english.streaming.aljazeera.net/aljazeera/english1/index783.m3u8
+#link=https://english.streaming.aljazeera.net/aljazeera/english1/index576.m3u8
+#link=https://english.streaming.aljazeera.net/aljazeera/english1/index255.m3u8
+##############################
 #link=http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/160audio.m3u8
 #link=http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/800.m3u8
 #link=https://www.youtube.com/watch?v="$(curl "https://www.youtube.com/user/AlJazeeraEnglish/videos?view=2" | grep "$keyword"  | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
@@ -897,10 +930,10 @@ chan_name="Infowars" ;;
 keyword="LIVE"
 ### UN WEB TV
 
-link=https://players.brightcove.net/1362235914001/B1J3DDQJf_default/index.html?videoId=5689257377001
+#link=https://players.brightcove.net/1362235914001/B1J3DDQJf_default/index.html?videoId=5689257377001
 #link=https://bcliveunivsecure-lh.akamaihd.net/i/un150_1@575439/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=828000,RESOLUTION=960x540,CODECS="avc1.77.30, mp4a.40.5"
-#link="https://bcliveunivsecure-lh.akamaihd.net/i/un150_1@575439/index_828_av-p.m3u8?sd=10&rebase=on"
+link="https://bcliveunivsecure-lh.akamaihd.net/i/un150_1@575439/index_828_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1328000,RESOLUTION=640x480,CODECS="avc1.77.30, mp4a.40.5"
 #link="https://bcliveunivsecure-lh.akamaihd.net/i/un150_1@575439/index_1328_av-p.m3u8?sd=10&rebase=on"
 
@@ -1047,14 +1080,14 @@ chan_name="C-SPAN 3 HD" ;;
 # 27) CPAC 1 Canada  
 27)
 #link=http://players.brightcove.net/1242843915001/SJ3Tc5kb_default/index.html?videoId=5027924874001
-
 #link=http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1/master.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=612417,RESOLUTION=640x360,CODECS="avc1.77.31,mp4a.40.5"
-###link=http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1//Assets_1530106220217/Layer1_master.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=919415,RESOLUTION=720x404,CODECS="avc1.77.31,mp4a.40.5"
-#link=http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1//Assets_1530106220217/Layer2_master.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3169893,RESOLUTION=1280x720,CODECS="avc1.77.31,mp4a.40.5"
-link=http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1//Assets_1530106220217/Layer3_master.m3u8
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=614032,RESOLUTION=640x360,CODECS="avc1.77.31,mp4a.40.5"
+#link=http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1//Assets_1535075081832/Layer1_master.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=922082,RESOLUTION=720x404,CODECS="avc1.77.31,mp4a.40.5"
+link=http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1//Assets_1535075081832/Layer2_master.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3171771,RESOLUTION=1280x720,CODECS="avc1.77.31,mp4a.40.5"
+#link=http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1//Assets_1535075081832/Layer3_master.m3u8
 
 # Original Language
 #link=http://bcoveliveios-i.akamaihd.net/hls/live/248521/1242843915001_3/master.m3u8
@@ -1115,9 +1148,9 @@ chan_name="News 12 Long Island" ;;
 31)
 #link=https://cdnapisec.kaltura.com/p/424341/sp/42434100/playManifest/entryId/1_if6bcg01/format/applehttp/protocol/https/uiConfId/39790741/a.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
-link="https://urtmpkal-f.akamaihd.net/i/1if6bcg01_1@394073/index_1_av-p.m3u8?sd=10&rebase=on"
+#link="https://urtmpkal-f.akamaihd.net/i/1if6bcg01_1@394073/index_1_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
-#link="https://urtmpkal-f.akamaihd.net/i/1if6bcg01_1@394073/index_1_av-b.m3u8?sd=10&rebase=on"
+link="https://urtmpkal-f.akamaihd.net/i/1if6bcg01_1@394073/index_1_av-b.m3u8?sd=10&rebase=on"
 use_cookies="no"
 chan_name="FiOS1 News New Jersey" ;;
 
@@ -1223,8 +1256,15 @@ chan_name="Southeastern Channel" ;;
 # 39) RT Documentary
 39) 
 #link=https://rtd.rt.com/on-air/
+
+link=https://rt-doc.secure.footprint.net/1101-inadv-qidx-1k_v5.m3u8
+#link=https://rt-doc.secure.footprint.net/1101-inadv-qidx-2k_v5.m3u8
+#link=https://rt-doc.secure.footprint.net/1101-inadv-qidx-3k_v5.m3u8
+#link=https://rt-doc.secure.footprint.net/1101-inadv-qidx-4k_v5.m3u8
+#link=https://rt-doc.secure.footprint.net/1101-inadv-qidx-5k_v5.m3u8
+
 #link="https://secure-streams.akamaized.net/rt-doc/index.m3u8"
-link="https://secure-streams.akamaized.net/rt-doc/index2500.m3u8"
+#link="https://secure-streams.akamaized.net/rt-doc/index2500.m3u8"
 #link="https://secure-streams.akamaized.net/rt-doc/index1600.m3u8"
 #####link="https://secure-streams.akamaized.net/rt-doc/index800.m3u8"
 #link="https://secure-streams.akamaized.net/rt-doc/index400.m3u8"
@@ -1535,6 +1575,14 @@ chan_name="QVC English" ;;
 # 60) The Shopping Channel TSC
 60)
 #link=http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
+#link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_1_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=764000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
+#link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_2_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
+link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-b.m3u8?sd=10&rebase=on"
+
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
 #####link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_1_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
@@ -1544,7 +1592,7 @@ chan_name="QVC English" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=764000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_2_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
-link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-p.m3u8?sd=10&rebase=on"
+#link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=4000000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.2"
@@ -1552,12 +1600,15 @@ link="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_3_av-
 #####method="Tor"
 use_cookies="no"
 chan_name="The Shopping Channel TSC" ;;
-# 61) Gem Shopping Network USA
-61)
-#link="https://livestream.com/accounts/3486453/events/7709515"
-link="$( curl "https://livestream.com/accounts/3486453/events/7709515"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+# 61) FiOS1 News Long Island
+61) 
+#link=https://cdnapisec.kaltura.com/p/424341/sp/42434100/playManifest/entryId/1_b159ee77/format/applehttp/protocol/https/uiConfId/39790741/a.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
+link="https://urtmpkal-f.akamaihd.net/i/1b159ee77_1@192104/index_1_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
+#link="https://urtmpkal-f.akamaihd.net/i/1b159ee77_1@192104/index_1_av-b.m3u8?sd=10&rebase=on"
 use_cookies="no"
-chan_name="Gem Shopping Network USA" ;;
+chan_name="FiOS1 News Long Island" ;;
 # 62) Lake Tahoe TV
 62)
 #link="https://livestream.com/accounts/21822229/events/6450069"
@@ -1577,13 +1628,24 @@ link=http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:TVWAIR_all/chunklist_b1155
 #link=http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:TVWAIR_all/chunklist_b331072.m3u8
 use_cookies="no"
 chan_name="TVW Washington State TV" ;; 
-# 64) Capital City Connection
-64)
-#link=http://na-us-se13.secdn.net/pegstream3-live/play/5f0d9ca5-4e85-4c01-a426-9ec8d44c2c9c/playlist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=585523,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=491x360
-link="http://na-us-se13.secdn.net/pegstream3-live/play/5f0d9ca5-4e85-4c01-a426-9ec8d44c2c9c/chunklist_w1994511665.m3u8"
+# 64) FiOS1 News Lower Hudson Valley
+64) 
+#link=https://cdnapisec.kaltura.com/p/424341/sp/42434100/playManifest/entryId/1_is35xshu/format/applehttp/protocol/https/uiConfId/39790741/a.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=396000,RESOLUTION=320x180,CODECS="avc1.66.30, mp4a.40.34"
+#link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_1_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=396000,RESOLUTION=320x180,CODECS="avc1.66.30, mp4a.40.34"
+#link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_1_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1096000,RESOLUTION=640x360,CODECS="avc1.66.30, mp4a.40.34"
+#link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_2_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1096000,RESOLUTION=640x360,CODECS="avc1.66.30, mp4a.40.34"
+#link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_2_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.34"
+link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_3_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.34"
+#link="https://urtmpkal-f.akamaihd.net/i/1is35xshu_1@64997/index_3_av-b.m3u8?sd=10&rebase=on"
 use_cookies="no"
-chan_name="Capital City Connection" ;;
+chan_name="FiOS1 News Lower Hudson Valley" ;;
+
 # 65) District of Columbia Network
 65)
 #link=http://video.oct.dc.gov/out/u/DCN.m3u8
@@ -1597,7 +1659,7 @@ chan_name="Capital City Connection" ;;
 link=http://video.oct.dc.gov/out/u/21_8.m3u8
 use_cookies="no"
 chan_name="District of Columbia Network" ;;
-# 66) Laurel TV
+# 66) Laurel TV Laurel Maryland USA 
 66)
 #link=https://crimson.ebmcdn.net/laurel/smil:laurel.smil/chunklist.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=600000
@@ -1605,7 +1667,7 @@ link="https://crimson.ebmcdn.net/laurel/smil:laurel.smil/chunklist_w1745375646_b
 #EXT-X-STREAM-INF:BANDWIDTH=300000
 #link="https://crimson.ebmcdn.net/laurel/smil:laurel.smil/chunklist_w1745375646_b300000.m3u8"
 use_cookies="no"
-chan_name="Laurel TV" ;;
+chan_name="Laurel TV Laurel Maryland USA" ;;
 # 67) Buzzr Game Shows
 67)
 link=https://www.twitch.tv/buzzr
@@ -1615,6 +1677,7 @@ chan_name="Buzzr (Game Shows)";;
 # 68) RIDE TV Fort Worth TX USA
 68)
 link="https://livestream.com/accounts/21743165/events/6446017"
+#link="$( curl "https://livestream.com/accounts/21743165/events/6446017"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="RIDE TV Fort Worth TX USA" ;;
 # 69) TSTV  Texas State University TV
@@ -4815,12 +4878,14 @@ link=https://www.twitch.tv/amouranth
 use_cookies="no"
 ####method="Tor"
 chan_name="Amouranth";;
+
 # 473) Geek and Sundry
 473)
 link=https://www.twitch.tv/geekandsundry
 use_cookies="no"
 ####method="Tor"
 chan_name="Geek and Sundry";;
+
 
 # 74) FiOS1 News Long Island
 # 74)
@@ -5517,7 +5582,11 @@ link=http://bcoveliveios-i.akamaihd.net/hls/live/248521/1242843915001_3//Assets_
 use_cookies="no"
 chan_name="CPAC Original Language" ;;
 
-# 560
+# 559) 
+
+# 560) 
+
+
 ################## MENU 3   ##################
 #561
 
@@ -5550,8 +5619,8 @@ chan_name="Impacto USA" ;;
 # 605) UCVTV CL  Universidad Católica de Valparaíso
 605)  
 keyword="UCVTV EN VIVO"
-link="http://unlimited1-us.dps.live/ucvtv/ucvtv.smil/ucvtv/livestream2/chunks.m3u8?nimblesessionid=14582063"
-#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/UCVTVONLINE/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
+#link="http://unlimited1-us.dps.live/ucvtv/ucvtv.smil/ucvtv/livestream2/chunks.m3u8?nimblesessionid=14582063"
+link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/UCVTVONLINE/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
 use_cookies="no"
 chan_name="UCVTV Chile" ;;
 # 606) UCVTV CL  Universidad Católica de Valparaíso
@@ -6555,7 +6624,12 @@ chan_name="Erie News Now (WICU-TV)" ;;
 link="http://wistv-lh.akamaihd.net/i/WISTV_822@68771/master.m3u8"
 use_cookies="no"
 chan_name="WISTV" ;;
-
+# 777) Gem Shopping Network USA
+777)
+#link="https://livestream.com/accounts/3486453/events/7709515"
+link="$( curl "https://livestream.com/accounts/3486453/events/7709515"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+use_cookies="no"
+chan_name="Gem Shopping Network USA" ;;
 ################################################ Live Stream #########################################################
 # 801) Sangat Television Birmingham England 
 801)
@@ -8383,82 +8457,82 @@ esac
 menu_status()
 {
 input=$1
-if [ "$input" == "" ]
+if [ "$input" = "" ]
 then
 chan_state="return"
 menstat="no"
-elif [ "$input" == "q" ]
+elif [ "$input" = "q" ]
 then
 menstat="yes"
 menu="q"
-elif [ "$input" == "n" ]
+elif [ "$input" = "n" ]
 then 
 menstat="yes"
 menu="n"
-elif [ "$input" == "m" ]
+elif [ "$input" = "m" ]
 then
 menstat="yes"
 menu="m"
-elif [ "$input" == "ua-tor" ]
+elif [ "$input" = "ua-tor" ]
 then
 menstat="yes"
 menu="$menu"
 uastate="tor"
 uamode="on"
-elif [ "$input" == "ua-row1" ]
+elif [ "$input" = "ua-row1" ]
 then
 menstat="yes"
 menu="$menu"
 uastate="row1"
 uamode="on"
-elif [ "$input" == "ua-rand" ]
+elif [ "$input" = "ua-rand" ]
 then
 menstat="yes"
 menu="$menu"
 uastate="rand"
 uamode="on"
-elif [ "$input" == "ua-ranstr" ]
+elif [ "$input" = "ua-ranstr" ]
 then
 menstat="yes"
 menu="$menu"
 uastate="ranstr"
 uamode="on"
-elif [ "$input" == "ua-off" ]
+elif [ "$input" = "ua-off" ]
 then
 menstat="yes"
 menu="$menu"
 uastate="off"
 uamode="off"
-elif [ "$input" == "+" ]
+elif [ "$input" = "+" ]
 then
 menstat="no"
 chan_state="+"
-elif [ "$input" == "]" ]
+elif [ "$input" = "]" ]
 then
 menstat="no"
 chan_state="+"
 
-elif [ "$input" == "++" ]
+elif [ "$input" = "++" ]
 then
 menstat="no"
 chan_state="+"
-elif [ "$input" == "+++" ]
+elif [ "$input" = "+++" ]
 then
 menstat="no"
 chan_state="+"
-elif [ "$input" == "++++" ]
+elif [ "$input" = "++++" ]
 then
 menstat="no"
 chan_state="+"
-elif [ "$input" == "-" ]
+elif [ "$input" = "-" ]
 then
 menstat="no"
 chan_state="-"
-elif [ "$input" == "[" ]
+elif [ "$input" = "[" ]
 then
 menstat="no"
 chan_state="-"
-elif [ "$input" == "--" ]
+elif [ "$input" = "--" ]
 then
 menstat="no"
 chan_state="-"
@@ -8502,16 +8576,16 @@ esac
 set_channel()
 {
 chan_state=$1
-if [ "$chan_state" == "+" ]
+if [ "$chan_state" = "+" ]
 then
 num=$(expr "$num" + 1 )
-elif [ "$chan_state" == "-" ]
+elif [ "$chan_state" = "-" ]
 then
 num=$(expr "$num" - 1 )
-elif [ "$chan_state" == "return" ]
+elif [ "$chan_state" = "return" ]
 then
 num="$num"
-elif [ "$chan_state" == "numeric" ]
+elif [ "$chan_state" = "numeric" ]
 then 
 num="$entry"
 else 
@@ -8522,21 +8596,21 @@ fi
 ################################# Function to select the user agent
 select_agent()
 {
-if [ "$uamode" == "on" ]
+if [ "$uamode" = "on" ]
  then
-   if [ "$uastate" == "rand" ]
+   if [ "$uastate" = "rand" ]
    then 
     # pick a random user agent
     UA=$( grep -v "#" "$USERAGENTS" | shuf -n 1 ) 
-   elif [ "$uastate" == "ranstr" ]
+   elif [ "$uastate" = "ranstr" ]
    then 
      # make a random string as the user agent 
      bytes="$( expr 12 + $(head -c 2 /dev/urandom | od -A n -i) % 48 | awk '{print $1}')"
      UA="$( head -c "$bytes" /dev/urandom | base64 -i | tr -d "\n=+-\/" | tr -s " " | awk '{print $1}')" 
-   elif [ "$uastate" == "tor" ] 
+   elif [ "$uastate" = "tor" ] 
    then
      UA="$UA_torbrowser" 
-   elif [ "$uastate" == "row1" ] 
+   elif [ "$uastate" = "row1" ] 
    then
      UA=$( grep -v "#" "$USERAGENTS" | head -n 1 )
    else 
@@ -8549,32 +8623,32 @@ if [ "$uamode" == "on" ]
 ######################## FUNCTION FOR PLAYING MEDIA STREAM CHANNELS #############################
 play_channel()
 {
-if [ "$menstat" == "no" ]
+if [ "$menstat" = "no" ]
 then
 channel_select "$num"
 echo "$chan_name Channel $num" 
   
-  if [ "$uamode" == "on" ]
+  if [ "$uamode" = "on" ]
   then 
   echo "$UA"
    
-    if [ "$use_cookies" == "yes" ]
+    if [ "$use_cookies" = "yes" ]
     then
     echo "Fetching Cookie, Please Wait..."
     curl -A "$UA" --cookie-jar "$cookie" --silent "$link"  >  /dev/null 2>&1
     mpv --user-agent="$UA" --ytdl-format="$format" --no-resume-playback --cache="$cache_size" --fullscreen --loop-playlist=inf --stream-lavf-o=timeout=10000000 --cookies  --cookies-file "$cookie" "$link" 
     # clear the cookie
     echo " " > "$cookie"
-    elif [ "$method" == "Streamlink" ]
+    elif [ "$method" = "Streamlink" ]
     then
     streamlink --player "mpv --user-agent="$UA" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen" "$link"  "$format"
-    elif [ "$method" == "Tor" ]
+    elif [ "$method" = "Tor" ]
     then
-    torsocks -a "$socks_ip" -P "$socks_port" -i mpv --user-agent="$UA" --ytdl-format="$format" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen "$link"  
-    elif [ "$method" == "Tor-Streamlink" ]
+    torsocks -a "$torsocks_ip" -P "$torsocks_port" -i mpv --user-agent="$UA" --ytdl-format="$format" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen "$link"  
+    elif [ "$method" = "Tor-Streamlink" ]
     then
-    torsocks -a "$socks_ip" -P "$socks_port" -i streamlink --player "mpv --user-agent="$UA" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen" "$link"  "$format"
-    elif [ "$method" == "Proxychains" ]
+    torsocks -a "$torsocks_ip" -P "$torsocks_port" -i streamlink --player "mpv --user-agent="$UA" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen" "$link"  "$format"
+    elif [ "$method" = "Proxychains" ]
     then
     proxychains mpv --user-agent="$UA" --ytdl-format "$format" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen "$link"  
     else
@@ -8582,23 +8656,23 @@ echo "$chan_name Channel $num"
     fi
   else
    
-    if [ "$use_cookies" == "yes" ]
+    if [ "$use_cookies" = "yes" ]
     then
     echo "Fetching Cookie, Please Wait..."
     curl --cookie-jar "$cookie" --silent "$link"  >  /dev/null 2>&1
     mpv --ytdl-format="$format" --no-resume-playback --cache="$cache_size" --fullscreen --loop-playlist=inf --stream-lavf-o=timeout=10000000 --cookies  --cookies-file "$cookie" "$link" 
     # clear the cookie
     echo " " > "$cookie"
-    elif [ "$method" == "Streamlink" ]
+    elif [ "$method" = "Streamlink" ]
     then
     streamlink --player "mpv --user-agent="$UA" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen" "$link"  "$format"
-    elif [ "$method" == "Tor" ]
+    elif [ "$method" = "Tor" ]
     then
-    torsocks -a "$socks_ip" -P "$socks_port" -i mpv --user-agent="$UA" --ytdl-format "$format" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen "$link"  
-    elif [ "$method" == "Tor-Streamlink" ]
+    torsocks -a "$torsocks_ip" -P "$torsocks_port" -i mpv --user-agent="$UA" --ytdl-format "$format" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen "$link"  
+    elif [ "$method" = "Tor-Streamlink" ]
     then
-    torsocks -a "$socks_ip" -P "$socks_port" -i streamlink --player "mpv --user-agent="$UA" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen" "$link"  "$format"
-    elif [ "$method" == "Proxychains" ]
+    torsocks -a "$torsocks_ip" -P "$torsocks_port" -i streamlink --player "mpv --user-agent="$UA" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen" "$link"  "$format"
+    elif [ "$method" = "Proxychains" ]
     then
     proxychains mpv --user-agent="$UA" --ytdl-format "$format" --no-resume-playback --loop-playlist=inf --cache="$cache_size" --fullscreen "$link"  
     else
@@ -8654,16 +8728,16 @@ then
   echo "$1"
   # take channel input from command line
   entry="$1" 
-elif [ "$1" == "" ]  # else redisplay the channel matrix at previous page and ask for user input
+elif [ "$1" = "" ]  # else redisplay the channel matrix at previous page and ask for user input
 then
   channel_matrix_"$men_num"
   echo "Please Select a Number corresponding to a Media Live Stream:"
   read entry
-  if [ "$entry" == "q" ]
+  if [ "$entry" = "q" ]
   then 
    echo "Type endstream to open a new stream."
    exit "$?"
-  elif [ "$entry" == "" ]
+  elif [ "$entry" = "" ]
   then
    entry=1
    num=1
@@ -8674,12 +8748,12 @@ fi
 menu_status $entry
 
 ### Case to remove void input on channel +/- at first selection 
-if [ "$chan_state" == "+" ]
+if [ "$chan_state" = "+" ]
 then 
 chan_state="return"
 entry=1
 num=1
-elif [ "$chan_state" == "-" ]
+elif [ "$chan_state" = "-" ]
 then 
 chan_state="return"
 entry=1
@@ -8721,6 +8795,3 @@ fi
 exit "$?"
 
 ############################################     END OF PROGRAM      ############################################################
- 
-  
------------ 
