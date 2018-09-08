@@ -282,11 +282,11 @@ channel_matrix_2()
    echo "567)------------    607)Univision MX       647)Bethel Panama     687)Fundacao Nazzare    727)WCCB News          767)Atlanta TV        807)Holiday & Cruise  "
    echo "568)------------    608)Cablenet AR        648)Poder de Dios BO  688)STF Brazil          728)UGA TV             768)Temple TV         808)Vision Cruise AU "
    echo "569)------------    609)Telpintv AR        649)TVDIARIO MX       689)TV Estudio Brasil   729)TVW2 Washington    769)Vienna HQ         809)Vision Cruise UK"
-   echo "570)------------    610)Canal8 MarPlataAR  650)BoliviaTV BO      690)Radio Justiça       730)Action News KNVN   770)Escambia          810)102.3 NOW! TV CA "
+   echo "570)------------    610)Canal8 MarPlataAR  650)BoliviaTV BO      690)Radio Justica       730)Action News KNVN   770)Escambia          810)102.3 NOW! TV CA "
    echo "571)------------    611)Univision USA      651)GUATEVISION GT    691)EXA FM Brasil       731)Alaska ASD         771)CBS Sports        811)TourbusTV USA "
    echo "572)------------    612)Canal 2 AR         652)RTV ES            692)RIT TV BR           732)Bowie TV           772)WYCW Carolinas    812)Ezekiel TV"
    echo "573)------------    613)ABC Paraguay       653)Medios Publicos   693)Gott24.TV           733)Escambia TV        773)FOX 10 News       813)Emmanuel TV "
-   echo "574)------------    614)Abya Yala BO       654)Tele Bahia DR     694)TV Fatima Paróquia  734)FOX 5 DC (WTTG)    774)WHO 13            814)Shalom World"
+   echo "574)------------    614)Abya Yala BO       654)Tele Bahia DR     694)TV Fatima Paroquia  734)FOX 5 DC (WTTG)    774)WHO 13            814)Shalom World"
    echo "575)------------    615)UFROVision CL      655)Iglesia Advent USA695)You Content 98      735)Garland TV         775)Erie News         815)KIFI ABC 8 Idaho Falls" 
    echo "576)------------    616)Campo Abierto CL   656)Expande Puebla MX 696)Rede Genesis PT     736)Greenbelt TV       776)WISTV             816)ESPN Seattle"
    echo "577)------------    617)UNITV AR           657)Ayuda Universal MX697)MEIO Teresina BR    737)House Represent    777)Gem Shopping USA  817)King County TV Preston"
@@ -585,10 +585,11 @@ chan_name="DW English" ;;
 5)
 #link=https://www.rt.com/on-air/ 
 
-link=https://rt-news.secure.footprint.net/1103-inadv-qidx-1k_v5.m3u8
+#link=https://rt-news.secure.footprint.net/1103-inadv-qidx-1k_v5.m3u8
 #link=https://rt-news.secure.footprint.net/1103-inadv-qidx-2k_v5.m3u8
-#link=https://rt-news.secure.footprint.net/1103-inadv-qidx-3k_v5.m3u8
+link=https://rt-news.secure.footprint.net/1103-inadv-qidx-3k_v5.m3u8
 #link=https://rt-news.secure.footprint.net/1103-inadv-qidx-4k_v5.m3u8
+#link=https://rt-news.secure.footprint.net/1103-inadv-qidx-5k_v5.m3u8
 
 #############################
 #link=https://secure-streams.akamaized.net/rt/index.m3u8
@@ -825,6 +826,11 @@ chan_name="NHK World Japan" ;;
 17) 
 keyword="ABC" 
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/NewsOnABC/videos?&view=2" | grep "$keyword"  | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"   
+
+link="https://abc-iview-mediapackagestreams-1.akamaized.net/out/v1/50345bf35f664739912f0b255c172ae9/index_1.m3u8"
+#link="https://abc-iview-mediapackagestreams-1.akamaized.net/out/v1/50345bf35f664739912f0b255c172ae9/index_2.m3u8"
+#link="https://abc-iview-mediapackagestreams-1.akamaized.net/out/v1/50345bf35f664739912f0b255c172ae9/index_3.m3u8"
+
 #link=https://abcnews24mha-lh.akamaihd.net/i/abcnews24nospe_1@70019/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=306000,RESOLUTION=320x180,CODECS="avc1.66.30, mp4a.40.2"
 #link="https://abcnews24mha-lh.akamaihd.net/i/abcnews24nospe_1@70019/index_250_av-p.m3u8?sd=10&rebase=on"
@@ -833,8 +839,9 @@ keyword="ABC"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=730000,RESOLUTION=512x288,CODECS="avc1.66.30, mp4a.40.2"
 #link="https://abcnews24mha-lh.akamaihd.net/i/abcnews24nospe_1@70019/index_650_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=846000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
-link="https://abcnews24mha-lh.akamaihd.net/i/abcnews24nospe_1@70019/index_750_av-p.m3u8?sd=10&rebase=on"
+#link="https://abcnews24mha-lh.akamaihd.net/i/abcnews24nospe_1@70019/index_750_av-p.m3u8?sd=10&rebase=on"
 #BANDWIDTH=295680
+
 #link=http://iphonestreaming.abc.net.au/news24/news24_vlo.m3u8
 #BANDWIDTH=398944
 #link=http://iphonestreaming.abc.net.au/news24/news24_lo.m3u8
