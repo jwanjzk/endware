@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6322
-# Revision Date: December 27, 2018
+# Version: 0.6323
+# Revision Date: December 28, 2018
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,10 +142,10 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6322"
+version="0.6323"
 rev_date="27/12/2018"
 branch="gnu/linux"
-product="MYSTREAM"
+product="ENDSTREAM"
 ##################################################
 temp_pl="$HOME/tmp/master.m3u8"
 USERAGENTS="$HOME/bin/user_agents.txt"
@@ -185,14 +185,14 @@ channel_matrix_0()
    echo "8)CBSN USA           48)NewsX IN         88)Euronews FR       128)Guada TV ES      168)Radio 21 DE       208)News24.city Milan IT      248)Al Jazeera Mubasher QA"
    echo "9)Bloomberg USA      49)QVC USA          89)Africa News       129)GRANADA TV ES    169)DW Deutsch + DE   209)Radio TV Rome IT          249)KSA 1 SA"
    echo "10)RT America        50)TSC CA           90)TVA CA            130)C5N AR           170)W24 Wein AT       210)Udinews TV Udine IT       250)SBC SA"
-   echo "11)Newsy USA         51)Jupiter Broadcast91)RDI ICI CA        131)AcequiaMendozaAR 171)Tirol TV AT       211)DiTV Canale 89 Lucchese IT251)KSA Sports SA"
-   echo "12)ABC News USA      52)TWIT USA         92)RTS UN CH         132)Todo Noticias AR 172)Auftanken AT      212)RTM Arcevia IT            252)Al Arabiya AE"
+   echo "11)Newsy USA         51)TWIT USA         91)RDI ICI CA        131)AcequiaMendozaAR 171)Tirol TV AT       211)DiTV Canale 89 Lucchese IT251)KSA Sports SA"
+   echo "12)ABC News USA      52)Jupiter Broadcast92)RTS UN CH         132)Todo Noticias AR 172)Auftanken AT      212)RTM Arcevia IT            252)Al Arabiya AE"
    echo "13)TRT World TK      53)FIOS1 LongIsland 93)France 2          133)La Nacion AR     173)SRF CH CH         213)50NewsVersiliaViareggio IT253)Al Mayadeen LB"
    echo "14)Al Jazeera        54)FiOS1 New Jersey 94)France 3          134)TV5 AR           174)Musig24 TV CH     214)50 Canale Pisa IT         254)Belqees TV YE"
    echo "15)India Today       55)Lake Tahoe TV    95)ARTE Francais     135)KZO AR           175)TV OOST BE        215)Teleliberta Piacenza IT   255)Sky Arabic AE"  
    echo "16)Press TV Iran     56)TVW Washington   96)France O          136)Canal 2 AR       176)AT5 NL ***        216)ONE TV NBC 112 Milan IT   256)Alghad EG"
    echo "17)CGTN Beijing      57)DC Network       97)Bidtween FR       137)Canal 6 AR       177)Euronews Russian  217)Euronews IT               257)Extra News EG"
-   echo "18)NHK World JP      58)DC Knowledge     98)TV 7 FR           138)Canal 7 AR       178)POCCNR 24 RU      218)ONE MT                    258)CBC Sofra EG"	
+   echo "18)NHK World JP      58)DC Knowledge     98)Azur TV Nice FR   138)Canal 7 AR       178)POCCNR 24 RU      218)ONE MT                    258)CBC Sofra EG"	
    echo "19)News Asia SG      59)Laurel TV MD     99)IL TV FR          139)Canal 13 AR      179)RBC TV RU         219)Z1 Televizija HR          259)CBC Drama EG"
    echo "20)ABC AU            60)Southeastern TV  100)BFM Paris FR     140)---------------  180)CGTN Russian      220)RTV Posavina HR           260)DMC Live EG"  
    echo "21)Arise News NG     61)Texas State TV   101)Alsace 20 FR     141)CN23 AR          181)Vesti FM RU       221)OsjeckaTV HR              261)Al-Fallujah IQ"
@@ -309,7 +309,7 @@ channel_matrix_2()
    echo "594)------------    634)A24 AR             674)Este Canal        714)TVM Paris FR        754)NBC4 WNBC          794)------------      834)KVVB CH.33 Victorville"  
    echo "595)------------    635)Canal 8 AR         675)Telecafe Bogota   715)C-Star              755)NBC4 WNBC Traffic  795)------------      835)KOAA NBC 5 Colorado"
    echo "596)------------    636)CanalShowsport AR  676)TVUNAM 20         716)Journal TVLandes    756)NBC5 WMAQ          796)------------      836)KRDO ABC 13 Colorado"
-   echo "597)------------    637)WIPR Puerto Rico   677)EVTV Miami        717)Azur TV Nice FR     757)NBC 10 KTEN        797)------------      837)Freedom Solar TV Kersey"
+   echo "597)------------    637)WIPR Puerto Rico   677)EVTV Miami        717)TV 7 FR             757)NBC 10 KTEN        797)------------      837)Freedom Solar TV Kersey"
    echo "598)------------    638)La Mega Bogota CO  678)Enlacetv Espanol  718)-------------       758)NBC 12 WWBT        798)------------      838)KTVK 3 TV Arizona"	
    echo "599)------------    639)TV UNAM MX         679)------------      719)-------------       759)NBC 29 WVIR        799)------------      839)KMVP 24/7 Phoenix"
    echo "600)------------    640)Telecafe CO        680)------------      720)-------------       760)NBC 13 WNYT        800)------------      840)KTAR News Phoenix"
@@ -1852,12 +1852,12 @@ chan_name="France O" ;;
 link="$( curl "https://livestream.com/accounts/25334545/events/7803598" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 use_cookies="no"
 chan_name="Bidtween La chaîne TV des Enchères FR" ;;
-# 98) TV 7 Francais
-98)  
-link=http://tv7.hdr-tv.com:1935/live/tv7/livestream/playlist.m3u8
+# 98) Azur TV Nice
+98)
+link=http://www.dailymotion.com/video/x13x1q2 
 use_cookies="no"
 #method="Tor"
-chan_name="TV 7 Francais" ;;  
+chan_name="Azur TV Nice" ;;
 # 99) IL TV France
 99)
 link=rtmp://str81.creacast.com:80/iltv/high
@@ -6205,13 +6205,15 @@ format=hls-720
 #format=hls-380
 #format=hls-240
 #method="Tor"
-chan_name="Direct Journal Tvlandes"  ;;  
-# 717) Azur TV Nice
-717)
-link=http://www.dailymotion.com/video/x13x1q2 
+chan_name="Direct Journal Tvlandes"  ;; 
+# 717) TV 7 Francais
+717)  
+link=http://tv7.hdr-tv.com:1935/live/tv7/livestream/playlist.m3u8
 use_cookies="no"
 #method="Tor"
-chan_name="Azur TV Nice" ;;
+chan_name="TV 7 Francais" ;;  
+
+
 
 ################################################################################## 
 
