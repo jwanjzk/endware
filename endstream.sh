@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6325
-# Revision Date: January 02, 2019
+# Version: 0.6326
+# Revision Date: January 06, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6325"
-rev_date="02/01/2019"
+version="0.6326"
+rev_date="06/01/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -200,21 +200,21 @@ channel_matrix_0()
    echo "23)Free Speech TV USA63)MNN 2 NY USA     103)QVC Francais     143)TV Publica AR    183)RTR Planeta RU    223)Euronews HU               263)Karbarla IQ"  
    echo "24)Infowars Live     64)MNN 3 NY USA     104)8 Monte Blanc FR 144)Bolivia TV BO    184)Perviy RU         224)SKY Folk MK               264)Euronews Arabic"
    echo "25)United Nations TV 65)MNN 4 NY USA     105)TV7 Bordeaux FR  145)Cosmovision TV BO185)Music Box RU      225)Star Lamia GR             265)ANB Sat USA" 
-   echo "26)WGN 9 Chicago     66)EBS EU           106)RTS DEUX CH      146)Mega CL          186)MOCKBA 24 RU      226)Action 24 GR              266)Suryoyo Sat SE"
-   echo "27)News12 Brooklyn   67)EBS Plus EU      107)LCP FR           147)CNN CL           187)1TV HD RU         227)Euronews GR               267)Safeer TV UK"
+   echo "26)WGN 9 Chicago     66)MNN 5 NY USA     106)RTS DEUX CH      146)Mega CL          186)MOCKBA 24 RU      226)Action 24 GR              266)Suryoyo Sat SE"
+   echo "27)News12 Brooklyn   67)BronxNet NY USA  107)LCP FR           147)CNN CL           187)1TV HD RU         227)Euronews GR               267)Safeer TV UK"
    echo "28)News12 LongIsland 68)CNN PH           108)Public Senate FR 148)Telemedeline CO  188)Planeta 4 RU      228)TRT Haber TR              268)BBC Persian"
    echo "29)FiOS1 HudsonValley69)CNN Live USA     109)CPAC 1 CA        149)Teleantioquia CO 189)Planeta 6 RU      229)NTV TR                    269)Iran Aryaee"
    echo "30)Weather Nation    70)CNN HLN          110)Assemblee QC CA  150)TeleSUR VE       190)TPEANEP TV RU     230)HaberTurk TV              270)DidgahNew TV IR"    
    echo "31)Weather Channel   71)Fox News Talk    111)Canal Savoir CA  151)Globovision VE   191)5 Live RU         231)Star TV TR                271)Aryen TV IR"
    echo "32)BYUTV USA         72)CNBC             112)Gong Cinema      152)NTN24 VE         192)POCCNR 1 HD RU    232)CNN Turk TR               272)PTN PARS TV USA"
-   echo "33)VOA USA           73)Africa News      113)GONG MAX         153)Conciencia VE    193)News 24 UA        233)KRT Kulture TR            273)Euronews Persian" 
-   echo "34)RT Documentary    74)Euronews English 114)BX1 BE           154)VPItv VE         194)UA TV UA          234)La Legul TV TR            274)Ariana TV AF"  
+   echo "33)VOA USA           73)-------------    113)GONG MAX         153)Conciencia VE    193)News 24 UA        233)KRT Kulture TR            273)Euronews Persian" 
+   echo "34)RT Documentary    74)-------------    114)BX1 BE           154)VPItv VE         194)UA TV UA          234)La Legul TV TR            274)Ariana TV AF"  
    echo "35)CGTN Documentary  75)-------------    115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)TGRT Haber TR             275)TOLO NEWS AF"
    echo "36)CBC CA            76)-------------    116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
    echo "37)CBC News CA       77)-------------    117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
    echo "38)CPAC 1 CA         78)-------------    118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
-   echo "39)BronxNet NY USA   79)-------------    119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
-   echo "40)MNN 5 NY USA      80)-------------    120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
+   echo "39)Africa News       79)-------------    119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
+   echo "40)Euronews English  80)-------------    120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
    echo "=========================================================================================================================================================="
 	
 }  	                                    
@@ -243,8 +243,8 @@ channel_matrix_1()
    echo "297)Vanitha TV       337)Cheng Sin TV   377)--------------    417)America Thinks     457)TYT USA            497)NRB               537)ABC News 10  "
    echo "298)HMT Telugu       338)CTS 2 TW       378)Africa News       418)Bloomberg Europe   458)MLB Network        498)Church Channel    538)KY3 Springfield IL"	
    echo "299)India TV IN      339)SJTV TW        379)Africa24          419)Bloomberg Asia     459)NFL Now            499)TBN               539)KNBC 4 News"
-   echo "300)Survana News     340)Da Li TW       380)SIKKA Afrique     420)HSN                460)RED BULL TV        500)God TV            540)Planeta 2 RU"  
-   echo "301)i News Telugu    341)SDTV TW        381)Channels 24 NG    421)HSN 2              461)STADIUM            501)Amazing Facts     541)Planeta 3 RU "
+   echo "300)Survana News     340)Da Li TW       380)SIKKA Afrique     420)HSN                460)RED BULL TV        500)God TV            540)EBS EU "  
+   echo "301)i News Telugu    341)SDTV TW        381)Channels 24 NG    421)HSN 2              461)STADIUM            501)Amazing Facts     541)EBS Plus EU"
    echo "302)PTTV Tamil IN    342)FANS TV TW     382)TVC News NG       422)Bloomberg Australia462)Allkey Shop        502)It's Supernatural 542)UN Trustship"       
    echo "303)DD News          343)Hong Kong TV   383)KTN Kenya KE      423)Bloomberg USPoli   463)Sorgatronmedia     503)Shepherd's Chapel 543)UN EOSOC"  
    echo "304)REPORTER LIVE    344)GET TV USA     384)EbruTV KE         424)Bloomberg Live     464)Amouranth          504)IHOP              544)Dail Eireann IE"
@@ -1283,39 +1283,65 @@ use_cookies="no"
 TAG="CPAC_1_CA_"
 chan_name="CPAC 1 Canada" ;;
 
-# 39) BronxNet NY USA
+###########################################################
+# 39) Africa News
 39)
 
 if [ "$getlink" = 1 ]
 then
-#link="https://reflect-live-bronxnet.cablecast.tv/live/live.m3u8"
-#EXT-X-STREAM-INF:BANDWIDTH=2180400,RESOLUTION=1280x720,NAME="WIFI-1896k-720p"
-link="https://reflect-live-bronxnet.cablecast.tv/live/WIFI-1896k-720p/WIFI-1896k-720p.m3u8"
-#EXT-X-STREAM-INF:BANDWIDTH=570400,RESOLUTION=480x270,NAME="CELL-496k-270p"
-#link="https://reflect-live-bronxnet.cablecast.tv/live/CELL-496k-270p/CELL-496k-270p.m3u8"
-
-fi
-#method="Tor"
+link=https://www.dailymotion.com/video/x6i7vf8
+#link="https://stream-03.sv6.dailymotion.com/sec(Rt6MMB82ZLcHsd-t3Q1ireG1DpwZZ7TP04NU4YH4148)/dm/3/x6i7vf8/live-2.m3u8"
+#link="https://stream-03.sv6.dailymotion.com/sec(Rt6MMB82ZLcHsd-t3Q1ireG1DpwZZ7TP04NU4YH4148)/dm/3/x6i7vf8/live-1.m3u8"
+#link="https://stream-03.sv6.dailymotion.com/sec(Rt6MMB82ZLcHsd-t3Q1ireG1DpwZZ7TP04NU4YH4148)/dm/3/x6i7vf8/live-3.m3u8"
 use_cookies="no"
-TAG="BRONXNET__"
-chan_name="BronxNet NY USA";; 
+format=hls-720
+#format=hls-480
+###method="Tor"
+fi
+####method="Tor"
+use_cookies="no"
+TAG="AFRICA_NEWS__"
+chan_name="Africa News English" ;;
 
-################## MANHATTAN NEIGHBOURHOOD NETWORK HD
-# 40)MNN Channel 5 Manhattan Neighbourhood Network HD New York USA
-40)
+# 40) EuroNews English
+40) 
+keyword="euronews"
+method="Tor"
+
 if [ "$getlink" = 1 ]
 then
-#link="https://livestream.com/accounts/17251372/events/4846282"
-link="$( curl "https://livestream.com/accounts/17251372/events/4846282" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-#link=https://livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.secure.m3u8
-#link="https://api.new.livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.secure.m3u8"
-#link=https://livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.smil
-#link=https://livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.secure.smil
+#link="http://www.euronews.com/live"
+
+#radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://www.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d \/ -f 3,4,5 | sed 's/\\//g' )
+#link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenpri_eng.smil/ewnsabrenpri_eng_224p.m3u8"
+
+radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://www.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+link="$radix"
+#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
+
+#http://euronews-en-p-api.hexaglobe.net/a3618e54b21c1c5dd38e7b36efb549fb/5c234c7f/euronews/euronews-euronews-website-web-responsive-2/en/stream_info.php
+#http://euronews-en-b9-cdn.hexaglobe.net/c72edfc1e45108d5a4e00b9798951041/5c234cf7/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenbkp_eng.smil/playlist.m3u8
+#http://euronews-en-p10-cdn.hexaglobe.net/f31d32ca80e7af93810eaa12ff2fb0b9/5c234cf7/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenpri_eng.smil/playlist.m3u8
+
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewspe/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+#link=https://www.youtube.com/watch?v=$(curl -A "$UA" "https://www.youtube.com/user/Euronews/videos?&view=2" | grep "watch?v=" | grep "$keyword" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)
+#link=http://euronews-en-p9-cdn.hexaglobe.net/b845277c2db60882a29551105a4bd53b/594807ba/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenpri_eng.smil/playlist.m3u8
 fi
-##method="Tor"
 use_cookies="no"
-TAG="MNN_5__HD_"
-chan_name="MNN Channel 5 New York USA" ;;
+TAG="EURONEWS_EN__"
+chan_name="Euronews English" ;; 
+
 
 #############################  ENGLISH EXTRA #############################################
 # 41) BBC Parliament 
@@ -1728,28 +1754,40 @@ fi
 use_cookies="no"
 TAG="MNN_4__________"
 chan_name="MNN Channel 4 New York, USA" ;;
-###################### EUROPEAN UNION #################################
-# 66) EBS European Commision
+################## MANHATTAN NEIGHBOURHOOD NETWORK HD
+# 66)MNN Channel 5 Manhattan Neighbourhood Network HD New York USA
 66)
 if [ "$getlink" = 1 ]
 then
-link=https://ott.ec.streamcloud.be/live/disk1/EBS/hls_or/EBS-audio_AACL_qaa_66400_201=66400-video=800000.m3u8
+#link="https://livestream.com/accounts/17251372/events/4846282"
+link="$( curl "https://livestream.com/accounts/17251372/events/4846282" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+#link=https://livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.secure.m3u8
+#link="https://api.new.livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.secure.m3u8"
+#link=https://livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.smil
+#link=https://livestream.com/accounts/17251372/events/4846282/broadcasts/177074802.secure.smil
 fi
-use_cookies="no"
 ##method="Tor"
-TAG="EBS_EU______"
-chan_name="EBS European Commision" ;;
-# 67) EBS European Commision
+use_cookies="no"
+TAG="MNN_5__HD_"
+chan_name="MNN Channel 5 New York USA" ;;
+
+# 67) BronxNet NY USA
 67)
+
 if [ "$getlink" = 1 ]
 then
-link=https://ott.ec.streamcloud.be/live/disk1/EBSplus/hls_or/EBSplus-audio_AACL_qaa_66400_401=66400-video=800000.m3u8
+#link="https://reflect-live-bronxnet.cablecast.tv/live/live.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=2180400,RESOLUTION=1280x720,NAME="WIFI-1896k-720p"
+link="https://reflect-live-bronxnet.cablecast.tv/live/WIFI-1896k-720p/WIFI-1896k-720p.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=570400,RESOLUTION=480x270,NAME="CELL-496k-270p"
+#link="https://reflect-live-bronxnet.cablecast.tv/live/CELL-496k-270p/CELL-496k-270p.m3u8"
+
 fi
+#method="Tor"
 use_cookies="no"
-##method="Tor"
-TAG="EBS+_EU______"
-chan_name="EBS Plus European Commision" ;;
-#############################################################
+TAG="BRONXNET__"
+chan_name="BronxNet NY USA";; 
+
 ############################# CNN ###################################################
 # 68) CNN PHILIPPINES
 68)
@@ -1843,65 +1881,9 @@ use_cookies="no"
 TAG="CNBC______"
 chan_name="CNBC USA";; 
 
-###########################################################
-# 73) Africa News
-73)
 
-if [ "$getlink" = 1 ]
-then
-link=https://www.dailymotion.com/video/x6i7vf8
-#link="https://stream-03.sv6.dailymotion.com/sec(Rt6MMB82ZLcHsd-t3Q1ireG1DpwZZ7TP04NU4YH4148)/dm/3/x6i7vf8/live-2.m3u8"
-#link="https://stream-03.sv6.dailymotion.com/sec(Rt6MMB82ZLcHsd-t3Q1ireG1DpwZZ7TP04NU4YH4148)/dm/3/x6i7vf8/live-1.m3u8"
-#link="https://stream-03.sv6.dailymotion.com/sec(Rt6MMB82ZLcHsd-t3Q1ireG1DpwZZ7TP04NU4YH4148)/dm/3/x6i7vf8/live-3.m3u8"
-use_cookies="no"
-format=hls-720
-#format=hls-480
-###method="Tor"
-fi
-####method="Tor"
-use_cookies="no"
-TAG="AFRICA_NEWS__"
-chan_name="Africa News English" ;;
-
-# 74) EuroNews English
-74) 
-keyword="euronews"
-method="Tor"
-
-if [ "$getlink" = 1 ]
-then
-#link="http://www.euronews.com/live"
-
-#radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://www.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d \/ -f 3,4,5 | sed 's/\\//g' )
-#link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenpri_eng.smil/ewnsabrenpri_eng_224p.m3u8"
-
-radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://www.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
-link="$radix"
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
-
-#http://euronews-en-p-api.hexaglobe.net/a3618e54b21c1c5dd38e7b36efb549fb/5c234c7f/euronews/euronews-euronews-website-web-responsive-2/en/stream_info.php
-#http://euronews-en-b9-cdn.hexaglobe.net/c72edfc1e45108d5a4e00b9798951041/5c234cf7/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenbkp_eng.smil/playlist.m3u8
-#http://euronews-en-p10-cdn.hexaglobe.net/f31d32ca80e7af93810eaa12ff2fb0b9/5c234cf7/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenpri_eng.smil/playlist.m3u8
-
-#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewspe/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
-#link=https://www.youtube.com/watch?v=$(curl -A "$UA" "https://www.youtube.com/user/Euronews/videos?&view=2" | grep "watch?v=" | grep "$keyword" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)
-#link=http://euronews-en-p9-cdn.hexaglobe.net/b845277c2db60882a29551105a4bd53b/594807ba/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenpri_eng.smil/playlist.m3u8
-fi
-use_cookies="no"
-TAG="EURONEWS_EN__"
-chan_name="Euronews English" ;; 
-
+# 73)
+# 74)
 # 75) 
 # 76)
 # 77)
@@ -1978,8 +1960,8 @@ chan_name="BFM Busineess France" ;;
 
 if [ "$getlink" = 1 ]
 then
-link=https://rt-france.secure.footprint.net/1107-inadv-qidx-1k_v5.m3u8
-#link=https://rt-france.secure.footprint.net/1107-inadv-qidx-2k_v5.m3u8
+#link=https://rt-france.secure.footprint.net/1107-inadv-qidx-1k_v5.m3u8
+link=https://rt-france.secure.footprint.net/1107-inadv-qidx-2k_v5.m3u8
 #link=https://rt-france.secure.footprint.net/1107-inadv-qidx-3k_v5.m3u8
 #link=https://rt-france.secure.footprint.net/1107-inadv-qidx-4k_v5.m3u8
 #link=https://rt-france.secure.footprint.net/1107-inadv-qidx-5k_v5.m3u8
@@ -2604,10 +2586,11 @@ then
 #link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrespri_spa.smil/ewnsabrespri_spa_360p.m3u8"
 
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://es.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
+link=$radix
 #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_720p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_540p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_360p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_224p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_224p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_180p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_90p/' )
 
@@ -3902,9 +3885,10 @@ if [ "$getlink" = 1 ]
 then
 #link="http://tr.euronews.com/live"
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://tr.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
+link=$radix
 #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
@@ -4255,15 +4239,16 @@ if [ "$getlink" = 1 ]
 then
 #link="http://tr.euronews.com/live"
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://arabic.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
+link=$radix
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
 fi
 
-format="720p"
+#format="720p"
 ## Formats 90p (worst), 180p, 224p, 360p, 540p, 720p (best)
 keyword="direct"
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
@@ -4349,17 +4334,18 @@ if [ "$getlink" = 1 ]
 then
 #link="http://fa.euronews.com/live"
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://fa.euronews.com/live"| cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
+link=$radix
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
+#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
 
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewses/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 
 fi
-format="720p"
+#format="720p"
 ## Formats 90p (worst), 180p, 224p, 360p, 540p, 720p (best)
 keyword="direct"
 use_cookies="no"
@@ -5557,7 +5543,7 @@ use_cookies="no"
 chan_name="Jasmin TV" ;;  
 # 457) The Young Turks
 457)
-keyword="Live"
+keyword="LIVE"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/TheYoungTurks/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="TYT The Young Turks" ;; 
@@ -5668,18 +5654,21 @@ chan_name="Buzzr (Game Shows)";;
 # 467) RTE 1
 467)
 link=http://akamai.rasset.ie/hls-live/_definst_/rte1/rte1-720.m3u8
+#link=http://akamai.rasset.ie/hls-live/_definst_/rte1/rte1-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE 1 IE";;
 # 468) RTE 2
 468)
 link=http://akamai.rasset.ie/hls-live/_definst_/rte2/rte2-720.m3u8
+#link=http://akamai.rasset.ie/hls-live/_definst_/rte2/rte2-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE 2 IE";;
 # 469) RTE Jr
 469)
-link=https://cdn.rasset.ie/hls-live/_definst_/rtejr/rtejr-576.m3u8
+link=https://cdn.rasset.ie/hls-live/_definst_/rtejr/rtejr-720.m3u8
+#link=https://cdn.rasset.ie/hls-live/_definst_/rtejr/rtejr-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE Jr. IE";;
@@ -6292,16 +6281,28 @@ chan_name="KNBC 4 News Los Angeles" ;;
 
 #####################################################
 
-# 540) Planeta Channel 2 Russia
+###################### EUROPEAN UNION #################################
+# 540) EBS European Commision
 540)
-link=http://wse.planeta-online.tv:1935/live/channel_2/chunklist.m3u8
+if [ "$getlink" = 1 ]
+then
+link=https://ott.ec.streamcloud.be/live/disk1/EBS/hls_or/EBS-audio_AACL_qaa_66400_201=66400-video=800000.m3u8
+fi
 use_cookies="no"
-chan_name="TBTYP TV Planeta Channel 2 Russia" ;;
-# 541) Planeta Channel 3 Russia
+##method="Tor"
+TAG="EBS_EU______"
+chan_name="EBS European Commision" ;;
+# 541) EBS European Commision
 541)
-link=http://wse.planeta-online.tv:1935/live/channel_3/chunklist.m3u8
+if [ "$getlink" = 1 ]
+then
+link=https://ott.ec.streamcloud.be/live/disk1/EBSplus/hls_or/EBSplus-audio_AACL_qaa_66400_401=66400-video=800000.m3u8
+fi
 use_cookies="no"
-chan_name="Planeta Channel 3 Russia" ;;
+##method="Tor"
+TAG="EBS+_EU______"
+chan_name="EBS Plus European Commision" ;;
+#############################################################
 ###############################  GOVERNMENT #####################################################################
 # 542) United Nations UN Trustship Chamber
 542) 
