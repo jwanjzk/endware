@@ -7,7 +7,7 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6327
+# Version: 0.6328
 # Revision Date: January 09, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
@@ -142,7 +142,7 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6327"
+version="0.6328"
 rev_date="09/01/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
@@ -208,10 +208,10 @@ channel_matrix_0()
    echo "31)Weather Channel   71)CNN HLN          111)Canal Savoir CA  151)Globovision VE   191)5 Live RU         231)Star TV TR                271)Aryen TV IR"
    echo "32)BYUTV USA         72)Fox News Talk    112)Gong Cinema      152)NTN24 VE         192)POCCNR 1 HD RU    232)CNN Turk TR               272)PTN PARS TV USA"
    echo "33)VOA USA           73)CNBC             113)GONG MAX         153)Conciencia VE    193)News 24 UA        233)KRT Kulture TR            273)Euronews Persian" 
-   echo "34)RT Documentary    74)-------------    114)BX1 BE           154)VPItv VE         194)UA TV UA          234)La Legul TV TR            274)Ariana TV AF"  
-   echo "35)CGTN Documentary  75)-------------    115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)TGRT Haber TR             275)TOLO NEWS AF"
-   echo "36)CBC CA            76)-------------    116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
-   echo "37)CBC News CA       77)-------------    117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
+   echo "34)RT Documentary    74)QVC 2            114)BX1 BE           154)VPItv VE         194)UA TV UA          234)La Legul TV TR            274)Ariana TV AF"  
+   echo "35)CGTN Documentary  75)QVC Beauty       115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)TGRT Haber TR             275)TOLO NEWS AF"
+   echo "36)CBC CA            76)QVC 1 NG         116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
+   echo "37)CBC News CA       77)PLANET GREEN     117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
    echo "38)CPAC 1 CA         78)-------------    118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
    echo "39)Africa News       79)-------------    119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
    echo "40)Euronews English  80)-------------    120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
@@ -1216,9 +1216,9 @@ if [ "$getlink" = 1 ]
 then
 #link=https://live.cgtn.com/cctv-d.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1096000,RESOLUTION=1280x720,NAME="720p HD"
-#link=http://livedoc.cgtn.com/1000d/prog_index.m3u8
+link=http://livedoc.cgtn.com/1000d/prog_index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=640x360,NAME="360p SD"
-link=http://livedoc.cgtn.com/500d/prog_index.m3u8
+#link=http://livedoc.cgtn.com/500d/prog_index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=192000,RESOLUTION=320x180,NAME="180p 3G"
 #link=http://livedoc.cgtn.com/200d/prog_index.m3u8
 fi
@@ -1908,32 +1908,115 @@ use_cookies="no"
 TAG="CNBC______"
 chan_name="CNBC USA";; 
 
-# 74)
-# 75) 
-# 76)
-# 77)
+# 74)  QVC 2
+74) 
+
+if [ "$getlink" = 1 ]
+then
+keyword="QVC Live Stream"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/manifest.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=732000,RESOLUTION=640x360,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b732000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=64000,CODECS="mp4a.40.2",SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b64000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,RESOLUTION=848x480,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b1128000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1928000,RESOLUTION=1024x576,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b1928000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2592000,RESOLUTION=1280x720,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b2592000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=4192000,RESOLUTION=1920x1080,SUBTITLES="subs"
+link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b4192000.m3u8
+fi
+#####method="Tor"
+use_cookies="no"
+TAG="QVC2EN____"
+chan_name="QVC 2 English" ;;
+
+# 75)  QVC Beauty
+75) 
+
+if [ "$getlink" = 1 ]
+then
+keyword="QVC Live Stream"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/manifest.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=332000,RESOLUTION=320x180,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b332000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=64000,CODECS="mp4a.40.2",SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b64000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=732000,RESOLUTION=640x360,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b732000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,RESOLUTION=848x480,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b1128000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1928000,RESOLUTION=1024x576,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b1928000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2592000,RESOLUTION=1280x720,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b2592000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=4192000,RESOLUTION=1920x1080,SUBTITLES="subs"
+link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b4192000.m3u8
+
+fi
+#####method="Tor"
+use_cookies="no"
+TAG="QVC_BEAUTY"
+chan_name="QVC Beauty" ;;
+
+# 76)  QVC 1 No Graphics
+76) 
+
+if [ "$getlink" = 1 ]
+then
+keyword="QVC Live Stream"
+#EXTINF:0 group-title=”US: _”,US: QVC OPT 1
+#http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/manifest.m3u
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/manifest.m3u8
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English",FORCED=NO,AUTOSELECT=YES,URI="subtitlelist_leng_b332000.m3u8",LANGUAGE="eng"
+#EXT-X-STREAM-INF:BANDWIDTH=332000,RESOLUTION=320x180,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/chunklist_b332000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=64000,CODECS="mp4a.40.2",SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/chunklist_b64000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=732000,RESOLUTION=640x360,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/chunklist_b732000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,RESOLUTION=848x480,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/chunklist_b1128000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1928000,RESOLUTION=1024x576,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/chunklist_b1928000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2592000,RESOLUTION=1280x720,SUBTITLES="subs"
+#link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/chunklist_b2592000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=4192000,RESOLUTION=1920x1080,SUBTITLES="subs"
+link=http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/chunklist_b4192000.m3u8
+
+fi
+#####method="Tor"
+use_cookies="no"
+TAG="QVC_1_NG__"
+chan_name="QVC 1 Raw No Graphics" ;;
+
+# 77) PLANET GREEN US
+77)
+
+if [ "$getlink" = 1 ]
+then
+link=
+#http://80.80.160.168/live/4/live.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=500000
+link=http://80.80.160.168/live/4/500000/live.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1000000
+#link=http://80.80.160.168/live/4/1000000/live.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1500000
+#link=http://80.80.160.168/live/4/1500000/live.m3u8
+fi
+#method="Tor"
+use_cookies="no"
+TAG="PLANETGREEN"
+chan_name="PLANET GREEN US";; 
+
 # 78)
 # 79)
 # 80)
 
-#EXTINF:0 group-title=”US: _”,US: PBS
-#http://atlas.its.virginia.edu:8088/hls/m3u8/PBS.m3u8
-#EXTINF:0 group-title=”US: _”,US: PLANET GREEN
-#http://80.80.160.168/live/4/live.m3u8
-#EXTINF:0 group-title=”US: _”,US: QVC
-#http://qvclvp2.mmdlive.lldns.net/qvclvp2/9aa645c89c5447a8937537011e8f8d0d/chunklist_b4192000.m3u8
-#EXTINF:0 group-title=”US: _”,US: QVC 2
-#http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/manifest.m3u8
-#EXTINF:0 group-title=”US: _”,US: QVC BEAUTY IQ
-#http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b4192000.m3u8
-#EXTINF:0 group-title=”US: _”,US: QVC OPT 1
-#http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/manifest.m3u8
-#EXTINF:0 group-title=”US: _”,US: QVC OPT 2
-#http://qvclvp2.mmdlive.lldns.net/qvclvp2/9aa645c89c5447a8937537011e8f8d0d/manifest.m3u8
-#EXTINF:0 group-title=”US: _”,US: QVC2
-#http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b4192000.m3u8
-
 ################################################    FRENCH   ###################################
+
 # 81) France 24 
 81)
 keyword="FRANCE 24 en Direct" 
