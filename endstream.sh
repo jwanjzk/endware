@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6328
-# Revision Date: January 09, 2019
+# Version: 0.6329
+# Revision Date: January 15, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6328"
-rev_date="09/01/2019"
+version="0.6329"
+rev_date="15/01/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -211,7 +211,7 @@ channel_matrix_0()
    echo "34)RT Documentary    74)QVC 2            114)BX1 BE           154)VPItv VE         194)UA TV UA          234)La Legul TV TR            274)Ariana TV AF"  
    echo "35)CGTN Documentary  75)QVC Beauty       115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)TGRT Haber TR             275)TOLO NEWS AF"
    echo "36)CBC CA            76)QVC 1 NG         116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
-   echo "37)CBC News CA       77)PLANET GREEN     117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
+   echo "37)CBC News CA       77)-------------    117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
    echo "38)CPAC 1 CA         78)-------------    118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
    echo "39)Africa News       79)-------------    119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
    echo "40)Euronews English  80)-------------    120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
@@ -455,7 +455,7 @@ fi
 
 TAG=" BBCNEWS____"
 use_cookies="yes"
-method="Tor"
+#method="Tor"
 chan_name="BBC News London" ;; 
 
 # 3) RT UK
@@ -497,8 +497,8 @@ then
 link="http://wmsrtsp1.rte.ie/live/android.sdp/chunklist_w127240369.m3u8"
 #link="http://wmsrtsp1.rte.ie/live/android.sdp/playlist.m3u8" 
 #link="http://cdn.rasset.ie/hls-live/_definst_/newsnow.m3u8"
-#method="Tor"
 fi
+#method="Tor"
 use_cookies="no"
 TAG=" RTENEWS____"
 chan_name="RTE News NOW" ;;
@@ -727,11 +727,11 @@ then
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=776000,RESOLUTION=852x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_480p_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=972000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on"
+link="http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=871000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=4564000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
-link="http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-p.m3u8?sd=10&rebase=on"
+#link="http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-p.m3u8?sd=10&rebase=on"
 #link="http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-p.m3u8?sd=10&rebase=on"
 
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
@@ -1216,9 +1216,9 @@ if [ "$getlink" = 1 ]
 then
 #link=https://live.cgtn.com/cctv-d.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1096000,RESOLUTION=1280x720,NAME="720p HD"
-link=http://livedoc.cgtn.com/1000d/prog_index.m3u8
+#link=http://livedoc.cgtn.com/1000d/prog_index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=640x360,NAME="360p SD"
-#link=http://livedoc.cgtn.com/500d/prog_index.m3u8
+link=http://livedoc.cgtn.com/500d/prog_index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=192000,RESOLUTION=320x180,NAME="180p 3G"
 #link=http://livedoc.cgtn.com/200d/prog_index.m3u8
 fi
@@ -1316,19 +1316,24 @@ then
 #link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenpri_eng.smil/ewnsabrenpri_eng_224p.m3u8"
 
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://www.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
-link="$radix"
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
+#link="$radix"
+primary=$( echo "$radix" | grep pri )
+  if [ "$primary" != ""  ]
+  then
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
+  fi
 
 #http://euronews-en-p-api.hexaglobe.net/a3618e54b21c1c5dd38e7b36efb549fb/5c234c7f/euronews/euronews-euronews-website-web-responsive-2/en/stream_info.php
 #http://euronews-en-b9-cdn.hexaglobe.net/c72edfc1e45108d5a4e00b9798951041/5c234cf7/euronews/euronews-euronews-website-web-responsive-2/ewnsabrenbkp_eng.smil/playlist.m3u8
@@ -1561,7 +1566,18 @@ chan_name="TWiT USA" ;;
 
 if [ "$getlink" = 1 ]
 then
-link=http://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream/playlist.m3u8	
+link=https://na-us-nw17.secdn.net/jupiter-channel/play/jupiter.smil/chunklist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,NAME="Max",RESOLUTION=1280x720
+#link="https://na-us-nw17.secdn.net/jupiter-channel/play/jupiter.smil/chunklist_w1888633437_b3000000_t64TWF4.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1500000,NAME="HD",RESOLUTION=1280x720
+#link="https://na-us-nw17.secdn.net/jupiter-channel/play/jupiter.smil/chunklist_w1888633437_b1500000_t64SEQ=.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,NAME="Med",RESOLUTION=854x480
+#link="https://na-us-nw17.secdn.net/jupiter-channel/play/jupiter.smil/chunklist_w1888633437_b1000000_t64TWVk.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=500000,NAME="Low",RESOLUTION=640x360
+#link="https://na-us-nw17.secdn.net/jupiter-channel/play/jupiter.smil/chunklist_w1888633437_b500000_t64TG93.m3u8"
+
+#link=http://jupiter-hls.secdn.net/jupiter-channel/play/jupiter.smil/playlist.m3u8
+#link=http://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream/playlist.m3u8
 # link=rtmp://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream
 # link=rtsp://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream
 ### USTREAM ####
@@ -1992,25 +2008,7 @@ use_cookies="no"
 TAG="QVC_1_NG__"
 chan_name="QVC 1 Raw No Graphics" ;;
 
-# 77) PLANET GREEN US
-77)
-
-if [ "$getlink" = 1 ]
-then
-link=
-#http://80.80.160.168/live/4/live.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=500000
-link=http://80.80.160.168/live/4/500000/live.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1000000
-#link=http://80.80.160.168/live/4/1000000/live.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1500000
-#link=http://80.80.160.168/live/4/1500000/live.m3u8
-fi
-#method="Tor"
-use_cookies="no"
-TAG="PLANETGREEN"
-chan_name="PLANET GREEN US";; 
-
+# 77)
 # 78)
 # 79)
 # 80)
@@ -2187,19 +2185,25 @@ then
 #link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrfrpri_fre.smil/ewnsabrfrpri_fre_224p.m3u8"
 
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://fr.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_90p/' )
-link=$radix
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_90p/' )
+#link=$radix
+primary=$( echo "$radix" | grep pri )
+
+  if [ "$primary" != ""  ]
+  then
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrpri_fre_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrfrbkp_fre_90p/' )
+  fi
 
 #link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrfrpri_fre.smil/ewnsabrfrpri_fre_720p.m3u8"
 #link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrfrpri_fre.smil/ewnsabrfrpri_fre_540p.m3u8"
@@ -2711,14 +2715,27 @@ then
 #link="http://$radix/euronews/euronews-euronews-website-web-responsive-2/ewnsabrespri_spa.smil/ewnsabrespri_spa_360p.m3u8"
 
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://es.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-link=$radix
-#link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_90p/' )
+#link=$radix
 
+primary=$( echo "$radix" | grep pri )
+
+  if [ "$primary" != ""  ]
+  then
+  #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrespri_spa_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabresbkp_spa_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabresbkp_spa_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabresbkp_spa_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabresbkp_spa_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabresbkp_spa_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabresbkp_spa_90p/' ) 
+  fi
+  
 #link="http://es.euronews.com/live"
 fi
 #format="720p"
@@ -3184,12 +3201,27 @@ then
 #link="http://de.euronews.com/live"
 
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://de.euronews.com/live"| cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_360p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_90p/' )
+#link=$radix
+
+primary=$( echo "$radix" | grep pri )
+
+  if [ "$primary" != ""  ]
+  then
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdepri_ger_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdebkp_ger_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdebkp_ger_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrdebkp_ger_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdebkp_ger_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdebkp_ger_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrdebkp_ger_90p/' )
+  fi
+
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsde/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 fi
 use_cookies="no"
@@ -3237,9 +3269,9 @@ then
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=464000,RESOLUTION=400x224,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/index_3_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=864000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/index_2_av-p.m3u8?sd=10&rebase=on"
+link="http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/index_2_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=864000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
-link="http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/index_2_av-b.m3u8?sd=10&rebase=on"
+#link="http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/index_2_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1664000,RESOLUTION=720x400,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/index_1_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1664000,RESOLUTION=720x400,CODECS="avc1.77.30, mp4a.40.2"
@@ -3262,6 +3294,7 @@ link=http://ms01.w24.at/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 #link=http://ms01.w24.at/hls-live/livepkgr/_definst_/liveevent/livestream1.m3u8
 #link=http://ms01.w24.at/hls-live/livepkgr/_definst_/liveevent/livestream2.m3u8
 fi
+#method="Tor"
 use_cookies="no"
 chan_name="W24 Wein, Austria" ;; 
 # 171) Tirol TV Austria
@@ -3271,6 +3304,7 @@ then
 #link=http://lb.hd-livestream.de:1935/live/TirolTV/playlist.m3u8
 link=http://lb.hd-livestream.de:1935/live/TirolTV/chunklist_w1916857628.m3u8
 fi
+#method="Tor"
 use_cookies="no"
 chan_name="Tirol TV Austria" ;;
 # 172) auftanken.tv Austria
@@ -3280,6 +3314,7 @@ then
 #link="https://livestream.com/accounts/26170820/events/7915290"
 link="$( curl "https://livestream.com/accounts/26170820/events/7915290"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
 fi
+#method="Tor"
 use_cookies="no"
 chan_name="auftanken.tv Austria" ;;
 ############################### Switzerland###############################################
@@ -3336,13 +3371,25 @@ then
 #link="http://ru.euronews.com/live"
 
 #radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://ru.euronews.com/live"| cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_90p/' )
+#primary=$( echo "$radix" | grep pri )
 
+ # if [ "$primary" != ""  ]
+ #then
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_720p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_540p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_360p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_224p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_180p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrupri_rus_90p/' )
+ # else
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrubkp_rus_720p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrubkp_rus_540p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrubkp_rus_360p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrubkp_rus_224p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrubkp_rus_180p/' )
+ #link=$( echo $radix | sed 's/playlist/ewnsabrrubkp_rus_90p/' )
+ # fi
+ 
 #format="720p"
 ## Formats 90p (worst), 180p, 224p, 360p, 540p, 720p (best)
 #link=http://evronovosti.mediacdn.ru/sr1/evronovosti/playlist.m3u8
@@ -3761,17 +3808,33 @@ method="Tor"
 if [ "$getlink" = 1 ]
 then
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://it.euronews.com/live"| cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_540p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_90p/' )
+#link=$radix
+
+primary=$( echo "$radix" | grep pri )
+
+  if [ "$primary" != ""  ]
+  then
+  #link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritpri_ita_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabritbkp_ita_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritbkp_ita_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabritbkp_ita_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritbkp_ita_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritbkp_ita_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabritbkp_ita_90p/' )
+  fi
+
 fi
 #format="720p"
 ## Formats 90p (worst), 180p, 224p, 360p, 540p, 720p (best)
 keyword="LIVE" 
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsde/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+
 use_cookies="no"
 chan_name="Euronews Italian" ;;
 ################# MALTA #######################################
@@ -3832,16 +3895,26 @@ then
 #link="http://hu.euronews.com/live"
 
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://hu.euronews.com/live"| cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_540p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_90p/' )
 
+primary=$( echo "$radix" | grep pri )
+  if [ "$primary" != ""  ]
+  then
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhupri_hun_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhupri_hun_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrhupri_hun_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhupri_hun_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhupri_hun_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhupri_hun_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrhubkp_hun_90p/' )
+  fi
 fi
-
-format="720p"
+#format="720p"
 ## Formats 90p (worst), 180p, 224p, 360p, 540p, 720p (best)
 keyword="LIVE" 
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/euronewsde/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
@@ -3881,12 +3954,24 @@ then
 #link="http://gr.euronews.com/live"
 
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://gr.euronews.com/live"| cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-#link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_540p/' )
-link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_90p/' )
+primary=$( echo "$radix" | grep pri )
+
+  if [ "$primary" != ""  ]
+  then 
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelpri_gre_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelbkp_gre_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelbkp_gre_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrelbkp_gre_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelbkp_gre_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelbkp_gre_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrelbkp_gre_90p/' )
+  fi
 
 fi
 
@@ -4010,13 +4095,25 @@ if [ "$getlink" = 1 ]
 then
 #link="http://tr.euronews.com/live"
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://tr.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-link=$radix
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
+#link=$radix
+
+primary=$( echo "$radix" | grep pri )
+  if [ "$primary" != ""  ]
+  then
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
+  fi
 fi
 #format="720p"
 ## Formats 90p (worst), 180p, 224p, 360p, 540p, 720p (best)
@@ -4364,13 +4461,27 @@ if [ "$getlink" = 1 ]
 then
 #link="http://tr.euronews.com/live"
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://arabic.euronews.com/live" | cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-link=$radix
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
-#link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+#link=$radix
+primary=$( echo "$radix" | grep pri )
+
+  if [ "$primary" != ""  ]
+  then 
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' ) 
+  link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
+  fi
+
 fi
 
 #format="720p"
@@ -4459,7 +4570,28 @@ if [ "$getlink" = 1 ]
 then
 #link="http://fa.euronews.com/live"
 radix=$(torsocks -i -a $torsocks_ip -P $torsocks_port curl -A "$UA" $(streamlink "http://fa.euronews.com/live"| cut -d "'" -f 2 | cut -d : -f 3  | cut -d "?" -f 1 | cut -d / -f 3,4,5,6,7,8,9 )| cut -d \: -f 4,5 | cut -d , -f 1 | sed 's/\\//g' | sed 's/\"//g'  )
-link=$radix
+#link=$radix
+
+primary=$( echo "$radix" | grep pri )
+
+  if [ "$primary" != ""  ]
+  then 
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' ) 
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_90p/' )
+  else
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_720p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_540p/' )
+  link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_360p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_224p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_180p/' )
+  #link=$( echo $radix | sed 's/playlist/ewnsabrenbkp_eng_90p/' )
+  fi
+
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_720p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_540p/' )
 #link=$( echo $radix | sed 's/playlist/ewnsabrenpri_eng_360p/' )
@@ -5622,9 +5754,9 @@ chan_name="Rockland Radio TV" ;;
 #EXT-X-STREAM-INF:BANDWIDTH=2820400,CODECS="avc1.4d401f,mp4a.40.5",RESOLUTION=960x540
 #link=http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer5.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=3920400,CODECS="avc1.4d401f,mp4a.40.5",RESOLUTION=1280x720
-link=http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer6.m3u8
+#link=http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer6.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=5570400,CODECS="avc1.4d4028,mp4a.40.5",RESOLUTION=1920x1080
-#link=http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer7.m3u8
+link=http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer7.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=140800,CODECS="mp4a.40.2"
 #link=http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer8.m3u8
 use_cookies="no"
