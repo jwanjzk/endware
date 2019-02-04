@@ -7,8 +7,8 @@
 # Copyright: 2017, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6330
-# Revision Date: January 31, 2019
+# Version: 0.6331
+# Revision Date: February 03, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6330"
-rev_date="31/01/2019"
+version="0.6331"
+rev_date="03/02/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -213,7 +213,7 @@ channel_matrix_0()
    echo "36)CPAC 1 CA         76)Lake Tahoe TV    116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
    echo "37)Africa News       77)CBC News CA      117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
    echo "38)-------------     78)Jupiter Broadcast118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
-   echo "39)-------------     79)-------------    119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
+   echo "39)-------------     79)ET Finance IN    119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
    echo "40)-------------     80)-------------    120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
    echo "=========================================================================================================================================================="
 	
@@ -250,22 +250,22 @@ channel_matrix_1()
    echo "304)REPORTER LIVE    344)GET TV USA     384)EbruTV KE         424)Bloomberg Live     464)Amouranth          504)IHOP              544)Dail Eireann IE"
    echo "305)AsiaNet News     345)Arirang Korea  385)KTN Home KE       425)Bloomberg EU Live  465)Geek and Sundry    505)BVOVN             545)Senad Eireann IE"  
    echo "306)V6 News          346)TBS KR         386)NTV Uganda UG     426)Bloomberg Asia Live466)Buzzr Gameshows    506)3ABN              546)Oireachtas CR 1 IE"
-   echo "307)Aaj Tak IN       347)YTN DMB KR     387)SPARK UG          427)PBS NewsHour       467)RTE 1              507)3ABN Latino       547)Oireachtas CR 2 IE"
-   echo "308)ETV AndhraPradesh348)YTN Sci KR     388)Joy News GH       428)CBC The National   468)RTE 2              508)3ABN Francais     548)Oireachtas CR 3 IE"
-   echo "309)News 18 Tamil    349)Channel 23 KR  389)ADOM GH           429)AP Top Stories     469)RTE Jr.            509)LLBN TV           549)Oireachtas CR 4 IE"
-   echo "310)Jaya Plus        350)KBS World24 KR 390)Bukedde TV GH     430)Democracy Now      470)TG4 Gaelic IE      510)Hillsong          550)CPAC Event 1"    
-   echo "311)TEZ TV           351)YTN 27 KR      391)EBC ET            431)Infowars RealNews  471)NASA TV Media      511)JUCE TV           551)CPAC Event 2"
-   echo "312)Dili Aaj Tak     352)CGNTV          392)Walf SN           432)Infowars WarRoom   472)NASA Public Educ   512)Salt and Light    552)CPAC Event 3"
-   echo "313)Sagarmatha Nepal 353)YTV USA        393)EriTV ER          433)Infowars Event     473)RobotChicken       513)Harbor Light      553)CPAC Event 4" 
-   echo "314)Derana LK        354)Atlanta AM790  394)SABC ZA           434)-----------        474)RetroTV            514)St. Mary's Coptic 554)CPAC Event 5"  
-   echo "315)Swarnavahini LK  355)ANN24 JP       395)Afro Worldview ZA 435)-----------        475)-----------        515)Word of God Greek 555)CPAC Event 6"
-   echo "316)Kaliagnar News   356)Sol!ve 24 JP   396)ITV ZA            436)-----------        476)-----------        516)Shalom America    556)CPAC Event 7"
+   echo "307)Aaj Tak IN       347)YTN DMB KR     387)SPARK UG          427)PBS NewsHour       467)TG4 Gaelic IE      507)3ABN Latino       547)Oireachtas CR 2 IE"
+   echo "308)ETV AndhraPradesh348)YTN Sci KR     388)Joy News GH       428)CBC The National   468)RobotChicken       508)3ABN Francais     548)Oireachtas CR 3 IE"
+   echo "309)News 18 Tamil    349)Channel 23 KR  389)ADOM GH           429)AP Top Stories     469)RetroTV            509)LLBN TV           549)Oireachtas CR 4 IE"
+   echo "310)Jaya Plus        350)KBS World24 KR 390)Bukedde TV GH     430)Democracy Now      470)ET Live            510)Hillsong          550)CPAC Event 1"    
+   echo "311)TEZ TV           351)YTN 27 KR      391)EBC ET            431)Infowars RealNews  471)CBS Sports HQ      511)JUCE TV           551)CPAC Event 2"
+   echo "312)Dili Aaj Tak     352)CGNTV          392)Walf SN           432)Infowars WarRoom   472)RTE 1              512)Salt and Light    552)CPAC Event 3"
+   echo "313)Sagarmatha Nepal 353)YTV USA        393)EriTV ER          433)Infowars Event     473)RTE 2              513)Harbor Light      553)CPAC Event 4" 
+   echo "314)Derana LK        354)Atlanta AM790  394)SABC ZA           434)-----------        474)RTE Jr.            514)St. Mary's Coptic 554)CPAC Event 5"  
+   echo "315)Swarnavahini LK  355)ANN24 JP       395)Afro Worldview ZA 435)-----------        475)NASA TV Media      515)Word of God Greek 555)CPAC Event 6"
+   echo "316)Kaliagnar News   356)Sol!ve 24 JP   396)ITV ZA            436)-----------        476)NASA Public Educ   516)Shalom America    556)CPAC Event 7"
    echo "317)--------------   357)KBS 24 JP      397)Parliament ZA     437)-----------        477)-----------        517)Shalom India      557)CPAC Event 8"
    echo "318)--------------   358)QVC Japan      398)--------------    438)-----------        478)-----------        518)Powervision TV    558)CPAC Orig Lang"	 
    echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)-----------        479)-----------        519)-------------     559)RUPTLY"
    echo "320)--------------   360)BSC 24 2 JP    400)--------------    440)-----------        480)-----------        520)-------------     560)-------------"
    echo "================================================================================================================================================================="
-}    
+}          
 #  
  
 channel_matrix_2()	
@@ -1996,8 +1996,33 @@ use_cookies="no"
 TAG="JUPITERBROAD___"
 chan_name="Jupiter Broadcasting USA" ;;
 
-# 79)
+# 79) Economic Times India Finance
+79)
+if [ "$getlink" = 1 ]
+then
+#link="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/master.m3u8"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=446000,RESOLUTION=360x288,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/index_288_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=446000,RESOLUTION=360x288,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/index_288_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=793000,RESOLUTION=544x432,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/index_432_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=793000,RESOLUTION=544x432,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/index_432_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1325000,RESOLUTION=720x576,CODECS="avc1.77.30, mp4a.40.2"
+link="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/index_576_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1325000,RESOLUTION=720x576,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/index_576_av-b.m3u8?sd=10&rebase=on"
+fi
+#method="livestreamer"
+#format="best"
+####method="Tor"
+use_cookies="no"
+TAG="ET_IN__________"
+chan_name="Economic Times India" ;;
+
 # 80)
+
 ################################################    FRENCH   ###################################
 
 # 81) France 24 
@@ -5892,37 +5917,91 @@ link=https://www.twitch.tv/buzzr
 #####method="Tor"
 use_cookies="no"
 chan_name="Buzzr (Game Shows)";;
-# 467) RTE 1
+# 467) T4G Ireland
 467)
+link=http://csm-e.cds1.yospace.com/csm/live/74246610.m3u8
+#####method="Tor"
+use_cookies="no"
+chan_name="T4G IE";;
+# 468)ROBOT CHICKEN
+468)
+link=https://adultswim-vodlive.cdn.turner.com/live/robot-chicken/stream.m3u8
+#####method="Tor"
+use_cookies="no"
+chan_name="ROBOT CHICKEN";;
+
+# 469)RETRO TV
+469)
+link=http://247retrotv.com:1935/live/smil:247retro.smil/playlist.m3u8
+#####method="Tor"
+use_cookies="no"
+chan_name="Retro TV";;
+
+# 470)Entertainment Tonight ET Live
+470)
+#link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=511336,RESOLUTION=640x360,CODECS="avc1.4D401E,mp4a.40.2"
+#link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_1.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=951336,RESOLUTION=640x360,CODECS="avc1.4D401E,mp4a.40.2"
+#link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_2.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1391336,RESOLUTION=854x480,CODECS="avc1.4D401F,mp4a.40.2"
+#link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_3.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=2051336,RESOLUTION=960x540,CODECS="avc1.4D401F,mp4a.40.2"
+#link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_4.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=2821300,RESOLUTION=1280x720,CODECS="avc1.4D401F,mp4a.40.2"
+#link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_5.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=3371336,RESOLUTION=1280x720,CODECS="avc1.4D401F,mp4a.40.2"
+#link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_6.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=5571336,RESOLUTION=1920x1080,CODECS="avc1.4D4028,mp4a.40.2"
+link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_7.m3u8"
+#####method="Tor"
+use_cookies="no"
+chan_name="Entertainment Tonight ET Live";;
+
+# 471) CBS Sports Desktop
+471)
+if [ "$getlink" = 1 ]
+then
+#link="https://sportshq-mediapackage-cedexis.cbsaavideo.com/out/v1/be87d7783e5c4270a5830ea5d1164850/desktop.m3u8"
+link="https://sportshq-mediapackage-cedexis.cbsaavideo.com/out/v1/be87d7783e5c4270a5830ea5d1164850/desktop_3.m3u8"
+#link="https://sportshq-mediapackage-cedexis.cbsaavideo.com/out/v1/be87d7783e5c4270a5830ea5d1164850/desktop_2.m3u8"
+#link="https://sportshq-mediapackage-cedexis.cbsaavideo.com/out/v1/be87d7783e5c4270a5830ea5d1164850/desktop_1.m3u8"
+fi
+#method="livestreamer"
+#format="best"
+####method="Tor"   Route through USA
+use_cookies="no"
+TAG="CBS_SPORTS_HQ__"
+chan_name="CBS Sports HQ" ;;
+
+# 472) RTE 1
+472)
 link=http://akamai.rasset.ie/hls-live/_definst_/rte1/rte1-720.m3u8
 #link=http://akamai.rasset.ie/hls-live/_definst_/rte1/rte1-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE 1 IE";;
-# 468) RTE 2
-468)
+# 473) RTE 2
+473)
 link=http://akamai.rasset.ie/hls-live/_definst_/rte2/rte2-720.m3u8
 #link=http://akamai.rasset.ie/hls-live/_definst_/rte2/rte2-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE 2 IE";;
-# 469) RTE Jr
-469)
+# 474) RTE Jr
+474)
 link=https://cdn.rasset.ie/hls-live/_definst_/rtejr/rtejr-720.m3u8
 #link=https://cdn.rasset.ie/hls-live/_definst_/rtejr/rtejr-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE Jr. IE";;
-# 470) T4G Ireland
-470)
-link=http://csm-e.cds1.yospace.com/csm/live/74246610.m3u8
-#####method="Tor"
-use_cookies="no"
-chan_name="T4G IE";;
+
+# Reuters TV
+#https://deb05f50f65540958a4bad40060cbbc7.dlvr1.net/rest/v2/playlist/assets/58197,292735,292663,292574,57445,127660,292734,127706,292661,127679,292732,127680,292741,127740,292669,127725,292712,127770,292685,127701,292575,57634/master.m3u8
 
 ############################### USTREAM  ##################################################
-# 471) NASA TV Media
-471) 
+# 475) NASA TV Media
+475) 
 keyword="Media"
 #link="https://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master.m3u8"
 link="https://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master_2000.m3u8"
@@ -5934,8 +6013,8 @@ link="https://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master_2000.m
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/NASAtelevision/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="NASA TV Media" ;; 
-# 472) NASA TV Public Education
-472) 
+# 476) NASA TV Public Education
+476) 
 keyword="NASA TV Public-Education"
 #link=http://www.ustream.tv/nasahdtv
 #link="https://nasa-i.akamaihd.net/hls/live/253566/NASA-NTV2-Media/master.m3u8"
@@ -5948,22 +6027,6 @@ link="https://nasa-i.akamaihd.net/hls/live/253566/NASA-NTV2-Media/master_2000.m3
 use_cookies="no"
 chan_name="NASA TV Public-Education" ;; 
 ##################################################
-
-# 473)ROBOT CHICKEN
-473)
-link=https://adultswim-vodlive.cdn.turner.com/live/robot-chicken/stream.m3u8
-#####method="Tor"
-use_cookies="no"
-chan_name="ROBOT CHICKEN";;
-
-# 474)RETRO TV
-474)
-link=http://247retrotv.com:1935/live/smil:247retro.smil/playlist.m3u8
-#####method="Tor"
-use_cookies="no"
-chan_name="Retro TV";;
-
-
 
 
 
