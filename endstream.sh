@@ -4,11 +4,11 @@
 # Description:  Clearnet streaming from youtube of selected news 
 #               stations using mpv and youtube-dl
 # Author: The Endware Development Team
-# Copyright: 2017, The Endware Development Team, 
+# Copyright: 2017-2019, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6331
-# Revision Date: February 03, 2019
+# Version: 0.6332
+# Revision Date: February 16, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6331"
-rev_date="03/02/2019"
+version="0.6332"
+rev_date="16/02/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -711,7 +711,15 @@ then
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=725000,RESOLUTION=852x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_480p_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=846000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
-link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-b.m3u8?sd=10&rebase=on"
+#link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-b.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=664000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_360p_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=818000,RESOLUTION=852x480,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_480p_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1928000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
+#link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3128000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
+link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-p.m3u8?sd=10&rebase=on"
 
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"  
 fi
@@ -775,8 +783,15 @@ then
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCYPvAwZP8pZhSMW8qs7cVCw/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 #link="https://feeds.intoday.in/hltapps/api/master.m3u8"
 #link="$( curl --socks5 "$socks_ip":"$socks_port" -A "$UA" "https://feeds.intoday.in/hltapps/api/master.m3u8" | grep 896000p | tail -n 1 )"
-link="$( curl -A "$UA" "https://feeds.intoday.in/hltapps/api/master.m3u8" | grep 2128000pb | tail -n 1 )"
-# BANDWIDTH=2128000pb.m3u8 896000pb.m3u8 428000pb.m3u8
+#link="$( curl -A "$UA" "https://feeds.intoday.in/hltapps/api/master.m3u8" | grep 2128000pb | tail -n 1 )"
+# BANDWIDTH=2128000pb.m3u8 896000pb.m3u8 428000pb.m3u8 678000  1628000  428000
+
+link="$( curl "https://player-api.new.livestream.com/accounts/11965022/events/4086327/" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+
+#https://player-api.new.livestream.com/accounts/11965022/events/4086327/broadcasts/187432129.secure.m3u8?dw=14400&hdnea=st=1550292670~exp=1550294470~acl=/i/11965022_4086327_lsif575qxg64jfszlcx_1@413711/*~hmac=cccdf7ddf77f0b0c1672c86d1def8d76822924f468b4f1a90fb93b173ceca05a
+#link="https://player-api.new.livestream.com/accounts/11965022/events/4086327/broadcasts/187432129.secure.m3u8"
+#https://playback2.akamaized.net/streams/11965022_4086327_lsif575qxg64jfszlcx_1/master.m3u8?dw=14400&hdnts=exp=1550293381~acl=/streams/11965022_4086327_lsif575qxg64jfszlcx_1/master.m3u8*~hmac=1d1f6b3d78e716a0fc90c3153dd7e68b22d552f21eb2cf3bed81de436575d5e6
+
 fi
 use_cookies="no"
 #method="Tor"
@@ -1145,11 +1160,11 @@ then
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=613000,RESOLUTION=524x288,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0288_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1589000,RESOLUTION=720x404,CODECS="avc1.77.30, mp4a.40.2"
-link="http://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0404_av-p.m3u8?sd=10&rebase=on"
+#link="http://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0404_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1101000,RESOLUTION=734x404,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0404_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2078000,RESOLUTION=960x540,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0540_av-p.m3u8?sd=10&rebase=on"
+link="http://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0540_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1101000,RESOLUTION=734x404,CODECS="avc1.77.30, mp4a.40.2"
 #link=http://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0540_av-b.m3u8?sd=10&rebase=on"
 #link=https://www.filmon.com/tv/voa-english
@@ -4823,7 +4838,11 @@ chan_name="V6 News" ;;
 # 307) Aaj Tak TV IN
 307) 
 keyword="Aaj Tak"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/aajtaktv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+# AJTAK TV
+link="$( curl "https://player-api.new.livestream.com/accounts/13982572/events/4169984/" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+
+#link="https://player-api.new.livestream.com/accounts/13982572/events/4169984/broadcasts/187432220.secure.m3u8"
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/aajtaktv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Aaj Tak TV IN" ;;  
 # 308) ETV Andhra Pradesh
@@ -4847,13 +4866,24 @@ chan_name="Jaya Plus" ;;
 # 311) TEZ TV
 311) 
 keyword="Live"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/teztvnews/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
+# Tez TV 
+#link="https://player-api.new.livestream.com/accounts/13995833/events/4198957/broadcasts/187431909.secure.m3u8"
+
+link="$( curl "https://player-api.new.livestream.com/accounts/13995833/events/4198957/" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/teztvnews/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="TEZ TV" ;;
 # 312) Dilli Aaj Tak
 312) 
 keyword="Live"
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/DilliAajtak/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
+# Dili AajTak
+
+#link="https://player-api.new.livestream.com/accounts/14014394/events/4198951/broadcasts/187431971.secure.m3u8"
+
+link="$( curl "https://player-api.new.livestream.com/accounts/14014394/events/4198951/" | grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/DilliAajtak/videos?view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
 use_cookies="no"
 chan_name="Dilli Aaj Tak";;
 # 313) Sagarmatha Nepal
@@ -6187,7 +6217,7 @@ use_cookies="no"
 chan_name="NRB Network" ;;
 # 498) The Church Channel
 498)
-#link=http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/master.m3u8
+link=http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=192x144,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_282_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=192x144,CODECS="avc1.66.30, mp4a.40.2"
@@ -6201,7 +6231,7 @@ chan_name="NRB Network" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1164000,RESOLUTION=480x360,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1164_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=640x480,CODECS="avc1.66.30, mp4a.40.2"
-link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1728_av-p.m3u8?sd=10&rebase=on"
+#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1728_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=640x480,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1728_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=32000,CODECS="mp4a.40.2"
@@ -6212,7 +6242,7 @@ use_cookies="no"
 chan_name="The Church Channel" ;;
 # 499) TBN
 499)
-#link=http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/master.m3u8
+link=http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=256x144,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_282_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=256x144,CODECS="avc1.66.30, mp4a.40.2"
@@ -6228,7 +6258,7 @@ chan_name="The Church Channel" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=848x480,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_1728_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=848x480,CODECS="avc1.66.30, mp4a.40.2"
-link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_1728_av-b.m3u8?sd=10&rebase=on"
+#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_1728_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2528000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_2528_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2528000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.2"
@@ -6241,7 +6271,7 @@ use_cookies="no"
 chan_name="TBN" ;;
 # 500)GOD TV (USA) 
 500) 
-#link=http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/master.m3u8
+link=http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=313000,RESOLUTION=320x180,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_282_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=313000,RESOLUTION=320x180,CODECS="avc1.77.30, mp4a.40.2"
@@ -6253,7 +6283,7 @@ chan_name="TBN" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1227000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1164_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1227000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
-link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1164_av-b.m3u8?sd=10&rebase=on"
+#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1164_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1856000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1728_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1856000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
@@ -6275,8 +6305,8 @@ chan_name="GOD TV (USA)" ;;
 # 501) Amazing Facts TV (Christian)
 501) 
 keyword="AFTV"
-#link=http://amazingfacts.live-s.cdn.bitgravity.com/cdn-live/_definst_/amazingfacts/live/feed01/master.m3u8
-link=http://amazingfacts.live-s.cdn.bitgravity.com/cdn-live/_definst_/amazingfacts/live/feed01/chunklist_w1134820847.m3u8
+link=http://amazingfacts.live-s.cdn.bitgravity.com/cdn-live/_definst_/amazingfacts/live/feed01/master.m3u8
+#link=http://amazingfacts.live-s.cdn.bitgravity.com/cdn-live/_definst_/amazingfacts/live/feed01/chunklist_w1134820847.m3u8
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/AmazingFacts/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"  
 use_cookies="no"
 chan_name="Amzaing Facts TV (Christian)" ;;
