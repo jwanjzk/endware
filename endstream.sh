@@ -7,8 +7,8 @@
 # Copyright: 2017-2019, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6332
-# Revision Date: February 16, 2019
+# Version: 0.6333
+# Revision Date: February 17, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6332"
-rev_date="16/02/2019"
+version="0.6333"
+rev_date="17/02/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -212,7 +212,7 @@ channel_matrix_0()
    echo "35)CBC CA            75)Euronews English 115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)TGRT Haber TR             275)TOLO NEWS AF"
    echo "36)CPAC 1 CA         76)Lake Tahoe TV    116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
    echo "37)Africa News       77)CBC News CA      117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
-   echo "38)-------------     78)Jupiter Broadcast118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
+   echo "38)Telesur English   78)Jupiter Broadcast118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
    echo "39)-------------     79)ET Finance IN    119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
    echo "40)-------------     80)-------------    120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
    echo "=========================================================================================================================================================="
@@ -225,7 +225,7 @@ channel_matrix_1()
    echo "||      INDIAN      ||     ASIA        || SOUTH ASIA / AFRICA||      EXTRA         ||    ENTERTAINMENT    ||    RELIGIOUS     ||      REL/ GOV      ||"
    echo "============================================================================================================================================================"
    echo "281)Aaj Tak PK       321)CCTV 4 China   361)DZMM ABS-CBN      401)RSBN Auburn USA    441)Music Choice Play  481)Vatican Media     521)Vatican Media Eng"    
-   echo "282)DIN News PK      322)ECB 51 TW      362)PTV Philippines   402)Seminole TV        442)M2O Music Channel  482)EWTN Americas     522)EnjoySt.Moritz " 
+   echo "282)DIN News PK      322)ECB 51 TW      362)PTV Philippines   402)Seminole TV        442)M2O Music Channel  482)EWTN Americas     522)Enjoy St. Moritz" 
    echo "283)Minhaj PK        323)ECB Finance TW 363)NET TV Jakarta ID 403)WVIT 30 Hartford   443)Radio Monte Carlo  483)EWTN Ireland      523)Quaran English"  
    echo "284)Barkat PK        324)TTV TW         364)NET LIVE ID       404)NBC 11 Bay Area    444)Virgin Radio       484)EWTN Africa       524)TTB Network"             
    echo "285)Geo News PK      325)CTV TW         365)NET Comedy ID     405)WXXV25             445)H!T Music          485)EWTN Asia         525)Vatican Deutsch"  
@@ -254,16 +254,16 @@ channel_matrix_1()
    echo "308)ETV AndhraPradesh348)YTN Sci KR     388)Joy News GH       428)CBC The National   468)RobotChicken       508)3ABN Francais     548)Oireachtas CR 3 IE"
    echo "309)News 18 Tamil    349)Channel 23 KR  389)ADOM GH           429)AP Top Stories     469)RetroTV            509)LLBN TV           549)Oireachtas CR 4 IE"
    echo "310)Jaya Plus        350)KBS World24 KR 390)Bukedde TV GH     430)Democracy Now      470)ET Live            510)Hillsong          550)CPAC Event 1"    
-   echo "311)TEZ TV           351)YTN 27 KR      391)EBC ET            431)Infowars RealNews  471)CBS Sports HQ      511)JUCE TV           551)CPAC Event 2"
-   echo "312)Dili Aaj Tak     352)CGNTV          392)Walf SN           432)Infowars WarRoom   472)RTE 1              512)Salt and Light    552)CPAC Event 3"
-   echo "313)Sagarmatha Nepal 353)YTV USA        393)EriTV ER          433)Infowars Event     473)RTE 2              513)Harbor Light      553)CPAC Event 4" 
-   echo "314)Derana LK        354)Atlanta AM790  394)SABC ZA           434)-----------        474)RTE Jr.            514)St. Mary's Coptic 554)CPAC Event 5"  
-   echo "315)Swarnavahini LK  355)ANN24 JP       395)Afro Worldview ZA 435)-----------        475)NASA TV Media      515)Word of God Greek 555)CPAC Event 6"
-   echo "316)Kaliagnar News   356)Sol!ve 24 JP   396)ITV ZA            436)-----------        476)NASA Public Educ   516)Shalom America    556)CPAC Event 7"
-   echo "317)--------------   357)KBS 24 JP      397)Parliament ZA     437)-----------        477)-----------        517)Shalom India      557)CPAC Event 8"
-   echo "318)--------------   358)QVC Japan      398)--------------    438)-----------        478)-----------        518)Powervision TV    558)CPAC Orig Lang"	 
-   echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)-----------        479)-----------        519)-------------     559)RUPTLY"
-   echo "320)--------------   360)BSC 24 2 JP    400)--------------    440)-----------        480)-----------        520)-------------     560)-------------"
+   echo "311)TEZ TV           351)YTN 27 KR      391)EBC ET            431)Infowars RealNews  471)CON TV             511)JUCE TV           551)CPAC Event 2"
+   echo "312)Dili Aaj Tak     352)CGNTV          392)Walf SN           432)Infowars WarRoom   472)Shout Factory TV   512)Salt and Light    552)CPAC Event 3"
+   echo "313)Sagarmatha Nepal 353)YTV USA        393)EriTV ER          433)Infowars Event     473)11 Sports          513)Harbor Light      553)CPAC Event 4" 
+   echo "314)Derana LK        354)Atlanta AM790  394)SABC ZA           434)-----------        474)Dizzy Kitten       514)St. Mary's Coptic 554)CPAC Event 5"  
+   echo "315)Swarnavahini LK  355)ANN24 JP       395)Afro Worldview ZA 435)-----------        475)CBS Sports HQ      515)Word of God Greek 555)CPAC Event 6"
+   echo "316)Kaliagnar News   356)Sol!ve 24 JP   396)ITV ZA            436)-----------        476)RTE 1              516)Shalom America    556)CPAC Event 7"
+   echo "317)--------------   357)KBS 24 JP      397)Parliament ZA     437)-----------        477)RTE 2              517)Shalom India      557)CPAC Event 8"
+   echo "318)--------------   358)QVC Japan      398)--------------    438)-----------        478)RTE Jr.            518)Powervision TV    558)CPAC Orig Lang"	 
+   echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)-----------        479)NASA TV Media      519)-------------     559)RUPTLY"
+   echo "320)--------------   360)BSC 24 2 JP    400)--------------    440)-----------        480)NASA Public Educ   520)-------------     560)-------------"
    echo "================================================================================================================================================================="
 }          
 #  
@@ -1287,7 +1287,23 @@ use_cookies="no"
 TAG="AFRICA_NEWS__"
 chan_name="Africa News English" ;;
 
-# 38)
+# 38) Telesur English
+38)
+
+if [ "$getlink" = 1 ]
+then
+link=https://d7g1ebft2592.cloudfront.net/mblivev3/hd/playlist.m3u8
+#link=https://d7g1ebft2592.cloudfront.net/mblivev3/480p/playlist.m3u8
+#link=https://d7g1ebft2592.cloudfront.net/mblivev3/360p/playlist.m3u8
+use_cookies="no"
+###method="Tor"
+fi
+####method="Tor"
+use_cookies="no"
+TAG="TELESUR_ENG___"
+chan_name="Telesur English" ;;
+
+
 # 39)
 # 40)
 
@@ -3031,8 +3047,12 @@ keyword="EN VIVO"
 
 if [ "$getlink" = 1 ]
 then
-link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/telesurtv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"   
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/user/telesurtv/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1 )"   
 # link=http://cdn2.telesur.ultrabase.net/livecf/telesurLive/master.m3u8
+link=https://d2ajt1gpdtnw25.cloudfront.net/mbliveMain/hd/playlist.m3u8
+#link=https://d2ajt1gpdtnw25.cloudfront.net/mbliveMain/480p/playlist.m3u8
+#link=https://d2ajt1gpdtnw25.cloudfront.net/mbliveMain/360p/playlist.m3u8
+
 fi
 use_cookies="no"
 chan_name="TeleSUR Venezuela" ;;
@@ -5899,6 +5919,8 @@ link=https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
 #link=https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=7326000,AVERAGE-BANDWIDTH=7326000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,FRAME-RATE=30.000,CLOSED-CAPTIONS=NONE
 #link=https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
+#link="https://www.twitch.tv/redbull"
+
 use_cookies="no"
 chan_name="RED BULL TV" ;; 
 # 461) STADIUM
@@ -5988,8 +6010,36 @@ link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_7.m3u8"
 use_cookies="no"
 chan_name="Entertainment Tonight ET Live";;
 
-# 471) CBS Sports Desktop
+# 471)CON TV
 471)
+link=https://www.twitch.tv/contv
+#####method="Tor"
+use_cookies="no"
+chan_name="CON TV";;
+
+# 472)Shout Factory TV
+472)
+link=https://www.twitch.tv/shoutfactorytv
+#####method="Tor"
+use_cookies="no"
+chan_name="Shout Factory TV";;
+
+# 473)Eleven Sports Next
+473)
+link=https://www.twitch.tv/elevensportsnext
+#####method="Tor"
+use_cookies="no"
+chan_name="Eleven Sports Next";;
+
+# 474)Dizzy Kitten
+474)
+link=https://www.twitch.tv/dizzykitten
+#####method="Tor"
+use_cookies="no"
+chan_name="Dizzy Kitten";;
+
+# 475) CBS Sports Desktop
+475)
 if [ "$getlink" = 1 ]
 then
 #link="https://sportshq-mediapackage-cedexis.cbsaavideo.com/out/v1/be87d7783e5c4270a5830ea5d1164850/desktop.m3u8"
@@ -6004,22 +6054,22 @@ use_cookies="no"
 TAG="CBS_SPORTS_HQ__"
 chan_name="CBS Sports HQ" ;;
 
-# 472) RTE 1
-472)
+# 476) RTE 1
+476)
 link=http://akamai.rasset.ie/hls-live/_definst_/rte1/rte1-720.m3u8
 #link=http://akamai.rasset.ie/hls-live/_definst_/rte1/rte1-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE 1 IE";;
-# 473) RTE 2
-473)
+# 477) RTE 2
+477)
 link=http://akamai.rasset.ie/hls-live/_definst_/rte2/rte2-720.m3u8
 #link=http://akamai.rasset.ie/hls-live/_definst_/rte2/rte2-576.m3u8
 #####method="Tor"
 use_cookies="no"
 chan_name="RTE 2 IE";;
-# 474) RTE Jr
-474)
+# 478) RTE Jr
+478)
 link=https://cdn.rasset.ie/hls-live/_definst_/rtejr/rtejr-720.m3u8
 #link=https://cdn.rasset.ie/hls-live/_definst_/rtejr/rtejr-576.m3u8
 #####method="Tor"
@@ -6183,11 +6233,11 @@ chan_name="KtO Catholique" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=854x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/index_500_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1264000,RESOLUTION=854x480,CODECS="avc1.77.30, mp4a.40.2"
-link="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/index_1200_av-p.m3u8?sd=10&rebase=on"
+#link="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/index_1200_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1264000,RESOLUTION=854x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/index_1200_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2064000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/index_2000_av-p.m3u8?sd=10&rebase=on"
+link="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/index_2000_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2064000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/index_2000_av-b.m3u8?sd=10&rebase=on"
 use_cookies="no"
@@ -6202,9 +6252,9 @@ chan_name="CBN" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=664000,RESOLUTION=854x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/index_500_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=664000,RESOLUTION=854x480,CODECS="avc1.77.30, mp4a.40.2"
-link="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/index_500_av-b.m3u8?sd=10&rebase=on"
+#link="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/index_500_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1264000,RESOLUTION=854x480,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/index_900_av-p.m3u8?sd=10&rebase=on"
+link="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/index_900_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1264000,RESOLUTION=854x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/index_900_av-b.m3u8?sd=10&rebase=on"
 use_cookies="no"
