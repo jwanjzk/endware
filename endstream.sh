@@ -7,8 +7,8 @@
 # Copyright: 2017-2019, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6333
-# Revision Date: February 17, 2019
+# Version: 0.6334
+# Revision Date: February 18, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
