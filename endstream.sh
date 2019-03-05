@@ -7,8 +7,8 @@
 # Copyright: 2017-2019, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6336
-# Revision Date: March 01, 2019
+# Version: 0.6337
+# Revision Date: March 04, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6336"
-rev_date="01/03/2019"
+version="0.6337"
+rev_date="04/03/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -207,13 +207,13 @@ channel_matrix_0()
    echo "30)FiOS1 HudsonValley70)BronxNet NY USA  110)Assemblee QC CA  150)TeleSUR VE       190)TPEANEP TV RU     230)HaberTurk TV              270)DidgahNew TV IR"    
    echo "31)FiOS1 New Jersey  71)CNN PH           111)Canal Savoir CA  151)Globovision VE   191)5 Live RU         231)Star TV TR                271)Aryen TV IR"
    echo "32)FIOS1 LongIsland  72)CNN Live USA     112)Gong Cinema      152)NTN24 VE         192)POCCNR 1 HD RU    232)CNN Turk TR               272)PTN PARS TV USA"
-   echo "33)Weather Nation    73)CNN HLN          113)GONG MAX         153)Conciencia VE    193)News 24 UA        233)KRT Kulture TR            273)Euronews Persian" 
+   echo "33)Weather Nation    73)NRA TV           113)GONG MAX         153)Conciencia VE    193)News 24 UA        233)KRT Kulture TR            273)Euronews Persian" 
    echo "34)Weather Channel   74)Fox News Talk    114)BX1 BE           154)VPItv VE         194)UA TV UA          234)La Legul TV TR            274)Ariana TV AF"  
    echo "35)VOA USA           75)CNBC             115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)TGRT Haber TR             275)TOLO NEWS AF"
-   echo "36)RT Documentary    76)Lake Tahoe TV    116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
-   echo "37)CGTN Documentary  77)CBC News CA      117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
-   echo "38)BYUTV USA         78)ET Live          118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
-   echo "39)CBC CA            79)---------------  119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
+   echo "36)RT Documentary    76)CBC News CA      116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TVNET Canali TR           276)------------"
+   echo "37)CGTN Documentary  77)ET Live          117)RTL FR           157)---------------  197)News 1 UA         237)Show TV TR                277)------------"
+   echo "38)BYUTV USA         78)Cheddar Big News 118)RFI FR           158)---------------  198)ZIK UA            238)Euronews Turk             278)------------"	
+   echo "39)CBC CA            79)Cheddar Finance  119)France Inter     159)---------------  199)Ukraine 5 UA      239)Top News Albania          279)------------"
    echo "40)CPAC 1 CA         80)Euronews English 120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
    echo "=========================================================================================================================================================="
 	
@@ -241,9 +241,9 @@ channel_matrix_1()
    echo "295)NTV Telugu       335)TLTV TW        375)--------------    415)Panama City        455)Fashion 1 TV ES    495)CBN               535)ABC News 8" 
    echo "296)ABN Telugu       336)Sinda TV       376)--------------    416)Pawleys Island     456)Jasmin TV USA      496)CBN News          536)ABC News 9  "
    echo "297)Vanitha TV       337)Cheng Sin TV   377)--------------    417)America Thinks     457)TYT USA            497)NRB               537)ABC News 10  "
-   echo "298)HMT Telugu       338)CTS 2 TW       378)Africa News       418)Bloomberg Europe   458)MLB Network        498)Church Channel    538)KY3 Springfield IL"	
-   echo "299)India TV IN      339)SJTV TW        379)Africa24          419)Bloomberg Asia     459)NFL Now            499)TBN               539)KNBC 4 News"
-   echo "300)Survana News     340)Da Li TW       380)SIKKA Afrique     420)HSN                460)RED BULL TV        500)God TV            540)EBS EU "  
+   echo "298)HMT Telugu       338)CTS 2 TW       378)Africa News       418)Bloomberg Europe   458)MLB Network        498)Trinity Channel   538)KY3 Springfield IL"	
+   echo "299)India TV IN      339)SJTV TW        379)Africa24          419)Bloomberg Asia     459)NFL Now            499)-------------     539)KNBC 4 News"
+   echo "300)Survana News     340)Da Li TW       380)SIKKA Afrique     420)HSN                460)RED BULL TV        500)-------------     540)EBS EU "  
    echo "301)i News Telugu    341)SDTV TW        381)Channels 24 NG    421)HSN 2              461)STADIUM            501)Amazing Facts     541)EBS Plus EU"
    echo "302)PTTV Tamil IN    342)FANS TV TW     382)TVC News NG       422)Bloomberg Australia462)Allkey Shop        502)It's Supernatural 542)UN Trustship"       
    echo "303)DD News          343)Hong Kong TV   383)KTN Kenya KE      423)Bloomberg USPoli   463)Sorgatronmedia     503)Shepherd's Chapel 543)UN EOSOC"  
@@ -257,12 +257,12 @@ channel_matrix_1()
    echo "311)TEZ TV           351)YTN 27 KR      391)EBC ET            431)Infowars RealNews  471)Shout Factory TV   511)JUCE TV           551)CPAC Event 2"
    echo "312)Dili Aaj Tak     352)CGNTV          392)Walf SN           432)Infowars WarRoom   472)11 Sports          512)Salt and Light    552)CPAC Event 3"
    echo "313)Sagarmatha Nepal 353)YTV USA        393)EriTV ER          433)Infowars Event     473)-------------      513)Harbor Light      553)CPAC Event 4" 
-   echo "314)Derana LK        354)Atlanta AM790  394)SABC ZA           434)-----------        474)CBS Sports HQ      514)St. Mary's Coptic 554)CPAC Event 5"  
-   echo "315)Swarnavahini LK  355)ANN24 JP       395)Afro Worldview ZA 435)-----------        475)RTE 1              515)Word of God Greek 555)CPAC Event 6"
+   echo "314)Derana LK        354)Atlanta AM790  394)SABC ZA           434)Lake Tahoe TV      474)CBS Sports HQ      514)St. Mary's Coptic 554)CPAC Event 5"  
+   echo "315)Swarnavahini LK  355)ANN24 JP       395)Afro Worldview ZA 435)HLN                475)RTE 1              515)Word of God Greek 555)CPAC Event 6"
    echo "316)Kaliagnar News   356)Sol!ve 24 JP   396)ITV ZA            436)-----------        476)RTE 2              516)Shalom America    556)CPAC Event 7"
    echo "317)--------------   357)KBS 24 JP      397)Parliament ZA     437)-----------        477)RTE Jr.            517)Shalom India      557)CPAC Event 8"
    echo "318)--------------   358)QVC Japan      398)--------------    438)-----------        478)NASA TV Media      518)Powervision TV    558)CPAC Orig Lang"	 
-   echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)-----------        479)NASA Public Educ   519)-------------     559)RUPTLY"
+   echo "319)--------------   359)BSC 24 1 JP    399)--------------    439)-----------        479)NASA Public Educ   519)-------------    559)RUPTLY"
    echo "320)--------------   360)BSC 24 2 JP    400)--------------    440)-----------        480)-------------      520)-------------     560)-------------"
    echo "================================================================================================================================================================="
 }          
@@ -434,6 +434,9 @@ link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8
 #link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/03.m3u8
 #link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/02.m3u8
 #link=http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/01.m3u8
+
+# link="http://d59pscns5ugc8.cloudfront.net/cdhls/skynewsamericas/1013/skynewsamericas_cdhls.m3u8"
+
 fi
 #method="Tor"
 #method="Proxychains"
@@ -965,6 +968,8 @@ link=https://cdnapi.kaltura.com/p/2216081/sp/221608100/playManifest/entryId/1_f1
 #link=https://cdnapi.kaltura.com/p/2216081/sp/221608100/playManifest/entryId/1_f19eeulz/format/applehttp/protocol/http/uiConfId/28428751/index_218.m3u8
 #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,LANGUAGE="eng",URI="index_cc.m3u8"
 
+# link=https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
+
 # "https://www.newsmaxtv.com/"
 # link=https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 #link="http://ooyalahd2-f.akamaihd.net/i/newsmax02_delivery@119568/master.m3u8"
@@ -998,20 +1003,45 @@ chan_name="Free Speech TV" ;;
 
 if [ "$getlink" = 1 ]
 then
+
+  rnum=$( expr $( head -c 2 /dev/urandom | od -A n -i ) % 3 ) 
+  case $rnum in 
+  0) 
+  #link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=866304,RESOLUTION=640x360
+  #link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b866304.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=1155072,RESOLUTION=854x480
+  #link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b1155072.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=2244608,RESOLUTION=1280x720
+  link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b2244608.m3u8"
+  ;;
+  1)
+  #link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=866304,RESOLUTION=640x360
+  #link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist_b866304.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=1155072,RESOLUTION=854x480
+  #link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist_b1155072.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=2244608,RESOLUTION=1280x720
+  link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist_b2244608.m3u8" 
+  ;;
+  2)
+  #link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=866304,RESOLUTION=640x360
+  #link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist_b866304.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=1155072,RESOLUTION=854x480
+  #link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist_b1155072.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=2244608,RESOLUTION=1280x720
+  link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist_b2244608.m3u8" 
+  ;;  
+  esac
+  
 #link=https://infowarslive-lh.akamaihd.net/i/infowarsevent_1@366809/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=864000,RESOLUTION=720x406,CODECS="avc1.77.30, mp4a.40.2"
 #link="https://infowarslive-lh.akamaihd.net/i/infowarsevent_1@366809/index_800_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=64000,CODECS="mp4a.40.2"
 #link="https://infowarslive-lh.akamaihd.net/i/infowarsevent_1@366809/index_800_a-p.m3u8?sd=10&rebase=on"
-
-#link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist.m3u8"
-#EXT-X-STREAM-INF:BANDWIDTH=866304,RESOLUTION=640x360
-#link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b866304.m3u8"
-#EXT-X-STREAM-INF:BANDWIDTH=1155072,RESOLUTION=854x480
-#link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b1155072.m3u8"
-#EXT-X-STREAM-INF:BANDWIDTH=2244608,RESOLUTION=1280x720
-link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b2244608.m3u8"
-
+  
+  
 fi
 # method="Tor"
 use_cookies="no"
@@ -1109,8 +1139,24 @@ use_cookies="no"
 TAG="News12_LI_"
 chan_name="News 12 Long Island" ;;
 
-# 30) FiOS1 News Lower Hudson Valley
+# 30) FiOS1 News Long Island
 30) 
+
+if [ "$getlink" = 1 ]
+then
+#link=https://cdnapisec.kaltura.com/p/424341/sp/42434100/playManifest/entryId/1_b159ee77/format/applehttp/protocol/https/uiConfId/39790741/a.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
+link="https://urtmpkal-f.akamaihd.net/i/1b159ee77_1@192104/index_1_av-p.m3u8?sd=10&rebase=on"
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
+#link="https://urtmpkal-f.akamaihd.net/i/1b159ee77_1@192104/index_1_av-b.m3u8?sd=10&rebase=on"
+fi
+# method="Tor"
+use_cookies="no"
+TAG="FIOS1LONGISLD__"
+chan_name="FiOS1 News Long Island" ;;
+
+# 31) FiOS1 News Lower Hudson Valley
+31) 
 
 if [ "$getlink" = 1 ]
 then
@@ -1133,8 +1179,8 @@ use_cookies="no"
 TAG="FIOS1_HUD_"
 chan_name="FiOS1 News Lower Hudson Valley" ;;
 
-# 31) FiOS1 News New Jersey 
-31)
+# 32) FiOS1 News New Jersey 
+32)
 
 if [ "$getlink" = 1 ]
 then
@@ -1150,21 +1196,6 @@ use_cookies="no"
 TAG="FIOS1_NEWJERSEY"
 chan_name="FiOS1 News New Jersey" ;;
 
-# 32) FiOS1 News Long Island
-32) 
-
-if [ "$getlink" = 1 ]
-then
-#link=https://cdnapisec.kaltura.com/p/424341/sp/42434100/playManifest/entryId/1_b159ee77/format/applehttp/protocol/https/uiConfId/39790741/a.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
-link="https://urtmpkal-f.akamaihd.net/i/1b159ee77_1@192104/index_1_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2096000,RESOLUTION=1920x1080,CODECS="avc1.66.30, mp4a.40.34"
-#link="https://urtmpkal-f.akamaihd.net/i/1b159ee77_1@192104/index_1_av-b.m3u8?sd=10&rebase=on"
-fi
-# method="Tor"
-use_cookies="no"
-TAG="FIOS1LONGISLD__"
-chan_name="FiOS1 News Long Island" ;;
 
 #################### NATIONAL / LOCAL Weather #####################################################
 # 33) Weather Nation
@@ -1737,6 +1768,8 @@ then
 ####Twitch
 link=https://www.twitch.tv/twit 
 
+# link="http://iphone-streaming.ustream.tv/uhls/1524/streams/live/iphone/playlist.m3u8"
+
 #USTREAM
 # https://r46932538-1-1524-channel-wss-live.ums.ustream.tv/1/ustream
 # link=https://www.ustream.tv/channel/1524
@@ -2000,16 +2033,26 @@ use_cookies="no"
 ####method="Tor"
 TAG="CNN_LIVE___"
 chan_name="CNN Live" ;;  
-# 73) CNN HLN Headline News USA
+# 73) NRA TV USA
 73)
 if [ "$getlink" = 1 ]
 then
-link="https://1161275585.rsc.cdn77.org/LS-ATL-54548-7/tracks-v4a1/mono.m3u8"
+#link="https://stream1.nra.tv/nratv/ngrp:nratvall/playlist.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1249433,CODECS="avc1.77.32,mp4a.40.2",RESOLUTION=640x360
+#link="https://stream1.nra.tv/nratv/ngrp:nratvall/chunklist_b1144576.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=6471884,CODECS="avc1.77.50,mp4a.40.2",RESOLUTION=1920x1080
+link="https://stream1.nra.tv/nratv/ngrp:nratvall/chunklist_b5895168.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=3011584,CODECS="avc1.77.41,mp4a.40.2",RESOLUTION=1920x1080
+#link="https://stream1.nra.tv/nratv/ngrp:nratvall/chunklist_b2749440.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1858150,CODECS="avc1.77.40,mp4a.40.2",RESOLUTION=1280x720
+#link="https://stream1.nra.tv/nratv/ngrp:nratvall/chunklist_b1700864.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=627200,CODECS="avc1.66.30,mp4a.40.2",RESOLUTION=480x270
+#link="https://stream1.nra.tv/nratv/ngrp:nratvall/chunklist_b576000.m3u8"
 fi
 #method="Tor"
 use_cookies="no"
-TAG="CNN_HLN____"
-chan_name="CNN HLN USA";; 
+TAG="NRA_TV_____"
+chan_name="NRA TV USA";; 
 
 ######################## FOX NEWS USA ########################################################
 # 74) Fox News Talk
@@ -2046,19 +2089,8 @@ use_cookies="no"
 TAG="CNBC______"
 chan_name="CNBC USA";; 
 
-# 76) Lake Tahoe TV
+# 76) CBC News Network Canada
 76)
-if [ "$getlink" = 1 ]
-then
-#link="https://livestream.com/accounts/21822229/events/6450069"
-link="$( curl "https://livestream.com/accounts/21822229/events/6450069"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
-fi
-use_cookies="no"
-TAG="LAKE_TAHOE____"
-chan_name="Lake Tahoe TV" ;;
-
-# 77) CBC News Network Canada
-77)
 if [ "$getlink" = 1 ]
 then
 link="https://1359547862.rsc.cdn77.org/LS-ATL-54548-8/tracks-v4a1/mono.m3u8"
@@ -2069,8 +2101,8 @@ TAG="CBCNEWSNET"
 chan_name="CBC News Network Canada";; 
 
 ##################### CELEB NEWS ####################################
-# 78)Entertainment Tonight ET Live
-78)
+# 77)Entertainment Tonight ET Live
+77)
 #link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest.m3u8"
 #EXT-X-STREAM-INF:BANDWIDTH=511336,RESOLUTION=640x360,CODECS="avc1.4D401E,mp4a.40.2"
 #link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_1.m3u8"
@@ -2090,8 +2122,19 @@ link="https://etlive-mediapackage-fastly.cbsaavideo.com/dvr/manifest_7.m3u8"
 use_cookies="no"
 chan_name="Entertainment Tonight ET Live";;
 
-# 79)
+# 78)Cheddar Big News
+78)
+link="https://live.chdrstatic.com/cbn/index.m3u8"
+#####method="Tor"
+use_cookies="no"
+chan_name="Cheddar Big News";;
 
+# 79)Cheddar Finance
+79)
+link="https://live.chdrstatic.com/cheddar/index.m3u8"
+#####method="Tor"
+use_cookies="no"
+chan_name="Cheddar Finance";;
 
 # 80) EuroNews English
 80) 
@@ -5754,22 +5797,41 @@ use_cookies="no"
 chan_name="Democracy Now Headlines" ;;   
 
 ########################### INFOWARS EXTRAS #######################################################
-# 431)Infowars RealNews
+# 431)Infowars RealNews David Knight
 431)
 #link=https://infowarslive-lh.akamaihd.net/i/RealNews_1@561924/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=955000,RESOLUTION=960x540,CODECS="avc1.77.30, mp4a.40.2"
-link="https://infowarslive-lh.akamaihd.net/i/RealNews_1@561924/index_800_av-p.m3u8?sd=10&rebase=on"
+#link="https://infowarslive-lh.akamaihd.net/i/RealNews_1@561924/index_800_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=125000,CODECS="mp4a.40.2"
 #link="https://infowarslive-lh.akamaihd.net/i/RealNews_1@561924/index_800_a-p.m3u8?sd=10&rebase=on"
+
+#link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=866304,RESOLUTION=640x360
+#link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist_b866304.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1155072,RESOLUTION=854x480
+#link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist_b1155072.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=2244608,RESOLUTION=1280x720
+link="https://infostream.secure.footprint.net/hls-live/infostream2-infostream2/_definst_/chunklist_b2244608.m3u8" 
+
+
+
 use_cookies="no"
 chan_name="Infowars RealNews" ;;
-# 432)Infowars WarRoom 
+# 432)Infowars WarRoom Owen Shroyer
 432)
 #link=https://infowarslive-lh.akamaihd.net/i/WarRoom_1@561925/master.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=955000,RESOLUTION=960x540,CODECS="avc1.77.30, mp4a.40.2"
-link="https://infowarslive-lh.akamaihd.net/i/WarRoom_1@561925/index_800_av-p.m3u8?sd=10&rebase=on"
+#link="https://infowarslive-lh.akamaihd.net/i/WarRoom_1@561925/index_800_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=125000,CODECS="mp4a.40.2"
 #link="https://infowarslive-lh.akamaihd.net/i/WarRoom_1@561925/index_800_a-p.m3u8?sd=10&rebase=on"
+
+#link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=866304,RESOLUTION=640x360
+#link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b866304.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1155072,RESOLUTION=854x480
+#link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b1155072.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=2244608,RESOLUTION=1280x720
+link="https://infostream.secure.footprint.net/hls-live/infostream3-infostream3/_definst_/chunklist_b2244608.m3u8" 
 use_cookies="no"
 chan_name="Infowars WarRoom " ;;
 # 433)Infowars Podcast
@@ -5779,17 +5841,46 @@ keyword="Infowars"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=864000,RESOLUTION=720x406,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://infowarslive-lh.akamaihd.net/i/infowarslivestream_1@353459/index_800_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=928000,RESOLUTION=720x406,CODECS="avc1.77.30, mp4a.40.2"
-link="http://infowarslive-lh.akamaihd.net/i/infowarslivestream_1@353459/index_800_av-b.m3u8?sd=10&rebase=on"
+#link="http://infowarslive-lh.akamaihd.net/i/infowarslivestream_1@353459/index_800_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=64000,CODECS="mp4a.40.2"
 #link="http://infowarslive-lh.akamaihd.net/i/infowarslivestream_1@353459/index_800_a-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=128000,CODECS="mp4a.40.2"
 #link="http://infowarslive-lh.akamaihd.net/i/infowarslivestream_1@353459/index_800_a-b.m3u8?sd=10&rebase=on"
-
 #link=http://www.infowars.com/show
+
+#link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=866304,RESOLUTION=640x360
+#link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist_b866304.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1155072,RESOLUTION=854x480
+#link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist_b1155072.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=2244608,RESOLUTION=1280x720
+link="https://infostream.secure.footprint.net/hls-live/infostream-infostream/_definst_/chunklist_b2244608.m3u8" 
+
 #link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCUJNY4nfdomMppNDZNZc4nA/videos?&view=2" |grep "watch?v=" | head -n 1 | cut -d = -f 4 | cut -d \" -f 1)" 
 ####method="Tor"
 use_cookies="no"
 chan_name="Infowars Podcast" ;; 
+
+# 434) Lake Tahoe TV
+434)
+if [ "$getlink" = 1 ]
+then
+#link="https://livestream.com/accounts/21822229/events/6450069"
+link="$( curl "https://livestream.com/accounts/21822229/events/6450069"| grep "secure_play_url" | awk ' BEGIN { FS="\"" } { for (i=1 ; i<=NF ; i++ )  if ( $i ~ /secure_m3u8_url/ && $(i+2) ~ /broadcasts/  )  print $(i+2) } ' | cut -d \? -f 1  | head -n 1  )"
+fi
+use_cookies="no"
+TAG="LAKE_TAHOE____"
+chan_name="Lake Tahoe TV" ;;
+
+# 435) CNN HLN Headline News USA
+435)
+link="https://1161275585.rsc.cdn77.org/LS-ATL-54548-7/tracks-v4a1/mono.m3u8"
+#method="Tor"
+use_cookies="no"
+chan_name="CNN HLN USA";; 
+
+
+
 #####################################################################################################
 
 # 440)
@@ -6091,7 +6182,7 @@ link=https://www.twitch.tv/elevensportsnext
 use_cookies="no"
 chan_name="Eleven Sports Next";;
 
-# 473)
+# 473
 
 # 474) CBS Sports Desktop
 474)
@@ -6320,93 +6411,19 @@ chan_name="CBN News" ;;
 link=http://uni6rtmp.tulix.tv/nrbnetwork/myStream.sdp/chunklist_w1520783238.m3u8
 use_cookies="no"
 chan_name="NRB Network" ;;
-# 498) The Church Channel
+# 498) Trinity Channel
 498)
-link=http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/master.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=192x144,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_282_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=192x144,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_282_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=384x288,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_564_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=384x288,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_564_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1164000,RESOLUTION=480x360,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1164_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1164000,RESOLUTION=480x360,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1164_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=640x480,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1728_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=640x480,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_1728_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=32000,CODECS="mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_282_a-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=32000,CODECS="mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN02_delivery@186240/index_282_a-b.m3u8?sd=10&rebase=on"
+link=http://rtmp1.abnsat.com/hls/trinity.m3u8
 use_cookies="no"
-chan_name="The Church Channel" ;;
-# 499) TBN
-499)
-link=http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/master.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=256x144,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_282_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=282000,RESOLUTION=256x144,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_282_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=512x288,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_564_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=564000,RESOLUTION=512x288,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_564_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1164000,RESOLUTION=640x360,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_1164_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1164000,RESOLUTION=640x360,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_1164_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=848x480,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_1728_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728000,RESOLUTION=848x480,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_1728_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2528000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_2528_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2528000,RESOLUTION=1280x720,CODECS="avc1.66.30, mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_2528_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=32000,CODECS="mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_282_a-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=32000,CODECS="mp4a.40.2"
-#link="http://acaooyalahd2-lh.akamaihd.net/i/TBN01_delivery@186239/index_282_a-b.m3u8?sd=10&rebase=on"
-use_cookies="no"
-chan_name="TBN" ;;
-# 500)GOD TV (USA) 
-500) 
-link=http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/master.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=313000,RESOLUTION=320x180,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_282_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=313000,RESOLUTION=320x180,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_282_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=563000,RESOLUTION=512x288,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_564_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=563000,RESOLUTION=512x288,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_564_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1227000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1164_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1227000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1164_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1856000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1728_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1856000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_1728_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2656000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_2528_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2656000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_2528_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3456000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_3200_av-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3456000,RESOLUTION=1024x576,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_3200_av-b.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=64000,CODECS="mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_282_a-p.m3u8?sd=10&rebase=on"
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=64000,CODECS="mp4a.40.2"
-#link="http://ooyalahd2-f.akamaihd.net/i/godtv01_delivery@17341/index_282_a-b.m3u8?sd=10&rebase=on"
-use_cookies="no"
-chan_name="GOD TV (USA)" ;;
+chan_name="Trinity Channel" ;;
+
+
+
+
+
+
+
+
 # 501) Amazing Facts TV (Christian)
 501) 
 keyword="AFTV"
@@ -6562,7 +6579,12 @@ keyword="POWERVISION"
 link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UCzxfpzSF7mz8j7bNIXyZWmA/videos?&view=2" | grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)" 
 use_cookies="no"
 chan_name="Powervision TV" ;; 
-# 519)
+
+
+
+
+
+
 # 520)
 ###################  MIXER    ###################
 # 521) Vatican Media English
