@@ -191,22 +191,22 @@ channel_matrix_0()
    echo "14)TRT World TK      54)QVC 3 USA        94)France 3          134)TV5 AR           174)Musig24 TV CH     214)50 Canale Pisa IT         254)Belqees TV YE"
    echo "15)Al Jazeera        55)QVC 1 Raw        95)ARTE Francais     135)KZO AR           175)TV OOST BE        215)Teleliberta Piacenza IT   255)Sky Arabic AE"  
    echo "16)Press TV Iran     56)TWIT USA         96)France O          136)Canal 2 AR       176)AT5 NL            216)ONE TV NBC 112 Milan IT   256)Alghad EG"
-   echo "17)India Today       57)Jupiter Broadcast97)Bidtween FR       137)Canal 6 AR       177)Euronews Russian  217)Euronews IT               257)Extra News EG"
-   echo "18)CGTN Beijing      58)TVW Washington   98)Azur TV Nice FR   138)Canal 7 AR       178)POCCNR 24 RU      218)ONE MT                    258)CBC Sofra EG"	
-   echo "19)NHK World JP      59)DC Network       99)IL TV FR          139)Canal 13 AR      179)RBC TV RU         219)Z1 Televizija HR          259)CBC Drama EG"
-   echo "20)Arirang KR        60)DC Capitol       100)BFM Paris FR     140)CN23 AR          180)CGTN Russian      220)RTV Posavina HR           260)DMC Live EG"  
-   echo "21)News Asia SG      61)DC Knowledge     101)Alsace 20 FR     141)Telemax AR       181)Vesti FM RU       221)OsjeckaTV HR              261)Al-Fallujah IQ"
-   echo "22)ABC AU            62)Southeastern TV  102)Mosaik TV FR     142)Vorterix AR      182)Current Time VOA  222)Tomix Wein HR             262)AFAQ TV IQ"       
-   echo "23)Arise News NG     63)Texas State TV   103)QVC Francais     143)TV Publica AR    183)RTR Planeta RU    223)Euronews HU               263)Karbarla IQ"  
-   echo "24)Africa News       64)MNN 5 NY USA     104)8 Monte Blanc FR 144)Bolivia TV BO    184)Perviy RU         224)SKY Folk MK               264)Euronews Arabic"
-   echo "25)TeleSUR Eng VE    65)MNN 1 NY USA     105)TV7 Bordeaux FR  145)Cosmovision TV BO185)Music Box RU      225)Star Lamia GR             265)ANB Sat USA" 
-   echo "26)NEWSMAX USA       66)MNN 2 NY USA     106)RTS DEUX CH      146)Mega CL          186)MOCKBA 24 RU      226)Action 24 GR              266)Suryoyo Sat SE"
-   echo "27)Free Speech TV    67)MNN 3 NY USA     107)LCP FR           147)CNN CL           187)1TV HD RU         227)Euronews GR               267)Safeer TV UK"
-   echo "28)Infowars Live     68)MNN 4 NY USA     108)Public Senate FR 148)Telemedeline CO  188)Planeta 4 RU      228)TRT Haber TR              268)BBC Persian"
-   echo "29)Infowars RealNews 69)BronxNet NY USA  109)CPAC 1 CA        149)Teleantioquia CO 189)Planeta 6 RU      229)NTV TR                    269)Iran Aryaee"
-   echo "30)Infowars WarRoom  70)FiOS1 HudsonVal  110)Assemblee QC CA  150)TeleSUR VE       190)TPEANEP TV RU     230)HaberTurk TV              270)DidgahNew TV IR"    
-   echo "31)United Nations TV 71)FiOS1 New Jersey 111)Canal Savoir CA  151)Globovision VE   191)5 Live RU         231)Star TV TR                271)Aryen TV IR"
-   echo "32)WGN 9 Chicago     72)FIOS1 LongIsland 112)Gong Cinema      152)NTN24 VE         192)POCCNR 1 HD RU    232)CNN Turk TR               272)PTN PARS TV USA"
+   echo "17)India Today       57)Jupiter Broadcast97)Bidtween FR       137)Canal 6 AR       177)TRWAM PL          217)Euronews IT               257)Extra News EG"
+   echo "18)CGTN Beijing      58)TVW Washington   98)Azur TV Nice FR   138)Canal 7 AR       178)Euronews Russian  218)ONE MT                    258)CBC Sofra EG"	
+   echo "19)NHK World JP      59)DC Network       99)IL TV FR          139)Canal 13 AR      179)POCCNR 24 RU      219)Z1 Televizija HR          259)CBC Drama EG"
+   echo "20)Arirang KR        60)DC Capitol       100)BFM Paris FR     140)CN23 AR          180)RBC TV RU         220)RTV Posavina HR           260)DMC Live EG"  
+   echo "21)News Asia SG      61)DC Knowledge     101)Alsace 20 FR     141)Telemax AR       181)CGTN Russian      221)OsjeckaTV HR              261)Al-Fallujah IQ"
+   echo "22)ABC AU            62)Southeastern TV  102)Mosaik TV FR     142)Vorterix AR      182)Vesti FM RU       222)Tomix Wein HR             262)AFAQ TV IQ"       
+   echo "23)Arise News NG     63)Texas State TV   103)QVC Francais     143)TV Publica AR    183)Current Time VOA  223)Euronews HU               263)Karbarla IQ"  
+   echo "24)Africa News       64)MNN 5 NY USA     104)8 Monte Blanc FR 144)Bolivia TV BO    184)RTR Planeta RU    224)SKY Folk MK               264)Euronews Arabic"
+   echo "25)TeleSUR Eng VE    65)MNN 1 NY USA     105)TV7 Bordeaux FR  145)Cosmovision TV BO185)Perviy RU         225)Star Lamia GR             265)ANB Sat USA" 
+   echo "26)NEWSMAX USA       66)MNN 2 NY USA     106)RTS DEUX CH      146)Mega CL          186)Music Box RU      226)Action 24 GR              266)Suryoyo Sat SE"
+   echo "27)Free Speech TV    67)MNN 3 NY USA     107)LCP FR           147)CNN CL           187)MOCKBA 24 RU      227)Euronews GR               267)Safeer TV UK"
+   echo "28)Infowars Live     68)MNN 4 NY USA     108)Public Senate FR 148)Telemedeline CO  188)1TV HD RU         228)TRT Haber TR              268)BBC Persian"
+   echo "29)Infowars RealNews 69)BronxNet NY USA  109)CPAC 1 CA        149)Teleantioquia CO 189)5 Live RU         229)NTV TR                    269)Iran Aryaee"
+   echo "30)Infowars WarRoom  70)FiOS1 HudsonVal  110)Assemblee QC CA  150)TeleSUR VE       190)POCCNR 1 HD RU    230)HaberTurk TV              270)DidgahNew TV IR"    
+   echo "31)United Nations TV 71)FiOS1 New Jersey 111)Canal Savoir CA  151)Globovision VE   191)-------------     231)Star TV TR                271)Aryen TV IR"
+   echo "32)WGN 9 Chicago     72)FIOS1 LongIsland 112)Gong Cinema      152)NTN24 VE         192)-------------     232)CNN Turk TR               272)PTN PARS TV USA"
    echo "33)Weather Nation    73)News12 Brooklyn  113)GONG MAX         153)Conciencia VE    193)News 24 UA        233)KRT Kulture TR            273)Euronews Persian" 
    echo "34)Weather Channel   74)News12 LongIsland114)BX1 BE           154)VPItv VE         194)UA TV UA          234)La Legul TV TR            274)Ariana TV AF"  
    echo "35)VOA USA           75)NRA TV           115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)TGRT Haber TR             275)TOLO NEWS AF"
@@ -746,13 +746,13 @@ then
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=725000,RESOLUTION=852x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_480p_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=846000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
-link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-b.m3u8?sd=10&rebase=on"
+#link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=664000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
 #link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_360p_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=818000,RESOLUTION=852x480,CODECS="avc1.77.30, mp4a.40.2"
 #link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_480p_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1928000,RESOLUTION=1280x720,CODECS="avc1.77.30, mp4a.40.2"
-#link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on"
+link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3128000,RESOLUTION=1920x1080,CODECS="avc1.77.30, mp4a.40.2"
 #link="https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=627000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
@@ -862,8 +862,8 @@ chan_name="CGTN China English" ;;
 19)
 if [ "$getlink" = 1 ]
 then
-link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_2100.m3u8"
-#link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_1180.m3u8"
+#link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_2100.m3u8"
+link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_1180.m3u8"
 #link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_900.m3u8"
 #link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_600.m3u8"
 #link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_400.m3u8"
@@ -877,7 +877,6 @@ link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index
 #link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp/index_400.m3u8"
 #link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp/index_200.m3u8"
 #link="https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp/index_100.m3u8"
-
 
 fi
 ###method="Tor"
@@ -1632,11 +1631,11 @@ then
 #link=https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8
 
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=992000,RESOLUTION=848x480,CODECS="avc1.640029, mp4a.40.2"
-#link="https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_2_av-p.m3u8?sd=10&rebase=on"
+link="https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_2_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2200000,RESOLUTION=1280x720,CODECS="avc1.640029, mp4a.40.2"
 #link="https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_2_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2200000,RESOLUTION=1280x720,CODECS="avc1.640029, mp4a.40.2"
-link="https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_1_av-p.m3u8?sd=10&rebase=on"
+#link="https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_1_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1428000,RESOLUTION=848x480,CODECS="avc1.640029, mp4a.40.2"
 #link="https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/index_1_av-b.m3u8?sd=10&rebase=on"
 
@@ -3561,9 +3560,25 @@ fi
 use_cookies="no"
 chan_name="AT5 TV NETHERLANDS" ;;
 #######################   EASTERN EUROPE ############################################
-############### RUSSIAN ################################
-# 177)  Euronews Russian
+
+######################## POLAND #################################
+# 177) TRWAM Poland 
 177)
+#link=http://trwamtv.live.e55-po.insyscd.net/trwamtv2.smil/chunklist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=950000,RESOLUTION=960x540
+link=https://trwamtv.live.e55-po.insyscd.net/trwamtv2.smil/chunklist_b950000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=500000,RESOLUTION=640x360
+#link=http://trwamtv.live.e55-po.insyscd.net/trwamtv2.smil/chunklist_b500000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=250000,RESOLUTION=320x180
+#link=http://trwamtv.live.e55-po.insyscd.net/trwamtv2.smil/chunklist_b250000.m3u8
+use_cookies="no"
+chan_name="TRWAM TV 2 Poland" ;;
+
+
+
+############### RUSSIAN ################################
+# 178)  Euronews Russian
+178)
 #method="Tor"
 if [ "$getlink" = 1 ]
 then
@@ -3597,8 +3612,8 @@ link=http://evronovosti.mediacdn.ru/sr1/evronovosti/playlist_2m.m3u8
 fi
 use_cookies="no"
 chan_name="Euronews Russian" ;;
-# 178) Россия 24
-178) 
+# 179) Россия 24
+179) 
 keyword="24"
 if [ "$getlink" = 1 ]
 then
@@ -3608,8 +3623,8 @@ link=https://live.russia.tv/index/index/channel_id/3
 fi
 use_cookies="no"
 chan_name="POCCNR 24 Russia" ;;
-# 179) RBC TV RUSSIA
-179)
+# 180) RBC TV RUSSIA
+180)
 if [ "$getlink" = 1 ]
 then
 link=http://online.video.rbc.ru/online/rbctv_480p/index.m3u8
@@ -3617,8 +3632,8 @@ link=http://online.video.rbc.ru/online/rbctv_480p/index.m3u8
 fi
 use_cookies="no"
 chan_name="RBC TV Russia" ;;
-# 180) CGTN Russian
-180)
+# 181) CGTN Russian
+181)
 if [ "$getlink" = 1 ]
 then
 #link=https://live.cgtn.com/cctv-r.m3u8
@@ -3631,8 +3646,8 @@ link=https://liveru.cgtn.com/500r/prog_index.m3u8
 fi
 use_cookies="no"
 chan_name="CGTN Russian" ;;
-# 181) Vesti FM Russia
-181) 
+# 182) Vesti FM Russia
+182) 
 keyword="Вести ФМ"
 if [ "$getlink" = 1 ]
 then
@@ -3641,8 +3656,8 @@ link=https://live.russia.tv/index/index/channel_id/199
 fi
 use_cookies="no"
 chan_name="Vesti FM Russia" ;;
-# 182)  Current Time VOA
-182)
+# 183)  Current Time VOA
+183)
 keyword="НАСТОЯЩЕЕ ВРЕМЯ"
 if [ "$getlink" = 1 ]
 then
@@ -3651,8 +3666,8 @@ link=https://www.filmon.com/tv/current-time-tv
 fi
 use_cookies="yes"
 chan_name="Current Time VOA" ;;
-# 183) RTR Planeta
-183)
+# 184) RTR Planeta
+184)
 if [ "$getlink" = 1 ]
 then
 link=https://live.russia.tv/index/index/channel_id/82
@@ -3660,24 +3675,24 @@ link=https://live.russia.tv/index/index/channel_id/82
 fi
 use_cookies="no"
 chan_name="RTR Planeta" ;;
-# 184) Perviy Kanal Europa
-184)
+# 185) Perviy Kanal Europa
+185)
 if [ "$getlink" = 1 ]
 then
 link=https://www.filmon.com/tv/perviy-kanal-europa
 fi
 use_cookies="yes"
 chan_name="Perviy Kanal Europa" ;;
-# 185) Music Box Russia
-185)
+# 186) Music Box Russia
+186)
 if [ "$getlink" = 1 ]
 then
 link=https://www.filmon.com/tv/music-box-russia
 fi
 use_cookies="yes"
 chan_name="Music Box Russia" ;;
-# 186) MOSCKVA 24 RU
-186)
+# 187) MOSCKVA 24 RU
+187)
 if [ "$getlink" = 1 ]
 then
 link=https://live.russia.tv/index/index/channel_id/76
@@ -3686,8 +3701,8 @@ fi
 #method="Tor"
 use_cookies="no"
 chan_name="MOSCKVA 24 RU" ;; 
-# 187) 1TV HD RU
-187)
+# 188) 1TV HD RU
+188)
 if [ "$getlink" = 1 ]
 then
 link=https://edge1.1internet.tv/dash-live11/streams/1tv/1tvdash.mpd
@@ -3696,35 +3711,8 @@ fi
 # method="Tor"
 use_cookies="no"
 chan_name="1TV HD RU" ;; 
-# 188) Planeta Channel 4 Russia
-188)
-if [ "$getlink" = 1 ]
-then
-link=http://wse.planeta-online.tv:1935/live/channel_4/chunklist.m3u8
-fi
-# method="Tor"
-use_cookies="no"
-chan_name="Planeta Channel 4 Russia" ;;
-# 189) Planeta Channel 6 Russia
+# 189) 5 RU
 189)
-if [ "$getlink" = 1 ]
-then
-link=http://wse.planeta-online.tv:1935/live/channel_6/chunklist.m3u8
-fi
-# method="Tor"
-use_cookies="no"
-chan_name="Planeta Channel 6 Russia" ;;
-# 190) ТВ-ТРЕЙЛЕР Russia
-190)
-if [ "$getlink" = 1 ]
-then
-link=http://wse.planeta-online.tv:1935/live/channel_5/chunklist.m3u8
-fi
-# method="Tor"
-use_cookies="no"
-chan_name="TPEYNEP TV RU" ;;
-# 191) 5 RU
-191)
 keyword="Пятого канала"
 if [ "$getlink" = 1 ]
 then
@@ -3733,8 +3721,8 @@ link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/c
 fi
 use_cookies="no"
 chan_name="5 Live RU" ;;
-# 192) POCCNR 1 HD RU
-192)
+# 190) POCCNR 1 HD RU
+190)
 if [ "$getlink" = 1 ]
 then
 #link=http://live.russia.tv/index/index/channel_id/86
@@ -6327,13 +6315,13 @@ chan_name="EWTN Deutsch" ;;
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=364000,RESOLUTION=320x178,CODECS="avc1.66.30, mp4a.40.2"
 #link="http://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/index_300_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=896000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
-link="http://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/index_800_av-p.m3u8?sd=10&rebase=on"
+#link="http://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/index_800_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=896000,RESOLUTION=640x360,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/index_800_av-b.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1328000,RESOLUTION=720x404,CODECS="avc1.77.30, mp4a.40.2"
 #link="http://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/index_1200_av-p.m3u8?sd=10&rebase=on"
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1328000,RESOLUTION=720x404,CODECS="avc1.77.30, mp4a.40.2"
-#link="http://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/index_1200_av-b.m3u8?sd=10&rebase=on"
+link="http://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/index_1200_av-b.m3u8?sd=10&rebase=on"
 use_cookies="no"
 chan_name="KtO Catholique" ;;
 # 495) CBN
@@ -6382,10 +6370,13 @@ link=http://rtmp1.abnsat.com/hls/trinity.m3u8
 use_cookies="no"
 chan_name="Trinity Channel" ;;
 
-# 499)
+# 499) 
+
 # 500)
 
-# 501) Amazing Facts TV (Christian)
+
+
+# 501) Amazing Facts TV (Christian
 501) 
 keyword="AFTV"
 #link=http://amazingfacts.live-s.cdn.bitgravity.com/cdn-live/_definst_/amazingfacts/live/feed01/master.m3u8
