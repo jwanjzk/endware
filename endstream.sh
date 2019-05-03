@@ -7,7 +7,7 @@
 # Copyright: 2017-2019, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6340
+# Version: 0.6341
 # Revision Date: April 12, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6340"
-rev_date="12/04/2019"
+version="0.6341"
+rev_date="03/05/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -1047,14 +1047,13 @@ chan_name="NEWSMAX USA";;
 if [ "$getlink" = 1 ]
 then
 #link=https://edge.free-speech-tv-live.top.comcast.net/out/u/fstv.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1692100,RESOLUTION=848x480,CODECS="avc1.4D401F,mp4a.40.5"
-link=https://edge.free-speech-tv-live.top.comcast.net/out/u/39569_3.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1191846,RESOLUTION=640x360,CODECS="avc1.4D401F,mp4a.40.5"
-#link=https://edge.free-speech-tv-live.top.comcast.net/out/u/39569_4.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=791856,RESOLUTION=512x288,CODECS="avc1.42C01E,mp4a.40.5"
-#link=https://edge.free-speech-tv-live.top.comcast.net/out/u/39569_5.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=191727,CODECS="mp4a.40.5"
-#link=https://edge.free-speech-tv-live.top.comcast.net/out/u/39569_6.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=1861222,RESOLUTION=848x480,CODECS="avc1.4D401F,mp4a.40.5"
+link="https://edge.free-speech-tv-live.top.comcast.net/out/u/fstv_3.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1311282,RESOLUTION=640x360,CODECS="avc1.4D401F,mp4a.40.5"
+#link="https://edge.free-speech-tv-live.top.comcast.net/out/u/fstv_4.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=871088,RESOLUTION=512x288,CODECS="avc1.42C01E,mp4a.40.5"
+#link="https://edge.free-speech-tv-live.top.comcast.net/out/u/fstv_5.m3u8"
 fi
 #method="Tor"
 use_cookies="no"
