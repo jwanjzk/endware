@@ -7,8 +7,8 @@
 # Copyright: 2017-2019, The Endware Development Team, 
 # All Rights Reserved
 # Creation Date: February 22, 2017
-# Version: 0.6343
-# Revision Date: May 05, 2019
+# Version: 0.6344
+# Revision Date: May 10, 2019
 #
 # Recent Changes: - Use shell functions to reduce redundancy
 #####################################################################
@@ -142,8 +142,8 @@
 ######################################## BEGINNING OF PROGRAM    ##########################################################
 
 ###############  VERSION INFORMATION  ##############
-version="0.6343"
-rev_date="05/05/2019"
+version="0.6344"
+rev_date="10/05/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
@@ -212,8 +212,8 @@ channel_matrix_0()
    echo "35)RT Documentary    75)Fox News Talk    115)France Info Radio155)Guatevision GT   195)Thromadske UA     235)La Legul TV TR            275)TOLO NEWS AF"
    echo "36)CGTN Documentary  76)CNBC             116)Europe 1 FR      156)Excelsior MX     196)Espresso UA       236)TGRT Haber TR             276)------------"
    echo "37)BYUTV USA         77)------------     117)OUATCH TV        157)---------------  197)News 1 UA         237)TVNET Canali TR           277)------------"
-   echo "38)CBC CA            78)------------     118)RTL FR           158)---------------  198)ZIK UA            238)Show TV TR                278)------------"	
-   echo "39)CPAC 1 CA         79)------------     119)France Inter     159)---------------  199)Ukraine 5 UA      239)Euronews Turk             279)------------"
+   echo "38)CBC CA            78)------------     118)RTL BE           158)---------------  198)ZIK UA            238)Show TV TR                278)------------"	
+   echo "39)CPAC 1 CA         79)Africa News Eng  119)France Inter     159)---------------  199)Ukraine 5 UA      239)Euronews Turk             279)------------"
    echo "40)Oireachtas TV IE  80)Euronews English 120)RMC INFO FR      160)---------------  200)TV Publica Moldova240)-------------             280)------------"
    echo "=========================================================================================================================================================="
 	
@@ -2097,7 +2097,13 @@ chan_name="CNBC USA";;
 
 # 77)
 # 78)
-# 79)
+# 79) Africa News Live
+79)
+keyword="africanews Live"
+link=https://www.dailymotion.com/video/x6i7vf8
+#link=https://www.youtube.com/watch?v="$(curl -A "$UA" "https://www.youtube.com/channel/UC1_E8NeF5QHY2dtdLRBCCLA/videos?&view=2" |  grep "$keyword" | grep "watch?v=" | head -n 1 | cut -d = -f 11 | cut -d \" -f 1)"
+use_cookies="no"
+chan_name="Africa News English";;
 
 # 80) EuroNews English
 80) 
@@ -2693,9 +2699,8 @@ link="https://www.dailymotion.com/video/xuw47s"
 use_cookies="no"
 chan_name="OUATCH TV";;
 
-# 118) RTL En direct
+# 118) RTL BE
 118)
-
 if [ "$getlink" = 1 ]
 then
 link=https://www.dailymotion.com/video/xl1km0_regardez-rtl-en-direct-et-en-video_news
@@ -2706,7 +2711,7 @@ format=hls-1080
 #format=hls-720
 #format=hls-480
 #method="Tor"
-chan_name="RTL En Direct" ;;
+chan_name="RTL BE" ;;
 # 119) France Inter
 119) 
 keyword="France Inter en direct"
@@ -10206,7 +10211,7 @@ menu_switch()
 {
 input=$1
 case "$input" in
-q) echo "Type endtv to restart program. Bye."
+q) echo "Type endstream to restart program. Bye."
 exit "$?" ;;
 s) 
 men_num="$men_num"
