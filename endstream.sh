@@ -143,7 +143,7 @@
 
 ###############  VERSION INFORMATION  ##############
 version="0.6349"
-rev_date=27/07/2019"
+rev_date="27/07/2019"
 branch="gnu/linux"
 product="ENDSTREAM"
 ##################################################
